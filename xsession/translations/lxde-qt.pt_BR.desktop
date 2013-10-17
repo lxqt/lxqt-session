@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Exec=razor-session
+#TryExec=razor-session
+Name=Razor Desktop
+Comment=Qt4 Desktop
+
+#TRANSLATIONS_DIR=translations
+
+
+# Translations
+Name[pt_BR]=Área de trabalho Razor
+Comment[pt_BR]=Área de trabalho Qt4
