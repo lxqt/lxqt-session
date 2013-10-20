@@ -259,24 +259,6 @@
   </keybind>
 
   <!--keybindings for LXPanel -->
-  <keybind key="W-r">
-      <action name="Execute">
-        <command>lxpanelctl run</command>
-      </action>
-  </keybind>
-
-  <keybind key="A-F2">
-      <action name="Execute">
-          <command>lxpanelctl run</command>
-      </action>
-  </keybind>
-
-  <keybind key="C-Escape">
-      <action name="Execute">
-          <command>lxpanelctl menu</command>
-      </action>
-  </keybind>
-
   <keybind key="F11">
      <action name="ToggleFullscreen"/>
   </keybind>
@@ -639,7 +621,7 @@
        just don't make menu ids clash or, well, it'll be kind of pointless -->
 
   <!-- default menu file (or custom one in $HOME/.config/openbox/) -->
-  <file>@prefix@/share/lxde/openbox/menu.xml</file>
+  <file>@LXQT_SHARE_DIR@/openbox/menu.xml</file>
   <hideDelay>200</hideDelay>
   <!-- if a press-release lasts longer than this setting (in milliseconds), the
        menu is hidden again -->

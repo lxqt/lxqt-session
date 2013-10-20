@@ -10,7 +10,7 @@ install(DIRECTORY graphics DESTINATION share/lxqt/)
 
 # startlxde-qt script
 configure_file(startlxde-qt.in startlxde-qt @ONLY)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/startlxde-qt DESTINATION bin)
+install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/startlxde-qt DESTINATION bin)
 
 # default config files
 add_subdirectory(config)
