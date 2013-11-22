@@ -34,4 +34,4 @@ fi
 export XDG_MENU_PREFIX="lxde-"
 
 # Start the LXDE session
-exec lxsession -s LXDE-Qt -e LXDE
+exec lxsession -s LXDE-Qt -e RAZOR
