@@ -42,6 +42,9 @@
 #include <lxqt/lxqtxfitman.h>
 #include "windowmanager.h"
 #include <wordexp.h>
+
+#include <QX11Info>
+#include <X11/X.h>
 #include <X11/Xlib.h>
 
 #define MAX_CRASHES_PER_APP 5
@@ -57,7 +60,8 @@ LxQtModuleManager::LxQtModuleManager(const QString & config, const QString & win
       mWindowManager(windowManager),
       mWmProcess(new QProcess(this)),
       mThemeWatcher(new QFileSystemWatcher(this)),
-      mAutostartHandled(false)
+      mWmStarted(false),
+      mTrayStarted(false)
 {
     if (mConfig.isEmpty())
         mConfig = "session";
@@ -68,6 +72,11 @@ LxQtModuleManager::LxQtModuleManager(const QString & config, const QString & win
 
     // Wait until the event loop starts
     QTimer::singleShot(0, this, SLOT(startup()));
+
+    // We want ClientMessages, so add StructureNotifyMask to the root window here.
+    XWindowAttributes attr;
+    XGetWindowAttributes (QX11Info::display(), QX11Info::appRootWindow(0), &attr);
+    XSelectInput (QX11Info::display(), QX11Info::appRootWindow(0), attr.your_event_mask | StructureNotifyMask);
 }
 
 void LxQtModuleManager::startup()
@@ -94,6 +103,8 @@ void LxQtModuleManager::startup()
     // Start window manager
     startWm(&s);
 
+    startAutostartApps();
+
     QStringList paths;
     paths << XdgDirs::dataHome(false);
     paths << XdgDirs::dataDirs();
@@ -110,14 +121,12 @@ void LxQtModuleManager::startup()
 
 void LxQtModuleManager::startAutostartApps()
 {
-    mAutostartHandled = true;
-
     // XDG autostart
     XdgDesktopFileList fileList = XdgAutoStart::desktopFileList();
     QList<XdgDesktopFile*> trayApps;
     for (XdgDesktopFileList::iterator i = fileList.begin(); i != fileList.end(); ++i)
     {
-                qDebug() << i->fileName();
+        qDebug() << "start" << i->fileName();
         if (i->value("X-LxQt-Need-Tray", false).toBool())
             trayApps.append(&(*i));
         else
@@ -126,20 +135,9 @@ void LxQtModuleManager::startAutostartApps()
 
     if (!trayApps.isEmpty())
     {
-        int waitCnt = 600;
-        while (!QSystemTrayIcon::isSystemTrayAvailable())
-        {
-//            qDebug() << "******************** Wait for tray" << waitCnt;
-            if (!waitCnt)
-            {
-                qWarning() << "******************** No systray implementation started in session. Continuing.";
-                break;
-            }
-            waitCnt--;
-            QCoreApplication::processEvents();
-            usleep(100000);
-        }
-
+        mTrayStarted = QSystemTrayIcon::isSystemTrayAvailable();
+        if(!mTrayStarted) // wait for the system tray to be available
+            mWaitLoop.exec(); // FIXME: add a timeout here?
         foreach (XdgDesktopFile* f, trayApps)
             startProcess(*f);
     }
@@ -196,11 +194,9 @@ void LxQtModuleManager::themeChanged()
 void LxQtModuleManager::startWm(LxQt::Settings *settings)
 {
     // If the WM is active do not run WM.
-    if (xfitMan().isWindowManagerActive())
-    {
-        startAutostartApps();
+    mWmStarted = xfitMan().isWindowManagerActive();
+    if (mWmStarted)
         return;
-    }
 
     if (mWindowManager.isEmpty())
     {
@@ -219,17 +215,14 @@ void LxQtModuleManager::startWm(LxQt::Settings *settings)
     mWmProcess->start(mWindowManager);
     // other autostart apps will be handled after the WM becomes available
 
-	/*
     // Wait until the WM loads
-    int waitCnt = 300;
-    while (!xfitMan().isWindowManagerActive() && waitCnt)
-    {
-        waitCnt--;
-        QCoreApplication::processEvents();
-        usleep(100000);
-    }
-    startAutostartApps();
-    */
+    // FIXME: add a timeout here
+    QTimer::singleShot(30, &mWaitLoop, SLOT(exit()));
+    mWaitLoop.exec();
+
+    // FIXME: blocking is a bad idea. We need to start as many apps as possible and
+    //         only wait for the start of WM when it's absolutely needed.
+    //         Maybe we can add a X-Wait-WM=true key in the desktop entry file?
 }
 
 void LxQtModuleManager::startProcess(const XdgDesktopFile& file)
@@ -391,17 +384,50 @@ bool LxQtModuleManager::x11EventFilter(XEvent* event)
 {
     if (event->type == PropertyNotify)
     {
-        static Atom _NET_SUPPORTING_WM_CHECK = 0;
-        if(0 == _NET_SUPPORTING_WM_CHECK)
-            _NET_SUPPORTING_WM_CHECK = LxQt::XfitMan::atom("_NET_SUPPORTING_WM_CHECK");
-
-        if (event->xproperty.atom == _NET_SUPPORTING_WM_CHECK)
+        if(!mWmStarted) // window manager is not started yet
         {
-            // a new window manager is started
-            if(!mAutostartHandled)
+            static Atom _NET_SUPPORTING_WM_CHECK = 0;
+              if(0 == _NET_SUPPORTING_WM_CHECK)
+              _NET_SUPPORTING_WM_CHECK = LxQt::XfitMan::atom("_NET_SUPPORTING_WM_CHECK");
+
+              if (event->xproperty.atom == _NET_SUPPORTING_WM_CHECK)
+              {
+                  // a new window manager is started
+                  if(!mWmStarted)
+                  {
+                      if(LxQt::XfitMan().isWindowManagerActive())
+                      {
+                      mWmStarted = true;
+                      if(mWaitLoop.isRunning())
+                          mWaitLoop.exit();
+                      }
+                  }
+              }
+        }
+    }
+    else if(event->type == ClientMessage) // StructureNotifyMask is needed for this
+    {
+        if(!mTrayStarted) // systray is not started yet
+        {
+            static Atom MANAGER = 0;
+            if(0 == MANAGER)
+            MANAGER = LxQt::XfitMan::atom("MANAGER");
+            if(event->xclient.message_type == MANAGER)
             {
-                if(LxQt::XfitMan().isWindowManagerActive())
-                    startAutostartApps();
+                static Atom _NET_SYSTEM_TRAY_S = 0;
+                if(0 == _NET_SYSTEM_TRAY_S)
+                {
+                    char tray_name[100];
+                    sprintf(tray_name, "_NET_SYSTEM_TRAY_S%d", QX11Info().screen());
+                    _NET_SYSTEM_TRAY_S = LxQt::XfitMan::atom(tray_name);
+                }
+                if(Atom(event->xclient.data.l[1]) == _NET_SYSTEM_TRAY_S)
+                {
+                    // a new tray manager is loaded
+                    mTrayStarted = true;
+                    if(mWaitLoop.isRunning())
+                        mWaitLoop.exit();
+                }
             }
         }
     }

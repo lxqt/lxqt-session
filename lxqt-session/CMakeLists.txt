@@ -56,7 +56,7 @@ qt4_wrap_ui(UIS ${lxqt-session_UI})
 
 add_executable ( lxqt-session ${lxqt-session_SRCS} ${UIS} ${RSCS} ${lxqt-runner_QM_FILES} ${MOCS} )
 add_dependencies( lxqt-session lxqt qtxdg)
-target_link_libraries ( lxqt-session  ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTDBUS_LIBRARY} lxqt qtxdg)
+target_link_libraries ( lxqt-session ${X11_LIBRARIES} ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTDBUS_LIBRARY} lxqt qtxdg)
 INSTALL(TARGETS lxqt-session RUNTIME DESTINATION bin)
 
 if (NOT DEFINED BUNDLE_XDG_UTILS)

@@ -33,7 +33,7 @@
 #include <QtCore/QMap>
 #include <QtCore/QTimer>
 #include <qtxdg/xdgdesktopfile.h>
-
+#include <QEventLoop>
 #include <time.h>
 
 class LxQtModule;
@@ -99,7 +99,8 @@ signals:
 private:
     //! \brief Start Window Manager
     void startWm(LxQt::Settings *settings);
-    
+    void wmStarted();
+
     void startAutostartApps();
 
     //! \brief Show Window Manager select dialog
@@ -132,7 +133,9 @@ private:
     QFileSystemWatcher *mThemeWatcher;
     QString mCurrentThemePath;
     
-    bool mAutostartHandled;
+    bool mWmStarted;
+    bool mTrayStarted;
+    QEventLoop mWaitLoop;
 
 private slots:
     //! \brief Read configuration and start processes
