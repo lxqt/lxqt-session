@@ -4,14 +4,6 @@ if [ -z "$XDG_CONFIG_HOME" ]; then
 	export XDG_CONFIG_HOME="$HOME/.config"
 fi
 
-# Ensure the existance of openbox config file
-# FIXME: used in lxde gtk+ version but may not be needed in lxde-qt.
-# OPENBOX_CONF_DIR="$XDG_CONFIG_HOME/openbox"
-# if [ ! -f "$OPENBOX_CONF_DIR/lxqt-rc.xml" ]; then
-#	mkdir -p "$OPENBOX_CONF_DIR"
-#	cp @LXQT_SHARE_DIR@/openbox/rc.xml "$OPENBOX_CONF_DIR/lxqt-rc.xml"
-#fi
-
 # Ensure the existance of the 'Desktop' folder
 if [ -e "$XDG_CONFIG_HOME/user-dirs.dirs" ]; then
 	. "$XDG_CONFIG_HOME/user-dirs.dirs"
@@ -31,7 +23,12 @@ if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
 	eval "$(dbus-launch --sh-syntax --exit-with-session)"
 fi
 
+# load lxqt Qt platform plugin
+# FIXME: the plugin is not yet ready
+# QT_PLATFORM_PLUGIN=lxqt
+
 export XDG_MENU_PREFIX="lxde-"
+export XDG_CURRENT_DESKTOP="LxQt"
 
 # Start the LXDE session
-exec lxsession -s LXDE-Qt -e RAZOR
+exec lxqt-session
