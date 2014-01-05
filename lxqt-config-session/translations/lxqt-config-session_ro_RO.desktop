@@ -1,0 +1,19 @@
+[Desktop Entry]
+OnlyShowIn=LxQt;
+Type=Application
+Exec=lxqt-config-session
+Terminal=false
+Categories=Settings;DesktopSettings;Qt;LxQt;
+Icon=preferences-system-session-services
+Name=LxQt Session Configurator
+Comment=Configure LxQt-Qt session module
+GenericName=LxQt Session Configurator
+
+#TRANSLATIONS_DIR=translations
+
+
+# Translations
+Comment[ro_RO]=Configurează modulul sesiune LxQt-Qt
+GenericName[ro_RO]=Configurare sesiune LxQt
+Name[ro_RO]=Configurare sesiune LxQt
+Icon[ro_RO]=preferences-system-session-services

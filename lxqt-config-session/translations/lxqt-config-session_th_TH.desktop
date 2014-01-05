@@ -1,0 +1,19 @@
+[Desktop Entry]
+OnlyShowIn=LxQt;
+Type=Application
+Exec=lxqt-config-session
+Terminal=false
+Categories=Settings;DesktopSettings;Qt;LxQt;
+Icon=preferences-system-session-services
+Name=LxQt Session Configurator
+Comment=Configure LxQt-Qt session module
+GenericName=LxQt Session Configurator
+
+#TRANSLATIONS_DIR=translations
+
+
+# Translations
+Comment[th_TH]=ตั้งค่ามอดูลวาระงาน LxQt-Qt
+GenericName[th_TH]=ตัวตั้งค่าวาระงาน LxQt
+Name[th_TH]=ตัวตั้งค่าวาระงาน LxQt
+Icon[th_TH]=ค่าปรับแต่ง-ระบบ-วาระงาน-บริการ
