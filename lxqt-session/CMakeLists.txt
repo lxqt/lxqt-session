@@ -26,12 +26,14 @@ set ( lxqt-session_SRCS
     src/lxqtmodman.cpp
     src/wmselectdialog.cpp
     src/windowmanager.cpp
+    src/sessionapplication.cpp
 )
 
 set ( lxqt-session_MOCS
     src/lxqtmodman.h
     src/sessiondbusadaptor.h
     src/wmselectdialog.h
+    src/sessionapplication.h
 )
 
 set ( lxqt-session_UI

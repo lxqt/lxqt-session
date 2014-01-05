@@ -83,6 +83,8 @@ public:
     //! \brief List the running modules, identified by their file names
     QStringList listModules() const;
 
+    bool x11EventFilter(XEvent* event);
+
 public slots:
     /*! \brief Exit LxQt session.
     It tries to terminate processes from procMap and autostartList
@@ -97,6 +99,8 @@ signals:
 private:
     //! \brief Start Window Manager
     void startWm(LxQt::Settings *settings);
+    
+    void startAutostartApps();
 
     //! \brief Show Window Manager select dialog
     QString showWmSelectDialog();
@@ -127,6 +131,8 @@ private:
     //! \brief file system watcher to react on theme modifications
     QFileSystemWatcher *mThemeWatcher;
     QString mCurrentThemePath;
+    
+    bool mAutostartHandled;
 
 private slots:
     //! \brief Read configuration and start processes

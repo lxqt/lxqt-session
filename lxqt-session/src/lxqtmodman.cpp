@@ -42,6 +42,7 @@
 #include <lxqt/lxqtxfitman.h>
 #include "windowmanager.h"
 #include <wordexp.h>
+#include <X11/Xlib.h>
 
 #define MAX_CRASHES_PER_APP 5
 
@@ -55,7 +56,8 @@ LxQtModuleManager::LxQtModuleManager(const QString & config, const QString & win
       mConfig(config),
       mWindowManager(windowManager),
       mWmProcess(new QProcess(this)),
-      mThemeWatcher(new QFileSystemWatcher(this))
+      mThemeWatcher(new QFileSystemWatcher(this)),
+      mAutostartHandled(false)
 {
     if (mConfig.isEmpty())
         mConfig = "session";
@@ -92,11 +94,30 @@ void LxQtModuleManager::startup()
     // Start window manager
     startWm(&s);
 
+    QStringList paths;
+    paths << XdgDirs::dataHome(false);
+    paths << XdgDirs::dataDirs();
+
+    foreach(QString path, paths)
+    {
+        QFileInfo fi(QString("%1/lxqt/themes").arg(path));
+        if (fi.exists())
+            mThemeWatcher->addPath(fi.absoluteFilePath());
+    }
+
+    themeChanged();
+}
+
+void LxQtModuleManager::startAutostartApps()
+{
+    mAutostartHandled = true;
+
     // XDG autostart
     XdgDesktopFileList fileList = XdgAutoStart::desktopFileList();
     QList<XdgDesktopFile*> trayApps;
     for (XdgDesktopFileList::iterator i = fileList.begin(); i != fileList.end(); ++i)
     {
+                qDebug() << i->fileName();
         if (i->value("X-LxQt-Need-Tray", false).toBool())
             trayApps.append(&(*i));
         else
@@ -122,20 +143,6 @@ void LxQtModuleManager::startup()
         foreach (XdgDesktopFile* f, trayApps)
             startProcess(*f);
     }
-
-
-    QStringList paths;
-    paths << XdgDirs::dataHome(false);
-    paths << XdgDirs::dataDirs();
-
-    foreach(QString path, paths)
-    {
-        QFileInfo fi(QString("%1/lxqt/themes").arg(path));
-        if (fi.exists())
-            mThemeWatcher->addPath(fi.absoluteFilePath());
-    }
-
-    themeChanged();
 }
 
 void LxQtModuleManager::themeFolderChanged(const QString& /*path*/)
@@ -190,7 +197,10 @@ void LxQtModuleManager::startWm(LxQt::Settings *settings)
 {
     // If the WM is active do not run WM.
     if (xfitMan().isWindowManagerActive())
+    {
+        startAutostartApps();
         return;
+    }
 
     if (mWindowManager.isEmpty())
     {
@@ -207,7 +217,9 @@ void LxQtModuleManager::startWm(LxQt::Settings *settings)
     }
 
     mWmProcess->start(mWindowManager);
+    // other autostart apps will be handled after the WM becomes available
 
+	/*
     // Wait until the WM loads
     int waitCnt = 300;
     while (!xfitMan().isWindowManagerActive() && waitCnt)
@@ -216,6 +228,8 @@ void LxQtModuleManager::startWm(LxQt::Settings *settings)
         QCoreApplication::processEvents();
         usleep(100000);
     }
+    startAutostartApps();
+    */
 }
 
 void LxQtModuleManager::startProcess(const XdgDesktopFile& file)
@@ -371,6 +385,27 @@ QString LxQtModuleManager::showWmSelectDialog()
 void LxQtModuleManager::resetCrashReport()
 {
     mCrashReport.clear();
+}
+
+bool LxQtModuleManager::x11EventFilter(XEvent* event)
+{
+    if (event->type == PropertyNotify)
+    {
+        static Atom _NET_SUPPORTING_WM_CHECK = 0;
+        if(0 == _NET_SUPPORTING_WM_CHECK)
+            _NET_SUPPORTING_WM_CHECK = LxQt::XfitMan::atom("_NET_SUPPORTING_WM_CHECK");
+
+        if (event->xproperty.atom == _NET_SUPPORTING_WM_CHECK)
+        {
+            // a new window manager is started
+            if(!mAutostartHandled)
+            {
+                if(LxQt::XfitMan().isWindowManagerActive())
+                    startAutostartApps();
+            }
+        }
+    }
+    return false;
 }
 
 void lxqt_setenv(const char *env, const QByteArray &value)

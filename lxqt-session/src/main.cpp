@@ -25,12 +25,7 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <lxqt/lxqtapplication.h>
-#include <QtGui/QIcon>
-#include <unistd.h>
-
-#include "lxqtmodman.h"
-#include "sessiondbusadaptor.h"
+#include "sessionapplication.h"
 #include "lxqttranslate.h"
 
 /**
@@ -46,47 +41,16 @@ session-openbox.conf
 session-eggwm.conf
 */
 
+
 /**
 * @brief our main function doing the loading
 */
 int main(int argc, char **argv)
 {
-    LxQt::Application app(argc, argv);
+    SessionApplication app(argc, argv);
     //qDebug() << "LxQt Session start";
     app.setQuitOnLastWindowClosed(false);
-
     TRANSLATE_APP;
-
-    char* session = NULL;
-    char* winmanager = NULL;
-    int c;
-    while ((c = getopt (argc, argv, "c:w:")) != -1)
-    {
-        if (c == 'c')
-        {
-            session = optarg;
-            break;
-        }
-        else if (c == 'w')
-        {
-            winmanager = optarg;
-            break;
-        }
-    }
-    
-#ifdef PATH_PREPEND
-    // PATH for out own bundled XDG tools
-    lxqt_setenv_prepend("PATH", PATH_PREPEND);
-#endif // PATH_PREPEND
-
-    // special variable for LxQt environment menu
-    lxqt_setenv("XDG_MENU_PREFIX", "lxqt-");
-
-    LxQtModuleManager modman(session, winmanager);
-    new SessionDBusAdaptor(&modman);
-    // connect to D-Bus and register as an object:
-    QDBusConnection::sessionBus().registerService("org.lxqt.session");
-    QDBusConnection::sessionBus().registerObject("/LxQtSession", &modman);
     return app.exec();
 }
 
