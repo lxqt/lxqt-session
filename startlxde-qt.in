@@ -28,7 +28,10 @@ fi
 export QT_PLATFORM_PLUGIN=lxqt
 
 export XDG_MENU_PREFIX="lxde-"
-export XDG_CURRENT_DESKTOP="LxQt"
 
-# Start the LXDE session
+# Some code in libqtxdg hard-coded Razor as the DE name so let's use it at the moment.
+# Later this should be changed to LxQt when other components are fixed.
+export XDG_CURRENT_DESKTOP="Razor"
+
+# Start the LxQt session
 exec lxqt-session
