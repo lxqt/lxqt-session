@@ -25,7 +25,7 @@ fi
 
 # load lxqt Qt platform plugin
 # FIXME: the plugin is not yet ready
-# QT_PLATFORM_PLUGIN=lxqt
+export QT_PLATFORM_PLUGIN=lxqt
 
 export XDG_MENU_PREFIX="lxde-"
 export XDG_CURRENT_DESKTOP="LxQt"
