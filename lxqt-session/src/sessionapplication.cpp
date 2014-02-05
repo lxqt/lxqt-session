@@ -48,7 +48,8 @@ SessionApplication::SessionApplication(int& argc, char** argv) : LxQt::Applicati
 #endif // PATH_PREPEND
 
     // special variable for LxQt environment menu
-    lxqt_setenv("XDG_MENU_PREFIX", "lxqt-");
+    // NOTE: it's better not to hard-code lxqt- here.
+    // lxqt_setenv("XDG_MENU_PREFIX", "lxqt-");
 
     modman = new LxQtModuleManager(session, winmanager);
     new SessionDBusAdaptor(modman);
