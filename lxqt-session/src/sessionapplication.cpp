@@ -1,6 +1,5 @@
 /*
- * <one line to give the library's name and an idea of what it does.>
- * Copyright (C) 2014  <copyright holder> <email>
+ * Copyright (C) 2014  Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
  * 
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -87,6 +86,7 @@ bool SessionApplication::startup()
     qDebug() << __FILE__ << ":" << __LINE__ << "Session" << configName << "about to launch (default 'session')";
 
     loadEnvironmentSettings(settings);
+    loadFontSettings(settings);
     loadKeyboardSettings(settings);
     loadMouseSettings(settings);
 
@@ -175,6 +175,12 @@ void SessionApplication::loadMouseSettings(LxQt::Settings& settings)
     setLeftHandedMouse(left_handed);
 
     settings.endGroup();
+}
+
+void SessionApplication::loadFontSettings(LxQt::Settings& settings)
+{
+    // TODO: set some Xft config values, such as antialiasing & subpixel
+    // may call mergeXrdb() to do it.
 }
 
 /* This function is taken from Gnome's control-center 2.6.0.3 (gnome-settings-mouse.c) and was modified*/
