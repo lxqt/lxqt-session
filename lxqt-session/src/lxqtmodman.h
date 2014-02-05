@@ -71,7 +71,7 @@ class LxQtModuleManager : public QObject
 
 public:
     //! \brief Construct LxQtModuleManager
-    LxQtModuleManager(const QString & config, const QString & windowManager, QObject * parent = 0);
+    LxQtModuleManager(const QString& windowManager, QObject* parent = 0);
     virtual ~LxQtModuleManager();
 
     //! \brief Start a module given its file name (e.g. "lxqt-panel.desktop")
@@ -84,6 +84,9 @@ public:
     QStringList listModules() const;
 
     bool x11EventFilter(XEvent* event);
+
+    //! \brief Read configuration and start processes
+    void startup(LxQt::Settings& s);
 
 public slots:
     /*! \brief Exit LxQt session.
@@ -112,9 +115,6 @@ private:
     //! \brief Start the lxqt-confupdate.
     void startConfUpdate();
 
-    //! \brief Session configuration.
-    QString mConfig;
-
     //! \brief Window manager command
     QString mWindowManager;
 
@@ -138,8 +138,6 @@ private:
     QEventLoop mWaitLoop;
 
 private slots:
-    //! \brief Read configuration and start processes
-    void startup();
 
     /*! \brief this slot is called by the QProcesses if they end.
     \warning The slot *has* to be called as a slot only due sender() cast.

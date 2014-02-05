@@ -54,24 +54,17 @@ using namespace LxQt;
 /**
  * @brief the constructor, needs a valid modules.conf
  */
-LxQtModuleManager::LxQtModuleManager(const QString & config, const QString & windowManager, QObject* parent)
+LxQtModuleManager::LxQtModuleManager(const QString & windowManager, QObject* parent)
     : QObject(parent),
-      mConfig(config),
       mWindowManager(windowManager),
       mWmProcess(new QProcess(this)),
       mThemeWatcher(new QFileSystemWatcher(this)),
       mWmStarted(false),
       mTrayStarted(false)
 {
-    if (mConfig.isEmpty())
-        mConfig = "session";
-
     connect(mThemeWatcher, SIGNAL(directoryChanged(QString)), SLOT(themeFolderChanged(QString)));
 
     connect(LxQt::Settings::globalSettings(), SIGNAL(lxqtThemeChanged()), SLOT(themeChanged()));
-
-    // Wait until the event loop starts
-    QTimer::singleShot(0, this, SLOT(startup()));
 
     // We want ClientMessages, so add StructureNotifyMask to the root window here.
     XWindowAttributes attr;
@@ -79,24 +72,8 @@ LxQtModuleManager::LxQtModuleManager(const QString & config, const QString & win
     XSelectInput (QX11Info::display(), QX11Info::appRootWindow(0), attr.your_event_mask | StructureNotifyMask);
 }
 
-void LxQtModuleManager::startup()
+void LxQtModuleManager::startup(LxQt::Settings& s)
 {
-    qDebug() << __FILE__ << ":" << __LINE__ << "Session" << mConfig << "about to launch (default 'session')";
-
-    LxQt::Settings s(mConfig);
-
-    // first - set some user defined environment variables (like TERM...)
-    s.beginGroup("environment");
-    QByteArray envVal;
-    foreach (QString i, s.childKeys())
-    {
-        envVal = s.value(i).toByteArray();
-        lxqt_setenv(i.toUtf8().constData(), envVal);
-    }
-    s.endGroup();
-
-    // then rest of the config:
-
     // The lxqt-confupdate can update the settings of the WM, so run it first.
     startConfUpdate();
 

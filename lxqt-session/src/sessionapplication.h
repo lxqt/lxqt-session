@@ -22,6 +22,7 @@
 #define SESSIONAPPLICATION_H
 
 #include <lxqt/lxqtapplication.h>
+#include <lxqt/lxqtsettings.h>
 
 class LxQtModuleManager;
 
@@ -33,8 +34,19 @@ public:
     ~SessionApplication();
     virtual bool x11EventFilter(XEvent* event );
 
+private Q_SLOTS:
+    bool startup();
+
+private:
+    void loadEnvironmentSettings(LxQt::Settings& settings);
+    void loadKeyboardSettings(LxQt::Settings& settings);
+    void loadMouseSettings(LxQt::Settings& settings);
+
+    void mergeXrdb(const char* content, int len);
+    void setLeftHandedMouse(bool mouse_left_handed);
 private:
     LxQtModuleManager* modman;
+    QString configName;
 };
 
 #endif // SESSIONAPPLICATION_H
