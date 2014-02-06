@@ -113,7 +113,7 @@ void SessionApplication::mergeXrdb(const char* content, int len)
 void SessionApplication::loadEnvironmentSettings(LxQt::Settings& settings)
 {
     // first - set some user defined environment variables (like TERM...)
-    settings.beginGroup("environment");
+    settings.beginGroup("Environment");
     QByteArray envVal;
     Q_FOREACH (QString i, settings.childKeys())
     {

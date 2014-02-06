@@ -177,16 +177,15 @@ void LxQtModuleManager::startWm(LxQt::Settings *settings)
 
     if (mWindowManager.isEmpty())
     {
-        mWindowManager = settings->value("windowmanager").toString();
+        mWindowManager = settings->value("window_manager").toString();
     }
 
     // If previuos WM was removed, we show dialog.
     if (mWindowManager.isEmpty() || ! findProgram(mWindowManager.split(' ')[0]))
     {
         mWindowManager = showWmSelectDialog();
-        settings->setValue("windowmanager", mWindowManager);
+        settings->setValue("window_manager", mWindowManager);
         settings->sync();
-
     }
 
     mWmProcess->start(mWindowManager);
