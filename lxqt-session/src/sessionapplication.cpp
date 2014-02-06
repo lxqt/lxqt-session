@@ -98,14 +98,11 @@ bool SessionApplication::startup()
 
 void SessionApplication::mergeXrdb(const char* content, int len)
 {
+    qDebug() << "xrdb:" << content;
     QProcess xrdb;
     xrdb.start("xrdb -merge -");
-    xrdb.waitForStarted();
-    if(xrdb.isWritable()) {
-        qDebug() << "xrdb (" << xrdb.pid() << "):" << content;
-        xrdb.write(content, len);
-    }
-    xrdb.close();
+    xrdb.write(content, len);
+    xrdb.closeWriteChannel();
     xrdb.waitForFinished();
 }
 
@@ -179,8 +176,32 @@ void SessionApplication::loadMouseSettings(LxQt::Settings& settings)
 
 void SessionApplication::loadFontSettings(LxQt::Settings& settings)
 {
-    // TODO: set some Xft config values, such as antialiasing & subpixel
-    // may call mergeXrdb() to do it.
+    // set some Xft config values, such as antialiasing & subpixel
+    // may call mergeXrdb() to do it. (will this work?)
+    // font settings of gtk+ programs are controlled by gtkrc and settings.ini files.
+    settings.beginGroup("Font");
+    QByteArray buf;
+    bool antialias = settings.value("antialias", true).toBool();
+    buf += "Xft.antialias:";
+    buf += antialias ? "true" : "false";
+    buf += '\n';
+
+    buf += "Xft.rgba:rgb\n";
+
+    int dpi = settings.value("dpi", 96).toInt();
+    buf += "Xft.dpi:";
+    buf += QString("%1").arg(dpi);
+    buf += '\n';
+
+    bool hinting = settings.value("hintint", true).toBool();
+    buf += "Xft.hinting";
+    buf += hinting ? "true" : "false";
+    buf += '\n';
+
+    buf += "Xft.hintstyle:hintslight\n";
+    if(!buf.isEmpty())
+        mergeXrdb(buf.constData(), buf.length());
+    settings.endGroup();
 }
 
 /* This function is taken from Gnome's control-center 2.6.0.3 (gnome-settings-mouse.c) and was modified*/
