@@ -51,7 +51,7 @@ EnvironmentPage::~EnvironmentPage()
 
 void EnvironmentPage::restoreSettings()
 {
-    m_settings->beginGroup("environment");
+    m_settings->beginGroup("Environment");
     QString value;
     ui->treeWidget->clear();
     foreach (const QString& i, m_settings->childKeys())
@@ -73,7 +73,7 @@ void EnvironmentPage::restoreSettings()
 
 void EnvironmentPage::save()
 {
-    m_settings->beginGroup("environment");
+    m_settings->beginGroup("Environment");
     m_settings->remove("");
     for(int i = 0; i < ui->treeWidget->topLevelItemCount(); ++i)
     {

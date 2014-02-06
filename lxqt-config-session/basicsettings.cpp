@@ -63,14 +63,14 @@ void BasicSettings::restoreSettings()
         knownWMs << wm.command;
     }
 
-    QString wm = m_settings->value("windowmanager", "openbox").toString();
+    QString wm = m_settings->value("window_manager", "openbox").toString();
     SessionConfigWindow::handleCfgComboBox(ui->wmComboBox, knownWMs, wm);
     m_moduleModel->reset();
 }
 
 void BasicSettings::save()
 {
-    m_settings->setValue("windowmanager", ui->wmComboBox->currentText());
+    m_settings->setValue("window_manager", ui->wmComboBox->currentText());
     m_moduleModel->writeChanges();
 }
 
