@@ -59,6 +59,10 @@ SessionApplication::SessionApplication(int& argc, char** argv) : LxQt::Applicati
 
     if(configName.isEmpty())
       configName = "session";
+
+    // tell the world which config file we're using.
+    qputenv("LXQT_SESSION_CONFIG", configName.toUtf8());
+
     modman = new LxQtModuleManager(winmanager);
     new SessionDBusAdaptor(modman);
     // connect to D-Bus and register as an object:
