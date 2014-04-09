@@ -90,7 +90,7 @@ bool SessionApplication::startup()
     qDebug() << __FILE__ << ":" << __LINE__ << "Session" << configName << "about to launch (default 'session')";
 
     loadEnvironmentSettings(settings);
-    loadFontSettings(settings);
+    // loadFontSettings(settings);
     loadKeyboardSettings(settings);
     loadMouseSettings(settings);
 
@@ -178,6 +178,9 @@ void SessionApplication::loadMouseSettings(LxQt::Settings& settings)
     settings.endGroup();
 }
 
+# if 0
+// already deprecated by direct fontconfig support of lxqt-config
+
 void SessionApplication::loadFontSettings(LxQt::Settings& settings)
 {
     // set some Xft config values, such as antialiasing & subpixel
@@ -211,6 +214,7 @@ void SessionApplication::loadFontSettings(LxQt::Settings& settings)
     mergeXrdb(buf.constData(), buf.length());
     settings.endGroup();
 }
+#endif
 
 /* This function is taken from Gnome's control-center 2.6.0.3 (gnome-settings-mouse.c) and was modified*/
 #define DEFAULT_PTR_MAP_SIZE 128

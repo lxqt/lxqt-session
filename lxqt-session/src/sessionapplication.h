@@ -40,7 +40,7 @@ private:
     void loadEnvironmentSettings(LxQt::Settings& settings);
     void loadKeyboardSettings(LxQt::Settings& settings);
     void loadMouseSettings(LxQt::Settings& settings);
-    void loadFontSettings(LxQt::Settings& settings);
+    // void loadFontSettings(LxQt::Settings& settings);
 
     void mergeXrdb(const char* content, int len);
     void setLeftHandedMouse(bool mouse_left_handed);
