@@ -190,21 +190,25 @@ void SessionApplication::loadFontSettings(LxQt::Settings& settings)
     buf += antialias ? "true" : "false";
     buf += '\n';
 
-    buf += "Xft.rgba:rgb\n";
+    buf += "Xft.rgba:";
+    buf += settings.value("subpixel", "none").toByteArray();
+    buf += '\n';
+
+    bool hinting = settings.value("hinting", true).toBool();
+    buf += "Xft.hinting:";
+    buf += hinting ? "true" : "false";
+    buf += '\n';
+
+    buf += "Xft.hintstyle:hint";
+    buf += settings.value("hint_style", "none").toByteArray();
+    buf += '\n';
 
     int dpi = settings.value("dpi", 96).toInt();
     buf += "Xft.dpi:";
     buf += QString("%1").arg(dpi);
     buf += '\n';
 
-    bool hinting = settings.value("hintint", true).toBool();
-    buf += "Xft.hinting";
-    buf += hinting ? "true" : "false";
-    buf += '\n';
-
-    buf += "Xft.hintstyle:hintslight\n";
-    if(!buf.isEmpty())
-        mergeXrdb(buf.constData(), buf.length());
+    mergeXrdb(buf.constData(), buf.length());
     settings.endGroup();
 }
 
