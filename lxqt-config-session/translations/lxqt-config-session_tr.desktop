@@ -1,5 +1,5 @@
 [Desktop Entry]
-OnlyShowIn=LxQt;
+OnlyShowIn=LxQt;Razor;
 Type=Application
 Exec=lxqt-config-session
 Terminal=false
@@ -16,4 +16,3 @@ GenericName=LxQt Session Configurator
 Comment[tr]=LxQt-Qt oturum modülünü yapılandır
 GenericName[tr]=LxQt Oturum Yapılandırıcı
 Name[tr]=LxQt Oturum Yapılandırıcı
-Icon[tr]=preferences-system-session-services

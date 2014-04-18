@@ -1,5 +1,5 @@
 [Desktop Entry]
-OnlyShowIn=LxQt;
+OnlyShowIn=LxQt;Razor;
 Type=Application
 Exec=lxqt-config-session
 Terminal=false
@@ -16,4 +16,3 @@ GenericName=LxQt Session Configurator
 Comment[el_GR]=Άρθρωμα διαμόρφωσης συνεδρίας LxQt-Qt
 GenericName[el_GR]=Διαμόρφωση συνεδρίας LxQt
 Name[el_GR]=Διαμόρφωση συνεδρίας LxQt
-Icon[el_GR]=preferences-system-session-services

@@ -1,5 +1,5 @@
 [Desktop Entry]
-OnlyShowIn=LxQt;
+OnlyShowIn=LxQt;Razor;
 Type=Application
 Exec=lxqt-config-session
 Terminal=false
@@ -16,4 +16,3 @@ GenericName=LxQt Session Configurator
 Comment[zh_CN]=配置 LxQt-Qt 会话模块
 GenericName[zh_CN]=LxQt 会话配置
 Name[zh_CN]=LxQt 会话配置
-Icon[zh_CN]=系统会话服务首选项
