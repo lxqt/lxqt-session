@@ -1,5 +1,5 @@
 [Desktop Entry]
-OnlyShowIn=LxQt;
+OnlyShowIn=LxQt;Razor;
 Type=Application
 Exec=lxqt-config-session
 Terminal=false
@@ -16,4 +16,3 @@ GenericName=LxQt Session Configurator
 Comment[ja]=LxQt-Qtセッションもジュールを設定
 GenericName[ja]=LxQtセッションの設定
 Name[ja]=LxQtセッションの設定
-Icon[ja]=システムセッションサービス初期設定
