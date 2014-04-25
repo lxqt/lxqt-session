@@ -123,8 +123,36 @@ void SessionApplication::loadEnvironmentSettings(LxQt::Settings& settings)
     settings.endGroup();
 }
 
+// FIXME: how to set keyboard layout in Wayland?
+void SessionApplication::setxkbmap(QString layout, QString variant, QString model, QStringList options) {
+  QString command = "setxkbmap";
+  if(!model.isEmpty()) {
+    command += " -model ";
+    command += model;
+  }
+  if(!layout.isEmpty()) {
+    command += " -layout ";
+    command += layout;
+    
+    if(!variant.isEmpty()) {
+      command += " -variant ";
+      command += variant;
+    }
+  }
+  if(!options.isEmpty()) {
+    Q_FOREACH(const QString& option, options) {
+      command += " -option ";
+      command += option;
+    }
+  }
+  // execute the command line
+  QProcess setxkbmap;
+  setxkbmap.startDetached(command);
+}
+
 void SessionApplication::loadKeyboardSettings(LxQt::Settings& settings)
 {
+  qDebug() << settings.fileName();
     settings.beginGroup("Keyboard");
     XKeyboardControl values;
     /* Keyboard settings */
@@ -139,6 +167,14 @@ void SessionApplication::loadKeyboardSettings(LxQt::Settings& settings)
     bool beep = settings.value("beep").toBool();
     values.bell_percent = beep ? -1 : 0;
     XChangeKeyboardControl(QX11Info::display(), KBBellPercent, &values);
+    
+    // keyboard layout support using setxkbmap
+    QString layout = settings.value("layout").toString();
+    QString variant = settings.value("variant").toString();
+    QString model = settings.value("model").toString();
+    QStringList options = settings.value("options").toStringList();
+    setxkbmap(layout, variant, model, options);
+
     settings.endGroup();
 }
 

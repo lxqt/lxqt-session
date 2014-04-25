@@ -41,6 +41,8 @@ private:
     void loadKeyboardSettings(LxQt::Settings& settings);
     void loadMouseSettings(LxQt::Settings& settings);
     // void loadFontSettings(LxQt::Settings& settings);
+    
+    void setxkbmap(QString layout, QString variant, QString model, QStringList options);
 
     void mergeXrdb(const char* content, int len);
     void setLeftHandedMouse(bool mouse_left_handed);
