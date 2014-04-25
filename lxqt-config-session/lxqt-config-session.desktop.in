@@ -1,12 +1,11 @@
 [Desktop Entry]
-OnlyShowIn=LxQt;
 Type=Application
+Name=Session Settings
+GenericName=LXQt Session Settings
+Comment=Configuration for LXQt sessions
 Exec=lxqt-config-session
-Terminal=false
-Categories=Settings;DesktopSettings;Qt;LxQt;
 Icon=preferences-system-session-services
-Name=LxQt Session Configurator
-Comment=Configure LxQt-Qt session module
-GenericName=LxQt Session Configurator
+Categories=Settings;DesktopSettings;Qt;LXQt;
+OnlyShowIn=LXQt;
 
 #TRANSLATIONS_DIR=translations
