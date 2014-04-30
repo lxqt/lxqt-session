@@ -21,7 +21,6 @@
 #include "sessiondbusadaptor.h"
 #include "lxqtmodman.h"
 #include <unistd.h>
-#include <alloca.h>
 #include <lxqt/lxqtsettings.h>
 #include <QProcess>
 #include <QDebug>
@@ -260,11 +259,11 @@ void SessionApplication::setLeftHandedMouse(bool mouse_left_handed)
     int n_buttons, i;
     int idx_1 = 0, idx_3 = 1;
 
-    buttons = (unsigned char*)alloca (DEFAULT_PTR_MAP_SIZE);
+    buttons = (unsigned char*)malloc(DEFAULT_PTR_MAP_SIZE);
     n_buttons = XGetPointerMapping(QX11Info::display(), buttons, DEFAULT_PTR_MAP_SIZE);
     if (n_buttons > DEFAULT_PTR_MAP_SIZE)
     {
-        buttons = (unsigned char*)alloca (n_buttons);
+        buttons = (unsigned char*)realloc(buttons, n_buttons);
         n_buttons = XGetPointerMapping(QX11Info::display(), buttons, n_buttons);
     }
 
@@ -283,4 +282,5 @@ void SessionApplication::setLeftHandedMouse(bool mouse_left_handed)
         buttons[idx_3] = 1;
         XSetPointerMapping(QX11Info::display(), buttons, n_buttons);
     }
+    free(buttons);
 }
