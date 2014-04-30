@@ -1,19 +1,4 @@
-[Desktop Entry]
-OnlyShowIn=LxQt;
-Type=Application
-Exec=lxqt-config-session
-Terminal=false
-Categories=Settings;DesktopSettings;Qt;LxQt;
-Icon=preferences-system-session-services
-Name=LxQt Session Configurator
-Comment=Configure LxQt-Qt session module
-GenericName=LxQt Session Configurator
-
-#TRANSLATIONS_DIR=translations
-
-
 # Translations
 Comment[eo]=Agordi modulon de seanco de LxQt-Qt
 GenericName[eo]=Agordilo de seanco de LxQt
 Name[eo]=Agordilo de seanco de LxQt
-Icon[eo]=preferences-system-session-services
