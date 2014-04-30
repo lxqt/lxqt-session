@@ -1,19 +1,4 @@
-[Desktop Entry]
-OnlyShowIn=LxQt;
-Type=Application
-Exec=lxqt-config-session
-Terminal=false
-Categories=Settings;DesktopSettings;Qt;LxQt;
-Icon=preferences-system-session-services
-Name=LxQt Session Configurator
-Comment=Configure LxQt-Qt session module
-GenericName=LxQt Session Configurator
-
-#TRANSLATIONS_DIR=translations
-
-
 # Translations
 Comment[pt_BR]=Módulo de configurador de sessão do LxQt-Qt
 GenericName[pt_BR]=Configurador de sessão do LxQt
 Name[pt_BR]=Configurador de sessão do LxQt
-Icon[pt_BR]=preferences-system-session-services
