@@ -1,13 +1,3 @@
-[Desktop Entry]
-Type=Application
-Exec=lxqt-session
-#TryExec=lxqt-session
-Name=LxQt Desktop
-Comment=Qt4 Desktop
-
-#TRANSLATIONS_DIR=translations
-
-
 # Translations
-Name[ru]=Рабочий стол LxQt
+Name[ru]=Рабочий стол LXQt
 Comment[ru]=Рабочий стол  на Qt

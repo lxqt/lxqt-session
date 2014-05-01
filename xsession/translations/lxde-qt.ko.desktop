@@ -1,11 +1,1 @@
-[Desktop Entry]
-Encoding=UTF-8
-Type=XSession
-Exec=lxqt-session
-Name=LxQt Desktop
-Comment=Qt4 Desktop
-
-#TRANSLATIONS_DIR=translations
-
-
 # Translations
