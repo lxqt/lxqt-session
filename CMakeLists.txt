@@ -11,9 +11,9 @@ include(${LXQT_USE_FILE})
 # graphics
 install(DIRECTORY graphics DESTINATION share/lxqt/)
 
-# startlxde-qt script
-configure_file(startlxde-qt.in startlxde-qt @ONLY)
-install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/startlxde-qt DESTINATION bin)
+# startlxqt script
+configure_file(startlxqt.in startlxqt @ONLY)
+install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/startlxqt DESTINATION bin)
 
 # default config files
 add_subdirectory(config)

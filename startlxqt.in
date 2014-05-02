@@ -33,5 +33,5 @@ export XDG_MENU_PREFIX="lxde-"
 # Later this should be changed to LxQt when other components are fixed.
 export XDG_CURRENT_DESKTOP="Razor"
 
-# Start the LxQt session
+# Start the LXQt session
 exec lxqt-session
