@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=startlxde-qt
-Name=LXDE-Qt Desktop
-Comment=Lightweight Qt4 Desktop
-
-#TRANSLATIONS_DIR=translations
