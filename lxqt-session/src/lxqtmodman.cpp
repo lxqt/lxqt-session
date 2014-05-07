@@ -203,7 +203,7 @@ void LxQtModuleManager::startWm(LxQt::Settings *settings)
 
 void LxQtModuleManager::startProcess(const XdgDesktopFile& file)
 {
-    if (!file.value("X-LxQt-Module", false).toBool())
+    if (!file.value("X-LXQt-Module", false).toBool())
     {
         file.startDetached();
         return;
@@ -255,7 +255,7 @@ void LxQtModuleManager::startConfUpdate()
 {
     XdgDesktopFile desktop(XdgDesktopFile::ApplicationType, ":lxqt-confupdate", "lxqt-confupdate --watch");
     desktop.setValue("Name", "LxQt config updater");
-    desktop.setValue("X-LxQt-Module", true);
+    desktop.setValue("X-LXQt-Module", true);
     startProcess(desktop);
 }
 

@@ -37,7 +37,7 @@ AutoStartItemModel::AutoStartItemModel(QObject* parent) :
     QMap<QString,AutostartItem>::iterator iter;
     for (iter = mItemMap.begin(); iter != mItemMap.end(); ++iter)
     {
-        if (!iter.value().file().value("X-LxQt-Module", false).toBool())
+        if (!iter.value().file().value("X-LXQt-Module", false).toBool())
         {
             if (showOnlyInLxQt(iter.value().file()))
                 mLxQtItems.append(iter.key());
