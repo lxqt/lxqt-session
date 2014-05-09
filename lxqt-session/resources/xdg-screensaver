@@ -35,102 +35,116 @@ manualpage()
 cat << _MANUALPAGE
 Name
 
-xdg-screensaver - command line tool for controlling the screensaver
+   xdg-screensaver -- command line tool for controlling the
+   screensaver
 
 Synopsis
 
-xdg-screensaver suspend WindowID
+   xdg-screensaver suspend WindowID
 
-xdg-screensaver resume WindowID
+   xdg-screensaver resume WindowID
 
-xdg-screensaver { activate | lock | reset | status }
+   xdg-screensaver { activate | lock | reset | status }
 
-xdg-screensaver { --help | --manual | --version }
+   xdg-screensaver { --help | --manual | --version }
 
 Description
 
-xdg-screensaver provides commands to control the screensaver.
+   xdg-screensaver provides commands to control the screensaver.
 
-xdg-screensaver is for use inside a desktop session only. It is not recommended
-to use xdg-screensaver as root.
+   xdg-screensaver is for use inside a desktop session only. It is
+   not recommended to use xdg-screensaver as root.
 
 Commands
 
-suspend WindowID
+   suspend WindowID
+          Suspends the screensaver and monitor power management.
+          WindowID must be the X Window ID of an existing window
+          of the calling application. The window must remain in
+          existence for the duration of the suspension.
 
-    Suspends the screensaver and monitor power management. WindowID must be the
-    X Window ID of an existing window of the calling application. The window
-    must remain in existance for the duration of the suspension.
+          WindowID can be represented as either a decimal number
+          or as a hexadecimal number consisting of the prefix 0x
+          followed by one or more hexadecimal digits.
 
-    WindowID can be represented as either a decimal number or as a hexadecimal
-    number consisting of the prefix 0x followed by one or more hexadecimal
-    digits.
+          The screensaver can be suspended in relation to multiple
+          windows at the same time. In that case screensaver
+          operation is only restored once the screensaver has been
+          resumed in relation to each of the windows
 
-    The screensaver can be suspended in relation to multiple windows at the
-    same time. In that case screensaver operation is only restored once the
-    screensaver has been resumed in relation to each of the windows
+   resume WindowID
+          Resume the screensaver and monitor power management
+          after being suspended. WindowID must be the same X
+          Window ID that was passed to a previous call of
+          xdg-screensaver suspend
 
-resume WindowID
-    Resume the screensaver and monitor power management after being suspended.
-    WindowID must be the same X Window ID that was passed to a previous call of
-    xdg-screensaver suspend
-activate
-    Turns the screensaver on immediately. This may result in the screen getting
-    locked, depending on existing system policies.
-lock
-    Lock the screen immediately.
-reset
-    Turns the screensaver off immediately. If the screen was locked the user
-    may be asked to authenticate first.
-status
-    Prints enabled to stdout if the screensaver is enabled to turn on after a
-    period of inactivity and prints disabled if the screensaver is not enabled.
+   activate
+          Turns the screensaver on immediately. This may result in
+          the screen getting locked, depending on existing system
+          policies.
+
+   lock
+          Lock the screen immediately.
+
+   reset
+          Turns the screensaver off immediately. If the screen was
+          locked the user may be asked to authenticate first.
+
+   status
+          Prints enabled to stdout if the screensaver is enabled
+          to turn on after a period of inactivity and prints
+          disabled if the screensaver is not enabled.
 
 Options
 
---help
-    Show command synopsis.
---manual
-    Show this manualpage.
---version
-    Show the xdg-utils version information.
+   --help
+          Show command synopsis.
+
+   --manual
+          Show this manual page.
+
+   --version
+          Show the xdg-utils version information.
 
 Exit Codes
 
-An exit code of 0 indicates success while a non-zero exit code indicates
-failure. The following failure codes can be returned:
+   An exit code of 0 indicates success while a non-zero exit code
+   indicates failure. The following failure codes can be returned:
 
-1
-    Error in command line syntax.
-3
-    A required tool could not be found.
-4
-    The action failed.
+   1
+          Error in command line syntax.
+
+   3
+          A required tool could not be found.
+
+   4
+          The action failed.
 
 Examples
 
 xdg-screensaver suspend 0x1c00007
 
-Causes the screensaver to be disabled till xdg-screensaver resume 0x1c00007 is
-called. 0x1c00007 must be the X Window ID of an existing window.
-
+   Causes the screensaver to be disabled till xdg-screensaver
+   resume 0x1c00007 is called. 0x1c00007 must be the X Window ID
+   of an existing window.
 _MANUALPAGE
 }
 
 usage()
 {
 cat << _USAGE
-xdg-screensaver - command line tool for controlling the screensaver
+   xdg-screensaver -- command line tool for controlling the
+   screensaver
 
 Synopsis
 
-xdg-screensaver suspend WindowID
+   xdg-screensaver suspend WindowID
 
-xdg-screensaver resume WindowID
+   xdg-screensaver resume WindowID
 
-xdg-screensaver { activate | lock | reset | status }
+   xdg-screensaver { activate | lock | reset | status }
 
-xdg-screensaver { --help | --manual | --version }
+   xdg-screensaver { --help | --manual | --version }
 
 _USAGE
 }
@@ -147,6 +161,64 @@ DEBUG()
   [ ${XDG_UTILS_DEBUG_LEVEL} -lt $1 ] && return 0;
   shift
   echo "$@" >&2
+}
+
+# This handles backslashes but not quote marks.
+first_word()
+{
+    read first rest
+    echo "$first"
+}
+
+#-------------------------------------------------------------
+# map a binary to a .desktop file
+binary_to_desktop_file()
+{
+    search="${XDG_DATA_HOME:-$HOME/.local/share}:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+    binary="`which "$1"`"
+    binary="`readlink -f "$binary"`"
+    base="`basename "$binary"`"
+    IFS=:
+    for dir in $search; do
+        unset IFS
+        [ "$dir" ] || continue
+        [ -d "$dir/applications" ] || [ -d "$dir/applnk" ] || continue
+        for file in "$dir"/applications/*.desktop "$dir"/applications/*/*.desktop "$dir"/applnk/*.desktop "$dir"/applnk/*/*.desktop; do
+            [ -r "$file" ] || continue
+            # Check to make sure it's worth the processing.
+            grep -q "^Exec.*$base" "$file" || continue
+            # Make sure it's a visible desktop file (e.g. not "preferred-web-browser.desktop").
+            grep -Eq "^(NoDisplay|Hidden)=true" "$file" && continue
+            command="`grep -E "^Exec(\[[^]=]*])?=" "$file" | cut -d= -f 2- | first_word`"
+            command="`which "$command"`"
+            if [ x"`readlink -f "$command"`" = x"$binary" ]; then
+                # Fix any double slashes that got added path composition
+                echo "$file" | sed -e 's,//*,/,g'
+                return
+            fi
+        done
+    done
+}
+
+#-------------------------------------------------------------
+# map a .desktop file to a binary
+## FIXME: handle vendor dir case
+desktop_file_to_binary()
+{
+    search="${XDG_DATA_HOME:-$HOME/.local/share}:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+    desktop="`basename "$1"`"
+    IFS=:
+    for dir in $search; do
+        unset IFS
+        [ "$dir" ] && [ -d "$dir/applications" ] || continue
+        file="$dir/applications/$desktop"
+        [ -r "$file" ] || continue
+        # Remove any arguments (%F, %f, %U, %u, etc.).
+        command="`grep -E "^Exec(\[[^]=]*])?=" "$file" | cut -d= -f 2- | first_word`"
+        command="`which "$command"`"
+        readlink -f "$command"
+        return
+    done
 }
 
 #-------------------------------------------------------------
@@ -257,7 +329,7 @@ check_vendor_prefix()
     [ -n "$file_label" ] || file_label="filename"
     file=`basename "$1"`
     case "$file" in
-       [a-zA-Z]*-*)
+       [[:alpha:]]*-*)
          return
          ;;
     esac
@@ -279,7 +351,7 @@ check_output_file()
         fi
     else
         DIR=`dirname "$1"`
-        if [ ! -w "$DIR" -o ! -x "$DIR" ]; then
+        if [ ! -w "$DIR" ] || [ ! -x "$DIR" ]; then
             exit_failure_file_permission_write "no permission to create file '$1'"
         fi
     fi
@@ -331,12 +403,75 @@ fi
 
 detectDE()
 {
-    if [ x"$KDE_FULL_SESSION" = x"true" ]; then DE=kde;
-    elif [ x"$GNOME_DESKTOP_SESSION_ID" != x"" ]; then DE=gnome;
-    elif `dbus-send --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.GetNameOwner string:org.gnome.SessionManager > /dev/null 2>&1` ; then DE=gnome;
-    elif xprop -root _DT_SAVE_MODE 2> /dev/null | grep ' = \"xfce4\"$' >/dev/null 2>&1; then DE=xfce;
-    elif [ x"$DESKTOP_SESSION" == x"LXDE" ]; then DE=lxde;
-    else DE=""
+    # see https://bugs.freedesktop.org/show_bug.cgi?id=34164
+    unset GREP_OPTIONS
+
+    if [ -n "${XDG_CURRENT_DESKTOP}" ]; then
+      case "${XDG_CURRENT_DESKTOP}" in
+         ENLIGHTENMENT)
+           DE=enlightenment;
+           ;;
+         GNOME)
+           DE=gnome;
+           ;;
+         KDE)
+           DE=kde;
+           ;;
+         LXDE)
+           DE=lxde;
+           ;;
+         MATE)
+           DE=mate;
+           ;;
+         XFCE)
+           DE=xfce
+           ;;
+      esac
+    fi
+
+    if [ x"$DE" = x"" ]; then
+      # classic fallbacks
+      if [ x"$KDE_FULL_SESSION" != x"" ]; then DE=kde;
+      elif [ x"$GNOME_DESKTOP_SESSION_ID" != x"" ]; then DE=gnome;
+      elif [ x"$MATE_DESKTOP_SESSION_ID" != x"" ]; then DE=mate;
+      elif `dbus-send --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.GetNameOwner string:org.gnome.SessionManager > /dev/null 2>&1` ; then DE=gnome;
+      elif xprop -root _DT_SAVE_MODE 2> /dev/null | grep ' = \"xfce4\"$' >/dev/null 2>&1; then DE=xfce;
+      elif xprop -root 2> /dev/null | grep -i '^xfce_desktop_window' >/dev/null 2>&1; then DE=xfce
+      elif echo $DESKTOP | grep -q '^Enlightenment'; then DE=enlightenment;
+      fi
+    fi
+
+    if [ x"$DE" = x"" ]; then
+      # fallback to checking $DESKTOP_SESSION
+      case "$DESKTOP_SESSION" in
+         gnome)
+           DE=gnome;
+           ;;
+         LXDE|Lubuntu)
+           DE=lxde; 
+           ;;
+         MATE)
+           DE=mate;
+           ;;
+         xfce|xfce4|'Xfce Session')
+           DE=xfce;
+           ;;
+      esac
+    fi
+
+    if [ x"$DE" = x"" ]; then
+      # fallback to uname output for other platforms
+      case "$(uname 2>/dev/null)" in 
+        Darwin)
+          DE=darwin;
+          ;;
+      esac
+    fi
+
+    if [ x"$DE" = x"gnome" ]; then
+      # gnome-default-applications-properties is only available in GNOME 2.x
+      # but not in GNOME 3.x
+      which gnome-default-applications-properties > /dev/null 2>&1  || DE="gnome3"
     fi
 }
 
@@ -347,7 +482,6 @@ detectDE()
 
 kfmclient_fix_exit_code()
 {
-    [ x"$KDE_SESSION_VERSION" = x"4" ] && return 0;
     version=`LC_ALL=C.UTF-8 kde-config --version 2>/dev/null | grep '^KDE'`
     major=`echo $version | sed 's/KDE.*: \([0-9]\).*/\1/'`
     minor=`echo $version | sed 's/KDE.*: [0-9]*\.\([0-9]\).*/\1/'`
@@ -429,16 +563,20 @@ perform_action()
       screensaver_gnome_screensaver "$1"
       ;;
 
+    mate_screensaver)
+      screensaver_mate_screensaver "$1"
+      ;;
+
     xscreensaver)
       screensaver_xscreensaver "$1"
       ;;
 
     '')
-      screensaver_xserver "$1"
+      [ -n "$DISPLAY" ] && screensaver_xserver "$1"
       ;;
   esac
 
-  if [ "$1" = "suspend" ] ; then
+  if [ -n "$DISPLAY" -a "$1" = "suspend" ] ; then
       # Save DPMS state
       if xset -q | grep 'DPMS is Enabled' > /dev/null 2> /dev/null; then
           test "${TMPDIR+set}" = set || TMPDIR=/tmp
@@ -763,16 +901,18 @@ screensaver_suspend_loop()
 
 screensaver_gnome_screensaver()
 {
-# TODO
-# There seems to be a DBUS interface for gnome-screensaver
-# See http://lists.mplayerhq.hu/pipermail/mplayer-dev-eng/2006-April/042579.html and
-# http://cvs.gnome.org/viewcvs/gnome-screensaver/src/gs-listener-dbus.c?rev=1.36&view=log
-# A problem seems to be that Inhibit is tied to the lifetime of the DBUS appname and
-# this can not be used from a script
+# DBUS interface for gnome-screensaver
+# http://people.gnome.org/~mccann/gnome-screensaver/docs/gnome-screensaver.html
     case "$1" in
         suspend)
-        screensaver_suspend_loop gnome-screensaver-command --poke
-        result=0
+        screensaver_suspend_loop \
+        dbus-send --session \
+                  --dest=org.gnome.ScreenSaver \
+                  --type=method_call \
+                  /org/gnome/ScreenSaver \
+                  org.gnome.ScreenSaver.SimulateUserActivity \
+                  2> /dev/null
+        result=$?
         ;;
 
         resume)
@@ -781,7 +921,13 @@ screensaver_gnome_screensaver()
         ;;
 
         activate)
-        gnome-screensaver-command --activate > /dev/null 2> /dev/null
+        dbus-send --session \
+                  --dest=org.gnome.ScreenSaver \
+                  --type=method_call \
+                  /org/gnome/ScreenSaver \
+                  org.gnome.ScreenSaver.SetActive \
+                  boolean:true \
+                  2> /dev/null
         result=$?
         ;;
 
@@ -792,18 +938,107 @@ screensaver_gnome_screensaver()
 
         reset)
         # Turns the screensaver off right now
-        gnome-screensaver-command --deactivate > /dev/null 2> /dev/null
+        dbus-send --session \
+                  --dest=org.gnome.ScreenSaver \
+                  --type=method_call \
+                  /org/gnome/ScreenSaver \
+                  org.gnome.ScreenSaver.SimulateUserActivity \
+                 2> /dev/null
         result=$?
         ;;
 
         status)
-        result=0
-        if [ -f "$screensaver_file" ] ; then
-            echo "disabled"
-        elif gnome-screensaver-command --query > /dev/null 2> /dev/null; then
+        status=`dbus-send --session \
+                          --dest=org.gnome.ScreenSaver \
+                          --type=method_call \
+                          --print-reply \
+                          --reply-timeout=2000 \
+                          /org/gnome/ScreenSaver \
+                          org.gnome.ScreenSaver.GetActive \
+                          | grep boolean | cut -d ' ' -f 5`
+        result=$?
+        if [ x"$status" = "xtrue" -o x"$status" = "xfalse" ]; then
             echo "enabled"
+        elif [ x"$result" != "x0" ]; then
+            echo "ERROR: dbus org.gnome.ScreenSaver.GetActive returned '$status'" >&2
+            return 1
         else
-            # Something is wrong
+            echo "disabled"
+        fi
+        ;;
+
+        *)
+        echo "ERROR: Unknown command '$1" >&2
+        return 1
+        ;;
+    esac
+}
+
+screensaver_mate_screensaver()
+{
+# DBUS interface for mate-screensaver
+# This is same as gnome's for now but may change in the future as MATE
+# does not follow gnome's developement necessarily.
+    case "$1" in
+        suspend)
+        screensaver_suspend_loop \
+        dbus-send --session \
+                  --dest=org.mate.ScreenSaver \
+                  --type=method_call \
+                  /org/mate/ScreenSaver \
+                  org.mate.ScreenSaver.SimulateUserActivity \
+                  2> /dev/null
+        result=$?
+        ;;
+
+        resume)
+        # Automatic resume when $screensaver_file disappears
+        result=0
+        ;;
+
+        activate)
+        dbus-send --session \
+                  --dest=org.mate.ScreenSaver \
+                  --type=method_call \
+                  /org/mate/ScreenSaver \
+                  org.mate.ScreenSaver.SetActive \
+                  boolean:true \
+                  2> /dev/null
+        result=$?
+        ;;
+
+        lock)
+        mate-screensaver-command --lock > /dev/null 2> /dev/null
+        result=$?
+        ;;
+
+        reset)
+        # Turns the screensaver off right now
+        dbus-send --session \
+                  --dest=org.mate.ScreenSaver \
+                  --type=method_call \
+                  /org/mate/ScreenSaver \
+                  org.mate.ScreenSaver.SimulateUserActivity \
+                 2> /dev/null
+        result=$?
+        ;;
+
+        status)
+        status=`dbus-send --session \
+                          --dest=org.mate.ScreenSaver \
+                          --type=method_call \
+                          --print-reply \
+                          --reply-timeout=2000 \
+                          /org/mate/ScreenSaver \
+                          org.mate.ScreenSaver.GetActive \
+                          | grep boolean | cut -d ' ' -f 5`
+        result=$?
+        if [ x"$status" = "xtrue" -o x"$status" = "xfalse" ]; then
+            echo "enabled"
+        elif [ x"$result" != "x0" ]; then
+            echo "ERROR: dbus org.mate.ScreenSaver.GetActive returned '$status'" >&2
+            return 1
+        else
             echo "disabled"
         fi
         ;;
@@ -917,7 +1152,9 @@ detectDE
 # Consider "xscreensaver" a separate DE
 xscreensaver-command -version 2> /dev/null | grep XScreenSaver > /dev/null && DE="xscreensaver"
 # Consider "gnome-screensaver" a separate DE
-gnome-screensaver-command -q > /dev/null 2>&1 && DE="gnome_screensaver"
+dbus-send --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.GetNameOwner string:org.gnome.ScreenSaver > /dev/null 2>&1 && DE="gnome_screensaver"
+# Consider "mate-screensaver" a separate DE
+dbus-send --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.GetNameOwner string:org.mate.ScreenSaver > /dev/null 2>&1 && DE="mate_screensaver"
 
 if [ "$action" = "resume" ] ; then
     do_resume
@@ -936,4 +1173,3 @@ if [ $result -eq 0 ]; then
 else
     exit_failure_operation_failed
 fi
-
