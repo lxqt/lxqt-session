@@ -11,15 +11,13 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Welcome to LXDE-Qt</string>
+   <string>Welcome to LXQt</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>&lt;b&gt;Welcome to LXDE-Qt&lt;/b&gt;
-&lt;p&gt;
-Before starting to use the LXDE-Qt, you might want to select the Windows Manager:</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="wordWrap">
       <bool>true</bool>
@@ -70,7 +68,7 @@ Before starting to use the LXDE-Qt, you might want to select the Windows Manager
    <item>
     <widget class="QLabel" name="label_2">
      <property name="text">
-      <string>You can change the Window Manager later at any time via LxQt Session Configurator.</string>
+      <string>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</string>
      </property>
      <property name="wordWrap">
       <bool>true</bool>
