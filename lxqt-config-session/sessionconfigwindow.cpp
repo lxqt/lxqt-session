@@ -24,7 +24,7 @@
  * Boston, MA 02110-1301 USA
  *
  * END_COMMON_COPYRIGHT_HEADER */
- 
+
 #include <QtGui/QLineEdit>
 #include <QtGui/QMessageBox>
 #include <QtGui/QFileDialog>
@@ -40,7 +40,7 @@
 
 
 SessionConfigWindow::SessionConfigWindow() :
-      LxQt::ConfigDialog(tr("LxQt Session Configuration"), new LxQt::Settings("session"), 0)
+      LxQt::ConfigDialog(tr("LXQt Session Settings"), new LxQt::Settings("session"), 0)
 {
     BasicSettings* basicSettings = new BasicSettings(mSettings, this);
     addPage(basicSettings, tr("Basic Settings"), "preferences-desktop-display-color");
@@ -117,11 +117,11 @@ void SessionConfigWindow::updateCfgComboBox(QComboBox * cb,
     QString fname = QFileDialog::getOpenFileName(cb, prompt, "/usr/bin/");
     if (fname.isEmpty())
         return;
-    
+
     QFileInfo fi(fname);
     if (!fi.exists() || !fi.isExecutable())
         return;
-    
+
     cb->lineEdit()->setText(fname);
 }
 

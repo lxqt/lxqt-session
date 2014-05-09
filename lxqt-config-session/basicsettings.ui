@@ -56,7 +56,7 @@
    <item row="2" column="0">
     <widget class="QGroupBox" name="groupBox_2">
      <property name="title">
-      <string>LxQt Modules</string>
+      <string>LXQt Modules</string>
      </property>
      <layout class="QGridLayout" name="gridLayout">
       <item row="1" column="1">
