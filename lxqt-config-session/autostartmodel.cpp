@@ -1,8 +1,8 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LxQt - a lightweight, Qt based, desktop toolset
- * http://razor-qt.org, http://lxde.org/
+ * LXQt - The Lightweight Desktop Environment
+ * http://lxqt.org
  *
  * Copyright (C) 2011  Alec Moskvin <alecm@gmx.com>
  *
@@ -32,15 +32,15 @@ AutoStartItemModel::AutoStartItemModel(QObject* parent) :
     QAbstractItemModel(parent),
     mItemMap(AutostartItem::createItemMap()),
     mGlobalIndex(QAbstractItemModel::createIndex(0, 0)),
-    mLxQtIndex(QAbstractItemModel::createIndex(1, 0))
+    mLXQtIndex(QAbstractItemModel::createIndex(1, 0))
 {
     QMap<QString,AutostartItem>::iterator iter;
     for (iter = mItemMap.begin(); iter != mItemMap.end(); ++iter)
     {
         if (!iter.value().file().value("X-LXQt-Module", false).toBool())
         {
-            if (showOnlyInLxQt(iter.value().file()))
-                mLxQtItems.append(iter.key());
+            if (showOnlyInLXQt(iter.value().file()))
+                mLXQtItems.append(iter.key());
             else
                 mGlobalItems.append(iter.key());
         }
@@ -79,8 +79,8 @@ bool AutoStartItemModel::setEntry(const QModelIndex& index, XdgDesktopFile entry
     if (!overwrite && replacing)
         return false;
 
-    if (parent == mLxQtIndex)
-        entry.setValue("OnlyShowIn", "LxQt;");
+    if (parent == mLXQtIndex)
+        entry.setValue("OnlyShowIn", "LXQt;");
 
     mItemMap[fileName].setFile(entry);
 
@@ -94,7 +94,7 @@ bool AutoStartItemModel::setEntry(const QModelIndex& index, XdgDesktopFile entry
     if (parent == mGlobalIndex)
         mGlobalItems.append(fileName);
     else
-        mLxQtItems.append(fileName);
+        mLXQtItems.append(fileName);
     endInsertRows();
 
     return true;
@@ -108,7 +108,7 @@ bool AutoStartItemModel::setData(const QModelIndex& index, const QVariant& value
         if (index.parent() == mGlobalIndex)
             name = mGlobalItems.value(index.row());
         else
-            name = mLxQtItems.value(index.row());
+            name = mLXQtItems.value(index.row());
 
         mItemMap[name].setEnabled(value == Qt::Checked);
         emit dataChanged(index, index);
@@ -130,7 +130,7 @@ bool AutoStartItemModel::removeRow(int row, const QModelIndex& parent)
     if (parent == mGlobalIndex)
         item = mGlobalItems[row];
     else
-        item = mLxQtItems[row];
+        item = mLXQtItems[row];
 
     if (!mItemMap[item].removeLocal())
     {
@@ -143,7 +143,7 @@ bool AutoStartItemModel::removeRow(int row, const QModelIndex& parent)
     if (parent == mGlobalIndex)
         mGlobalItems.removeAt(row);
     else
-        mLxQtItems.removeAt(row);
+        mLXQtItems.removeAt(row);
     endRemoveRows();
 
     if (mItemMap.value(item).isEmpty())
@@ -158,12 +158,12 @@ QModelIndex AutoStartItemModel::index(int row, int column, const QModelIndex& pa
         if (row == 0)
             return mGlobalIndex;
         else if (row == 1)
-            return mLxQtIndex;
+            return mLXQtIndex;
     }
     else if (parent == mGlobalIndex && row < mGlobalItems.size())
         return QAbstractItemModel::createIndex(row, column, (void*)&mGlobalItems[row]);
-    else if (parent == mLxQtIndex && row < mLxQtItems.size())
-        return QAbstractItemModel::createIndex(row, column, (void*)&mLxQtItems[row]);
+    else if (parent == mLXQtIndex && row < mLXQtItems.size())
+        return QAbstractItemModel::createIndex(row, column, (void*)&mLXQtItems[row]);
     return QModelIndex();
 }
 
@@ -176,7 +176,7 @@ QVariant AutoStartItemModel::data(const QModelIndex& index, int role) const
             if (index.row() == 0)
                 return QString(tr("Global Autostart"));
             else if (index.row() == 1)
-                return QString(tr("LxQt Autostart"));
+                return QString(tr("LXQt Autostart"));
         }
         return QVariant();
     }
@@ -240,8 +240,8 @@ QModelIndex AutoStartItemModel::parent(const QModelIndex& child) const
     QString name = indexToName(child);
     if (!name.isEmpty())
     {
-        if (showOnlyInLxQt(mItemMap.value(name).file()))
-           return mLxQtIndex;
+        if (showOnlyInLXQt(mItemMap.value(name).file()))
+           return mLXQtIndex;
         return mGlobalIndex;
     }
     return QModelIndex();
@@ -259,14 +259,14 @@ int AutoStartItemModel::rowCount(const QModelIndex& parent) const
         return 2;
     if (parent == mGlobalIndex)
         return mGlobalItems.size();
-    if (parent == mLxQtIndex)
-        return mLxQtItems.size();
+    if (parent == mLXQtIndex)
+        return mLXQtItems.size();
     return 0;
 }
 
-bool AutoStartItemModel::showOnlyInLxQt(const XdgDesktopFile& file)
+bool AutoStartItemModel::showOnlyInLXQt(const XdgDesktopFile& file)
 {
-    return file.value("OnlyShowIn") == "LxQt;";
+    return file.value("OnlyShowIn") == "LXQt;";
 }
 
 /*

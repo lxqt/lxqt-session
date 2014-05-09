@@ -104,7 +104,7 @@ void LxQtModuleManager::startAutostartApps()
     for (XdgDesktopFileList::iterator i = fileList.begin(); i != fileList.end(); ++i)
     {
         qDebug() << "start" << i->fileName();
-        if (i->value("X-LxQt-Need-Tray", false).toBool())
+        if (i->value("X-LXQt-Need-Tray", false).toBool())
             trayApps.append(&(*i));
         else
             startProcess(*i);

@@ -62,12 +62,12 @@ public slots:
 private:
     QMap<QString, AutostartItem> mItemMap;
     QPersistentModelIndex mGlobalIndex;
-    QPersistentModelIndex mLxQtIndex;
+    QPersistentModelIndex mLXQtIndex;
     QStringList mGlobalItems;
-    QStringList mLxQtItems;
+    QStringList mLXQtItems;
 
     static QString indexToName(const QModelIndex& index);
-    static bool showOnlyInLxQt(const XdgDesktopFile& file);
+    static bool showOnlyInLXQt(const XdgDesktopFile& file);
 };
 
 Q_DECLARE_OPERATORS_FOR_FLAGS(AutoStartItemModel::ActiveButtons)
