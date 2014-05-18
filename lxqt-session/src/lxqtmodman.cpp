@@ -254,7 +254,7 @@ QStringList LxQtModuleManager::listModules() const
 void LxQtModuleManager::startConfUpdate()
 {
     XdgDesktopFile desktop(XdgDesktopFile::ApplicationType, ":lxqt-confupdate", "lxqt-confupdate --watch");
-    desktop.setValue("Name", "LxQt config updater");
+    desktop.setValue("Name", "LXQt config updater");
     desktop.setValue("X-LXQt-Module", true);
     startProcess(desktop);
 }
@@ -281,8 +281,8 @@ void LxQtModuleManager::restartModules(int exitCode, QProcess::ExitStatus exitSt
                     mCrashReport[proc].pop_back();
                 if (mCrashReport[proc].length() >= MAX_CRASHES_PER_APP)
                 {
-                    QMessageBox::warning(0, tr("LxQt Session Crash Report"),
-                                        tr("Application '%1' crashed too many times. Its autorestart has been disabled for current session.").arg(procName));
+                    QMessageBox::warning(0, tr("Crash Report"),
+                                        tr("<b>%1</b> crashed too many times. Its autorestart has been disabled until next login.").arg(procName));
                 }
                 else
                 {
