@@ -77,11 +77,14 @@ SessionApplication::~SessionApplication()
     delete modman;
 }
 
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+// this is no longer supported in Qt5
 bool SessionApplication::x11EventFilter(XEvent* event)
 {
     modman->x11EventFilter(event);
     return false;
 }
+#endif
 
 bool SessionApplication::startup()
 {

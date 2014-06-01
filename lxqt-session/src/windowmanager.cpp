@@ -27,10 +27,10 @@
  
 #include "windowmanager.h"
 
-#include <QtCore/QObject>
-#include <QtCore/QStringList>
-#include <QtCore/QFileInfo>
-#include <QtCore/QDir>
+#include <QObject>
+#include <QStringList>
+#include <QFileInfo>
+#include <QDir>
 #include <LXQt/Settings>
 #include <QDebug>
 

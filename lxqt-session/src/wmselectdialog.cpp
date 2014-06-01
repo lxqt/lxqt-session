@@ -28,14 +28,14 @@
 
 #include "wmselectdialog.h"
 #include "ui_wmselectdialog.h"
-#include <QtGui/QTreeWidget>
-#include <QtCore/QVariant>
+#include <QTreeWidget>
+#include <QVariant>
 #include <stdlib.h>
-#include <QtCore/QFileInfo>
-#include <QtCore/QDir>
-#include <QtGui/QApplication>
-#include <QtGui/QCloseEvent>
-#include <QtGui/QFileDialog>
+#include <QFileInfo>
+#include <QDir>
+#include <QApplication>
+#include <QCloseEvent>
+#include <QFileDialog>
 #include <QDebug>
 
 #define TYPE_ROLE   Qt::UserRole + 1

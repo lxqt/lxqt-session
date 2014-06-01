@@ -46,8 +46,13 @@ BasicSettings::BasicSettings(LxQt::Settings *settings, QWidget *parent) :
     restoreSettings();
 
     ui->moduleView->setModel(m_moduleModel);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+    ui->moduleView->header()->setSectionResizeMode(0, QHeaderView::Stretch);
+    ui->moduleView->header()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
+#else
     ui->moduleView->header()->setResizeMode(0, QHeaderView::Stretch);
     ui->moduleView->header()->setResizeMode(1, QHeaderView::ResizeToContents);
+#endif
 }
 
 BasicSettings::~BasicSettings()

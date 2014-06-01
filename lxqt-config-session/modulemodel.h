@@ -26,7 +26,7 @@
 #ifndef MODULEMODEL_H
 #define MODULEMODEL_H
 
-#include <QtGui/QStringListModel>
+#include <QStringListModel>
 #include <QtDBus/QDBusInterface>
 #include "autostartitem.h"
 

@@ -25,7 +25,7 @@
 #ifndef AUTOSTARTEDIT_H
 #define AUTOSTARTEDIT_H
 
-#include <QtGui/QDialog>
+#include <QDialog>
 
 namespace Ui {
 class AutoStartEdit;

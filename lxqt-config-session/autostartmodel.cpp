@@ -22,7 +22,7 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <QtCore/QFileInfo>
+#include <QFileInfo>
 #include <qtxdg/xdgdirs.h>
 #include <qtxdg/xdgicon.h>
 

@@ -28,7 +28,7 @@
 #ifndef DEFAULTAPPS_H
 #define DEFAULTAPPS_H
 
-#include <QtGui/QWidget>
+#include <QWidget>
 
 namespace Ui {
 class DefaultAppsPage;

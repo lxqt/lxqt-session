@@ -31,7 +31,11 @@ class SessionApplication : public LxQt::Application
 public:
     SessionApplication(int& argc, char** argv);
     ~SessionApplication();
+
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+    // this is no longer supported in Qt5
     virtual bool x11EventFilter(XEvent* event );
+#endif
 
 private Q_SLOTS:
     bool startup();

@@ -28,7 +28,7 @@
 #ifndef BASICSETTINGS_H
 #define BASICSETTINGS_H
 
-#include <QtGui/QWidget>
+#include <QWidget>
 #include <LXQt/Settings>
 
 #include "modulemodel.h"

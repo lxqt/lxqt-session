@@ -25,7 +25,7 @@
 #include "autostartitem.h"
 #include <qtxdg/xdgautostart.h>
 #include <qtxdg/xdgdirs.h>
-#include <QtCore/QFileInfo>
+#include <QFileInfo>
 
 AutostartItem::AutostartItem() :
     LxQt::AutostartEntry()

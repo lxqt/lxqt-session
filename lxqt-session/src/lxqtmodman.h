@@ -28,13 +28,17 @@
 #ifndef RAZORMODMAN_H
 #define RAZORMODMAN_H
 
-#include <QtCore/QProcess>
-#include <QtCore/QList>
-#include <QtCore/QMap>
-#include <QtCore/QTimer>
-#include <qtxdg/xdgdesktopfile.h>
+#include <QProcess>
+#include <QList>
+#include <QMap>
+#include <QTimer>
+#include <XdgDesktopFile>
 #include <QEventLoop>
 #include <time.h>
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+#include <QAbstractNativeEventFilter>
+#endif
 
 class LxQtModule;
 namespace LxQt {
@@ -66,6 +70,9 @@ Potential process recovering is done in \see restartModules()
 */
 
 class LxQtModuleManager : public QObject
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+	, public QAbstractNativeEventFilter // we need to filter some native events
+#endif
 {
     Q_OBJECT
 
@@ -83,7 +90,15 @@ public:
     //! \brief List the running modules, identified by their file names
     QStringList listModules() const;
 
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+    // Qt5 uses native event filter
+    virtual bool nativeEventFilter(const QByteArray & eventType, void * message, long * result);
+#else
+    // X11 event is no longer supported in Qt5
     bool x11EventFilter(XEvent* event);
+#endif
+    void x11PropertyNotify(unsigned long atom); // called in X11 only
+    void x11ClientMessage(void* _event); // called in X11 only
 
     //! \brief Read configuration and start processes
     void startup(LxQt::Settings& s);

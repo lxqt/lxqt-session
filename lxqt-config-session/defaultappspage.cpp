@@ -25,7 +25,7 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <QtGui/QLineEdit>
+#include <QLineEdit>
 
 #include "defaultappspage.h"
 #include "ui_defaultappspage.h"

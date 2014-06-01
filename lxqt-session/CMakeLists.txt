@@ -5,17 +5,21 @@ if (NOT CMAKE_BUILD_TYPE)
    set ( CMAKE_BUILD_TYPE Release )
 endif (NOT CMAKE_BUILD_TYPE)
 
-add_definitions ( -Wall )
-find_package ( Qt4 REQUIRED )
-find_package ( X11 REQUIRED )
+add_definitions ( -Wall ) # FIXME: this is compiler specific
+
+if(USE_QT4)
+	set(QTX_INCLUDE_DIRS ${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR} ${QT_QTDBUS_INCLUDE_DIR} ${QT_QTXML_INCLUDE_DIR})
+	set(QTX_LIBRARIES ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTDBUS_LIBRARY})
+elseif(USE_QT5)
+	set(QTX_INCLUDE_DIRS ${Qt5Widgets_INCLUDE_DIRS} ${Qt5DBus_INCLUDE_DIRS} ${Qt5X11Extras_INCLUDE_DIRS})
+	set(QTX_LIBRARIES ${Qt5Widgets_LIBRARIES} ${Qt5DBus_LIBRARIES} ${Qt5X11Extras_LIBRARIES})
+endif()
 
 include(LxQtLibSuffix)
 
-include ( ${QT_USE_FILE} )
 include_directories (
     ${CMAKE_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}
-    ${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR} ${QT_QTDBUS_INCLUDE_DIR}
-    ${X11_INCLUDE_DIR} ${CMAKE_SOURCE_DIR}/libraries/
+    ${QTX_INCLUDE_DIRS} ${XCB_INCLUDE_DIRS} ${X11_INCLUDE_DIR}
     src)
 
 set ( lxqt-session_HDRS
@@ -51,12 +55,17 @@ lxqt_translate_ts(lxqt-runner_QM_FILES
 
 #************************************************
 
-QT4_WRAP_CPP(MOCS ${lxqt-session_MOCS})
-qt4_wrap_ui(UIS ${lxqt-session_UI})
+if(USE_QT4)
+	qt4_wrap_cpp(MOCS ${lxqt-session_MOCS})
+	qt4_wrap_ui(UIS ${lxqt-session_UI})
+elseif(USE_QT5)
+	qt5_wrap_cpp(MOCS ${lxqt-session_MOCS})
+	qt5_wrap_ui(UIS ${lxqt-session_UI})
+endif()
 
 add_executable ( lxqt-session ${lxqt-session_SRCS} ${UIS} ${RSCS} ${lxqt-runner_QM_FILES} ${MOCS} )
 add_dependencies( lxqt-session lxqt qtxdg)
-target_link_libraries ( lxqt-session ${X11_LIBRARIES} ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTDBUS_LIBRARY} lxqt qtxdg)
+target_link_libraries ( lxqt-session ${XCB_LIBRARIES} ${X11_LIBRARIES} ${QTX_LIBRARIES} ${LXQT_LIBRARIES} ${QTXDG_LIBRARIES})
 INSTALL(TARGETS lxqt-session RUNTIME DESTINATION bin)
 
 if (NOT DEFINED BUNDLE_XDG_UTILS)

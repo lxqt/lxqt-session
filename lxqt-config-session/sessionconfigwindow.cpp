@@ -25,9 +25,9 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <QtGui/QLineEdit>
-#include <QtGui/QMessageBox>
-#include <QtGui/QFileDialog>
+#include <QLineEdit>
+#include <QMessageBox>
+#include <QFileDialog>
 
 #include <LXQt/Settings>
 

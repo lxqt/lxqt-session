@@ -28,7 +28,7 @@
 #ifndef SESSIONCONFIGWINDOW_H
 #define SESSIONCONFIGWINDOW_H
 
-#include <QtGui/QComboBox>
+#include <QComboBox>
 #include <LXQt/ConfigDialog>
 
 

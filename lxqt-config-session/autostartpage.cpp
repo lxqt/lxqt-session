@@ -27,7 +27,7 @@
 
 #include "autostartedit.h"
 
-#include <QtGui/QMessageBox>
+#include <QMessageBox>
 
 AutoStartPage::AutoStartPage(QWidget* parent) :
     QWidget(parent),

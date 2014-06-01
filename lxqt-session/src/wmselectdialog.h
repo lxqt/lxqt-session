@@ -28,7 +28,7 @@
 #ifndef WMSELECTDIALOG_H
 #define WMSELECTDIALOG_H
 
-#include <QtGui/QDialog>
+#include <QDialog>
 #include "windowmanager.h"
 class QModelIndex;
 

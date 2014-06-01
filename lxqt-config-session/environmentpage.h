@@ -28,7 +28,7 @@
 #ifndef ENVIRONMENTPAGE_H
 #define ENVIRONMENTPAGE_H
 
-#include <QtGui/QTreeWidgetItem>
+#include <QTreeWidgetItem>
 #include <LXQt/Settings>
 
 namespace Ui {

@@ -25,8 +25,8 @@
 #ifndef AUTOSTARTPAGE_H
 #define AUTOSTARTPAGE_H
 
-#include <QtCore/QModelIndex>
-#include <QtGui/QWidget>
+#include <QModelIndex>
+#include <QWidget>
 #include "autostartmodel.h"
 
 namespace Ui {

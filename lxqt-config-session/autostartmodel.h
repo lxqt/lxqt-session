@@ -25,7 +25,7 @@
 #ifndef AUTOSTARTMODEL_H
 #define AUTOSTARTMODEL_H
 
-#include <QtCore/QAbstractItemModel>
+#include <QAbstractItemModel>
 #include <qtxdg/xdgautostart.h>
 
 #include "autostartitem.h"
