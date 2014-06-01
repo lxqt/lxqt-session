@@ -26,7 +26,7 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include "lxqtmodman.h"
-#include <lxqt/lxqtsettings.h>
+#include <LXQt/Settings>
 #include <qtxdg/xdgautostart.h>
 #include <qtxdg/xdgdirs.h>
 #include <unistd.h>
@@ -39,7 +39,7 @@
 #include <QFileSystemWatcher>
 #include <QDateTime>
 #include "wmselectdialog.h"
-#include <lxqt/lxqtxfitman.h>
+#include <LXQt/XfitMan>
 #include "windowmanager.h"
 #include <wordexp.h>
 

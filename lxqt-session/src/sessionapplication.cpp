@@ -21,7 +21,7 @@
 #include "sessiondbusadaptor.h"
 #include "lxqtmodman.h"
 #include <unistd.h>
-#include <lxqt/lxqtsettings.h>
+#include <LXQt/Settings>
 #include <QProcess>
 #include <QDebug>
 

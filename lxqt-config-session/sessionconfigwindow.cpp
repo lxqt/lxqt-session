@@ -29,7 +29,7 @@
 #include <QtGui/QMessageBox>
 #include <QtGui/QFileDialog>
 
-#include <lxqt/lxqtsettings.h>
+#include <LXQt/Settings>
 
 #include "sessionconfigwindow.h"
 #include "../lxqt-session/src/windowmanager.h"

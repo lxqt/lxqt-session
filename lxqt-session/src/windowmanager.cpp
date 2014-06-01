@@ -31,7 +31,7 @@
 #include <QtCore/QStringList>
 #include <QtCore/QFileInfo>
 #include <QtCore/QDir>
-#include <lxqt/lxqtsettings.h>
+#include <LXQt/Settings>
 #include <QDebug>
 
 

@@ -25,7 +25,7 @@
 #ifndef AUTOSTARTITEM_H
 #define AUTOSTARTITEM_H
 
-#include <lxqt/lxqtautostartentry.h>
+#include <LXQt/AutostartEntry>
 
 /*! \brief The AutostartItem class provides an interface for staging configuration of individual
 autostart items. All changes are made in memory until commit() is called.

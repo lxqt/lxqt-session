@@ -29,7 +29,7 @@
 #define ENVIRONMENTPAGE_H
 
 #include <QtGui/QTreeWidgetItem>
-#include <lxqt/lxqtsettings.h>
+#include <LXQt/Settings>
 
 namespace Ui {
 class EnvironmentPage;

@@ -29,7 +29,7 @@
 #define BASICSETTINGS_H
 
 #include <QtGui/QWidget>
-#include <lxqt/lxqtsettings.h>
+#include <LXQt/Settings>
 
 #include "modulemodel.h"
 

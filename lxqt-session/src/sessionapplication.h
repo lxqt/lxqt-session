@@ -20,8 +20,8 @@
 #ifndef SESSIONAPPLICATION_H
 #define SESSIONAPPLICATION_H
 
-#include <lxqt/lxqtapplication.h>
-#include <lxqt/lxqtsettings.h>
+#include <LXQt/Application>
+#include <LXQt/Settings>
 
 class LxQtModuleManager;
 

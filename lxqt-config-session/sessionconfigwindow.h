@@ -29,7 +29,7 @@
 #define SESSIONCONFIGWINDOW_H
 
 #include <QtGui/QComboBox>
-#include <lxqt/lxqtconfigdialog.h>
+#include <LXQt/ConfigDialog>
 
 
 class SessionConfigWindow : public LxQt::ConfigDialog
