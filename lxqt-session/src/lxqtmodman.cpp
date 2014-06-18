@@ -410,13 +410,12 @@ void LxQtModuleManager::x11ClientMessage(void* _event)
     xcb_client_message_event_t* event = reinterpret_cast<xcb_client_message_event_t*>(_event);
     type = event->type;
     uint32_t* data32 = event->data.data32;
-    screen = QX11Info::appScreen();
 #else
     XClientMessageEvent* event = reinterpret_cast<XClientMessageEvent*>(_event);
     type = event->message_type;
-    long* data32 = data->l;
-    screen = QX11Info::screen();
+    long* data32 = event->data.l;
 #endif
+    screen = QX11Info::appScreen();
 
 	if(!mTrayStarted) // systray is not started yet
 	{
@@ -466,7 +465,7 @@ bool LxQtModuleManager::x11EventFilter(XEvent* event)
     if (event->type == PropertyNotify)
 		x11PropertyNotify(event->xproperty.atom);
     else if(event->type == ClientMessage) // StructureNotifyMask is needed for this
-		x11ClientMessage(event->xclient.message_type, &event->xclient.data);
+		x11ClientMessage(event);
     return false;
 }
 #endif

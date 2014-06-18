@@ -9,7 +9,7 @@ add_definitions ( -Wall ) # FIXME: this is compiler specific
 if(USE_QT5)
 	set(QTX_INCLUDE_DIRS "")
 	set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
-elseif(USE_QT5)
+else()
 	set(QTX_INCLUDE_DIRS ${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR} ${QT_QTDBUS_INCLUDE_DIR} ${QT_QTXML_INCLUDE_DIR})
 	set(QTX_LIBRARIES ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTDBUS_LIBRARY})
 endif()

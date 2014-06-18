@@ -25,8 +25,8 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#ifndef RAZORMODMAN_H
-#define RAZORMODMAN_H
+#ifndef LXQTMODMAN_H
+#define LXQTMODMAN_H
 
 #include <QProcess>
 #include <QList>
@@ -70,9 +70,11 @@ Potential process recovering is done in \see restartModules()
 */
 
 class LxQtModuleManager : public QObject
+#ifndef Q_MOC_RUN // Qt4 moc has some problem handling multiple inheritence with conditional compilation, disable it
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-	, public QAbstractNativeEventFilter // we need to filter some native events
+	, public QAbstractNativeEventFilter // we need to filter some native events in Qt5
 #endif
+#endif // Q_MOC_RUN
 {
     Q_OBJECT
 
