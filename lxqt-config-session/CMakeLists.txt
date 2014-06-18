@@ -2,12 +2,12 @@ project(lxqt-config-session)
 
 add_definitions ( -Wall ) # FIXME: this is compiler specific
 
-if(USE_QT4)
+if(USE_QT5)
+	set(QTX_INCLUDE_DIRS "")
+	set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
+else()
 	set(QTX_INCLUDE_DIRS ${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR} ${QT_QTDBUS_INCLUDE_DIR} ${QT_QTXML_INCLUDE_DIR})
 	set(QTX_LIBRARIES ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTDBUS_LIBRARY})
-elseif(USE_QT5)
-	set(QTX_INCLUDE_DIRS ${Qt5Widgets_INCLUDE_DIRS} ${Qt5DBus_INCLUDE_DIRS} ${Qt5X11Extras_INCLUDE_DIRS})
-	set(QTX_LIBRARIES ${Qt5Widgets_LIBRARIES} ${Qt5DBus_LIBRARIES} ${Qt5X11Extras_LIBRARIES})
 endif()
 
 include_directories (
@@ -21,17 +21,6 @@ set( lxqt-sessioncfg_HDRS
     autostartpage.h
     autostartmodel.h
     autostartitem.h
-    autostartedit.h
-    defaultappspage.h
-    environmentpage.h
-)
-
-set( lxqt-sessioncfg_MOCS
-    sessionconfigwindow.h
-    basicsettings.h
-    modulemodel.h
-    autostartpage.h
-    autostartmodel.h
     autostartedit.h
     defaultappspage.h
     environmentpage.h
@@ -59,12 +48,10 @@ set(lxqt-sessioncfg_UI_FILES
     environmentpage.ui
 )
 
-if(USE_QT4)
-	qt4_wrap_ui(lxqt-sessioncfg_UIS ${lxqt-sessioncfg_UI_FILES})
-	qt4_wrap_cpp(lxqt-sessioncfg_MOC_SOURCES ${lxqt-sessioncfg_MOCS})
-elseif(USE_QT5)
+if(USE_QT5)
 	qt5_wrap_ui(lxqt-sessioncfg_UIS ${lxqt-sessioncfg_UI_FILES})
-	qt5_wrap_cpp(lxqt-sessioncfg_MOC_SOURCES ${lxqt-sessioncfg_MOCS})
+else()
+	qt4_wrap_ui(lxqt-sessioncfg_UIS ${lxqt-sessioncfg_UI_FILES})
 endif()
 
 # Translations **********************************
@@ -82,8 +69,7 @@ lxqt_translate_desktop(lxqt-sessioncfg_DESKTOP_FILES
 ) 
 #************************************************
 
-add_executable ( lxqt-config-session ${lxqt-sessioncfg_SRCS} ${lxqt-sessioncfg_UIS} ${lxqt-sessioncfg_MOC_SOURCES} ${lxqt-sessioncfg_DESKTOP_FILES} ${lxqt-sessioncfg_QM_FILES})
-add_dependencies( lxqt-config-session lxqt qtxdg)
+add_executable ( lxqt-config-session ${lxqt-sessioncfg_SRCS} ${lxqt-sessioncfg_UIS} ${lxqt-sessioncfg_DESKTOP_FILES} ${lxqt-sessioncfg_QM_FILES})
 target_link_libraries( lxqt-config-session ${QTX_LIBRARIES} ${LXQT_LIBRARIES} ${QTXDG_LIBRARIES})
 
 INSTALL(TARGETS lxqt-config-session RUNTIME DESTINATION bin)

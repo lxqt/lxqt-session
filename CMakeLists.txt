@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8.9)
 
 project(lxqt-session)
 
@@ -7,23 +7,11 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 # Support different versions of Qt
 option(USE_QT5 "Force use the Qt5." $ENV{USE_QT5})
-option(USE_QT4 "Force use the Qt4." $ENV{USE_QT4})
-if((USE_QT4 AND USE_QT5) OR
-   (NOT USE_QT4 AND NOT USE_QT5))
-    # Autodetect Qt version
-    find_package(Qt4 QUIET)
-    if (QT4_FOUND)
-        set(USE_QT4 ON)
-        set(USE_QT5 OFF)
-    else()
-        set(USE_QT4 OFF)
-        set(USE_QT5 ON)
-    endif()
-endif()
-
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+set(CMAKE_AUTOMOC ON)
 if(USE_QT5)
+    cmake_minimum_required(VERSION 2.8.11)
     find_package(Qt5Widgets REQUIRED QUIET)
     find_package(Qt5DBus REQUIRED QUIET)
     find_package(Qt5X11Extras REQUIRED QUIET)
