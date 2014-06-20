@@ -23,8 +23,8 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include <QFileInfo>
-#include <qtxdg/xdgdirs.h>
-#include <qtxdg/xdgicon.h>
+#include <XdgDirs>
+#include <XdgIcon>
 
 #include "autostartmodel.h"
 

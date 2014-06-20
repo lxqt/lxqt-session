@@ -26,7 +26,7 @@
 #define AUTOSTARTMODEL_H
 
 #include <QAbstractItemModel>
-#include <qtxdg/xdgautostart.h>
+#include <XdgAutoStart>
 
 #include "autostartitem.h"
 

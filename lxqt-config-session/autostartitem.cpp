@@ -23,8 +23,8 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include "autostartitem.h"
-#include <qtxdg/xdgautostart.h>
-#include <qtxdg/xdgdirs.h>
+#include <XdgAutoStart>
+#include <XdgDirs>
 #include <QFileInfo>
 
 AutostartItem::AutostartItem() :

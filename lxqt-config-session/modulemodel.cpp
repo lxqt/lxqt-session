@@ -26,7 +26,7 @@
 #include <QtDBus/QDBusConnection>
 #include <QtDBus/QDBusReply>
 #include <QDebug>
-#include <qtxdg/xdgicon.h>
+#include <XdgIcon>
 #include "modulemodel.h"
 
 ModuleModel::ModuleModel(QObject* parent)
