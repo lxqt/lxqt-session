@@ -23,10 +23,13 @@ if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
 	eval "$(dbus-launch --sh-syntax --exit-with-session)"
 fi
 
-# load lxqt Qt platform plugin
-# FIXME: the plugin is not yet ready
+# Qt4 platform plugin
 export QT_PLATFORM_PLUGIN=lxqt
 
+# Qt5 platform plugin
+export QT_QPA_PLATFORMTHEME=lxqt
+
+# use lxde-applications.menu for main app menu
 export XDG_MENU_PREFIX="lxde-"
 
 export XDG_CURRENT_DESKTOP="LXQt"
