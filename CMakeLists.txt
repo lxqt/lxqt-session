@@ -5,7 +5,13 @@ project(lxqt-common)
 # additional cmake files
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-find_package(LXQT REQUIRED)
+# Support Qt5
+option(USE_QT5 "Build with Qt5." $ENV{USE_QT5})
+if(USE_QT5)
+    find_package(lxqt-qt5 REQUIRED)
+else()
+    find_package(LXQT REQUIRED)
+endif()
 include(${LXQT_USE_FILE})
 
 # graphics
