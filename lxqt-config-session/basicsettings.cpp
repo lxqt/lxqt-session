@@ -43,6 +43,7 @@ BasicSettings::BasicSettings(LxQt::Settings *settings, QWidget *parent) :
     connect(ui->stopButton, SIGNAL(clicked()), this, SLOT(stopButton_clicked()));
     connect(ui->wmComboBox, SIGNAL(currentIndexChanged(int)), parent, SLOT(setRestart()));
     connect(ui->wmComboBox, SIGNAL(editTextChanged(const QString&)), SIGNAL(needRestart()));
+    connect(ui->leaveConfirmationCheckBox, SIGNAL(toggled(bool)), SIGNAL(needRestart()));
     restoreSettings();
 
     ui->moduleView->setModel(m_moduleModel);
@@ -71,12 +72,16 @@ void BasicSettings::restoreSettings()
     QString wm = m_settings->value("window_manager", "openbox").toString();
     SessionConfigWindow::handleCfgComboBox(ui->wmComboBox, knownWMs, wm);
     m_moduleModel->reset();
+
+    ui->leaveConfirmationCheckBox->setChecked(m_settings->value("leave_confirmation", true).toBool());
 }
 
 void BasicSettings::save()
 {
     m_settings->setValue("window_manager", ui->wmComboBox->currentText());
     m_moduleModel->writeChanges();
+
+    m_settings->setValue("leave_confirmation", ui->leaveConfirmationCheckBox->isChecked());
 }
 
 void BasicSettings::findWmButton_clicked()
