@@ -1,7 +1,15 @@
 #!/bin/sh
 
+if [ -z "$XDG_DATA_HOME" ]; then
+    export XDG_DATA_HOME="$HOME/.local/share"
+fi
+
 if [ -z "$XDG_CONFIG_HOME" ]; then
 	export XDG_CONFIG_HOME="$HOME/.config"
+fi
+
+if [ -z "$XDG_DATA_DIRS" ]; then
+	export XDG_DATA_DIRS="$XDG_DATA_HOME:/usr/local/share/:/usr/share/"
 fi
 
 # Ensure the existance of the 'Desktop' folder
