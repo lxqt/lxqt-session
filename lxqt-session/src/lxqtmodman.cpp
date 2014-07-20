@@ -7,6 +7,7 @@
  * Copyright: 2010-2011 LxQt team
  * Authors:
  *   Petr Vanek <petr@scribus.info>
+ *   Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
  *
  * This program or library is free software; you can redistribute it
  * and/or modify it under the terms of the GNU Lesser General Public
@@ -64,7 +65,8 @@ LxQtModuleManager::LxQtModuleManager(const QString & windowManager, QObject* par
       mWmProcess(new QProcess(this)),
       mThemeWatcher(new QFileSystemWatcher(this)),
       mWmStarted(false),
-      mTrayStarted(false)
+      mTrayStarted(false),
+      mWaitLoop(NULL)
 {
     connect(mThemeWatcher, SIGNAL(directoryChanged(QString)), SLOT(themeFolderChanged(QString)));
 
@@ -76,16 +78,16 @@ LxQtModuleManager::LxQtModuleManager(const QString & windowManager, QObject* par
     bool isX11 = true;
 #endif
 
-	if(isX11)
-	{
+    if(isX11)
+    {
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-		qApp->installNativeEventFilter(this);
+        qApp->installNativeEventFilter(this);
 #endif
-		// We want ClientMessages, so add StructureNotifyMask to the root window here.
-		XWindowAttributes attr;
-		XGetWindowAttributes (QX11Info::display(), QX11Info::appRootWindow(0), &attr);
-		XSelectInput (QX11Info::display(), QX11Info::appRootWindow(0), attr.your_event_mask | StructureNotifyMask);
-	}
+        // We want ClientMessages, so add StructureNotifyMask to the root window here.
+        XWindowAttributes attr;
+        XGetWindowAttributes (QX11Info::display(), QX11Info::appRootWindow(0), &attr);
+        XSelectInput (QX11Info::display(), QX11Info::appRootWindow(0), attr.your_event_mask | StructureNotifyMask);
+    }
 }
 
 void LxQtModuleManager::startup(LxQt::Settings& s)
@@ -119,20 +121,32 @@ void LxQtModuleManager::startAutostartApps()
     QList<XdgDesktopFile*> trayApps;
     for (XdgDesktopFileList::iterator i = fileList.begin(); i != fileList.end(); ++i)
     {
-        qDebug() << "start" << i->fileName();
         if (i->value("X-LXQt-Need-Tray", false).toBool())
             trayApps.append(&(*i));
         else
+        {
             startProcess(*i);
+            qDebug() << "start" << i->fileName();
+        }
     }
 
     if (!trayApps.isEmpty())
     {
         mTrayStarted = QSystemTrayIcon::isSystemTrayAvailable();
-        if(!mTrayStarted) // wait for the system tray to be available
-            mWaitLoop.exec(); // FIXME: add a timeout here?
+        if(!mTrayStarted)
+        {
+            QEventLoop waitLoop;
+            mWaitLoop = &waitLoop;
+            // add a timeout to avoid infinite blocking if a WM fail to execute.
+            QTimer::singleShot(60 * 1000, &waitLoop, SLOT(quit()));
+            waitLoop.exec();
+            mWaitLoop = NULL;
+        }
         foreach (XdgDesktopFile* f, trayApps)
+        {
+            qDebug() << "start tray app" << f->fileName();
             startProcess(*f);
+        }
     }
 }
 
@@ -208,10 +222,12 @@ void LxQtModuleManager::startWm(LxQt::Settings *settings)
     // other autostart apps will be handled after the WM becomes available
 
     // Wait until the WM loads
-    // FIXME: add a timeout here
-    QTimer::singleShot(30, &mWaitLoop, SLOT(exit()));
-    mWaitLoop.exec();
-
+    QEventLoop waitLoop;
+    mWaitLoop = &waitLoop;
+    // add a timeout to avoid infinite blocking if a WM fail to execute.
+    QTimer::singleShot(30 * 1000, &waitLoop, SLOT(quit()));
+    waitLoop.exec();
+    mWaitLoop = NULL;
     // FIXME: blocking is a bad idea. We need to start as many apps as possible and
     //         only wait for the start of WM when it's absolutely needed.
     //         Maybe we can add a X-Wait-WM=true key in the desktop entry file?
@@ -379,26 +395,26 @@ void LxQtModuleManager::resetCrashReport()
 // called in X11 only
 void LxQtModuleManager::x11PropertyNotify(unsigned long atom)
 {
-	if(!mWmStarted) // window manager is not started yet
-	{
-		static Atom _NET_SUPPORTING_WM_CHECK = 0;
-		  if(0 == _NET_SUPPORTING_WM_CHECK)
-		  _NET_SUPPORTING_WM_CHECK = LxQt::XfitMan::atom("_NET_SUPPORTING_WM_CHECK");
+    if(!mWmStarted) // window manager is not started yet
+    {
+        static Atom _NET_SUPPORTING_WM_CHECK = 0;
+          if(0 == _NET_SUPPORTING_WM_CHECK)
+          _NET_SUPPORTING_WM_CHECK = LxQt::XfitMan::atom("_NET_SUPPORTING_WM_CHECK");
 
-		  if (atom == _NET_SUPPORTING_WM_CHECK)
-		  {
-			  // a new window manager is started
-			  if(!mWmStarted)
-			  {
-				  if(LxQt::XfitMan().isWindowManagerActive())
-				  {
-				  mWmStarted = true;
-				  if(mWaitLoop.isRunning())
-					  mWaitLoop.exit();
-				  }
-			  }
-		  }
-	}
+          if (atom == _NET_SUPPORTING_WM_CHECK)
+          {
+              // a new window manager is started
+              if(!mWmStarted && mWaitLoop)
+              {
+                  if(LxQt::XfitMan().isWindowManagerActive())
+                  {
+                  mWmStarted = true;
+                  if(mWaitLoop->isRunning())
+                      mWaitLoop->exit();
+                  }
+              }
+          }
+    }
 }
 
 // called in X11 only
@@ -417,29 +433,29 @@ void LxQtModuleManager::x11ClientMessage(void* _event)
 #endif
     screen = QX11Info::appScreen();
 
-	if(!mTrayStarted) // systray is not started yet
-	{
-		static Atom MANAGER = 0;
-		if(0 == MANAGER)
-		MANAGER = LxQt::XfitMan::atom("MANAGER");
-		if(type == MANAGER)
-		{
-			static Atom _NET_SYSTEM_TRAY_S = 0;
-			if(0 == _NET_SYSTEM_TRAY_S)
-			{
-				char tray_name[100];
-				sprintf(tray_name, "_NET_SYSTEM_TRAY_S%d", screen);
-				_NET_SYSTEM_TRAY_S = LxQt::XfitMan::atom(tray_name);
-			}
-			if(Atom(data32[1]) == _NET_SYSTEM_TRAY_S)
-			{
-				// a new tray manager is loaded
-				mTrayStarted = true;
-				if(mWaitLoop.isRunning())
-					mWaitLoop.exit();
-			}
-		}
-	}
+    if(!mTrayStarted) // systray is not started yet
+    {
+        static Atom MANAGER = 0;
+        if(0 == MANAGER)
+            MANAGER = LxQt::XfitMan::atom("MANAGER");
+        if(type == MANAGER)
+        {
+            static Atom _NET_SYSTEM_TRAY_S = 0;
+            if(0 == _NET_SYSTEM_TRAY_S)
+            {
+                char tray_name[100];
+                sprintf(tray_name, "_NET_SYSTEM_TRAY_S%d", screen);
+                _NET_SYSTEM_TRAY_S = LxQt::XfitMan::atom(tray_name);
+            }
+            if(Atom(data32[1]) == _NET_SYSTEM_TRAY_S && mWaitLoop)
+            {
+                // a new tray manager is loaded
+                mTrayStarted = true;
+                if(mWaitLoop->isRunning())
+                    mWaitLoop->exit();
+            }
+        }
+    }
 }
 
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
@@ -449,13 +465,14 @@ bool LxQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * m
     if(eventType != "xcb_generic_event_t") // We only want to handle XCB events
         return false;
     xcb_generic_event_t* event = reinterpret_cast<xcb_generic_event_t*>(message);
-	if(event->response_type == XCB_PROPERTY_NOTIFY)
-	{
-		xcb_property_notify_event_t* notifyEvent = reinterpret_cast<xcb_property_notify_event_t*>(event);
-		x11PropertyNotify(notifyEvent->atom);
-	}
-    else if(event->response_type == XCB_CLIENT_MESSAGE)
-		x11ClientMessage(event);
+    int event_type = event->response_type & ~0x80;
+    if(event_type == XCB_PROPERTY_NOTIFY)
+    {
+        xcb_property_notify_event_t* notifyEvent = reinterpret_cast<xcb_property_notify_event_t*>(event);
+        x11PropertyNotify(notifyEvent->atom);
+    }
+    else if(event_type == XCB_CLIENT_MESSAGE)
+        x11ClientMessage(event);
     return false;
 }
 #else
@@ -463,9 +480,9 @@ bool LxQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * m
 bool LxQtModuleManager::x11EventFilter(XEvent* event)
 {
     if (event->type == PropertyNotify)
-		x11PropertyNotify(event->xproperty.atom);
+        x11PropertyNotify(event->xproperty.atom);
     else if(event->type == ClientMessage) // StructureNotifyMask is needed for this
-		x11ClientMessage(event);
+        x11ClientMessage(event);
     return false;
 }
 #endif

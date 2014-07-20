@@ -152,7 +152,7 @@ private:
     
     bool mWmStarted;
     bool mTrayStarted;
-    QEventLoop mWaitLoop;
+    QEventLoop* mWaitLoop;
 
 private slots:
 
