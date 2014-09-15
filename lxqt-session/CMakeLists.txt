@@ -6,21 +6,16 @@ endif (NOT CMAKE_BUILD_TYPE)
 
 add_definitions ( -Wall ) # FIXME: this is compiler specific
 
-if(USE_QT5)
-	set(QTX_INCLUDE_DIRS "")
-	set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
-else()
-	set(QTX_INCLUDE_DIRS ${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR} ${QT_QTDBUS_INCLUDE_DIR} ${QT_QTXML_INCLUDE_DIR})
-	set(QTX_LIBRARIES ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTDBUS_LIBRARY})
-endif()
+set(QTX_INCLUDE_DIRS "")
+set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
 
 include(LxQtLibSuffix)
 
 add_definitions(-DPROJECT_NAME=\"${PROJECT_NAME}\")
 
 include_directories (
-    ${CMAKE_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}
-    ${QTX_INCLUDE_DIRS} ${XCB_INCLUDE_DIRS} ${X11_INCLUDE_DIR}
+    ${CMAKE_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR} ${QTX_INCLUDE_DIRS}
     src)
 
 set ( lxqt-session_HDRS
@@ -41,10 +36,10 @@ set ( lxqt-session_UI
 
 # Translations **********************************
 include(LxQtTranslate)
-lxqt_translate_ts(lxqt-runner_QM_FILES 
+lxqt_translate_ts(lxqt-runner_QM_FILES
     SOURCES
         ${lxqt-session_HDRS}
-        ${lxqt-session_SRCS} 
+        ${lxqt-session_SRCS}
         ${lxqt-session_UI}
     INSTALLATION_DIR
         ${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}
@@ -52,14 +47,10 @@ lxqt_translate_ts(lxqt-runner_QM_FILES
 
 #************************************************
 
-if(USE_QT5)
-	qt5_wrap_ui(UIS ${lxqt-session_UI})
-else()
-	qt4_wrap_ui(UIS ${lxqt-session_UI})
-endif()
+qt5_wrap_ui(UIS ${lxqt-session_UI})
 
 add_executable ( lxqt-session ${lxqt-session_SRCS} ${UIS} ${RSCS} ${lxqt-runner_QM_FILES} )
-target_link_libraries ( lxqt-session ${XCB_LIBRARIES} ${X11_LIBRARIES} ${QTX_LIBRARIES} ${LXQT_LIBRARIES} ${QTXDG_LIBRARIES})
+target_link_libraries ( lxqt-session ${QTX_LIBRARIES} ${LXQT_LIBRARIES} ${QTXDG_LIBRARIES} KF5::WindowSystem)
 INSTALL(TARGETS lxqt-session RUNTIME DESTINATION bin)
 
 if (NOT DEFINED BUNDLE_XDG_UTILS)
