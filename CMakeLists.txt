@@ -9,20 +9,16 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_AUTOMOC ON)
 
+cmake_minimum_required(VERSION 2.8.11)
+find_package(KF5WindowSystem REQUIRED)
 find_package(Qt5Widgets REQUIRED QUIET)
 find_package(Qt5DBus REQUIRED QUIET)
 find_package(Qt5X11Extras REQUIRED QUIET)
 find_package(Qt5LinguistTools REQUIRED QUIET)
+find_package(Qt5Xdg REQUIRED QUIET)
 
 find_package(lxqt-qt5 REQUIRED QUIET)
 include(${LXQT_USE_FILE})
-
-find_package(Qt5Xdg REQUIRED QUIET)
-
-find_package(PkgConfig REQUIRED QUIET)
-pkg_check_modules(XCB REQUIRED xcb)
-
-find_package(X11 REQUIRED)
 
 add_subdirectory(lxqt-session)
 add_subdirectory(lxqt-config-session)

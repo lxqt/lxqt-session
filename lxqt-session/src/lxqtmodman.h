@@ -37,7 +37,6 @@
 #include <QEventLoop>
 #include <time.h>
 
-
 class LxQtModule;
 namespace LxQt {
 class Settings;
@@ -67,10 +66,7 @@ Processes in LxQtModuleManager are started as follows:
 Potential process recovering is done in \see restartModules()
 */
 
-class LxQtModuleManager : public QObject
-#ifndef Q_MOC_RUN // Qt4 moc has some problem handling multiple inheritence with conditional compilation, disable it
-    , public QAbstractNativeEventFilter
-#endif // Q_MOC_RUN
+class LxQtModuleManager : public QObject, public QAbstractNativeEventFilter
 {
     Q_OBJECT
 
@@ -88,13 +84,11 @@ public:
     //! \brief List the running modules, identified by their file names
     QStringList listModules() const;
 
-    virtual bool nativeEventFilter(const QByteArray & eventType, void * message, long * result);
-
-    void x11PropertyNotify(unsigned long atom); // called in X11 only
-    void x11ClientMessage(void* _event); // called in X11 only
-
     //! \brief Read configuration and start processes
     void startup(LxQt::Settings& s);
+
+    // Qt5 uses native event filter
+    virtual bool nativeEventFilter(const QByteArray & eventType, void * message, long * result);
 
 public slots:
     /*! \brief Exit LXQt session.
