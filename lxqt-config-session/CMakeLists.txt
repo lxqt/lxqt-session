@@ -10,6 +10,8 @@ else()
 	set(QTX_LIBRARIES ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTDBUS_LIBRARY})
 endif()
 
+add_definitions(-DPROJECT_NAME=\"${PROJECT_NAME}\")
+
 include_directories (
     ${CMAKE_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}
     ${QTX_INCLUDE_DIRS})
@@ -61,6 +63,8 @@ lxqt_translate_ts(lxqt-sessioncfg_QM_FILES
         ${lxqt-sessioncfg_HDRS}
         ${lxqt-sessioncfg_SRCS} 
         ${lxqt-sessioncfg_UI_FILES}
+    INSTALLATION_DIR
+        ${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}
 )
 
 lxqt_translate_desktop(lxqt-sessioncfg_DESKTOP_FILES

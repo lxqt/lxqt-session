@@ -26,18 +26,18 @@
  * END_COMMON_COPYRIGHT_HEADER */
  
 #include <LXQt/Application>
+#include <LXQt/Translator>
 
 #include <XdgIcon>
 #include <LXQt/Settings>
 
 #include "sessionconfigwindow.h"
-#include "lxqttranslate.h"
 
 int main(int argc, char** argv)
 {
     // TODO/FIXME: maybe singleapp?
     LxQt::Application a(argc, argv);
-    TRANSLATE_APP;
+    LxQt::Translator::translateApplication(QLatin1String(PROJECT_NAME));
     
     SessionConfigWindow w;
     w.show();

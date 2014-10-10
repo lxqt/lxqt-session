@@ -26,7 +26,7 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include "sessionapplication.h"
-#include "lxqttranslate.h"
+#include <LXQt/Translator>
 
 /**
 * @file main.cpp
@@ -50,7 +50,7 @@ int main(int argc, char **argv)
     SessionApplication app(argc, argv);
     //qDebug() << "LxQt Session start";
     app.setQuitOnLastWindowClosed(false);
-    TRANSLATE_APP;
+    LxQt::Translator::translateApplication(QLatin1String(PROJECT_NAME));
     return app.exec();
 }
 

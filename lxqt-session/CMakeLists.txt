@@ -16,6 +16,8 @@ endif()
 
 include(LxQtLibSuffix)
 
+add_definitions(-DPROJECT_NAME=\"${PROJECT_NAME}\")
+
 include_directories (
     ${CMAKE_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}
     ${QTX_INCLUDE_DIRS} ${XCB_INCLUDE_DIRS} ${X11_INCLUDE_DIR}
@@ -44,6 +46,8 @@ lxqt_translate_ts(lxqt-runner_QM_FILES
         ${lxqt-session_HDRS}
         ${lxqt-session_SRCS} 
         ${lxqt-session_UI}
+    INSTALLATION_DIR
+        ${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}
 )
 
 #************************************************
