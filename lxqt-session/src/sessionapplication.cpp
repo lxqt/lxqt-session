@@ -47,15 +47,6 @@ SessionApplication::SessionApplication(int& argc, char** argv) : LxQt::Applicati
         }
     }
 
-#ifdef PATH_PREPEND
-    // PATH for out own bundled XDG tools
-    lxqt_setenv_prepend("PATH", PATH_PREPEND);
-#endif // PATH_PREPEND
-
-    // special variable for LxQt environment menu
-    // NOTE: it's better not to hard-code lxqt- here.
-    // lxqt_setenv("XDG_MENU_PREFIX", "lxqt-");
-
     if(configName.isEmpty())
       configName = "session";
 
