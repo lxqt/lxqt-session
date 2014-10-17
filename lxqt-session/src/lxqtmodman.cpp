@@ -48,9 +48,7 @@
 #include <X11/X.h>
 #include <X11/Xlib.h>
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
 #include <xcb/xcb.h>
-#endif
 
 #define MAX_CRASHES_PER_APP 5
 
@@ -72,17 +70,11 @@ LxQtModuleManager::LxQtModuleManager(const QString & windowManager, QObject* par
 
     connect(LxQt::Settings::globalSettings(), SIGNAL(lxqtThemeChanged()), SLOT(themeChanged()));
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-    bool isX11 = QX11Info::isPlatformX11(); // FIXME: this requires Qt 5.2+
-#else
-    bool isX11 = true;
-#endif
+    bool isX11 = QX11Info::isPlatformX11();
 
     if(isX11)
     {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
         qApp->installNativeEventFilter(this);
-#endif
         // We want ClientMessages, so add StructureNotifyMask to the root window here.
         XWindowAttributes attr;
         XGetWindowAttributes (QX11Info::display(), QX11Info::appRootWindow(0), &attr);
@@ -173,11 +165,7 @@ void LxQtModuleManager::themeFolderChanged(const QString& /*path*/)
     LxQt::Settings settings("lxqt");
     if (newTheme == settings.value("theme"))
     { // force the same theme to be updated
-#if QT_VERSION < QT_VERSION_CHECK(4, 7, 0)
-        settings.setValue("__theme_updated__", QDateTime::currentDateTime().toTime_t() * 1000);
-#else
         settings.setValue("__theme_updated__", QDateTime::currentMSecsSinceEpoch());
-#endif
     }
     else
     {
@@ -332,9 +320,7 @@ void LxQtModuleManager::restartModules(int exitCode, QProcess::ExitStatus exitSt
 
 LxQtModuleManager::~LxQtModuleManager()
 {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
     qApp->removeNativeEventFilter(this);
-#endif
 
     qDeleteAll(mNameMap);
     delete mWmProcess;
@@ -422,15 +408,9 @@ void LxQtModuleManager::x11ClientMessage(void* _event)
 {
     unsigned long type;
     int screen;
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
     xcb_client_message_event_t* event = reinterpret_cast<xcb_client_message_event_t*>(_event);
     type = event->type;
     uint32_t* data32 = event->data.data32;
-#else
-    XClientMessageEvent* event = reinterpret_cast<XClientMessageEvent*>(_event);
-    type = event->message_type;
-    long* data32 = event->data.l;
-#endif
     screen = QX11Info::appScreen();
 
     if(!mTrayStarted) // systray is not started yet
@@ -458,8 +438,6 @@ void LxQtModuleManager::x11ClientMessage(void* _event)
     }
 }
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-// Qt5 uses native event filter
 bool LxQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * message, long * result)
 {
     if(eventType != "xcb_generic_event_t") // We only want to handle XCB events
@@ -475,17 +453,6 @@ bool LxQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * m
         x11ClientMessage(event);
     return false;
 }
-#else
-// X11 event is no longer supported in Qt5
-bool LxQtModuleManager::x11EventFilter(XEvent* event)
-{
-    if (event->type == PropertyNotify)
-        x11PropertyNotify(event->xproperty.atom);
-    else if(event->type == ClientMessage) // StructureNotifyMask is needed for this
-        x11ClientMessage(event);
-    return false;
-}
-#endif
 
 void lxqt_setenv(const char *env, const QByteArray &value)
 {

@@ -1,10 +1,10 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LxQt - a lightweight, Qt based, desktop toolset
- * http://razor-qt.org, http://lxde.org/
+ * LXQt - a lightweight, Qt based, deskop environment
+ * http://razor-qt.org, http://lxqt.org/
  *
- * Copyright: 2010-2011 LxQt team
+ * Copyright: 2010-2011 LXQt team
  * Authors:
  *   Petr Vanek <petr@scribus.info>
  *
@@ -28,6 +28,7 @@
 #ifndef LXQTMODMAN_H
 #define LXQTMODMAN_H
 
+#include <QAbstractNativeEventFilter>
 #include <QProcess>
 #include <QList>
 #include <QMap>
@@ -36,9 +37,6 @@
 #include <QEventLoop>
 #include <time.h>
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-#include <QAbstractNativeEventFilter>
-#endif
 
 class LxQtModule;
 namespace LxQt {
@@ -71,9 +69,7 @@ Potential process recovering is done in \see restartModules()
 
 class LxQtModuleManager : public QObject
 #ifndef Q_MOC_RUN // Qt4 moc has some problem handling multiple inheritence with conditional compilation, disable it
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-	, public QAbstractNativeEventFilter // we need to filter some native events in Qt5
-#endif
+    , public QAbstractNativeEventFilter
 #endif // Q_MOC_RUN
 {
     Q_OBJECT
@@ -92,13 +88,8 @@ public:
     //! \brief List the running modules, identified by their file names
     QStringList listModules() const;
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-    // Qt5 uses native event filter
     virtual bool nativeEventFilter(const QByteArray & eventType, void * message, long * result);
-#else
-    // X11 event is no longer supported in Qt5
-    bool x11EventFilter(XEvent* event);
-#endif
+
     void x11PropertyNotify(unsigned long atom); // called in X11 only
     void x11ClientMessage(void* _event); // called in X11 only
 
@@ -106,7 +97,7 @@ public:
     void startup(LxQt::Settings& s);
 
 public slots:
-    /*! \brief Exit LxQt session.
+    /*! \brief Exit LXQt session.
     It tries to terminate processes from procMap and autostartList
     gracefully (to kill it if it is not possible). Then the session
     exits - it returns to the kdm/gdm in most cases.
@@ -149,7 +140,7 @@ private:
     //! \brief file system watcher to react on theme modifications
     QFileSystemWatcher *mThemeWatcher;
     QString mCurrentThemePath;
-    
+
     bool mWmStarted;
     bool mTrayStarted;
     QEventLoop* mWaitLoop;
