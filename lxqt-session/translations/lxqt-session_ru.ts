@@ -1,38 +1,43 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ru">
 <context>
     <name>LxQtModuleManager</name>
     <message>
-        <source>LxQt Session Crash Report</source>
-        <translation>Paзор Отчет  сбоев сессии</translation>
+        <location filename="../src/lxqtmodman.cpp" line="316"/>
+        <source>Crash Report</source>
+        <translation>Отчёт о падении</translation>
     </message>
     <message>
-        <source>Application &apos;%1&apos; crashed too many times. Its autorestart has been disabled for current session.</source>
-        <translation>Программа %1 упала слишком много раз. Мы отключили ее перезапуск в этом сеансе.</translation>
+        <location filename="../src/lxqtmodman.cpp" line="317"/>
+        <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
+        <translation>&lt;b&gt;%1&lt;/b&gt; упало слишком много раз. его автозапуск был отменён до следующего входа в систему.</translation>
     </message>
 </context>
 <context>
     <name>WmSelectDialog</name>
     <message>
-        <source>Welcome to LXDE-Qt</source>
-        <translation>Добро пожаловать в Paзор-qt</translation>
+        <location filename="../src/wmselectdialog.ui" line="14"/>
+        <source>Welcome to LXQt</source>
+        <translation>Добро пожаловать в LXQt</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Welcome to LXDE-Qt&lt;/b&gt;
-&lt;p&gt;
-Before starting to use the LXDE-Qt, you might want to select the Windows Manager:</source>
-        <translation>&lt;b&gt;Добро пожаловать в Paзор-qt&lt;/b&gt;
-&lt;p&gt;
-Прежде всего, выберите оконный менеджер на Ваш вкус:</translation>
+        <location filename="../src/wmselectdialog.ui" line="20"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Добро пожаловать в LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Выберите оконный менеджер по-умолчанию.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>You can change the Window Manager later at any time via LxQt Session Configurator.</source>
-        <translation>Вы можете изменить это позже через &quot;Настройки сесии Paзор&quot;.</translation>
+        <location filename="../src/wmselectdialog.ui" line="71"/>
+        <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
+        <translation>Вы можете изменить это в любое время через Настройки -&gt; Настройки сесии -&gt; Основные настройки.</translation>
     </message>
     <message>
+        <location filename="../src/wmselectdialog.cpp" line="62"/>
         <source>Other ...</source>
-        <translation>Другое...</translation>
+        <translation>Другое…</translation>
     </message>
     <message>
+        <location filename="../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
         <translation>Выберите то, что вам больше нравится.</translation>
     </message>
