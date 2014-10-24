@@ -170,10 +170,13 @@ void LxQtModuleManager::themeChanged()
 
 void LxQtModuleManager::startWm(LxQt::Settings *settings)
 {
-    // If the WM is active do not run WM.
-    NETRootInfo info(QX11Info::connection(), NET::Supported);
-    if (info.isSupported(NET::SupportingWMCheck))
+    // if the WM is active do not run WM.
+    // all window managers must set their name according to the spec
+    if (!QString(NETRootInfo(QX11Info::connection(), NET::SupportingWMCheck).wmName()).isEmpty())
+    {
+        mWmStarted = true;
         return;
+    }
 
     if (mWindowManager.isEmpty())
     {
@@ -366,10 +369,8 @@ bool LxQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * m
 
     if(!mWmStarted && mWaitLoop)
     {
-        NETRootInfo info(QX11Info::connection(), NET::Supported);
-        NET::Properties prop = info.event(reinterpret_cast<xcb_generic_event_t*>(message));
-
-        if (prop & NET::SupportingWMCheck)
+        // all window managers must set their name according to the spec
+        if (!QString(NETRootInfo(QX11Info::connection(), NET::SupportingWMCheck).wmName()).isEmpty())
         {
             qDebug() << "Window Manager started";
             mWmStarted = true;
@@ -384,6 +385,9 @@ bool LxQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * m
         mTrayStarted = true;
         if (mWaitLoop->isRunning())
             mWaitLoop->exit();
+
+        // window manager and system tray have started
+        qApp->removeNativeEventFilter(this);
     }
 
     return false;
