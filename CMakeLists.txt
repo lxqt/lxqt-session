@@ -2,11 +2,10 @@ cmake_minimum_required(VERSION 2.8.11)
 
 project(lxqt-common)
 
-# additional cmake files
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
-
 find_package(lxqt-qt5 REQUIRED)
 include(${LXQT_USE_FILE})
+
+include(LXQtTranslateDesktop)
 
 # graphics
 install(DIRECTORY graphics DESTINATION share/lxqt/)
