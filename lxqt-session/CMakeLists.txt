@@ -43,5 +43,12 @@ lxqt_translate_ts(lxqt-runner_QM_FILES SOURCES
 qt5_wrap_ui(UIS ${lxqt-session_UI})
 
 add_executable(lxqt-session ${lxqt-session_SRCS} ${UIS} ${RSCS} ${lxqt-runner_QM_FILES})
-target_link_libraries(lxqt-session ${QTX_LIBRARIES} ${LXQT_LIBRARIES} ${QTXDG_LIBRARIES} KF5::WindowSystem)
+target_link_libraries(lxqt-session
+    ${XCB_LIBRARIES}
+    ${X11_LIBRARIES}
+    ${QTX_LIBRARIES}
+    ${LXQT_LIBRARIES}
+    ${QTXDG_LIBRARIES}
+    KF5::WindowSystem
+)
 INSTALL(TARGETS lxqt-session RUNTIME DESTINATION bin)

@@ -20,6 +20,10 @@ find_package(Qt5Xdg REQUIRED QUIET)
 find_package(lxqt-qt5 REQUIRED QUIET)
 include(${LXQT_USE_FILE})
 
+find_package(PkgConfig REQUIRED QUIET)
+pkg_check_modules(XCB REQUIRED xcb)
+find_package(X11 REQUIRED)
+
 add_subdirectory(lxqt-session)
 add_subdirectory(lxqt-config-session)
 
