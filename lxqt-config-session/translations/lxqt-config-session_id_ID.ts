@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="id_ID">
+<TS version="2.1" language="id_ID">
 <context>
     <name>AutoStartEdit</name>
     <message>
@@ -37,22 +37,22 @@
 <context>
     <name>AutoStartItemModel</name>
     <message>
-        <location filename="../autostartmodel.cpp" line="235"/>
+        <location filename="../autostartmodel.cpp" line="177"/>
         <source>Global Autostart</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../autostartmodel.cpp" line="237"/>
-        <source>LxQt Autostart</source>
+        <location filename="../autostartmodel.cpp" line="179"/>
+        <source>LXQt Autostart</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../autostartmodel.cpp" line="247"/>
+        <location filename="../autostartmodel.cpp" line="197"/>
         <source>Location: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../autostartmodel.cpp" line="249"/>
+        <location filename="../autostartmodel.cpp" line="199"/>
         <source>Overrides: %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -93,22 +93,47 @@
 <context>
     <name>BasicSettings</name>
     <message>
-        <location filename="../basicsettings.ui" line="17"/>
+        <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="36"/>
+        <location filename="../basicsettings.ui" line="49"/>
         <source>Search...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="52"/>
+        <location filename="../basicsettings.ui" line="59"/>
+        <source>LXQt Modules</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="65"/>
+        <source>Start</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="72"/>
+        <source>Stop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="111"/>
+        <source>Leave Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="117"/>
+        <source>Ask confirmation to leave session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="70"/>
+        <location filename="../basicsettings.cpp" line="84"/>
         <source>Select a window manager</source>
         <translation type="unfinished"></translation>
     </message>
@@ -179,10 +204,18 @@
     </message>
 </context>
 <context>
+    <name>ModuleModel</name>
+    <message>
+        <location filename="../modulemodel.cpp" line="85"/>
+        <source>Running</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SessionConfigWindow</name>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>
-        <source>LxQt Session Configuration</source>
+        <source>LXQt Session Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

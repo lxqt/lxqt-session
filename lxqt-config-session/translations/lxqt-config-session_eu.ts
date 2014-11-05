@@ -1,27 +1,35 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="eu" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="eu">
 <context>
     <name>AutoStartEdit</name>
     <message>
+        <location filename="../autostartedit.ui" line="14"/>
         <source>Edit</source>
         <translation>Editatu</translation>
     </message>
     <message>
+        <location filename="../autostartedit.ui" line="20"/>
         <source>Name:</source>
         <translation>Izena:</translation>
     </message>
     <message>
+        <location filename="../autostartedit.ui" line="27"/>
         <source>Search...</source>
         <translation>Bilatu...</translation>
     </message>
     <message>
+        <location filename="../autostartedit.ui" line="47"/>
         <source>Command:</source>
         <translation>Komandoa:</translation>
     </message>
     <message>
+        <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
         <translation>Itxaron ataza-barrari</translation>
     </message>
     <message>
+        <location filename="../autostartedit.cpp" line="59"/>
         <source>Select Application</source>
         <translation>Hautatu aplikazioa</translation>
     </message>
@@ -29,18 +37,26 @@
 <context>
     <name>AutoStartItemModel</name>
     <message>
+        <location filename="../autostartmodel.cpp" line="177"/>
         <source>Global Autostart</source>
         <translation>Autoabio globala</translation>
     </message>
     <message>
         <source>LxQt Autostart</source>
-        <translation>LxQt autoabioa</translation>
+        <translation type="vanished">LxQt autoabioa</translation>
     </message>
     <message>
+        <location filename="../autostartmodel.cpp" line="179"/>
+        <source>LXQt Autostart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autostartmodel.cpp" line="197"/>
         <source>Location: %1</source>
         <translation>Kokalekua: %1</translation>
     </message>
     <message>
+        <location filename="../autostartmodel.cpp" line="199"/>
         <source>Overrides: %1</source>
         <translation>Indargabetu: %1</translation>
     </message>
@@ -48,26 +64,32 @@
 <context>
     <name>AutoStartPage</name>
     <message>
+        <location filename="../autostartpage.ui" line="17"/>
         <source>Delete</source>
         <translation>Ezabatu</translation>
     </message>
     <message>
+        <location filename="../autostartpage.ui" line="24"/>
         <source>Add</source>
         <translation>Gehitu</translation>
     </message>
     <message>
+        <location filename="../autostartpage.ui" line="31"/>
         <source>Edit</source>
         <translation>Editatu</translation>
     </message>
     <message>
+        <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
         <translation>Aplikazioaren autoabioa</translation>
     </message>
     <message>
+        <location filename="../autostartpage.cpp" line="82"/>
         <source>Error</source>
         <translation>Errorea</translation>
     </message>
     <message>
+        <location filename="../autostartpage.cpp" line="82"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>&apos;%1&apos; fitxategia dagoeneko existitzen da!</translation>
     </message>
@@ -75,30 +97,51 @@
 <context>
     <name>BasicSettings</name>
     <message>
+        <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
         <translation>Leiho-kudeatzailea</translation>
     </message>
     <message>
+        <location filename="../basicsettings.ui" line="49"/>
         <source>Search...</source>
         <translation>Bilatu...</translation>
     </message>
     <message>
+        <location filename="../basicsettings.ui" line="59"/>
+        <source>LXQt Modules</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="111"/>
+        <source>Leave Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="117"/>
+        <source>Ask confirmation to leave session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
         <translation>Oinarrizko ezarpenak</translation>
     </message>
     <message>
         <source>LxQt Modules</source>
-        <translation>LxQt moduluak</translation>
+        <translation type="vanished">LxQt moduluak</translation>
     </message>
     <message>
+        <location filename="../basicsettings.ui" line="65"/>
         <source>Start</source>
         <translation>Abiatu</translation>
     </message>
     <message>
+        <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
         <translation>Gelditu</translation>
     </message>
     <message>
+        <location filename="../basicsettings.cpp" line="84"/>
         <source>Select a window manager</source>
         <translation>Hautatu leiho-kudeatzaile bat</translation>
     </message>
@@ -106,10 +149,12 @@
 <context>
     <name>DefaultApps</name>
     <message>
+        <location filename="../defaultappspage.cpp" line="72"/>
         <source>Select a terminal emulator</source>
         <translation>Hautatu terminal-emuladore bat</translation>
     </message>
     <message>
+        <location filename="../defaultappspage.cpp" line="77"/>
         <source>Select a web browser</source>
         <translation>Hautatu web-arakatzaile bat</translation>
     </message>
@@ -117,18 +162,23 @@
 <context>
     <name>DefaultAppsPage</name>
     <message>
+        <location filename="../defaultappspage.ui" line="23"/>
         <source>Default Applications</source>
         <translation>Aplikazio lehenetsiak</translation>
     </message>
     <message>
+        <location filename="../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
         <translation>Terminal emulazioa:</translation>
     </message>
     <message>
+        <location filename="../defaultappspage.ui" line="52"/>
+        <location filename="../defaultappspage.ui" line="79"/>
         <source>Search...</source>
         <translation>Bilatu...</translation>
     </message>
     <message>
+        <location filename="../defaultappspage.ui" line="59"/>
         <source>Web Browser:</source>
         <translation>Web-arakatzailea:</translation>
     </message>
@@ -136,22 +186,27 @@
 <context>
     <name>EnvironmentPage</name>
     <message>
+        <location filename="../environmentpage.ui" line="30"/>
         <source>Add</source>
         <translation>Gehitu</translation>
     </message>
     <message>
+        <location filename="../environmentpage.ui" line="37"/>
         <source>Delete</source>
         <translation>Ezabatu</translation>
     </message>
     <message>
+        <location filename="../environmentpage.ui" line="63"/>
         <source>Environment Variables (Advanced)</source>
         <translation>Ingurune-aldagaiak (aurreratua)</translation>
     </message>
     <message>
+        <location filename="../environmentpage.ui" line="74"/>
         <source>Variable Name</source>
         <translation>Aldagaiaren izena</translation>
     </message>
     <message>
+        <location filename="../environmentpage.ui" line="79"/>
         <source>Value</source>
         <translation>Balioa</translation>
     </message>
@@ -159,6 +214,7 @@
 <context>
     <name>ModuleModel</name>
     <message>
+        <location filename="../modulemodel.cpp" line="85"/>
         <source>Running</source>
         <translation>Martxan</translation>
     </message>
@@ -167,29 +223,40 @@
     <name>SessionConfigWindow</name>
     <message>
         <source>LxQt Session Configuration</source>
-        <translation>LxQt saioaren konfigurazioa</translation>
+        <translation type="vanished">LxQt saioaren konfigurazioa</translation>
     </message>
     <message>
+        <location filename="../sessionconfigwindow.cpp" line="43"/>
+        <source>LXQt Session Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../sessionconfigwindow.cpp" line="46"/>
         <source>Basic Settings</source>
         <translation>Oinarrizko ezarpenak</translation>
     </message>
     <message>
+        <location filename="../sessionconfigwindow.cpp" line="52"/>
         <source>Default Applications</source>
         <translation>Aplikazio lehenetsiak</translation>
     </message>
     <message>
+        <location filename="../sessionconfigwindow.cpp" line="55"/>
         <source>Autostart</source>
         <translation>Autoabioa</translation>
     </message>
     <message>
+        <location filename="../sessionconfigwindow.cpp" line="60"/>
         <source>Environment (Advanced)</source>
         <translation>Ingurunea (aurreratua)</translation>
     </message>
     <message>
+        <location filename="../sessionconfigwindow.cpp" line="84"/>
         <source>Session Restart Required</source>
         <translation>Saioa berrabiarazi behar da</translation>
     </message>
     <message>
+        <location filename="../sessionconfigwindow.cpp" line="85"/>
         <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
         <translation>Mahaigaineko saioa (lxqt saioa) berrabiarazi behar duzu ezarpenak birkargatzeko. Erabili menu nagusiko &apos;Amaitu saioa&apos; aukera.</translation>
     </message>
