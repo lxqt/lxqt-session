@@ -3,7 +3,6 @@ project(lxqt-config-session)
 set(QTX_INCLUDE_DIRS "")
 set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
 
-add_definitions(-DPROJECT_NAME=\"${PROJECT_NAME}\")
 
 include_directories(
     "${CMAKE_SOURCE_DIR}"
@@ -49,17 +48,21 @@ set(lxqt-sessioncfg_UI_FILES
 qt5_wrap_ui(lxqt-sessioncfg_UIS ${lxqt-sessioncfg_UI_FILES})
 
 # Translations
-include(LxQtTranslate)
-lxqt_translate_ts(lxqt-sessioncfg_QM_FILES SOURCES
-    ${lxqt-sessioncfg_HDRS}
-    ${lxqt-sessioncfg_SRCS}
-    ${lxqt-sessioncfg_UI_FILES}
-    INSTALLATION_DIR "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
+lxqt_translate_ts(lxqt-sessioncfg_QM_FILES
+    UPDATE_TRANSLATIONS
+        ${UPDATE_TRANSLATIONS}
+    SOURCES
+        ${lxqt-sessioncfg_HDRS}
+        ${lxqt-sessioncfg_SRCS}
+        ${lxqt-sessioncfg_UI_FILES}
+    INSTALL_DIR
+        "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
 )
 
+lxqt_app_translation_loader(lxqt-sessioncfg_QM_LOADER ${PROJECT_NAME})
 lxqt_translate_desktop(lxqt-sessioncfg_DESKTOP_FILES SOURCES lxqt-config-session.desktop.in)
 
-add_executable(lxqt-config-session ${lxqt-sessioncfg_SRCS} ${lxqt-sessioncfg_UIS} ${lxqt-sessioncfg_DESKTOP_FILES} ${lxqt-sessioncfg_QM_FILES})
+add_executable(lxqt-config-session ${lxqt-sessioncfg_SRCS} ${lxqt-sessioncfg_UIS} ${lxqt-sessioncfg_DESKTOP_FILES} ${lxqt-sessioncfg_QM_FILES} ${lxqt-sessioncfg_QM_LOADER})
 target_link_libraries(lxqt-config-session ${QTX_LIBRARIES} ${LXQT_LIBRARIES} ${QTXDG_LIBRARIES})
 
 INSTALL(TARGETS lxqt-config-session RUNTIME DESTINATION bin)

@@ -9,7 +9,6 @@ set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
 
 include(LxQtLibSuffix)
 
-add_definitions(-DPROJECT_NAME=\"${PROJECT_NAME}\")
 
 include_directories(
     ${CMAKE_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}
@@ -32,17 +31,28 @@ set(lxqt-session_UI
 )
 
 # Translations
-include(LxQtTranslate)
-lxqt_translate_ts(lxqt-runner_QM_FILES SOURCES
-    ${lxqt-session_HDRS}
-    ${lxqt-session_SRCS}
-    ${lxqt-session_UI}
-    INSTALLATION_DIR "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
+lxqt_translate_ts(lxqt-session_QM_FILES
+    UPDATE_TRANSLATIONS
+        ${UPDATE_TRANSLATIONS}
+    SOURCES
+        ${lxqt-session_HDRS}
+        ${lxqt-session_SRCS}
+        ${lxqt-session_UI}
+    INSTALL_DIR
+        "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
 )
+lxqt_app_translation_loader(lxqt-session_QM_LOADER ${PROJECT_NAME})
 
 qt5_wrap_ui(UIS ${lxqt-session_UI})
 
-add_executable(lxqt-session ${lxqt-session_SRCS} ${UIS} ${RSCS} ${lxqt-runner_QM_FILES})
+add_executable(lxqt-session
+    ${lxqt-session_SRCS}
+    ${UIS}
+    ${RSCS}
+    ${lxqt-session_QM_FILES}
+    ${lxqt-session_QM_LOADER}
+)
+
 target_link_libraries(lxqt-session
     ${XCB_LIBRARIES}
     ${X11_LIBRARIES}

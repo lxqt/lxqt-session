@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.8.11)
 
 project(lxqt-session)
 
+option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
+
 # additional cmake files
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
@@ -19,6 +21,8 @@ find_package(Qt5Xdg REQUIRED QUIET)
 
 find_package(lxqt-qt5 REQUIRED QUIET)
 include(${LXQT_USE_FILE})
+
+include(LXQtTranslate)
 
 find_package(PkgConfig REQUIRED QUIET)
 pkg_check_modules(XCB REQUIRED xcb)
