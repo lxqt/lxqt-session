@@ -4,16 +4,17 @@ if(NOT CMAKE_BUILD_TYPE)
    set(CMAKE_BUILD_TYPE Release)
 endif()
 
-set(QTX_INCLUDE_DIRS "")
-set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
-
 include(LxQtLibSuffix)
 
 
 include_directories(
-    ${CMAKE_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}
-    ${QTX_INCLUDE_DIRS} ${XCB_INCLUDE_DIRS} ${X11_INCLUDE_DIR}
-    src)
+    ${CMAKE_SOURCE_DIR}
+    ${CMAKE_CURRENT_BINARY_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${XCB_INCLUDE_DIRS}
+    ${X11_INCLUDE_DIR}
+    src
+)
 
 set(lxqt-session_HDRS "")
 
@@ -54,9 +55,11 @@ add_executable(lxqt-session
 )
 
 target_link_libraries(lxqt-session
+    Qt5::Widgets
+    Qt5::DBus
+    Qt5::X11Extras
     ${XCB_LIBRARIES}
     ${X11_LIBRARIES}
-    ${QTX_LIBRARIES}
     ${LXQT_LIBRARIES}
     ${QTXDG_LIBRARIES}
     KF5::WindowSystem

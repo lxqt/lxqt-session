@@ -1,14 +1,11 @@
 project(lxqt-config-session)
 
-set(QTX_INCLUDE_DIRS "")
-set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
 
 
 include_directories(
     "${CMAKE_SOURCE_DIR}"
     "${CMAKE_CURRENT_BINARY_DIR}"
     "${CMAKE_CURRENT_SOURCE_DIR}"
-    ${QTX_INCLUDE_DIRS}
 )
 
 set(lxqt-sessioncfg_HDRS
@@ -62,8 +59,20 @@ lxqt_translate_ts(lxqt-sessioncfg_QM_FILES
 lxqt_app_translation_loader(lxqt-sessioncfg_QM_LOADER ${PROJECT_NAME})
 lxqt_translate_desktop(lxqt-sessioncfg_DESKTOP_FILES SOURCES lxqt-config-session.desktop.in)
 
-add_executable(lxqt-config-session ${lxqt-sessioncfg_SRCS} ${lxqt-sessioncfg_UIS} ${lxqt-sessioncfg_DESKTOP_FILES} ${lxqt-sessioncfg_QM_FILES} ${lxqt-sessioncfg_QM_LOADER})
-target_link_libraries(lxqt-config-session ${QTX_LIBRARIES} ${LXQT_LIBRARIES} ${QTXDG_LIBRARIES})
+add_executable(lxqt-config-session
+    ${lxqt-sessioncfg_SRCS}
+    ${lxqt-sessioncfg_UIS}
+    ${lxqt-sessioncfg_DESKTOP_FILES}
+    ${lxqt-sessioncfg_QM_FILES}
+    ${lxqt-sessioncfg_QM_LOADER})
+
+target_link_libraries(lxqt-config-session
+    Qt5::Widgets
+    Qt5::DBus
+    Qt5::X11Extras
+    ${LXQT_LIBRARIES}
+    ${QTXDG_LIBRARIES}
+)
 
 INSTALL(TARGETS lxqt-config-session RUNTIME DESTINATION bin)
 install(FILES ${lxqt-sessioncfg_DESKTOP_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/applications)
