@@ -11,7 +11,6 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_AUTOMOC ON)
 
-cmake_minimum_required(VERSION 2.8.11)
 find_package(KF5WindowSystem REQUIRED)
 find_package(Qt5Widgets REQUIRED QUIET)
 find_package(Qt5DBus REQUIRED QUIET)
