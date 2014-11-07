@@ -1,7 +1,5 @@
 project(lxqt-config-session)
 
-
-
 include_directories(
     "${CMAKE_SOURCE_DIR}"
     "${CMAKE_CURRENT_BINARY_DIR}"
@@ -75,4 +73,8 @@ target_link_libraries(lxqt-config-session
 )
 
 INSTALL(TARGETS lxqt-config-session RUNTIME DESTINATION bin)
-install(FILES ${lxqt-sessioncfg_DESKTOP_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/applications)
+install(FILES
+        ${lxqt-sessioncfg_DESKTOP_FILES}
+    DESTINATION
+         ${CMAKE_INSTALL_PREFIX}/share/applications
+)
