@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.11)
 
 project(lxqt-common)
 
-find_package(lxqt-qt5 REQUIRED)
+find_package(lxqt REQUIRED)
 include(${LXQT_USE_FILE})
 
 include(LXQtTranslateDesktop)
