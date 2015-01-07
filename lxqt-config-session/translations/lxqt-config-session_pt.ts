@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="pt">
+<TS version="2.0" language="pt">
 <context>
     <name>AutoStartEdit</name>
     <message>
@@ -26,7 +26,7 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>À espera da bandeja do sistema</translation>
+        <translation>Esperar pela bandeja do sistema</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="59"/>
@@ -39,16 +39,16 @@
     <message>
         <location filename="../autostartmodel.cpp" line="177"/>
         <source>Global Autostart</source>
-        <translation>Arranque automático geral</translation>
+        <translation>Arranque automático global</translation>
     </message>
     <message>
         <source>LxQt Autostart</source>
-        <translation type="vanished">Arranque automático do LxQt</translation>
+        <translation>Arranque automático do LxQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
         <source>LXQt Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Arranque automático do LxQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="197"/>
@@ -81,7 +81,7 @@
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Arranque automático de aplicações</translation>
+        <translation>Aplicações com arranque automático</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="82"/>
@@ -109,17 +109,17 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished"></translation>
+        <translation>Módulos do LxQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sair da sessão</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirmar ao sair da sessão</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -128,7 +128,7 @@
     </message>
     <message>
         <source>LxQt Modules</source>
-        <translation type="vanished">Módulos LxQt</translation>
+        <translation>Módulos do LxQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -143,7 +143,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="84"/>
         <source>Select a window manager</source>
-        <translation>Escolha o gestor de janelas</translation>
+        <translation>Escolha um gestor de janelas</translation>
     </message>
 </context>
 <context>
@@ -223,12 +223,12 @@
     <name>SessionConfigWindow</name>
     <message>
         <source>LxQt Session Configuration</source>
-        <translation type="vanished">Definições da sessão LxQt</translation>
+        <translation>Configuração da sessão LxQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Definições da sessão LxQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="46"/>
@@ -253,7 +253,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="84"/>
         <source>Session Restart Required</source>
-        <translation>Requer o reinicio da sessão</translation>
+        <translation>Tem que reiniciar a sessão</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="85"/>
