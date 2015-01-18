@@ -7,5 +7,6 @@ Exec=lxqt-leave --suspend
 Icon=system-suspend
 Categories=LXQt;X-Leave
 OnlyShowIn=LXQt
+NoDisplay=true
 
 #TRANSLATIONS_DIR=../translations
