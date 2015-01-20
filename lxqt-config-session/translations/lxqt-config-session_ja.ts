@@ -11,7 +11,7 @@
     <message>
         <location filename="../autostartedit.ui" line="20"/>
         <source>Name:</source>
-        <translation>名称:</translation>
+        <translation>名前:</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="27"/>
@@ -39,26 +39,22 @@
     <message>
         <location filename="../autostartmodel.cpp" line="177"/>
         <source>Global Autostart</source>
-        <translation>全体的な自動起動</translation>
-    </message>
-    <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">LxQt自動起動</translation>
+        <translation>グローバルな自動起動</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
         <source>LXQt Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQtでの自動起動</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="197"/>
         <source>Location: %1</source>
-        <translation>位置:%1</translation>
+        <translation>位置: %1</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="199"/>
         <source>Overrides: %1</source>
-        <translation>上書き:%1</translation>
+        <translation>上書き: %1</translation>
     </message>
 </context>
 <context>
@@ -81,7 +77,7 @@
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>アプリケーション自動起動</translation>
+        <translation>アプリケーションの自動起動</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="82"/>
@@ -91,7 +87,7 @@
     <message>
         <location filename="../autostartpage.cpp" line="82"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>File&apos;%1&apos;は既にあります!</translation>
+        <translation>File &apos;%1&apos; は既にあります!</translation>
     </message>
 </context>
 <context>
@@ -99,7 +95,7 @@
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation>ウィンドウマネージャ</translation>
+        <translation>ウィンドウマネージャー</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
@@ -109,32 +105,32 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQtのモジュール</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation type="unfinished"></translation>
+        <translation>セッション終了時</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>セッション終了を確認する</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>基本的な設定</translation>
+        <translation>基本設定</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>始動</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>停止</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="84"/>
@@ -147,12 +143,12 @@
     <message>
         <location filename="../defaultappspage.cpp" line="72"/>
         <source>Select a terminal emulator</source>
-        <translation>ターミナルエミュレータの選択</translation>
+        <translation>端末エミュレーターの選択</translation>
     </message>
     <message>
         <location filename="../defaultappspage.cpp" line="77"/>
         <source>Select a web browser</source>
-        <translation>ウェブブラウザの選択</translation>
+        <translation>ウェブブラウザーの選択</translation>
     </message>
 </context>
 <context>
@@ -160,12 +156,12 @@
     <message>
         <location filename="../defaultappspage.ui" line="23"/>
         <source>Default Applications</source>
-        <translation>既定のアプリケーション</translation>
+        <translation>デフォルトのアプリケーション</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation>ターミネルのエミュレーション</translation>
+        <translation>端末エミュレーター:</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="52"/>
@@ -176,7 +172,7 @@
     <message>
         <location filename="../defaultappspage.ui" line="59"/>
         <source>Web Browser:</source>
-        <translation>ウェブブラウザ:</translation>
+        <translation>ウェブブラウザー:</translation>
     </message>
 </context>
 <context>
@@ -194,7 +190,7 @@
     <message>
         <location filename="../environmentpage.ui" line="63"/>
         <source>Environment Variables (Advanced)</source>
-        <translation>環境変数(詳細)</translation>
+        <translation>環境変数(高度)</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="74"/>
@@ -212,19 +208,15 @@
     <message>
         <location filename="../modulemodel.cpp" line="85"/>
         <source>Running</source>
-        <translation type="unfinished"></translation>
+        <translation>実行中</translation>
     </message>
 </context>
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">LxQtセッションの設定</translation>
-    </message>
-    <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>LxQtセッションの設定</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="46"/>
@@ -234,7 +226,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="52"/>
         <source>Default Applications</source>
-        <translation>既定のアプリケーション</translation>
+        <translation>デフォルトのアプリケーション</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="55"/>
@@ -244,17 +236,17 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="60"/>
         <source>Environment (Advanced)</source>
-        <translation>環境(詳細)</translation>
+        <translation>環境(高度)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="84"/>
         <source>Session Restart Required</source>
-        <translation>セッション再起動の要求</translation>
+        <translation>セッション再起動が必要</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="85"/>
         <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation>デスクトップセッション(lxqt-session)を再起動する必要があります。メインメニューからログアウトしてください。</translation>
+        <translation>設定を反映するにはデスクトップセッション(lxqt-session)を再起動する必要がありますので、メインメニューでログアウトを実行してください</translation>
     </message>
 </context>
 </TS>
