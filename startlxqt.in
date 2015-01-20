@@ -37,8 +37,8 @@ export QT_PLATFORM_PLUGIN=lxqt
 # Qt5 platform plugin
 export QT_QPA_PLATFORMTHEME=lxqt
 
-# use lxde-applications.menu for main app menu
-export XDG_MENU_PREFIX="lxde-"
+# use lxqt-applications.menu for main app menu
+export XDG_MENU_PREFIX="lxqt-"
 
 export XDG_CURRENT_DESKTOP="LXQt"
 
