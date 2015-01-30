@@ -27,6 +27,9 @@ add_subdirectory(themes)
 # menu
 add_subdirectory(menu)
 
+# icons
+add_subdirectory(icons)
+
 # building tarball with CPack -------------------------------------------------
 include(InstallRequiredSystemLibraries)
 set(CPACK_PACKAGE_VERSION_MAJOR ${LXQT_MAJOR_VERSION})
