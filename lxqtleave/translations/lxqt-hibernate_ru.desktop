@@ -1,14 +1,2 @@
-[Desktop Entry]
-Type=Application
-Name=Hibernate
-GenericName=Hibernate
-Comment=hibernate the machine
-Exec=lxqt-leave --hibernate
-Icon=system-suspend-hibernate
-Categories=LXQt;X-Leave
-OnlyShowIn=LXQt
-
-#TRANSLATIONS_DIR=../translations
-
 Name[ru]=Спящий режим
 Comment[ru]=Перевести компьютер в спящий режим
