@@ -30,48 +30,63 @@
 #include <LXQt/ScreenSaver>
 #include <LXQt/Translator>
 
+#include "leavedialog.h"
+
 int main(int argc, char *argv[])
 {
-    LxQt::Application a(argc,argv);
+    LxQt::Application a(argc, argv);
     LxQt::Translator::translateApplication();
 
     LxQt::PowerManager powermanager(&a);
     LxQt::ScreenSaver screensaver(&a);
-    for (int i=1; i < argc; ++i)
+
+    for (int i = 1; i < argc; ++i)
     {
         QString arg = QString::fromLocal8Bit(argv[i]);
 
-        if (arg == "--logout")
+        if (arg == QStringLiteral("--logout"))
         {
             powermanager.logout();
             return 0;
         }
-        if (arg == "--suspend")
+
+        if (arg == QStringLiteral("--suspend"))
         {
             powermanager.suspend();
             return 0;
         }
-        if (arg == "--hibernate")
+
+        if (arg == QStringLiteral("--hibernate"))
         {
             powermanager.hibernate();
             return 0;
         }
-        if (arg == "--shutdown")
+
+        if (arg == QStringLiteral("--shutdown"))
         {
             powermanager.shutdown();
             return 0;
         }
-        if (arg == "--reboot")
+
+        if (arg == QStringLiteral("--reboot"))
         {
             powermanager.reboot();
             return 0;
         }
-        if (arg == "--lockscreen")
+
+        if (arg == QStringLiteral("--lockscreen"))
         {
-            a.connect(&screensaver,SIGNAL(done()),&a,SLOT(quit()));
+            a.connect(&screensaver, &LxQt::ScreenSaver::done, &a, &LxQt::Application::quit);
             screensaver.lockScreen();
             a.exec();
             return 0;
+        }
+
+        if (arg == QStringLiteral("--gui"))
+        {
+            LeaveDialog *dialog = new LeaveDialog;
+            dialog->exec();
+            delete dialog;
         }
     }
 }

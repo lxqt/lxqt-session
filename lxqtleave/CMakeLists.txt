@@ -3,8 +3,16 @@ project(lxqt-leave)
 
 set(CPP_FILES
     main.cpp
+    leavedialog.cpp
 )
 
+set(H_FILES
+    leavedialog.h
+)
+
+set(UI_FILES
+    leavedialog.ui
+)
 
 # Translations **********************************
 include(LXQtTranslate)
@@ -22,6 +30,7 @@ lxqt_translate_desktop(DESKTOP_FILES
 
 add_executable(lxqt-leave
     ${CPP_FILES}
+    ${UI_FILES}
     ${DESKTOP_FILES}
 )
 
