@@ -29,6 +29,7 @@
 #include <LXQt/PowerManager>
 #include <LXQt/ScreenSaver>
 #include <LXQt/Translator>
+#include <QDesktopWidget>
 
 #include "leavedialog.h"
 
@@ -84,9 +85,12 @@ int main(int argc, char *argv[])
 
         if (arg == QStringLiteral("--gui"))
         {
-            LeaveDialog *dialog = new LeaveDialog;
-            dialog->exec();
-            delete dialog;
+            LeaveDialog dialog;
+            dialog.setGeometry(QStyle::alignedRect(Qt::LeftToRight,
+                                                    Qt::AlignCenter,
+                                                    dialog.size(),
+                                                    qApp->desktop()->screenGeometry(QCursor::pos())));
+            dialog.exec();
         }
     }
 }

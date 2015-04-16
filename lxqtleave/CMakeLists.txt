@@ -18,6 +18,7 @@ set(UI_FILES
 include(LXQtTranslate)
 lxqt_translate_desktop(DESKTOP_FILES
     SOURCES
+    resources/lxqt-leave.desktop.in
     resources/lxqt-hibernate.desktop.in
     resources/lxqt-lockscreen.desktop.in
     resources/lxqt-logout.desktop.in
