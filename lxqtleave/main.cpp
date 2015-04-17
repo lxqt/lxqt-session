@@ -90,6 +90,7 @@ int main(int argc, char *argv[])
                                                     Qt::AlignCenter,
                                                     dialog.size(),
                                                     qApp->desktop()->screenGeometry(QCursor::pos())));
+            dialog.setMaximumSize(dialog.minimumSize());
             dialog.exec();
         }
     }
