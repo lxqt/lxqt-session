@@ -40,11 +40,11 @@ LeaveDialog::LeaveDialog(QWidget* parent)
     ui->suspendButton->setEnabled(mPower->canAction(LxQt::Power::PowerSuspend));
     ui->hibernateButton->setEnabled(mPower->canAction(LxQt::Power::PowerHibernate));
 
-    connect(ui->logoutButton,    &QPushButton::clicked, [&] { mPower->logout();     close(); });
-    connect(ui->rebootButton,    &QPushButton::clicked, [&] { mPower->reboot();     close(); });
-    connect(ui->shutdownButton,  &QPushButton::clicked, [&] { mPower->shutdown();   close(); });
-    connect(ui->suspendButton,   &QPushButton::clicked, [&] { mPower->suspend();    close(); });
-    connect(ui->hibernateButton, &QPushButton::clicked, [&] { mPower->hibernate();  close(); });
+    connect(ui->logoutButton,    &QPushButton::clicked, [&] { close(); mPower->logout(); });
+    connect(ui->rebootButton,    &QPushButton::clicked, [&] { close(); mPower->reboot(); });
+    connect(ui->shutdownButton,  &QPushButton::clicked, [&] { close(); mPower->shutdown(); });
+    connect(ui->suspendButton,   &QPushButton::clicked, [&] { close(); mPower->suspend(); });
+    connect(ui->hibernateButton, &QPushButton::clicked, [&] { close(); mPower->hibernate(); });
 
     connect(ui->cancelButton, &QPushButton::clicked, [&] { close(); });
 }
