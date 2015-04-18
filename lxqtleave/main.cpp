@@ -30,6 +30,8 @@
 #include <LXQt/ScreenSaver>
 #include <LXQt/Translator>
 #include <QDesktopWidget>
+#include <QCommandLineParser>
+#include <QCoreApplication>
 
 #include "leavedialog.h"
 
@@ -41,57 +43,73 @@ int main(int argc, char *argv[])
     LxQt::PowerManager powermanager(&a);
     LxQt::ScreenSaver screensaver(&a);
 
-    for (int i = 1; i < argc; ++i)
-    {
-        QString arg = QString::fromLocal8Bit(argv[i]);
+    QCommandLineParser parser;
+    parser.setApplicationDescription("lxqt-leave");
+    parser.addHelpOption();
+    parser.addVersionOption();
 
-        if (arg == QStringLiteral("--logout"))
-        {
-            powermanager.logout();
-            return 0;
-        }
+    QCommandLineOption logoutOption(QStringLiteral("logout"), QCoreApplication::translate("main", "Logout."));
+    parser.addOption(logoutOption);
 
-        if (arg == QStringLiteral("--suspend"))
-        {
-            powermanager.suspend();
-            return 0;
-        }
+    QCommandLineOption lockscreenOption(QStringLiteral("lockscreen"), QCoreApplication::translate("main", "Lockscreen."));
+    parser.addOption(lockscreenOption);
 
-        if (arg == QStringLiteral("--hibernate"))
-        {
-            powermanager.hibernate();
-            return 0;
-        }
+    QCommandLineOption suspendOption(QStringLiteral("suspend"), QCoreApplication::translate("main", "Suspend."));
+    parser.addOption(suspendOption);
 
-        if (arg == QStringLiteral("--shutdown"))
-        {
-            powermanager.shutdown();
-            return 0;
-        }
+    QCommandLineOption hibernateOption(QStringLiteral("hibernate"), QCoreApplication::translate("main", "Hibernate."));
+    parser.addOption(hibernateOption);
 
-        if (arg == QStringLiteral("--reboot"))
-        {
-            powermanager.reboot();
-            return 0;
-        }
+    QCommandLineOption shutdownOption(QStringLiteral("shutdown"), QCoreApplication::translate("main", "Shutdown."));
+    parser.addOption(shutdownOption);
 
-        if (arg == QStringLiteral("--lockscreen"))
-        {
-            a.connect(&screensaver, &LxQt::ScreenSaver::done, &a, &LxQt::Application::quit);
-            screensaver.lockScreen();
-            a.exec();
-            return 0;
-        }
+    QCommandLineOption rebootOption(QStringLiteral("reboot"), QCoreApplication::translate("main", "Reboot."));
+    parser.addOption(rebootOption);
 
-        if (arg == QStringLiteral("--gui"))
-        {
-            LeaveDialog dialog;
-            dialog.setGeometry(QStyle::alignedRect(Qt::LeftToRight,
-                                                    Qt::AlignCenter,
-                                                    dialog.size(),
-                                                    qApp->desktop()->screenGeometry(QCursor::pos())));
-            dialog.setMaximumSize(dialog.minimumSize());
-            dialog.exec();
-        }
+    QCommandLineOption guiOption(QStringLiteral("gui"), QCoreApplication::translate("main", "Shows the GUI."));
+    parser.addOption(guiOption);
+
+    parser.process(a);
+
+    if (parser.isSet(logoutOption)) {
+        powermanager.logout();
+        return 0;
+    }
+
+    if (parser.isSet(lockscreenOption)) {
+        a.connect(&screensaver, &LxQt::ScreenSaver::done, &a, &LxQt::Application::quit);
+        screensaver.lockScreen();
+        a.exec();
+        return 0;
+    }
+
+    if (parser.isSet(suspendOption)) {
+        powermanager.suspend();
+        return 0;
+    }
+
+    if (parser.isSet(hibernateOption)) {
+        powermanager.hibernate();
+        return 0;
+    }
+
+    if (parser.isSet(shutdownOption)) {
+        powermanager.shutdown();
+        return 0;
+    }
+
+    if (parser.isSet(rebootOption)) {
+        powermanager.reboot();
+        return 0;
+    }
+
+    if (parser.isSet(guiOption)) {
+        LeaveDialog dialog;
+        dialog.setGeometry(QStyle::alignedRect(Qt::LeftToRight,
+                    Qt::AlignCenter,
+                    dialog.size(),
+                    qApp->desktop()->screenGeometry(QCursor::pos())));
+        dialog.setMaximumSize(dialog.minimumSize());
+        dialog.exec();
     }
 }
