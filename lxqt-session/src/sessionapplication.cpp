@@ -20,6 +20,7 @@
 #include "sessionapplication.h"
 #include "sessiondbusadaptor.h"
 #include "lxqtmodman.h"
+#include "UdevNotifier.h"
 #include <unistd.h>
 #include <LXQt/Settings>
 #include <QProcess>
@@ -77,6 +78,25 @@ bool SessionApplication::startup()
     // loadFontSettings(settings);
     loadKeyboardSettings(settings);
     loadMouseSettings(settings);
+
+#if defined(WITH_LIBUDEV_MONITOR)
+    UdevNotifier * dev_notifier = new UdevNotifier{QStringLiteral("input"), this}; //will be released upon our destruction
+    QTimer * dev_timer = new QTimer{this}; //will be released upon our destruction
+    dev_timer->setSingleShot(true);
+    dev_timer->setInterval(500); //give some time to xorg... we need to reset keyboard afterwards
+    connect(dev_timer, &QTimer::timeout, [this]
+            {
+                //XXX: is this a race? (because settings can be currently changed by lxqt-config-input)
+                //     but with such a little probablity we can live...
+                LxQt::Settings settings(configName);
+                loadKeyboardSettings(settings);
+            });
+    connect(dev_notifier, &UdevNotifier::deviceAdded, [this, dev_timer] (QString device)
+            {
+                qWarning() << QStringLiteral("Session '%1', new input device '%2', keyboard setting will be reloaded...").arg(configName).arg(device);
+                dev_timer->start();
+            });
+#endif
 
     // launch module manager and autostart apps
     modman->startup(settings);
