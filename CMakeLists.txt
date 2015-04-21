@@ -41,7 +41,7 @@ find_package(X11 REQUIRED)
 
 add_subdirectory(lxqt-session)
 add_subdirectory(lxqt-config-session)
-add_subdirectory(lxqtleave)
+add_subdirectory(lxqt-leave)
 
 # building tarball with CPack -------------------------------------------------
 include(InstallRequiredSystemLibraries)
