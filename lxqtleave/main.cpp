@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
     LxQt::ScreenSaver screensaver(&a);
 
     QCommandLineParser parser;
-    parser.setApplicationDescription("lxqt-leave");
+    parser.setApplicationDescription(QStringLiteral("lxqt-leave"));
     parser.addHelpOption();
     parser.addVersionOption();
 
@@ -65,9 +65,6 @@ int main(int argc, char *argv[])
 
     QCommandLineOption rebootOption(QStringLiteral("reboot"), QCoreApplication::translate("main", "Reboot."));
     parser.addOption(rebootOption);
-
-    QCommandLineOption guiOption(QStringLiteral("gui"), QCoreApplication::translate("main", "Shows the GUI."));
-    parser.addOption(guiOption);
 
     parser.process(a);
 
@@ -103,13 +100,11 @@ int main(int argc, char *argv[])
         return 0;
     }
 
-    if (parser.isSet(guiOption)) {
-        LeaveDialog dialog;
-        dialog.setGeometry(QStyle::alignedRect(Qt::LeftToRight,
-                    Qt::AlignCenter,
-                    dialog.size(),
-                    qApp->desktop()->screenGeometry(QCursor::pos())));
-        dialog.setMaximumSize(dialog.minimumSize());
-        dialog.exec();
-    }
+    LeaveDialog dialog;
+    dialog.setGeometry(QStyle::alignedRect(Qt::LeftToRight,
+                Qt::AlignCenter,
+                dialog.size(),
+                qApp->desktop()->screenGeometry(QCursor::pos())));
+    dialog.setMaximumSize(dialog.minimumSize());
+    return dialog.exec();
 }
