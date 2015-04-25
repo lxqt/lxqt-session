@@ -14,6 +14,8 @@ set(UI_FILES
     leavedialog.ui
 )
 
+qt5_wrap_ui(UI_HEADERS ${UI_FILES})
+
 # Translations **********************************
 include(LXQtTranslate)
 lxqt_translate_desktop(DESKTOP_FILES
@@ -31,7 +33,7 @@ lxqt_translate_desktop(DESKTOP_FILES
 
 add_executable(lxqt-leave
     ${CPP_FILES}
-    ${UI_FILES}
+    ${UI_HEADERS}
     ${DESKTOP_FILES}
 )
 
