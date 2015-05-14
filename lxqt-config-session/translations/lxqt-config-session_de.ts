@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="de_DE">
+<TS version="2.1" language="de">
 <context>
     <name>AutoStartEdit</name>
     <message>
@@ -42,13 +42,9 @@
         <translation>Globaler Autostart</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">LxQt Autostart</translation>
-    </message>
-    <message>
         <location filename="../autostartmodel.cpp" line="179"/>
         <source>LXQt Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt Autostart</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="197"/>
@@ -109,26 +105,22 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt Module</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sitzung beenden</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>Beenden der Sitzung bestätigen</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
         <translation>Grundeinstellungen</translation>
-    </message>
-    <message>
-        <source>LxQt Modules</source>
-        <translation type="vanished">LxQt-Module</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -156,7 +148,7 @@
     <message>
         <location filename="../defaultappspage.cpp" line="77"/>
         <source>Select a web browser</source>
-        <translation>Web Browser auswählen</translation>
+        <translation>Web-Browser auswählen</translation>
     </message>
 </context>
 <context>
@@ -180,33 +172,33 @@
     <message>
         <location filename="../defaultappspage.ui" line="59"/>
         <source>Web Browser:</source>
-        <translation>Web Browser:</translation>
+        <translation>Web-Browser:</translation>
     </message>
 </context>
 <context>
     <name>EnvironmentPage</name>
     <message>
-        <location filename="../environmentpage.ui" line="30"/>
+        <location filename="../environmentpage.ui" line="17"/>
         <source>Add</source>
         <translation>Hinzufügen</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="37"/>
+        <location filename="../environmentpage.ui" line="24"/>
         <source>Delete</source>
         <translation>Löschen</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="63"/>
+        <location filename="../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
         <translation>Umgebungsvariablen (Erweitert)</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="74"/>
+        <location filename="../environmentpage.ui" line="61"/>
         <source>Variable Name</source>
         <translation>Variablenname</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="79"/>
+        <location filename="../environmentpage.ui" line="66"/>
         <source>Value</source>
         <translation>Wert</translation>
     </message>
@@ -222,13 +214,9 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">LxQt Sitzungs-Konfiguration</translation>
-    </message>
-    <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt Sitzungseinstellungen</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="46"/>
