@@ -43,8 +43,8 @@
 #include "windowmanager.h"
 #include <wordexp.h>
 
-#include <KF5/KWindowSystem/KWindowSystem>
-#include <KF5/KWindowSystem/netwm.h>
+#include <KWindowSystem/KWindowSystem>
+#include <KWindowSystem/netwm.h>
 
 #include <QX11Info>
 

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LeaveDialog</class>
+ <widget class="QDialog" name="LeaveDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>502</width>
+    <height>135</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;What do you want the computer to do?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="buttonsWidget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="logoutButton">
+        <property name="text">
+         <string>Logout</string>
+        </property>
+        <property name="icon">
+         <iconset theme="system-log-out"/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="rebootButton">
+        <property name="text">
+         <string>Reboot</string>
+        </property>
+        <property name="icon">
+         <iconset theme="system-reboot"/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="shutdownButton">
+        <property name="text">
+         <string>Shutdown</string>
+        </property>
+        <property name="icon">
+         <iconset theme="system-shutdown"/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="suspendButton">
+        <property name="text">
+         <string>Suspend</string>
+        </property>
+        <property name="icon">
+         <iconset theme="system-suspend"/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hibernateButton">
+        <property name="text">
+         <string>Hibernate</string>
+        </property>
+        <property name="icon">
+         <iconset theme="system-suspend-hibernate"/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>170</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cancelButton">
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+        <property name="icon">
+         <iconset theme="dialog-cancel"/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

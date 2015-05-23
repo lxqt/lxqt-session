@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="hu">
+<TS version="2.0" language="hu">
 <context>
     <name>AutoStartEdit</name>
     <message>
@@ -43,12 +43,12 @@
     </message>
     <message>
         <source>LxQt Autostart</source>
-        <translation type="vanished">LxQt automatikus indítás</translation>
+        <translation>LxQt automatikus indítás</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
         <source>LXQt Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt automatikus indítás</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="197"/>
@@ -91,7 +91,7 @@
     <message>
         <location filename="../autostartpage.cpp" line="82"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>A(z) „%1” fájl már létezik.</translation>
+        <translation>Van már &apos;%1&apos; fájl!</translation>
     </message>
 </context>
 <context>
@@ -109,17 +109,17 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt modulok</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Munkamenet elhagyása</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>Jóváhagyás az elhagyás előtt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -128,7 +128,7 @@
     </message>
     <message>
         <source>LxQt Modules</source>
-        <translation type="vanished">LxQt modulok</translation>
+        <translation>LxQt modulok</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -223,12 +223,12 @@
     <name>SessionConfigWindow</name>
     <message>
         <source>LxQt Session Configuration</source>
-        <translation type="vanished">LxQt munkamenet-beállítás</translation>
+        <translation>LxQt munkamenet konfiguráció</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>LxQt munkamenet-beállítás</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="46"/>
@@ -253,7 +253,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="84"/>
         <source>Session Restart Required</source>
-        <translation>A munkamenet újraindítása szükséges</translation>
+        <translation>A munkamenet újraindítandó</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="85"/>
