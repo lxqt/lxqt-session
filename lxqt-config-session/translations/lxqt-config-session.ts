@@ -178,27 +178,27 @@
 <context>
     <name>EnvironmentPage</name>
     <message>
-        <location filename="../environmentpage.ui" line="30"/>
+        <location filename="../environmentpage.ui" line="17"/>
         <source>Add</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="37"/>
+        <location filename="../environmentpage.ui" line="24"/>
         <source>Delete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="63"/>
+        <location filename="../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="74"/>
+        <location filename="../environmentpage.ui" line="61"/>
         <source>Variable Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="79"/>
+        <location filename="../environmentpage.ui" line="66"/>
         <source>Value</source>
         <translation type="unfinished"></translation>
     </message>
