@@ -24,7 +24,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Willkommen zu LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Bitte wählen Sie Ihren Default-Fenstermanager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Willkommen zu LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Bitte den Default-Fenstermanager auswählen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="62"/>
@@ -34,12 +34,12 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
-        <translation>Wähle was dir am Besten gefällt.</translation>
+        <translation>Den Favoriten auswählen.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Sie können den Fenstermanager später über Einstellungen -&gt; LxQt Sitzungs-Konfigurator -&gt; Grundeinstellungen jederzeit wieder ändern.</translation>
+        <translation>Der Fenstermanager kann jederzeit über Einstellungen -&gt; Sitzungs-Konfigurator -&gt; Grundeinstellungen wieder geändert werden.</translation>
     </message>
 </context>
 </TS>
