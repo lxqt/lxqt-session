@@ -5,11 +5,11 @@ if [ -z "$XDG_DATA_HOME" ]; then
 fi
 
 if [ -z "$XDG_CONFIG_HOME" ]; then
-	export XDG_CONFIG_HOME="$HOME/.config"
+    export XDG_CONFIG_HOME="$HOME/.config"
 fi
 
 if [ -z "$XDG_DATA_DIRS" ]; then
-	export XDG_DATA_DIRS="$XDG_DATA_HOME:/usr/local/share/:/usr/share/"
+    export XDG_DATA_DIRS="$XDG_DATA_HOME:/usr/local/share/:/usr/share/"
 fi
 
 if [ -z "$XDG_CONFIG_DIRS" ]; then
@@ -18,9 +18,9 @@ fi
 
 # Ensure the existance of the 'Desktop' folder
 if [ -e "$XDG_CONFIG_HOME/user-dirs.dirs" ]; then
-	. "$XDG_CONFIG_HOME/user-dirs.dirs"
+    . "$XDG_CONFIG_HOME/user-dirs.dirs"
 else
-	XDG_DESKTOP_DIR="$HOME/Desktop"
+    XDG_DESKTOP_DIR="$HOME/Desktop"
 fi
 mkdir -p "$XDG_DESKTOP_DIR"
 
@@ -32,7 +32,7 @@ export SAL_USE_VCLPLUGIN=kde4
 
 # Launch DBus if needed
 if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
-	eval "$(dbus-launch --sh-syntax --exit-with-session)"
+    eval "$(dbus-launch --sh-syntax --exit-with-session)"
 fi
 
 # Qt4 platform plugin
