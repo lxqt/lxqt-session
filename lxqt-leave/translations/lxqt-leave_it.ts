@@ -6,37 +6,37 @@
     <message>
         <location filename="../leavedialog.ui" line="20"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Esci</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="29"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;What do you want the computer to do?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Uscire dalla sessione di LXQt?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="45"/>
         <source>Logout</source>
-        <translation>Logout</translation>
+        <translation>Chiudere la sessione</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="55"/>
         <source>Reboot</source>
-        <translation>Riavvia</translation>
+        <translation>Riavviare</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="65"/>
         <source>Shutdown</source>
-        <translation>Spegni</translation>
+        <translation>Spegnere</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="75"/>
         <source>Suspend</source>
-        <translation>Sospendi</translation>
+        <translation>Sospendere</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="85"/>
         <source>Hibernate</source>
-        <translation>Iberna</translation>
+        <translation>Ibernare</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="114"/>
@@ -49,6 +49,7 @@
     <message>
         <location filename="../main.cpp" line="51"/>
         <source>Logout.</source>
+        <translatorcomment>Is this in &quot;main&quot; really to translate?</translatorcomment>
         <translation>Logout.</translation>
     </message>
     <message>
