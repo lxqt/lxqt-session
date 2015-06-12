@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
 Exec=startlxqt
+TryExec=lxqt-session
 Name=LXQt Desktop
 Comment=Lightweight Qt Desktop
 
