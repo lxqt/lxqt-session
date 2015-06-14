@@ -30,7 +30,8 @@
 LeaveDialog::LeaveDialog(QWidget* parent)
     : QDialog(parent),
     ui(new Ui::LeaveDialog),
-    mPower(new LxQt::Power(this))
+    mPower(new LxQt::Power(this)),
+    mScreensaver(new LxQt::ScreenSaver(this))
 {
     ui->setupUi(this);
 
@@ -40,11 +41,18 @@ LeaveDialog::LeaveDialog(QWidget* parent)
     ui->suspendButton->setEnabled(mPower->canAction(LxQt::Power::PowerSuspend));
     ui->hibernateButton->setEnabled(mPower->canAction(LxQt::Power::PowerHibernate));
 
-    connect(ui->logoutButton,    &QPushButton::clicked, [&] { close(); mPower->logout(); });
-    connect(ui->rebootButton,    &QPushButton::clicked, [&] { close(); mPower->reboot(); });
-    connect(ui->shutdownButton,  &QPushButton::clicked, [&] { close(); mPower->shutdown(); });
-    connect(ui->suspendButton,   &QPushButton::clicked, [&] { close(); mPower->suspend(); });
-    connect(ui->hibernateButton, &QPushButton::clicked, [&] { close(); mPower->hibernate(); });
+    connect(ui->logoutButton,       &QPushButton::clicked, [&] { close(); mPower->logout(); });
+    connect(ui->rebootButton,       &QPushButton::clicked, [&] { close(); mPower->reboot(); });
+    connect(ui->shutdownButton,     &QPushButton::clicked, [&] { close(); mPower->shutdown(); });
+    connect(ui->suspendButton,      &QPushButton::clicked, [&] { close(); mPower->suspend(); });
+    connect(ui->hibernateButton,    &QPushButton::clicked, [&] { close(); mPower->hibernate(); });
+    connect(ui->lockscreenButton,   &QPushButton::clicked, [&] {
+        close();
+        QEventLoop loop;
+        connect(mScreensaver, &LxQt::ScreenSaver::done, &loop, &QEventLoop::quit);
+        mScreensaver->lockScreen();
+        loop.exec();
+    });
 
     connect(ui->cancelButton, &QPushButton::clicked, [&] { close(); });
 }

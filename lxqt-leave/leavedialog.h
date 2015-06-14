@@ -32,6 +32,7 @@
 
 #include <QDialog>
 #include <LXQt/Power>
+#include <LXQt/ScreenSaver>
 
 namespace Ui {
     class LeaveDialog;
@@ -48,6 +49,7 @@ public:
 private:
     Ui::LeaveDialog *ui;
     LxQt::Power *mPower;
+    LxQt::ScreenSaver *mScreensaver;
 };
 
 

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>502</width>
+    <width>617</width>
     <height>135</height>
    </rect>
   </property>
@@ -45,7 +45,9 @@
          <string>Logout</string>
         </property>
         <property name="icon">
-         <iconset theme="system-log-out"/>
+         <iconset theme="system-log-out">
+          <normaloff/>
+         </iconset>
         </property>
        </widget>
       </item>
@@ -55,7 +57,9 @@
          <string>Reboot</string>
         </property>
         <property name="icon">
-         <iconset theme="system-reboot"/>
+         <iconset theme="system-reboot">
+          <normaloff/>
+         </iconset>
         </property>
        </widget>
       </item>
@@ -65,7 +69,9 @@
          <string>Shutdown</string>
         </property>
         <property name="icon">
-         <iconset theme="system-shutdown"/>
+         <iconset theme="system-shutdown">
+          <normaloff/>
+         </iconset>
         </property>
        </widget>
       </item>
@@ -75,7 +81,21 @@
          <string>Suspend</string>
         </property>
         <property name="icon">
-         <iconset theme="system-suspend"/>
+         <iconset theme="system-suspend">
+          <normaloff/>
+         </iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lockscreenButton">
+        <property name="text">
+         <string>Lock screen</string>
+        </property>
+        <property name="icon">
+         <iconset theme="system-lock-screen">
+          <normaloff/>
+         </iconset>
         </property>
        </widget>
       </item>
@@ -85,7 +105,9 @@
          <string>Hibernate</string>
         </property>
         <property name="icon">
-         <iconset theme="system-suspend-hibernate"/>
+         <iconset theme="system-suspend-hibernate">
+          <normaloff/>
+         </iconset>
         </property>
        </widget>
       </item>
@@ -114,7 +136,9 @@
          <string>Cancel</string>
         </property>
         <property name="icon">
-         <iconset theme="dialog-cancel"/>
+         <iconset theme="dialog-cancel">
+          <normaloff/>
+         </iconset>
         </property>
        </widget>
       </item>
