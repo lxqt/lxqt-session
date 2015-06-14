@@ -59,3 +59,4 @@ target_link_libraries(lxqt-leave
 
 install(TARGETS lxqt-leave RUNTIME DESTINATION bin)
 install(FILES ${DESKTOP_FILES} DESTINATION share/applications)
+install(FILES resources/lxqt-leave.1 DESTINATION share/man/man1)
