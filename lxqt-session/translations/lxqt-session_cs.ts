@@ -25,13 +25,13 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
-        <source>Welcome to LXDE-Qt</source>
+        <source>Welcome to LXQt</source>
         <translation type="vanished">Vítejte v LxQt-Qt</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Welcome to LXDE-Qt&lt;/b&gt;
+        <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
 &lt;p&gt;
-Before starting to use the LXDE-Qt, you might want to select the Windows Manager:</source>
+Before starting to use the LXQt, you might want to select the Windows Manager:</source>
         <translation type="vanished">&lt;b&gt;Vítejte v LxQt-Qt&lt;/b&gt;
 &lt;p&gt;
 Před započetím s prací byste mohl chtít vybrat si správce oken:</translation>

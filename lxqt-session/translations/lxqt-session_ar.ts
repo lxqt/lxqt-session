@@ -25,13 +25,13 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
-        <source>Welcome to LXDE-Qt</source>
+        <source>Welcome to LXQt</source>
         <translation type="vanished">أهلاً بكم في ريزركيوت</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Welcome to LXDE-Qt&lt;/b&gt;
+        <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
 &lt;p&gt;
-Before starting to use the LXDE-Qt, you might want to select the Windows Manager:</source>
+Before starting to use the LXQt, you might want to select the Windows Manager:</source>
         <translation type="vanished">&lt;b&gt;أهلاً بكم في ريزركيوت&lt;/b&gt;
 &lt;p&gt;
 قد تودُّ اختيار مدير النَّوافذ قبل الشُّروع باستخدام ريزركيوت:</translation>

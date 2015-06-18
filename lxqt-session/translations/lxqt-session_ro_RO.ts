@@ -21,16 +21,16 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
-        <source>Welcome to LXDE-Qt</source>
-        <translation type="vanished">Bine ați venit în LXDE-Qt</translation>
+        <source>Welcome to LXQt</source>
+        <translation type="vanished">Bine ați venit în LXQt</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Welcome to LXDE-Qt&lt;/b&gt;
+        <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
 &lt;p&gt;
-Before starting to use the LXDE-Qt, you might want to select the Windows Manager:</source>
-        <translation type="vanished">&lt;b&gt;Bine ați venit în LXDE-Qt&lt;/b&gt;
+Before starting to use the LXQt, you might want to select the Windows Manager:</source>
+        <translation type="vanished">&lt;b&gt;Bine ați venit în LXQt&lt;/b&gt;
 &lt;p&gt;
-Înainte de a utiliza LXDE-Qt, selectați un administrator de ferestre:</translation>
+Înainte de a utiliza LXQt, selectați un administrator de ferestre:</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="62"/>

@@ -17,16 +17,16 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
-        <source>Welcome to LXDE-Qt</source>
-        <translation>Üdvözli a LXDE-Qt!</translation>
+        <source>Welcome to LXQt</source>
+        <translation>Üdvözli a LXQt!</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Welcome to LXDE-Qt&lt;/b&gt;
+        <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
 &lt;p&gt;
-Before starting to use the LXDE-Qt, you might want to select the Windows Manager:</source>
-        <translation>&lt;b&gt;Üdvözli a LXDE-Qt!&lt;/b&gt;
+Before starting to use the LXQt, you might want to select the Windows Manager:</source>
+        <translation>&lt;b&gt;Üdvözli a LXQt!&lt;/b&gt;
 &lt;p&gt;
-Mielőtt elkezdené a LXDE-Qt használatát, válasszon ablakkezelőt:</translation>
+Mielőtt elkezdené a LXQt használatát, válasszon ablakkezelőt:</translation>
     </message>
     <message>
         <source>You can change the Window Manager later at any time via LxQt Session Configurator.</source>

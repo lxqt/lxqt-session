@@ -25,16 +25,16 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
-        <source>Welcome to LXDE-Qt</source>
-        <translation type="vanished">Tervetuloa LXDE-Qt-työpöytäympäristöön</translation>
+        <source>Welcome to LXQt</source>
+        <translation type="vanished">Tervetuloa LXQt-työpöytäympäristöön</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Welcome to LXDE-Qt&lt;/b&gt;
+        <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
 &lt;p&gt;
-Before starting to use the LXDE-Qt, you might want to select the Windows Manager:</source>
-        <translation type="vanished">&lt;b&gt;Tervetuloa LXDE-Qt-työpöytäympäristöön&lt;/b&gt;
+Before starting to use the LXQt, you might want to select the Windows Manager:</source>
+        <translation type="vanished">&lt;b&gt;Tervetuloa LXQt-työpöytäympäristöön&lt;/b&gt;
 &lt;p&gt;
-Ennen kuin alat käyttää LXDE-Qt-työpöytäympäristöä, halunnet määrittää ikkunahallinnan:</translation>
+Ennen kuin alat käyttää LXQt-työpöytäympäristöä, halunnet määrittää ikkunahallinnan:</translation>
     </message>
     <message>
         <source>You can change the Window Manager later at any time via LxQt Session Configurator.</source>

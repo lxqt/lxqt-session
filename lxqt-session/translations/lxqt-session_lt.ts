@@ -25,16 +25,16 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
-        <source>Welcome to LXDE-Qt</source>
-        <translation type="vanished">Jus sveikina LXDE-Qt</translation>
+        <source>Welcome to LXQt</source>
+        <translation type="vanished">Jus sveikina LXQt</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Welcome to LXDE-Qt&lt;/b&gt;
+        <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
 &lt;p&gt;
-Before starting to use the LXDE-Qt, you might want to select the Windows Manager:</source>
-        <translation type="vanished">&lt;b&gt;Jus sveikina LXDE-Qt&lt;/b&gt;
+Before starting to use the LXQt, you might want to select the Windows Manager:</source>
+        <translation type="vanished">&lt;b&gt;Jus sveikina LXQt&lt;/b&gt;
 &lt;p&gt;
-Prieš pradėdami dirbti LXDE-Qt aplinkoje, pasirinkite norimą langų tvarkyklę.</translation>
+Prieš pradėdami dirbti LXQt aplinkoje, pasirinkite norimą langų tvarkyklę.</translation>
     </message>
     <message>
         <source>You can change the Window Manager later at any time via LxQt Session Configurator.</source>
