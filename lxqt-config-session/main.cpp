@@ -24,7 +24,7 @@
  * Boston, MA 02110-1301 USA
  *
  * END_COMMON_COPYRIGHT_HEADER */
- 
+
 #include <LXQt/SingleApplication>
 
 #include <XdgIcon>
@@ -35,7 +35,7 @@
 int main(int argc, char** argv)
 {
     LxQt::SingleApplication a(argc, argv);
-    
+
     SessionConfigWindow w;
     a.setActivationWindow(&w);
     w.show();

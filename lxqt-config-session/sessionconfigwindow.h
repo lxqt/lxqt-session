@@ -35,7 +35,7 @@
 class SessionConfigWindow : public LxQt::ConfigDialog
 {
     Q_OBJECT
-    
+
 public:
     SessionConfigWindow();
     ~SessionConfigWindow();
