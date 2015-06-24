@@ -114,7 +114,7 @@
       <item>
        <widget class="QCheckBox" name="leaveConfirmationCheckBox">
         <property name="text">
-         <string>Ask confirmation to leave session</string>
+         <string>Ask for confirmation to leave session</string>
         </property>
        </widget>
       </item>
