@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="it_IT">
+<TS version="2.1" language="it">
 <context>
     <name>AutoStartEdit</name>
     <message>
@@ -48,7 +48,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
         <source>LXQt Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="197"/>
@@ -109,17 +109,17 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished"></translation>
+        <translation>Moduli di LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiusura sessione</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiedi una conferma per terminare la sessione</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazioni della sessione LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="46"/>
