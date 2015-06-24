@@ -68,7 +68,7 @@ void BasicSettings::restoreSettings()
     SessionConfigWindow::handleCfgComboBox(ui->wmComboBox, knownWMs, wm);
     m_moduleModel->reset();
 
-    ui->leaveConfirmationCheckBox->setChecked(m_settings->value("leave_confirmation", true).toBool());
+    ui->leaveConfirmationCheckBox->setChecked(m_settings->value("leave_confirmation", false).toBool());
 }
 
 void BasicSettings::save()
