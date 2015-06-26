@@ -1,4 +1,6 @@
+cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 project(lxqt-config-session)
+
 
 include_directories(
     "${CMAKE_SOURCE_DIR}"
@@ -69,8 +71,7 @@ target_link_libraries(lxqt-config-session
     Qt5::Widgets
     Qt5::DBus
     Qt5::X11Extras
-    ${LXQT_LIBRARIES}
-    ${QTXDG_LIBRARIES}
+    lxqt
 )
 
 INSTALL(TARGETS lxqt-config-session RUNTIME DESTINATION bin)

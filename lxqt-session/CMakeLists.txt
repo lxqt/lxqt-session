@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 project(lxqt-session)
 
 if(NOT CMAKE_BUILD_TYPE)
@@ -74,8 +75,7 @@ target_link_libraries(lxqt-session
     Qt5::X11Extras
     ${XCB_LIBRARIES}
     ${X11_LIBRARIES}
-    ${LXQT_LIBRARIES}
-    ${QTXDG_LIBRARIES}
+    lxqt
     KF5::WindowSystem
 )
 if(LIBUDEV_MONITOR)
