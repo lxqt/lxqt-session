@@ -93,7 +93,7 @@ bool SessionApplication::startup()
             });
     connect(dev_notifier, &UdevNotifier::deviceAdded, [this, dev_timer] (QString device)
             {
-                qWarning() << QStringLiteral("Session '%1', new input device '%2', keyboard setting will be reloaded...").arg(configName).arg(device);
+                qWarning() << QStringLiteral("Session '%1', new input device '%2', keyboard setting will be (optionaly) reloaded...").arg(configName).arg(device);
                 dev_timer->start();
             });
 #endif
@@ -129,29 +129,29 @@ void SessionApplication::loadEnvironmentSettings(LxQt::Settings& settings)
 
 // FIXME: how to set keyboard layout in Wayland?
 void SessionApplication::setxkbmap(QString layout, QString variant, QString model, QStringList options) {
-  QString command = "setxkbmap";
+  QStringList args;
   if(!model.isEmpty()) {
-    command += " -model ";
-    command += model;
+    args << QStringLiteral("-model");
+    args << model;
   }
   if(!layout.isEmpty()) {
-    command += " -layout ";
-    command += layout;
+    args << QStringLiteral("-layout");
+    args << layout;
 
     if(!variant.isEmpty()) {
-      command += " -variant ";
-      command += variant;
+      args << QStringLiteral("-variant");
+      args << variant;
     }
   }
   if(!options.isEmpty()) {
     Q_FOREACH(const QString& option, options) {
-      command += " -option ";
-      command += option;
+      args << QStringLiteral("-option");
+      args << option;
     }
   }
   // execute the command line
-  QProcess setxkbmap;
-  setxkbmap.startDetached(command);
+  if (!args.isEmpty())
+      QProcess::startDetached(QStringLiteral("setxkbmap"), args);
 }
 
 void SessionApplication::loadKeyboardSettings(LxQt::Settings& settings)
