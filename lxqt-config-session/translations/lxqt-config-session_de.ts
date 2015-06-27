@@ -134,7 +134,7 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
-        <source>Ask confirmation to leave session</source>
+        <source>Ask for confirmation to leave session</source>
         <translation>Beenden der Sitzung bestätigen</translation>
     </message>
 </context>
