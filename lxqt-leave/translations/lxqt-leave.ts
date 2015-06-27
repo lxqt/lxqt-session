@@ -5,7 +5,7 @@
     <name>LeaveDialog</name>
     <message>
         <location filename="../leavedialog.ui" line="20"/>
-        <source>Form</source>
+        <source>Leave</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -19,27 +19,32 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="55"/>
+        <location filename="../leavedialog.ui" line="57"/>
         <source>Reboot</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="65"/>
+        <location filename="../leavedialog.ui" line="69"/>
         <source>Shutdown</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="75"/>
+        <location filename="../leavedialog.ui" line="81"/>
         <source>Suspend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="85"/>
+        <location filename="../leavedialog.ui" line="93"/>
+        <source>Lock screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../leavedialog.ui" line="105"/>
         <source>Hibernate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="114"/>
+        <location filename="../leavedialog.ui" line="136"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
