@@ -1,9 +1,8 @@
-cmake_minimum_required(VERSION 2.8.11)
+cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 
 project(lxqt-common)
 
 find_package(lxqt REQUIRED)
-include(${LXQT_USE_FILE})
 
 include(LXQtTranslateDesktop)
 
