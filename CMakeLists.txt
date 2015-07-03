@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.11)
+cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 
 project(lxqt-session)
 
@@ -27,10 +27,8 @@ find_package(Qt5Widgets REQUIRED QUIET)
 find_package(Qt5DBus REQUIRED QUIET)
 find_package(Qt5X11Extras REQUIRED QUIET)
 find_package(Qt5LinguistTools REQUIRED QUIET)
-find_package(Qt5Xdg REQUIRED QUIET)
 
 find_package(lxqt REQUIRED QUIET)
-include(${LXQT_USE_FILE})
 
 include(LXQtTranslate)
 

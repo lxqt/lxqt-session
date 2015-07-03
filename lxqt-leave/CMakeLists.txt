@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.11)
+cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 project(lxqt-leave)
 
 set(CPP_FILES
@@ -53,8 +53,7 @@ add_executable(lxqt-leave
 )
 
 target_link_libraries(lxqt-leave
-    ${LXQT_LIBRARIES}
-    ${LXQT_LIBRARY_NAME}
+    lxqt
 )
 
 install(TARGETS lxqt-leave RUNTIME DESTINATION bin)
