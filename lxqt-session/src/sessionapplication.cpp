@@ -21,6 +21,7 @@
 #include "sessiondbusadaptor.h"
 #include "lxqtmodman.h"
 #include "UdevNotifier.h"
+#include "numlock.h"
 #include <unistd.h>
 #include <LXQt/Settings>
 #include <QProcess>
@@ -168,9 +169,14 @@ void SessionApplication::loadKeyboardSettings(LXQt::Settings& settings)
         XkbSetAutoRepeatRate(QX11Info::display(), XkbUseCoreKbd, delay, interval);
     }
 
+    // turn on/off keyboard beep
     bool beep = settings.value("beep").toBool();
     values.bell_percent = beep ? -1 : 0;
     XChangeKeyboardControl(QX11Info::display(), KBBellPercent, &values);
+
+    // turn on numlock as needed
+    if(settings.value("numlock").toBool())
+        enableNumlock();
 
     // keyboard layout support using setxkbmap
     QString layout = settings.value("layout").toString();
