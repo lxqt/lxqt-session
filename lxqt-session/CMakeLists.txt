@@ -37,6 +37,8 @@ set(lxqt-session_SRCS
     src/windowmanager.cpp
     src/sessionapplication.cpp
     src/sessiondbusadaptor.h
+    src/numlock.cpp
+    src/numlock.h
 )
 if(LIBUDEV_MONITOR)
     list(APPEND lxqt-session_SRCS src/UdevNotifier.cpp)
