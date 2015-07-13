@@ -14,8 +14,6 @@ if(NOT DEFINED LIBUDEV_MONITOR OR LIBUDEV_MONITOR)
     add_definitions(-DWITH_LIBUDEV_MONITOR)
 endif()
 
-include(LxQtLibSuffix)
-
 include_directories(
     ${CMAKE_SOURCE_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}
@@ -82,4 +80,4 @@ if(LIBUDEV_MONITOR)
     target_link_libraries(lxqt-session ${LIBUDEV_LIBRARIES})
 endif()
 
-INSTALL(TARGETS lxqt-session RUNTIME DESTINATION bin)
+INSTALL(TARGETS lxqt-session RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}")

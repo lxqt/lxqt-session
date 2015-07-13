@@ -74,9 +74,9 @@ target_link_libraries(lxqt-config-session
     lxqt
 )
 
-INSTALL(TARGETS lxqt-config-session RUNTIME DESTINATION bin)
+INSTALL(TARGETS lxqt-config-session RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}")
 install(FILES
         ${lxqt-sessioncfg_DESKTOP_FILES}
     DESTINATION
-         ${CMAKE_INSTALL_PREFIX}/share/applications
+         "${CMAKE_INSTALL_DATAROOTDIR}/applications"
 )
