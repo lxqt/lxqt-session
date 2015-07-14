@@ -16,7 +16,6 @@ set(UI_FILES
 
 
 # Translations **********************************
-include(LXQtTranslate)
 lxqt_translate_desktop(DESKTOP_FILES
     SOURCES
     resources/lxqt-leave.desktop.in
