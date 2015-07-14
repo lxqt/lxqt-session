@@ -73,4 +73,8 @@ if(LIBUDEV_MONITOR)
     target_link_libraries(lxqt-session ${LIBUDEV_LIBRARIES})
 endif()
 
-INSTALL(TARGETS lxqt-session RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}")
+INSTALL(TARGETS
+    lxqt-session
+    RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
+    COMPONENT Runtime
+)

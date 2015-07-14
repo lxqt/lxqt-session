@@ -53,6 +53,18 @@ target_link_libraries(lxqt-leave
     lxqt
 )
 
-install(TARGETS lxqt-leave RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}")
-install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/applications")
-install(FILES resources/lxqt-leave.1 DESTINATION "${CMAKE_INSTALL_MANDIR}/man1")
+install(TARGETS
+    lxqt-leave
+    RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
+    COMPONENT Runtime
+)
+install(FILES
+    ${DESKTOP_FILES} DESTINATION
+    "${CMAKE_INSTALL_DATAROOTDIR}/applications"
+    COMPONENT Runtime
+)
+install(FILES
+    resources/lxqt-leave.1
+    DESTINATION "${CMAKE_INSTALL_MANDIR}/man1"
+    COMPONENT Runtime
+)
