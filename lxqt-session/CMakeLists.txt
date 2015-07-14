@@ -15,12 +15,8 @@ if(NOT DEFINED LIBUDEV_MONITOR OR LIBUDEV_MONITOR)
 endif()
 
 include_directories(
-    ${CMAKE_SOURCE_DIR}
-    ${CMAKE_CURRENT_BINARY_DIR}
-    ${CMAKE_CURRENT_SOURCE_DIR}
     ${XCB_INCLUDE_DIRS}
     ${X11_INCLUDE_DIR}
-    src
 )
 if(LIBUDEV_MONITOR)
     include_directories(${LIBUDEV_INCLUDE_DIRS})

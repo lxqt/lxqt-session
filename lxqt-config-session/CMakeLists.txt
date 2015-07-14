@@ -2,12 +2,6 @@ cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 project(lxqt-config-session)
 
 
-include_directories(
-    "${CMAKE_SOURCE_DIR}"
-    "${CMAKE_CURRENT_BINARY_DIR}"
-    "${CMAKE_CURRENT_SOURCE_DIR}"
-)
-
 set(lxqt-sessioncfg_HDRS
     sessionconfigwindow.h
     basicsettings.h
