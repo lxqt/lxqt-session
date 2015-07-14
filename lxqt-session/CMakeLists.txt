@@ -53,11 +53,8 @@ lxqt_translate_ts(lxqt-session_QM_FILES
 )
 lxqt_app_translation_loader(lxqt-session_QM_LOADER ${PROJECT_NAME})
 
-qt5_wrap_ui(UIS ${lxqt-session_UI})
-
 add_executable(lxqt-session
     ${lxqt-session_SRCS}
-    ${UIS}
     ${RSCS}
     ${lxqt-session_QM_FILES}
     ${lxqt-session_QM_LOADER}
