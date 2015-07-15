@@ -15,6 +15,7 @@ MACRO(INSTALL_SESSION_FILES directory)
         install(FILES
             ${SESSION_FILES}
             DESTINATION "${directory}"
+            COMPONENT Runtime
         )
 #    endif()
 ENDMACRO(INSTALL_SESSION_FILES)
