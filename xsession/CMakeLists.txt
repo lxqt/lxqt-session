@@ -12,7 +12,7 @@ add_custom_target(xsession_desktop_files ALL DEPENDS ${SESSION_FILES})
 
 MACRO(INSTALL_SESSION_FILES directory)
 #    if(EXISTS ${directory})
-        install(FILES ${SESSION_FILES} DESTINATION ${directory})
+        install(FILES ${SESSION_FILES} DESTINATION "${directory}")
 #    endif()
 ENDMACRO(INSTALL_SESSION_FILES)
 
