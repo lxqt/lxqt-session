@@ -14,6 +14,7 @@ configure_file(startlxqt.in startlxqt @ONLY)
 install(PROGRAMS
     "${CMAKE_CURRENT_BINARY_DIR}/startlxqt"
     DESTINATION "${CMAKE_INSTALL_BINDIR}"
+    COMPONENT Runtime
 )
 
 # default config files
