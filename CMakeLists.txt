@@ -4,14 +4,18 @@ project(lxqt-common)
 
 find_package(lxqt REQUIRED)
 
+include(GNUInstallDirs)
 include(LXQtTranslateDesktop)
 
 # graphics
-install(DIRECTORY graphics DESTINATION share/lxqt/)
+install(DIRECTORY graphics DESTINATION "${LXQT_SHARE_DIR}")
 
 # startlxqt script
 configure_file(startlxqt.in startlxqt @ONLY)
-install(PROGRAMS "${CMAKE_CURRENT_BINARY_DIR}/startlxqt" DESTINATION bin)
+install(PROGRAMS
+    "${CMAKE_CURRENT_BINARY_DIR}/startlxqt"
+    DESTINATION "${CMAKE_INSTALL_BINDIR}"
+)
 
 # default config files
 add_subdirectory(config)
