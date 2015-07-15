@@ -7,7 +7,6 @@ find_package(lxqt REQUIRED)
 include(GNUInstallDirs)
 include(LXQtTranslateDesktop)
 
-# graphics
 install(DIRECTORY graphics DESTINATION "${LXQT_SHARE_DIR}")
 
 # startlxqt script
@@ -23,14 +22,8 @@ add_subdirectory(autostart)
 
 # xsession *.desktop file for display managers
 add_subdirectory(xsession)
-
-# themes
 add_subdirectory(themes)
-
-# menu
 add_subdirectory(menu)
-
-# icons
 add_subdirectory(icons)
 
 # building tarball with CPack -------------------------------------------------
