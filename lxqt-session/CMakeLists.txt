@@ -14,15 +14,9 @@ if(NOT DEFINED LIBUDEV_MONITOR OR LIBUDEV_MONITOR)
     add_definitions(-DWITH_LIBUDEV_MONITOR)
 endif()
 
-include(LxQtLibSuffix)
-
 include_directories(
-    ${CMAKE_SOURCE_DIR}
-    ${CMAKE_CURRENT_BINARY_DIR}
-    ${CMAKE_CURRENT_SOURCE_DIR}
     ${XCB_INCLUDE_DIRS}
     ${X11_INCLUDE_DIR}
-    src
 )
 if(LIBUDEV_MONITOR)
     include_directories(${LIBUDEV_INCLUDE_DIRS})
@@ -59,11 +53,8 @@ lxqt_translate_ts(lxqt-session_QM_FILES
 )
 lxqt_app_translation_loader(lxqt-session_QM_LOADER ${PROJECT_NAME})
 
-qt5_wrap_ui(UIS ${lxqt-session_UI})
-
 add_executable(lxqt-session
     ${lxqt-session_SRCS}
-    ${UIS}
     ${RSCS}
     ${lxqt-session_QM_FILES}
     ${lxqt-session_QM_LOADER}
@@ -82,4 +73,8 @@ if(LIBUDEV_MONITOR)
     target_link_libraries(lxqt-session ${LIBUDEV_LIBRARIES})
 endif()
 
-INSTALL(TARGETS lxqt-session RUNTIME DESTINATION bin)
+INSTALL(TARGETS
+    lxqt-session
+    RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
+    COMPONENT Runtime
+)

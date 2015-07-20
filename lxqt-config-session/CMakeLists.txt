@@ -2,12 +2,6 @@ cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 project(lxqt-config-session)
 
 
-include_directories(
-    "${CMAKE_SOURCE_DIR}"
-    "${CMAKE_CURRENT_BINARY_DIR}"
-    "${CMAKE_CURRENT_SOURCE_DIR}"
-)
-
 set(lxqt-sessioncfg_HDRS
     sessionconfigwindow.h
     basicsettings.h
@@ -42,8 +36,6 @@ set(lxqt-sessioncfg_UI_FILES
     environmentpage.ui
 )
 
-qt5_wrap_ui(lxqt-sessioncfg_UIS ${lxqt-sessioncfg_UI_FILES})
-
 # Translations
 lxqt_translate_ts(lxqt-sessioncfg_QM_FILES
     UPDATE_TRANSLATIONS
@@ -61,7 +53,6 @@ lxqt_translate_desktop(lxqt-sessioncfg_DESKTOP_FILES SOURCES lxqt-config-session
 
 add_executable(lxqt-config-session
     ${lxqt-sessioncfg_SRCS}
-    ${lxqt-sessioncfg_UIS}
     ${lxqt-sessioncfg_DESKTOP_FILES}
     ${lxqt-sessioncfg_QM_FILES}
     ${lxqt-sessioncfg_QM_LOADER})
@@ -74,9 +65,15 @@ target_link_libraries(lxqt-config-session
     lxqt
 )
 
-INSTALL(TARGETS lxqt-config-session RUNTIME DESTINATION bin)
+INSTALL(TARGETS
+    lxqt-config-session
+    RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
+    COMPONENT Runtime
+)
+
 install(FILES
         ${lxqt-sessioncfg_DESKTOP_FILES}
     DESTINATION
-         ${CMAKE_INSTALL_PREFIX}/share/applications
+         "${CMAKE_INSTALL_DATAROOTDIR}/applications"
+    COMPONENT Runtime
 )

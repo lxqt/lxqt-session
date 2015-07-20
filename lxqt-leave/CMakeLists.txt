@@ -14,10 +14,8 @@ set(UI_FILES
     leavedialog.ui
 )
 
-qt5_wrap_ui(UI_HEADERS ${UI_FILES})
 
 # Translations **********************************
-include(LXQtTranslate)
 lxqt_translate_desktop(DESKTOP_FILES
     SOURCES
     resources/lxqt-leave.desktop.in
@@ -46,7 +44,6 @@ lxqt_app_translation_loader(lxqt-leave_QM_LOADER ${PROJECT_NAME})
 
 add_executable(lxqt-leave
     ${CPP_FILES}
-    ${UI_HEADERS}
     ${DESKTOP_FILES}
     ${lxqt-leave_QM_LOADER}
     ${lxqt-leave_QM_FILES}
@@ -56,6 +53,18 @@ target_link_libraries(lxqt-leave
     lxqt
 )
 
-install(TARGETS lxqt-leave RUNTIME DESTINATION bin)
-install(FILES ${DESKTOP_FILES} DESTINATION share/applications)
-install(FILES resources/lxqt-leave.1 DESTINATION share/man/man1)
+install(TARGETS
+    lxqt-leave
+    RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
+    COMPONENT Runtime
+)
+install(FILES
+    ${DESKTOP_FILES} DESTINATION
+    "${CMAKE_INSTALL_DATAROOTDIR}/applications"
+    COMPONENT Runtime
+)
+install(FILES
+    resources/lxqt-leave.1
+    DESTINATION "${CMAKE_INSTALL_MANDIR}/man1"
+    COMPONENT Runtime
+)
