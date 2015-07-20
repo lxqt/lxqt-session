@@ -4,14 +4,18 @@ project(lxqt-common)
 
 find_package(lxqt REQUIRED)
 
+include(GNUInstallDirs)
 include(LXQtTranslateDesktop)
 
-# graphics
-install(DIRECTORY graphics DESTINATION share/lxqt/)
+install(DIRECTORY graphics DESTINATION "${LXQT_SHARE_DIR}")
 
 # startlxqt script
 configure_file(startlxqt.in startlxqt @ONLY)
-install(PROGRAMS "${CMAKE_CURRENT_BINARY_DIR}/startlxqt" DESTINATION bin)
+install(PROGRAMS
+    "${CMAKE_CURRENT_BINARY_DIR}/startlxqt"
+    DESTINATION "${CMAKE_INSTALL_BINDIR}"
+    COMPONENT Runtime
+)
 
 # default config files
 add_subdirectory(config)
@@ -19,14 +23,8 @@ add_subdirectory(autostart)
 
 # xsession *.desktop file for display managers
 add_subdirectory(xsession)
-
-# themes
 add_subdirectory(themes)
-
-# menu
 add_subdirectory(menu)
-
-# icons
 add_subdirectory(icons)
 
 # building tarball with CPack -------------------------------------------------
