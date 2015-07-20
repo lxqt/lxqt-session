@@ -12,14 +12,18 @@ add_custom_target(xsession_desktop_files ALL DEPENDS ${SESSION_FILES})
 
 MACRO(INSTALL_SESSION_FILES directory)
 #    if(EXISTS ${directory})
-        install(FILES ${SESSION_FILES} DESTINATION ${directory})
+        install(FILES
+            ${SESSION_FILES}
+            DESTINATION "${directory}"
+            COMPONENT Runtime
+        )
 #    endif()
 ENDMACRO(INSTALL_SESSION_FILES)
 
 #INSTALL_SESSION_FILES("/etc/X11/sessions")
 #INSTALL_SESSION_FILES("/usr/share/sessions")
-INSTALL_SESSION_FILES("/usr/share/xsessions")
-INSTALL_SESSION_FILES("/usr/share/apps/kdm/sessions")
+INSTALL_SESSION_FILES("${CMAKE_INSTALL_DATAROOTDIR}/xsessions")
+INSTALL_SESSION_FILES("${CMAKE_INSTALL_DATAROOTDIR}/kdm/sessions")
 #INSTALL_SESSION_FILES("/usr/local/share/apps/kdm/sessions")
 #INSTALL_SESSION_FILES("/usr/share/config/kdm/sessions")
 #INSTALL_SESSION_FILES("/usr/local/share/config/kdm/sessions")
