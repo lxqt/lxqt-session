@@ -11,6 +11,7 @@ set(lxqt-sessioncfg_HDRS
     autostartedit.h
     defaultappspage.h
     environmentpage.h
+    userlocationspage.h
 )
 
 set(lxqt-sessioncfg_SRCS
@@ -24,6 +25,7 @@ set(lxqt-sessioncfg_SRCS
     autostartedit.cpp
     defaultappspage.cpp
     environmentpage.cpp
+    userlocationspage.cpp
     ../lxqt-session/src/windowmanager.cpp
 )
 
