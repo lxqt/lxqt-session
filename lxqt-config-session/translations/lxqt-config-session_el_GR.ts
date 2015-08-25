@@ -48,7 +48,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
         <source>LXQt Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτόματη εκκίνηση LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="197"/>
@@ -109,17 +109,21 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished"></translation>
+        <translation>Αρθρώματα LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Εγκατάλειψη της συνεδρίας</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
-        <source>Ask confirmation to leave session</source>
+        <source>Ask for confirmation to leave session</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ask confirmation to leave session</source>
+        <translation type="vanished">Ερώτηση επιβεβαίωσης κατά την εγκατάλειψη της συνεδρίας</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -186,27 +190,27 @@
 <context>
     <name>EnvironmentPage</name>
     <message>
-        <location filename="../environmentpage.ui" line="30"/>
+        <location filename="../environmentpage.ui" line="17"/>
         <source>Add</source>
         <translation>Προσθήκη</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="37"/>
+        <location filename="../environmentpage.ui" line="24"/>
         <source>Delete</source>
         <translation>Διαγραφή</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="63"/>
+        <location filename="../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
         <translation>Μεταβλητές περιβάλλοντος (για προχωρημένους)</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="74"/>
+        <location filename="../environmentpage.ui" line="61"/>
         <source>Variable Name</source>
         <translation>Όνομα μεταβλητής</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="79"/>
+        <location filename="../environmentpage.ui" line="66"/>
         <source>Value</source>
         <translation>Τιμή</translation>
     </message>
@@ -228,7 +232,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ρυθμίσεις συνεδρίας LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="46"/>

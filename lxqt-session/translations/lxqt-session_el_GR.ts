@@ -14,27 +14,28 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="289"/>
         <source>Crash Report</source>
-        <translation type="unfinished"></translation>
+        <translation>Αναφορά κατάρρευσης</translation>
     </message>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="290"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το &lt;b&gt;%1&lt;/b&gt; κατέρρευσε πάρα πολλές φορές. Η επανεκκίνησή του απενεργοποιήθηκε μέχρι την επόμενη σύνδεση.</translation>
     </message>
 </context>
 <context>
     <name>WmSelectDialog</name>
     <message>
+        <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation type="vanished">Καλως ήλθατε στο LXQt</translation>
+        <translation>Καλώς ήλθατε στο LXQt</translation>
     </message>
     <message>
         <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
 &lt;p&gt;
 Before starting to use the LXQt, you might want to select the Windows Manager:</source>
-        <translation type="vanished">&lt;b&gt;Καλως ήλθατε στο LXQt&lt;/b&gt;
+        <translation type="vanished">&lt;b&gt;Καλώς ήλθατε στο LXQt&lt;/b&gt;
 &lt;p&gt;
-Πριν ξεκινήσετε να χρησιμοποιείτε το LXQt, ίσως θέλετε να επιλέξετε ένα διαχειριστή παραθύρων:</translation>
+Πριν ξεκινήσετε να χρησιμοποιείτε το LXQt, ίσως θέλετε να επιλέξετε τον διαχειριστή παραθύρων:</translation>
     </message>
     <message>
         <source>You can change the Window Manager later at any time via LxQt Session Configurator.</source>
@@ -51,19 +52,14 @@ Before starting to use the LXQt, you might want to select the Windows Manager:</
         <translation>Επιλέξτε το αγαπημένο σας.</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.ui" line="14"/>
-        <source>Welcome to LXQt</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Καλώς ήλθατε στο LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Παρακαλώ επιλέξτε τον εξ ορισμού διαχειριστή παραθύρων.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Μπορείτε να αλλάξετε αυτήν τη ρύθμιση από τις Προτιμήσεις -&gt; Διαμόρφωση συνεδρίας -&gt; Βασικές ρυθμίσεις.</translation>
     </message>
 </context>
 </TS>
