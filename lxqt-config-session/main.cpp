@@ -1,10 +1,10 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LxQt - a lightweight, Qt based, desktop toolset
+ * LXQt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org, http://lxde.org/
  *
- * Copyright: 2010-2011 LxQt team
+ * Copyright: 2010-2011 LXQt team
  * Authors:
  *   Petr Vanek <petr@scribus.info>
  *
@@ -34,7 +34,7 @@
 
 int main(int argc, char** argv)
 {
-    LxQt::SingleApplication a(argc, argv);
+    LXQt::SingleApplication a(argc, argv);
 
     SessionConfigWindow w;
     a.setActivationWindow(&w);

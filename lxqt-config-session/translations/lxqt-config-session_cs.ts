@@ -42,8 +42,8 @@
         <translation>Celkové automatické spuštění</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">Automatické spuštění LxQt</translation>
+        <source>LXQt Autostart</source>
+        <translation type="vanished">Automatické spuštění LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
@@ -127,8 +127,8 @@
         <translation>Základní nastavení</translation>
     </message>
     <message>
-        <source>LxQt Modules</source>
-        <translation type="vanished">Moduly LxQtu</translation>
+        <source>LXQt Modules</source>
+        <translation type="vanished">Moduly LXQtu</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -222,7 +222,7 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
+        <source>LXQt Session Configuration</source>
         <translation type="vanished">Nastavení sezení</translation>
     </message>
     <message>

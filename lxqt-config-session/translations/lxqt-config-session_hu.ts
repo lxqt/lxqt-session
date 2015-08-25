@@ -42,8 +42,8 @@
         <translation>Automatikus indítás</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation>LxQt automatikus indítás</translation>
+        <source>LXQt Autostart</source>
+        <translation>LXQt automatikus indítás</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
@@ -127,8 +127,8 @@
         <translation>Alapbeállítások</translation>
     </message>
     <message>
-        <source>LxQt Modules</source>
-        <translation>LxQt modulok</translation>
+        <source>LXQt Modules</source>
+        <translation>LXQt modulok</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -222,13 +222,13 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation>LxQt munkamenet konfiguráció</translation>
+        <source>LXQt Session Configuration</source>
+        <translation>LXQt munkamenet konfiguráció</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>
         <source>LXQt Session Settings</source>
-        <translation>LxQt munkamenet-beállítás</translation>
+        <translation>LXQt munkamenet-beállítás</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="46"/>

@@ -42,8 +42,8 @@
         <translation>Autoinicio global</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">Autoinicio de LxQt</translation>
+        <source>LXQt Autostart</source>
+        <translation type="vanished">Autoinicio de LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
@@ -127,8 +127,8 @@
         <translation>Configuración básica</translation>
     </message>
     <message>
-        <source>LxQt Modules</source>
-        <translation type="vanished">Módulos de LxQt</translation>
+        <source>LXQt Modules</source>
+        <translation type="vanished">Módulos de LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -222,8 +222,8 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">Configuración de la sesión de LxQt</translation>
+        <source>LXQt Session Configuration</source>
+        <translation type="vanished">Configuración de la sesión de LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>

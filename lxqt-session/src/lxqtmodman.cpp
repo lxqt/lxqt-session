@@ -1,10 +1,10 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LxQt - a lightweight, Qt based, desktop toolset
+ * LXQt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org, http://lxde.org/
  *
- * Copyright: 2010-2011 LxQt team
+ * Copyright: 2010-2011 LXQt team
  * Authors:
  *   Petr Vanek <petr@scribus.info>
  *   Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
@@ -50,12 +50,12 @@
 
 #define MAX_CRASHES_PER_APP 5
 
-using namespace LxQt;
+using namespace LXQt;
 
 /**
  * @brief the constructor, needs a valid modules.conf
  */
-LxQtModuleManager::LxQtModuleManager(const QString & windowManager, QObject* parent)
+LXQtModuleManager::LXQtModuleManager(const QString & windowManager, QObject* parent)
     : QObject(parent),
       mWindowManager(windowManager),
       mWmProcess(new QProcess(this)),
@@ -65,12 +65,12 @@ LxQtModuleManager::LxQtModuleManager(const QString & windowManager, QObject* par
       mWaitLoop(NULL)
 {
     connect(mThemeWatcher, SIGNAL(directoryChanged(QString)), SLOT(themeFolderChanged(QString)));
-    connect(LxQt::Settings::globalSettings(), SIGNAL(lxqtThemeChanged()), SLOT(themeChanged()));
+    connect(LXQt::Settings::globalSettings(), SIGNAL(lxqtThemeChanged()), SLOT(themeChanged()));
 
     qApp->installNativeEventFilter(this);
 }
 
-void LxQtModuleManager::startup(LxQt::Settings& s)
+void LXQtModuleManager::startup(LXQt::Settings& s)
 {
     // The lxqt-confupdate can update the settings of the WM, so run it first.
     startConfUpdate();
@@ -94,7 +94,7 @@ void LxQtModuleManager::startup(LxQt::Settings& s)
     themeChanged();
 }
 
-void LxQtModuleManager::startAutostartApps()
+void LXQtModuleManager::startAutostartApps()
 {
     // XDG autostart
     XdgDesktopFileList fileList = XdgAutoStart::desktopFileList();
@@ -130,12 +130,12 @@ void LxQtModuleManager::startAutostartApps()
     }
 }
 
-void LxQtModuleManager::themeFolderChanged(const QString& /*path*/)
+void LXQtModuleManager::themeFolderChanged(const QString& /*path*/)
 {
     QString newTheme;
     if (!QFileInfo(mCurrentThemePath).exists())
     {
-        const QList<LxQtTheme> &allThemes = lxqtTheme.allThemes();
+        const QList<LXQtTheme> &allThemes = lxqtTheme.allThemes();
         if (!allThemes.isEmpty())
             newTheme = allThemes[0].name();
         else
@@ -144,7 +144,7 @@ void LxQtModuleManager::themeFolderChanged(const QString& /*path*/)
     else
         newTheme = lxqtTheme.currentTheme().name();
 
-    LxQt::Settings settings("lxqt");
+    LXQt::Settings settings("lxqt");
     if (newTheme == settings.value("theme"))
     {
         // force the same theme to be updated
@@ -156,7 +156,7 @@ void LxQtModuleManager::themeFolderChanged(const QString& /*path*/)
     sync();
 }
 
-void LxQtModuleManager::themeChanged()
+void LXQtModuleManager::themeChanged()
 {
     if (!mCurrentThemePath.isEmpty())
         mThemeWatcher->removePath(mCurrentThemePath);
@@ -168,7 +168,7 @@ void LxQtModuleManager::themeChanged()
     }
 }
 
-void LxQtModuleManager::startWm(LxQt::Settings *settings)
+void LXQtModuleManager::startWm(LXQt::Settings *settings)
 {
     // if the WM is active do not run WM.
     // all window managers must set their name according to the spec
@@ -206,7 +206,7 @@ void LxQtModuleManager::startWm(LxQt::Settings *settings)
     //         Maybe we can add a X-Wait-WM=true key in the desktop entry file?
 }
 
-void LxQtModuleManager::startProcess(const XdgDesktopFile& file)
+void LXQtModuleManager::startProcess(const XdgDesktopFile& file)
 {
     if (!file.value("X-LXQt-Module", false).toBool())
     {
@@ -219,7 +219,7 @@ void LxQtModuleManager::startProcess(const XdgDesktopFile& file)
         qWarning() << "Wrong desktop file" << file.fileName();
         return;
     }
-    LxQtModule* proc = new LxQtModule(file, this);
+    LXQtModule* proc = new LXQtModule(file, this);
     connect(proc, SIGNAL(moduleStateChanged(QString,bool)), this, SIGNAL(moduleStateChanged(QString,bool)));
     proc->start();
 
@@ -230,7 +230,7 @@ void LxQtModuleManager::startProcess(const XdgDesktopFile& file)
             this, SLOT(restartModules(int, QProcess::ExitStatus)));
 }
 
-void LxQtModuleManager::startProcess(const QString& name)
+void LXQtModuleManager::startProcess(const QString& name)
 {
     if (!mNameMap.contains(name))
     {
@@ -245,18 +245,18 @@ void LxQtModuleManager::startProcess(const QString& name)
     }
 }
 
-void LxQtModuleManager::stopProcess(const QString& name)
+void LXQtModuleManager::stopProcess(const QString& name)
 {
     if (mNameMap.contains(name))
         mNameMap[name]->terminate();
 }
 
-QStringList LxQtModuleManager::listModules() const
+QStringList LXQtModuleManager::listModules() const
 {
     return QStringList(mNameMap.keys());
 }
 
-void LxQtModuleManager::startConfUpdate()
+void LXQtModuleManager::startConfUpdate()
 {
     XdgDesktopFile desktop(XdgDesktopFile::ApplicationType, ":lxqt-confupdate", "lxqt-confupdate --watch");
     desktop.setValue("Name", "LXQt config updater");
@@ -264,9 +264,9 @@ void LxQtModuleManager::startConfUpdate()
     startProcess(desktop);
 }
 
-void LxQtModuleManager::restartModules(int exitCode, QProcess::ExitStatus exitStatus)
+void LXQtModuleManager::restartModules(int exitCode, QProcess::ExitStatus exitStatus)
 {
-    LxQtModule* proc = qobject_cast<LxQtModule*>(sender());
+    LXQtModule* proc = qobject_cast<LXQtModule*>(sender());
     Q_ASSERT(proc);
 
     if (!proc->isTerminating())
@@ -303,7 +303,7 @@ void LxQtModuleManager::restartModules(int exitCode, QProcess::ExitStatus exitSt
 }
 
 
-LxQtModuleManager::~LxQtModuleManager()
+LXQtModuleManager::~LXQtModuleManager()
 {
     qApp->removeNativeEventFilter(this);
     qDeleteAll(mNameMap);
@@ -313,7 +313,7 @@ LxQtModuleManager::~LxQtModuleManager()
 /**
 * @brief this logs us out by terminating our session
 **/
-void LxQtModuleManager::logout()
+void LXQtModuleManager::logout()
 {
     // modules
     ModulesMapIterator i(mNameMap);
@@ -321,14 +321,14 @@ void LxQtModuleManager::logout()
     {
         i.next();
         qDebug() << "Module logout" << i.key();
-        LxQtModule* p = i.value();
+        LXQtModule* p = i.value();
         p->terminate();
     }
     i.toFront();
     while (i.hasNext())
     {
         i.next();
-        LxQtModule* p = i.value();
+        LXQtModule* p = i.value();
         if (p->state() != QProcess::NotRunning && !p->waitForFinished())
         {
             qWarning() << QString("Module '%1' won't terminate ... killing.").arg(i.key());
@@ -346,7 +346,7 @@ void LxQtModuleManager::logout()
     QCoreApplication::exit(0);
 }
 
-QString LxQtModuleManager::showWmSelectDialog()
+QString LXQtModuleManager::showWmSelectDialog()
 {
     WindowManagerList availableWM = getWindowManagerList(true);
     if (availableWM.count() == 1)
@@ -357,12 +357,12 @@ QString LxQtModuleManager::showWmSelectDialog()
     return dlg.windowManager();
 }
 
-void LxQtModuleManager::resetCrashReport()
+void LXQtModuleManager::resetCrashReport()
 {
     mCrashReport.clear();
 }
 
-bool LxQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * message, long * result)
+bool LXQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * message, long * result)
 {
     if (eventType != "xcb_generic_event_t") // We only want to handle XCB events
         return false;
@@ -420,7 +420,7 @@ void lxqt_setenv_prepend(const char *env, const QByteArray &value, const QByteAr
     lxqt_setenv(env, orig);
 }
 
-LxQtModule::LxQtModule(const XdgDesktopFile& file, QObject* parent) :
+LXQtModule::LXQtModule(const XdgDesktopFile& file, QObject* parent) :
     QProcess(parent),
     file(file),
     fileName(QFileInfo(file.fileName()).fileName()),
@@ -429,7 +429,7 @@ LxQtModule::LxQtModule(const XdgDesktopFile& file, QObject* parent) :
     connect(this, SIGNAL(stateChanged(QProcess::ProcessState)), SLOT(updateState(QProcess::ProcessState)));
 }
 
-void LxQtModule::start()
+void LXQtModule::start()
 {
     mIsTerminating = false;
     QStringList args = file.expandExecString();
@@ -437,18 +437,18 @@ void LxQtModule::start()
     QProcess::start(command, args);
 }
 
-void LxQtModule::terminate()
+void LXQtModule::terminate()
 {
     mIsTerminating = true;
     QProcess::terminate();
 }
 
-bool LxQtModule::isTerminating()
+bool LXQtModule::isTerminating()
 {
     return mIsTerminating;
 }
 
-void LxQtModule::updateState(QProcess::ProcessState newState)
+void LXQtModule::updateState(QProcess::ProcessState newState)
 {
     if (newState != QProcess::Starting)
         emit moduleStateChanged(fileName, (newState == QProcess::Running));

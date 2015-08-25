@@ -1,10 +1,10 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LxQt - a lightweight, Qt based, desktop toolset
+ * LXQt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org, http://lxde.org/
  *
- * Copyright: 2010-2011 LxQt team
+ * Copyright: 2010-2011 LXQt team
  * Authors:
  *   Petr Vanek <petr@scribus.info>
  *
@@ -40,7 +40,7 @@
 
 
 SessionConfigWindow::SessionConfigWindow() :
-      LxQt::ConfigDialog(tr("LXQt Session Settings"), new LxQt::Settings("session"), 0)
+      LXQt::ConfigDialog(tr("LXQt Session Settings"), new LXQt::Settings("session"), 0)
 {
     BasicSettings* basicSettings = new BasicSettings(mSettings, this);
     addPage(basicSettings, tr("Basic Settings"), "preferences-desktop-display-color");
@@ -79,7 +79,7 @@ SessionConfigWindow::~SessionConfigWindow()
 
 void SessionConfigWindow::closeEvent(QCloseEvent * event)
 {
-    LxQt::ConfigDialog::closeEvent(event);
+    LXQt::ConfigDialog::closeEvent(event);
     if (m_restart) {
         QMessageBox::information(this, tr("Session Restart Required"),
                                 tr("You need to restart desktop session (lxqt-session) "

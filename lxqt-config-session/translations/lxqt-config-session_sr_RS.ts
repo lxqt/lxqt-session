@@ -42,7 +42,7 @@
         <translation>Глобално аутопокретање</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
+        <source>LXQt Autostart</source>
         <translation type="vanished">Рејзорово аутопокретање</translation>
     </message>
     <message>

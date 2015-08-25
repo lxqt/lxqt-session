@@ -42,8 +42,8 @@
         <translation>Καθολική αυτόματη εκκίνηση</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">Αυτόματη εκκίνηση LxQt</translation>
+        <source>LXQt Autostart</source>
+        <translation type="vanished">Αυτόματη εκκίνηση LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
@@ -131,8 +131,8 @@
         <translation>Βασικές ρυθμίσεις</translation>
     </message>
     <message>
-        <source>LxQt Modules</source>
-        <translation type="vanished">Αρθρώματα LxQt</translation>
+        <source>LXQt Modules</source>
+        <translation type="vanished">Αρθρώματα LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -226,8 +226,8 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">Διαμόρφωση συνεδρίας LxQt</translation>
+        <source>LXQt Session Configuration</source>
+        <translation type="vanished">Διαμόρφωση συνεδρίας LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>

@@ -1,10 +1,10 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LxQt - a lightweight, Qt based, desktop toolset
+ * LXQt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org, http://lxde.org/
  *
- * Copyright: 2010-2011 LxQt team
+ * Copyright: 2010-2011 LXQt team
  * Authors:
  *   Petr Vanek <petr@scribus.info>
  *
@@ -47,7 +47,7 @@ session-eggwm.conf
 int main(int argc, char **argv)
 {
     SessionApplication app(argc, argv);
-    //qDebug() << "LxQt Session start";
+    //qDebug() << "LXQt Session start";
     app.setQuitOnLastWindowClosed(false);
     return app.exec();
 }

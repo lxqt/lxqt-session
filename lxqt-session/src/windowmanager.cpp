@@ -1,10 +1,10 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LxQt - a lightweight, Qt based, desktop toolset
+ * LXQt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org, http://lxde.org/
  *
- * Copyright: 2010-2011 LxQt team
+ * Copyright: 2010-2011 LXQt team
  * Authors:
  *   Petr Vanek <petr@scribus.info>
  *
@@ -53,7 +53,7 @@ bool findProgram(const QString &program)
 
 WindowManagerList getWindowManagerList(bool onlyAvailable)
 {
-    LxQt::Settings cfg("windowmanagers");
+    LXQt::Settings cfg("windowmanagers");
     cfg.beginGroup("KnownManagers");
     QStringList names = cfg.childGroups();
 

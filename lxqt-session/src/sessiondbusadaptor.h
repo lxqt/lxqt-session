@@ -1,10 +1,10 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LxQt - a lightweight, Qt based, desktop toolset
+ * LXQt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org, http://lxde.org/
  *
- * Copyright: 2010-2011 LxQt team
+ * Copyright: 2010-2011 LXQt team
  * Authors:
  *   Petr Vanek <petr@scribus.info>
  *
@@ -33,9 +33,9 @@
 #include "lxqtmodman.h"
 
 
-/*! \brief Simple DBus adaptor for LxQtSession.
+/*! \brief Simple DBus adaptor for LXQtSession.
 It allows 3rd party apps/lxqt modules to logout from session.
-It's a part of "LxQt Power Management" - see liblxqt.
+It's a part of "LXQt Power Management" - see liblxqt.
 \author Petr Vanek <petr@scribus.info>
 */
 class SessionDBusAdaptor : public QDBusAbstractAdaptor
@@ -44,7 +44,7 @@ class SessionDBusAdaptor : public QDBusAbstractAdaptor
     Q_CLASSINFO("D-Bus Interface", "org.lxqt.session")
 
 public:
-    SessionDBusAdaptor(LxQtModuleManager * manager)
+    SessionDBusAdaptor(LXQtModuleManager * manager)
         : QDBusAbstractAdaptor(manager),
           m_manager(manager)
     {
@@ -84,7 +84,7 @@ public slots:
     }
 
 private:
-    LxQtModuleManager * m_manager;
+    LXQtModuleManager * m_manager;
 };
 
 #endif

@@ -42,8 +42,8 @@
         <translation>Algemene Autostart</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">LxQt Autostart</translation>
+        <source>LXQt Autostart</source>
+        <translation type="vanished">LXQt Autostart</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
@@ -127,8 +127,8 @@
         <translation>Basis Instellingen</translation>
     </message>
     <message>
-        <source>LxQt Modules</source>
-        <translation type="vanished">LxQt Modules</translation>
+        <source>LXQt Modules</source>
+        <translation type="vanished">LXQt Modules</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -222,8 +222,8 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">LxQt Sessie Configuratie</translation>
+        <source>LXQt Session Configuration</source>
+        <translation type="vanished">LXQt Sessie Configuratie</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>
@@ -258,7 +258,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="85"/>
         <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation>U moet de Sessie herstarten (LxQt-sessie) om de instellingen op te slaan.  Gebruik hiervoor &quot;uitloggen&quot; vanuit het hoofd menu.</translation>
+        <translation>U moet de Sessie herstarten (LXQt-sessie) om de instellingen op te slaan.  Gebruik hiervoor &quot;uitloggen&quot; vanuit het hoofd menu.</translation>
     </message>
 </context>
 </TS>

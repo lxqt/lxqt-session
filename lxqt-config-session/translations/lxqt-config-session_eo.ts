@@ -42,8 +42,8 @@
         <translation>Ĉiea aŭtomata starto</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">Aŭtomata starto de LxQto</translation>
+        <source>LXQt Autostart</source>
+        <translation type="vanished">Aŭtomata starto de LXQto</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
@@ -127,8 +127,8 @@
         <translation>Bazaj agordoj</translation>
     </message>
     <message>
-        <source>LxQt Modules</source>
-        <translation type="vanished">Moduloj de LxQto</translation>
+        <source>LXQt Modules</source>
+        <translation type="vanished">Moduloj de LXQto</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -222,8 +222,8 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">Agordoj de seanco de LxQt</translation>
+        <source>LXQt Session Configuration</source>
+        <translation type="vanished">Agordoj de seanco de LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>

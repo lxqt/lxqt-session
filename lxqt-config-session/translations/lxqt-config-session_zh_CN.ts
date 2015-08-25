@@ -42,8 +42,8 @@
         <translation>全局自动启动</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">LxQt 自动启动</translation>
+        <source>LXQt Autostart</source>
+        <translation type="vanished">LXQt 自动启动</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
@@ -127,8 +127,8 @@
         <translation>基本设置</translation>
     </message>
     <message>
-        <source>LxQt Modules</source>
-        <translation type="vanished">LxQt 模块</translation>
+        <source>LXQt Modules</source>
+        <translation type="vanished">LXQt 模块</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -222,8 +222,8 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">LxQt 会话配置</translation>
+        <source>LXQt Session Configuration</source>
+        <translation type="vanished">LXQt 会话配置</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>

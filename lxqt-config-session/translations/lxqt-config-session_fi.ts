@@ -42,8 +42,8 @@
         <translation>Yleinen automaattikäynnistys</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">LxQtin automaattikäynnistys</translation>
+        <source>LXQt Autostart</source>
+        <translation type="vanished">LXQtin automaattikäynnistys</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
@@ -127,8 +127,8 @@
         <translation>Perusasetukset</translation>
     </message>
     <message>
-        <source>LxQt Modules</source>
-        <translation type="vanished">LxQt-moduulit</translation>
+        <source>LXQt Modules</source>
+        <translation type="vanished">LXQt-moduulit</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -222,8 +222,8 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">LxQtin istuntohallinta</translation>
+        <source>LXQt Session Configuration</source>
+        <translation type="vanished">LXQtin istuntohallinta</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>

@@ -1,10 +1,10 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LxQt - a lightweight, Qt based, desktop toolset
+ * LXQt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org, http://lxde.org/
  *
- * Copyright: 2010-2012 LxQt team
+ * Copyright: 2010-2012 LXQt team
  * Authors:
  *   Petr Vanek <petr@scribus.info>
  *
@@ -40,7 +40,7 @@ class EnvironmentPage : public QWidget
     Q_OBJECT
 
 public:
-    explicit EnvironmentPage(LxQt::Settings *settings, QWidget *parent = 0);
+    explicit EnvironmentPage(LXQt::Settings *settings, QWidget *parent = 0);
     ~EnvironmentPage();
 
 signals:
@@ -53,7 +53,7 @@ public slots:
     void updateItem(const QString &var, const QString &val);
 
 private:
-    LxQt::Settings *m_settings;
+    LXQt::Settings *m_settings;
     Ui::EnvironmentPage *ui;
 
 private slots:

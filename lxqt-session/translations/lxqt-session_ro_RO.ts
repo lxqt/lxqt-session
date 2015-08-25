@@ -2,7 +2,7 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="ro_RO">
 <context>
-    <name>LxQtModuleManager</name>
+    <name>LXQtModuleManager</name>
     <message>
         <source>Application &apos;%1&apos; crashed too many times. Its autorestart has been disabled for current session.</source>
         <translation type="vanished">Aplicația &apos;%1&apos; a eșuat de prea multe ori. Repornirea automată a acestei aplicații a fost dezactivată pentru sesiunea curentă.</translation>

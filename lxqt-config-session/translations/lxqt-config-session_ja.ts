@@ -42,8 +42,8 @@
         <translation>全体的な自動起動</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">LxQt自動起動</translation>
+        <source>LXQt Autostart</source>
+        <translation type="vanished">LXQt自動起動</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
@@ -218,8 +218,8 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">LxQtセッションの設定</translation>
+        <source>LXQt Session Configuration</source>
+        <translation type="vanished">LXQtセッションの設定</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>

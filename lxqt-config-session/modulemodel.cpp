@@ -1,7 +1,7 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LxQt - a lightweight, Qt based, desktop toolset
+ * LXQt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org, http://lxde.org/
  *
  * Copyright (C) 2012  Alec Moskvin <alecm@gmx.com>
@@ -32,7 +32,7 @@
 ModuleModel::ModuleModel(QObject* parent)
     : QAbstractListModel(parent)
 {
-    mInterface = new QDBusInterface("org.lxqt.session", "/LxQtSession", "",
+    mInterface = new QDBusInterface("org.lxqt.session", "/LXQtSession", "",
                                     QDBusConnection::sessionBus(), this);
     connect(mInterface, SIGNAL(moduleStateChanged(QString,bool)), SLOT(updateModuleState(QString,bool)));
 }

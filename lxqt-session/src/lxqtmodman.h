@@ -37,43 +37,43 @@
 #include <QEventLoop>
 #include <time.h>
 
-class LxQtModule;
-namespace LxQt {
+class LXQtModule;
+namespace LXQt {
 class Settings;
 }
 class QFileSystemWatcher;
 
-typedef QMap<QString,LxQtModule*> ModulesMap;
-typedef QMapIterator<QString,LxQtModule*> ModulesMapIterator;
+typedef QMap<QString,LXQtModule*> ModulesMap;
+typedef QMapIterator<QString,LXQtModule*> ModulesMapIterator;
 typedef QList<time_t> ModuleCrashReport;
 typedef QMap<QProcess*, ModuleCrashReport> ModulesCrashReport;
 
-/*! \brief LxQtModuleManager manages the processes of the session
+/*! \brief LXQtModuleManager manages the processes of the session
 and which modules of lxqt are about to load.
 
-LxQtModuleManager handles the session management (logout/restart/shutdown)
+LXQtModuleManager handles the session management (logout/restart/shutdown)
 as well.
 
 Also it watches the current theme to react if it was removed or modified.
 
-Processes in LxQtModuleManager are started as follows:
+Processes in LXQtModuleManager are started as follows:
  - run lxqt-confupdate
  - start the window manager and wait until it's active
- - start all normal autostart items (including LxQt modules)
+ - start all normal autostart items (including LXQt modules)
  - if there are any applications that need a system tray, wait until a system tray
    implementation becomes active, and then start those
 
 Potential process recovering is done in \see restartModules()
 */
 
-class LxQtModuleManager : public QObject, public QAbstractNativeEventFilter
+class LXQtModuleManager : public QObject, public QAbstractNativeEventFilter
 {
     Q_OBJECT
 
 public:
-    //! \brief Construct LxQtModuleManager
-    LxQtModuleManager(const QString& windowManager, QObject* parent = 0);
-    virtual ~LxQtModuleManager();
+    //! \brief Construct LXQtModuleManager
+    LXQtModuleManager(const QString& windowManager, QObject* parent = 0);
+    virtual ~LXQtModuleManager();
 
     //! \brief Start a module given its file name (e.g. "lxqt-panel.desktop")
     void startProcess(const QString& name);
@@ -85,7 +85,7 @@ public:
     QStringList listModules() const;
 
     //! \brief Read configuration and start processes
-    void startup(LxQt::Settings& s);
+    void startup(LXQt::Settings& s);
 
     // Qt5 uses native event filter
     virtual bool nativeEventFilter(const QByteArray & eventType, void * message, long * result);
@@ -103,7 +103,7 @@ signals:
 
 private:
     //! \brief Start Window Manager
-    void startWm(LxQt::Settings *settings);
+    void startWm(LXQt::Settings *settings);
     void wmStarted();
 
     void startAutostartApps();
@@ -183,11 +183,11 @@ See lxqt_setenv.
 */
 void lxqt_setenv_prepend(const char *env, const QByteArray &value, const QByteArray &separator=":");
 
-class LxQtModule : public QProcess
+class LXQtModule : public QProcess
 {
     Q_OBJECT
 public:
-    LxQtModule(const XdgDesktopFile& file, QObject *parent = 0);
+    LXQtModule(const XdgDesktopFile& file, QObject *parent = 0);
     void start();
     void terminate();
     bool isTerminating();

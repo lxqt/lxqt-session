@@ -42,7 +42,7 @@
         <translation>التشغيل التلقائي العام</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
+        <source>LXQt Autostart</source>
         <translation type="vanished">التشغيل التلقائي لنظام ريزر</translation>
     </message>
     <message>
@@ -127,7 +127,7 @@
         <translation>اﻹعدادات اﻷساسيَّة</translation>
     </message>
     <message>
-        <source>LxQt Modules</source>
+        <source>LXQt Modules</source>
         <translation type="vanished">أقسام نظام ريزر</translation>
     </message>
     <message>
@@ -222,7 +222,7 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
+        <source>LXQt Session Configuration</source>
         <translation type="vanished">تهيئة جلسة نظام ريزر</translation>
     </message>
     <message>

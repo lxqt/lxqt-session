@@ -2,7 +2,7 @@
 <!DOCTYPE TS>
 <TS version="2.0" language="hu_HU">
 <context>
-    <name>LxQtModuleManager</name>
+    <name>LXQtModuleManager</name>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="289"/>
         <source>Crash Report</source>
@@ -29,8 +29,8 @@ Before starting to use the LXQt, you might want to select the Windows Manager:</
 Mielőtt elkezdené a LXQt használatát, válasszon ablakkezelőt:</translation>
     </message>
     <message>
-        <source>You can change the Window Manager later at any time via LxQt Session Configurator.</source>
-        <translation>Az ablakkezelőt később bármikor megváltoztathatja a LxQt munkamenetbeállítóban.</translation>
+        <source>You can change the Window Manager later at any time via LXQt Session Configurator.</source>
+        <translation>Az ablakkezelőt később bármikor megváltoztathatja a LXQt munkamenetbeállítóban.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="62"/>

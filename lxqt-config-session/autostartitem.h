@@ -1,7 +1,7 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LxQt - a lightweight, Qt based, desktop toolset
+ * LXQt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org, http://lxde.org/
  *
  * Copyright (C) 2012  Alec Moskvin <alecm@gmx.com>
@@ -37,7 +37,7 @@ When a "local" file has the same name as the "system" file, the local one overri
 tries to ensure that the "local" file is deleted if it's the same as the "system" file.
 */
 
-class AutostartItem : public LxQt::AutostartEntry
+class AutostartItem : public LXQt::AutostartEntry
 {
 public:
     //! \brief Default constructor
@@ -59,13 +59,13 @@ public:
     /*! Removes the "local" version of the file
      * \return true if there is no "system" version left (i.e. the item was entirely deleted)
      */
-    bool removeLocal() { return LxQt::AutostartEntry::removeLocal(); }
+    bool removeLocal() { return LXQt::AutostartEntry::removeLocal(); }
 
     //! Returns true if both the "local" and "system" versions exist
     bool overrides() const { return mSystem && isLocal(); }
 
     //! Returns true if the local version exists
-    bool isLocal() const { return LxQt::AutostartEntry::isLocal(); }
+    bool isLocal() const { return LXQt::AutostartEntry::isLocal(); }
 
     //! Returns true if the local file does not exist on disk
     bool isTransient() const { return mLocalState == StateTransient; }

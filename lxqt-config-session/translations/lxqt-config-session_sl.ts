@@ -42,7 +42,7 @@
         <translation>Globalni samodejni zagon</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
+        <source>LXQt Autostart</source>
         <translation type="vanished">Samodejni zagon za lxqt</translation>
     </message>
     <message>
@@ -218,8 +218,8 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">Nastavitve seje LxQt</translation>
+        <source>LXQt Session Configuration</source>
+        <translation type="vanished">Nastavitve seje LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>

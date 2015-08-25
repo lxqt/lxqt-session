@@ -30,7 +30,7 @@
 // XKB, this should be disabled in Wayland?
 #include <X11/XKBlib.h>
 
-SessionApplication::SessionApplication(int& argc, char** argv) : LxQt::Application(argc, argv)
+SessionApplication::SessionApplication(int& argc, char** argv) : LXQt::Application(argc, argv)
 {
     char* winmanager = NULL;
     int c;
@@ -54,11 +54,11 @@ SessionApplication::SessionApplication(int& argc, char** argv) : LxQt::Applicati
     // tell the world which config file we're using.
     qputenv("LXQT_SESSION_CONFIG", configName.toUtf8());
 
-    modman = new LxQtModuleManager(winmanager);
+    modman = new LXQtModuleManager(winmanager);
     new SessionDBusAdaptor(modman);
     // connect to D-Bus and register as an object:
     QDBusConnection::sessionBus().registerService("org.lxqt.session");
-    QDBusConnection::sessionBus().registerObject("/LxQtSession", modman);
+    QDBusConnection::sessionBus().registerObject("/LXQtSession", modman);
 
     // Wait until the event loop starts
     QTimer::singleShot(0, this, SLOT(startup()));
@@ -71,7 +71,7 @@ SessionApplication::~SessionApplication()
 
 bool SessionApplication::startup()
 {
-    LxQt::Settings settings(configName);
+    LXQt::Settings settings(configName);
     qDebug() << __FILE__ << ":" << __LINE__ << "Session" << configName << "about to launch (default 'session')";
 
     loadEnvironmentSettings(settings);
@@ -88,7 +88,7 @@ bool SessionApplication::startup()
             {
                 //XXX: is this a race? (because settings can be currently changed by lxqt-config-input)
                 //     but with such a little probablity we can live...
-                LxQt::Settings settings(configName);
+                LXQt::Settings settings(configName);
                 loadKeyboardSettings(settings);
             });
     connect(dev_notifier, &UdevNotifier::deviceAdded, [this, dev_timer] (QString device)
@@ -114,7 +114,7 @@ void SessionApplication::mergeXrdb(const char* content, int len)
     xrdb.waitForFinished();
 }
 
-void SessionApplication::loadEnvironmentSettings(LxQt::Settings& settings)
+void SessionApplication::loadEnvironmentSettings(LXQt::Settings& settings)
 {
     // first - set some user defined environment variables (like TERM...)
     settings.beginGroup("Environment");
@@ -154,7 +154,7 @@ void SessionApplication::setxkbmap(QString layout, QString variant, QString mode
       QProcess::startDetached(QStringLiteral("setxkbmap"), args);
 }
 
-void SessionApplication::loadKeyboardSettings(LxQt::Settings& settings)
+void SessionApplication::loadKeyboardSettings(LXQt::Settings& settings)
 {
   qDebug() << settings.fileName();
     settings.beginGroup("Keyboard");
@@ -182,7 +182,7 @@ void SessionApplication::loadKeyboardSettings(LxQt::Settings& settings)
     settings.endGroup();
 }
 
-void SessionApplication::loadMouseSettings(LxQt::Settings& settings)
+void SessionApplication::loadMouseSettings(LXQt::Settings& settings)
 {
     settings.beginGroup("Mouse");
 
@@ -221,7 +221,7 @@ void SessionApplication::loadMouseSettings(LxQt::Settings& settings)
 # if 0
 // already deprecated by direct fontconfig support of lxqt-config
 
-void SessionApplication::loadFontSettings(LxQt::Settings& settings)
+void SessionApplication::loadFontSettings(LXQt::Settings& settings)
 {
     // set some Xft config values, such as antialiasing & subpixel
     // may call mergeXrdb() to do it. (will this work?)

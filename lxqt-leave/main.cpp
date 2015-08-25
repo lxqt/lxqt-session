@@ -37,11 +37,11 @@
 
 int main(int argc, char *argv[])
 {
-    LxQt::Application a(argc, argv);
-    LxQt::Translator::translateApplication();
+    LXQt::Application a(argc, argv);
+    LXQt::Translator::translateApplication();
 
-    LxQt::PowerManager powermanager(&a);
-    LxQt::ScreenSaver screensaver(&a);
+    LXQt::PowerManager powermanager(&a);
+    LXQt::ScreenSaver screensaver(&a);
 
     QCommandLineParser parser;
     parser.setApplicationDescription(QStringLiteral("lxqt-leave"));
@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
     }
 
     if (parser.isSet(lockscreenOption)) {
-        a.connect(&screensaver, &LxQt::ScreenSaver::done, &a, &LxQt::Application::quit);
+        a.connect(&screensaver, &LXQt::ScreenSaver::done, &a, &LXQt::Application::quit);
         screensaver.lockScreen();
         a.exec();
         return 0;

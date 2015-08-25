@@ -31,12 +31,12 @@
         <translation type="vanished">Глобално аутопокретање</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
+        <source>LXQt Autostart</source>
         <translation type="vanished">Рејзорово аутопокретање</translation>
     </message>
 </context>
 <context>
-    <name>LxQtModuleManager</name>
+    <name>LXQtModuleManager</name>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="289"/>
         <source>Crash Report</source>
@@ -98,7 +98,7 @@ Before starting to use the LXQt, you might want to select the Windows Manager:</
 Прије него почнете да користите Рејзор-кјут морате да изаберете менаџер прозора:</translation>
     </message>
     <message>
-        <source>You can change the Window Manager later at any time via LxQt Session Configurator.</source>
+        <source>You can change the Window Manager later at any time via LXQt Session Configurator.</source>
         <translation type="vanished">Можете да промијените менаџера прозора касније помоћу Рејзоровог Подешавања сесије.</translation>
     </message>
     <message>

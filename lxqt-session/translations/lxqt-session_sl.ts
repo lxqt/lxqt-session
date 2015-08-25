@@ -2,10 +2,10 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="sl">
 <context>
-    <name>LxQtModuleManager</name>
+    <name>LXQtModuleManager</name>
     <message>
-        <source>LxQt Session Crash Report</source>
-        <translation type="vanished">Poročilo o sesutju seje LxQt</translation>
+        <source>LXQt Session Crash Report</source>
+        <translation type="vanished">Poročilo o sesutju seje LXQt</translation>
     </message>
     <message>
         <source>Application &apos;%1&apos; crashed too many times. Its autorestart has been disabled for current session.</source>
@@ -35,8 +35,8 @@ Before starting to use the LXQt, you might want to select the Windows Manager:</
         <translation type="vanished">&lt;b&gt;Dobrodošli v LXQt&lt;/b&gt; &lt;p&gt; Preden začnete uporabljati LXQt si verjetno želite izbrati upravljalnika oken:</translation>
     </message>
     <message>
-        <source>You can change the Window Manager later at any time via LxQt Session Configurator.</source>
-        <translation type="vanished">Upravljalnika oken lahko kadarkoli spremenite iz nastavitev seje LxQt.</translation>
+        <source>You can change the Window Manager later at any time via LXQt Session Configurator.</source>
+        <translation type="vanished">Upravljalnika oken lahko kadarkoli spremenite iz nastavitev seje LXQt.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="62"/>

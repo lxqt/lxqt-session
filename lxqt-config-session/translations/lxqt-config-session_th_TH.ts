@@ -42,8 +42,8 @@
         <translation>การเริ่มโปรแกรมอัตโนมัติ (ส่วนกลาง)</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">เริ่มโปรแกรมอัตโนมัติ LxQt</translation>
+        <source>LXQt Autostart</source>
+        <translation type="vanished">เริ่มโปรแกรมอัตโนมัติ LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
@@ -127,8 +127,8 @@
         <translation>การตั้งค่าพื้นฐาน</translation>
     </message>
     <message>
-        <source>LxQt Modules</source>
-        <translation type="vanished">มอดูลต่างๆ LxQt</translation>
+        <source>LXQt Modules</source>
+        <translation type="vanished">มอดูลต่างๆ LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -222,8 +222,8 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">การตั้งค่าวาระงาน LxQt</translation>
+        <source>LXQt Session Configuration</source>
+        <translation type="vanished">การตั้งค่าวาระงาน LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>

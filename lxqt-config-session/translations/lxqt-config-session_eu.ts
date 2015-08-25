@@ -42,8 +42,8 @@
         <translation>Autoabio globala</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">LxQt autoabioa</translation>
+        <source>LXQt Autostart</source>
+        <translation type="vanished">LXQt autoabioa</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
@@ -127,8 +127,8 @@
         <translation>Oinarrizko ezarpenak</translation>
     </message>
     <message>
-        <source>LxQt Modules</source>
-        <translation type="vanished">LxQt moduluak</translation>
+        <source>LXQt Modules</source>
+        <translation type="vanished">LXQt moduluak</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -222,8 +222,8 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">LxQt saioaren konfigurazioa</translation>
+        <source>LXQt Session Configuration</source>
+        <translation type="vanished">LXQt saioaren konfigurazioa</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>

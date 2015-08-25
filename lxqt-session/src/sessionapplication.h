@@ -23,9 +23,9 @@
 #include <LXQt/Application>
 #include <LXQt/Settings>
 
-class LxQtModuleManager;
+class LXQtModuleManager;
 
-class SessionApplication : public LxQt::Application
+class SessionApplication : public LXQt::Application
 {
     Q_OBJECT
 public:
@@ -36,17 +36,17 @@ private Q_SLOTS:
     bool startup();
 
 private:
-    void loadEnvironmentSettings(LxQt::Settings& settings);
-    void loadKeyboardSettings(LxQt::Settings& settings);
-    void loadMouseSettings(LxQt::Settings& settings);
-    // void loadFontSettings(LxQt::Settings& settings);
+    void loadEnvironmentSettings(LXQt::Settings& settings);
+    void loadKeyboardSettings(LXQt::Settings& settings);
+    void loadMouseSettings(LXQt::Settings& settings);
+    // void loadFontSettings(LXQt::Settings& settings);
 
     void setxkbmap(QString layout, QString variant, QString model, QStringList options);
 
     void mergeXrdb(const char* content, int len);
     void setLeftHandedMouse(bool mouse_left_handed);
 private:
-    LxQtModuleManager* modman;
+    LXQtModuleManager* modman;
     QString configName;
 };
 

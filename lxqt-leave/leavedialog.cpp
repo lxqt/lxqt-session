@@ -1,7 +1,7 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LxQt - a lightweight, Qt based, desktop toolset
+ * LXQt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org, http://lxde.org/
  *
  * Copyright: 2010-2015 LXQt team
@@ -30,16 +30,16 @@
 LeaveDialog::LeaveDialog(QWidget* parent)
     : QDialog(parent),
     ui(new Ui::LeaveDialog),
-    mPower(new LxQt::Power(this)),
-    mScreensaver(new LxQt::ScreenSaver(this))
+    mPower(new LXQt::Power(this)),
+    mScreensaver(new LXQt::ScreenSaver(this))
 {
     ui->setupUi(this);
 
-    ui->logoutButton->setEnabled(mPower->canAction(LxQt::Power::PowerLogout));
-    ui->rebootButton->setEnabled(mPower->canAction(LxQt::Power::PowerReboot));
-    ui->shutdownButton->setEnabled(mPower->canAction(LxQt::Power::PowerShutdown));
-    ui->suspendButton->setEnabled(mPower->canAction(LxQt::Power::PowerSuspend));
-    ui->hibernateButton->setEnabled(mPower->canAction(LxQt::Power::PowerHibernate));
+    ui->logoutButton->setEnabled(mPower->canAction(LXQt::Power::PowerLogout));
+    ui->rebootButton->setEnabled(mPower->canAction(LXQt::Power::PowerReboot));
+    ui->shutdownButton->setEnabled(mPower->canAction(LXQt::Power::PowerShutdown));
+    ui->suspendButton->setEnabled(mPower->canAction(LXQt::Power::PowerSuspend));
+    ui->hibernateButton->setEnabled(mPower->canAction(LXQt::Power::PowerHibernate));
 
     connect(ui->logoutButton,       &QPushButton::clicked, [&] { close(); mPower->logout(); });
     connect(ui->rebootButton,       &QPushButton::clicked, [&] { close(); mPower->reboot(); });
@@ -49,7 +49,7 @@ LeaveDialog::LeaveDialog(QWidget* parent)
     connect(ui->lockscreenButton,   &QPushButton::clicked, [&] {
         close();
         QEventLoop loop;
-        connect(mScreensaver, &LxQt::ScreenSaver::done, &loop, &QEventLoop::quit);
+        connect(mScreensaver, &LXQt::ScreenSaver::done, &loop, &QEventLoop::quit);
         mScreensaver->lockScreen();
         loop.exec();
     });

@@ -2,9 +2,9 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="ar">
 <context>
-    <name>LxQtModuleManager</name>
+    <name>LXQtModuleManager</name>
     <message>
-        <source>LxQt Session Crash Report</source>
+        <source>LXQt Session Crash Report</source>
         <translation type="vanished">تقرير انهيار جلسة ريزر</translation>
     </message>
     <message>
@@ -37,7 +37,7 @@ Before starting to use the LXQt, you might want to select the Windows Manager:</
 قد تودُّ اختيار مدير النَّوافذ قبل الشُّروع باستخدام ريزركيوت:</translation>
     </message>
     <message>
-        <source>You can change the Window Manager later at any time via LxQt Session Configurator.</source>
+        <source>You can change the Window Manager later at any time via LXQt Session Configurator.</source>
         <translation type="vanished">يمكنك تغيير مدير النَّوافذ في أيِّ وقتٍ ﻻحقاً باستخدام أداة تهيئة جلسة ريزر.</translation>
     </message>
     <message>

@@ -42,8 +42,8 @@
         <translation>Genel Kendiliğinden Başlatma</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">LxQt Kendilğinden Başlatma</translation>
+        <source>LXQt Autostart</source>
+        <translation type="vanished">LXQt Kendilğinden Başlatma</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
@@ -218,8 +218,8 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">LxQt Oturum Yapılandırma</translation>
+        <source>LXQt Session Configuration</source>
+        <translation type="vanished">LXQt Oturum Yapılandırma</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>

@@ -2,10 +2,10 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="cs">
 <context>
-    <name>LxQtModuleManager</name>
+    <name>LXQtModuleManager</name>
     <message>
-        <source>LxQt Session Crash Report</source>
-        <translation type="vanished">Zpráva o pádu sezení LxQtu</translation>
+        <source>LXQt Session Crash Report</source>
+        <translation type="vanished">Zpráva o pádu sezení LXQtu</translation>
     </message>
     <message>
         <source>Application &apos;%1&apos; crashed too many times. Its autorestart has been disabled for current session.</source>
@@ -26,19 +26,19 @@
     <name>WmSelectDialog</name>
     <message>
         <source>Welcome to LXQt</source>
-        <translation type="vanished">Vítejte v LxQt-Qt</translation>
+        <translation type="vanished">Vítejte v LXQt-Qt</translation>
     </message>
     <message>
         <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
 &lt;p&gt;
 Before starting to use the LXQt, you might want to select the Windows Manager:</source>
-        <translation type="vanished">&lt;b&gt;Vítejte v LxQt-Qt&lt;/b&gt;
+        <translation type="vanished">&lt;b&gt;Vítejte v LXQt-Qt&lt;/b&gt;
 &lt;p&gt;
 Před započetím s prací byste mohl chtít vybrat si správce oken:</translation>
     </message>
     <message>
-        <source>You can change the Window Manager later at any time via LxQt Session Configurator.</source>
-        <translation type="vanished">Správce oken můžete později změnit v nastavení sezení pro LxQt.</translation>
+        <source>You can change the Window Manager later at any time via LXQt Session Configurator.</source>
+        <translation type="vanished">Správce oken můžete později změnit v nastavení sezení pro LXQt.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="62"/>

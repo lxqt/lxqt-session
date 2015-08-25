@@ -216,7 +216,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>
         <source>LXQt Session Settings</source>
-        <translation>LxQt munkamenet-beállítás</translation>
+        <translation>LXQt munkamenet-beállítás</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="46"/>

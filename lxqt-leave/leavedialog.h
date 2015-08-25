@@ -1,7 +1,7 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LxQt - a lightweight, Qt based, desktop toolset
+ * LXQt - a lightweight, Qt based, desktop toolset
  * http://razor-qt.org, http://lxde.org/
  *
  * Copyright: 2010-2015 LXQt team
@@ -48,8 +48,8 @@ public:
 
 private:
     Ui::LeaveDialog *ui;
-    LxQt::Power *mPower;
-    LxQt::ScreenSaver *mScreensaver;
+    LXQt::Power *mPower;
+    LXQt::ScreenSaver *mScreensaver;
 };
 
 

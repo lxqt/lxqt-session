@@ -42,13 +42,13 @@
         <translation>Arranque automático global</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation>Arranque automático do LxQt</translation>
+        <source>LXQt Autostart</source>
+        <translation>Arranque automático do LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
         <source>LXQt Autostart</source>
-        <translation>Arranque automático do LxQt</translation>
+        <translation>Arranque automático do LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="197"/>
@@ -109,7 +109,7 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation>Módulos do LxQt</translation>
+        <translation>Módulos do LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
@@ -127,8 +127,8 @@
         <translation>Definições básicas</translation>
     </message>
     <message>
-        <source>LxQt Modules</source>
-        <translation>Módulos do LxQt</translation>
+        <source>LXQt Modules</source>
+        <translation>Módulos do LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -222,13 +222,13 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation>Configuração da sessão LxQt</translation>
+        <source>LXQt Session Configuration</source>
+        <translation>Configuração da sessão LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>
         <source>LXQt Session Settings</source>
-        <translation>Definições da sessão LxQt</translation>
+        <translation>Definições da sessão LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="46"/>

@@ -42,8 +42,8 @@
         <translation>Nuo aplinkos nepriklausomas programų paleidimas</translation>
     </message>
     <message>
-        <source>LxQt Autostart</source>
-        <translation type="vanished">LxQt automatinis programų paleidimas</translation>
+        <source>LXQt Autostart</source>
+        <translation type="vanished">LXQt automatinis programų paleidimas</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="179"/>
@@ -218,8 +218,8 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LxQt Session Configuration</source>
-        <translation type="vanished">LxQt sesijų konfigūravimas</translation>
+        <source>LXQt Session Configuration</source>
+        <translation type="vanished">LXQt sesijų konfigūravimas</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>
