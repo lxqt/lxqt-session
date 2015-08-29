@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="el_GR">
+<TS version="2.1" language="el">
 <context>
     <name>AutoStartEdit</name>
     <message>
@@ -119,7 +119,7 @@
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>Ερώτηση επιβεβαίωσης κατά την εγκατάλειψη της συνεδρίας</translation>
     </message>
     <message>
         <source>Ask confirmation to leave session</source>
