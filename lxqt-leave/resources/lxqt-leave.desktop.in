@@ -5,7 +5,7 @@ GenericName=Leave
 Comment=Leave dialog
 Exec=lxqt-leave
 Icon=system-shutdown
-Categories=LXQt;X-Leave
+Categories=System;X-Leave
 OnlyShowIn=LXQt;
 
 #TRANSLATIONS_DIR=../translations
