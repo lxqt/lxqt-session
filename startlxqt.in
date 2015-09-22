@@ -2,8 +2,8 @@
 
 contains()
 {
-	local str="$1" substr="$2"
-	[ "$str" = "$substr" -o -z "${str##$substr:*}" -o -z "${str##*:$substr:*}" -o -z "${str%%*:$substr}" ]
+    local str="$1" substr="$2"
+    [ "$str" = "$substr" -o -z "${str##$substr:*}" -o -z "${str##*:$substr:*}" -o -z "${str%%*:$substr}" ]
 }
 
 if [ -z "$XDG_DATA_HOME" ]; then
@@ -15,18 +15,18 @@ if [ -z "$XDG_CONFIG_HOME" ]; then
 fi
 
 if [ -z "$XDG_DATA_DIRS" ]; then
-	if [ "x@LXQT_DATA_DIR@" = "x/usr/local/share" ] || [ "x@LXQT_DATA_DIR@" = "x/usr/share" ]; then
-		XDG_DATA_DIRS="$XDG_DATA_HOME:/usr/local/share:/usr/share"
-	else
-		XDG_DATA_DIRS="$XDG_DATA_HOME:@LXQT_DATA_DIR@:/usr/local/share:/usr/share"
-	fi
+    if [ "x@LXQT_DATA_DIR@" = "x/usr/local/share" ] || [ "x@LXQT_DATA_DIR@" = "x/usr/share" ]; then
+        XDG_DATA_DIRS="$XDG_DATA_HOME:/usr/local/share:/usr/share"
+    else
+        XDG_DATA_DIRS="$XDG_DATA_HOME:@LXQT_DATA_DIR@:/usr/local/share:/usr/share"
+    fi
 else
-	if ! contains "$XDG_DATA_DIRS" "$XDG_DATA_HOME"; then
-		XDG_DATA_DIRS="$XDG_DATA_DIRS:$XDG_DATA_HOME"
-	fi
-	if ! contains "$XDG_DATA_DIRS" "@LXQT_DATA_DIR@"; then
-		XDG_DATA_DIRS="$XDG_DATA_DIRS:@LXQT_DATA_DIR@"
-	fi
+    if ! contains "$XDG_DATA_DIRS" "$XDG_DATA_HOME"; then
+        XDG_DATA_DIRS="$XDG_DATA_DIRS:$XDG_DATA_HOME"
+    fi
+    if ! contains "$XDG_DATA_DIRS" "@LXQT_DATA_DIR@"; then
+        XDG_DATA_DIRS="$XDG_DATA_DIRS:@LXQT_DATA_DIR@"
+    fi
 fi
 export XDG_DATA_DIRS
 
