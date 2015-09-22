@@ -10,6 +10,11 @@ include(LXQtTranslateDesktop)
 install(DIRECTORY graphics DESTINATION "${LXQT_SHARE_DIR}")
 
 # startlxqt script
+set(PREDEF_XDG_DATA_DIRS "$XDG_DATA_HOME")
+if(NOT("${LXQT_DATA_DIR}" MATCHES "^/usr(/local)?/share$"))
+    set(PREDEF_XDG_DATA_DIRS "${PREDEF_XDG_DATA_DIRS}:${LXQT_DATA_DIR}")
+endif()
+set(PREDEF_XDG_DATA_DIRS "${PREDEF_XDG_DATA_DIRS}:/usr/local/share:/usr/share")
 configure_file(startlxqt.in startlxqt @ONLY)
 install(PROGRAMS
     "${CMAKE_CURRENT_BINARY_DIR}/startlxqt"
