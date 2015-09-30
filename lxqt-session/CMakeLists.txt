@@ -67,7 +67,7 @@ target_link_libraries(lxqt-session
     Qt5::DBus
     Qt5::X11Extras
     ${XCB_LDFLAGS}
-    ${X11_LDFLAGS}
+    X11
     lxqt
     KF5::WindowSystem
 )
