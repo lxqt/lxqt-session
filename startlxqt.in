@@ -30,6 +30,10 @@ if [ -z "$XDG_CONFIG_DIRS" ]; then
     export XDG_CONFIG_DIRS="@LXQT_ETC_XDG_DIR@"
 fi
 
+if [ -z "$XDG_CACHE_HOME" ]; then
+    export XDG_CACHE_HOME="$HOME/.cache"
+fi
+
 # Ensure the existance of the 'Desktop' folder
 if [ -e "$XDG_CONFIG_HOME/user-dirs.dirs" ]; then
     . "$XDG_CONFIG_HOME/user-dirs.dirs"
