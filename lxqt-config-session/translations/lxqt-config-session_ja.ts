@@ -42,13 +42,9 @@
         <translation>全体的な自動起動</translation>
     </message>
     <message>
-        <source>LXQt Autostart</source>
-        <translation type="vanished">LXQt自動起動</translation>
-    </message>
-    <message>
         <location filename="../autostartmodel.cpp" line="179"/>
         <source>LXQt Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt自動起動</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="197"/>
@@ -97,6 +93,11 @@
 <context>
     <name>BasicSettings</name>
     <message>
+        <location filename="../basicsettings.ui" line="23"/>
+        <source>Basic Settings</source>
+        <translation>基本的な設定</translation>
+    </message>
+    <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
         <translation>ウィンドウマネージャ</translation>
@@ -109,32 +110,27 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="111"/>
-        <source>Leave Session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="117"/>
-        <source>Ask confirmation to leave session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="23"/>
-        <source>Basic Settings</source>
-        <translation>基本的な設定</translation>
+        <translation>LXQtモジュール</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>開始</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>終了</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="111"/>
+        <source>Leave Session</source>
+        <translation>セッションの終了</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="117"/>
+        <source>Ask for confirmation to leave session</source>
+        <translation>セッション終了時に確認する</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="84"/>
@@ -165,7 +161,7 @@
     <message>
         <location filename="../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation>ターミネルのエミュレーション</translation>
+        <translation>ターミナルエミュレーション:</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="52"/>
@@ -212,19 +208,15 @@
     <message>
         <location filename="../modulemodel.cpp" line="85"/>
         <source>Running</source>
-        <translation type="unfinished"></translation>
+        <translation>実行中</translation>
     </message>
 </context>
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LXQt Session Configuration</source>
-        <translation type="vanished">LXQtセッションの設定</translation>
-    </message>
-    <message>
         <location filename="../sessionconfigwindow.cpp" line="43"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQtセッションの設定</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="46"/>
