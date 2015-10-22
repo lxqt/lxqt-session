@@ -31,6 +31,10 @@
 #include "../lxqt-session/src/windowmanager.h"
 #include "sessionconfigwindow.h"
 
+static const QLatin1String windowManagerKey("window_manager");
+static const QLatin1String leaveConfirmationKey("leave_confirmation");
+static const QLatin1String openboxValue("openbox");
+
 BasicSettings::BasicSettings(LXQt::Settings *settings, QWidget *parent) :
     QWidget(parent),
     m_settings(settings),
@@ -41,9 +45,6 @@ BasicSettings::BasicSettings(LXQt::Settings *settings, QWidget *parent) :
     connect(ui->findWmButton, SIGNAL(clicked()), this, SLOT(findWmButton_clicked()));
     connect(ui->startButton, SIGNAL(clicked()), this, SLOT(startButton_clicked()));
     connect(ui->stopButton, SIGNAL(clicked()), this, SLOT(stopButton_clicked()));
-    connect(ui->wmComboBox, SIGNAL(currentIndexChanged(int)), parent, SLOT(setRestart()));
-    connect(ui->wmComboBox, SIGNAL(editTextChanged(const QString&)), SIGNAL(needRestart()));
-    connect(ui->leaveConfirmationCheckBox, SIGNAL(toggled(bool)), SIGNAL(needRestart()));
     restoreSettings();
 
     ui->moduleView->setModel(m_moduleModel);
@@ -73,16 +74,39 @@ void BasicSettings::restoreSettings()
 
 void BasicSettings::save()
 {
-    m_settings->setValue("window_manager", ui->wmComboBox->currentText());
-    m_moduleModel->writeChanges();
+    /*  If the setting actually changed:
+     *      * Save the setting
+     *      * Emit a needsRestart signal
+     *
+     * TODO: Handle the modules section modules.
+     */
 
-    m_settings->setValue("leave_confirmation", ui->leaveConfirmationCheckBox->isChecked());
+    bool doRestart = false;
+    const QString windowManager = ui->wmComboBox->currentText();
+    const bool leaveConfirmation = ui->leaveConfirmationCheckBox->isChecked();
+
+    if (windowManager != m_settings->value(windowManagerKey, openboxValue).toString())
+    {
+        m_settings->setValue("window_manager", windowManager);
+        doRestart = true;
+    }
+
+
+    if (leaveConfirmation != m_settings->value(leaveConfirmationKey, false).toBool())
+    {
+        m_settings->setValue("leave_confirmation", leaveConfirmation);
+        doRestart = true;
+    }
+
+    if (doRestart)
+        emit needRestart();
+
+    m_moduleModel->writeChanges();
 }
 
 void BasicSettings::findWmButton_clicked()
 {
     SessionConfigWindow::updateCfgComboBox(ui->wmComboBox, tr("Select a window manager"));
-    emit needRestart();
 }
 
 void BasicSettings::startButton_clicked()
