@@ -25,7 +25,7 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#include <LXQt/Application>
+#include <LXQt/SingleApplication>
 #include <LXQt/PowerManager>
 #include <LXQt/ScreenSaver>
 #include <LXQt/Translator>
@@ -37,7 +37,7 @@
 
 int main(int argc, char *argv[])
 {
-    LXQt::Application a(argc, argv);
+    LXQt::SingleApplication a(argc, argv);
     LXQt::Translator::translateApplication();
 
     LXQt::PowerManager powermanager(&a);
@@ -101,6 +101,7 @@ int main(int argc, char *argv[])
     }
 
     LeaveDialog dialog;
+    a.setActivationWindow(&dialog);
     dialog.setGeometry(QStyle::alignedRect(Qt::LeftToRight,
                 Qt::AlignCenter,
                 dialog.size(),
