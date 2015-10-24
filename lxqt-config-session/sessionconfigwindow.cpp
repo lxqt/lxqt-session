@@ -82,9 +82,7 @@ void SessionConfigWindow::closeEvent(QCloseEvent * event)
     LXQt::ConfigDialog::closeEvent(event);
     if (m_restart) {
         QMessageBox::information(this, tr("Session Restart Required"),
-                                tr("You need to restart desktop session (lxqt-session) "
-                                    "to reload settings. Use logout from the main menu."
-                                    )
+                                tr("Some settings will not take effect until the next log in.")
                                 );
     }
 }
