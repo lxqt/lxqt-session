@@ -39,4 +39,3 @@ set(CPACK_GENERATOR TBZ2)
 set(CPACK_SOURCE_GENERATOR TBZ2)
 set(CPACK_SOURCE_IGNORE_FILES /build/;.gitignore;.*~;.git;.kdev4;temp)
 include(CPack)
-
