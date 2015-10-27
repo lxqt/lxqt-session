@@ -66,11 +66,11 @@ void BasicSettings::restoreSettings()
         knownWMs << wm.command;
     }
 
-    QString wm = m_settings->value("window_manager", "openbox").toString();
+    QString wm = m_settings->value(windowManagerKey, openboxValue).toString();
     SessionConfigWindow::handleCfgComboBox(ui->wmComboBox, knownWMs, wm);
     m_moduleModel->reset();
 
-    ui->leaveConfirmationCheckBox->setChecked(m_settings->value("leave_confirmation", false).toBool());
+    ui->leaveConfirmationCheckBox->setChecked(m_settings->value(leaveConfirmationKey, false).toBool());
 }
 
 void BasicSettings::save()
@@ -95,14 +95,14 @@ void BasicSettings::save()
 
     if (windowManager != m_settings->value(windowManagerKey, openboxValue).toString())
     {
-        m_settings->setValue("window_manager", windowManager);
+        m_settings->setValue(windowManagerKey, windowManager);
         doRestart = true;
     }
 
 
     if (leaveConfirmation != m_settings->value(leaveConfirmationKey, false).toBool())
     {
-        m_settings->setValue("leave_confirmation", leaveConfirmation);
+        m_settings->setValue(leaveConfirmationKey, leaveConfirmation);
         doRestart = true;
     }
 
