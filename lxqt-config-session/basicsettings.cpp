@@ -30,6 +30,7 @@
 
 #include "../lxqt-session/src/windowmanager.h"
 #include "sessionconfigwindow.h"
+#include "autostartutils.h"
 
 static const QLatin1String windowManagerKey("window_manager");
 static const QLatin1String leaveConfirmationKey("leave_confirmation");
@@ -77,13 +78,20 @@ void BasicSettings::save()
     /*  If the setting actually changed:
      *      * Save the setting
      *      * Emit a needsRestart signal
-     *
-     * TODO: Handle the modules section modules.
      */
 
     bool doRestart = false;
     const QString windowManager = ui->wmComboBox->currentText();
     const bool leaveConfirmation = ui->leaveConfirmationCheckBox->isChecked();
+
+    QMap<QString, AutostartItem> previousItems(AutostartItem::createItemMap());
+    QMutableMapIterator<QString, AutostartItem> i(previousItems);
+    while (i.hasNext()) {
+        i.next();
+        if (!AutostartUtils::isLXQtModule(i.value().file()))
+            i.remove();
+    }
+
 
     if (windowManager != m_settings->value(windowManagerKey, openboxValue).toString())
     {
@@ -96,6 +104,26 @@ void BasicSettings::save()
     {
         m_settings->setValue("leave_confirmation", leaveConfirmation);
         doRestart = true;
+    }
+
+    QMap<QString, AutostartItem> currentItems = m_moduleModel->items();
+    QMap<QString, AutostartItem>::const_iterator k = currentItems.constBegin();
+    while (k != currentItems.constEnd())
+    {
+        if (previousItems.contains(k.key()))
+        {
+            if (k.value().file() != previousItems.value(k.key()).file())
+            {
+                doRestart = true;
+                break;
+            }
+        }
+        else
+        {
+            doRestart = true;
+            break;
+        }
+        ++k;
     }
 
     if (doRestart)

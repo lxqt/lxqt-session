@@ -105,6 +105,17 @@ Qt::ItemFlags ModuleModel::flags(const QModelIndex& index) const
     return Qt::ItemIsEnabled | Qt::ItemIsSelectable | Qt::ItemIsUserCheckable;
 }
 
+QMap<QString, AutostartItem> ModuleModel::items()
+{
+    QMap<QString, AutostartItem> allItems;
+    QString s;
+
+    foreach(s, mKeyList)
+        allItems[s] = mItemMap.value(s);
+
+    return allItems;
+}
+
 int ModuleModel::rowCount(const QModelIndex& parent) const
 {
     Q_UNUSED(parent);
