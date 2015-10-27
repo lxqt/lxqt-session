@@ -28,6 +28,7 @@
 #include <QDebug>
 #include <XdgIcon>
 #include "modulemodel.h"
+#include "autostartutils.h"
 
 ModuleModel::ModuleModel(QObject* parent)
     : QAbstractListModel(parent)
@@ -51,7 +52,7 @@ void ModuleModel::reset()
     QMap<QString,AutostartItem>::iterator iter;
     for (iter = mItemMap.begin(); iter != mItemMap.end(); ++iter)
     {
-        if (iter.value().file().value("X-LXQt-Module", false).toBool())
+        if (AutostartUtils::isLXQtModule(iter.value().file()))
             mKeyList.append(iter.key());
     }
 
