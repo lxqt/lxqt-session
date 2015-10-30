@@ -37,6 +37,7 @@
 #include "autostartpage.h"
 #include "defaultappspage.h"
 #include "environmentpage.h"
+#include "userlocationspage.h"
 
 
 SessionConfigWindow::SessionConfigWindow() :
@@ -50,6 +51,12 @@ SessionConfigWindow::SessionConfigWindow() :
 
     DefaultApps* defaultApps = new DefaultApps(this);
     addPage(defaultApps, tr("Default Applications"), "preferences-desktop-filetype-association");
+
+    UserLocationsPage* userLocations = new UserLocationsPage(this);
+    addPage(userLocations, tr("Locations"), QStringLiteral("folder"));
+    connect(userLocations, SIGNAL(needRestart()), SLOT(setRestart()));
+    connect(this, SIGNAL(reset()), userLocations, SLOT(restoreSettings()));
+    connect(this, SIGNAL(save()), userLocations, SLOT(save()));
 
     AutoStartPage* autoStart = new AutoStartPage(this);
     addPage(autoStart, tr("Autostart"), "preferences-desktop-launch-feedback");
