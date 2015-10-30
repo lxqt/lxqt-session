@@ -61,6 +61,20 @@ bool AutoStartItemModel::writeChanges()
     return true;
 }
 
+QMap<QString, AutostartItem> AutoStartItemModel::items()
+{
+    QMap<QString, AutostartItem> allItems;
+    QString s;
+
+    foreach(s, mLXQtItems)
+        allItems[s] = mItemMap.value(s);
+
+    foreach(s, mGlobalItems)
+        allItems[s] = mItemMap.value(s);
+
+    return allItems;
+}
+
 /*
  * Creates or replaces an autostart entry
  */

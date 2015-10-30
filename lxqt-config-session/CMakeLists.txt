@@ -9,6 +9,7 @@ set(lxqt-sessioncfg_HDRS
     autostartmodel.h
     autostartitem.h
     autostartedit.h
+    autostartutils.h
     defaultappspage.h
     environmentpage.h
 )
@@ -22,6 +23,7 @@ set(lxqt-sessioncfg_SRCS
     autostartmodel.cpp
     autostartitem.cpp
     autostartedit.cpp
+    autostartutils.cpp
     defaultappspage.cpp
     environmentpage.cpp
     ../lxqt-session/src/windowmanager.cpp

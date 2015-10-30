@@ -59,6 +59,9 @@ public:
 public slots:
     bool writeChanges();
 
+public:
+    QMap<QString, AutostartItem> items();
+
 private:
     QMap<QString, AutostartItem> mItemMap;
     QPersistentModelIndex mGlobalIndex;

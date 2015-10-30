@@ -41,6 +41,9 @@ public:
     explicit AutoStartPage(QWidget* parent = 0);
     ~AutoStartPage();
 
+signals:
+    void needRestart();
+
 public slots:
     void save();
     void restoreSettings();
