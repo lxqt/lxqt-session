@@ -60,6 +60,7 @@ SessionConfigWindow::SessionConfigWindow() :
 
     AutoStartPage* autoStart = new AutoStartPage(this);
     addPage(autoStart, tr("Autostart"), "preferences-desktop-launch-feedback");
+    connect(autoStart, SIGNAL(needRestart()), SLOT(setRestart()));
     connect(this, SIGNAL(reset()), autoStart, SLOT(restoreSettings()));
     connect(this, SIGNAL(save()), autoStart, SLOT(save()));
 

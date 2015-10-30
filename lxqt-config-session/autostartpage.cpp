@@ -26,6 +26,7 @@
 #include "ui_autostartpage.h"
 
 #include "autostartedit.h"
+#include "autostartutils.h"
 
 #include <QMessageBox>
 
@@ -63,6 +64,64 @@ void AutoStartPage::restoreSettings()
 
 void AutoStartPage::save()
 {
+    bool doRestart = false;
+
+    /*
+     * Get the previous settings
+     */
+    QMap<QString, AutostartItem> previousItems(AutostartItem::createItemMap());
+    QMutableMapIterator<QString, AutostartItem> i(previousItems);
+    while (i.hasNext()) {
+        i.next();
+        if (AutostartUtils::isLXQtModule(i.value().file()))
+            i.remove();
+    }
+
+
+    /*
+     * Get the settings from the Ui
+     */
+    QMap<QString, AutostartItem> currentItems = mXdgAutoStartModel->items();
+    QMutableMapIterator<QString, AutostartItem> j(currentItems);
+
+    while (j.hasNext()) {
+        j.next();
+        if (AutostartUtils::isLXQtModule(j.value().file()))
+            j.remove();
+    }
+
+
+    /* Compare the settings */
+
+    if (previousItems.count() != currentItems.count())
+    {
+        doRestart = true;
+    }
+    else
+    {
+        QMap<QString, AutostartItem>::const_iterator k = currentItems.constBegin();
+        while (k != currentItems.constEnd())
+        {
+            if (previousItems.contains(k.key()))
+            {
+                if (k.value().file() != previousItems.value(k.key()).file())
+                {
+                    doRestart = true;
+                    break;
+                }
+            }
+            else
+            {
+                doRestart = true;
+                break;
+            }
+            ++k;
+        }
+    }
+
+    if (doRestart)
+        emit needRestart();
+
     mXdgAutoStartModel->writeChanges();
 }
 

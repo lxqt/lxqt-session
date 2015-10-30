@@ -46,6 +46,8 @@ public:
     int columnCount(const QModelIndex&) const { return 2; }
     Qt::ItemFlags flags(const QModelIndex& index) const;
 
+    QMap<QString, AutostartItem> items();
+
 private slots:
     void updateModuleState(QString moduleName, bool state);
 

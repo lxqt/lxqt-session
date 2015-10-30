@@ -28,6 +28,7 @@
 #include <QDebug>
 #include <XdgIcon>
 #include "modulemodel.h"
+#include "autostartutils.h"
 
 ModuleModel::ModuleModel(QObject* parent)
     : QAbstractListModel(parent)
@@ -51,7 +52,7 @@ void ModuleModel::reset()
     QMap<QString,AutostartItem>::iterator iter;
     for (iter = mItemMap.begin(); iter != mItemMap.end(); ++iter)
     {
-        if (iter.value().file().value("X-LXQt-Module", false).toBool())
+        if (AutostartUtils::isLXQtModule(iter.value().file()))
             mKeyList.append(iter.key());
     }
 
@@ -103,6 +104,17 @@ Qt::ItemFlags ModuleModel::flags(const QModelIndex& index) const
 {
     Q_UNUSED(index);
     return Qt::ItemIsEnabled | Qt::ItemIsSelectable | Qt::ItemIsUserCheckable;
+}
+
+QMap<QString, AutostartItem> ModuleModel::items()
+{
+    QMap<QString, AutostartItem> allItems;
+    QString s;
+
+    foreach(s, mKeyList)
+        allItems[s] = mItemMap.value(s);
+
+    return allItems;
 }
 
 int ModuleModel::rowCount(const QModelIndex& parent) const

@@ -27,6 +27,7 @@
 #include <XdgIcon>
 
 #include "autostartmodel.h"
+#include "autostartutils.h"
 
 AutoStartItemModel::AutoStartItemModel(QObject* parent) :
     QAbstractItemModel(parent),
@@ -37,7 +38,7 @@ AutoStartItemModel::AutoStartItemModel(QObject* parent) :
     QMap<QString,AutostartItem>::iterator iter;
     for (iter = mItemMap.begin(); iter != mItemMap.end(); ++iter)
     {
-        if (!iter.value().file().value("X-LXQt-Module", false).toBool())
+        if (!AutostartUtils::isLXQtModule(iter.value().file()))
         {
             if (showOnlyInLXQt(iter.value().file()))
                 mLXQtItems.append(iter.key());
@@ -59,6 +60,20 @@ bool AutoStartItemModel::writeChanges()
     foreach (AutostartItem item, mItemMap.values())
         item.commit();
     return true;
+}
+
+QMap<QString, AutostartItem> AutoStartItemModel::items()
+{
+    QMap<QString, AutostartItem> allItems;
+    QString s;
+
+    foreach(s, mLXQtItems)
+        allItems[s] = mItemMap.value(s);
+
+    foreach(s, mGlobalItems)
+        allItems[s] = mItemMap.value(s);
+
+    return allItems;
 }
 
 /*

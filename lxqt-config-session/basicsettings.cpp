@@ -30,6 +30,11 @@
 
 #include "../lxqt-session/src/windowmanager.h"
 #include "sessionconfigwindow.h"
+#include "autostartutils.h"
+
+static const QLatin1String windowManagerKey("window_manager");
+static const QLatin1String leaveConfirmationKey("leave_confirmation");
+static const QLatin1String openboxValue("openbox");
 
 BasicSettings::BasicSettings(LXQt::Settings *settings, QWidget *parent) :
     QWidget(parent),
@@ -41,9 +46,6 @@ BasicSettings::BasicSettings(LXQt::Settings *settings, QWidget *parent) :
     connect(ui->findWmButton, SIGNAL(clicked()), this, SLOT(findWmButton_clicked()));
     connect(ui->startButton, SIGNAL(clicked()), this, SLOT(startButton_clicked()));
     connect(ui->stopButton, SIGNAL(clicked()), this, SLOT(stopButton_clicked()));
-    connect(ui->wmComboBox, SIGNAL(currentIndexChanged(int)), parent, SLOT(setRestart()));
-    connect(ui->wmComboBox, SIGNAL(editTextChanged(const QString&)), SIGNAL(needRestart()));
-    connect(ui->leaveConfirmationCheckBox, SIGNAL(toggled(bool)), SIGNAL(needRestart()));
     restoreSettings();
 
     ui->moduleView->setModel(m_moduleModel);
@@ -64,25 +66,75 @@ void BasicSettings::restoreSettings()
         knownWMs << wm.command;
     }
 
-    QString wm = m_settings->value("window_manager", "openbox").toString();
+    QString wm = m_settings->value(windowManagerKey, openboxValue).toString();
     SessionConfigWindow::handleCfgComboBox(ui->wmComboBox, knownWMs, wm);
     m_moduleModel->reset();
 
-    ui->leaveConfirmationCheckBox->setChecked(m_settings->value("leave_confirmation", false).toBool());
+    ui->leaveConfirmationCheckBox->setChecked(m_settings->value(leaveConfirmationKey, false).toBool());
 }
 
 void BasicSettings::save()
 {
-    m_settings->setValue("window_manager", ui->wmComboBox->currentText());
-    m_moduleModel->writeChanges();
+    /*  If the setting actually changed:
+     *      * Save the setting
+     *      * Emit a needsRestart signal
+     */
 
-    m_settings->setValue("leave_confirmation", ui->leaveConfirmationCheckBox->isChecked());
+    bool doRestart = false;
+    const QString windowManager = ui->wmComboBox->currentText();
+    const bool leaveConfirmation = ui->leaveConfirmationCheckBox->isChecked();
+
+    QMap<QString, AutostartItem> previousItems(AutostartItem::createItemMap());
+    QMutableMapIterator<QString, AutostartItem> i(previousItems);
+    while (i.hasNext()) {
+        i.next();
+        if (!AutostartUtils::isLXQtModule(i.value().file()))
+            i.remove();
+    }
+
+
+    if (windowManager != m_settings->value(windowManagerKey, openboxValue).toString())
+    {
+        m_settings->setValue(windowManagerKey, windowManager);
+        doRestart = true;
+    }
+
+
+    if (leaveConfirmation != m_settings->value(leaveConfirmationKey, false).toBool())
+    {
+        m_settings->setValue(leaveConfirmationKey, leaveConfirmation);
+        doRestart = true;
+    }
+
+    QMap<QString, AutostartItem> currentItems = m_moduleModel->items();
+    QMap<QString, AutostartItem>::const_iterator k = currentItems.constBegin();
+    while (k != currentItems.constEnd())
+    {
+        if (previousItems.contains(k.key()))
+        {
+            if (k.value().file() != previousItems.value(k.key()).file())
+            {
+                doRestart = true;
+                break;
+            }
+        }
+        else
+        {
+            doRestart = true;
+            break;
+        }
+        ++k;
+    }
+
+    if (doRestart)
+        emit needRestart();
+
+    m_moduleModel->writeChanges();
 }
 
 void BasicSettings::findWmButton_clicked()
 {
     SessionConfigWindow::updateCfgComboBox(ui->wmComboBox, tr("Select a window manager"));
-    emit needRestart();
 }
 
 void BasicSettings::startButton_clicked()

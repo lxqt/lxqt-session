@@ -9,6 +9,7 @@ set(lxqt-sessioncfg_HDRS
     autostartmodel.h
     autostartitem.h
     autostartedit.h
+    autostartutils.h
     defaultappspage.h
     environmentpage.h
     userlocationspage.h
@@ -23,6 +24,7 @@ set(lxqt-sessioncfg_SRCS
     autostartmodel.cpp
     autostartitem.cpp
     autostartedit.cpp
+    autostartutils.cpp
     defaultappspage.cpp
     environmentpage.cpp
     userlocationspage.cpp
