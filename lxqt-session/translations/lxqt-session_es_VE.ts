@@ -25,8 +25,9 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
+        <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation type="vanished">Bienvenido a LXQt</translation>
+        <translation>Bienvenido a LXQt</translation>
     </message>
     <message>
         <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
@@ -49,11 +50,6 @@ Antes de empezar a usar LXQt puede querer seleccionar el administrador de ventan
         <location filename="../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
         <translation>Escoja su favorito.</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.ui" line="14"/>
-        <source>Welcome to LXQt</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>

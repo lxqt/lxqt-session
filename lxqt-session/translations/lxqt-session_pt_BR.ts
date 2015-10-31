@@ -25,8 +25,9 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
+        <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation type="vanished">Bem-vindo ao LXQt</translation>
+        <translation>Bem-vindo ao LXQt</translation>
     </message>
     <message>
         <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
@@ -49,11 +50,6 @@ Antes de iniciar o uso do LXQt, você pode querer selecionar o gerenciador de ja
         <location filename="../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
         <translation>Escolha o seu favorito.</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.ui" line="14"/>
-        <source>Welcome to LXQt</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>

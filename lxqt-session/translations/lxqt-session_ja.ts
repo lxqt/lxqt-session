@@ -25,8 +25,9 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
+        <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation type="vanished">LXQtにようこそ</translation>
+        <translation>LXQtにようこそ</translation>
     </message>
     <message>
         <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;

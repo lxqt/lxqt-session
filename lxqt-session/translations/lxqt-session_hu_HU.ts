@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="hu_HU">
+<TS version="2.1" language="hu_HU">
 <context>
     <name>LXQtModuleManager</name>
     <message>
@@ -17,6 +17,7 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
+        <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
         <translation>Üdvözli a LXQt!</translation>
     </message>
@@ -24,13 +25,13 @@
         <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
 &lt;p&gt;
 Before starting to use the LXQt, you might want to select the Windows Manager:</source>
-        <translation>&lt;b&gt;Üdvözli a LXQt!&lt;/b&gt;
+        <translation type="vanished">&lt;b&gt;Üdvözli a LXQt!&lt;/b&gt;
 &lt;p&gt;
 Mielőtt elkezdené a LXQt használatát, válasszon ablakkezelőt:</translation>
     </message>
     <message>
         <source>You can change the Window Manager later at any time via LXQt Session Configurator.</source>
-        <translation>Az ablakkezelőt később bármikor megváltoztathatja a LXQt munkamenetbeállítóban.</translation>
+        <translation type="vanished">Az ablakkezelőt később bármikor megváltoztathatja a LXQt munkamenetbeállítóban.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="62"/>
@@ -41,11 +42,6 @@ Mielőtt elkezdené a LXQt használatát, válasszon ablakkezelőt:</translation
         <location filename="../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
         <translation>Válassz egy kedvencet.</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.ui" line="14"/>
-        <source>Welcome to LXQt</source>
-        <translation>Üdvözli az LXQt</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>

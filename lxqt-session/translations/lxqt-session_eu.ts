@@ -25,8 +25,9 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
+        <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation type="vanished">Ongi etorri LXQt-ra</translation>
+        <translation>Ongi etorri LXQt-ra</translation>
     </message>
     <message>
         <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
@@ -49,11 +50,6 @@ LXQt erabiltzen hasi aurretik, leiho-kudeatzailea aukera dezakezu:</translation>
         <location filename="../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
         <translation>Aukeratu gogokoena.</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.ui" line="14"/>
-        <source>Welcome to LXQt</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>

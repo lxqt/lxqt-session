@@ -37,26 +37,22 @@
 <context>
     <name>AutoStartItemModel</name>
     <message>
-        <location filename="../autostartmodel.cpp" line="177"/>
+        <location filename="../autostartmodel.cpp" line="192"/>
         <source>Global Autostart</source>
         <translation>Global Autostart</translation>
     </message>
     <message>
+        <location filename="../autostartmodel.cpp" line="194"/>
         <source>LXQt Autostart</source>
-        <translation type="vanished">LXQt Autostart</translation>
+        <translation>LXQt Autostart</translation>
     </message>
     <message>
-        <location filename="../autostartmodel.cpp" line="179"/>
-        <source>LXQt Autostart</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../autostartmodel.cpp" line="197"/>
+        <location filename="../autostartmodel.cpp" line="212"/>
         <source>Location: %1</source>
         <translation>Placering:%1</translation>
     </message>
     <message>
-        <location filename="../autostartmodel.cpp" line="199"/>
+        <location filename="../autostartmodel.cpp" line="214"/>
         <source>Overrides: %1</source>
         <translation>Tilsidesætter: %1</translation>
     </message>
@@ -84,12 +80,12 @@
         <translation>Program Autostart</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="82"/>
+        <location filename="../autostartpage.cpp" line="141"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="82"/>
+        <location filename="../autostartpage.cpp" line="141"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>Fil &apos;%1&apos; eksisterer allerede!</translation>
     </message>
@@ -109,7 +105,7 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">LXQt Moduler</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
@@ -118,17 +114,13 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
-        <source>Ask confirmation to leave session</source>
+        <source>Ask for confirmation to leave session</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
         <translation>Basale Indstillinger</translation>
-    </message>
-    <message>
-        <source>LXQt Modules</source>
-        <translation type="vanished">LXQt Moduler</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -141,7 +133,7 @@
         <translation>Stop</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="84"/>
+        <location filename="../basicsettings.cpp" line="137"/>
         <source>Select a window manager</source>
         <translation>Vælg en window manager</translation>
     </message>
@@ -186,27 +178,27 @@
 <context>
     <name>EnvironmentPage</name>
     <message>
-        <location filename="../environmentpage.ui" line="30"/>
+        <location filename="../environmentpage.ui" line="17"/>
         <source>Add</source>
         <translation>Tilføj</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="37"/>
+        <location filename="../environmentpage.ui" line="24"/>
         <source>Delete</source>
         <translation>Slet</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="63"/>
+        <location filename="../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
         <translation>Miljøvariabler (Advanceret)</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="74"/>
+        <location filename="../environmentpage.ui" line="61"/>
         <source>Variable Name</source>
         <translation>Variabelnavn</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="79"/>
+        <location filename="../environmentpage.ui" line="66"/>
         <source>Value</source>
         <translation>Værdi</translation>
     </message>
@@ -214,7 +206,7 @@
 <context>
     <name>ModuleModel</name>
     <message>
-        <location filename="../modulemodel.cpp" line="85"/>
+        <location filename="../modulemodel.cpp" line="86"/>
         <source>Running</source>
         <translation>Kører</translation>
     </message>
@@ -226,39 +218,114 @@
         <translation type="vanished">LXQt Sessionsindstillinger</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="43"/>
+        <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="46"/>
+        <location filename="../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
         <translation>Basale Indstillinger</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="52"/>
+        <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>Default Applications</source>
         <translation>Standardprogrammer</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="55"/>
+        <location filename="../sessionconfigwindow.cpp" line="56"/>
+        <source>Locations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../sessionconfigwindow.cpp" line="62"/>
         <source>Autostart</source>
         <translation>Autostart</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="60"/>
+        <location filename="../sessionconfigwindow.cpp" line="68"/>
         <source>Environment (Advanced)</source>
         <translation>Miljø (Advanceret)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="84"/>
+        <location filename="../sessionconfigwindow.cpp" line="92"/>
         <source>Session Restart Required</source>
         <translation>Genstart Af Session Er Påkrævet</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="85"/>
+        <location filename="../sessionconfigwindow.cpp" line="93"/>
+        <source>Some settings will not take effect until the next log in.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation>For at genindlæse indstillinger skal skrivebordssessionen genstartes. Brug log Ud fra hovedmenuen.</translation>
+        <translation type="vanished">For at genindlæse indstillinger skal skrivebordssessionen genstartes. Brug log Ud fra hovedmenuen.</translation>
+    </message>
+</context>
+<context>
+    <name>UserLocationsPage</name>
+    <message>
+        <location filename="../userlocationspage.cpp" line="99"/>
+        <source>Locations for Personal Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../userlocationspage.cpp" line="160"/>
+        <source>LXQt Session Settings - Locations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../userlocationspage.cpp" line="161"/>
+        <source>An error ocurred while applying the settings for the %1 location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../userlocationspage.cpp" line="177"/>
+        <source>Choose Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>UserLocationsPrivate</name>
+    <message>
+        <location filename="../userlocationspage.cpp" line="59"/>
+        <source>Desktop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../userlocationspage.cpp" line="60"/>
+        <source>Downloads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../userlocationspage.cpp" line="61"/>
+        <source>Templates</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../userlocationspage.cpp" line="62"/>
+        <source>Public Share</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../userlocationspage.cpp" line="63"/>
+        <source>Documents</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../userlocationspage.cpp" line="64"/>
+        <source>Music</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../userlocationspage.cpp" line="65"/>
+        <source>Pictures</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../userlocationspage.cpp" line="66"/>
+        <source>Videos</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

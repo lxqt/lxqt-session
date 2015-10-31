@@ -86,8 +86,9 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
+        <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation type="vanished">Добро дошли у Рејзор-кјут</translation>
+        <translation>Добро дошли у Рејзор-кјут</translation>
     </message>
     <message>
         <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
@@ -100,11 +101,6 @@ Before starting to use the LXQt, you might want to select the Windows Manager:</
     <message>
         <source>You can change the Window Manager later at any time via LXQt Session Configurator.</source>
         <translation type="vanished">Можете да промијените менаџера прозора касније помоћу Рејзоровог Подешавања сесије.</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.ui" line="14"/>
-        <source>Welcome to LXQt</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>

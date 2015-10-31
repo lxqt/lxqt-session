@@ -25,8 +25,9 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
+        <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation type="vanished">Bonvenon en LXQt</translation>
+        <translation>Bonvenon en LXQt</translation>
     </message>
     <message>
         <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
@@ -49,11 +50,6 @@ Antaŭ startigi uzadon de LXQt, vi eble volas elekti la fenestran mastrumilon:</
         <location filename="../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
         <translation>Elektu vian preferatan fenestran mastrumilon.</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.ui" line="14"/>
-        <source>Welcome to LXQt</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>

@@ -4,9 +4,13 @@
 <context>
     <name>LeaveDialog</name>
     <message>
-        <location filename="../leavedialog.ui" line="20"/>
         <source>Form</source>
-        <translation>Меню выхода</translation>
+        <translation type="vanished">Меню выхода</translation>
+    </message>
+    <message>
+        <location filename="../leavedialog.ui" line="20"/>
+        <source>Leave</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="29"/>
@@ -19,27 +23,32 @@
         <translation>Выйти</translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="55"/>
+        <location filename="../leavedialog.ui" line="57"/>
         <source>Reboot</source>
         <translation>Перезагрузить</translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="65"/>
+        <location filename="../leavedialog.ui" line="69"/>
         <source>Shutdown</source>
         <translation>Выключить</translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="75"/>
+        <location filename="../leavedialog.ui" line="81"/>
         <source>Suspend</source>
         <translation>Перевести в ждущий режим</translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="85"/>
+        <location filename="../leavedialog.ui" line="93"/>
+        <source>Lock screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../leavedialog.ui" line="105"/>
         <source>Hibernate</source>
         <translation>Перевести в спящий режим</translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="114"/>
+        <location filename="../leavedialog.ui" line="136"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
