@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>617</width>
-    <height>135</height>
+    <width>662</width>
+    <height>214</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -40,74 +40,131 @@
     <widget class="QWidget" name="buttonsWidget" native="true">
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QPushButton" name="logoutButton">
+       <widget class="QToolButton" name="logoutButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::NoContextMenu</enum>
+        </property>
         <property name="text">
          <string>Logout</string>
         </property>
         <property name="icon">
          <iconset theme="system-log-out">
-          <normaloff/>
-         </iconset>
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>64</width>
+          <height>64</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="rebootButton">
+       <widget class="QToolButton" name="rebootButton">
         <property name="text">
          <string>Reboot</string>
         </property>
         <property name="icon">
          <iconset theme="system-reboot">
-          <normaloff/>
-         </iconset>
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>64</width>
+          <height>64</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="shutdownButton">
+       <widget class="QToolButton" name="shutdownButton">
         <property name="text">
          <string>Shutdown</string>
         </property>
         <property name="icon">
          <iconset theme="system-shutdown">
-          <normaloff/>
-         </iconset>
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>64</width>
+          <height>64</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="suspendButton">
+       <widget class="QToolButton" name="suspendButton">
         <property name="text">
          <string>Suspend</string>
         </property>
         <property name="icon">
          <iconset theme="system-suspend">
-          <normaloff/>
-         </iconset>
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>64</width>
+          <height>64</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="lockscreenButton">
+       <widget class="QToolButton" name="lockscreenButton">
         <property name="text">
          <string>Lock screen</string>
         </property>
         <property name="icon">
          <iconset theme="system-lock-screen">
-          <normaloff/>
-         </iconset>
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>64</width>
+          <height>64</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="hibernateButton">
+       <widget class="QToolButton" name="hibernateButton">
         <property name="text">
          <string>Hibernate</string>
         </property>
         <property name="icon">
          <iconset theme="system-suspend-hibernate">
-          <normaloff/>
-         </iconset>
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>64</width>
+          <height>64</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
         </property>
        </widget>
       </item>
@@ -137,8 +194,7 @@
         </property>
         <property name="icon">
          <iconset theme="dialog-cancel">
-          <normaloff/>
-         </iconset>
+          <normaloff>.</normaloff>.</iconset>
         </property>
        </widget>
       </item>
