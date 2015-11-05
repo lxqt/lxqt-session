@@ -28,7 +28,7 @@
 #include "leavedialog.h"
 
 LeaveDialog::LeaveDialog(QWidget* parent)
-    : QDialog(parent),
+    : QDialog(parent, Qt::Dialog | Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint),
     ui(new Ui::LeaveDialog),
     mPower(new LXQt::Power(this)),
     mScreensaver(new LXQt::ScreenSaver(this))
