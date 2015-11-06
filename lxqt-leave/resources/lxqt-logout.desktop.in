@@ -5,7 +5,7 @@ GenericName=Logout
 Comment=Logout from the current session
 Exec=lxqt-leave --logout
 Icon=system-log-out
-Categories=System;X-Leave
+Categories=System;X-Leave;
 OnlyShowIn=LXQt;
 
 #TRANSLATIONS_DIR=../translations
