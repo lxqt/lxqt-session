@@ -6,6 +6,6 @@ Comment=suspend the machine
 Exec=lxqt-leave --suspend
 Icon=system-suspend
 Categories=System;X-Leave;
-OnlyShowIn=LXQt
+OnlyShowIn=LXQt;
 
 #TRANSLATIONS_DIR=../translations
