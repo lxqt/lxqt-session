@@ -93,6 +93,11 @@
 <context>
     <name>BasicSettings</name>
     <message>
+        <location filename="../basicsettings.ui" line="23"/>
+        <source>Basic Settings</source>
+        <translation>Alapbeállítások</translation>
+    </message>
+    <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
         <translation>Ablakkezelő</translation>
@@ -108,25 +113,6 @@
         <translation>LXQt modulok</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="111"/>
-        <source>Leave Session</source>
-        <translation>Munkamenet elhagyása</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="117"/>
-        <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Ask confirmation to leave session</source>
-        <translation type="vanished">Jóváhagyás az elhagyás előtt</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="23"/>
-        <source>Basic Settings</source>
-        <translation>Alapbeállítások</translation>
-    </message>
-    <message>
         <location filename="../basicsettings.ui" line="65"/>
         <source>Start</source>
         <translation>Indítás</translation>
@@ -135,6 +121,16 @@
         <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
         <translation>Leállítás</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="111"/>
+        <source>Leave Session</source>
+        <translation>Munkamenet elhagyása</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="117"/>
+        <source>Ask for confirmation to leave session</source>
+        <translation>Munkamenet elhagyása rákérdezéssel</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="137"/>
@@ -218,10 +214,6 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LXQt Session Configuration</source>
-        <translation type="vanished">LXQt munkamenet konfiguráció</translation>
-    </message>
-    <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
         <translation>LXQt munkamenet-beállítás</translation>
@@ -239,7 +231,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="56"/>
         <source>Locations</source>
-        <translation type="unfinished"></translation>
+        <translation>Helyek</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="62"/>
@@ -259,11 +251,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="93"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation type="vanished">Újra kell indítania a munkamenetet (lxqt-session) a beállítások újratöltéséhez. Használja a főmenü kijelentkezés pontját.</translation>
+        <translation>Egyes beállítások csak újbóli bejelenkezéssel érvényesülnek.</translation>
     </message>
 </context>
 <context>
@@ -271,22 +259,22 @@
     <message>
         <location filename="../userlocationspage.cpp" line="99"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Személyes fájlok helye</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="160"/>
         <source>LXQt Session Settings - Locations</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQT menet beállító fájljainak helye</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="161"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>A %1 helyű beállításoknál hiba lépett fel</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="177"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Válassz helyet</translation>
     </message>
 </context>
 <context>
@@ -294,42 +282,42 @@
     <message>
         <location filename="../userlocationspage.cpp" line="59"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Asztal</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="60"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Letöltések</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="61"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Ideiglenesek</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="62"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Nyilvánosak</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokumentumok</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>Zenék</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Képek</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Videók</translation>
     </message>
 </context>
 </TS>
