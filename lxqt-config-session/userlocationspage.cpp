@@ -157,7 +157,7 @@ void UserLocationsPage::save()
                         static_cast<XdgDirs::UserDirectory> (i), s, true);
             if (!ok) {
                 const int ret = QMessageBox::warning(this,
-                    tr("LXQt Session Settings - Locations"),
+                    tr("LXQt Session Settings - User Directories"),
                     tr("An error ocurred while applying the settings for the %1 location").arg(d->locationsName.at(i)),
                     QMessageBox::Ok);
                 Q_UNUSED(ret);

@@ -53,7 +53,7 @@ SessionConfigWindow::SessionConfigWindow() :
     addPage(defaultApps, tr("Default Applications"), "preferences-desktop-filetype-association");
 
     UserLocationsPage* userLocations = new UserLocationsPage(this);
-    addPage(userLocations, tr("Locations"), QStringLiteral("folder"));
+    addPage(userLocations, tr("User Directories"), QStringLiteral("folder"));
     connect(userLocations, SIGNAL(needRestart()), SLOT(setRestart()));
     connect(this, SIGNAL(reset()), userLocations, SLOT(restoreSettings()));
     connect(this, SIGNAL(save()), userLocations, SLOT(save()));
