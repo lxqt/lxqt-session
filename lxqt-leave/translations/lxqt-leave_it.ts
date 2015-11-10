@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="it">
+<TS version="2.0" language="it">
 <context>
     <name>LeaveDialog</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">Esci</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="20"/>
         <source>Leave</source>
-        <translation type="unfinished"></translation>
+        <translation>Esci</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="29"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;What do you want the computer to do?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Terminare la sessione di LXQt?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Cosa vuoi che faccia il computer?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="45"/>
@@ -40,7 +40,7 @@
     <message>
         <location filename="../leavedialog.ui" line="93"/>
         <source>Lock screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocca lo schermo</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="105"/>
@@ -50,7 +50,7 @@
     <message>
         <location filename="../leavedialog.ui" line="136"/>
         <source>Cancel</source>
-        <translation>Cancella</translation>
+        <translation>Annulla</translation>
     </message>
 </context>
 <context>
@@ -58,32 +58,32 @@
     <message>
         <location filename="../main.cpp" line="51"/>
         <source>Logout.</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiusura della sessione.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="54"/>
         <source>Lockscreen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocco dello schermo.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="57"/>
         <source>Suspend.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sospensione.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="60"/>
         <source>Hibernate.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ibernazione.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="63"/>
         <source>Shutdown.</source>
-        <translation type="unfinished"></translation>
+        <translation>Spegnimento.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="66"/>
         <source>Reboot.</source>
-        <translation type="unfinished"></translation>
+        <translation>Riavvio.</translation>
     </message>
 </context>
 </TS>
