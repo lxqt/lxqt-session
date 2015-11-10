@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="it">
+<TS version="2.0" language="it">
 <context>
     <name>AutoStartEdit</name>
     <message>
@@ -62,7 +62,7 @@
     <message>
         <location filename="../autostartpage.ui" line="17"/>
         <source>Delete</source>
-        <translation>Cancella</translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="24"/>
@@ -115,11 +115,11 @@
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiedi una conferma per terminare la sessione</translation>
     </message>
     <message>
         <source>Ask confirmation to leave session</source>
-        <translation type="vanished">Chiedi una conferma per terminare la sessione</translation>
+        <translation>Chiedi una conferma per terminare la sessione</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -165,7 +165,7 @@
     <message>
         <location filename="../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation>Emulatore di terminale:</translation>
+        <translation>Emulazione di terminale:</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="52"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
-        <translation>Variabili dell&apos;ambiente (avanzato)</translation>
+        <translation>Variabili d&apos;ambiente (avanzato)</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="61"/>
@@ -219,7 +219,7 @@
     <name>SessionConfigWindow</name>
     <message>
         <source>LXQt Session Configuration</source>
-        <translation type="vanished">Configurazione della sessione di LXQt</translation>
+        <translation>Configurazione della sessione di LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
@@ -239,7 +239,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="56"/>
         <source>Locations</source>
-        <translation type="unfinished"></translation>
+        <translation>Posizioni</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="62"/>
@@ -254,16 +254,16 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="92"/>
         <source>Session Restart Required</source>
-        <translation>Necessario riavvio della sessione</translation>
+        <translation>Riavvio della sessione richiesto</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="93"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Alcune impostazioni non avranno effetto fino al prossimo accesso.</translation>
     </message>
     <message>
         <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation type="vanished">Devi riavviare la sessione desktop (lxqt-session) per ricaricare le impostazioni. Termina la sessione tramite il menu principale.</translation>
+        <translation>Devi riavviare la sessione desktop (lxqt-session) per ricaricare le impostazioni. Termina la sessione tramite il menu principale.</translation>
     </message>
 </context>
 <context>
@@ -271,22 +271,22 @@
     <message>
         <location filename="../userlocationspage.cpp" line="99"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Posizioni per i file personali</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="160"/>
         <source>LXQt Session Settings - Locations</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazioni della sessione LXQt - Posizioni</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="161"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>Si è verificato un errore durante l&apos;applicazione delle impostazioni per la posizione %1</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="177"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli posizione</translation>
     </message>
 </context>
 <context>
@@ -294,42 +294,42 @@
     <message>
         <location filename="../userlocationspage.cpp" line="59"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Desktop</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="60"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Scaricamenti</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="61"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Modelli</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="62"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Condivisione pubblica</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Documenti</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>Musica</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Immagini</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Video</translation>
     </message>
 </context>
 </TS>

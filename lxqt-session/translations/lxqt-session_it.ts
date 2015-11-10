@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="it">
+<TS version="2.0" language="it">
 <context>
     <name>LXQtModuleManager</name>
     <message>
         <source>LXQt Session Crash Report</source>
-        <translation type="vanished">Resoconto di errori della sessione di LXQt</translation>
+        <translation>Resoconto di errori della sessione di LXQt</translation>
     </message>
     <message>
         <source>Application &apos;%1&apos; crashed too many times. Its autorestart has been disabled for current session.</source>
-        <translation type="vanished">L&apos;applicazione &apos;%1&apos; si è chiusa per errore troppe volte. Il suo riavvio automatico è stato disattivato per l&apos;attuale sessione.</translation>
+        <translation>L&apos;applicazione &apos;%1&apos; si è chiusa per errore troppe volte. Il suo riavvio automatico è stato disattivato per l&apos;attuale sessione.</translation>
     </message>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="289"/>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="290"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; è andato in crash troppe volte. Il suo avvio automatico è stato disabilitato fino al prossimo login.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; è andato in crash troppe volte. Il suo avvio automatico è stato disabilitato fino al prossimo accesso.</translation>
     </message>
 </context>
 <context>
@@ -33,13 +33,13 @@
         <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
 &lt;p&gt;
 Before starting to use the LXQt, you might want to select the Windows Manager:</source>
-        <translation type="vanished">&lt;b&gt;Benvenuto in LXQt&lt;/b&gt;
+        <translation>&lt;b&gt;Benvenuto in LXQt&lt;/b&gt;
 &lt;p&gt;
 Prima di iniziare a usare LXQt dovresti selezionare il gestore delle finestre:</translation>
     </message>
     <message>
         <source>You can change the Window Manager later at any time via LXQt Session Configurator.</source>
-        <translation type="vanished">Puoi cambiare il gestore delle finestre quando vuoi tramite lo strumento di configurazione della sessione di LXQt.</translation>
+        <translation>Puoi cambiare il gestore delle finestre quando vuoi tramite lo strumento di configurazione della sessione di LXQt.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="62"/>
@@ -59,7 +59,7 @@ Prima di iniziare a usare LXQt dovresti selezionare il gestore delle finestre:</
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>E&apos; possibile cambiarlo in ogni momento da: Preferenze -&gt;Impostazioni della sessione -&gt; Impostazioni di base.</translation>
+        <translation>È possibile cambiarlo in ogni momento da: Preferenze -&gt;Impostazioni della sessione -&gt; Impostazioni di base.</translation>
     </message>
 </context>
 </TS>
