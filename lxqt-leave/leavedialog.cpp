@@ -41,6 +41,27 @@ LeaveDialog::LeaveDialog(QWidget* parent)
     ui->suspendButton->setEnabled(mPower->canAction(LXQt::Power::PowerSuspend));
     ui->hibernateButton->setEnabled(mPower->canAction(LXQt::Power::PowerHibernate));
 
+    /*
+     * Make all the buttons have equal widths
+     */
+    QVector<QToolButton*> buttons(6);
+    buttons[0] = ui->logoutButton;
+    buttons[1] = ui->lockscreenButton;
+    buttons[2] = ui->suspendButton;
+    buttons[3] = ui->hibernateButton;
+    buttons[4] = ui->rebootButton;
+    buttons[5] = ui->shutdownButton;
+
+    int maxWidth = 0;
+    const int N = buttons.size();
+    for (int i = 0; i < N; ++i) {
+        // Make sure that the button size is adjusted to the text width
+        buttons.at(i)->adjustSize();
+        maxWidth = qMax(maxWidth, buttons.at(i)->width());
+    }
+    for (int i = 0; i < N; ++i)
+        buttons.at(i)->setMinimumWidth(maxWidth);
+
     connect(ui->logoutButton,       &QPushButton::clicked, [&] { close(); mPower->logout(); });
     connect(ui->rebootButton,       &QPushButton::clicked, [&] { close(); mPower->reboot(); });
     connect(ui->shutdownButton,     &QPushButton::clicked, [&] { close(); mPower->shutdown(); });
