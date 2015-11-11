@@ -329,7 +329,7 @@ void LXQtModuleManager::logout()
     {
         i.next();
         LXQtModule* p = i.value();
-        if (p->state() != QProcess::NotRunning && !p->waitForFinished())
+        if (p->state() != QProcess::NotRunning && !p->waitForFinished(2000))
         {
             qWarning() << QString("Module '%1' won't terminate ... killing.").arg(i.key());
             p->kill();
@@ -337,7 +337,7 @@ void LXQtModuleManager::logout()
     }
 
     mWmProcess->terminate();
-    if (mWmProcess->state() != QProcess::NotRunning && !mWmProcess->waitForFinished())
+    if (mWmProcess->state() != QProcess::NotRunning && !mWmProcess->waitForFinished(2000))
     {
         qWarning() << QString("Window Manager won't terminate ... killing.");
         mWmProcess->kill();

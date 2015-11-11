@@ -23,6 +23,7 @@
 #include "UdevNotifier.h"
 #include "numlock.h"
 #include <unistd.h>
+#include <csignal>
 #include <LXQt/Settings>
 #include <QProcess>
 #include <QDebug>
@@ -33,6 +34,7 @@
 
 SessionApplication::SessionApplication(int& argc, char** argv) : LXQt::Application(argc, argv)
 {
+    listenToUnixSignals({SIGINT, SIGTERM, SIGQUIT, SIGHUP});
     char* winmanager = NULL;
     int c;
     while ((c = getopt (argc, argv, "c:w:")) != -1)
@@ -56,6 +58,7 @@ SessionApplication::SessionApplication(int& argc, char** argv) : LXQt::Applicati
     qputenv("LXQT_SESSION_CONFIG", configName.toUtf8());
 
     modman = new LXQtModuleManager(winmanager);
+    connect(this, &LXQt::Application::unixSignal, modman, &LXQtModuleManager::logout);
     new SessionDBusAdaptor(modman);
     // connect to D-Bus and register as an object:
     QDBusConnection::sessionBus().registerService("org.lxqt.session");
