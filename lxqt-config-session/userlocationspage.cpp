@@ -39,6 +39,7 @@ public:
 
     UserLocationsPagePrivate();
     static const QStringList locationsName;
+    static const QStringList locationsToolTips;
 
     QList<QString> initialLocations;
     QList<QLineEdit *> locations;
@@ -64,6 +65,16 @@ const QStringList UserLocationsPagePrivate::locationsName = QStringList() <<
     qApp->translate("UserLocationsPrivate", "Music") <<
     qApp->translate("UserLocationsPrivate", "Pictures") <<
     qApp->translate("UserLocationsPrivate", "Videos");
+
+const QStringList UserLocationsPagePrivate::locationsToolTips = QStringList() <<
+    qApp->translate("UserLocationsPrivate", "Contains all the files which you see on your desktop") <<
+    qApp->translate("UserLocationsPrivate", "Default folder to save your downloaded files") <<
+    qApp->translate("UserLocationsPrivate", "Default folder to load or save templates from or to") <<
+    qApp->translate("UserLocationsPrivate", "Default folder to publicly share your files") <<
+    qApp->translate("UserLocationsPrivate", "Default folder to load or save documents from or to") <<
+    qApp->translate("UserLocationsPrivate", "Default foldet to load or save music from or to") <<
+    qApp->translate("UserLocationsPrivate", "Default folder to load or save pictures from or to") <<
+    qApp->translate("UserLocationsPrivate", "Default folder to load or save videos from or to");
 
 void UserLocationsPagePrivate::getUserDirs()
 {
@@ -109,6 +120,7 @@ UserLocationsPage::UserLocationsPage(QWidget *parent)
         QLineEdit *edit = new QLineEdit(this);
         d->locations.append(edit);
         edit->setClearButtonEnabled(true);
+        edit->setToolTip(d->locationsToolTips.at(i));
 
         QToolButton *button = new QToolButton(this);
         button->setIcon(XdgIcon::fromTheme(QStringLiteral("folder")));
