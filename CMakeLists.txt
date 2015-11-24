@@ -7,7 +7,7 @@ find_package(lxqt REQUIRED)
 include(GNUInstallDirs)
 include(LXQtTranslateDesktop)
 
-install(DIRECTORY graphics DESTINATION "${LXQT_SHARE_DIR}")
+install(DIRECTORY "graphics/" DESTINATION "${LXQT_GRAPHICS_DIR}")
 
 # startlxqt script
 set(PREDEF_XDG_DATA_DIRS "$XDG_DATA_HOME")
