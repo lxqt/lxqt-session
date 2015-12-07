@@ -16,7 +16,7 @@
     <message>
         <location filename="../autostartedit.ui" line="27"/>
         <source>Search...</source>
-        <translation>Искать…</translation>
+        <translation>Искать...</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="47"/>
@@ -31,7 +31,7 @@
     <message>
         <location filename="../autostartedit.cpp" line="59"/>
         <source>Select Application</source>
-        <translation>Выбрать программу</translation>
+        <translation>Выбрать приложение</translation>
     </message>
 </context>
 <context>
@@ -39,7 +39,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="192"/>
         <source>Global Autostart</source>
-        <translation>Общие программы</translation>
+        <translation>Общий автозапуск</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="194"/>
@@ -100,7 +100,7 @@
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation>Выбрать…</translation>
+        <translation>Выбрать...</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -115,12 +115,12 @@
     <message>
         <location filename="../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation>Старт</translation>
+        <translation>Запустить</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation>Стоп</translation>
+        <translation>Остановить</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
@@ -130,11 +130,7 @@
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Ask confirmation to leave session</source>
-        <translation type="vanished">Спрашивать подтверждение завершения сеанса</translation>
+        <translation>Спрашивать подтверждения для завершения сеанса</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="137"/>
@@ -160,18 +156,18 @@
     <message>
         <location filename="../defaultappspage.ui" line="23"/>
         <source>Default Applications</source>
-        <translation>Программы по умолчанию</translation>
+        <translation>Приложения по умолчанию</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation>Терминал:</translation>
+        <translation>Эмулятор терминала:</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="52"/>
         <location filename="../defaultappspage.ui" line="79"/>
         <source>Search...</source>
-        <translation>Выбрать…</translation>
+        <translation>Выбрать...</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="59"/>
@@ -230,12 +226,12 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>Default Applications</source>
-        <translation>Программы по умолчанию</translation>
+        <translation>Приложения по умолчанию</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="56"/>
         <source>Locations</source>
-        <translation type="unfinished"></translation>
+        <translation>Расположения</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="62"/>
@@ -255,11 +251,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="93"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation type="vanished">Изменения вступят в силу только после перезапуска сессии (lxqt-session). Используйте пункт «Завершить сеанс» в главном меню.</translation>
+        <translation>Некоторые настройки не возымеют эффекта до следующего входа в систему.</translation>
     </message>
 </context>
 <context>
@@ -267,22 +259,22 @@
     <message>
         <location filename="../userlocationspage.cpp" line="99"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Расположение личных файлов</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="160"/>
         <source>LXQt Session Settings - Locations</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки сессии LXQt - расположения</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="161"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>При настройке расположения %1 произошла ошибка</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="177"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Укажите расположение</translation>
     </message>
 </context>
 <context>
@@ -290,42 +282,42 @@
     <message>
         <location filename="../userlocationspage.cpp" line="59"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Рабочий стол</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="60"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузки</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="61"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Шаблоны</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="62"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Общие файлы</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Документы</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>Музыка</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Картинки</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Видео</translation>
     </message>
 </context>
 </TS>

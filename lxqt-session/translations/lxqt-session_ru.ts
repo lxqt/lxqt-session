@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="290"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; упало слишком много раз. его автозапуск был отменён до следующего входа в систему.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; упало слишком много раз. Его автозапуск был отменён до следующего входа в систему.</translation>
     </message>
 </context>
 <context>
@@ -24,17 +24,17 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Добро пожаловать в LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Выберите оконный менеджер по-умолчанию.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Добро пожаловать в LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Пожалуйста, выберите оконный менеджер по умолчанию.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Вы можете изменить это в любое время через Настройки -&gt; Настройки сесии -&gt; Основные настройки.</translation>
+        <translation>Вы сможете изменить это в любое время через Настройки -&gt; Настройки сессии -&gt; Основные настройки.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="62"/>
         <source>Other ...</source>
-        <translation>Другое…</translation>
+        <translation>Другое ...</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="63"/>

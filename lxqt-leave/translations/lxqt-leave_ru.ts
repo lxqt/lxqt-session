@@ -4,13 +4,9 @@
 <context>
     <name>LeaveDialog</name>
     <message>
-        <source>Form</source>
-        <translation type="vanished">Меню выхода</translation>
-    </message>
-    <message>
         <location filename="../leavedialog.ui" line="20"/>
         <source>Leave</source>
-        <translation type="unfinished"></translation>
+        <translation>Выйти</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="29"/>
@@ -40,7 +36,7 @@
     <message>
         <location filename="../leavedialog.ui" line="93"/>
         <source>Lock screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Заблокировать экран</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="105"/>
@@ -63,7 +59,7 @@
     <message>
         <location filename="../main.cpp" line="54"/>
         <source>Lockscreen.</source>
-        <translation>Блокировать экран.</translation>
+        <translation>Заблокировать экран.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="57"/>
