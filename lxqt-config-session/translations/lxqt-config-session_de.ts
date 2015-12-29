@@ -231,7 +231,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="56"/>
         <source>Locations</source>
-        <translation type="unfinished"></translation>
+        <translation>Speicherorte</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="62"/>
@@ -251,11 +251,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="93"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation type="vanished">Sie müssen sich erneut anmelden (lxqt-session), damit Ihre Änderungen aktiv werden. Klicken Sie dafür auf &quot;Abmelden&quot; im Hauptmenü.</translation>
+        <translation>Einige Einstellungen werden erst nach einem erneuten Anmelden wirksam.</translation>
     </message>
 </context>
 <context>
@@ -263,22 +259,22 @@
     <message>
         <location filename="../userlocationspage.cpp" line="99"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Speicherorte für persönliche Dateien</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="160"/>
         <source>LXQt Session Settings - Locations</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt Sitzungseinstellungen - Speicherorte</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="161"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>Ein Fehler trat auf beim Anwenden der Einstellungen für den Speicherort von %1</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="177"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Speicherort wählen</translation>
     </message>
 </context>
 <context>
@@ -286,42 +282,42 @@
     <message>
         <location filename="../userlocationspage.cpp" line="59"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Schreibtisch</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="60"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Heruntergeladene Dateien</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="61"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorlagen</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="62"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Öffentlicher Ordner</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokumente</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>Musik</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilder</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Videos</translation>
     </message>
 </context>
 </TS>
