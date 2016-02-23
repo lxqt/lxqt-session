@@ -35,6 +35,16 @@ LeaveDialog::LeaveDialog(QWidget* parent)
 {
     ui->setupUi(this);
 
+    /* This is a special dialog. We want to make it hard to ignore.
+       We make it:
+           * Undraggable
+           * Frameless
+           * Stays on top of all other windows
+           * Present in all desktops
+    */
+    setWindowFlags((Qt::CustomizeWindowHint | Qt::FramelessWindowHint |
+                    Qt::WindowStaysOnTopHint | Qt::X11BypassWindowManagerHint));
+
     ui->logoutButton->setEnabled(mPower->canAction(LXQt::Power::PowerLogout));
     ui->rebootButton->setEnabled(mPower->canAction(LXQt::Power::PowerReboot));
     ui->shutdownButton->setEnabled(mPower->canAction(LXQt::Power::PowerShutdown));
