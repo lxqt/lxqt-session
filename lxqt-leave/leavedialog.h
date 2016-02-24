@@ -31,6 +31,7 @@
 #include "ui_leavedialog.h"
 
 #include <QDialog>
+#include <QDesktopWidget>
 #include <LXQt/Power>
 #include <LXQt/ScreenSaver>
 
@@ -45,6 +46,9 @@ class LeaveDialog : public QDialog
 public:
     explicit LeaveDialog(QWidget *parent = 0);
     ~LeaveDialog();
+
+protected:
+    virtual void resizeEvent(QResizeEvent* event);
 
 private:
     Ui::LeaveDialog *ui;
