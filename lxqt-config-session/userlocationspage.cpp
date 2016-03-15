@@ -161,8 +161,15 @@ void UserLocationsPage::save()
 
     const int N = d->locations.count();
     for (int i = 0; i < N; ++i) {
-        const QDir dir(d->locations.at(i)->text());
-        const QString s = dir.canonicalPath();
+        QString s;
+        const QString text = d->locations.at(i)->text();
+
+        if (text.isEmpty()) {
+            s = XdgDirs::userDirDefault(static_cast<XdgDirs::UserDirectory> (i));
+        } else {
+            const QDir dir(text);
+            s = dir.canonicalPath();
+        }
 
         if (s != d->initialLocations.at(i)) {
             const bool ok = XdgDirs::setUserDir(
