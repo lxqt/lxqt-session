@@ -201,18 +201,7 @@
   <keybind key="S-A-Down">
     <action name="SendToDesktopDown"><dialog>no</dialog><wrap>no</wrap></action>
   </keybind>
-  <keybind key="W-F1">
-    <action name="Desktop"><desktop>1</desktop></action>
-  </keybind>
-  <keybind key="W-F2">
-    <action name="Desktop"><desktop>2</desktop></action>
-  </keybind>
-  <keybind key="W-F3">
-    <action name="Desktop"><desktop>3</desktop></action>
-  </keybind>
-  <keybind key="W-F4">
-    <action name="Desktop"><desktop>4</desktop></action>
-  </keybind>
+
   <keybind key="W-d">
     <action name="ToggleShowDesktop"/>
   </keybind>
@@ -247,27 +236,9 @@
     </action>
   </keybind>
 
-  <!-- Keybindings for running applications -->
-  <keybind key="W-e">
-    <action name="Execute">
-      <startupnotify>
-        <enabled>true</enabled>
-        <name>PCManFM</name>
-      </startupnotify>
-      <command>pcmanfm</command>
-    </action>
-  </keybind>
-
   <!--keybindings for LXPanel -->
   <keybind key="F11">
      <action name="ToggleFullscreen"/>
-  </keybind>
-
-  <!-- Launch Task Manager with Ctrl+Alt+Del -->
-  <keybind key="A-C-Delete">
-      <action name="Execute">
-          <command>lxtask</command>
-      </action>
   </keybind>
 
 </keyboard>
@@ -621,7 +592,7 @@
        just don't make menu ids clash or, well, it'll be kind of pointless -->
 
   <!-- default menu file (or custom one in $HOME/.config/openbox/) -->
-  <file>@LXQT_SHARE_DIR@/openbox/menu.xml</file>
+
   <hideDelay>200</hideDelay>
   <!-- if a press-release lasts longer than this setting (in milliseconds), the
        menu is hidden again -->
