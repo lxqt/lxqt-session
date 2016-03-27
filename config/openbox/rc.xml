@@ -320,14 +320,14 @@
     </mousebind>
 
     <mousebind button="Up" action="Click">
-      <action name="Shade"/>
-      <action name="FocusToBottom"/>
-      <action name="Unfocus"/>
-      <action name="Lower"/>
+        <action name="Unmaximize" />
+        <action name="Maximize"><direction>vertical</direction></action>
+        <action name="GrowToEdge"><direction>west</direction></action>
     </mousebind>
     <mousebind button="Down" action="Click">
-      <action name="Unshade"/>
-      <action name="Raise"/>
+        <action name="Unmaximize" />
+        <action name="Maximize"><direction>vertical</direction></action>
+        <action name="GrowToEdge"><direction>east</direction></action>
     </mousebind>
 
     <mousebind button="Right" action="Press">
