@@ -102,11 +102,10 @@ int main(int argc, char *argv[])
 
     LeaveDialog dialog;
     a.setActivationWindow(&dialog);
-    dialog.setMinimumSize(dialog.sizeHint());
+    dialog.setFixedSize(dialog.sizeHint());
     dialog.setGeometry(QStyle::alignedRect(Qt::LeftToRight,
                 Qt::AlignCenter,
-                dialog.size(),
+                dialog.sizeHint(),
                 qApp->desktop()->screenGeometry(QCursor::pos())));
-    dialog.setMaximumSize(dialog.size());
     return dialog.exec();
 }
