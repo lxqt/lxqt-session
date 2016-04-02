@@ -53,6 +53,17 @@ if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
     eval "$(dbus-launch --sh-syntax --exit-with-session)"
 fi
 
+# Copy default settings of openbox
+if [ ! -e "$XDG_CONFIG_HOME"/openbox/lxqt-rc.xml ] ; then
+    mkdir -p "$XDG_CONFIG_HOME"/openbox/
+    for conf in `echo $XDG_CONFIG_DIRS|sed 's/:/\n/g'` ; do
+        if [ -d "$conf"/lxqt/openbox/ ] ; then
+            echo "Default settings of openbox"
+            cp -v "$conf"/lxqt/openbox/* "$XDG_CONFIG_HOME"/openbox/
+        fi
+    done
+fi
+
 # Qt4 platform plugin
 export QT_PLATFORM_PLUGIN=lxqt
 
