@@ -195,25 +195,8 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
     
     if(mWindowManager == "openbox")
     {
-        QString openboxSettingsPath = XdgDirs::configHome() + "/openbox/lxqt-openbox-rc.xml";
-        
-        // Copy default settings of openbox
-        if(!QFileInfo::exists(openboxSettingsPath))
-        {
-            QDir dir( XdgDirs::configHome() );
-            dir.mkpath("openbox");
-            QStringList xdgConfigs = XdgDirs::configDirs("/lxqt");
-            QString xdgOpenboxDefault;
-            foreach(QString xdgPath, xdgConfigs)
-            {
-                QString openboxDefault = xdgPath + "/openbox/lxqt-openbox-rc.xml";
-                if(QFileInfo::exists(openboxDefault))
-                    xdgOpenboxDefault = openboxDefault;
-            }
-            if(!xdgOpenboxDefault.isEmpty())
-                QFile::copy(xdgOpenboxDefault, openboxSettingsPath);
-        }
-        
+        // Default settings of openbox are copied by lxqt-common/startlxqt.in
+        QString openboxSettingsPath = XdgDirs::configHome() + "/openbox/lxqt-rc.xml";
         QStringList args;
         if(QFileInfo::exists(openboxSettingsPath))
             args << "--config-file" << openboxSettingsPath;
