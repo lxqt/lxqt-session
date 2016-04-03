@@ -244,6 +244,15 @@
   <zorder>buttonsWidget</zorder>
   <zorder>widget_2</zorder>
  </widget>
+ <tabstops>
+  <tabstop>cancelButton</tabstop>
+  <tabstop>logoutButton</tabstop>
+  <tabstop>lockscreenButton</tabstop>
+  <tabstop>shutdownButton</tabstop>
+  <tabstop>rebootButton</tabstop>
+  <tabstop>suspendButton</tabstop>
+  <tabstop>hibernateButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
