@@ -78,6 +78,8 @@ SessionConfigWindow::SessionConfigWindow() :
     environmentPage->restoreSettings();
     connect(this, SIGNAL(reset()), SLOT(clearRestart()));
     m_restart = false;
+
+    adjustSize();
 }
 
 SessionConfigWindow::~SessionConfigWindow()
