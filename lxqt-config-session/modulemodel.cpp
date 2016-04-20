@@ -83,7 +83,7 @@ QVariant ModuleModel::data(const QModelIndex& index, int role) const
     else if (index.column() == 1 && (role == Qt::DisplayRole || role == Qt::DecorationRole))
     {
         if (role == Qt::DisplayRole && mStateMap[name] == true)
-            return tr("Running") + " ";
+            return QString(tr("Running") + QLatin1Char(' '));
     }
     return QVariant();
 }

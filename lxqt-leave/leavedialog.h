@@ -33,6 +33,7 @@
 #include <QDialog>
 #include <QDesktopWidget>
 #include <LXQt/Power>
+#include <LXQt/PowerManager>
 #include <LXQt/ScreenSaver>
 
 namespace Ui {
@@ -52,7 +53,11 @@ protected:
 
 private:
     Ui::LeaveDialog *ui;
+    // LXQt::Power is used to know if the actions are doable, while
+    // LXQt::PowerManager is used to trigger the actions, while
+    // obeying the user option to ask or not for confirmation
     LXQt::Power *mPower;
+    LXQt::PowerManager *mPowerManager;
     LXQt::ScreenSaver *mScreensaver;
 };
 
