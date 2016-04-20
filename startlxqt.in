@@ -28,6 +28,10 @@ export XDG_DATA_DIRS
 
 if [ -z "$XDG_CONFIG_DIRS" ]; then
     export XDG_CONFIG_DIRS="@LXQT_ETC_XDG_DIR@"
+else
+    if ! contains "$XDG_CONFIG_DIRS" '@LXQT_ETC_XDG_DIR@'; then
+        XDG_CONFIG_DIRS="$XDG_CONFIG_DIRS:@LXQT_ETC_XDG_DIR@"
+    fi
 fi
 
 if [ -z "$XDG_CACHE_HOME" ]; then
