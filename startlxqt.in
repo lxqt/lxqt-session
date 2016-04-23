@@ -17,9 +17,6 @@ fi
 if [ -z "$XDG_DATA_DIRS" ]; then
     XDG_DATA_DIRS="@PREDEF_XDG_DATA_DIRS@"
 else
-    if ! contains "$XDG_DATA_DIRS" "$XDG_DATA_HOME"; then
-        XDG_DATA_DIRS="$XDG_DATA_DIRS:$XDG_DATA_HOME"
-    fi
     if ! contains "$XDG_DATA_DIRS" "@LXQT_DATA_DIR@"; then
         XDG_DATA_DIRS="$XDG_DATA_DIRS:@LXQT_DATA_DIR@"
     fi
