@@ -22,6 +22,7 @@
 #include "lxqtmodman.h"
 #include "UdevNotifier.h"
 #include "numlock.h"
+#include "lockscreenmanager.h"
 #include <unistd.h>
 #include <csignal>
 #include <LXQt/Settings>
@@ -32,7 +33,8 @@
 // XKB, this should be disabled in Wayland?
 #include <X11/XKBlib.h>
 
-SessionApplication::SessionApplication(int& argc, char** argv) : LXQt::Application(argc, argv)
+SessionApplication::SessionApplication(int& argc, char** argv) :
+    LXQt::Application(argc, argv)
 {
     listenToUnixSignals({SIGINT, SIGTERM, SIGQUIT, SIGHUP});
     char* winmanager = NULL;
@@ -56,6 +58,8 @@ SessionApplication::SessionApplication(int& argc, char** argv) : LXQt::Applicati
 
     // tell the world which config file we're using.
     qputenv("LXQT_SESSION_CONFIG", configName.toUtf8());
+
+    lockScreenManager = new LockScreenManager(this);
 
     modman = new LXQtModuleManager(winmanager);
     connect(this, &LXQt::Application::unixSignal, modman, &LXQtModuleManager::logout);
@@ -101,6 +105,11 @@ bool SessionApplication::startup()
                 dev_timer->start();
             });
 #endif
+
+    if (lockScreenManager->startup())
+        qDebug() << "LockScreenManager started successfully";
+    else
+        qWarning() << "LockScreenManager couldn't start";
 
     // launch module manager and autostart apps
     modman->startup(settings);
