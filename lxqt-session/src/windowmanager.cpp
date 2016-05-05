@@ -42,7 +42,7 @@ bool findProgram(const QString &program)
         return true;
 
     QString path = qgetenv("PATH");
-    foreach(QString dir, path.split(":"))
+    foreach(const QString &dir, path.split(":"))
     {
         QFileInfo fi= QFileInfo(dir + QDir::separator() + program);
         if (fi.isExecutable() )
@@ -59,7 +59,7 @@ WindowManagerList getWindowManagerList(bool onlyAvailable)
 
     WindowManagerList ret;
 
-    foreach (QString name,  names)
+    foreach (const QString &name,  names)
     {
         bool exists = findProgram(name);
         if (!onlyAvailable || exists)

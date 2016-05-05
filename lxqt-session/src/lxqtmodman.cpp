@@ -86,7 +86,7 @@ void LXQtModuleManager::startup(LXQt::Settings& s)
     paths << XdgDirs::dataHome(false);
     paths << XdgDirs::dataDirs();
 
-    foreach(QString path, paths)
+    foreach(const QString &path, paths)
     {
         QFileInfo fi(QString("%1/lxqt/themes").arg(path));
         if (fi.exists())

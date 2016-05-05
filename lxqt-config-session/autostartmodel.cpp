@@ -65,12 +65,11 @@ bool AutoStartItemModel::writeChanges()
 QMap<QString, AutostartItem> AutoStartItemModel::items()
 {
     QMap<QString, AutostartItem> allItems;
-    QString s;
 
-    foreach(s, mLXQtItems)
+    foreach(const QString &s, mLXQtItems)
         allItems[s] = mItemMap.value(s);
 
-    foreach(s, mGlobalItems)
+    foreach(const QString &s, mGlobalItems)
         allItems[s] = mItemMap.value(s);
 
     return allItems;

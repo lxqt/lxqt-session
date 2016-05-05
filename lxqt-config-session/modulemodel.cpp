@@ -57,7 +57,7 @@ void ModuleModel::reset()
     }
 
     QDBusReply<QVariant> reply = mInterface->call("listModules");
-    QStringList moduleList = reply.value().toStringList();
+    const QStringList moduleList = reply.value().toStringList();
     foreach (const QString& moduleName, moduleList)
     {
         if (mItemMap.contains(moduleName))
@@ -109,9 +109,8 @@ Qt::ItemFlags ModuleModel::flags(const QModelIndex& index) const
 QMap<QString, AutostartItem> ModuleModel::items()
 {
     QMap<QString, AutostartItem> allItems;
-    QString s;
 
-    foreach(s, mKeyList)
+    foreach(const QString &s, mKeyList)
         allItems[s] = mItemMap.value(s);
 
     return allItems;
