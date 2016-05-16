@@ -49,6 +49,16 @@ lxqt_translate_ts(lxqt-sessioncfg_QM_FILES
         ${lxqt-sessioncfg_UI_FILES}
     INSTALL_DIR
         "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
+    PULL_TRANSLATIONS
+        ${PULL_TRANSLATIONS}
+    CLEAN_TRANSLATIONS
+        ${CLEAN_TRANSLATIONS}
+    TRANSLATIONS_REPO
+        ${TRANSLATIONS_REPO}
+    TRANSLATIONS_REFSPEC
+        ${TRANSLATIONS_REFSPEC}
+    REPO_SUBDIR
+        "lxqt-session/${PROJECT_NAME}"
 )
 
 lxqt_app_translation_loader(lxqt-sessioncfg_QM_LOADER ${PROJECT_NAME})
