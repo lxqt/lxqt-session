@@ -12,12 +12,12 @@
         <translation type="vanished">Program &apos;%1&apos; spadl příliš mnohokrát. Jeho automatické spuštění bylo pro nynější sezení zakázáno.</translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="289"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="302"/>
         <source>Crash Report</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="290"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="303"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -25,7 +25,7 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
-        <location filename="../src/wmselectdialog.ui" line="14"/>
+        <location filename="../../../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
         <translation>Vítejte v LXQtu</translation>
     </message>
@@ -42,22 +42,22 @@ Než LXQt začnete používat, vyberte si správce oken:</translation>
         <translation type="vanished">Správce oken můžete později změnit v nastavení sezení.</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="62"/>
+        <location filename="../../../src/wmselectdialog.cpp" line="62"/>
         <source>Other ...</source>
         <translation>Jiné...</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="63"/>
+        <location filename="../../../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
         <translation>Vyberte oblíbené.</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.ui" line="20"/>
+        <location filename="../../../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.ui" line="71"/>
+        <location filename="../../../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
         <translation type="unfinished"></translation>
     </message>
