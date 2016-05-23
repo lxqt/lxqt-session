@@ -4,47 +4,47 @@
 <context>
     <name>LeaveDialog</name>
     <message>
-        <location filename="../leavedialog.ui" line="20"/>
+        <location filename="../../../leavedialog.ui" line="20"/>
         <source>Leave</source>
         <translation>終了</translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="29"/>
+        <location filename="../../../leavedialog.ui" line="59"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;What do you want the computer to do?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;どの操作を選択しますか？&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="45"/>
+        <location filename="../../../leavedialog.ui" line="92"/>
         <source>Logout</source>
         <translation>ログアウト</translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="57"/>
+        <location filename="../../../leavedialog.ui" line="206"/>
         <source>Reboot</source>
         <translation>再起動</translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="69"/>
+        <location filename="../../../leavedialog.ui" line="186"/>
         <source>Shutdown</source>
         <translation>シャットダウン</translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="81"/>
+        <location filename="../../../leavedialog.ui" line="139"/>
         <source>Suspend</source>
         <translation>サスペンド</translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="93"/>
+        <location filename="../../../leavedialog.ui" line="112"/>
         <source>Lock screen</source>
         <translation>画面のロック</translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="105"/>
+        <location filename="../../../leavedialog.ui" line="159"/>
         <source>Hibernate</source>
         <translation>ハイバネート</translation>
     </message>
     <message>
-        <location filename="../leavedialog.ui" line="136"/>
+        <location filename="../../../leavedialog.ui" line="42"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
@@ -52,32 +52,32 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../main.cpp" line="51"/>
+        <location filename="../../../main.cpp" line="51"/>
         <source>Logout.</source>
         <translation>ログアウト.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="54"/>
+        <location filename="../../../main.cpp" line="54"/>
         <source>Lockscreen.</source>
         <translation>画面のロック.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="57"/>
+        <location filename="../../../main.cpp" line="57"/>
         <source>Suspend.</source>
         <translation>サスペンド.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="60"/>
+        <location filename="../../../main.cpp" line="60"/>
         <source>Hibernate.</source>
         <translation>ハイバネート.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="63"/>
+        <location filename="../../../main.cpp" line="63"/>
         <source>Shutdown.</source>
         <translation>シャットダウン.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="66"/>
+        <location filename="../../../main.cpp" line="66"/>
         <source>Reboot.</source>
         <translation>再起動.</translation>
     </message>
