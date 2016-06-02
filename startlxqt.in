@@ -61,7 +61,7 @@ if [ ! -e "$XDG_CONFIG_HOME"/openbox/lxqt-rc.xml ] ; then
         if [ -d "$conf"/lxqt/openbox/ ] ; then
             echo "Default settings of openbox"
             cp -v "$conf"/lxqt/openbox/* "$XDG_CONFIG_HOME"/openbox/
-            xmessage "LXQt has changed Openbox default path." "If you want to keep your previous Openbox settings, run: \"cp ~/.config/openbox/rc.xml ~/.config/openbox/lxqt-rc.xml\"" &
+            printf "LXQt has changed Openbox default path.\nIf you want to keep your previous Openbox settings, run: \n\t\"cp ~/.config/openbox/rc.xml ~/.config/openbox/lxqt-rc.xml\"" | xmessage -center -title "LXQt Openbox default path" -file - &
         fi
     done
 fi
