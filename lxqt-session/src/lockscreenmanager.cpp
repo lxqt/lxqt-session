@@ -60,12 +60,18 @@ bool LockScreenManager::startup()
 
     if (mProvider)
     {
+        qDebug() << "LockScreenManager:"
+                << mProvider->metaObject()->className()
+                << "will be used";
+
         connect(mProvider,
                 &LockScreenProvider::aboutToSleep,
                 [this] (bool beforeSleep)
         {
             if (beforeSleep)
             {
+                qDebug() << "LockScreenManager: system is about to sleep";
+
                 mScreenSaver.lockScreen();
                 mLoop.exec();
                 mProvider->release();
@@ -81,6 +87,8 @@ bool LockScreenManager::startup()
 
         return mProvider->inhibit();
     }
+    else
+        qDebug() << "LockScreenManager: no valid provider";
 
     return false;
 }
