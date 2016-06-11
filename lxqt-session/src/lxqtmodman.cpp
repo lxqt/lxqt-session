@@ -192,8 +192,8 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
         settings->setValue("window_manager", mWindowManager);
         settings->sync();
     }
-    
-    if(mWindowManager == "openbox")
+
+    if (QFileInfo(mWindowManager).baseName() == "openbox")
     {
         // Default settings of openbox are copied by lxqt-common/startlxqt.in
         QString openboxSettingsPath = XdgDirs::configHome() + "/openbox/lxqt-rc.xml";
