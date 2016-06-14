@@ -34,6 +34,7 @@ set(lxqt-session_SRCS
     src/sessiondbusadaptor.h
     src/numlock.cpp
     src/numlock.h
+    src/log.cpp
 )
 if(LIBUDEV_MONITOR)
     list(APPEND lxqt-session_SRCS src/UdevNotifier.cpp)

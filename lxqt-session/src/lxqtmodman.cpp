@@ -32,7 +32,6 @@
 #include <XdgDirs>
 #include <unistd.h>
 
-#include <QDebug>
 #include <QCoreApplication>
 #include <QMessageBox>
 #include <QSystemTrayIcon>
@@ -44,6 +43,7 @@
 #include "wmselectdialog.h"
 #include "windowmanager.h"
 #include <wordexp.h>
+#include "log.h"
 
 #include <KWindowSystem/KWindowSystem>
 #include <KWindowSystem/netwm.h>
@@ -108,7 +108,7 @@ void LXQtModuleManager::startAutostartApps()
         else
         {
             startProcess(*i);
-            qDebug() << "start" << i->fileName();
+            qCDebug(SESSION) << "start" << i->fileName();
         }
     }
 
@@ -126,7 +126,7 @@ void LXQtModuleManager::startAutostartApps()
         }
         foreach (XdgDesktopFile* f, trayApps)
         {
-            qDebug() << "start tray app" << f->fileName();
+            qCDebug(SESSION) << "start tray app" << f->fileName();
             startProcess(*f);
         }
     }
@@ -229,7 +229,7 @@ void LXQtModuleManager::startProcess(const XdgDesktopFile& file)
     QStringList args = file.expandExecString();
     if (args.isEmpty())
     {
-        qWarning() << "Wrong desktop file" << file.fileName();
+        qCWarning(SESSION) << "Wrong desktop file" << file.fileName();
         return;
     }
     LXQtModule* proc = new LXQtModule(file, this);
@@ -288,11 +288,11 @@ void LXQtModuleManager::restartModules(int exitCode, QProcess::ExitStatus exitSt
         switch (exitStatus)
         {
             case QProcess::NormalExit:
-                qDebug() << "Process" << procName << "(" << proc << ") exited correctly.";
+                qCDebug(SESSION) << "Process" << procName << "(" << proc << ") exited correctly.";
                 break;
             case QProcess::CrashExit:
             {
-                qDebug() << "Process" << procName << "(" << proc << ") has to be restarted";
+                qCDebug(SESSION) << "Process" << procName << "(" << proc << ") has to be restarted";
                 time_t now = time(NULL);
                 mCrashReport[proc].prepend(now);
                 while (now - mCrashReport[proc].back() > 60)
@@ -333,7 +333,7 @@ void LXQtModuleManager::logout()
     while (i.hasNext())
     {
         i.next();
-        qDebug() << "Module logout" << i.key();
+        qCDebug(SESSION) << "Module logout" << i.key();
         LXQtModule* p = i.value();
         p->terminate();
     }
@@ -344,7 +344,7 @@ void LXQtModuleManager::logout()
         LXQtModule* p = i.value();
         if (p->state() != QProcess::NotRunning && !p->waitForFinished(2000))
         {
-            qWarning() << QString("Module '%1' won't terminate ... killing.").arg(i.key());
+            qCWarning(SESSION) << QString("Module '%1' won't terminate ... killing.").arg(i.key());
             p->kill();
         }
     }
@@ -352,7 +352,7 @@ void LXQtModuleManager::logout()
     mWmProcess->terminate();
     if (mWmProcess->state() != QProcess::NotRunning && !mWmProcess->waitForFinished(2000))
     {
-        qWarning() << QString("Window Manager won't terminate ... killing.");
+        qCWarning(SESSION) << QString("Window Manager won't terminate ... killing.");
         mWmProcess->kill();
     }
 
@@ -385,7 +385,7 @@ bool LXQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * m
         // all window managers must set their name according to the spec
         if (!QString(NETRootInfo(QX11Info::connection(), NET::SupportingWMCheck).wmName()).isEmpty())
         {
-            qDebug() << "Window Manager started";
+            qCDebug(SESSION) << "Window Manager started";
             mWmStarted = true;
             if (mWaitLoop->isRunning())
                 mWaitLoop->exit();
@@ -394,7 +394,7 @@ bool LXQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * m
 
     if (!mTrayStarted && QSystemTrayIcon::isSystemTrayAvailable() && mWaitLoop)
     {
-        qDebug() << "System Tray started";
+        qCDebug(SESSION) << "System Tray started";
         mTrayStarted = true;
         if (mWaitLoop->isRunning())
             mWaitLoop->exit();
@@ -413,12 +413,12 @@ void lxqt_setenv(const char *env, const QByteArray &value)
     if (p.we_wordc == 1)
     {
 
-        qDebug() << "Environment variable" << env << "=" << p.we_wordv[0];
+        qCDebug(SESSION) << "Environment variable" << env << "=" << p.we_wordv[0];
         qputenv(env, p.we_wordv[0]);
     }
     else
     {
-        qWarning() << "Error expanding environment variable" << env << "=" << value;
+        qCWarning(SESSION) << "Error expanding environment variable" << env << "=" << value;
         qputenv(env, value);
     }
      wordfree(&p);
@@ -429,7 +429,7 @@ void lxqt_setenv_prepend(const char *env, const QByteArray &value, const QByteAr
     QByteArray orig(qgetenv(env));
     orig = orig.prepend(separator);
     orig = orig.prepend(value);
-    qDebug() << "Setting special" << env << " variable:" << orig;
+    qCDebug(SESSION) << "Setting special" << env << " variable:" << orig;
     lxqt_setenv(env, orig);
 }
 

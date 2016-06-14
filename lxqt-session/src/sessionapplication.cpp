@@ -26,7 +26,7 @@
 #include <csignal>
 #include <LXQt/Settings>
 #include <QProcess>
-#include <QDebug>
+#include "log.h"
 
 #include <QX11Info>
 // XKB, this should be disabled in Wayland?
@@ -76,7 +76,7 @@ SessionApplication::~SessionApplication()
 bool SessionApplication::startup()
 {
     LXQt::Settings settings(configName);
-    qDebug() << __FILE__ << ":" << __LINE__ << "Session" << configName << "about to launch (default 'session')";
+    qCDebug(SESSION) << __FILE__ << ":" << __LINE__ << "Session" << configName << "about to launch (default 'session')";
 
     loadEnvironmentSettings(settings);
     // loadFontSettings(settings);
@@ -97,7 +97,7 @@ bool SessionApplication::startup()
             });
     connect(dev_notifier, &UdevNotifier::deviceAdded, [this, dev_timer] (QString device)
             {
-                qWarning() << QStringLiteral("Session '%1', new input device '%2', keyboard setting will be (optionaly) reloaded...").arg(configName).arg(device);
+                qCInfo(SESSION) << QStringLiteral("Session '%1', new input device '%2', keyboard setting will be (optionaly) reloaded...").arg(configName).arg(device);
                 dev_timer->start();
             });
 #endif
@@ -110,7 +110,7 @@ bool SessionApplication::startup()
 
 void SessionApplication::mergeXrdb(const char* content, int len)
 {
-    qDebug() << "xrdb:" << content;
+    qCDebug(SESSION) << "xrdb:" << content;
     QProcess xrdb;
     xrdb.start("xrdb -merge -");
     xrdb.write(content, len);
@@ -160,7 +160,7 @@ void SessionApplication::setxkbmap(QString layout, QString variant, QString mode
 
 void SessionApplication::loadKeyboardSettings(LXQt::Settings& settings)
 {
-  qDebug() << settings.fileName();
+  qCDebug(SESSION) << settings.fileName();
     settings.beginGroup("Keyboard");
     XKeyboardControl values;
     /* Keyboard settings */

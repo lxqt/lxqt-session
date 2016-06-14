@@ -26,8 +26,8 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include "UdevNotifier.h"
+#include "log.h"
 #include <libudev.h>
-#include <QDebug>
 #include <QSocketNotifier>
 
 
@@ -48,18 +48,18 @@ UdevNotifier::UdevNotifier(QString const & subsystem, QObject * parent/* = nullp
     d->monitor = udev_monitor_new_from_netlink(d->udev, "udev");
     if (nullptr == d->monitor)
     {
-        qWarning() << QStringLiteral("UdevNotifier: unable to initialize udev_monitor, monitoring will be disabled");
+        qCWarning(SESSION) << QStringLiteral("UdevNotifier: unable to initialize udev_monitor, monitoring will be disabled");
         return;
     }
 
     int ret = udev_monitor_filter_add_match_subsystem_devtype(d->monitor, subsystem.toUtf8().constData(), nullptr);
     if (0 != ret)
-        qWarning() << QStringLiteral("UdevNotifier: unable to add match subsystem, monitor will receive all devices");
+        qCWarning(SESSION) << QStringLiteral("UdevNotifier: unable to add match subsystem, monitor will receive all devices");
 
     ret = udev_monitor_enable_receiving(d->monitor);
     if (0 != ret)
     {
-        qWarning() << QStringLiteral("UdevNotifier: unable to enable receiving(%1), monitoring will be disabled").arg(ret);
+        qCWarning(SESSION) << QStringLiteral("UdevNotifier: unable to enable receiving(%1), monitoring will be disabled").arg(ret);
         return;
     }
 
