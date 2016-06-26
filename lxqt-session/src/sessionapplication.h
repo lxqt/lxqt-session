@@ -24,6 +24,7 @@
 #include <LXQt/Settings>
 
 class LXQtModuleManager;
+class LockScreenManager;
 
 class SessionApplication : public LXQt::Application
 {
@@ -47,6 +48,7 @@ private:
     void setLeftHandedMouse(bool mouse_left_handed);
 private:
     LXQtModuleManager* modman;
+    LockScreenManager *lockScreenManager;
     QString configName;
 };
 

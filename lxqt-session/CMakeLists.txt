@@ -32,6 +32,8 @@ set(lxqt-session_SRCS
     src/windowmanager.cpp
     src/sessionapplication.cpp
     src/sessiondbusadaptor.h
+    src/lockscreenmanager.cpp
+    src/lockscreenmanager.h
     src/numlock.cpp
     src/numlock.h
     src/log.cpp
