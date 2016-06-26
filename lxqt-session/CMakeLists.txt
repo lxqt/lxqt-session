@@ -5,13 +5,9 @@ if(NOT CMAKE_BUILD_TYPE)
    set(CMAKE_BUILD_TYPE Release)
 endif()
 
-if(LIBUDEV_MONITOR)
-    set(LIBUDEV_MONITOR Yes)
-
-    find_package(PkgConfig)
-    pkg_check_modules(LIBUDEV REQUIRED libudev)
-    include_directories(${LIBUDEV_INCLUDE_DIRS})
-
+if (WITH_LIBUDEV)
+    find_package(UDev REQUIRED)
+    include_directories(${LIBUDEV_INCLUDE_DIR})
     add_definitions(-DWITH_LIBUDEV_MONITOR)
 endif()
 
@@ -19,9 +15,6 @@ include_directories(
     ${XCB_INCLUDE_DIRS}
     ${X11_INCLUDE_DIR}
 )
-if(LIBUDEV_MONITOR)
-    include_directories(${LIBUDEV_INCLUDE_DIRS})
-endif()
 
 set(lxqt-session_HDRS "")
 
@@ -38,7 +31,7 @@ set(lxqt-session_SRCS
     src/numlock.h
     src/log.cpp
 )
-if(LIBUDEV_MONITOR)
+if (WITH_LIBUDEV)
     list(APPEND lxqt-session_SRCS src/UdevNotifier.cpp)
 endif()
 
@@ -85,8 +78,9 @@ target_link_libraries(lxqt-session
     lxqt
     KF5::WindowSystem
 )
-if(LIBUDEV_MONITOR)
-    target_link_libraries(lxqt-session ${LIBUDEV_LDFLAGS})
+
+if (WITH_LIBUDEV)
+    target_link_libraries(lxqt-session ${UDEV_LIBS})
 endif()
 
 INSTALL(TARGETS
