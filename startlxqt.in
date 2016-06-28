@@ -62,7 +62,7 @@ if [ ! -e "$XDG_CONFIG_HOME/openbox/lxqt-rc.xml" ] ; then
         message="Your existing configuration for openbox '$XDG_CONFIG_HOME/openbox/rc.xml' was used to
 fill the LXQt's openbox configuration '$XDG_CONFIG_HOME/openbox/lxqt-rc.xml'.
 If you want to use the predefined LXQt's openbox configuration, run:
-  cp '@LXQT_ETC_XDG_DIR@/lxqt/openbox/lxqt-rc.xml' '$XDG_CONFIG_HOME/openbox'"
+  cp '@LXQT_ETC_XDG_DIR@/openbox/lxqt-rc.xml' '$XDG_CONFIG_HOME/openbox'"
         echo "$message" >&2
         xmessage -center -title "LXQt Openbox configration" "$message" &
     else
