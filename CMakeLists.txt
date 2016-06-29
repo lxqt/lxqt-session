@@ -9,6 +9,12 @@ include(LXQtTranslateDesktop)
 
 install(DIRECTORY "graphics/" DESTINATION "${LXQT_GRAPHICS_DIR}")
 
+# xmessage dependency - to notify packagers
+find_program(XMESSAGE xmessage PATHS ENV PATH NO_DEFAULT_PATH)
+if (NOT XMESSAGE)
+    message(SEND_ERROR "The run-time dependency of startlxt -> 'xmessage' is not found")
+endif()
+
 # startlxqt script
 set(PREDEF_XDG_DATA_DIRS "$XDG_DATA_HOME")
 if(NOT("${LXQT_DATA_DIR}" MATCHES "^/usr(/local)?/share$"))
