@@ -6,7 +6,7 @@
     <message>
         <location filename="../../../autostartedit.ui" line="14"/>
         <source>Edit</source>
-        <translation>تنقيح</translation>
+        <translation>حرّر</translation>
     </message>
     <message>
         <location filename="../../../autostartedit.ui" line="20"/>
@@ -16,22 +16,22 @@
     <message>
         <location filename="../../../autostartedit.ui" line="27"/>
         <source>Search...</source>
-        <translation>بحث...</translation>
+        <translation>ابحث...</translation>
     </message>
     <message>
         <location filename="../../../autostartedit.ui" line="47"/>
         <source>Command:</source>
-        <translation>اﻷمر:</translation>
+        <translation>الأمر:</translation>
     </message>
     <message>
         <location filename="../../../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>بانتظار صفيحة النِّظام</translation>
+        <translation>انتظر صينيّة النّظام</translation>
     </message>
     <message>
         <location filename="../../../autostartedit.cpp" line="59"/>
         <source>Select Application</source>
-        <translation>اختيار التطبيق</translation>
+        <translation>اختر تطبيقًا</translation>
     </message>
 </context>
 <context>
@@ -39,22 +39,22 @@
     <message>
         <location filename="../../../autostartmodel.cpp" line="191"/>
         <source>Global Autostart</source>
-        <translation>التشغيل التلقائي العام</translation>
+        <translation>البدء الآليّ العموميّ</translation>
     </message>
     <message>
         <location filename="../../../autostartmodel.cpp" line="193"/>
         <source>LXQt Autostart</source>
-        <translation>التشغيل التلقائي لنظام ريزر</translation>
+        <translation>البدء الآليّ لِلكسكيوت</translation>
     </message>
     <message>
         <location filename="../../../autostartmodel.cpp" line="211"/>
         <source>Location: %1</source>
-        <translation>الموقع: %1</translation>
+        <translation>المكان: %1</translation>
     </message>
     <message>
         <location filename="../../../autostartmodel.cpp" line="213"/>
         <source>Overrides: %1</source>
-        <translation>التَّجاوزات: %1</translation>
+        <translation>يتجاهل: %1</translation>
     </message>
 </context>
 <context>
@@ -62,22 +62,22 @@
     <message>
         <location filename="../../../autostartpage.ui" line="17"/>
         <source>Delete</source>
-        <translation>حذف</translation>
+        <translation>احذف</translation>
     </message>
     <message>
         <location filename="../../../autostartpage.ui" line="24"/>
         <source>Add</source>
-        <translation>إضافة</translation>
+        <translation>أضف</translation>
     </message>
     <message>
         <location filename="../../../autostartpage.ui" line="31"/>
         <source>Edit</source>
-        <translation>تنقيح</translation>
+        <translation>حرّر</translation>
     </message>
     <message>
         <location filename="../../../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>البدء التِّلقائيُّ للتطبيق</translation>
+        <translation>بدء التّطبيقات الآليّ</translation>
     </message>
     <message>
         <location filename="../../../autostartpage.cpp" line="141"/>
@@ -87,55 +87,55 @@
     <message>
         <location filename="../../../autostartpage.cpp" line="141"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>الملفُّ `%1` موجودٌ مسبقاً</translation>
+        <translation>الملفّ &apos;%1&apos; موجود بالفعل!</translation>
     </message>
 </context>
 <context>
     <name>BasicSettings</name>
     <message>
+        <location filename="../../../basicsettings.ui" line="23"/>
+        <source>Basic Settings</source>
+        <translation>الإعدادات الأساسيّة</translation>
+    </message>
+    <message>
         <location filename="../../../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation>مدير النَّوافذ</translation>
+        <translation>مدير النّوافذ</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation>بحث...</translation>
+        <translation>ابحث...</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished">أقسام نظام ريزر</translation>
-    </message>
-    <message>
-        <location filename="../../../basicsettings.ui" line="111"/>
-        <source>Leave Session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../basicsettings.ui" line="117"/>
-        <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../basicsettings.ui" line="23"/>
-        <source>Basic Settings</source>
-        <translation>اﻹعدادات اﻷساسيَّة</translation>
+        <translation>وحدات لكسكيوت</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>ابدأ</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>أوقف</translation>
+    </message>
+    <message>
+        <location filename="../../../basicsettings.ui" line="111"/>
+        <source>Leave Session</source>
+        <translation>ترك الجلسة</translation>
+    </message>
+    <message>
+        <location filename="../../../basicsettings.ui" line="117"/>
+        <source>Ask for confirmation to leave session</source>
+        <translation>اسأل لتأكيد ترك الجلسة</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="137"/>
         <source>Select a window manager</source>
-        <translation>اختيار مدير النَّوافذ</translation>
+        <translation>اختر مدير النّوافذ</translation>
     </message>
 </context>
 <context>
@@ -143,12 +143,12 @@
     <message>
         <location filename="../../../defaultappspage.cpp" line="72"/>
         <source>Select a terminal emulator</source>
-        <translation>اختيار محاكي سطر اﻷوامر</translation>
+        <translation>اختر محاكي الطّرفيّة</translation>
     </message>
     <message>
         <location filename="../../../defaultappspage.cpp" line="77"/>
         <source>Select a web browser</source>
-        <translation>اختيار المتصفِّح</translation>
+        <translation>اختر متصفّح الوبّ</translation>
     </message>
 </context>
 <context>
@@ -156,23 +156,23 @@
     <message>
         <location filename="../../../defaultappspage.ui" line="23"/>
         <source>Default Applications</source>
-        <translation>التطبيقات الافتراضيَّة</translation>
+        <translation>التّطبيقات الافتراضيّة</translation>
     </message>
     <message>
         <location filename="../../../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation>محاكي سطر اﻷوامر:</translation>
+        <translation>محاكي الطّرفيّة:</translation>
     </message>
     <message>
         <location filename="../../../defaultappspage.ui" line="52"/>
         <location filename="../../../defaultappspage.ui" line="79"/>
         <source>Search...</source>
-        <translation>بحث...</translation>
+        <translation>ابحث...</translation>
     </message>
     <message>
         <location filename="../../../defaultappspage.ui" line="59"/>
         <source>Web Browser:</source>
-        <translation>المتصفِّح:</translation>
+        <translation>متصّفح الوبّ:</translation>
     </message>
 </context>
 <context>
@@ -180,22 +180,22 @@
     <message>
         <location filename="../../../environmentpage.ui" line="17"/>
         <source>Add</source>
-        <translation>إضافة</translation>
+        <translation>أضف</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="24"/>
         <source>Delete</source>
-        <translation>حذف</translation>
+        <translation>احذف</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
-        <translation>متحوِّلات البيئة (متقدِّم)</translation>
+        <translation>متغيّرات البيئة (متقدّم)</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="61"/>
         <source>Variable Name</source>
-        <translation>اسم المتحوِّل</translation>
+        <translation>اسم المتغيّر</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="66"/>
@@ -208,58 +208,50 @@
     <message>
         <location filename="../../../modulemodel.cpp" line="86"/>
         <source>Running</source>
-        <translation type="unfinished"></translation>
+        <translation>تعمل</translation>
     </message>
 </context>
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LXQt Session Configuration</source>
-        <translation type="vanished">تهيئة جلسة نظام ريزر</translation>
-    </message>
-    <message>
         <location filename="../../../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>إعدادات لكسكيوت للجلسة</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
-        <translation>اﻹعدادات اﻷساسيَّة</translation>
+        <translation>الإعدادات الأساسيّة</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="53"/>
         <source>Default Applications</source>
-        <translation>التطبيقات الافتراضيَّة</translation>
+        <translation>التّطبيقات الافتراضيّة</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="56"/>
         <source>User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>أدلّة المستخدم</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="62"/>
         <source>Autostart</source>
-        <translation>البدء التِّلقائيّ</translation>
+        <translation>البدء الآليّ</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="68"/>
         <source>Environment (Advanced)</source>
-        <translation>البيئة (متقدِّم)</translation>
+        <translation>البيئة (متقدّم)</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="94"/>
         <source>Session Restart Required</source>
-        <translation>من الضِّروريِّ إعادة التَّشغيل</translation>
+        <translation>إعادة تشغيل الجلسة مطلوبة</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="95"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation type="vanished">يجب إعادة تشغيل جلسة سطح المكتب -جلسة ريزر- من أجل إعادة تحميل الإعدادات. استخدم خيار الخروج من القائمة الرَّئيسيَّة..</translation>
+        <translation>بعض من هذه الإعدادات لن تُطبّق حتّى الولوج التّالي.</translation>
     </message>
 </context>
 <context>
@@ -267,22 +259,22 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="110"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>أماكن الملفّات الشّخصيّة</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>إعدادات لكسكيوت للجلسة - أدلّة المستخدم</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="180"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>حدث خطأ أثناء تطبيق الإعدادات للمكان %1</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="196"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>اختر مكانًا</translation>
     </message>
 </context>
 <context>
@@ -290,82 +282,82 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="60"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>سطح المكتب</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="61"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>التّنزيلات</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="62"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>القوالب</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="63"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>المشاركة مع العموم</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="64"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>المستندات</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="65"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>الموسيقى</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="66"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>الصّور</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="67"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>الفيديوهات</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="70"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>فيه كلّ الملفّات التي تراها على سطح المكتب</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="71"/>
         <source>Default folder to save your downloaded files</source>
-        <translation type="unfinished"></translation>
+        <translation>المجلّد الافتراضيّ حيث تُحفظ ملفّاتك المنزّلة فيه</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="72"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>المجلّد الافتراضيّ حيث تُحمّل القوالب منه وتُحفظ إليه</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="73"/>
         <source>Default folder to publicly share your files</source>
-        <translation type="unfinished"></translation>
+        <translation>المجلّد الافتراضيّ حيث تنشر فيها ملفّاتك للعموم</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="74"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>المجلّد الافتراضيّ حيث تُحمّل المستندات منه وتُحفظ فيه</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="75"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>المجلّد الافتراضيّ حيث تُحمّل الموسيقى منه وتُحفظ فيه</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="76"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>المجلّد الافتراضيّ حيث تُحمّل الصّور منه وتُحفظ فيه</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>المجلّد الافتراضيّ حيث تُحمّل الفيديوات منه وتُحفظ فيه</translation>
     </message>
 </context>
 </TS>
