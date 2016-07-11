@@ -101,7 +101,7 @@ bool SessionApplication::startup()
             });
     connect(dev_notifier, &UdevNotifier::deviceAdded, [this, dev_timer] (QString device)
             {
-                qCInfo(SESSION) << QStringLiteral("Session '%1', new input device '%2', keyboard setting will be (optionaly) reloaded...").arg(configName).arg(device);
+                qCWarning(SESSION) << QStringLiteral("Session '%1', new input device '%2', keyboard setting will be (optionaly) reloaded...").arg(configName).arg(device);
                 dev_timer->start();
             });
 #endif
