@@ -108,9 +108,9 @@ bool SessionApplication::startup()
     {
         lockScreenManager = new LockScreenManager(this);
         if (lockScreenManager->startup())
-            qDebug() << "LockScreenManager started successfully";
+            qCDebug(SESSION) << "LockScreenManager started successfully";
         else
-            qWarning() << "LockScreenManager couldn't start";
+            qCWarning(SESSION) << "LockScreenManager couldn't start";
     }
 
     // launch module manager and autostart apps

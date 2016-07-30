@@ -26,6 +26,7 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include "lockscreenmanager.h"
+#include "log.h"
 #include <QTimer>
 #include <QDBusReply>
 #include <QDebug>
@@ -60,7 +61,7 @@ bool LockScreenManager::startup()
 
     if (mProvider)
     {
-        qDebug() << "LockScreenManager:"
+        qCDebug(SESSION) << "LockScreenManager:"
                 << mProvider->metaObject()->className()
                 << "will be used";
 
@@ -70,7 +71,7 @@ bool LockScreenManager::startup()
         {
             if (beforeSleep)
             {
-                qDebug() << "LockScreenManager: system is about to sleep";
+                qCDebug(SESSION) << "LockScreenManager: system is about to sleep";
 
                 mScreenSaver.lockScreen();
                 mLoop.exec();
@@ -88,7 +89,7 @@ bool LockScreenManager::startup()
         return mProvider->inhibit();
     }
     else
-        qDebug() << "LockScreenManager: no valid provider";
+        qCDebug(SESSION) << "LockScreenManager: no valid provider";
 
     return false;
 }
@@ -150,7 +151,7 @@ bool LogindProvider::inhibit()
 
     if (!reply.isValid())
     {
-        qDebug() << "LockScreenManager: " << reply.error();
+        qCDebug(SESSION) << "LockScreenManager: " << reply.error();
         return false;
     }
 
@@ -235,7 +236,7 @@ bool ConsoleKit2Provider::inhibit()
 
     if (!reply.isValid())
     {
-        qDebug() << "LockScreenWatcher: " << reply.error();
+        qCDebug(SESSION) << "LockScreenWatcher: " << reply.error();
         return false;
     }
 
