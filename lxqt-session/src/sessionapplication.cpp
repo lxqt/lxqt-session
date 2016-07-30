@@ -59,8 +59,6 @@ SessionApplication::SessionApplication(int& argc, char** argv) :
     // tell the world which config file we're using.
     qputenv("LXQT_SESSION_CONFIG", configName.toUtf8());
 
-    lockScreenManager = new LockScreenManager(this);
-
     modman = new LXQtModuleManager(winmanager);
     connect(this, &LXQt::Application::unixSignal, modman, &LXQtModuleManager::logout);
     new SessionDBusAdaptor(modman);
@@ -106,10 +104,14 @@ bool SessionApplication::startup()
             });
 #endif
 
-    if (lockScreenManager->startup())
-        qDebug() << "LockScreenManager started successfully";
-    else
-        qWarning() << "LockScreenManager couldn't start";
+    if (settings.value(QLatin1String("lock_screen_before_power_actions")).toBool())
+    {
+        lockScreenManager = new LockScreenManager(this);
+        if (lockScreenManager->startup())
+            qDebug() << "LockScreenManager started successfully";
+        else
+            qWarning() << "LockScreenManager couldn't start";
+    }
 
     // launch module manager and autostart apps
     modman->startup(settings);
