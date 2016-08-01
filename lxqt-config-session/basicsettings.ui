@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>320</width>
+    <width>322</width>
     <height>380</height>
    </rect>
   </property>
@@ -110,11 +110,18 @@
      <property name="title">
       <string>Leave Session</string>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QCheckBox" name="leaveConfirmationCheckBox">
         <property name="text">
          <string>Ask for confirmation to leave session</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="lockBeforePowerActionsCheckBox">
+        <property name="text">
+         <string>Lock screen before suspending/hibernating</string>
         </property>
        </widget>
       </item>
