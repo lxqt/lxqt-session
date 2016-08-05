@@ -42,11 +42,8 @@ LockScreenManager::~LockScreenManager()
     delete mProvider;
 }
 
-bool LockScreenManager::startup()
+bool LockScreenManager::startup(bool lockBeforeSleep)
 {
-    connect(&mScreenSaver, &LXQt::ScreenSaver::done,
-            &mLoop, &QEventLoop::quit);
-
     mProvider = new LogindProvider;
     if (!mProvider->isValid())
     {
@@ -59,12 +56,25 @@ bool LockScreenManager::startup()
         }
     }
 
-    if (mProvider)
+    if (!mProvider)
     {
-        qCDebug(SESSION) << "LockScreenManager:"
-                << mProvider->metaObject()->className()
-                << "will be used";
+        qCDebug(SESSION) << "LockScreenManager: no valid provider";
+        return false;
+    }
 
+    qCDebug(SESSION) << "LockScreenManager:"
+            << mProvider->metaObject()->className()
+            << "will be used";
+
+    connect(&mScreenSaver, &LXQt::ScreenSaver::done, &mLoop, &QEventLoop::quit);
+
+    connect(mProvider, &LockScreenProvider::lockRequested, [this] {
+        mScreenSaver.lockScreen();
+        mLoop.exec();
+    });
+
+    if (lockBeforeSleep)
+    {
         connect(mProvider,
                 &LockScreenProvider::aboutToSleep,
                 [this] (bool beforeSleep)
@@ -81,17 +91,12 @@ bool LockScreenManager::startup()
                 mProvider->inhibit();
         });
 
-        connect(mProvider, &LockScreenProvider::lockRequested, [this] {
-            mScreenSaver.lockScreen();
-            mLoop.exec();
-        });
-
-        return mProvider->inhibit();
+        if (!mProvider->inhibit())
+            qCDebug(SESSION) << "LockScreenManager:"
+                    << "could not inhibit session provider";
     }
-    else
-        qCDebug(SESSION) << "LockScreenManager: no valid provider";
 
-    return false;
+    return true;
 }
 
 /*
