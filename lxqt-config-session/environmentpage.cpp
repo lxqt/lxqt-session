@@ -85,7 +85,8 @@ void EnvironmentPage::save()
         oldSettings[key] = m_settings->value(key, QString()).toString();
     m_settings->remove("");
 
-    for(int i = 0; i < ui->treeWidget->topLevelItemCount(); ++i)
+    const int nItems = ui->treeWidget->topLevelItemCount();
+    for(int i = 0; i < nItems; ++i)
     {
         QTreeWidgetItem *item = ui->treeWidget->topLevelItem(i);
         const QString key = item->text(0);
@@ -97,6 +98,9 @@ void EnvironmentPage::save()
         m_settings->setValue(item->text(0), item->text(1));
     }
     m_settings->endGroup();
+
+    if (oldSettings.size() != nItems)
+        doRestart = true;
 
     if (doRestart)
         emit needRestart();
