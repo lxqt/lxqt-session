@@ -87,7 +87,7 @@
     <message>
         <location filename="../../../autostartpage.cpp" line="141"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>Το αρχείο &quot;%1&quot; υπάρχει ήδη!</translation>
+        <translation>Το αρχείο «%1» υπάρχει ήδη!</translation>
     </message>
 </context>
 <context>
@@ -119,7 +119,7 @@
     </message>
     <message>
         <source>Ask confirmation to leave session</source>
-        <translation type="vanished">Ερώτηση επιβεβαίωσης κατά την εγκατάλειψη της συνεδρίας</translation>
+        <translation>Ερώτηση επιβεβαίωσης κατά την εγκατάλειψη της συνεδρίας</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="23"/>
@@ -219,7 +219,7 @@
     <name>SessionConfigWindow</name>
     <message>
         <source>LXQt Session Configuration</source>
-        <translation type="vanished">Διαμόρφωση συνεδρίας LXQt</translation>
+        <translation>Διαμόρφωση συνεδρίας του LXQt</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="44"/>
@@ -239,7 +239,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="56"/>
         <source>User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Κατάλογοι του χρήστη</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="62"/>
@@ -259,11 +259,11 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="95"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Μερικές ρυθμίσεις λαμβάνουν χώρα από επανασύνδεση.</translation>
     </message>
     <message>
         <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation type="vanished">Πρέπει να επανεκκινήσετε τη συνεδρία lxqt για να φορτώσετε τις ρυθμίσεις. Χρησιμοποιήστε την αποσύνδεση από το κυρίως μενού.</translation>
+        <translation>Πρέπει να επανεκκινήσετε τη συνεδρία της επιφάνειας εργασίας (lxqt-session) για την επαναφόρτωση των ρυθμίσεων. Χρησιμοποιήστε την αποσύνδεση από το κυρίως μενού.</translation>
     </message>
 </context>
 <context>
@@ -271,22 +271,22 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="110"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Τοποθεσίες των προσωπικών αρχείων</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Ρυθμίσεις συνεδρίας LXQt - Κατάλογοι του χρήστη</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="180"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρουσιάστηκε ένα σφάλμα κατά την εφαρμογή των ρυθμίσεων για την τοποθεσία %1</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="196"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλογή τοποθεσίας</translation>
     </message>
 </context>
 <context>
@@ -294,82 +294,82 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="60"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιφάνεια εργασίας</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="61"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Λήψεις</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="62"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρότυπα</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="63"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Δημόσια κοινή χρήση</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="64"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Έγγραφα</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="65"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>Μουσική</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="66"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Εικόνες</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="67"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Βίντεο</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="70"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Περιέχει όλα τα αρχεία που βλέπετε στην επιφάνεια εργασίας σας</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="71"/>
         <source>Default folder to save your downloaded files</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο εξ ορισμού φάκελος αποθήκευσης των ειλημμένων αρχείων</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="72"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο εξ ορισμού φάκελος φόρτωσης ή αποθήκευσης των προτύπων</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="73"/>
         <source>Default folder to publicly share your files</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο εξ ορισμού φάκελος κοινής χρήσης των αρχείων σας</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="74"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο εξ ορισμού φάκελος φόρτωσης ή αποθήκευσης των εγγράφων</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="75"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο εξ ορισμού φάκελος φόρτωσης ή αποθήκευσης της μουσικής</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="76"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο εξ ορισμού φάκελος φόρτωσης ή αποθήκευσης των εικόνων</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο εξ ορισμού φάκελος φόρτωσης ή αποθήκευσης των βίντεο</translation>
     </message>
 </context>
 </TS>
