@@ -74,9 +74,11 @@ If you want to use the predefined LXQt's openbox configuration, run:
         fi
     done
     if [ 0 -eq "$ob_config_copied" ]; then
-        #copy our predefined configuration
+        #copy predefined configuration
         mkdir -p "$XDG_CONFIG_HOME/openbox"
-        cp '@LXQT_ETC_XDG_DIR@/openbox/lxqt-rc.xml' "$XDG_CONFIG_HOME/openbox"
+        #user/distribution can change the default configuration via LXQT_DEFAULT_OPENBOX_CONFIG
+        [ -r "$LXQT_DEFAULT_OPENBOX_CONFIG" ] || LXQT_DEFAULT_OPENBOX_CONFIG='@LXQT_ETC_XDG_DIR@/openbox/lxqt-rc.xml'
+        cp "$LXQT_DEFAULT_OPENBOX_CONFIG" "$XDG_CONFIG_HOME/openbox"
     fi
 fi
 
