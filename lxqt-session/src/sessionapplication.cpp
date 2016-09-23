@@ -34,7 +34,8 @@
 #include <X11/XKBlib.h>
 
 SessionApplication::SessionApplication(int& argc, char** argv) :
-    LXQt::Application(argc, argv)
+    LXQt::Application(argc, argv),
+    lockScreenManager(new LockScreenManager(this))
 {
     listenToUnixSignals({SIGINT, SIGTERM, SIGQUIT, SIGHUP});
     char* winmanager = NULL;
@@ -104,14 +105,11 @@ bool SessionApplication::startup()
             });
 #endif
 
-    if (settings.value(QLatin1String("lock_screen_before_power_actions")).toBool())
-    {
-        lockScreenManager = new LockScreenManager(this);
-        if (lockScreenManager->startup())
-            qCDebug(SESSION) << "LockScreenManager started successfully";
-        else
-            qCWarning(SESSION) << "LockScreenManager couldn't start";
-    }
+    bool lockBeforeSleep = settings.value(QLatin1String("lock_screen_before_power_actions"), true).toBool();
+    if (lockScreenManager->startup(lockBeforeSleep))
+        qCDebug(SESSION) << "LockScreenManager started successfully";
+    else
+        qCWarning(SESSION) << "LockScreenManager couldn't start";
 
     // launch module manager and autostart apps
     modman->startup(settings);

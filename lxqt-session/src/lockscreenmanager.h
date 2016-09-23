@@ -93,7 +93,7 @@ public:
     explicit LockScreenManager(QObject *parent = nullptr);
     virtual ~LockScreenManager();
 
-    bool startup();
+    bool startup(bool lockBeforeSleep);
 
 private:
     LockScreenProvider *mProvider;
