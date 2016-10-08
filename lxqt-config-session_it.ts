@@ -118,8 +118,9 @@
         <translation>Chiedi una conferma per terminare la sessione</translation>
     </message>
     <message>
-        <source>Ask confirmation to leave session</source>
-        <translation type="vanished">Chiedi una conferma per terminare la sessione</translation>
+        <location filename="../../../basicsettings.ui" line="124"/>
+        <source>Lock screen before suspending/hibernating</source>
+        <translation>Blocca lo schermo prima di sospendere o ibernare</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="23"/>
@@ -137,7 +138,7 @@
         <translation>Ferma</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="137"/>
+        <location filename="../../../basicsettings.cpp" line="146"/>
         <source>Select a window manager</source>
         <translation>Seleziona un gestore delle finestre</translation>
     </message>
@@ -189,7 +190,7 @@
     <message>
         <location filename="../../../environmentpage.ui" line="24"/>
         <source>Delete</source>
-        <translation>Cancella</translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="50"/>
@@ -218,10 +219,6 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LXQt Session Configuration</source>
-        <translation type="vanished">Configurazione della sessione di LXQt</translation>
-    </message>
-    <message>
         <location filename="../../../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
         <translation>Impostazioni della sessione LXQt</translation>
@@ -237,13 +234,9 @@
         <translation>Applicazioni predefinite</translation>
     </message>
     <message>
-        <source>Locations</source>
-        <translation type="vanished">Posizioni</translation>
-    </message>
-    <message>
         <location filename="../../../sessionconfigwindow.cpp" line="56"/>
         <source>User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Percorsi</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="62"/>
@@ -265,10 +258,6 @@
         <source>Some settings will not take effect until the next log in.</source>
         <translation>Alcune impostazioni non avranno effetto fino al prossimo accesso.</translation>
     </message>
-    <message>
-        <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation type="vanished">Devi riavviare la sessione desktop (lxqt-session) per ricaricare le impostazioni. Termina la sessione tramite il menu principale.</translation>
-    </message>
 </context>
 <context>
     <name>UserLocationsPage</name>
@@ -278,13 +267,9 @@
         <translation>Posizioni per i file personali</translation>
     </message>
     <message>
-        <source>LXQt Session Settings - Locations</source>
-        <translation type="vanished">Impostazioni della sessione LXQt - Posizioni</translation>
-    </message>
-    <message>
         <location filename="../../../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazioni della sessione LXQt - Percorsi</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="180"/>
@@ -342,42 +327,42 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="70"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Contiene tutti i file presenti sulla scrivania</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="71"/>
         <source>Default folder to save your downloaded files</source>
-        <translation type="unfinished"></translation>
+        <translation>Percorso predefinito per salvare i file scaricati</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="72"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Percorso predefinito per salvare e caricare i modelli</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="73"/>
         <source>Default folder to publicly share your files</source>
-        <translation type="unfinished"></translation>
+        <translation>Percorso predefinito per i file condivisi</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="74"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Percorso predefinito per salvare e caricare i documenti</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="75"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Percorso predefinito per salvare e caricare la musica</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="76"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Percorso predefinito per salvare e caricare i file immagini</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Percorso predefinito per salvare e caricare i video</translation>
     </message>
 </context>
 </TS>
