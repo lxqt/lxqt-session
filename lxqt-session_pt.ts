@@ -5,11 +5,11 @@
     <name>LXQtModuleManager</name>
     <message>
         <source>LXQt Session Crash Report</source>
-        <translation type="vanished">Relatório de erros do LXQt</translation>
+        <translation>Relatório de erros do LXQt</translation>
     </message>
     <message>
         <source>Application &apos;%1&apos; crashed too many times. Its autorestart has been disabled for current session.</source>
-        <translation type="vanished">A aplicação &apos;%1&apos; terminou muitas vezes. O seu arranque automático foi desativado nesta sessão.</translation>
+        <translation>A aplicação &apos;%1&apos; terminou muitas vezes. O seu arranque automático foi desativado nesta sessão.</translation>
     </message>
     <message>
         <location filename="../../../src/lxqtmodman.cpp" line="302"/>
@@ -33,13 +33,13 @@
         <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
 &lt;p&gt;
 Before starting to use the LXQt, you might want to select the Windows Manager:</source>
-        <translation type="vanished">&lt;b&gt;Bem-vindo ao LXQt&lt;/b&gt;
+        <translation>&lt;b&gt;Bem-vindo ao LXQt&lt;/b&gt;
 &lt;p&gt;
 Antes de começar a utilizar o LXQt, deve escolher o seu gestor de janelas:</translation>
     </message>
     <message>
         <source>You can change the Window Manager later at any time via LXQt Session Configurator.</source>
-        <translation type="vanished">Posteriormente, pode mudar o gestor de janelas através do configurador de sessões do LXQt.</translation>
+        <translation>Posteriormente, pode mudar o gestor de janelas através do configurador de sessões do LXQt.</translation>
     </message>
     <message>
         <location filename="../../../src/wmselectdialog.cpp" line="62"/>
