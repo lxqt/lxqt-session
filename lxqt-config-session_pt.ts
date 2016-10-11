@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="pt">
+<TS version="2.1" language="pt">
 <context>
     <name>AutoStartEdit</name>
     <message>
@@ -16,7 +16,7 @@
     <message>
         <location filename="../../../autostartedit.ui" line="27"/>
         <source>Search...</source>
-        <translation>Procurar...</translation>
+        <translation>Pesquisar...</translation>
     </message>
     <message>
         <location filename="../../../autostartedit.ui" line="47"/>
@@ -62,7 +62,7 @@
     <message>
         <location filename="../../../autostartpage.ui" line="17"/>
         <source>Delete</source>
-        <translation>Eliminar</translation>
+        <translation>Apagar</translation>
     </message>
     <message>
         <location filename="../../../autostartpage.ui" line="24"/>
@@ -77,7 +77,7 @@
     <message>
         <location filename="../../../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Aplicações com arranque automático</translation>
+        <translation>Aplicações de arranque automático</translation>
     </message>
     <message>
         <location filename="../../../autostartpage.cpp" line="141"/>
@@ -100,7 +100,7 @@
     <message>
         <location filename="../../../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation>Procurar...</translation>
+        <translation>Pesquisar...</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="59"/>
@@ -160,7 +160,7 @@
     <message>
         <location filename="../../../defaultappspage.ui" line="23"/>
         <source>Default Applications</source>
-        <translation>Aplicações pré-definidas</translation>
+        <translation>Aplicações padrão</translation>
     </message>
     <message>
         <location filename="../../../defaultappspage.ui" line="32"/>
@@ -171,7 +171,7 @@
         <location filename="../../../defaultappspage.ui" line="52"/>
         <location filename="../../../defaultappspage.ui" line="79"/>
         <source>Search...</source>
-        <translation>Procurar...</translation>
+        <translation>Pesquisar...</translation>
     </message>
     <message>
         <location filename="../../../defaultappspage.ui" line="59"/>
@@ -189,7 +189,7 @@
     <message>
         <location filename="../../../environmentpage.ui" line="24"/>
         <source>Delete</source>
-        <translation>Eliminar</translation>
+        <translation>Apagar</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="50"/>
@@ -234,7 +234,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="53"/>
         <source>Default Applications</source>
-        <translation>Aplicações pré-definidas</translation>
+        <translation>Aplicações padrão</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="56"/>
@@ -276,7 +276,7 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>Definições de sessão do LxQt - Diretórios do utilizador</translation>
+        <translation>Definições de sessão do LXQt - Diretórios do utilizador</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="180"/>
@@ -354,7 +354,7 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="74"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation>Pasta utilizada para carregar e guardar os seus documentos</translation>
+        <translation>Pasta utilizada para carregar ou guardar os seus documentos</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="75"/>
