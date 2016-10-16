@@ -16,22 +16,22 @@
     <message>
         <location filename="../../../autostartedit.ui" line="27"/>
         <source>Search...</source>
-        <translation>Zoek...</translation>
+        <translation>Zoeken...</translation>
     </message>
     <message>
         <location filename="../../../autostartedit.ui" line="47"/>
         <source>Command:</source>
-        <translation>Uitvoeren:</translation>
+        <translation>Opdracht:</translation>
     </message>
     <message>
         <location filename="../../../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>Wacht op systeemvak.</translation>
+        <translation>Wacht op systeemvak</translation>
     </message>
     <message>
         <location filename="../../../autostartedit.cpp" line="59"/>
         <source>Select Application</source>
-        <translation>Selecteer Programma</translation>
+        <translation>Kies toepassing</translation>
     </message>
 </context>
 <context>
@@ -39,7 +39,7 @@
     <message>
         <location filename="../../../autostartmodel.cpp" line="191"/>
         <source>Global Autostart</source>
-        <translation>Algemene Autostart</translation>
+        <translation>Systeembrede automatische start</translation>
     </message>
     <message>
         <location filename="../../../autostartmodel.cpp" line="193"/>
@@ -54,7 +54,7 @@
     <message>
         <location filename="../../../autostartmodel.cpp" line="213"/>
         <source>Overrides: %1</source>
-        <translation>Overschrijvingen: %1</translation>
+        <translation>Heeft voorrang op: %1</translation>
     </message>
 </context>
 <context>
@@ -62,7 +62,7 @@
     <message>
         <location filename="../../../autostartpage.ui" line="17"/>
         <source>Delete</source>
-        <translation>Verwijder</translation>
+        <translation>Wissen</translation>
     </message>
     <message>
         <location filename="../../../autostartpage.ui" line="24"/>
@@ -77,7 +77,7 @@
     <message>
         <location filename="../../../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Autostart Programma</translation>
+        <translation>Automatische start van toepassingen</translation>
     </message>
     <message>
         <location filename="../../../autostartpage.cpp" line="141"/>
@@ -87,55 +87,55 @@
     <message>
         <location filename="../../../autostartpage.cpp" line="141"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>Bestand &apos;%1&apos; bestaat al!</translation>
+        <translation>Bestand &apos;%1&apos; bestaat reeds!</translation>
     </message>
 </context>
 <context>
     <name>BasicSettings</name>
     <message>
+        <location filename="../../../basicsettings.ui" line="23"/>
+        <source>Basic Settings</source>
+        <translation>Basisinstellingen</translation>
+    </message>
+    <message>
         <location filename="../../../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation>Venster Beheer</translation>
+        <translation>Vensterbeheerder</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation>Zoek...</translation>
+        <translation>Zoeken...</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished">LXQt Modules</translation>
-    </message>
-    <message>
-        <location filename="../../../basicsettings.ui" line="111"/>
-        <source>Leave Session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../basicsettings.ui" line="117"/>
-        <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../basicsettings.ui" line="23"/>
-        <source>Basic Settings</source>
-        <translation>Basis Instellingen</translation>
+        <translation>LXQt-modules</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Start</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Stop</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="137"/>
         <source>Select a window manager</source>
-        <translation>Selecteer een window manager</translation>
+        <translation>Kies een vensterbeheerder</translation>
+    </message>
+    <message>
+        <location filename="../../../basicsettings.ui" line="111"/>
+        <source>Leave Session</source>
+        <translation>Sessie beëindigen</translation>
+    </message>
+    <message>
+        <location filename="../../../basicsettings.ui" line="117"/>
+        <source>Ask for confirmation to leave session</source>
+        <translation>Vraag om bevestiging voor het beëindigen van de sessie</translation>
     </message>
 </context>
 <context>
@@ -143,12 +143,12 @@
     <message>
         <location filename="../../../defaultappspage.cpp" line="72"/>
         <source>Select a terminal emulator</source>
-        <translation>Selecteer een terminal</translation>
+        <translation>Kies een terminalnabootser</translation>
     </message>
     <message>
         <location filename="../../../defaultappspage.cpp" line="77"/>
         <source>Select a web browser</source>
-        <translation>Selecteer een web browser</translation>
+        <translation>Kies een webbrowser</translation>
     </message>
 </context>
 <context>
@@ -156,23 +156,23 @@
     <message>
         <location filename="../../../defaultappspage.ui" line="23"/>
         <source>Default Applications</source>
-        <translation>Standaard Programma&apos;s</translation>
+        <translation>Standaardtoepassingen</translation>
     </message>
     <message>
         <location filename="../../../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation>Terminal emulatie:</translation>
+        <translation>Terminalnabootser:</translation>
     </message>
     <message>
         <location filename="../../../defaultappspage.ui" line="52"/>
         <location filename="../../../defaultappspage.ui" line="79"/>
         <source>Search...</source>
-        <translation>Zoek...</translation>
+        <translation>Zoeken...</translation>
     </message>
     <message>
         <location filename="../../../defaultappspage.ui" line="59"/>
         <source>Web Browser:</source>
-        <translation>Web Browser:</translation>
+        <translation>Webbrowser:</translation>
     </message>
 </context>
 <context>
@@ -185,17 +185,17 @@
     <message>
         <location filename="../../../environmentpage.ui" line="24"/>
         <source>Delete</source>
-        <translation>Verwijder</translation>
+        <translation>Wissen</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
-        <translation>Omgevings Variabelen (geavanceerd)</translation>
+        <translation>Omgevingsvariabelen (geavanceerd)</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="61"/>
         <source>Variable Name</source>
-        <translation>Variabele Naam</translation>
+        <translation>Naam van variabele</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="66"/>
@@ -208,34 +208,34 @@
     <message>
         <location filename="../../../modulemodel.cpp" line="86"/>
         <source>Running</source>
-        <translation type="unfinished"></translation>
+        <translation>Draaiend</translation>
     </message>
 </context>
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LXQt Session Configuration</source>
-        <translation type="vanished">LXQt Sessie Configuratie</translation>
-    </message>
-    <message>
         <location filename="../../../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt-sessie-instellingen</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
-        <translation>Basis Instellingen</translation>
+        <translation>Basisinstellingen</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="53"/>
         <source>Default Applications</source>
-        <translation>Standaard Programma&apos;s</translation>
+        <translation>Standaardtoepassingen</translation>
+    </message>
+    <message>
+        <source>Locations</source>
+        <translation type="vanished">Locaties</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="56"/>
         <source>User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Gebruikersmappen</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="62"/>
@@ -250,16 +250,12 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="94"/>
         <source>Session Restart Required</source>
-        <translation>Sessie herstart vereist</translation>
+        <translation>Herstart van sessie vereist</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="95"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation type="vanished">U moet de Sessie herstarten (LXQt-sessie) om de instellingen op te slaan.  Gebruik hiervoor &quot;uitloggen&quot; vanuit het hoofd menu.</translation>
+        <translation>Sommige instellingen zullen pas effect hebben na de volgende aanmelding.</translation>
     </message>
 </context>
 <context>
@@ -267,22 +263,26 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="110"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Opslaglocaties voor persoonlijke bestanden</translation>
+    </message>
+    <message>
+        <source>LXQt Session Settings - Locations</source>
+        <translation type="vanished">LXQt-sessie-instellingen - opslaglocaties</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt-sessie-instellingen - gebruikersmappen</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="180"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>Er is een fout opgetreden bij het toepassen van de instellingen voor de locatie %1</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="196"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Opslaglocatie kiezen</translation>
     </message>
 </context>
 <context>
@@ -290,82 +290,82 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="60"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Bureaublad</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="61"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloads</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="62"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Sjablonen</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="63"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Publieke map</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="64"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Documenten</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="65"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>Muziek</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="66"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Afbeeldingen</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="67"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Video's</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="70"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Bevat alle bestanden die u ziet op uw bureaublad</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="71"/>
         <source>Default folder to save your downloaded files</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaardmap voor binnengehaalde bestanden</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="72"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaardmap voor sjablonen</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="73"/>
         <source>Default folder to publicly share your files</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaardmap voor publiekelijk gedeelde bestanden</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="74"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaardmap voor documenten</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="75"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaardmap voor muziek</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="76"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaardmap voor afbeeldingen</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaardmap voor video's</translation>
     </message>
 </context>
 </TS>
