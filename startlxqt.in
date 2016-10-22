@@ -68,7 +68,7 @@ fill the LXQt's openbox configuration '$XDG_CONFIG_HOME/openbox/lxqt-rc.xml'.
 If you want to use the predefined LXQt's openbox configuration, run:
   cp '@LXQT_ETC_XDG_DIR@/openbox/lxqt-rc.xml' '$XDG_CONFIG_HOME/openbox'"
             echo "$message" >&2
-            xmessage -center -title "LXQt Openbox configration" "$message" &
+            xmessage -center -title "LXQt Openbox configuration" "$message" &
             ob_config_copied=1
             break
         fi
