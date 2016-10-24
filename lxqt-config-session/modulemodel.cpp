@@ -77,7 +77,7 @@ QVariant ModuleModel::data(const QModelIndex& index, int role) const
             case Qt::CheckStateRole:
                 return mItemMap.value(name).isEnabled() ? Qt::Checked : Qt::Unchecked;
             case Qt::ToolTipRole:
-                return mItemMap.value(name).file().value("Comment");
+                return mItemMap.value(name).file().comment();
         }
     }
     else if (index.column() == 1 && (role == Qt::DisplayRole || role == Qt::DecorationRole))
