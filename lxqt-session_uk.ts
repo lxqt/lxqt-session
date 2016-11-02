@@ -14,12 +14,12 @@
     <message>
         <location filename="../../../src/lxqtmodman.cpp" line="302"/>
         <source>Crash Report</source>
-        <translation type="unfinished"></translation>
+        <translation>Звіт про крах</translation>
     </message>
     <message>
         <location filename="../../../src/lxqtmodman.cpp" line="303"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; зазнало краху забагато разів. Його авторестарт буде виключено до наступного входу.</translation>
     </message>
 </context>
 <context>
@@ -54,12 +54,12 @@ Before starting to use the LXQt, you might want to select the Windows Manager:</
     <message>
         <location filename="../../../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Запрошуємо до LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Будь ласка, виберіть Ваш типовий менеджер вікон.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ви зможете його змінити через Налаштування -&gt; Налаштування сесії -&gt; Базові налаштування.</translation>
     </message>
 </context>
 </TS>
