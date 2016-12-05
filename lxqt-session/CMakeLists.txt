@@ -72,8 +72,8 @@ target_link_libraries(lxqt-session
     Qt5::Widgets
     Qt5::DBus
     Qt5::X11Extras
-    X11
     lxqt
+    ${X11_LIBRARIES}
     KF5::WindowSystem
 )
 
