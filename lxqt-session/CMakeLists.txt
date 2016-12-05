@@ -12,7 +12,6 @@ if (WITH_LIBUDEV)
 endif()
 
 include_directories(
-    ${XCB_INCLUDE_DIRS}
     ${X11_INCLUDE_DIR}
 )
 
@@ -73,7 +72,6 @@ target_link_libraries(lxqt-session
     Qt5::Widgets
     Qt5::DBus
     Qt5::X11Extras
-    ${XCB_LDFLAGS}
     X11
     lxqt
     KF5::WindowSystem

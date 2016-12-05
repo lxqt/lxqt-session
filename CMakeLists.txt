@@ -14,9 +14,7 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 option(WITH_LIBUDEV "Build with libudev support" ON)
 
-find_package(PkgConfig REQUIRED QUIET)
 find_package(X11 REQUIRED)
-pkg_check_modules(XCB REQUIRED xcb)
 
 find_package(Qt5DBus REQUIRED)
 find_package(Qt5LinguistTools REQUIRED QUIET)
