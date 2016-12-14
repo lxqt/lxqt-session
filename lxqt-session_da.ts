@@ -6,12 +6,12 @@
     <message>
         <location filename="../../../src/lxqtmodman.cpp" line="302"/>
         <source>Crash Report</source>
-        <translation type="unfinished"></translation>
+        <translation>Rapport om nedbrud</translation>
     </message>
     <message>
         <location filename="../../../src/lxqtmodman.cpp" line="303"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; holdt op med at virke for mange gange. Dets automatiske genstart er blevet deaktiveret indtil næste login.</translation>
     </message>
 </context>
 <context>
@@ -19,27 +19,27 @@
     <message>
         <location filename="../../../src/wmselectdialog.cpp" line="62"/>
         <source>Other ...</source>
-        <translation type="unfinished"></translation>
+        <translation>Anden ...</translation>
     </message>
     <message>
         <location filename="../../../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vælg din favorit.</translation>
     </message>
     <message>
         <location filename="../../../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation type="unfinished"></translation>
+        <translation>Velkommen til LXQt</translation>
     </message>
     <message>
         <location filename="../../../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Velkommen til LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Vælg venligst din standardvindueshåndtering.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Du kan når som helst ændre dette gennem Præferencer -&gt; Sessionsindstillinger -&gt; Grundlæggende indstillinger.</translation>
     </message>
 </context>
 </TS>
