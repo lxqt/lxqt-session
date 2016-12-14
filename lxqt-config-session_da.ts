@@ -26,7 +26,7 @@
     <message>
         <location filename="../../../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>Vent på system bakke</translation>
+        <translation>Vent på systembakke</translation>
     </message>
     <message>
         <location filename="../../../autostartedit.cpp" line="59"/>
@@ -39,17 +39,17 @@
     <message>
         <location filename="../../../autostartmodel.cpp" line="191"/>
         <source>Global Autostart</source>
-        <translation>Global Autostart</translation>
+        <translation>Global autostart</translation>
     </message>
     <message>
         <location filename="../../../autostartmodel.cpp" line="193"/>
         <source>LXQt Autostart</source>
-        <translation>LXQt Autostart</translation>
+        <translation>LXQt autostart</translation>
     </message>
     <message>
         <location filename="../../../autostartmodel.cpp" line="211"/>
         <source>Location: %1</source>
-        <translation>Placering:%1</translation>
+        <translation>Placering: %1</translation>
     </message>
     <message>
         <location filename="../../../autostartmodel.cpp" line="213"/>
@@ -77,7 +77,7 @@
     <message>
         <location filename="../../../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Program Autostart</translation>
+        <translation>Program autostart</translation>
     </message>
     <message>
         <location filename="../../../autostartpage.cpp" line="141"/>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../../../autostartpage.cpp" line="141"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>Fil &apos;%1&apos; eksisterer allerede!</translation>
+        <translation>Filen &apos;%1&apos; eksisterer allerede!</translation>
     </message>
 </context>
 <context>
@@ -105,22 +105,22 @@
     <message>
         <location filename="../../../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished">LXQt Moduler</translation>
+        <translation>LXQt-moduler</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Forlad session</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>Spørg om bekræftigelse inden session forlades</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>Basale Indstillinger</translation>
+        <translation>Grundlæggende indstillinger</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="65"/>
@@ -143,12 +143,12 @@
     <message>
         <location filename="../../../defaultappspage.cpp" line="72"/>
         <source>Select a terminal emulator</source>
-        <translation>Vælg en terminal emulator</translation>
+        <translation>Vælg en terminal-emulator</translation>
     </message>
     <message>
         <location filename="../../../defaultappspage.cpp" line="77"/>
         <source>Select a web browser</source>
-        <translation>Vælg en web browser</translation>
+        <translation>Vælg en webbrowser</translation>
     </message>
 </context>
 <context>
@@ -161,7 +161,7 @@
     <message>
         <location filename="../../../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation>Terminal Emulation:</translation>
+        <translation>Terminal-emulering:</translation>
     </message>
     <message>
         <location filename="../../../defaultappspage.ui" line="52"/>
@@ -172,7 +172,7 @@
     <message>
         <location filename="../../../defaultappspage.ui" line="59"/>
         <source>Web Browser:</source>
-        <translation>Web Browser:</translation>
+        <translation>Webbrowser:</translation>
     </message>
 </context>
 <context>
@@ -190,7 +190,7 @@
     <message>
         <location filename="../../../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
-        <translation>Miljøvariabler (Advanceret)</translation>
+        <translation>Miljøvariabler (avanceret)</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="61"/>
@@ -214,18 +214,14 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LXQt Session Configuration</source>
-        <translation type="vanished">LXQt Sessionsindstillinger</translation>
-    </message>
-    <message>
         <location filename="../../../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Indstillinger for LXQt-session</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
-        <translation>Basale Indstillinger</translation>
+        <translation>Grundlæggende indstillinger</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="53"/>
@@ -235,7 +231,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="56"/>
         <source>User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Brugermapper</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="62"/>
@@ -245,21 +241,17 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="68"/>
         <source>Environment (Advanced)</source>
-        <translation>Miljø (Advanceret)</translation>
+        <translation>Miljø (avanceret)</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="94"/>
         <source>Session Restart Required</source>
-        <translation>Genstart Af Session Er Påkrævet</translation>
+        <translation>Genstart af session er påkrævet</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="95"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation type="vanished">For at genindlæse indstillinger skal skrivebordssessionen genstartes. Brug log Ud fra hovedmenuen.</translation>
+        <translation>Nogle indstillinger træder ikke i kraft før næste login.</translation>
     </message>
 </context>
 <context>
@@ -267,22 +259,22 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="110"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Placeringer til personlige filer</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Indstillinger for LXQt-session - Brugermapper</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="180"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>Der opstod en fejl under anvendelse af indstillinger for placeringen %1</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="196"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Vælg placering</translation>
     </message>
 </context>
 <context>
@@ -290,82 +282,82 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="60"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivebord</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="61"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloads</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="62"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Skabeloner</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="63"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Offentlig share</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="64"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokumenter</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="65"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>Musik</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="66"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Billeder</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="67"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Videoer</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="70"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Indeholder alle de filer som du ser på dit skrivebord</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="71"/>
         <source>Default folder to save your downloaded files</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardmappe til at gemme dine downloadede filer</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="72"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardmappe til at indlæse eller gennem skabeloner fra og til</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="73"/>
         <source>Default folder to publicly share your files</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardmappe til at dele dine filer offentligt</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="74"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardmappe til at indlæse eller gemme dokumenter fra og til</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="75"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardmappe til at indlæse eller gemme musik fra og til</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="76"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardmappe til at indlæse eller gemme billeder fra og til</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardmappe til at indlæse eller gemme videoer fra og til</translation>
     </message>
 </context>
 </TS>
