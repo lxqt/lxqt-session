@@ -14,12 +14,12 @@
     <message>
         <location filename="../../../src/lxqtmodman.cpp" line="302"/>
         <source>Crash Report</source>
-        <translation type="unfinished"></translation>
+        <translation>Çökme Raporu</translation>
     </message>
     <message>
         <location filename="../../../src/lxqtmodman.cpp" line="303"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; birçok kez çöktü. Oturum yeniden başatılıncaya kadar etkisizleştirildi.</translation>
     </message>
 </context>
 <context>
@@ -54,12 +54,12 @@ LXQt&apos; yi kullanmaya başlamadan önce, Pencere Yöneticisini seçiniz:</tra
     <message>
         <location filename="../../../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;LXQt&apos;ye hoşgeldiniz&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Lütfen öntanımlı Pencere Yöneticinizi seçiniz.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Daha sonra istediğiniz zaman Tercihler -&gt; Oturum Ayarları -&gt; Temel Ayarlar yolunu izleyerek değiştirebilirsiniz.</translation>
     </message>
 </context>
 </TS>
