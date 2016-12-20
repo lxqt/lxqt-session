@@ -39,7 +39,7 @@
     <message>
         <location filename="../../../autostartmodel.cpp" line="191"/>
         <source>Global Autostart</source>
-        <translation>Genel Kendiliğinden Başlatma</translation>
+        <translation>Evrensel Kendiliğinden Başlatma</translation>
     </message>
     <message>
         <location filename="../../../autostartmodel.cpp" line="193"/>
@@ -105,17 +105,17 @@
     <message>
         <location filename="../../../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQT Modülleri</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Oturumu Kapat</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>Oturumu kapatırken sor</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="23"/>
@@ -125,12 +125,12 @@
     <message>
         <location filename="../../../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Başlat</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Dur</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="137"/>
@@ -208,7 +208,7 @@
     <message>
         <location filename="../../../modulemodel.cpp" line="86"/>
         <source>Running</source>
-        <translation type="unfinished"></translation>
+        <translation>Çalışıyor</translation>
     </message>
 </context>
 <context>
@@ -220,7 +220,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQT Oturum Ayarları</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="47"/>
@@ -235,7 +235,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="56"/>
         <source>User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Kullanıcı Dizinleri</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="62"/>
@@ -255,7 +255,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="95"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bazı ayarlar yeniden başlayıncaya kadar etkin olmayacak.</translation>
     </message>
     <message>
         <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
@@ -267,22 +267,22 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="110"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Kişisel Dosyaların Yerleri</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQT Oturum Ayarları - Kullanıcı Dizinleri</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="180"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 konumu için ayarlar uygulanırken hata oluştu</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="196"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Konum Seç</translation>
     </message>
 </context>
 <context>
@@ -290,82 +290,82 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="60"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Masaüstü</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="61"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>İndirilenler</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="62"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Şablonlar</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="63"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Paylaşılanlar</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="64"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Belgeler</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="65"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>Müzikler</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="66"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Resimler</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="67"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Videolar</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="70"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Masaüstünde gördüğünüz tüm dosyaları içerir</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="71"/>
         <source>Default folder to save your downloaded files</source>
-        <translation type="unfinished"></translation>
+        <translation>İndirilen dosyalarınızın kaydedileceği öntanımlı dizin</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="72"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Şablonlarınızın kaydedileceği veya alınacağı öntanımlı dizin</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="73"/>
         <source>Default folder to publicly share your files</source>
-        <translation type="unfinished"></translation>
+        <translation>Paylaşılan dosyalarınızın kaydedileceği öntanımlı dizin</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="74"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Belgelerinizin kaydedileceği veya alınacağı öntanımlı dizin</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="75"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Müziklerinizin kaydedileceği veya alınacağı öntanımlı dizin</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="76"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Resimlerinizin kaydedileceği veya alıanacağı öntanımlı dizin</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Videolarınızın kaydedileceği veya alınacağı öntanımlı dizin</translation>
     </message>
 </context>
 </TS>
