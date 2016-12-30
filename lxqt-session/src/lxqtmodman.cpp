@@ -280,7 +280,6 @@ void LXQtModuleManager::startConfUpdate()
 void LXQtModuleManager::restartModules(int exitCode, QProcess::ExitStatus exitStatus)
 {
     LXQtModule* proc = qobject_cast<LXQtModule*>(sender());
-    Q_ASSERT(proc);
     if (nullptr == proc) {
         qCWarning(SESSION) << "Got an invalid (null) module to restart. Ignoring it";
         return;
