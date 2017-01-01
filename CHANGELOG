@@ -1,7 +1,22 @@
 
-lxqt-session-0.11.0 / 2016-09-24
+lxqt-session-0.11.1 / 2017-01-01
 ================================
 
+  * Adds an nullptr check when restarting a module (#90)
+  * Fixes a session logout crash (#88)
+  * Updated da.desktop files and removed da_DK.desktop files
+  * Moves FindUDev to the lxqt-build-tools repo
+  * Reworks X11 CMake libraries
+  * Removes all XCB stuff from CMake
+  * Update french desktop entries
+  * lxqt-config-session: Use localized comment
+  * Make CMakeLists.txt more uniform.
+  * Remove cpack (#83)
+
+0.11.0 / 2016-09-24
+===================
+
+  * Release 0.11.0: Add changelog
   * lockscreenmanager: always listen to the session provider's lock signal (#79)
   * Update Polish translation
   * Add README.md
