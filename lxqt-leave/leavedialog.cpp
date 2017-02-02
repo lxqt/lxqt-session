@@ -46,6 +46,20 @@ LeaveDialog::LeaveDialog(QWidget* parent)
     setWindowFlags((Qt::CustomizeWindowHint | Qt::FramelessWindowHint |
                     Qt::WindowStaysOnTopHint | Qt::X11BypassWindowManagerHint));
 
+    /* use own icons if the standard ones don't exist */
+    if (QIcon::fromTheme("system-lock-screen").isNull())
+        ui->lockscreenButton->setIcon(QIcon::fromTheme("lxqt-system-lock-screen"));
+    if (QIcon::fromTheme("system-log-out").isNull())
+        ui->logoutButton->setIcon(QIcon::fromTheme("lxqt-system-log-out"));
+    if (QIcon::fromTheme("system-shutdown").isNull())
+        ui->shutdownButton->setIcon(QIcon::fromTheme("lxqt-system-shutdown"));
+    if (QIcon::fromTheme("system-reboot").isNull())
+        ui->rebootButton->setIcon(QIcon::fromTheme("lxqt-system-reboot"));
+    if (QIcon::fromTheme("system-suspend").isNull())
+        ui->suspendButton->setIcon(QIcon::fromTheme("lxqt-system-suspend"));
+    if (QIcon::fromTheme("system-suspend-hibernate").isNull())
+        ui->hibernateButton->setIcon(QIcon::fromTheme("lxqt-system-suspend-hibernate"));
+
     ui->logoutButton->setEnabled(mPower->canAction(LXQt::Power::PowerLogout));
     ui->rebootButton->setEnabled(mPower->canAction(LXQt::Power::PowerReboot));
     ui->shutdownButton->setEnabled(mPower->canAction(LXQt::Power::PowerShutdown));
