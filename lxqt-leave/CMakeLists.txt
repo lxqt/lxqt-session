@@ -78,6 +78,6 @@ install(FILES
     COMPONENT Runtime
 )
 install(DIRECTORY
-        resources/actions
-        DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/scalable/"
+    resources/actions
+    DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/scalable/"
 )
