@@ -91,10 +91,6 @@
           <property name="text">
            <string>Logout</string>
           </property>
-          <property name="icon">
-           <iconset theme="system-log-out">
-            <normaloff>.</normaloff>.</iconset>
-          </property>
           <property name="iconSize">
            <size>
             <width>64</width>
@@ -110,10 +106,6 @@
          <widget class="QToolButton" name="lockscreenButton">
           <property name="text">
            <string>Lock screen</string>
-          </property>
-          <property name="icon">
-           <iconset theme="system-lock-screen">
-            <normaloff>.</normaloff>.</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -138,10 +130,6 @@
           <property name="text">
            <string>Suspend</string>
           </property>
-          <property name="icon">
-           <iconset theme="system-suspend">
-            <normaloff>.</normaloff>.</iconset>
-          </property>
           <property name="iconSize">
            <size>
             <width>64</width>
@@ -157,10 +145,6 @@
          <widget class="QToolButton" name="hibernateButton">
           <property name="text">
            <string>Hibernate</string>
-          </property>
-          <property name="icon">
-           <iconset theme="system-suspend-hibernate">
-            <normaloff>.</normaloff>.</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -185,10 +169,6 @@
           <property name="text">
            <string>Shutdown</string>
           </property>
-          <property name="icon">
-           <iconset theme="system-shutdown">
-            <normaloff>.</normaloff>.</iconset>
-          </property>
           <property name="iconSize">
            <size>
             <width>64</width>
@@ -204,10 +184,6 @@
          <widget class="QToolButton" name="rebootButton">
           <property name="text">
            <string>Reboot</string>
-          </property>
-          <property name="icon">
-           <iconset theme="system-reboot">
-            <normaloff>.</normaloff>.</iconset>
           </property>
           <property name="iconSize">
            <size>
