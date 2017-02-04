@@ -47,17 +47,24 @@ LeaveDialog::LeaveDialog(QWidget* parent)
                     Qt::WindowStaysOnTopHint | Qt::X11BypassWindowManagerHint));
 
     /* use own icons if the standard ones don't exist */
-    if (QIcon::fromTheme("system-lock-screen").isNull())
+    QIcon icn;
+    icn = QIcon::fromTheme("system-lock-screen");
+    if (icn.isNull() || icn.name() != "system-lock-screen")
         ui->lockscreenButton->setIcon(QIcon::fromTheme("lxqt-system-lock-screen"));
-    if (QIcon::fromTheme("system-log-out").isNull())
+    icn = QIcon::fromTheme("system-log-out");
+    if (icn.isNull() || icn.name() != "system-log-out")
         ui->logoutButton->setIcon(QIcon::fromTheme("lxqt-system-log-out"));
-    if (QIcon::fromTheme("system-shutdown").isNull())
+    icn = QIcon::fromTheme("system-shutdown");
+    if (icn.isNull() || icn.name() != "system-shutdown")
         ui->shutdownButton->setIcon(QIcon::fromTheme("lxqt-system-shutdown"));
-    if (QIcon::fromTheme("system-reboot").isNull())
+    icn = QIcon::fromTheme("system-reboot");
+    if (icn.isNull() || icn.name() != "system-reboot")
         ui->rebootButton->setIcon(QIcon::fromTheme("lxqt-system-reboot"));
-    if (QIcon::fromTheme("system-suspend").isNull())
+    icn = QIcon::fromTheme("system-suspend");
+    if (icn.isNull() || icn.name() != "system-suspend")
         ui->suspendButton->setIcon(QIcon::fromTheme("lxqt-system-suspend"));
-    if (QIcon::fromTheme("system-suspend-hibernate").isNull())
+    icn = QIcon::fromTheme("system-suspend-hibernate");
+    if (icn.isNull() || icn.name() != "system-suspend-hibernate")
         ui->hibernateButton->setIcon(QIcon::fromTheme("lxqt-system-suspend-hibernate"));
 
     ui->logoutButton->setEnabled(mPower->canAction(LXQt::Power::PowerLogout));
