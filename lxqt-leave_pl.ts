@@ -6,47 +6,47 @@
     <message>
         <location filename="../../../leavedialog.ui" line="20"/>
         <source>Leave</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyjdź</translation>
     </message>
     <message>
         <location filename="../../../leavedialog.ui" line="59"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;What do you want the computer to do?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Co dalej?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../../leavedialog.ui" line="92"/>
         <source>Logout</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyloguj</translation>
     </message>
     <message>
         <location filename="../../../leavedialog.ui" line="206"/>
         <source>Reboot</source>
-        <translation type="unfinished"></translation>
+        <translation>Uruchom ponownie</translation>
     </message>
     <message>
         <location filename="../../../leavedialog.ui" line="186"/>
         <source>Shutdown</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyłącz</translation>
     </message>
     <message>
         <location filename="../../../leavedialog.ui" line="139"/>
         <source>Suspend</source>
-        <translation type="unfinished"></translation>
+        <translation>Uśpij</translation>
     </message>
     <message>
         <location filename="../../../leavedialog.ui" line="112"/>
         <source>Lock screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Zablokuj ekran</translation>
     </message>
     <message>
         <location filename="../../../leavedialog.ui" line="159"/>
         <source>Hibernate</source>
-        <translation type="unfinished"></translation>
+        <translation>Hibernuj</translation>
     </message>
     <message>
         <location filename="../../../leavedialog.ui" line="42"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Anuluj</translation>
     </message>
 </context>
 <context>
@@ -54,32 +54,32 @@
     <message>
         <location filename="../../../main.cpp" line="51"/>
         <source>Logout.</source>
-        <translation type="unfinished"></translation>
+        <translation>Wylogowuje użytkownika.</translation>
     </message>
     <message>
         <location filename="../../../main.cpp" line="54"/>
         <source>Lockscreen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokuje ekran.</translation>
     </message>
     <message>
         <location filename="../../../main.cpp" line="57"/>
         <source>Suspend.</source>
-        <translation type="unfinished"></translation>
+        <translation>Usypia komputer.</translation>
     </message>
     <message>
         <location filename="../../../main.cpp" line="60"/>
         <source>Hibernate.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hibernuje komputer.</translation>
     </message>
     <message>
         <location filename="../../../main.cpp" line="63"/>
         <source>Shutdown.</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyłącza komputer.</translation>
     </message>
     <message>
         <location filename="../../../main.cpp" line="66"/>
         <source>Reboot.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uruchamia komputer ponownie.</translation>
     </message>
 </context>
 </TS>
