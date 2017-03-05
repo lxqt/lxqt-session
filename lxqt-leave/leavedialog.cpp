@@ -26,7 +26,7 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include "leavedialog.h"
-
+#include "keyenterreceiver.h"
 LeaveDialog::LeaveDialog(QWidget* parent)
     : QDialog(parent, Qt::Dialog | Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint),
     ui(new Ui::LeaveDialog),
@@ -70,9 +70,12 @@ LeaveDialog::LeaveDialog(QWidget* parent)
         buttons.at(i)->adjustSize();
         maxWidth = qMax(maxWidth, buttons.at(i)->width());
     }
-    for (int i = 0; i < N; ++i)
-        buttons.at(i)->setMinimumWidth(maxWidth);
+    KeyEnterReceiver* key = new KeyEnterReceiver();
 
+    for (int i = 0; i < N; ++i) {
+        buttons.at(i)->setMinimumWidth(maxWidth);
+        buttons.at(i)->installEventFilter(key);
+    }
     connect(ui->logoutButton,       &QPushButton::clicked, [&] { close(); mPowerManager->logout();    });
     connect(ui->rebootButton,       &QPushButton::clicked, [&] { close(); mPowerManager->reboot();    });
     connect(ui->shutdownButton,     &QPushButton::clicked, [&] { close(); mPowerManager->shutdown();  });
