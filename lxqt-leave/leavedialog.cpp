@@ -26,6 +26,7 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include "leavedialog.h"
+#include <QKeyEvent>
 
 LeaveDialog::LeaveDialog(QWidget* parent)
     : QDialog(parent, Qt::Dialog | Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint),
@@ -100,4 +101,17 @@ void LeaveDialog::resizeEvent(QResizeEvent* event)
     move((screen.width()  - this->width()) / 2,
          (screen.height() - this->height()) / 2);
 
+}
+
+void LeaveDialog::keyPressEvent(QKeyEvent* event)
+{
+    if (Qt::Key_Enter == event->key() || Qt::Key_Return == event->key())
+    {
+        if (QToolButton * button = qobject_cast<QToolButton *>(QApplication::focusWidget()))
+        {
+            button->click();
+            return;
+        }
+    }
+    QDialog::keyPressEvent(event);
 }

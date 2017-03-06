@@ -50,6 +50,7 @@ public:
 
 protected:
     virtual void resizeEvent(QResizeEvent* event) override;
+    virtual void keyPressEvent(QKeyEvent* event) override;
 
 private:
     Ui::LeaveDialog *ui;
