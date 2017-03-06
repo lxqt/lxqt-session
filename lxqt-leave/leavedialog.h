@@ -49,7 +49,7 @@ public:
     ~LeaveDialog();
 
 protected:
-    virtual void resizeEvent(QResizeEvent* event);
+    virtual void resizeEvent(QResizeEvent* event) override;
 
 private:
     Ui::LeaveDialog *ui;
