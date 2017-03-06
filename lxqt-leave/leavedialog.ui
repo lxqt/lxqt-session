@@ -37,13 +37,16 @@
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="cancelButton">
+       <widget class="QToolButton" name="cancelButton">
         <property name="text">
          <string>Cancel</string>
         </property>
         <property name="icon">
          <iconset theme="dialog-cancel">
           <normaloff>.</normaloff>.</iconset>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
         </property>
        </widget>
       </item>
