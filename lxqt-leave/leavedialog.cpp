@@ -73,13 +73,13 @@ LeaveDialog::LeaveDialog(QWidget* parent)
     for (int i = 0; i < N; ++i)
         buttons.at(i)->setMinimumWidth(maxWidth);
 
-    connect(ui->logoutButton,       &QPushButton::clicked, [&] { close(); mPowerManager->logout();    });
-    connect(ui->rebootButton,       &QPushButton::clicked, [&] { close(); mPowerManager->reboot();    });
-    connect(ui->shutdownButton,     &QPushButton::clicked, [&] { close(); mPowerManager->shutdown();  });
-    connect(ui->suspendButton,      &QPushButton::clicked, [&] { close(); mPowerManager->suspend();   });
-    connect(ui->hibernateButton,    &QPushButton::clicked, [&] { close(); mPowerManager->hibernate(); });
-    connect(ui->cancelButton,       &QPushButton::clicked, [&] { close();                             });
-    connect(ui->lockscreenButton,   &QPushButton::clicked, [&] {
+    connect(ui->logoutButton,       &QAbstractButton::clicked, [&] { close(); mPowerManager->logout();    });
+    connect(ui->rebootButton,       &QAbstractButton::clicked, [&] { close(); mPowerManager->reboot();    });
+    connect(ui->shutdownButton,     &QAbstractButton::clicked, [&] { close(); mPowerManager->shutdown();  });
+    connect(ui->suspendButton,      &QAbstractButton::clicked, [&] { close(); mPowerManager->suspend();   });
+    connect(ui->hibernateButton,    &QAbstractButton::clicked, [&] { close(); mPowerManager->hibernate(); });
+    connect(ui->cancelButton,       &QAbstractButton::clicked, [&] { close();                             });
+    connect(ui->lockscreenButton,   &QAbstractButton::clicked, [&] {
         close();
         QEventLoop loop;
         connect(mScreensaver, &LXQt::ScreenSaver::done, &loop, &QEventLoop::quit);
