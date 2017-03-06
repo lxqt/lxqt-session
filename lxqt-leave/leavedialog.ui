@@ -250,10 +250,10 @@
  <tabstops>
   <tabstop>cancelButton</tabstop>
   <tabstop>logoutButton</tabstop>
-  <tabstop>lockscreenButton</tabstop>
   <tabstop>shutdownButton</tabstop>
-  <tabstop>rebootButton</tabstop>
   <tabstop>suspendButton</tabstop>
+  <tabstop>lockscreenButton</tabstop>
+  <tabstop>rebootButton</tabstop>
   <tabstop>hibernateButton</tabstop>
  </tabstops>
  <resources/>
