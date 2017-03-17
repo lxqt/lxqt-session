@@ -231,7 +231,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="56"/>
         <source>User Directories</source>
-        <translation>Directoris dels usuaris</translation>
+        <translation>Directoris de l&apos;usuari</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="62"/>
