@@ -26,7 +26,34 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include "leavedialog.h"
-#include <QKeyEvent>
+#include <QDebug>
+#include <QItemDelegate>
+
+
+class ItemDelegate : public QItemDelegate
+{
+public:
+    static constexpr QMargins MARGINS{20, 10, 20, 10};
+public:
+    using QItemDelegate::QItemDelegate;
+    virtual QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override
+    {
+        QStyleOptionViewItem opt = option;
+        opt.decorationPosition = QStyleOptionViewItem::Top;
+        QSize size = QItemDelegate::sizeHint(opt, index);
+        size += {MARGINS.left() + MARGINS.right(), MARGINS.top() + MARGINS.bottom()}; // add some margins
+        return size;
+    }
+    virtual void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override
+    {
+        QStyleOptionViewItem opt = option;
+        opt.decorationPosition = QStyleOptionViewItem::Top;
+        opt.displayAlignment = Qt::AlignHCenter | Qt::AlignTop;
+        opt.rect -= MARGINS;
+        return QItemDelegate::paint(painter, opt, index);
+    }
+};
+constexpr QMargins ItemDelegate::MARGINS;
 
 LeaveDialog::LeaveDialog(QWidget* parent)
     : QDialog(parent, Qt::Dialog | Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint),
@@ -47,47 +74,82 @@ LeaveDialog::LeaveDialog(QWidget* parent)
     setWindowFlags((Qt::CustomizeWindowHint | Qt::FramelessWindowHint |
                     Qt::WindowStaysOnTopHint | Qt::X11BypassWindowManagerHint));
 
-    ui->logoutButton->setEnabled(mPower->canAction(LXQt::Power::PowerLogout));
-    ui->rebootButton->setEnabled(mPower->canAction(LXQt::Power::PowerReboot));
-    ui->shutdownButton->setEnabled(mPower->canAction(LXQt::Power::PowerShutdown));
-    ui->suspendButton->setEnabled(mPower->canAction(LXQt::Power::PowerSuspend));
-    ui->hibernateButton->setEnabled(mPower->canAction(LXQt::Power::PowerHibernate));
-
-    /*
-     * Make all the buttons have equal widths
-     */
-    QVector<QToolButton*> buttons(6);
-    buttons[0] = ui->logoutButton;
-    buttons[1] = ui->lockscreenButton;
-    buttons[2] = ui->suspendButton;
-    buttons[3] = ui->hibernateButton;
-    buttons[4] = ui->rebootButton;
-    buttons[5] = ui->shutdownButton;
-
-    int maxWidth = 0;
-    const int N = buttons.size();
-    for (int i = 0; i < N; ++i) {
-        // Make sure that the button size is adjusted to the text width
-        buttons.at(i)->adjustSize();
-        maxWidth = qMax(maxWidth, buttons.at(i)->width());
+    ItemDelegate * delegate = new ItemDelegate(ui->tableWidget);
+    {
+        QScopedPointer<QAbstractItemDelegate> old_del{ui->tableWidget->itemDelegate()};
+        ui->tableWidget->setItemDelegate(delegate);
     }
-    for (int i = 0; i < N; ++i)
-        buttons.at(i)->setMinimumWidth(maxWidth);
+    ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+    ui->tableWidget->verticalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+    // populate the items
+    ui->tableWidget->setColumnCount(3);
+    ui->tableWidget->setRowCount(2);
+    QTableWidgetItem * item = new QTableWidgetItem{QIcon::fromTheme("system-log-out"), tr("Logout")};
+    item->setData(Qt::UserRole, LXQt::Power::PowerLogout);
+    if (!mPower->canAction(LXQt::Power::PowerLogout))
+        item->setFlags(item->flags() & ~Qt::ItemIsEnabled);
+    ui->tableWidget->setItem(0, 0, item);
+    item = new QTableWidgetItem{QIcon::fromTheme("system-shutdown"), tr("Shutdown")};
+    item->setData(Qt::UserRole, LXQt::Power::PowerShutdown);
+    if (!mPower->canAction(LXQt::Power::PowerShutdown))
+        item->setFlags(item->flags() & ~Qt::ItemIsEnabled);
+    ui->tableWidget->setItem(0, 1, item);
+    item = new QTableWidgetItem{QIcon::fromTheme("system-suspend"), tr("Suspend")};
+    item->setData(Qt::UserRole, LXQt::Power::PowerSuspend);
+    if (!mPower->canAction(LXQt::Power::PowerSuspend))
+        item->setFlags(item->flags() & ~Qt::ItemIsEnabled);
+    ui->tableWidget->setItem(0, 2, item);
+    item = new QTableWidgetItem{QIcon::fromTheme("system-lock-screen"), tr("Lock screen")};
+    item->setData(Qt::UserRole, -1);
+    ui->tableWidget->setItem(1, 0, item);
+    item = new QTableWidgetItem{QIcon::fromTheme("system-reboot"), tr("Reboot")};
+    item->setData(Qt::UserRole, LXQt::Power::PowerReboot);
+    if (!mPower->canAction(LXQt::Power::PowerReboot))
+        item->setFlags(item->flags() & ~Qt::ItemIsEnabled);
+    ui->tableWidget->setItem(1, 1, item);
+    item = new QTableWidgetItem{QIcon::fromTheme("system-suspend-hibernate"), tr("Hibernate")};
+    item->setData(Qt::UserRole, LXQt::Power::PowerHibernate);
+    if (!mPower->canAction(LXQt::Power::PowerHibernate))
+        item->setFlags(item->flags() & ~Qt::ItemIsEnabled);
+    ui->tableWidget->setItem(1, 2, item);
 
-    connect(ui->logoutButton,       &QAbstractButton::clicked, [&] { close(); mPowerManager->logout();    });
-    connect(ui->rebootButton,       &QAbstractButton::clicked, [&] { close(); mPowerManager->reboot();    });
-    connect(ui->shutdownButton,     &QAbstractButton::clicked, [&] { close(); mPowerManager->shutdown();  });
-    connect(ui->suspendButton,      &QAbstractButton::clicked, [&] { close(); mPowerManager->suspend();   });
-    connect(ui->hibernateButton,    &QAbstractButton::clicked, [&] { close(); mPowerManager->hibernate(); });
-    connect(ui->cancelButton,       &QAbstractButton::clicked, [&] { close();                             });
-    connect(ui->lockscreenButton,   &QAbstractButton::clicked, [&] {
+    connect(ui->tableWidget, &QTableWidget::itemActivated, this, [this] (QTableWidgetItem *item) {
+        bool ok = false;
+        const int action = item->data(Qt::UserRole).toInt(&ok);
+        if (!ok)
+        {
+            qWarning("Invalid internal logic, no UserRole set!?");
+            return;
+        }
         close();
-        QEventLoop loop;
-        connect(mScreensaver, &LXQt::ScreenSaver::done, &loop, &QEventLoop::quit);
-        mScreensaver->lockScreen();
-        loop.exec();
+        switch (action)
+        {
+        case LXQt::Power::PowerLogout:
+                mPowerManager->logout();
+                break;
+            case LXQt::Power::PowerShutdown:
+                mPowerManager->shutdown();
+                break;
+            case LXQt::Power::PowerSuspend:
+                mPowerManager->suspend();
+                break;
+            case -1:
+                {
+                    QEventLoop loop;
+                    connect(mScreensaver, &LXQt::ScreenSaver::done, &loop, &QEventLoop::quit);
+                    mScreensaver->lockScreen();
+                    loop.exec();
+                }
+                break;
+            case LXQt::Power::PowerReboot:
+                mPowerManager->reboot();
+                break;
+            case LXQt::Power::PowerHibernate:
+                mPowerManager->hibernate();
+                break;
+        }
     });
-
+    connect(ui->cancelButton, &QAbstractButton::clicked, this, [this] { close(); });
 }
 
 LeaveDialog::~LeaveDialog()
@@ -101,17 +163,4 @@ void LeaveDialog::resizeEvent(QResizeEvent* event)
     move((screen.width()  - this->width()) / 2,
          (screen.height() - this->height()) / 2);
 
-}
-
-void LeaveDialog::keyPressEvent(QKeyEvent* event)
-{
-    if (Qt::Key_Enter == event->key() || Qt::Key_Return == event->key())
-    {
-        if (QToolButton * button = qobject_cast<QToolButton *>(QApplication::focusWidget()))
-        {
-            button->click();
-            return;
-        }
-    }
-    QDialog::keyPressEvent(event);
 }
