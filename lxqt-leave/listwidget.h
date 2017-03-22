@@ -2,11 +2,11 @@
  * (c)LGPL2+
  *
  * LXQt - a lightweight, Qt based, desktop toolset
- * http://razor-qt.org, http://lxde.org/
+ * http://lxqt.org/
  *
- * Copyright: 2010-2015 LXQt team
+ * Copyright: 2017 LXQt team
  * Authors:
- *   Paulo Lieuthier <paulolieuthier@gmail.com>
+ *   Palo Kisa <palo.kisa@gmail.com>
  *
  * This program or library is free software; you can redistribute it
  * and/or modify it under the terms of the GNU Lesser General Public
@@ -25,41 +25,28 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#ifndef LEAVEDIALOG_H
-#define LEAVEDIALOG_H
+#include <QListWidget>
 
-#include "ui_leavedialog.h"
-
-#include <QDialog>
-#include <QDesktopWidget>
-#include <LXQt/Power>
-#include <LXQt/PowerManager>
-#include <LXQt/ScreenSaver>
-
-namespace Ui {
-    class LeaveDialog;
-}
-
-class LeaveDialog : public QDialog
+/*!
+ * Single purpose QListWidget with unified item sizes (based on the
+ * biggest item) and showing rows x columns items.
+ *
+ * \note It expects that items aren't ever changed after show().
+ */
+class ListWidget : public QListWidget
 {
-    Q_OBJECT
-
 public:
-    explicit LeaveDialog(QWidget *parent = 0);
-    ~LeaveDialog();
+    ListWidget(QWidget * parent = nullptr);
+    void setRows(int rows);
+    void setColumns(int columns);
 
 protected:
-    virtual void resizeEvent(QResizeEvent* event) override;
+    virtual QSize viewportSizeHint() const override;
+    virtual QModelIndex moveCursor(CursorAction cursorAction, Qt::KeyboardModifiers modifiers) override;
+    virtual void keyPressEvent(QKeyEvent * event) override;
+    virtual void focusInEvent(QFocusEvent * event) override;
 
 private:
-    Ui::LeaveDialog *ui;
-    // LXQt::Power is used to know if the actions are doable, while
-    // LXQt::PowerManager is used to trigger the actions, while
-    // obeying the user option to ask or not for confirmation
-    LXQt::Power *mPower;
-    LXQt::PowerManager *mPowerManager;
-    LXQt::ScreenSaver *mScreensaver;
+    int mRows;
+    int mColumns;
 };
-
-
-#endif
