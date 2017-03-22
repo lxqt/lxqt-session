@@ -3,10 +3,12 @@ project(lxqt-leave)
 set(CPP_FILES
     main.cpp
     leavedialog.cpp
+    listwidget.cpp
 )
 
 set(H_FILES
     leavedialog.h
+    listwidget.h
 )
 
 set(UI_FILES
