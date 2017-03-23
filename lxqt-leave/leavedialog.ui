@@ -126,9 +126,6 @@ QAbstractItemView { activate-on-singleclick: 1; }</string>
      <property name="showGrid">
       <bool>false</bool>
      </property>
-     <property name="gridStyle">
-      <enum>Qt::NoPen</enum>
-     </property>
      <property name="wordWrap">
       <bool>false</bool>
      </property>
@@ -138,13 +135,7 @@ QAbstractItemView { activate-on-singleclick: 1; }</string>
      <attribute name="horizontalHeaderVisible">
       <bool>false</bool>
      </attribute>
-     <attribute name="horizontalHeaderHighlightSections">
-      <bool>false</bool>
-     </attribute>
      <attribute name="verticalHeaderVisible">
-      <bool>false</bool>
-     </attribute>
-     <attribute name="verticalHeaderHighlightSections">
       <bool>false</bool>
      </attribute>
     </widget>
