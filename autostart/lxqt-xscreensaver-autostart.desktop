@@ -5,5 +5,3 @@ Name=XScreenSaver
 TryExec=xscreensaver
 Exec=xscreensaver -no-splash
 OnlyShowIn=LXQt;
-
-#TRANSLATIONS_DIR=translations
