@@ -77,3 +77,7 @@ install(FILES
     DESTINATION "${CMAKE_INSTALL_MANDIR}/man1"
     COMPONENT Runtime
 )
+install(DIRECTORY
+    resources/actions
+    DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/scalable/"
+)
