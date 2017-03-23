@@ -37,6 +37,13 @@ LeaveDialog::LeaveDialog(QWidget* parent)
 {
     ui->setupUi(this);
 
+    ui->lockscreenButton->setIcon(QIcon::fromTheme(QLatin1String("system-lock-screen")));
+    ui->logoutButton->setIcon(QIcon::fromTheme(QLatin1String("system-log-out")));
+    ui->shutdownButton->setIcon(QIcon::fromTheme(QLatin1String("system-shutdown")));
+    ui->rebootButton->setIcon(QIcon::fromTheme(QLatin1String("system-reboot")));
+    ui->suspendButton->setIcon(QIcon::fromTheme(QLatin1String("system-suspend")));
+    ui->hibernateButton->setIcon(QIcon::fromTheme(QLatin1String("system-suspend-hibernate")));
+
     /* This is a special dialog. We want to make it hard to ignore.
        We make it:
            * Undraggable
