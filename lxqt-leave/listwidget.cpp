@@ -27,9 +27,8 @@
 
 #include "listwidget.h"
 #include <QItemDelegate>
-#include <QDebug>
 #include <QApplication>
-
+#include <QKeyEvent>
 
 /*!
  * This private delegate does:
@@ -130,14 +129,6 @@ ListWidget::ListWidget(QWidget * parent/* = nullptr*/)
     }
 }
 
-QSize ListWidget::viewportSizeHint() const
-{
-    QSize size = sizeHintForIndex(model()->index(0, 0));
-    size.rwidth() = size.width() * mColumns + spacing() * mColumns * 2 + 1;
-    size.rheight() = size.height() * mRows + spacing() * mRows * 2 + 1;
-    return size;
-}
-
 void ListWidget::setRows(int rows)
 {
     mRows = rows;
@@ -146,4 +137,91 @@ void ListWidget::setRows(int rows)
 void ListWidget::setColumns(int columns)
 {
     mColumns = columns;
+}
+
+QSize ListWidget::viewportSizeHint() const
+{
+    QSize size = sizeHintForIndex(model()->index(0, 0));
+    size.rwidth() = size.width() * mColumns + spacing() * mColumns * 2 + 1;
+    size.rheight() = size.height() * mRows + spacing() * mRows * 2 + 1;
+    return size;
+}
+
+QModelIndex ListWidget::moveCursor(CursorAction cursorAction, Qt::KeyboardModifiers modifiers)
+{
+    QModelIndex current_index = currentIndex();
+    int count = model()->rowCount(rootIndex());
+    if (!current_index.isValid())
+        return cursorAction == MovePrevious ? model()->index(count -1, 0, rootIndex()) : model()->index(0, 0, rootIndex());
+
+    int current = current_index.row();
+    int next;
+    switch (cursorAction)
+    {
+        case MoveUp:
+        case MovePageUp:
+            next = (current - mColumns) % count;
+            break;
+        case MoveDown:
+        case MovePageDown:
+            next = (current + mColumns) % count;
+            break;
+        case MoveLeft:
+            if (0 == (current % mColumns))
+                current += mColumns;
+            // fall through
+        case MovePrevious:
+            if (current == 0)
+                return QModelIndex{};
+            next = (current - 1) % count;
+            break;
+        case MoveRight:
+            if ((mColumns - 1) == (current % mColumns))
+                current -= mColumns;
+            // fall through
+        case MoveNext:
+            if (current == count - 1)
+                return QModelIndex{};
+            next = (current + 1) % count;
+            break;
+        case MoveHome:
+            next = 0;
+            break;
+        case MoveEnd:
+            next = count - 1;
+            break;
+    }
+    if (next < 0)
+        next += count;
+    return model()->index(next, 0, rootIndex());
+
+}
+
+void ListWidget::keyPressEvent(QKeyEvent * event)
+{
+    if (event->key() == Qt::Key_Space)
+    {
+        // mimic the "select" to fire activated
+        QKeyEvent k{event->type(), Qt::Key_Enter, event->modifiers(), event->text(), event->isAutoRepeat(), static_cast<ushort>(event->count())};
+        QListWidget::keyPressEvent(&k);
+        event->setAccepted(k.isAccepted());
+        return;
+    }
+    return QListWidget::keyPressEvent(event);
+}
+
+void ListWidget::focusInEvent(QFocusEvent * event)
+{
+    switch (event->reason())
+    {
+        case Qt::TabFocusReason:
+            setCurrentIndex(model()->index(0, 0, rootIndex()));
+            break;
+        case Qt::BacktabFocusReason:
+            setCurrentIndex(model()->index(model()->rowCount(rootIndex()) - 1, 0, rootIndex()));
+            break;
+        default:
+            break;
+    }
+    return QListWidget::focusInEvent(event);
 }

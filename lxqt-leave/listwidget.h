@@ -42,6 +42,9 @@ public:
 
 protected:
     virtual QSize viewportSizeHint() const override;
+    virtual QModelIndex moveCursor(CursorAction cursorAction, Qt::KeyboardModifiers modifiers) override;
+    virtual void keyPressEvent(QKeyEvent * event) override;
+    virtual void focusInEvent(QFocusEvent * event) override;
 
 private:
     int mRows;
