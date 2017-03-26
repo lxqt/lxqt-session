@@ -35,7 +35,7 @@
  * - returns unified sizeHint() -> maximum of all items in (list) model
  * - cahes the sizeHint() to not iterate over all items and checking their size
  * - overrides decoration position to Qt::Top
- * - gives the items margins (increasing sizeHint()) and mimics Button visual
+ * - gives the items margins (increasing sizeHint()) ~~and mimics Button visual~~
  * - overrides painting the focus around the whole item (with the decoration)
  *
  * \note It is a single purpose delegate and expects, that the model
@@ -66,6 +66,7 @@ public:
 
     virtual void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override
     {
+        /*
         // mimic the button visual
         QStyleOption button_option;
         button_option.initFrom(option.widget);
@@ -74,7 +75,7 @@ public:
             button_option.state &= ~QStyle::State_HasFocus;
         QStyle * style = option.widget->style() ? option.widget->style() : QApplication::style();
         style->drawPrimitive(QStyle::PE_PanelButtonTool, &button_option, painter, option.widget);
-
+        */
         QStyleOptionViewItem opt = option;
         opt.decorationPosition = QStyleOptionViewItem::Top;
         opt.displayAlignment = Qt::AlignHCenter | Qt::AlignTop;
@@ -89,8 +90,7 @@ protected:
             , const QRect &/*rect*/) const override
     {
         // don't override the rectangle to the text-only
-        QRect rect = option.rect.adjusted(3, 3, -3, -3);
-        return QItemDelegate::drawFocus(painter, option, rect);
+        return QItemDelegate::drawFocus(painter, option, option.rect);
     }
 
     virtual void drawDisplay(QPainter *painter
@@ -147,7 +147,7 @@ QSize ListWidget::viewportSizeHint() const
     return size;
 }
 
-QModelIndex ListWidget::moveCursor(CursorAction cursorAction, Qt::KeyboardModifiers modifiers)
+QModelIndex ListWidget::moveCursor(CursorAction cursorAction, Qt::KeyboardModifiers/* modifiers*/)
 {
     QModelIndex current_index = currentIndex();
     int count = model()->rowCount(rootIndex());
@@ -201,7 +201,7 @@ void ListWidget::keyPressEvent(QKeyEvent * event)
 {
     if (event->key() == Qt::Key_Space)
     {
-        // mimic the "select" to fire activated
+        // mimic the "enter" to fire activated
         QKeyEvent k{event->type(), Qt::Key_Enter, event->modifiers(), event->text(), event->isAutoRepeat(), static_cast<ushort>(event->count())};
         QListWidget::keyPressEvent(&k);
         event->setAccepted(k.isAccepted());
