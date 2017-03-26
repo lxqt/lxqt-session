@@ -124,7 +124,7 @@ LeaveDialog::~LeaveDialog()
     delete ui;
 }
 
-void LeaveDialog::resizeEvent(QResizeEvent* event)
+void LeaveDialog::resizeEvent(QResizeEvent* /*event*/)
 {
     QRect screen = QApplication::desktop()->screenGeometry();
     move((screen.width()  - this->width()) / 2,

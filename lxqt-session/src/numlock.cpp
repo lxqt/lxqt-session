@@ -38,7 +38,7 @@
 
 /* the XKB stuff is based on code created by Oswald Buddenhagen <ossi@kde.org> */
 
-static unsigned int xkb_mask_modifier(Display* dpy, XkbDescPtr xkb, const char *name )
+static unsigned int xkb_mask_modifier(Display* /*dpy*/, XkbDescPtr xkb, const char *name )
 {
     int i;
     if( !xkb || !xkb->names )
