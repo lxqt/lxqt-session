@@ -277,7 +277,7 @@ void LXQtModuleManager::startConfUpdate()
     startProcess(desktop);
 }
 
-void LXQtModuleManager::restartModules(int exitCode, QProcess::ExitStatus exitStatus)
+void LXQtModuleManager::restartModules(int /*exitCode*/, QProcess::ExitStatus exitStatus)
 {
     LXQtModule* proc = qobject_cast<LXQtModule*>(sender());
     if (nullptr == proc) {
@@ -396,7 +396,7 @@ void LXQtModuleManager::resetCrashReport()
     mCrashReport.clear();
 }
 
-bool LXQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * message, long * result)
+bool LXQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * /*message*/, long * /*result*/)
 {
     if (eventType != "xcb_generic_event_t") // We only want to handle XCB events
         return false;

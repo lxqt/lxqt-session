@@ -75,7 +75,7 @@ UdevNotifier::~UdevNotifier()
     udev_unref(d->udev);
 }
 
-void UdevNotifier::eventReady(int socket)
+void UdevNotifier::eventReady(int /*socket*/)
 {
     struct udev_device * dev;
     while (nullptr != (dev = udev_monitor_receive_device(d->monitor)))

@@ -107,7 +107,7 @@ void WmSelectDialog::addWindowManager(const WindowManager &wm)
 }
 
 
-void WmSelectDialog::selectFileDialog(const QModelIndex &index)
+void WmSelectDialog::selectFileDialog(const QModelIndex &/*index*/)
 {
     QTreeWidget *wmList = ui->wmList;
     QTreeWidgetItem *item = wmList->currentItem();
@@ -130,7 +130,7 @@ void WmSelectDialog::selectFileDialog(const QModelIndex &index)
     ui->wmList->setCurrentItem(wmItem);
 }
 
-void WmSelectDialog::changeBtnStatus(const QModelIndex &index)
+void WmSelectDialog::changeBtnStatus(const QModelIndex &/*index*/)
 {
     QString wm = windowManager();
     ui->buttonBox->setEnabled(!wm.isEmpty() && findProgram(wm));
