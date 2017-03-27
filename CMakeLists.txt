@@ -39,7 +39,6 @@ add_subdirectory(lxqt-config-session)
 add_subdirectory(lxqt-leave)
 
 # merged from lxqt-common
-include(LXQtTranslateDesktop)
 include(LXQtConfigVars)
 
 # startlxqt script
