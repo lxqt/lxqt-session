@@ -149,51 +149,65 @@ QSize ListWidget::viewportSizeHint() const
 
 QModelIndex ListWidget::moveCursor(CursorAction cursorAction, Qt::KeyboardModifiers/* modifiers*/)
 {
-    QModelIndex current_index = currentIndex();
+    QModelIndex index = currentIndex();
     int count = model()->rowCount(rootIndex());
-    if (!current_index.isValid())
-        return cursorAction == MovePrevious ? model()->index(count -1, 0, rootIndex()) : model()->index(0, 0, rootIndex());
-
-    int current = current_index.row();
-    int next;
-    switch (cursorAction)
+    int current = 0;
+    if (index.isValid())
     {
-        case MoveUp:
-        case MovePageUp:
-            next = (current - mColumns) % count;
-            break;
-        case MoveDown:
-        case MovePageDown:
-            next = (current + mColumns) % count;
-            break;
-        case MoveLeft:
-            if (0 == (current % mColumns))
-                current += mColumns;
-            // fall through
-        case MovePrevious:
-            if (current == 0)
-                return QModelIndex{};
-            next = (current - 1) % count;
-            break;
-        case MoveRight:
-            if ((mColumns - 1) == (current % mColumns))
-                current -= mColumns;
-            // fall through
-        case MoveNext:
-            if (current == count - 1)
-                return QModelIndex{};
-            next = (current + 1) % count;
-            break;
-        case MoveHome:
-            next = 0;
-            break;
-        case MoveEnd:
-            next = count - 1;
-            break;
+        current = index.row();
+        index = QModelIndex{}; // setting to invalid to get inside the for loop (move the position)
+    } else
+    {
+        current = cursorAction == MovePrevious ? count - 1 : 0;
+        index = model()->index(current, 0, rootIndex());
     }
-    if (next < 0)
-        next += count;
-    return model()->index(next, 0, rootIndex());
+
+    // if not enabled, try to find any next enabled
+    for (int tries = 1; tries < count && 0 == (model()->flags(index) & Qt::ItemIsEnabled); ++tries)
+    {
+        int next;
+        switch (cursorAction)
+        {
+            case MoveUp:
+            case MovePageUp:
+                next = (current - mColumns) % count;
+                break;
+            case MoveDown:
+            case MovePageDown:
+                next = (current + mColumns) % count;
+                break;
+            case MoveLeft:
+                if (0 == (current % mColumns))
+                    current += mColumns;
+                // fall through
+            case MovePrevious:
+                if (current == 0)
+                    return QModelIndex{};
+                next = (current - 1) % count;
+                break;
+            case MoveRight:
+                if ((mColumns - 1) == (current % mColumns))
+                    current -= mColumns;
+                // fall through
+            case MoveNext:
+                if (current == count - 1)
+                    return QModelIndex{};
+                next = (current + 1) % count;
+                break;
+            case MoveHome:
+                next = 0;
+                break;
+            case MoveEnd:
+                next = count - 1;
+                break;
+        }
+        if (next < 0)
+            next += count;
+
+        index = model()->index(next, 0, rootIndex());
+        current = next;
+    }
+    return index;
 
 }
 
