@@ -58,7 +58,7 @@ SessionApplication::SessionApplication(int& argc, char** argv) :
       configName = "session";
 
     // tell the world which config file we're using.
-    qputenv("LXQT_SESSION_CONFIG", configName.toUtf8());
+    qputenv("LXQT_SESSION_CONFIG", configName.toLocal8Bit());
 
     modman = new LXQtModuleManager(winmanager);
     connect(this, &LXQt::Application::unixSignal, modman, &LXQtModuleManager::logout);
@@ -135,7 +135,7 @@ void SessionApplication::loadEnvironmentSettings(LXQt::Settings& settings)
     Q_FOREACH (QString i, settings.childKeys())
     {
         envVal = settings.value(i).toByteArray();
-        lxqt_setenv(i.toUtf8().constData(), envVal);
+        lxqt_setenv(i.toLocal8Bit().constData(), envVal);
     }
     settings.endGroup();
 }
