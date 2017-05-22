@@ -6,7 +6,7 @@
     <message>
         <location filename="../../../autostartedit.ui" line="14"/>
         <source>Edit</source>
-        <translation>Keisti</translation>
+        <translation>Taisyti</translation>
     </message>
     <message>
         <location filename="../../../autostartedit.ui" line="20"/>
@@ -39,12 +39,12 @@
     <message>
         <location filename="../../../autostartmodel.cpp" line="191"/>
         <source>Global Autostart</source>
-        <translation>Nuo aplinkos nepriklausomas programų paleidimas</translation>
+        <translation>Visuotinis automatinis paleidimas</translation>
     </message>
     <message>
         <location filename="../../../autostartmodel.cpp" line="193"/>
         <source>LXQt Autostart</source>
-        <translation>LXQt automatinis programų paleidimas</translation>
+        <translation>LXQt automatinis paleidimas</translation>
     </message>
     <message>
         <location filename="../../../autostartmodel.cpp" line="211"/>
@@ -62,7 +62,7 @@
     <message>
         <location filename="../../../autostartpage.ui" line="17"/>
         <source>Delete</source>
-        <translation>Šalinti</translation>
+        <translation>Ištrinti</translation>
     </message>
     <message>
         <location filename="../../../autostartpage.ui" line="24"/>
@@ -72,7 +72,7 @@
     <message>
         <location filename="../../../autostartpage.ui" line="31"/>
         <source>Edit</source>
-        <translation>Keisti</translation>
+        <translation>Taisyti</translation>
     </message>
     <message>
         <location filename="../../../autostartpage.ui" line="44"/>
@@ -87,15 +87,20 @@
     <message>
         <location filename="../../../autostartpage.cpp" line="141"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>Failas „%1“ jau yra!</translation>
+        <translation>Failas &quot;%1&quot; jau yra!</translation>
     </message>
 </context>
 <context>
     <name>BasicSettings</name>
     <message>
+        <location filename="../../../basicsettings.ui" line="23"/>
+        <source>Basic Settings</source>
+        <translation>Pagrindiniai nustatymai</translation>
+    </message>
+    <message>
         <location filename="../../../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation>Langų tvarkyklė</translation>
+        <translation>Langų tvarkytuvė</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="49"/>
@@ -105,37 +110,32 @@
     <message>
         <location filename="../../../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../basicsettings.ui" line="111"/>
-        <source>Leave Session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../basicsettings.ui" line="117"/>
-        <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../basicsettings.ui" line="23"/>
-        <source>Basic Settings</source>
-        <translation>Pagrindinės nuostatos</translation>
+        <translation>LXQt moduliai</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Paleisti</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Stabdyti</translation>
+    </message>
+    <message>
+        <location filename="../../../basicsettings.ui" line="111"/>
+        <source>Leave Session</source>
+        <translation>Išėjimas iš seanso</translation>
+    </message>
+    <message>
+        <location filename="../../../basicsettings.ui" line="117"/>
+        <source>Ask for confirmation to leave session</source>
+        <translation>Išeinant iš seanso, klausti patvirtinimo</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="137"/>
         <source>Select a window manager</source>
-        <translation>Pasirinkite langų tvarkyklę</translation>
+        <translation>Pasirinkite langų tvarkytuvę</translation>
     </message>
 </context>
 <context>
@@ -185,17 +185,17 @@
     <message>
         <location filename="../../../environmentpage.ui" line="24"/>
         <source>Delete</source>
-        <translation>Šalinti</translation>
+        <translation>Ištrinti</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
-        <translation>Aplinkos kintamieji (sudėtingiau)</translation>
+        <translation>Aplinkos kintamieji (Išplėstiniai)</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="61"/>
         <source>Variable Name</source>
-        <translation>Kintamasis</translation>
+        <translation>Kintamojo pavadinimas</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="66"/>
@@ -208,24 +208,20 @@
     <message>
         <location filename="../../../modulemodel.cpp" line="86"/>
         <source>Running</source>
-        <translation type="unfinished"></translation>
+        <translation>Vykdoma</translation>
     </message>
 </context>
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <source>LXQt Session Configuration</source>
-        <translation type="vanished">LXQt sesijų konfigūravimas</translation>
-    </message>
-    <message>
         <location filename="../../../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt seanso nustatymai</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
-        <translation>Pagrindinės nuostatos</translation>
+        <translation>Pagrindiniai nustatymai</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="53"/>
@@ -235,7 +231,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="56"/>
         <source>User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Naudotojo katalogai</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="62"/>
@@ -245,21 +241,17 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="68"/>
         <source>Environment (Advanced)</source>
-        <translation>Aplinka (sudėtingiau)</translation>
+        <translation>Aplinka (Išplėstiniai)</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="94"/>
         <source>Session Restart Required</source>
-        <translation>Reikia iš naujo paleisti sesiją</translation>
+        <translation>Reikalingas seanso paleidimas iš naujo</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="95"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation type="vanished">Tam, kad įsigaliotų pakeitimai, iš naujo paleiskite darbalaukio sesiją (lxqt-session). Atsijungti galite naudodamiesi pagrindiniu meniu.</translation>
+        <translation>Kai kurie nustatymai neįsigalios tol, kol neprisijungsite iš naujo.</translation>
     </message>
 </context>
 <context>
@@ -267,22 +259,22 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="110"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Asmeninių failų vietos</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt seanso nustatymai - Naudotojo katalogai</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="180"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>Taikant nustatymus, skirtus vietai %1, įvyko klaida</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="196"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasirinkite vietą</translation>
     </message>
 </context>
 <context>
@@ -290,82 +282,82 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="60"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Darbalaukis</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="61"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Atsiuntimai</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="62"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Šablonai</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="63"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Viešiniai</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="64"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokumentai</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="65"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>Muzika</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="66"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Paveikslai</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="67"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaizdo įrašai</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="70"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Talpina visus failus, kuriuos matote savo darbalaukyje</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="71"/>
         <source>Default folder to save your downloaded files</source>
-        <translation type="unfinished"></translation>
+        <translation>Numatytasis aplankas į kurį yra įrašomi visi jūsų atsisiųsti failai</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="72"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Numatytasis aplankas iš kurio yra įkeliami ar į kurį yra įrašomi šablonai</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="73"/>
         <source>Default folder to publicly share your files</source>
-        <translation type="unfinished"></translation>
+        <translation>Numatytasis aplankas, skirtas jūsų failų viešam bendrinimui</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="74"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Numatytasis aplankas iš kurio yra įkeliami ar į kurį yra įrašomi dokumentai</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="75"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Numatytasis aplankas iš kurio yra įkeliama ar į kurį yra įrašoma muzika</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="76"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Numatytasis aplankas iš kurio yra įkeliami ar į kurį yra įrašomi paveikslai</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Numatytasis aplankas iš kurio yra įkeliami ar į kurį yra įrašomi vaizdo įrašai</translation>
     </message>
 </context>
 </TS>
