@@ -29,6 +29,14 @@ find_package(lxqt REQUIRED)
 # Please don't move, must be after lxqt
 find_package(XdgUserDirs REQUIRED)
 
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
+endif()
+
+set(LXQT_SESSION_PATCH_VERSION 2)
+set(LXQT_SESSION_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_SESSION_PATCH_VERSION})
+add_definitions("-DLXQT_SESSION_VERSION=\"${LXQT_SESSION_VERSION}\"")
+
 include(LXQtCompilerSettings NO_POLICY_SCOPE)
 
 # Translations **********************************
