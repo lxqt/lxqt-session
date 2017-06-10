@@ -44,7 +44,12 @@ int main(int argc, char *argv[])
     LXQt::ScreenSaver screensaver(&a);
 
     QCommandLineParser parser;
-    parser.setApplicationDescription(QStringLiteral("lxqt-leave"));
+    parser.setApplicationDescription(QStringLiteral("LXQt Leave"));
+    const QString VERINFO = QStringLiteral(LXQT_SESSION_VERSION
+                                           "\nliblxqt   " LXQT_VERSION
+                                           "\nQt        " QT_VERSION_STR);
+    a.setApplicationVersion(VERINFO);
+
     parser.addHelpOption();
     parser.addVersionOption();
 
