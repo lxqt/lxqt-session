@@ -39,9 +39,9 @@ int main(int argc, char** argv)
 
     QCommandLineParser parser;
     parser.setApplicationDescription(QStringLiteral("LXQt Config Session"));
-    const QString VERINFO = LXQT_SESSION_VERSION \
-                            "\nliblxqt   " LXQT_VERSION \
-                            "\nQt        " QT_VERSION_STR;
+    const QString VERINFO = QStringLiteral(LXQT_SESSION_VERSION
+                                           "\nliblxqt   " LXQT_VERSION
+                                           "\nQt        " QT_VERSION_STR);
     a.setApplicationVersion(VERINFO);
     parser.addVersionOption();
     parser.addHelpOption();
