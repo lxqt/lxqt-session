@@ -54,7 +54,7 @@
     <message>
         <location filename="../../../autostartmodel.cpp" line="213"/>
         <source>Overrides: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Geçersiz kılınan: %1</translation>
     </message>
 </context>
 <context>
