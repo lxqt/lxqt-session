@@ -96,7 +96,7 @@ public slots:
     gracefully (to kill it if it is not possible). Then the session
     exits - it returns to the kdm/gdm in most cases.
     */
-    void logout();
+    void logout(bool doExit);
 
 signals:
     void moduleStateChanged(QString moduleName, bool state);

@@ -347,7 +347,7 @@ LXQtModuleManager::~LXQtModuleManager()
 /**
 * @brief this logs us out by terminating our session
 **/
-void LXQtModuleManager::logout()
+void LXQtModuleManager::logout(bool doExit)
 {
     // modules
     ModulesMapIterator i(mNameMap);
@@ -377,7 +377,8 @@ void LXQtModuleManager::logout()
         mWmProcess->kill();
     }
 
-    QCoreApplication::exit(0);
+    if (doExit)
+        QCoreApplication::exit(0);
 }
 
 QString LXQtModuleManager::showWmSelectDialog()

@@ -29,6 +29,7 @@
 #define SESSIONDBUS_H
 
 #include <QtDBus>
+#include <LXQt/Power>
 
 #include "lxqtmodman.h"
 
@@ -46,7 +47,8 @@ class SessionDBusAdaptor : public QDBusAbstractAdaptor
 public:
     SessionDBusAdaptor(LXQtModuleManager * manager)
         : QDBusAbstractAdaptor(manager),
-          m_manager(manager)
+          m_manager(manager),
+          m_power(false/*don't use ourself, just all other power providers*/)
     {
         connect(m_manager, SIGNAL(moduleStateChanged(QString,bool)), SIGNAL(moduleStateChanged(QString,bool)));
     }
@@ -63,9 +65,33 @@ public slots:
         return true;
     }
 
+    bool canReboot()
+    {
+        return m_power.canReboot();
+    }
+
+    bool canPowerOff()
+    {
+        return m_power.canShutdown();
+    }
+
     Q_NOREPLY void logout()
     {
-        m_manager->logout();
+        m_manager->logout(true);
+    }
+
+    Q_NOREPLY void reboot()
+    {
+        m_manager->logout(false);
+        m_power.reboot();
+        QCoreApplication::exit(0);
+    }
+
+    Q_NOREPLY void powerOff()
+    {
+        m_manager->logout(false);
+        m_power.shutdown();
+        QCoreApplication::exit(0);
     }
 
     QDBusVariant listModules()
@@ -85,6 +111,7 @@ public slots:
 
 private:
     LXQtModuleManager * m_manager;
+    LXQt::Power m_power;
 };
 
 #endif

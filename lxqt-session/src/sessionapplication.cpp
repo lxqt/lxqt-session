@@ -61,7 +61,7 @@ SessionApplication::SessionApplication(int& argc, char** argv) :
     qputenv("LXQT_SESSION_CONFIG", configName.toLocal8Bit());
 
     modman = new LXQtModuleManager(winmanager);
-    connect(this, &LXQt::Application::unixSignal, modman, &LXQtModuleManager::logout);
+    connect(this, &LXQt::Application::unixSignal, modman, [this] { modman->logout(true); });
     new SessionDBusAdaptor(modman);
     // connect to D-Bus and register as an object:
     QDBusConnection::sessionBus().registerService("org.lxqt.session");
