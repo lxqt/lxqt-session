@@ -26,6 +26,7 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include "sessionapplication.h"
+#include <QCommandLineParser>
 
 /**
 * @file main.cpp
@@ -48,6 +49,16 @@ int main(int argc, char **argv)
 {
     SessionApplication app(argc, argv);
     //qDebug() << "LXQt Session start";
+    QCommandLineParser parser;
+    parser.setApplicationDescription(QStringLiteral("LXQt Notification Daemon"));
+    const QString VERINFO = QStringLiteral(LXQT_NOTIFICATIOND_VERSION
+                                           "\nliblxqt   " LXQT_VERSION
+                                           "\nQt        " QT_VERSION_STR);
+    app.setApplicationVersion(VERINFO);
+    parser.addVersionOption();
+    parser.addHelpOption();
+    parser.process(app);
+
     app.setQuitOnLastWindowClosed(false);
     return app.exec();
 }
