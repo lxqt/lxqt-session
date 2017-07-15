@@ -50,8 +50,8 @@ int main(int argc, char **argv)
     SessionApplication app(argc, argv);
     //qDebug() << "LXQt Session start";
     QCommandLineParser parser;
-    parser.setApplicationDescription(QStringLiteral("LXQt Notification Daemon"));
-    const QString VERINFO = QStringLiteral(LXQT_NOTIFICATIOND_VERSION
+    parser.setApplicationDescription(QStringLiteral("LXQt Session"));
+    const QString VERINFO = QStringLiteral(LXQT_SESSION_VERSION
                                            "\nliblxqt   " LXQT_VERSION
                                            "\nQt        " QT_VERSION_STR);
     app.setApplicationVersion(VERINFO);
