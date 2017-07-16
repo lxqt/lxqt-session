@@ -29,7 +29,7 @@
     <message>
         <location filename="../../../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Jūs tai galėsite pakeisti bet kuriuo metu per Nuostatos -&gt; Seanso nustatymai -&gt; Pagrindiniai nustatymai. </translation>
+        <translation>Jūs tai galėsite pakeisti bet kuriuo metu per Nuostatos -&gt; Seanso nustatymai -&gt; Pagrindiniai nustatymai.</translation>
     </message>
     <message>
         <location filename="../../../src/wmselectdialog.cpp" line="62"/>
