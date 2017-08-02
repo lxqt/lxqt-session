@@ -123,7 +123,12 @@
         <translation>Stop</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="137"/>
+        <location filename="../../../basicsettings.ui" line="124"/>
+        <source>Lock screen before suspending/hibernating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../basicsettings.cpp" line="146"/>
         <source>Select a window manager</source>
         <translation>Kies een vensterbeheerder</translation>
     </message>
@@ -325,7 +330,7 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="67"/>
         <source>Videos</source>
-        <translation>Video's</translation>
+        <translation>Video&apos;s</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="70"/>
@@ -365,7 +370,7 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>Standaardmap voor video's</translation>
+        <translation>Standaardmap voor video&apos;s</translation>
     </message>
 </context>
 </TS>

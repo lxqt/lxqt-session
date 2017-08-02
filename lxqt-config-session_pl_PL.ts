@@ -118,6 +118,11 @@
         <translation>Pytaj o potwierdzenie przed opuszczeniem sesji</translation>
     </message>
     <message>
+        <location filename="../../../basicsettings.ui" line="124"/>
+        <source>Lock screen before suspending/hibernating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
         <translation>Ogólne</translation>
@@ -133,7 +138,7 @@
         <translation>Stop</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="137"/>
+        <location filename="../../../basicsettings.cpp" line="146"/>
         <source>Select a window manager</source>
         <translation>Wybierz menedżer okien</translation>
     </message>

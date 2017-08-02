@@ -118,8 +118,13 @@
         <translation>Pedir confirmação antes de sair da sessão</translation>
     </message>
     <message>
+        <location filename="../../../basicsettings.ui" line="124"/>
+        <source>Lock screen before suspending/hibernating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Ask confirmation to leave session</source>
-        <translation>Confirmar ao sair da sessão</translation>
+        <translation type="vanished">Confirmar ao sair da sessão</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="23"/>
@@ -137,7 +142,7 @@
         <translation>Parar</translation>
     </message>
     <message>
-        <location filename="../../../basicsettings.cpp" line="137"/>
+        <location filename="../../../basicsettings.cpp" line="146"/>
         <source>Select a window manager</source>
         <translation>Escolha um gestor de janelas</translation>
     </message>
@@ -219,7 +224,7 @@
     <name>SessionConfigWindow</name>
     <message>
         <source>LXQt Session Configuration</source>
-        <translation>Configuração da sessão LXQt</translation>
+        <translation type="vanished">Configuração da sessão LXQt</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="44"/>
@@ -263,7 +268,7 @@
     </message>
     <message>
         <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation>Tem que reiniciar a sessão (lxqt-session) para carregar as novas definições. Utilize &quot;Terminar sessão&quot; no menu principal.</translation>
+        <translation type="vanished">Tem que reiniciar a sessão (lxqt-session) para carregar as novas definições. Utilize &quot;Terminar sessão&quot; no menu principal.</translation>
     </message>
 </context>
 <context>
