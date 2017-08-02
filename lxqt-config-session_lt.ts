@@ -135,7 +135,7 @@
     <message>
         <location filename="../../../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation type="unfinished"></translation>
+        <translation>Užrakinti ekraną prieš pristabdant/užmigdant</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="146"/>
