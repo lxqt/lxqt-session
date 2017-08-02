@@ -12,12 +12,12 @@
         <translation type="vanished">Програма &quot;%1&quot; зазнала краху забагато разів, тож для цього сеансу її автоматичний перезапуск вимкнено.</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="302"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="305"/>
         <source>Crash Report</source>
         <translation>Звіт про крах</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="303"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="306"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; зазнало краху забагато разів. Його авторестарт буде виключено до наступного входу.</translation>
     </message>

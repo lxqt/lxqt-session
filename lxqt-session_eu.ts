@@ -12,12 +12,12 @@
         <translation type="vanished">&apos;%1&apos; aplikazioa gehiegitan kraskatu da. Bere berrabio-automatikoa desgaitu da uneko saiorako.</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="302"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="305"/>
         <source>Crash Report</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="303"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="306"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation type="unfinished"></translation>
     </message>

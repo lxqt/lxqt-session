@@ -12,12 +12,12 @@
         <translation type="vanished">&apos;%1&apos; uygulaması çok kere çöktü. Geçerli oturum için bu uygulamanın kendiliğinden yeniden başlatma işlevi devre dışı bırakıldı.</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="302"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="305"/>
         <source>Crash Report</source>
         <translation>Çökme Raporu</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="303"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="306"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; birçok kez çöktü. Oturum yeniden başatılıncaya kadar etkisizleştirildi.</translation>
     </message>

@@ -12,12 +12,12 @@
         <translation type="vanished">Aplikacja &apos;%1&apos; uległa awarii zbyt wiele razy. Automatyczne uruchamianie aplikacji zostało wyłączone w bieżącej sesji.</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="302"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="305"/>
         <source>Crash Report</source>
         <translation>Zgłaszanie błędów</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="303"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="306"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; przestawało działać wiele razy. Przestanie być uruchamiane ponownie do następnego logowania.</translation>
     </message>

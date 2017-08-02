@@ -5,19 +5,19 @@
     <name>LXQtModuleManager</name>
     <message>
         <source>LXQt Session Crash Report</source>
-        <translation>Αναφορά κατάρρευσης συνεδρίας LXQt</translation>
+        <translation type="vanished">Αναφορά κατάρρευσης συνεδρίας LXQt</translation>
     </message>
     <message>
         <source>Application &apos;%1&apos; crashed too many times. Its autorestart has been disabled for current session.</source>
-        <translation>Η εφαρμογή «%1» κατέρρευσε πολλές φορές. Η αυτόματη εκκίνησή της έχει απενεργοποιηθεί για την τρέχουσα συνεδρία.</translation>
+        <translation type="vanished">Η εφαρμογή «%1» κατέρρευσε πολλές φορές. Η αυτόματη εκκίνησή της έχει απενεργοποιηθεί για την τρέχουσα συνεδρία.</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="302"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="305"/>
         <source>Crash Report</source>
         <translation>Αναφορά κατάρρευσης</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="303"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="306"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>Το &lt;b&gt;%1&lt;/b&gt; κατέρρευσε πάρα πολλές φορές. Η επανεκκίνησή του απενεργοποιήθηκε μέχρι την επόμενη σύνδεση.</translation>
     </message>
@@ -33,13 +33,13 @@
         <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
 &lt;p&gt;
 Before starting to use the LXQt, you might want to select the Windows Manager:</source>
-        <translation>&lt;b&gt;Καλώς ήλθατε στο LXQt&lt;/b&gt;
+        <translation type="vanished">&lt;b&gt;Καλώς ήλθατε στο LXQt&lt;/b&gt;
 &lt;p&gt;
 Πριν ξεκινήσετε να χρησιμοποιείτε το LXQt, ίσως θέλετε να επιλέξετε τον διαχειριστή παραθύρων:</translation>
     </message>
     <message>
         <source>You can change the Window Manager later at any time via LXQt Session Configurator.</source>
-        <translation>Μπορείτε να αλλάξετε τον διαχειριστή παραθύρων αργότερα μέσω της διαμόρφωσης συνεδρίας LXQt.</translation>
+        <translation type="vanished">Μπορείτε να αλλάξετε τον διαχειριστή παραθύρων αργότερα μέσω της διαμόρφωσης συνεδρίας LXQt.</translation>
     </message>
     <message>
         <location filename="../../../src/wmselectdialog.cpp" line="62"/>

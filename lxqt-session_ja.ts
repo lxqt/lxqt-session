@@ -12,12 +12,12 @@
         <translation type="vanished">アプリケーション&apos;%1&apos;はクラッシュしすぎました。現在のセッションにおける自動起動は無効化されました。</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="302"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="305"/>
         <source>Crash Report</source>
         <translation>クラッシュリポート</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="303"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="306"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt;はクラッシュしすぎました。次回ログイン時に自動起動は無効化されます。</translation>
     </message>

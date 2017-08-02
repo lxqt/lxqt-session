@@ -12,12 +12,12 @@
         <translation type="vanished">L&apos;applicazione &apos;%1&apos; si è chiusa per errore troppe volte. Il suo riavvio automatico è stato disattivato per l&apos;attuale sessione.</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="302"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="305"/>
         <source>Crash Report</source>
         <translation>Rapporto di crash</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="303"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="306"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; è andato in crash troppe volte. Il suo avvio automatico è stato disabilitato fino al prossimo accesso.</translation>
     </message>
