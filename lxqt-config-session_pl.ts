@@ -16,7 +16,7 @@
     <message>
         <location filename="../../../autostartedit.ui" line="27"/>
         <source>Search...</source>
-        <translation>Szukaj...</translation>
+        <translation>Szukaj…</translation>
     </message>
     <message>
         <location filename="../../../autostartedit.ui" line="47"/>
@@ -26,7 +26,7 @@
     <message>
         <location filename="../../../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>Czekaj na systemowy tray</translation>
+        <translation>Czekaj na zasobnik systemowy</translation>
     </message>
     <message>
         <location filename="../../../autostartedit.cpp" line="59"/>
@@ -100,7 +100,7 @@
     <message>
         <location filename="../../../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation>Szukaj...</translation>
+        <translation>Szukaj…</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="59"/>
