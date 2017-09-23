@@ -120,7 +120,7 @@
     <message>
         <location filename="../../../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation type="unfinished"></translation>
+        <translation>Lås skærm inden hvile/dvale</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="23"/>
