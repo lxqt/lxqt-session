@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="cs">
+<TS version="2.1" language="cs">
 <context>
     <name>AutoStartEdit</name>
     <message>
@@ -220,7 +220,7 @@
     <name>SessionConfigWindow</name>
     <message>
         <source>LXQt Session Configuration</source>
-        <translation>Nastavení sezení</translation>
+        <translation type="vanished">Nastavení sezení</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="44"/>
@@ -265,7 +265,7 @@
     </message>
     <message>
         <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
-        <translation>Je třeba spustit sezení plochy znovu (lxqt-session) pro znovunahrání nastavení. Použijte odhlášení v hlavní nabídce.</translation>
+        <translation type="vanished">Je třeba spustit sezení plochy znovu (lxqt-session) pro znovunahrání nastavení. Použijte odhlášení v hlavní nabídce.</translation>
     </message>
 </context>
 <context>
