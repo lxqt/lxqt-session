@@ -72,8 +72,11 @@ class LXQtModuleManager : public QObject, public QAbstractNativeEventFilter
 
 public:
     //! \brief Construct LXQtModuleManager
-    LXQtModuleManager(const QString& windowManager, QObject* parent = 0);
+    LXQtModuleManager(QObject* parent = 0);
     virtual ~LXQtModuleManager();
+
+    //! \brief Set the window manager (e.g. "/usr/bin/openbox")
+    void setWindowManager(const QString & windowManager);
 
     //! \brief Start a module given its file name (e.g. "lxqt-panel.desktop")
     void startProcess(const QString& name);

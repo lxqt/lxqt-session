@@ -57,9 +57,8 @@ using namespace LXQt;
 /**
  * @brief the constructor, needs a valid modules.conf
  */
-LXQtModuleManager::LXQtModuleManager(const QString & windowManager, QObject* parent)
+LXQtModuleManager::LXQtModuleManager(QObject* parent)
     : QObject(parent),
-      mWindowManager(windowManager),
       mWmProcess(new QProcess(this)),
       mThemeWatcher(new QFileSystemWatcher(this)),
       mWmStarted(false),
@@ -70,6 +69,11 @@ LXQtModuleManager::LXQtModuleManager(const QString & windowManager, QObject* par
     connect(LXQt::Settings::globalSettings(), SIGNAL(lxqtThemeChanged()), SLOT(themeChanged()));
 
     qApp->installNativeEventFilter(this);
+}
+
+void LXQtModuleManager::setWindowManager(const QString & windowManager)
+{
+    mWindowManager = windowManager;
 }
 
 void LXQtModuleManager::startup(LXQt::Settings& s)

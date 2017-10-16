@@ -34,6 +34,7 @@
 
 LockScreenManager::LockScreenManager(QObject *parent) :
     QObject(parent)
+    , mProvider{nullptr}
 {
 }
 

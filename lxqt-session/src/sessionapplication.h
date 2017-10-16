@@ -32,6 +32,8 @@ class SessionApplication : public LXQt::Application
 public:
     SessionApplication(int& argc, char** argv);
     ~SessionApplication();
+    void setWindowManager(const QString & windowManager);
+    void setConfigName(const QString & configName);
 
 private Q_SLOTS:
     bool startup();
