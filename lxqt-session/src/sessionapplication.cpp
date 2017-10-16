@@ -38,29 +38,8 @@ SessionApplication::SessionApplication(int& argc, char** argv) :
     lockScreenManager(new LockScreenManager(this))
 {
     listenToUnixSignals({SIGINT, SIGTERM, SIGQUIT, SIGHUP});
-    char* winmanager = NULL;
-    int c;
-    while ((c = getopt (argc, argv, "c:w:")) != -1)
-    {
-        if (c == 'c')
-        {
-            configName = optarg;
-            break;
-        }
-        else if (c == 'w')
-        {
-            winmanager = optarg;
-            break;
-        }
-    }
 
-    if(configName.isEmpty())
-      configName = "session";
-
-    // tell the world which config file we're using.
-    qputenv("LXQT_SESSION_CONFIG", configName.toLocal8Bit());
-
-    modman = new LXQtModuleManager(winmanager);
+    modman = new LXQtModuleManager;
     connect(this, &LXQt::Application::unixSignal, modman, [this] { modman->logout(true); });
     new SessionDBusAdaptor(modman);
     // connect to D-Bus and register as an object:
@@ -74,6 +53,20 @@ SessionApplication::SessionApplication(int& argc, char** argv) :
 SessionApplication::~SessionApplication()
 {
     delete modman;
+}
+
+void SessionApplication::setWindowManager(const QString& windowManager)
+{
+    modman->setWindowManager(windowManager);
+}
+
+void SessionApplication::setConfigName(const QString& configName)
+{
+    if(configName.isEmpty())
+      this->configName = "session";
+
+    // tell the world which config file we're using.
+    qputenv("LXQT_SESSION_CONFIG", this->configName.toLocal8Bit());
 }
 
 bool SessionApplication::startup()
