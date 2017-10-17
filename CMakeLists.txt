@@ -17,7 +17,7 @@ option(WITH_LIBUDEV "Build with libudev support" ON)
 find_package(X11 REQUIRED)
 
 find_package(Qt5DBus REQUIRED)
-find_package(Qt5LinguistTools REQUIRED QUIET)
+find_package(Qt5LinguistTools REQUIRED)
 find_package(Qt5Widgets REQUIRED)
 find_package(Qt5X11Extras REQUIRED)
 message(STATUS "Building with Qt${Qt5Core_VERSION}")
@@ -33,7 +33,9 @@ if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
 
-set(LXQT_SESSION_PATCH_VERSION 2)
+# Patch Version
+set(LXQT_SESSION_PATCH_VERSION 0)
+
 set(LXQT_SESSION_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_SESSION_PATCH_VERSION})
 add_definitions("-DLXQT_SESSION_VERSION=\"${LXQT_SESSION_VERSION}\"")
 
