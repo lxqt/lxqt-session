@@ -12,14 +12,33 @@
         <translation type="vanished">Η εφαρμογή «%1» κατέρρευσε πολλές φορές. Η αυτόματη εκκίνησή της έχει απενεργοποιηθεί για την τρέχουσα συνεδρία.</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="305"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="309"/>
         <source>Crash Report</source>
         <translation>Αναφορά κατάρρευσης</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="306"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="310"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>Το &lt;b&gt;%1&lt;/b&gt; κατέρρευσε πάρα πολλές φορές. Η επανεκκίνησή του απενεργοποιήθηκε μέχρι την επόμενη σύνδεση.</translation>
+    </message>
+</context>
+<context>
+    <name>SessionApplication</name>
+    <message>
+        <location filename="../../../src/main.cpp" line="58"/>
+        <source>Configuration file path.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/main.cpp" line="58"/>
+        <location filename="../../../src/main.cpp" line="59"/>
+        <source>file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/main.cpp" line="59"/>
+        <source>Window manager to use.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

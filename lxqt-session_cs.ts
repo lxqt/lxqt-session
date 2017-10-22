@@ -12,14 +12,33 @@
         <translation type="vanished">Program &apos;%1&apos; spadl příliš mnohokrát. Jeho automatické spuštění bylo pro nynější sezení zakázáno.</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="305"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="309"/>
         <source>Crash Report</source>
         <translation>Zpráva o pádu</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="306"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="310"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; spadl příliš mockrát. Automatické znovuspuštění bylo zakázáno až do příštího přihlášení.</translation>
+    </message>
+</context>
+<context>
+    <name>SessionApplication</name>
+    <message>
+        <location filename="../../../src/main.cpp" line="58"/>
+        <source>Configuration file path.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/main.cpp" line="58"/>
+        <location filename="../../../src/main.cpp" line="59"/>
+        <source>file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/main.cpp" line="59"/>
+        <source>Window manager to use.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

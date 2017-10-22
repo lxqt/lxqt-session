@@ -12,14 +12,33 @@
         <translation type="vanished">Програма &quot;%1&quot; зазнала краху забагато разів, тож для цього сеансу її автоматичний перезапуск вимкнено.</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="305"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="309"/>
         <source>Crash Report</source>
         <translation>Звіт про крах</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="306"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="310"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; зазнало краху забагато разів. Його авторестарт буде виключено до наступного входу.</translation>
+    </message>
+</context>
+<context>
+    <name>SessionApplication</name>
+    <message>
+        <location filename="../../../src/main.cpp" line="58"/>
+        <source>Configuration file path.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/main.cpp" line="58"/>
+        <location filename="../../../src/main.cpp" line="59"/>
+        <source>file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/main.cpp" line="59"/>
+        <source>Window manager to use.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

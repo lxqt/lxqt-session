@@ -12,14 +12,33 @@
         <translation type="vanished">A aplicação &apos;%1&apos; terminou muitas vezes. O seu arranque automático foi desativado nesta sessão.</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="305"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="309"/>
         <source>Crash Report</source>
         <translation>Relatório de erros</translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="306"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="310"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; terminou muitas vezes. O seu arranque automático foi desativado até à próxima sessão.</translation>
+    </message>
+</context>
+<context>
+    <name>SessionApplication</name>
+    <message>
+        <location filename="../../../src/main.cpp" line="58"/>
+        <source>Configuration file path.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/main.cpp" line="58"/>
+        <location filename="../../../src/main.cpp" line="59"/>
+        <source>file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/main.cpp" line="59"/>
+        <source>Window manager to use.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

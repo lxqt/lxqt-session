@@ -38,12 +38,12 @@
 <context>
     <name>LXQtModuleManager</name>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="305"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="309"/>
         <source>Crash Report</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../src/lxqtmodman.cpp" line="306"/>
+        <location filename="../../../src/lxqtmodman.cpp" line="310"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -81,6 +81,25 @@
     <message>
         <source>Sawfish - a lightweight, flexible window manager</source>
         <translation type="vanished">Софиш - лагани, прилагодиви менаџер прозора</translation>
+    </message>
+</context>
+<context>
+    <name>SessionApplication</name>
+    <message>
+        <location filename="../../../src/main.cpp" line="58"/>
+        <source>Configuration file path.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/main.cpp" line="58"/>
+        <location filename="../../../src/main.cpp" line="59"/>
+        <source>file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/main.cpp" line="59"/>
+        <source>Window manager to use.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
