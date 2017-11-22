@@ -24,7 +24,7 @@ fi
 export XDG_DATA_DIRS
 
 if [ -z "$XDG_CONFIG_DIRS" ]; then
-    export XDG_CONFIG_DIRS="@LXQT_ETC_XDG_DIR@"
+    export XDG_CONFIG_DIRS="@PREDEF_XDG_CONFIG_DIRS@"
 else
     if ! contains "$XDG_CONFIG_DIRS" '@LXQT_ETC_XDG_DIR@'; then
         XDG_CONFIG_DIRS="$XDG_CONFIG_DIRS:@LXQT_ETC_XDG_DIR@"
