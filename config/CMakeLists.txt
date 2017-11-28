@@ -3,7 +3,7 @@ install(FILES
     lxqt.conf
     session.conf
     windowmanagers.conf
-    DESTINATION "${LXQT_ETC_XDG_DIR}/lxqt"
+    DESTINATION "${CMAKE_INSTALL_DATADIR}/lxqt"
     COMPONENT Runtime
 )
 install(DIRECTORY openbox
