@@ -135,7 +135,7 @@
     <message>
         <location filename="../../../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation type="unfinished"></translation>
+        <translation>Készenlét/mélykészenlét előtt képernyőzár</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.cpp" line="146"/>
@@ -240,7 +240,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="56"/>
         <source>User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Felhasználói mappák</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="62"/>
@@ -277,7 +277,7 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt munkamenet beállítás- Felhasználói mappák</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="180"/>
@@ -335,42 +335,42 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="70"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Az aszatalon látni kívánt összes fájlt tartalmazza</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="71"/>
         <source>Default folder to save your downloaded files</source>
-        <translation type="unfinished"></translation>
+        <translation>A letöltendő fájlok alapértelmezett mappája</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="72"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Az ideiglenes fájlok alapértelmezett mappája</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="73"/>
         <source>Default folder to publicly share your files</source>
-        <translation type="unfinished"></translation>
+        <translation>A nyilvánossá teendő fájlok mappája</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="74"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>A dokumentumok alapértelmezett mappája</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="75"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>A zenék alapértelmezett mappája</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="76"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>A képek alapértelmezett mappája</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>A videók alapértelmezett mappája</translation>
     </message>
 </context>
 </TS>
