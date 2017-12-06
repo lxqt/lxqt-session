@@ -10,7 +10,7 @@
     <message>
         <location filename="../../../leavedialog.ui" line="20"/>
         <source>Leave</source>
-        <translation type="unfinished"></translation>
+        <translation>Kilépés</translation>
     </message>
     <message>
         <location filename="../../../leavedialog.ui" line="71"/>
@@ -40,7 +40,7 @@
     <message>
         <location filename="../../../leavedialog.cpp" line="66"/>
         <source>Lock screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Képzár</translation>
     </message>
     <message>
         <location filename="../../../leavedialog.cpp" line="74"/>
