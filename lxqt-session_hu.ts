@@ -11,7 +11,7 @@
     <message>
         <location filename="../../../src/lxqtmodman.cpp" line="310"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>A &lt;b&gt;%1&lt;/b&gt; gyorsan többször összeomlott. Az autorestart a következő bejeltkezésig letiltva.</translation>
+        <translation>A &lt;b&gt;%1&lt;/b&gt; gyorsan többször összeomlott. Az autorestart a következő bejelentkezésig letiltva.</translation>
     </message>
 </context>
 <context>
@@ -19,18 +19,18 @@
     <message>
         <location filename="../../../src/main.cpp" line="58"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurációs fájl útvonal.</translation>
     </message>
     <message>
         <location filename="../../../src/main.cpp" line="58"/>
         <location filename="../../../src/main.cpp" line="59"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>fájl</translation>
     </message>
     <message>
         <location filename="../../../src/main.cpp" line="59"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Használandó ablakkezelő.</translation>
     </message>
 </context>
 <context>
