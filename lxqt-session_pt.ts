@@ -27,18 +27,18 @@
     <message>
         <location filename="../../../src/main.cpp" line="58"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>Caminho do ficheiro de configuração.</translation>
     </message>
     <message>
         <location filename="../../../src/main.cpp" line="58"/>
         <location filename="../../../src/main.cpp" line="59"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>ficheiro</translation>
     </message>
     <message>
         <location filename="../../../src/main.cpp" line="59"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestor de janelas a utilizar.</translation>
     </message>
 </context>
 <context>
