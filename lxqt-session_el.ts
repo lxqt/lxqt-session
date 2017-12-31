@@ -27,18 +27,18 @@
     <message>
         <location filename="../../../src/main.cpp" line="58"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαδρομή του αρχείου διαμόρφωσης.</translation>
     </message>
     <message>
         <location filename="../../../src/main.cpp" line="58"/>
         <location filename="../../../src/main.cpp" line="59"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>αρχείο</translation>
     </message>
     <message>
         <location filename="../../../src/main.cpp" line="59"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαχειριστής παραθύρων προς χρήση.</translation>
     </message>
 </context>
 <context>
