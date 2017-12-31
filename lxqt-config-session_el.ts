@@ -120,7 +120,7 @@
     <message>
         <location filename="../../../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλείδωμα της οθόνης πριν την αναστολή/νάρκη</translation>
     </message>
     <message>
         <source>Ask confirmation to leave session</source>
@@ -264,7 +264,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="95"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation>Μερικές ρυθμίσεις λαμβάνουν χώρα από επανασύνδεση.</translation>
+        <translation>Μερικές ρυθμίσεις λαμβάνουν χώρα μετά από επανασύνδεση.</translation>
     </message>
     <message>
         <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
