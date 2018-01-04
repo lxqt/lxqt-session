@@ -14,12 +14,12 @@
     <message>
         <location filename="../../../src/lxqtmodman.cpp" line="309"/>
         <source>Crash Report</source>
-        <translation type="unfinished"></translation>
+        <translation>崩溃报告</translation>
     </message>
     <message>
         <location filename="../../../src/lxqtmodman.cpp" line="310"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; 多次崩溃，直至下一次登录前都不会再自动重新启动该程序。</translation>
     </message>
 </context>
 <context>
@@ -27,18 +27,18 @@
     <message>
         <location filename="../../../src/main.cpp" line="58"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>配置文件路径。</translation>
     </message>
     <message>
         <location filename="../../../src/main.cpp" line="58"/>
         <location filename="../../../src/main.cpp" line="59"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>文件</translation>
     </message>
     <message>
         <location filename="../../../src/main.cpp" line="59"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>要使用的窗口管理器。</translation>
     </message>
 </context>
 <context>
@@ -46,7 +46,7 @@
     <message>
         <location filename="../../../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation>欢迎来到 LXQt</translation>
+        <translation>欢迎使用 LXQt</translation>
     </message>
     <message>
         <source>&lt;b&gt;Welcome to LXQt&lt;/b&gt;
@@ -68,17 +68,17 @@ Before starting to use the LXQt, you might want to select the Windows Manager:</
     <message>
         <location filename="../../../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
-        <translation>选择最喜欢的。</translation>
+        <translation>选择您最喜欢的一个。</translation>
     </message>
     <message>
         <location filename="../../../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;欢迎使用 LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;请选择您的默认窗口管理器。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>您可以随时在 首选项 -&gt; 会话配置 -&gt; 基本设置 中更改此设置。</translation>
     </message>
 </context>
 </TS>
