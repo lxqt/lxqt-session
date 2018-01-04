@@ -58,7 +58,7 @@ void ModuleModel::reset()
 
     QDBusReply<QVariant> reply = mInterface->call("listModules");
     const QStringList moduleList = reply.value().toStringList();
-    foreach (const QString& moduleName, moduleList)
+    for (const QString& moduleName : moduleList)
     {
         if (mItemMap.contains(moduleName))
             mStateMap[moduleName] = true;
@@ -110,7 +110,7 @@ QMap<QString, AutostartItem> ModuleModel::items()
 {
     QMap<QString, AutostartItem> allItems;
 
-    foreach(const QString &s, mKeyList)
+    for(const QString &s : qAsConst(mKeyList))
         allItems[s] = mItemMap.value(s);
 
     return allItems;
@@ -124,7 +124,7 @@ int ModuleModel::rowCount(const QModelIndex& parent) const
 
 void ModuleModel::writeChanges()
 {
-    foreach (const QString& key, mKeyList)
+    for (const QString& key :  qAsConst(mKeyList))
         mItemMap[key].commit();
 }
 

@@ -54,7 +54,8 @@ void EnvironmentPage::restoreSettings()
     m_settings->beginGroup("Environment");
     QString value;
     ui->treeWidget->clear();
-    foreach (const QString& i, m_settings->childKeys())
+    const auto keys = m_settings->childKeys();
+    for (const QString& i : keys)
     {
         value = m_settings->value(i).toString();
         QTreeWidgetItem *item = new QTreeWidgetItem(ui->treeWidget, QStringList() << i << value);
@@ -81,7 +82,8 @@ void EnvironmentPage::save()
     /* We erase the Enviroment group and them write the Ui settings. To know if
        they changed or not we need to save them to memory.
      */
-    foreach (const QString &key, m_settings->childKeys())
+    const auto keys = m_settings->childKeys();
+    for (const QString &key : keys)
         oldSettings[key] = m_settings->value(key, QString()).toString();
     m_settings->remove("");
 
@@ -116,7 +118,8 @@ void EnvironmentPage::addButton_clicked()
 
 void EnvironmentPage::deleteButton_clicked()
 {
-    foreach (QTreeWidgetItem* item, ui->treeWidget->selectedItems())
+    const auto items = ui->treeWidget->selectedItems();
+    for (QTreeWidgetItem* item : items)
     {
         emit envVarChanged(item->text(0), "");
         delete item;
@@ -131,7 +134,7 @@ void EnvironmentPage::itemChanged(QTreeWidgetItem *item, int column)
 
 void EnvironmentPage::updateItem(const QString& var, const QString& val)
 {
-    QList<QTreeWidgetItem*> itemList = ui->treeWidget->findItems(var, Qt::MatchExactly);
+    const QList<QTreeWidgetItem*> itemList = ui->treeWidget->findItems(var, Qt::MatchExactly);
     if (itemList.isEmpty())
     {
         QTreeWidgetItem *item = new QTreeWidgetItem(ui->treeWidget, QStringList() << var << val);
@@ -140,7 +143,7 @@ void EnvironmentPage::updateItem(const QString& var, const QString& val)
         return;
     }
 
-    foreach (QTreeWidgetItem* item, itemList)
+    for (QTreeWidgetItem* item : itemList)
     {
         if (!val.isEmpty())
             item->setText(1, val);

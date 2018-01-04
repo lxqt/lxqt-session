@@ -90,7 +90,7 @@ void LXQtModuleManager::startup(LXQt::Settings& s)
     paths << XdgDirs::dataHome(false);
     paths << XdgDirs::dataDirs();
 
-    foreach(const QString &path, paths)
+    for(const QString &path : qAsConst(paths))
     {
         QFileInfo fi(QString("%1/lxqt/themes").arg(path));
         if (fi.exists())
@@ -128,7 +128,7 @@ void LXQtModuleManager::startAutostartApps()
             waitLoop.exec();
             mWaitLoop = NULL;
         }
-        foreach (XdgDesktopFile* f, trayApps)
+        for (XdgDesktopFile* const f : qAsConst(trayApps))
         {
             qCDebug(SESSION) << "start tray app" << f->fileName();
             startProcess(*f);
@@ -251,7 +251,8 @@ void LXQtModuleManager::startProcess(const QString& name)
 {
     if (!mNameMap.contains(name))
     {
-        foreach (const XdgDesktopFile& file, XdgAutoStart::desktopFileList(false))
+        const auto files = XdgAutoStart::desktopFileList(false);
+        for (const XdgDesktopFile& file : files)
         {
             if (QFileInfo(file.fileName()).fileName() == name)
             {

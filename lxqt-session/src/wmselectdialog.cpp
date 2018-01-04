@@ -52,7 +52,7 @@ WmSelectDialog::WmSelectDialog(const WindowManagerList &availableWindowManagers,
     connect(ui->wmList, SIGNAL(clicked(QModelIndex)), this, SLOT(selectFileDialog(QModelIndex)));
     connect(ui->wmList, SIGNAL(activated(QModelIndex)), this, SLOT(changeBtnStatus(QModelIndex)));
 
-    foreach (const WindowManager &wm, availableWindowManagers)
+    for (const WindowManager &wm : availableWindowManagers)
     {
         addWindowManager(wm);
     }
