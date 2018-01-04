@@ -57,7 +57,7 @@ AutoStartItemModel::~AutoStartItemModel()
  */
 bool AutoStartItemModel::writeChanges()
 {
-    foreach (AutostartItem item, mItemMap.values())
+    for(AutostartItem& item : mItemMap)
         item.commit();
     return true;
 }
@@ -66,10 +66,10 @@ QMap<QString, AutostartItem> AutoStartItemModel::items()
 {
     QMap<QString, AutostartItem> allItems;
 
-    foreach(const QString &s, mLXQtItems)
+    for(const QString &s : qAsConst(mLXQtItems))
         allItems[s] = mItemMap.value(s);
 
-    foreach(const QString &s, mGlobalItems)
+    for(const QString &s : qAsConst(mGlobalItems))
         allItems[s] = mItemMap.value(s);
 
     return allItems;

@@ -103,7 +103,7 @@ void SessionConfigWindow::handleCfgComboBox(QComboBox * cb,
                                            )
 {
     QStringList realValues;
-    foreach (const QString &s, availableValues)
+    for (const QString &s : availableValues)
     {
         if (findProgram(s))
             realValues << s;

@@ -42,7 +42,8 @@ bool findProgram(const QString &program)
         return true;
 
     QString path = qgetenv("PATH");
-    foreach(const QString &dir, path.split(":"))
+    const auto paths = path.split(":");
+    for(const QString &dir : paths)
     {
         QFileInfo fi= QFileInfo(dir + QDir::separator() + program);
         if (fi.isExecutable() )
@@ -55,11 +56,11 @@ WindowManagerList getWindowManagerList(bool onlyAvailable)
 {
     LXQt::Settings cfg("windowmanagers");
     cfg.beginGroup("KnownManagers");
-    QStringList names = cfg.childGroups();
+    const QStringList names = cfg.childGroups();
 
     WindowManagerList ret;
 
-    foreach (const QString &name,  names)
+    for (const QString &name : names)
     {
         bool exists = findProgram(name);
         if (!onlyAvailable || exists)

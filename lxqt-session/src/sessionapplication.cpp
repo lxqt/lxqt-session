@@ -125,7 +125,8 @@ void SessionApplication::loadEnvironmentSettings(LXQt::Settings& settings)
     // first - set some user defined environment variables (like TERM...)
     settings.beginGroup("Environment");
     QByteArray envVal;
-    Q_FOREACH (QString i, settings.childKeys())
+    const QStringList keys = settings.childKeys();
+    for(const QString& i : keys)
     {
         envVal = settings.value(i).toByteArray();
         lxqt_setenv(i.toLocal8Bit().constData(), envVal);
@@ -150,7 +151,7 @@ void SessionApplication::setxkbmap(QString layout, QString variant, QString mode
     }
   }
   if(!options.isEmpty()) {
-    Q_FOREACH(const QString& option, options) {
+    for(const QString& option : qAsConst(options)) {
       args << QStringLiteral("-option");
       args << option;
     }

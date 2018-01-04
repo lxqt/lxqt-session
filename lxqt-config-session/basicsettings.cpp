@@ -62,7 +62,8 @@ BasicSettings::~BasicSettings()
 void BasicSettings::restoreSettings()
 {
     QStringList knownWMs;
-    foreach (const WindowManager &wm, getWindowManagerList(true))
+    const auto wmList = getWindowManagerList(true);
+    for (const WindowManager &wm : wmList)
     {
         knownWMs << wm.command;
     }
