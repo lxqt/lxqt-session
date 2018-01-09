@@ -139,7 +139,7 @@ void LXQtModuleManager::startAutostartApps()
 void LXQtModuleManager::themeFolderChanged(const QString& /*path*/)
 {
     QString newTheme;
-    if (!QFileInfo(mCurrentThemePath).exists())
+    if (!QFileInfo::exists(mCurrentThemePath))
     {
         const QList<LXQtTheme> &allThemes = lxqtTheme.allThemes();
         if (!allThemes.isEmpty())
