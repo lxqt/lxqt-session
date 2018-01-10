@@ -103,9 +103,9 @@ void LXQtModuleManager::startup(LXQt::Settings& s)
 void LXQtModuleManager::startAutostartApps()
 {
     // XDG autostart
-    XdgDesktopFileList fileList = XdgAutoStart::desktopFileList();
-    QList<XdgDesktopFile*> trayApps;
-    for (XdgDesktopFileList::iterator i = fileList.begin(); i != fileList.end(); ++i)
+    const XdgDesktopFileList fileList = XdgAutoStart::desktopFileList();
+    QList<const XdgDesktopFile*> trayApps;
+    for (XdgDesktopFileList::const_iterator i = fileList.constBegin(); i != fileList.constEnd(); ++i)
     {
         if (i->value("X-LXQt-Need-Tray", false).toBool())
             trayApps.append(&(*i));
@@ -128,7 +128,7 @@ void LXQtModuleManager::startAutostartApps()
             waitLoop.exec();
             mWaitLoop = NULL;
         }
-        for (XdgDesktopFile* const f : qAsConst(trayApps))
+        for (const XdgDesktopFile* const f : qAsConst(trayApps))
         {
             qCDebug(SESSION) << "start tray app" << f->fileName();
             startProcess(*f);
