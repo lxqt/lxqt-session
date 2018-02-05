@@ -195,7 +195,7 @@
     <message>
         <location filename="../../../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
-        <translation>环境变量(高级)</translation>
+        <translation>环境变量（高级）</translation>
     </message>
     <message>
         <location filename="../../../environmentpage.ui" line="61"/>
@@ -250,7 +250,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="68"/>
         <source>Environment (Advanced)</source>
-        <translation>环境(高级)</translation>
+        <translation>环境（高级）</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="94"/>
