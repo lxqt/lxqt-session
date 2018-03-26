@@ -2,7 +2,7 @@
  * (c)LGPL2+
  *
  * LXQt - a lightweight, Qt based, desktop toolset
- * http://razor-qt.org, http://lxde.org/
+ * http://razor-qt.org, http://lxqt.org/
  *
  * Copyright (C) 2011  Alec Moskvin <alecm@gmx.com>
  *

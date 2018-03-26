@@ -103,14 +103,14 @@ lxqt-session-0.12.0 / 2017-10-21
   * Change XDG_CURRENT_DESKTOP to Razor for now. (May rename to LxQt or something else in the future.)
   * Export environment varialbe QT_PLATFORM_PLUGIN=lxqt to let all Qt programs load lxqt-qtplugin and apply lxqt settings.
   * Support lxqt-session and add necessary xdg autostart desktop entry files.
-  * Run lxde-qt with XDG_CURRENT_DESKTOP=RAZOR
+  * Run lxqt with XDG_CURRENT_DESKTOP=RAZOR
   * Fix renaming bugs, replacing lxqt-qt with lxde-qt
   * Finish the crazy razor=>lxqt renaming tasks.
   * Rename dirs and replace razor with lxqt. Install lxqt.conf to /etc/xdg/lxqt and provide theme config.
-  * Properly set default wallpaper for pcmanfm-qt. Comment out openbox config handling in startlxde-qt since it's not needed.
+  * Properly set default wallpaper for pcmanfm-qt. Comment out openbox config handling in startlxqt since it's not needed.
   * Remove custom openbox config file in desktop.conf temporarily until lxsession is fixed.
   * Fix file paths, replacing razor with lxqt. * Remove Alt+F2 and Ctrl+Esc from openbox config file to avoid conflicts with lxqt-panel & lxqt-globalkeys.
-  * Add default configuration files for lxde-qt session.
+  * Add default configuration files for lxqt session.
 
 0.11.1 / 2017-01-01
 ===================
@@ -288,7 +288,7 @@ lxqt-session-0.12.0 / 2017-10-21
 
   * Adapt to the translation infrastructure
   * Add option to disable confirmation dialogs to leave session
-  * Fix incorrect waiting for system tray and fix lxde/lxde-qt bug #38 - Battery icon doesn't show.
+  * Fix incorrect waiting for system tray and fix lxqt/lxqt#38 - Battery icon doesn't show.
   * Cleanup for Qt5 ready includes
   * Fix broken build with Qt4.
   * Simplify qt5 support. * Use cmake 2.8.9 for qt4 and 2.8.11 for qt5.

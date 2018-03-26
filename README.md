@@ -21,8 +21,8 @@ Technically those binaries are basically launched according to the XDG [Autostar
 
 ### Compiling source code
 
-Runtime dependencies are xdg-user-dirs and [liblxqt](https://github.com/lxde/liblxqt).   
-Additional build dependencies are CMake and optionally Git to pull latest VCS checkouts. The localization files were outsourced to repository [lxqt-l10n](https://github.com/lxde/lxqt-l10n) so the corresponding dependencies are needed, too. Please refer to this repository's `README.md` for further information.   
+Runtime dependencies are xdg-user-dirs and [liblxqt](https://github.com/lxqt/liblxqt).   
+Additional build dependencies are CMake and optionally Git to pull latest VCS checkouts. The localization files were outsourced to repository [lxqt-l10n](https://github.com/lxqt/lxqt-l10n) so the corresponding dependencies are needed, too. Please refer to this repository's `README.md` for further information.   
 
 Code configuration is handled by CMake. CMake variable `CMAKE_INSTALL_PREFIX` has to be set to `/usr` on most operating systems.   
 
@@ -45,7 +45,7 @@ A GUI to tweak all kinds of settings affecting the session as a whole.
 
 ![lxqt-config-session](lxqt-config-session.png)
 
-It can be launched from panel's main menu - Preferences - LXQt settings - Session Settings and is provided by "Configuration Center" (binary `lxqt-config`) of [lxqt-config](https://github.com/lxde/lxqt-config) as well.   
+It can be launched from panel's main menu - Preferences - LXQt settings - Session Settings and is provided by "Configuration Center" (binary `lxqt-config`) of [lxqt-config](https://github.com/lxqt/lxqt-config) as well.   
 
 Notes on some settings:
 
@@ -54,8 +54,8 @@ Window Manager, LXQt Modules and some settings upon leaving the session. See scr
 
 #### Default Applications
 Defines a default terminal emulator and web browser by setting environment variables `TERM` and `BROWSER`.   
-The usage of `TERM` is faulty in this context, see [lxqt #433](https://github.com/lxde/lxqt/issues/433). Usage of `BROWSER` is correct but not recognized by too many applications any longer.   
-All in all the configuration of default applications will probably be handled by a different approach one day like improving GUI "File Associations" of [lxqt-config](https://github.com/lxde/lxqt-config) so setting environment variables `TERM` and `BROWSER` with `lxqt-config-session` has actually to be discouraged.   
+The usage of `TERM` is faulty in this context, see [lxqt #433](https://github.com/lxqt/lxqt/issues/433). Usage of `BROWSER` is correct but not recognized by too many applications any longer.   
+All in all the configuration of default applications will probably be handled by a different approach one day like improving GUI "File Associations" of [lxqt-config](https://github.com/lxqt/lxqt-config) so setting environment variables `TERM` and `BROWSER` with `lxqt-config-session` has actually to be discouraged.   
 
 #### User Directories
 This refers to defining directories in terms of the [xdg-user-dirs](https://www.freedesktop.org/wiki/Software/xdg-user-dirs/) concept. This is a specification to define a number of directories used for certain kinds of content like documents, audio or video files and to create those directories in each user's home directory in case they do not preexist.   
