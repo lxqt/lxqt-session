@@ -2,7 +2,7 @@
  * (c)LGPL2+
  *
  * LXQt - a lightweight, Qt based, deskop environment
- * http://razor-qt.org, http://lxqt.org/
+ * https://lxqt.org/
  *
  * Copyright: 2010-2011 LXQt team
  * Authors:

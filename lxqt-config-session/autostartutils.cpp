@@ -1,4 +1,4 @@
-/* This file is part of the LXQt project. <http://lxqt.org>
+/* This file is part of the LXQt project. <https://lxqt.org>
  * Copyright (C) 2015 Luís Pereira <luis.artur.pereira@gmail.com>
  *
  * This library is free software; you can redistribute it and/or
