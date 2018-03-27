@@ -1,9 +1,8 @@
-
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
  * LXQt - a lightweight, Qt based, desktop toolset
- * http://lxqt.org
+ * https://lxqt.org
  *
  * Copyright: 2016 LXQt team
  * Authors:

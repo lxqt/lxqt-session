@@ -2,7 +2,7 @@
  * (c)LGPL2+
  *
  * LXQt - The Lightweight Desktop Environment
- * http://lxqt.org
+ * https://lxqt.org
  *
  * Copyright (C) 2011  Alec Moskvin <alecm@gmx.com>
  *
