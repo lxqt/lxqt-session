@@ -54,7 +54,7 @@
     <message>
         <location filename="../../../autostartmodel.cpp" line="213"/>
         <source>Overrides: %1</source>
-        <translation>Sobreescrito: %1</translation>
+        <translation>Sobrescrito: %1</translation>
     </message>
 </context>
 <context>
@@ -77,7 +77,7 @@
     <message>
         <location filename="../../../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Aplicaciones de inicio automático</translation>
+        <translation>Inicio automático de aplicaciones</translation>
     </message>
     <message>
         <location filename="../../../autostartpage.cpp" line="141"/>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../../../autostartpage.cpp" line="141"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>!Archivo &apos;%1&apos; actualmente existe¡</translation>
+        <translation>¡Ya existe el archivo &apos;%1&apos;!</translation>
     </message>
 </context>
 <context>
@@ -105,22 +105,22 @@
     <message>
         <location filename="../../../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished">Módulos de LXQt</translation>
+        <translation>Módulos de LXQt</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerrar la sesión</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>Pedir confirmación al cerrar la sesión</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloquear la pantalla antes de suspender/hibernar</translation>
     </message>
     <message>
         <location filename="../../../basicsettings.ui" line="23"/>
@@ -225,7 +225,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuración de la sesión de LXQt</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="47"/>
@@ -240,7 +240,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="56"/>
         <source>User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Directorios de usuario</translation>
     </message>
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="62"/>
@@ -260,7 +260,7 @@
     <message>
         <location filename="../../../sessionconfigwindow.cpp" line="95"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Algunos ajustes no tendrán efecto hasta el siguiente inicio de sesión.</translation>
     </message>
     <message>
         <source>You need to restart desktop session (lxqt-session) to reload settings. Use logout from the main menu.</source>
@@ -272,22 +272,22 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="110"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Ubicaciones para los archivos personales</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuración de la sesión de LXQt - Directorios de usuario</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="180"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>Ha ocurrido un error al aplicar la configuración para la ubicación %1</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="196"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Elija una ubicación</translation>
     </message>
 </context>
 <context>
@@ -295,82 +295,82 @@
     <message>
         <location filename="../../../userlocationspage.cpp" line="60"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Escritorio</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="61"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Descargas</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="62"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Plantillas</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="63"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Público</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="64"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Documentos</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="65"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>Música</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="66"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Imágenes</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="67"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Vídeos</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="70"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Contiene todos los archivos que ve en el escritorio</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="71"/>
         <source>Default folder to save your downloaded files</source>
-        <translation type="unfinished"></translation>
+        <translation>Carpeta por omisión donde descargar archivos</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="72"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Carpeta por omisión desde donde cargar o donde guardar plantillas</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="73"/>
         <source>Default folder to publicly share your files</source>
-        <translation type="unfinished"></translation>
+        <translation>Carpeta por omisión para compartir públicamente archivos</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="74"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Carpeta por omisión donde guardar o desde donde cargar documentos</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="75"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Carpeta por omisión desde donde cargar o donde guardar música</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="76"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Carpeta por omisión desde donde cargar o donde guardar imágenes</translation>
     </message>
     <message>
         <location filename="../../../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Carpeta por omision desde donde cargar o donde guardar vídeos</translation>
     </message>
 </context>
 </TS>
