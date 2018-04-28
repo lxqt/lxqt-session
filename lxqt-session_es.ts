@@ -14,12 +14,12 @@
     <message>
         <location filename="../../../src/lxqtmodman.cpp" line="309"/>
         <source>Crash Report</source>
-        <translation type="unfinished"></translation>
+        <translation>Reporte de errores</translation>
     </message>
     <message>
         <location filename="../../../src/lxqtmodman.cpp" line="310"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; ha fallado demasiadas veces. Su reinicio automático se ha inhabilitado hasta el próximo inicio de sesión.</translation>
     </message>
 </context>
 <context>
@@ -27,18 +27,18 @@
     <message>
         <location filename="../../../src/main.cpp" line="58"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ruta del archivo de configuración.</translation>
     </message>
     <message>
         <location filename="../../../src/main.cpp" line="58"/>
         <location filename="../../../src/main.cpp" line="59"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>archivo</translation>
     </message>
     <message>
         <location filename="../../../src/main.cpp" line="59"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Administrador de ventanas a usar.</translation>
     </message>
 </context>
 <context>
@@ -68,17 +68,17 @@ Antes de comenzar a usar LXQt, podría desear seleccionar el gestor de ventanas:
     <message>
         <location filename="../../../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
-        <translation>Seleccione su favorito</translation>
+        <translation>Seleccione su favorito.</translation>
     </message>
     <message>
         <location filename="../../../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Bienvenido a LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Elija el administrador de ventanas por omisión.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Podrá cambiarlo en cualquier momento en Preferencias -&gt; Configuración de la sesión -&gt; Ajustes básicos.</translation>
     </message>
 </context>
 </TS>
