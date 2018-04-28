@@ -16,7 +16,7 @@
     <message>
         <location filename="../../../leavedialog.cpp" line="51"/>
         <source>Logout</source>
-        <translation>Cerrar sesión</translation>
+        <translation>Cerrar la sesión</translation>
     </message>
     <message>
         <location filename="../../../leavedialog.cpp" line="69"/>
@@ -36,7 +36,7 @@
     <message>
         <location filename="../../../leavedialog.cpp" line="66"/>
         <source>Lock screen</source>
-        <translation>Bloquear pantalla</translation>
+        <translation>Bloquear la pantalla</translation>
     </message>
     <message>
         <location filename="../../../leavedialog.cpp" line="74"/>
@@ -54,12 +54,12 @@
     <message>
         <location filename="../../../main.cpp" line="58"/>
         <source>Logout.</source>
-        <translation>Cerrar sesión.</translation>
+        <translation>Cerrar la sesión.</translation>
     </message>
     <message>
         <location filename="../../../main.cpp" line="61"/>
         <source>Lockscreen.</source>
-        <translation>Bloquear pantalla.</translation>
+        <translation>Bloquear la pantalla.</translation>
     </message>
     <message>
         <location filename="../../../main.cpp" line="64"/>
