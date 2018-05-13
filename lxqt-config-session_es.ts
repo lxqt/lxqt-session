@@ -26,7 +26,7 @@
     <message>
         <location filename="../../../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>Espere al área de notificaciones</translation>
+        <translation>Esperar a la bandeja del sistema</translation>
     </message>
     <message>
         <location filename="../../../autostartedit.cpp" line="59"/>
@@ -49,12 +49,12 @@
     <message>
         <location filename="../../../autostartmodel.cpp" line="211"/>
         <source>Location: %1</source>
-        <translation>Lugar: %1</translation>
+        <translation>Ubicación: %1</translation>
     </message>
     <message>
         <location filename="../../../autostartmodel.cpp" line="213"/>
         <source>Overrides: %1</source>
-        <translation>Sobrescrito: %1</translation>
+        <translation>Sobrescribe: %1</translation>
     </message>
 </context>
 <context>
@@ -213,7 +213,7 @@
     <message>
         <location filename="../../../modulemodel.cpp" line="86"/>
         <source>Running</source>
-        <translation>Ejecutandose</translation>
+        <translation>Ejecutándose</translation>
     </message>
 </context>
 <context>
