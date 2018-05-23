@@ -49,7 +49,7 @@ session-eggwm.conf
 int main(int argc, char **argv)
 {
     SessionApplication app(argc, argv);
-    //qDebug() << "LXQt Session start";
+
     QCommandLineParser parser;
     parser.setApplicationDescription(QStringLiteral("LXQt Session"));
     const QString VERINFO = QStringLiteral(LXQT_SESSION_VERSION
