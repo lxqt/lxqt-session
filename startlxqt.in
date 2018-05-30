@@ -24,14 +24,13 @@ fi
 export XDG_DATA_DIRS
 
 if [ -z "$XDG_CONFIG_DIRS" ]; then
-    export XDG_CONFIG_DIRS="@PREDEF_XDG_CONFIG_DIRS@"
-else
-    for directory in "/etc" "@LXQT_ETC_XDG_DIR@" "/usr/share"; do
-        if ! contains "$XDG_CONFIG_DIRS" "$directory"; then
-            XDG_CONFIG_DIRS="$XDG_CONFIG_DIRS:$directory"
-        fi
-    done
+    export XDG_CONFIG_DIRS=''
 fi
+for directory in '/etc' '@LXQT_ETC_XDG_DIR@' '/usr/share'; do
+    if ! contains "$XDG_CONFIG_DIRS" "$directory"; then
+        [ -z "$XDG_CONFIG_DIRS" ] && XDG_CONFIG_DIRS="$directory" || XDG_CONFIG_DIRS="$XDG_CONFIG_DIRS:$directory"
+    fi
+done
 
 if [ -z "$XDG_CACHE_HOME" ]; then
     export XDG_CACHE_HOME="$HOME/.cache"
