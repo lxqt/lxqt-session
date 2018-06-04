@@ -37,16 +37,6 @@ lxqt_translate_ts(lxqt-leave_QM_FILES
         ${H_FILES}
     INSTALL_DIR
         "${LXQT_TRANSLATIONS_DIR}/${LXQT_LEAVE_PROJECT_NAME}"
-    PULL_TRANSLATIONS
-        ${PULL_TRANSLATIONS}
-    CLEAN_TRANSLATIONS
-        ${CLEAN_TRANSLATIONS}
-    TRANSLATIONS_REPO
-        ${TRANSLATIONS_REPO}
-    TRANSLATIONS_REFSPEC
-        ${TRANSLATIONS_REFSPEC}
-    REPO_SUBDIR
-        "lxqt-session/${LXQT_LEAVE_PROJECT_NAME}"
 )
 
 lxqt_app_translation_loader(lxqt-leave_QM_LOADER ${LXQT_LEAVE_PROJECT_NAME})
