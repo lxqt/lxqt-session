@@ -1,4 +1,4 @@
-set(LXQT_SESSION_PROJECT_NAME "lxqt-session")
+project("lxqt-session")
 
 if(NOT CMAKE_BUILD_TYPE)
    set(CMAKE_BUILD_TYPE Release)
@@ -46,19 +46,9 @@ lxqt_translate_ts(lxqt-session_QM_FILES
         ${lxqt-session_SRCS}
         ${lxqt-session_UI}
     INSTALL_DIR
-        "${LXQT_TRANSLATIONS_DIR}/${LXQT_SESSION_PROJECT_NAME}"
-    PULL_TRANSLATIONS
-        ${PULL_TRANSLATIONS}
-    CLEAN_TRANSLATIONS
-        ${CLEAN_TRANSLATIONS}
-    TRANSLATIONS_REPO
-        ${TRANSLATIONS_REPO}
-    TRANSLATIONS_REFSPEC
-        ${TRANSLATIONS_REFSPEC}
-    REPO_SUBDIR
-        "lxqt-session/${LXQT_SESSION_PROJECT_NAME}"
+        "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
 )
-lxqt_app_translation_loader(lxqt-session_QM_LOADER ${LXQT_SESSION_PROJECT_NAME})
+lxqt_app_translation_loader(lxqt-session_QM_LOADER ${PROJECT_NAME})
 
 add_executable(lxqt-session
     ${lxqt-session_SRCS}
