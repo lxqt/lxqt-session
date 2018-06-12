@@ -48,7 +48,7 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="62"/>
         <source>Other ...</source>
-        <translation>Andere...</translation>
+        <translation>Andere ...</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="63"/>
@@ -58,7 +58,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Der Fenstermanager kann jederzeit über Einstellungen -&gt; Sitzungs-Konfigurator -&gt; Grundeinstellungen wieder geändert werden.</translation>
+        <translation>Der Fenstermanager kann jederzeit über Einstellungen -&gt; Sitzungskonfiguration -&gt; Grundeinstellungen geändert werden.</translation>
     </message>
 </context>
 </TS>
