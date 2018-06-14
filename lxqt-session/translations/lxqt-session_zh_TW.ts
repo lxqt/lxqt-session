@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; 意外終止太多次。自動重啟已被停止直到下次登入。</translation>
     </message>
 </context>
 <context>
@@ -19,18 +19,18 @@
     <message>
         <location filename="../src/main.cpp" line="59"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>配置檔案路徑。</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="59"/>
         <location filename="../src/main.cpp" line="60"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>檔案</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="60"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>要使用的視窗管理器。</translation>
     </message>
 </context>
 <context>
@@ -58,7 +58,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>你可以隨時改變此設定經由 偏好設定 -&gt; 會話設定 -&gt; 基本設定。</translation>
     </message>
 </context>
 </TS>
