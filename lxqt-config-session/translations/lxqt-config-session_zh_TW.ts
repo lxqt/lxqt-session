@@ -62,7 +62,7 @@
     <message>
         <location filename="../autostartpage.ui" line="17"/>
         <source>Delete</source>
-        <translation>移除</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="24"/>
@@ -190,7 +190,7 @@
     <message>
         <location filename="../environmentpage.ui" line="24"/>
         <source>Delete</source>
-        <translation>移除</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="50"/>
