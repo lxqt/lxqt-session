@@ -6,7 +6,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="310"/>
         <source>Crash Report</source>
-        <translation type="unfinished"></translation>
+        <translation>程式崩潰報告</translation>
     </message>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="311"/>
@@ -53,7 +53,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;歡迎使用LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;請選擇您預設的視窗管理員&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
