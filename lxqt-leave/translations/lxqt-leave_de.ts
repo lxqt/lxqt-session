@@ -21,7 +21,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="69"/>
         <source>Reboot</source>
-        <translation>Neustart</translation>
+        <translation>Neustarten</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="56"/>
@@ -41,7 +41,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="74"/>
         <source>Hibernate</source>
-        <translation>Tiefschlaf</translation>
+        <translation>Ruhezustand</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="51"/>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../main.cpp" line="61"/>
         <source>Lockscreen.</source>
-        <translation>Sperren.</translation>
+        <translation>Sperrbildschirm.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="64"/>
@@ -69,7 +69,7 @@
     <message>
         <location filename="../main.cpp" line="67"/>
         <source>Hibernate.</source>
-        <translation>Tiefschlaf.</translation>
+        <translation>Ruhezustand.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="70"/>
