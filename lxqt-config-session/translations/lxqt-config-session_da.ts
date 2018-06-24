@@ -95,7 +95,7 @@
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation>Window Manager</translation>
+        <translation>Vindueshåndtering</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
@@ -140,7 +140,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="147"/>
         <source>Select a window manager</source>
-        <translation>Vælg en window manager</translation>
+        <translation>Vælg en vindueshåndtering</translation>
     </message>
 </context>
 <context>
@@ -148,7 +148,7 @@
     <message>
         <location filename="../defaultappspage.cpp" line="72"/>
         <source>Select a terminal emulator</source>
-        <translation>Vælg en terminal-emulator</translation>
+        <translation>Vælg en terminalemulator</translation>
     </message>
     <message>
         <location filename="../defaultappspage.cpp" line="77"/>
@@ -166,7 +166,7 @@
     <message>
         <location filename="../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation>Terminal-emulering:</translation>
+        <translation>Terminalemulering:</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="52"/>
