@@ -100,7 +100,7 @@
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation>Fenstermanager</translation>
+        <translation>Fensterverwaltung</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
