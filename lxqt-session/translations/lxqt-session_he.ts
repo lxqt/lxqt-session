@@ -6,12 +6,12 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="310"/>
         <source>Crash Report</source>
-        <translation></translation>
+        <translation>דוח קריסה</translation>
     </message>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation></translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; קרס פעמים רבות מדי. מנגנון ההפעלה מחדש הושבת עד לכניסה הבאה למערכת.</translation>
     </message>
 </context>
 <context>
@@ -19,18 +19,18 @@
     <message>
         <location filename="../src/main.cpp" line="59"/>
         <source>Configuration file path.</source>
-        <translation></translation>
+        <translation>נתיב קובץ הגדרות.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="59"/>
         <location filename="../src/main.cpp" line="60"/>
         <source>file</source>
-        <translation></translation>
+        <translation>קובץ</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="60"/>
         <source>Window manager to use.</source>
-        <translation></translation>
+        <translation>מנהל חלונות לשימוש.</translation>
     </message>
 </context>
 <context>
@@ -38,27 +38,27 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation></translation>
+        <translation>ברוך בואך ל־LXQt</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ברוך בואך אל LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;נא לבחור את מנהל החלונות שלך כבררת מחדל.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation></translation>
+        <translation>תהיה לך אפשרות לשנות זאת בכל עת דרך העדפות -&gt; הגדרות הפעלה -&gt; הגדרות בסיסיות.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="62"/>
         <source>Other ...</source>
-        <translation></translation>
+        <translation>אחר…</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
-        <translation></translation>
+        <translation>בחירת המועדף עליך.</translation>
     </message>
 </context>
 </TS>
