@@ -6,32 +6,32 @@
     <message>
         <location filename="../autostartedit.ui" line="14"/>
         <source>Edit</source>
-        <translation></translation>
+        <translation>עריכה</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="20"/>
         <source>Name:</source>
-        <translation></translation>
+        <translation>שם:</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="27"/>
         <source>Search...</source>
-        <translation></translation>
+        <translation>חיפוש…</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="47"/>
         <source>Command:</source>
-        <translation></translation>
+        <translation>פקודה:</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation></translation>
+        <translation>המתנה למגש המערכת</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="59"/>
         <source>Select Application</source>
-        <translation></translation>
+        <translation>בחירת יישום</translation>
     </message>
 </context>
 <context>
@@ -39,22 +39,22 @@
     <message>
         <location filename="../autostartmodel.cpp" line="191"/>
         <source>Global Autostart</source>
-        <translation></translation>
+        <translation>התחלה אוטומטית גלובלית</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>LXQt Autostart</source>
-        <translation></translation>
+        <translation>התחלה אוטומטית של LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="211"/>
         <source>Location: %1</source>
-        <translation></translation>
+        <translation>מיקום: %1</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
         <source>Overrides: %1</source>
-        <translation></translation>
+        <translation>שכתובים: %1</translation>
     </message>
 </context>
 <context>
@@ -62,32 +62,32 @@
     <message>
         <location filename="../autostartpage.ui" line="17"/>
         <source>Delete</source>
-        <translation></translation>
+        <translation>מחיקה</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="24"/>
         <source>Add</source>
-        <translation></translation>
+        <translation>הוספה</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="31"/>
         <source>Edit</source>
-        <translation></translation>
+        <translation>עריכה</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation></translation>
+        <translation>התחלה אוטומטית של יישומים</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="141"/>
         <source>Error</source>
-        <translation></translation>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="141"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation></translation>
+        <translation>הקובץ ‚%1’ כבר קיים!</translation>
     </message>
 </context>
 <context>
@@ -95,52 +95,52 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation></translation>
+        <translation>הגדרות בסיסיות</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation></translation>
+        <translation>מנהל חלונות</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation></translation>
+        <translation>חיפוש…</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation></translation>
+        <translation>מודולים של LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation></translation>
+        <translation>התחלה</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation></translation>
+        <translation>עצירה</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation></translation>
+        <translation>יציאה מההפעלה</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation></translation>
+        <translation>בקשת אישור ליציאה מההפעלה</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation></translation>
+        <translation>נעילת המסך לפני השהיה/תרדמת</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="147"/>
         <source>Select a window manager</source>
-        <translation></translation>
+        <translation>בחירת מנהל חלונות</translation>
     </message>
 </context>
 <context>
@@ -148,12 +148,12 @@
     <message>
         <location filename="../defaultappspage.cpp" line="72"/>
         <source>Select a terminal emulator</source>
-        <translation></translation>
+        <translation>בחירת מדמה מסוף</translation>
     </message>
     <message>
         <location filename="../defaultappspage.cpp" line="77"/>
         <source>Select a web browser</source>
-        <translation></translation>
+        <translation>בחירת דפדפן</translation>
     </message>
 </context>
 <context>
@@ -161,23 +161,23 @@
     <message>
         <location filename="../defaultappspage.ui" line="23"/>
         <source>Default Applications</source>
-        <translation></translation>
+        <translation>יישומי בררת מחדל</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation></translation>
+        <translation>הדמיית מסוף:</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="52"/>
         <location filename="../defaultappspage.ui" line="79"/>
         <source>Search...</source>
-        <translation></translation>
+        <translation>חיפוש…</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="59"/>
         <source>Web Browser:</source>
-        <translation></translation>
+        <translation>דפדפן:</translation>
     </message>
 </context>
 <context>
@@ -185,27 +185,27 @@
     <message>
         <location filename="../environmentpage.ui" line="17"/>
         <source>Add</source>
-        <translation></translation>
+        <translation>הוספה</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="24"/>
         <source>Delete</source>
-        <translation></translation>
+        <translation>מחיקה</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
-        <translation></translation>
+        <translation>משתני סביבה (מתקדם)</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="61"/>
         <source>Variable Name</source>
-        <translation></translation>
+        <translation>שם משתנה</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="66"/>
         <source>Value</source>
-        <translation></translation>
+        <translation>ערך</translation>
     </message>
 </context>
 <context>
@@ -213,7 +213,7 @@
     <message>
         <location filename="../modulemodel.cpp" line="86"/>
         <source>Running</source>
-        <translation></translation>
+        <translation>פעיל</translation>
     </message>
 </context>
 <context>
@@ -221,42 +221,42 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation></translation>
+        <translation>הגדרות הפעלה של LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
-        <translation></translation>
+        <translation>הגדרות בסיסיות</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>Default Applications</source>
-        <translation></translation>
+        <translation>יישומי בררת מחדל</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="56"/>
         <source>User Directories</source>
-        <translation></translation>
+        <translation>ספריות משתמש</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="62"/>
         <source>Autostart</source>
-        <translation></translation>
+        <translation>התחלה אוטומטית</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="68"/>
         <source>Environment (Advanced)</source>
-        <translation></translation>
+        <translation>סביבה (מתקדם)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="94"/>
         <source>Session Restart Required</source>
-        <translation></translation>
+        <translation>נדרשת יציאה וכניסה מחדש</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="95"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation></translation>
+        <translation>חלק מההגדרות לא ייכנסו לתוקף עד לכניסה הבאה למערכת.</translation>
     </message>
 </context>
 <context>
@@ -264,22 +264,22 @@
     <message>
         <location filename="../userlocationspage.cpp" line="110"/>
         <source>Locations for Personal Files</source>
-        <translation></translation>
+        <translation>מיקומים לקבצים אישיים</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation></translation>
+        <translation>הגדרות הפעלה של LXQt - תיקיות משתמש</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="180"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation></translation>
+        <translation>אירעה שגיאה בעת החלת ההגדרות למיקום %1</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="196"/>
         <source>Choose Location</source>
-        <translation></translation>
+        <translation>בחירת מיקום</translation>
     </message>
 </context>
 <context>
@@ -287,82 +287,82 @@
     <message>
         <location filename="../userlocationspage.cpp" line="60"/>
         <source>Desktop</source>
-        <translation></translation>
+        <translation>שולחן עבודה</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="61"/>
         <source>Downloads</source>
-        <translation></translation>
+        <translation>הורדות</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="62"/>
         <source>Templates</source>
-        <translation></translation>
+        <translation>תבניות</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Public Share</source>
-        <translation></translation>
+        <translation>שיתוף ציבורי</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Documents</source>
-        <translation></translation>
+        <translation>מסמכים</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Music</source>
-        <translation></translation>
+        <translation>מוזיקה</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Pictures</source>
-        <translation></translation>
+        <translation>תמונות</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
         <source>Videos</source>
-        <translation></translation>
+        <translation>וידאו</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation></translation>
+        <translation>מכיל את כל הקבצים שמופיעים על שולחן העבודה שלך</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="71"/>
         <source>Default folder to save your downloaded files</source>
-        <translation></translation>
+        <translation>תיקיית בררת המחדל לשמירת הקבצים שמגיעים אליך</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="72"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation></translation>
+        <translation>תיקיית בררת המחדל לטעינה או לשמירה של תבניות</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Default folder to publicly share your files</source>
-        <translation></translation>
+        <translation>תיקיית בררת המחדל לשיתוף ציבורי של הקבצים שלך</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation></translation>
+        <translation>תיקיית בררת המחדל לטעינה או לשמירה של מסמכים</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation></translation>
+        <translation>תיקיית בררת המחדל לטעינה או לשמירה של מוזיקה</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation></translation>
+        <translation>תיקיית בררת המחדל לטעינה או לשמירה של תמונות</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation></translation>
+        <translation>תיקיית בררת המחדל לטעינה או לשמירה של סרטונים</translation>
     </message>
 </context>
 </TS>
