@@ -43,17 +43,17 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="62"/>
         <source>Other ...</source>
-        <translation>Jiné...</translation>
+        <translation>Ostatní…</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
-        <translation>Vyberte oblíbené.</translation>
+        <translation>Zvolte svůj oblíbený.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Vítejte v LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Vyberte, prosím, výchozího správce oken.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Vítejte v LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Vyberte výchozího správce oken.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
