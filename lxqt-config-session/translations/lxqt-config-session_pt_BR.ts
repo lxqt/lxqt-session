@@ -105,7 +105,7 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished">Módulos do LXQt</translation>
+        <translation>Módulos do LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
