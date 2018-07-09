@@ -16,7 +16,7 @@
     <message>
         <location filename="../autostartedit.ui" line="27"/>
         <source>Search...</source>
-        <translation>Hledat...</translation>
+        <translation>Hledat…</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="47"/>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../autostartpage.cpp" line="141"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>Soubor &apos;%1&apos; již existuje!</translation>
+        <translation>Soubor „%1“ už existuje!</translation>
     </message>
 </context>
 <context>
@@ -100,7 +100,7 @@
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation>Hledat...</translation>
+        <translation>Hledat…</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="59"/>
@@ -153,7 +153,7 @@
     <message>
         <location filename="../defaultappspage.cpp" line="77"/>
         <source>Select a web browser</source>
-        <translation>Vybrat prohlížeč internetu</translation>
+        <translation>Vybrat webový prohlížeč</translation>
     </message>
 </context>
 <context>
@@ -172,12 +172,12 @@
         <location filename="../defaultappspage.ui" line="52"/>
         <location filename="../defaultappspage.ui" line="79"/>
         <source>Search...</source>
-        <translation>Hledat...</translation>
+        <translation>Hledat…</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="59"/>
         <source>Web Browser:</source>
-        <translation>Prohlížeč internetu:</translation>
+        <translation>Webový prohlížeč:</translation>
     </message>
 </context>
 <context>
@@ -213,7 +213,7 @@
     <message>
         <location filename="../modulemodel.cpp" line="86"/>
         <source>Running</source>
-        <translation>Běží</translation>
+        <translation>Spuštěné</translation>
     </message>
 </context>
 <context>
@@ -236,7 +236,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="56"/>
         <source>User Directories</source>
-        <translation>Adresáře uživatele</translation>
+        <translation>Složky uživatele</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="62"/>
@@ -270,7 +270,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>Nastavení sezení LXQt - adresáře uživatele</translation>
+        <translation>Nastavení sezení LXQt – složky uživatele</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="180"/>
@@ -298,12 +298,12 @@
     <message>
         <location filename="../userlocationspage.cpp" line="62"/>
         <source>Templates</source>
-        <translation>Předlohy</translation>
+        <translation>Šablony</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Public Share</source>
-        <translation>Veřejný adresář</translation>
+        <translation>Ostatním přístupné sdílení</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
@@ -328,7 +328,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation>Obsahuje všechny soubory, jež vidíte na pracovní ploše</translation>
+        <translation>Obsahuje všechny soubory, které vidíte na pracovní ploše</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="71"/>
