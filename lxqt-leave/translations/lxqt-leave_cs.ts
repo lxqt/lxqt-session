@@ -36,17 +36,17 @@
     <message>
         <location filename="../leavedialog.cpp" line="66"/>
         <source>Lock screen</source>
-        <translation>Uzamknout</translation>
+        <translation>Uzamknout obrazovku</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="74"/>
         <source>Hibernate</source>
-        <translation>Přezimovat</translation>
+        <translation>Uspat na datové úložiště</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="51"/>
         <source>Cancel</source>
-        <translation>Zrušit</translation>
+        <translation>Storno</translation>
     </message>
 </context>
 <context>
@@ -69,7 +69,7 @@
     <message>
         <location filename="../main.cpp" line="67"/>
         <source>Hibernate.</source>
-        <translation>Přezimovat (hibernace).</translation>
+        <translation>Uspat na datové úložiště.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="70"/>
