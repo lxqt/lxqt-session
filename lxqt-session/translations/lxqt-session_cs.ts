@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; spadl příliš mockrát. Automatické znovuspuštění bylo zakázáno až do příštího přihlášení.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; spadl příliš mnohokrát. Automatické znovuspuštění bylo zakázáno až do příštího přihlášení.</translation>
     </message>
 </context>
 <context>
@@ -19,18 +19,18 @@
     <message>
         <location filename="../src/main.cpp" line="59"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>Umístění souboru s nastaveními.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="59"/>
         <location filename="../src/main.cpp" line="60"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>soubor</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="60"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Správce oken který použít</translation>
     </message>
 </context>
 <context>
