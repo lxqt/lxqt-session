@@ -19,18 +19,18 @@
     <message>
         <location filename="../src/main.cpp" line="59"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>مسار ملف الإعداد.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="59"/>
         <location filename="../src/main.cpp" line="60"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>ملف</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="60"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>مدير النوافذ الذي تود استخدامه.</translation>
     </message>
 </context>
 <context>
