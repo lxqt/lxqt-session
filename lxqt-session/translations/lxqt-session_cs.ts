@@ -30,7 +30,7 @@
     <message>
         <location filename="../src/main.cpp" line="60"/>
         <source>Window manager to use.</source>
-        <translation>Správce oken který použít</translation>
+        <translation>Správce oken který použít.</translation>
     </message>
 </context>
 <context>
@@ -38,7 +38,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation>Vítejte v LXQt-Qt</translation>
+        <translation>Vítejte v LXQt</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="62"/>
