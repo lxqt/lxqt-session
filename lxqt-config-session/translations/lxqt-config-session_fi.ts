@@ -110,17 +110,17 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Istunnon lopettaminen</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>Pyydä vahvistusta istunnon lopettamiseen</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation type="unfinished"></translation>
+        <translation>Lukitse näyttö ennen valmius- tai lepotilaan siirtymistä</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -221,7 +221,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt-istunnon asetukset</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="47"/>
@@ -236,7 +236,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="56"/>
         <source>User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Käyttäjien hakemistot</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="62"/>
@@ -256,7 +256,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="95"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Osa asetuksista ei tule voimaan ennen seuraavaa sisäänkirjaumista.</translation>
     </message>
 </context>
 <context>
@@ -264,12 +264,12 @@
     <message>
         <location filename="../userlocationspage.cpp" line="110"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Henkilökohtaisten tiedostojen sijainnit</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">LXQt-istunnon asetukset - Käyttäjien hakemistot</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="180"/>
@@ -279,7 +279,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="196"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse sijainti</translation>
     </message>
 </context>
 <context>
@@ -287,17 +287,17 @@
     <message>
         <location filename="../userlocationspage.cpp" line="60"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Työpöytä</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="61"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Lataukset</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="62"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Mallit</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
@@ -307,32 +307,32 @@
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Asiakirjat</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>Musiikki</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvat</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Videot</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Sisältää kaikki tiedostot, jotka näkyvät työpöydällä</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="71"/>
         <source>Default folder to save your downloaded files</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletuskansio johon ladatut tiedostot tallennetaan</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="72"/>
