@@ -54,7 +54,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
         <source>Overrides: %1</source>
-        <translation>Zruší: %1</translation>
+        <translation>Přepíše: %1</translation>
     </message>
 </context>
 <context>
@@ -115,12 +115,12 @@
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation>Potvrdit ukončení sezení</translation>
+        <translation>Vyžadovat potvrzení při opouštění relace</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>Uzamknout obrazovku před uspáním do paměti/na disk</translation>
+        <translation>Uzamknout obrazovku před uspáním do paměti/na datové úložiště</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -241,7 +241,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="62"/>
         <source>Autostart</source>
-        <translation>Automatické spuštění</translation>
+        <translation>Automatické spouštění</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="68"/>
@@ -257,7 +257,7 @@
         <location filename="../sessionconfigwindow.cpp" line="95"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translatorcomment>Některá nastavení se neprojeví až do příštího přihlášení.</translatorcomment>
-        <translation></translation>
+        <translation>Některá nastavení se neprojeví až do příštího přihlášení.</translation>
     </message>
 </context>
 <context>
@@ -323,7 +323,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
         <source>Videos</source>
-        <translation>Obrazové záznamy</translation>
+        <translation>Videa</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
@@ -363,7 +363,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>Výchozí složka pro nahrání nebo uložení obrazových záznamů z nebo do</translation>
+        <translation>Výchozí složka pro nahrání nebo uložení videí z nebo do</translation>
     </message>
 </context>
 </TS>
