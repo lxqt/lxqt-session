@@ -64,7 +64,7 @@
     <message>
         <location filename="../main.cpp" line="64"/>
         <source>Suspend.</source>
-        <translation>Uspat.</translation>
+        <translation>Uspat do operační paměti.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="67"/>
