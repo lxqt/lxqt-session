@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="59"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>Asetustiedoston polku.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="59"/>
