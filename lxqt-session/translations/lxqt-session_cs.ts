@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; spadl příliš mnohokrát. Automatické znovuspuštění bylo zakázáno až do příštího přihlášení.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; spadlo příliš mnohokrát. Automatické opětovné spuštění proto bylo vypnuto až do příštího přihlášení.</translation>
     </message>
 </context>
 <context>
@@ -53,12 +53,12 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Vítejte v LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Vyberte výchozího správce oken.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Vítejte v LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Vyberte správce oken, kterého chcete používat jako výchozí.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Toto budete moci kdykoli změnit přes Nastavení → Nastavení sezení → Základní nastavení.</translation>
+        <translation>Toto pak budete moci kdykoli změnit přes Nastavení → Nastavení sezení → Základní nastavení.</translation>
     </message>
 </context>
 </TS>
