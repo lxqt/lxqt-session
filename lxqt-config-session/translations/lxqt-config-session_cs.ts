@@ -26,12 +26,12 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>Počkat na oznamovací oblast panelu</translation>
+        <translation>Počkat na oznamovací oblast systémového panelu</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="59"/>
         <source>Select Application</source>
-        <translation>Vybrat program</translation>
+        <translation>Vybrat aplikaci</translation>
     </message>
 </context>
 <context>
@@ -44,7 +44,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>LXQt Autostart</source>
-        <translation>Automatické spuštění LXQt</translation>
+        <translation>Automatické spuštění v LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="211"/>
@@ -77,7 +77,7 @@
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Automatické spuštění programu</translation>
+        <translation>Automatické spuštění aplikace</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="141"/>
@@ -115,12 +115,12 @@
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation>Vyžadovat potvrzení při opouštění relace</translation>
+        <translation>Vyžadovat potvrzení opouštění relace</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>Uzamknout obrazovku před uspáním do paměti/na datové úložiště</translation>
+        <translation>Uzamknout obrazovku před uspáním do paměti/na disk</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -161,7 +161,7 @@
     <message>
         <location filename="../defaultappspage.ui" line="23"/>
         <source>Default Applications</source>
-        <translation>Výchozí programy</translation>
+        <translation>Výchozí aplikace</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="32"/>
@@ -221,7 +221,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation>Nastavení sezení LXQt</translation>
+        <translation>Nastavení LXQt sezení</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="47"/>
@@ -231,7 +231,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>Default Applications</source>
-        <translation>Výchozí programy</translation>
+        <translation>Výchozí aplikace</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="56"/>
@@ -265,17 +265,17 @@
     <message>
         <location filename="../userlocationspage.cpp" line="110"/>
         <source>Locations for Personal Files</source>
-        <translation>Ukládací místa pro osobní soubory</translation>
+        <translation>Místa pro ukládání osobních souborů</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="179"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>Nastavení sezení LXQt – složky uživatele</translation>
+        <translation>Nastavení LXQt sezení – složky uživatele</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="180"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation>Při použití nastavení pro ukládací místo %1 se vyskytla chyba</translation>
+        <translation>Při použití nastavování místa pro ukládání %1 se vyskytla chyba</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="196"/>
@@ -293,7 +293,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="61"/>
         <source>Downloads</source>
-        <translation>Stahování</translation>
+        <translation>Stažené</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="62"/>
@@ -303,7 +303,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Public Share</source>
-        <translation>Ostatním přístupné sdílení</translation>
+        <translation>Všem přístupné sdílení</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
@@ -333,37 +333,37 @@
     <message>
         <location filename="../userlocationspage.cpp" line="71"/>
         <source>Default folder to save your downloaded files</source>
-        <translation>Výchozí složka pro uložení stažených souborů</translation>
+        <translation>Výchozí složka pro ukládání stažených souborů</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="72"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation>Výchozí složka pro nahrání nebo uložení předloh z nebo do</translation>
+        <translation>Výchozí složka do které ukládat a načítat z ní šablony dokumentů</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Default folder to publicly share your files</source>
-        <translation>Výchozí složka pro veřejné sdílení souborů</translation>
+        <translation>Výchozí složka pro veřejné sdílení souborů (na místní síti)</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation>Výchozí složka pro nahrání nebo uložení dokumentů z nebo do</translation>
+        <translation>Výchozí složka do které ukládat a načítat z ní dokumenty</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation>Výchozí složka pro nahrání nebo uložení hudby z nebo do</translation>
+        <translation>Výchozí složka do které ukládat a načítat z ní hudbu</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation>Výchozí složka pro nahrání nebo uložení obrázků z nebo do</translation>
+        <translation>Výchozí složka do které ukládat a načítat z ní obrázky</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>Výchozí složka pro nahrání nebo uložení videí z nebo do</translation>
+        <translation>Výchozí složka do které ukládat a načítat z ní videa</translation>
     </message>
 </context>
 </TS>
