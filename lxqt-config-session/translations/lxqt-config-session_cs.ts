@@ -275,7 +275,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="180"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation>Při použití nastavování místa pro ukládání %1 se vyskytla chyba</translation>
+        <translation>Při uplatnění nastavení místa pro ukládání %1 se vyskytla chyba</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="196"/>
