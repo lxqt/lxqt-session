@@ -31,7 +31,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="61"/>
         <source>Suspend</source>
-        <translation>Uspat</translation>
+        <translation>Uspat do paměti</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="66"/>
@@ -41,7 +41,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="74"/>
         <source>Hibernate</source>
-        <translation>Uspat na datové úložiště</translation>
+        <translation>Uspat na disk</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="51"/>
@@ -64,12 +64,12 @@
     <message>
         <location filename="../main.cpp" line="64"/>
         <source>Suspend.</source>
-        <translation>Uspat do operační paměti.</translation>
+        <translation>Uspat do paměti.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="67"/>
         <source>Hibernate.</source>
-        <translation>Uspat na datové úložiště.</translation>
+        <translation>Uspat na disk.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="70"/>
