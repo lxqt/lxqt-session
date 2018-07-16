@@ -39,12 +39,12 @@
     <message>
         <location filename="../autostartmodel.cpp" line="191"/>
         <source>Global Autostart</source>
-        <translation>Celkové automatické spuštění</translation>
+        <translation>Globální automatické spouštění</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>LXQt Autostart</source>
-        <translation>Automatické spuštění v LXQt</translation>
+        <translation>Automatické spouštění v LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="211"/>
@@ -251,7 +251,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="94"/>
         <source>Session Restart Required</source>
-        <translation>Požadováno opětovné spuštění sezení</translation>
+        <translation>Vyžaduje restart sezení</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="95"/>
