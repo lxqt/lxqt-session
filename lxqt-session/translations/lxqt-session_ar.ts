@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>انهار &lt;b&gt;%1&lt;/b&gt; عدة مرّات. لذا فلقد عُطّلت إعادة تشغيله الآليّة حتّى الولوج التّالي.</translation>
+        <translation>انهار &lt;b&gt;%1&lt;/b&gt; عدة مرات. عُطّلت إعادة تشغيله الآليّة حتى الولوج التالي.</translation>
     </message>
 </context>
 <context>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="59"/>
         <source>Configuration file path.</source>
-        <translation>مسار ملف الإعداد.</translation>
+        <translation>مسار ملف الضبط.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="59"/>
@@ -30,7 +30,7 @@
     <message>
         <location filename="../src/main.cpp" line="60"/>
         <source>Window manager to use.</source>
-        <translation>مدير النوافذ الذي تود استخدامه.</translation>
+        <translation>مدير النوافذ الذي سيُستخدم.</translation>
     </message>
 </context>
 <context>
@@ -38,27 +38,27 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation>مرحبًا في آل إكس كيوتي</translation>
+        <translation>مرحبا في لكسكيوت</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;مرحبًا في آل إكس كيوتي&lt;/span&gt;&lt;/p&gt;&lt;p&gt;فضلًا اختر مدير النّوافذ الافتراضيّ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;مرحبا في لكسكيوت&lt;/span&gt;&lt;/p&gt;&lt;p&gt;رجاءً اختر مدير النوافذ المبدئي.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>ستستطيع تغيير هذا لاحقًا عبر التّفضيلات -&gt; إعدادات النّظام -&gt; الإعدادات الأساسيّة.</translation>
+        <translation>ستقدر على تغيير هذا متى ما أردت من التفضيلات ← إعدادات الجلسة ← الإعدادات الأساسية.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="62"/>
         <source>Other ...</source>
-        <translation>أخرى ...</translation>
+        <translation>أخرى...</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="63"/>
         <source>Choose your favorite one.</source>
-        <translation>اختر ما تحبّ.</translation>
+        <translation>اختر ما تحب.</translation>
     </message>
 </context>
 </TS>
