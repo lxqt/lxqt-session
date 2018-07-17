@@ -21,12 +21,12 @@
     <message>
         <location filename="../leavedialog.cpp" line="69"/>
         <source>Reboot</source>
-        <translation>أعد الإقلاع</translation>
+        <translation>أعِد الإقلاع</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="56"/>
         <source>Shutdown</source>
-        <translation>أطفئ</translation>
+        <translation>أطفِئ</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="61"/>
@@ -36,12 +36,12 @@
     <message>
         <location filename="../leavedialog.cpp" line="66"/>
         <source>Lock screen</source>
-        <translation>اقفل الشّاشة</translation>
+        <translation>اقفل الشاشة</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="74"/>
         <source>Hibernate</source>
-        <translation>أسبت</translation>
+        <translation>أسبِت</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="51"/>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../main.cpp" line="61"/>
         <source>Lockscreen.</source>
-        <translation>اقفل الشّاشة.</translation>
+        <translation>اقفل الشاشة.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="64"/>
@@ -69,17 +69,17 @@
     <message>
         <location filename="../main.cpp" line="67"/>
         <source>Hibernate.</source>
-        <translation>أسبت.</translation>
+        <translation>أسبِت.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="70"/>
         <source>Shutdown.</source>
-        <translation>أطفئ.</translation>
+        <translation>أطفِئ.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="73"/>
         <source>Reboot.</source>
-        <translation>أعد الإقلاع.</translation>
+        <translation>أعِد الإقلاع.</translation>
     </message>
 </context>
 </TS>
