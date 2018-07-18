@@ -95,7 +95,7 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>الإعدادات الأساسيّة</translation>
+        <translation>الإعدادات الأساسية</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>
@@ -135,7 +135,7 @@
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation type="unfinished"></translation>
+        <translation>اقفل الشاشة قبل التعليق/الإسبات</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="147"/>
