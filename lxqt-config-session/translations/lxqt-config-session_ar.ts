@@ -16,7 +16,7 @@
     <message>
         <location filename="../autostartedit.ui" line="27"/>
         <source>Search...</source>
-        <translation>ابحث...</translation>
+        <translation>ابحث…</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="47"/>
@@ -26,12 +26,12 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>انتظر صينيّة النّظام</translation>
+        <translation>انتظر صينية النظام</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="59"/>
         <source>Select Application</source>
-        <translation>اختر تطبيقًا</translation>
+        <translation>اختر تطبيقا</translation>
     </message>
 </context>
 <context>
@@ -39,12 +39,12 @@
     <message>
         <location filename="../autostartmodel.cpp" line="191"/>
         <source>Global Autostart</source>
-        <translation>البدء الآليّ العموميّ</translation>
+        <translation>البدء الآلي العمومي</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>LXQt Autostart</source>
-        <translation>البدء الآليّ لِلكسكيوت</translation>
+        <translation>البدء الآلي لِلكسكيوت</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="211"/>
@@ -67,7 +67,7 @@
     <message>
         <location filename="../autostartpage.ui" line="24"/>
         <source>Add</source>
-        <translation>أضف</translation>
+        <translation>أضِف</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="31"/>
@@ -77,7 +77,7 @@
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>بدء التّطبيقات الآليّ</translation>
+        <translation>بدء التطبيقات الآلي</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="141"/>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../autostartpage.cpp" line="141"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>الملفّ &apos;%1&apos; موجود بالفعل!</translation>
+        <translation>الملف ”%1“ موجود بالفعل!</translation>
     </message>
 </context>
 <context>
@@ -100,12 +100,12 @@
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation>مدير النّوافذ</translation>
+        <translation>مدير النوافذ</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation>ابحث...</translation>
+        <translation>ابحث…</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="59"/>
@@ -120,7 +120,7 @@
     <message>
         <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation>أوقف</translation>
+        <translation>أوقِف</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
@@ -140,7 +140,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="147"/>
         <source>Select a window manager</source>
-        <translation>اختر مدير النّوافذ</translation>
+        <translation>اختر مدير النوافذ</translation>
     </message>
 </context>
 <context>
@@ -148,12 +148,12 @@
     <message>
         <location filename="../defaultappspage.cpp" line="72"/>
         <source>Select a terminal emulator</source>
-        <translation>اختر محاكي الطّرفيّة</translation>
+        <translation>اختر محاكي الطرفية</translation>
     </message>
     <message>
         <location filename="../defaultappspage.cpp" line="77"/>
         <source>Select a web browser</source>
-        <translation>اختر متصفّح الوبّ</translation>
+        <translation>اختر متصفح الوب</translation>
     </message>
 </context>
 <context>
@@ -161,23 +161,23 @@
     <message>
         <location filename="../defaultappspage.ui" line="23"/>
         <source>Default Applications</source>
-        <translation>التّطبيقات الافتراضيّة</translation>
+        <translation>التطبيقات المبدئية</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation>محاكي الطّرفيّة:</translation>
+        <translation>محاكي الطرفية:</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="52"/>
         <location filename="../defaultappspage.ui" line="79"/>
         <source>Search...</source>
-        <translation>ابحث...</translation>
+        <translation>ابحث…</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="59"/>
         <source>Web Browser:</source>
-        <translation>متصّفح الوبّ:</translation>
+        <translation>متصفح الوب:</translation>
     </message>
 </context>
 <context>
@@ -185,7 +185,7 @@
     <message>
         <location filename="../environmentpage.ui" line="17"/>
         <source>Add</source>
-        <translation>أضف</translation>
+        <translation>أضِف</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="24"/>
@@ -195,7 +195,7 @@
     <message>
         <location filename="../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
-        <translation>متغيّرات البيئة (متقدّم)</translation>
+        <translation>متغيّرات البيئة (متقدم)</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="61"/>
@@ -226,12 +226,12 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
-        <translation>الإعدادات الأساسيّة</translation>
+        <translation>الإعدادات الأساسية</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>Default Applications</source>
-        <translation>التّطبيقات الافتراضيّة</translation>
+        <translation>التطبيقات المبدئية</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="56"/>
@@ -241,12 +241,12 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="62"/>
         <source>Autostart</source>
-        <translation>البدء الآليّ</translation>
+        <translation>البدء الآلي</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="68"/>
         <source>Environment (Advanced)</source>
-        <translation>البيئة (متقدّم)</translation>
+        <translation>البيئة (متقدم)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="94"/>
@@ -256,7 +256,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="95"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation>بعض من هذه الإعدادات لن تُطبّق حتّى الولوج التّالي.</translation>
+        <translation>لن تُطبّق بعض هذه الإعدادات حتى الولوج التالي.</translation>
     </message>
 </context>
 <context>
@@ -264,7 +264,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="110"/>
         <source>Locations for Personal Files</source>
-        <translation>أماكن الملفّات الشّخصيّة</translation>
+        <translation>أماكن الملفات الشخصية</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="179"/>
@@ -279,7 +279,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="196"/>
         <source>Choose Location</source>
-        <translation>اختر مكانًا</translation>
+        <translation>اختر مكانا</translation>
     </message>
 </context>
 <context>
@@ -292,7 +292,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="61"/>
         <source>Downloads</source>
-        <translation>التّنزيلات</translation>
+        <translation>التنزيلات</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="62"/>
@@ -317,7 +317,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Pictures</source>
-        <translation>الصّور</translation>
+        <translation>الصور</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
@@ -327,42 +327,42 @@
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation>فيه كلّ الملفّات التي تراها على سطح المكتب</translation>
+        <translation>فيه كل الملفات التي تراها على سطح المكتب</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="71"/>
         <source>Default folder to save your downloaded files</source>
-        <translation>المجلّد الافتراضيّ حيث تُحفظ ملفّاتك المنزّلة فيه</translation>
+        <translation>المجلد المبدئي حيث تُحفظ ملفاتك المنزّلة فيه</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="72"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation>المجلّد الافتراضيّ حيث تُحمّل القوالب منه وتُحفظ إليه</translation>
+        <translation>المجلد المبدئي حيث تُحمّل القوالب منه وتُحفظ فيه</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Default folder to publicly share your files</source>
-        <translation>المجلّد الافتراضيّ حيث تنشر فيها ملفّاتك للعموم</translation>
+        <translation>المجلد المبدئي حيث تنشر فيه ملفاتك للعموم</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation>المجلّد الافتراضيّ حيث تُحمّل المستندات منه وتُحفظ فيه</translation>
+        <translation>المجلد المبدئي حيث تُحمّل المستندات منه وتُحفظ فيه</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation>المجلّد الافتراضيّ حيث تُحمّل الموسيقى منه وتُحفظ فيه</translation>
+        <translation>المجلد المبدئي حيث تُحمّل الموسيقى منه وتُحفظ فيه</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation>المجلّد الافتراضيّ حيث تُحمّل الصّور منه وتُحفظ فيه</translation>
+        <translation>المجلد المبدئي حيث تُحمّل الصّور منه وتُحفظ فيه</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>المجلّد الافتراضيّ حيث تُحمّل الفيديوات منه وتُحفظ فيه</translation>
+        <translation>المجلد المبدئي حيث تُحمّل الفيديوات منه وتُحفظ فيه</translation>
     </message>
 </context>
 </TS>
