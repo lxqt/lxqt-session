@@ -287,7 +287,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="60"/>
         <source>Desktop</source>
-        <translation>Desktop</translation>
+        <translation>Scrivania</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="61"/>
