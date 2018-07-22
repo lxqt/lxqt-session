@@ -120,7 +120,7 @@
     <message>
         <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation>Stopp</translation>
+        <translation>Anhalten</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
