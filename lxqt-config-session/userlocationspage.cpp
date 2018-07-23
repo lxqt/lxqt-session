@@ -38,8 +38,8 @@ class UserLocationsPagePrivate {
 public:
 
     UserLocationsPagePrivate();
-    static const QStringList locationsName;
-    static const QStringList locationsToolTips;
+    static char const * const locationsName[];
+    static char const * const locationsToolTips[];
 
     QList<QString> initialLocations;
     QList<QLineEdit *> locations;
@@ -55,31 +55,37 @@ UserLocationsPagePrivate::UserLocationsPagePrivate()
 {
 }
 
-// This labels haveto match XdgDirs::UserDirectories
-const QStringList UserLocationsPagePrivate::locationsName = QStringList() <<
-    qApp->translate("UserLocationsPrivate", "Desktop") <<
-    qApp->translate("UserLocationsPrivate", "Downloads") <<
-    qApp->translate("UserLocationsPrivate", "Templates") <<
-    qApp->translate("UserLocationsPrivate", "Public Share") <<
-    qApp->translate("UserLocationsPrivate", "Documents") <<
-    qApp->translate("UserLocationsPrivate", "Music") <<
-    qApp->translate("UserLocationsPrivate", "Pictures") <<
-    qApp->translate("UserLocationsPrivate", "Videos");
+// Note: strings can't actually be translated here (in static initialization time)
+// the QT_TR_NOOP here is just for qt translate tools to get the strings for translation
 
-const QStringList UserLocationsPagePrivate::locationsToolTips = QStringList() <<
-    qApp->translate("UserLocationsPrivate", "Contains all the files which you see on your desktop") <<
-    qApp->translate("UserLocationsPrivate", "Default folder to save your downloaded files") <<
-    qApp->translate("UserLocationsPrivate", "Default folder to load or save templates from or to") <<
-    qApp->translate("UserLocationsPrivate", "Default folder to publicly share your files") <<
-    qApp->translate("UserLocationsPrivate", "Default folder to load or save documents from or to") <<
-    qApp->translate("UserLocationsPrivate", "Default foldet to load or save music from or to") <<
-    qApp->translate("UserLocationsPrivate", "Default folder to load or save pictures from or to") <<
-    qApp->translate("UserLocationsPrivate", "Default folder to load or save videos from or to");
+// This labels haveto match XdgDirs::UserDirectories
+char const * const UserLocationsPagePrivate::locationsName[] = {
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Desktop"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Downloads"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Templates"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Public Share"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Documents"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Music"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Pictures"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Videos")};
+
+char const * const UserLocationsPagePrivate::locationsToolTips[] = {
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Contains all the files which you see on your desktop"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default folder to save your downloaded files"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default folder to load or save templates from or to"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default folder to publicly share your files"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default folder to load or save documents from or to"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default foldet to load or save music from or to"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default folder to load or save pictures from or to"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default folder to load or save videos from or to")};
+
+static constexpr int locationsNameCount = sizeof (UserLocationsPagePrivate::locationsName) / sizeof (UserLocationsPagePrivate::locationsName[0]);
+static_assert (locationsNameCount == sizeof (UserLocationsPagePrivate::locationsToolTips) / sizeof (UserLocationsPagePrivate::locationsToolTips[0])
+            , "Size of UserLocationsPagePrivate::locationsName & UserLocationsPagePrivate::locationsToolTips must match");
 
 void UserLocationsPagePrivate::getUserDirs()
 {
-    const int N = locationsName.count();
-    for(int i = 0; i < N; ++i) {
+    for(int i = 0; i < locationsNameCount; ++i) {
         const QString userDir = XdgDirs::userDir(static_cast<XdgDirs::UserDirectory> (i));
         const QDir dir(userDir);
         initialLocations.append(dir.canonicalPath());
@@ -90,7 +96,7 @@ void UserLocationsPagePrivate::populate()
 {
     const int N = initialLocations.count();
 
-    Q_ASSERT(N == locationsName.count());
+    Q_ASSERT(N == locationsNameCount);
 
     for (int i = 0; i < N; ++i) {
         locations.at(i)->setText(initialLocations.at(i));
@@ -114,13 +120,13 @@ UserLocationsPage::UserLocationsPage(QWidget *parent)
 
     gridLayout->addWidget(description, row++, 0, 1, -1);
 
-    for (int i = 0; i < d->locationsName.size(); ++i, ++row) {
-        QLabel *label = new QLabel(d->locationsName.at(i), this);
+    for (int i = 0; i < locationsNameCount; ++i, ++row) {
+        QLabel *label = new QLabel(QCoreApplication::translate("UserLocationsPrivate", d->locationsName[i]), this);
 
         QLineEdit *edit = new QLineEdit(this);
         d->locations.append(edit);
         edit->setClearButtonEnabled(true);
-        edit->setToolTip(d->locationsToolTips.at(i));
+        edit->setToolTip(QCoreApplication::translate("UserLocationsPrivate", d->locationsToolTips[i]));
 
         QToolButton *button = new QToolButton(this);
         button->setIcon(XdgIcon::fromTheme(QStringLiteral("folder")));
@@ -177,7 +183,7 @@ void UserLocationsPage::save()
             if (!ok) {
                 const int ret = QMessageBox::warning(this,
                     tr("LXQt Session Settings - User Directories"),
-                    tr("An error ocurred while applying the settings for the %1 location").arg(d->locationsName.at(i)),
+                    tr("An error ocurred while applying the settings for the %1 location").arg(QCoreApplication::translate("UserLocationsPrivate", d->locationsName[i])),
                     QMessageBox::Ok);
                 Q_UNUSED(ret);
             }
