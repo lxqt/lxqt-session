@@ -28,6 +28,7 @@
 #include "UdevNotifier.h"
 #include "log.h"
 #include <libudev.h>
+#include <QByteArray>
 #include <QSocketNotifier>
 
 
@@ -80,19 +81,21 @@ void UdevNotifier::eventReady(int /*socket*/)
     struct udev_device * dev;
     while (nullptr != (dev = udev_monitor_receive_device(d->monitor)))
     {
-        QString const action = QString::fromUtf8(udev_device_get_action(dev));
+        const char *action = udev_device_get_action(dev);
         QString const device = QString::fromUtf8(udev_device_get_devnode(dev));
 
-        if (QStringLiteral("add") == action)
-            emit deviceAdded(std::move(device));
-        else if (QStringLiteral("remove") == action)
-            emit deviceRemoved(std::move(device));
-        else if (QStringLiteral("change") == action)
-            emit deviceChanged(std::move(device));
-        else if (QStringLiteral("online") == action)
-            emit deviceOnline(std::move(device));
-        else if (QStringLiteral("offline") == action)
-            emit deviceOffline(std::move(device));
+        if (action && !device.isEmpty()) {
+            if (qstrcmp(action, "add") == 0)
+                emit deviceAdded(std::move(device));
+            else if (qstrcmp(action, "remove") == 0)
+                emit deviceRemoved(std::move(device));
+            else if (qstrcmp(action, "change") == 0)
+                emit deviceChanged(std::move(device));
+            else if (qstrcmp(action, "online") == 0)
+                emit deviceOnline(std::move(device));
+            else if (qstrcmp(action, "offline") == 0)
+                emit deviceOffline(std::move(device));
+        }
 
         udev_device_unref(dev);
     }
