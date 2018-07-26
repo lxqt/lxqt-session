@@ -29,6 +29,8 @@
 #include "autostartmodel.h"
 #include "autostartutils.h"
 
+#include <LXQt/Globals>
+
 AutoStartItemModel::AutoStartItemModel(QObject* parent) :
     QAbstractItemModel(parent),
     mItemMap(AutostartItem::createItemMap()),
@@ -94,7 +96,7 @@ bool AutoStartItemModel::setEntry(const QModelIndex& index, XdgDesktopFile entry
         return false;
 
     if (parent == mLXQtIndex)
-        entry.setValue("OnlyShowIn", "LXQt;");
+        entry.setValue(QL1S("OnlyShowIn"), QL1S("LXQt;"));
 
     mItemMap[fileName].setFile(entry);
 
@@ -211,14 +213,14 @@ QVariant AutoStartItemModel::data(const QModelIndex& index, int role) const
             tooltip << tr("Location: %1").arg(item.file().fileName());
         if (item.overrides())
             tooltip << tr("Overrides: %1").arg(item.systemfile().fileName());
-        return tooltip.join("\n");
+        return tooltip.join(QL1C('\n'));
     }
     else if (role == Qt::DecorationRole)
     {
         if (item.overrides())
-            return XdgIcon::fromTheme("dialog-warning");
+            return XdgIcon::fromTheme(QSL("dialog-warning"));
         else if (!item.isLocal())
-            return XdgIcon::fromTheme("computer");
+            return XdgIcon::fromTheme(QSL("computer"));
     }
     else if (role == Qt::CheckStateRole)
     {
@@ -280,7 +282,7 @@ int AutoStartItemModel::rowCount(const QModelIndex& parent) const
 
 bool AutoStartItemModel::showOnlyInLXQt(const XdgDesktopFile& file)
 {
-    return file.value("OnlyShowIn") == "LXQt;";
+    return file.value(QL1S("OnlyShowIn")) == QL1S("LXQt;");
 }
 
 /*

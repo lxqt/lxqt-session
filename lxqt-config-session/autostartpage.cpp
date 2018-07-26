@@ -28,6 +28,8 @@
 #include "autostartedit.h"
 #include "autostartutils.h"
 
+#include <LXQt/Globals>
+
 #include <QMessageBox>
 
 AutoStartPage::AutoStartPage(QWidget* parent) :
@@ -134,7 +136,7 @@ void AutoStartPage::addButton_clicked()
         QModelIndex index = ui->autoStartView->selectionModel()->currentIndex();
         XdgDesktopFile file(XdgDesktopFile::ApplicationType, edit.name(), edit.command());
         if (edit.needTray())
-            file.setValue("X-LXQt-Need-Tray", true);
+            file.setValue(QL1S("X-LXQt-Need-Tray"), true);
         if (mXdgAutoStartModel->setEntry(index, file))
             success = true;
         else
@@ -146,15 +148,15 @@ void AutoStartPage::editButton_clicked()
 {
     QModelIndex index = ui->autoStartView->selectionModel()->currentIndex();
     XdgDesktopFile file = mXdgAutoStartModel->desktopFile(index);
-    AutoStartEdit edit(file.name(), file.value("Exec").toString(), file.contains("X-LXQt-Need-Tray"));
+    AutoStartEdit edit(file.name(), file.value(QL1S("Exec")).toString(), file.contains(QL1S("X-LXQt-Need-Tray")));
     if (edit.exec() == QDialog::Accepted)
     {
-        file.setLocalizedValue("Name", edit.name());
-        file.setValue("Exec", edit.command());
+        file.setLocalizedValue(QL1S("Name"), edit.name());
+        file.setValue(QL1S("Exec"), edit.command());
         if (edit.needTray())
-            file.setValue("X-LXQt-Need-Tray", true);
+            file.setValue(QL1S("X-LXQt-Need-Tray"), true);
         else
-            file.removeEntry("X-LXQt-Need-Tray");
+            file.removeEntry(QL1S("X-LXQt-Need-Tray"));
 
         mXdgAutoStartModel->setEntry(index, file, true);
     }

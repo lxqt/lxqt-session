@@ -26,6 +26,7 @@
 #include <QtDBus/QDBusConnection>
 #include <QtDBus/QDBusReply>
 #include <QDebug>
+#include <LXQt/Globals>
 #include <XdgIcon>
 #include "modulemodel.h"
 #include "autostartutils.h"
@@ -33,7 +34,7 @@
 ModuleModel::ModuleModel(QObject* parent)
     : QAbstractListModel(parent)
 {
-    mInterface = new QDBusInterface("org.lxqt.session", "/LXQtSession", "",
+    mInterface = new QDBusInterface(QSL("org.lxqt.session"), QSL("/LXQtSession"), QString(),
                                     QDBusConnection::sessionBus(), this);
     connect(mInterface, SIGNAL(moduleStateChanged(QString,bool)), SLOT(updateModuleState(QString,bool)));
 }
@@ -56,7 +57,7 @@ void ModuleModel::reset()
             mKeyList.append(iter.key());
     }
 
-    QDBusReply<QVariant> reply = mInterface->call("listModules");
+    QDBusReply<QVariant> reply = mInterface->call(QSL("listModules"));
     const QStringList moduleList = reply.value().toStringList();
     for (const QString& moduleName : moduleList)
     {
@@ -146,6 +147,6 @@ void ModuleModel::toggleModule(const QModelIndex &index, bool status)
     QList<QVariant> arg;
     arg.append(mKeyList.at(index.row()));
     mInterface->callWithArgumentList(QDBus::NoBlock,
-                                     status ? "startModule" : "stopModule",
+                                     status ? QSL("startModule") : QSL("stopModule"),
                                      arg);
 }

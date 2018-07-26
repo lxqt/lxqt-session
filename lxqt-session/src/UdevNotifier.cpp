@@ -80,8 +80,8 @@ void UdevNotifier::eventReady(int /*socket*/)
     struct udev_device * dev;
     while (nullptr != (dev = udev_monitor_receive_device(d->monitor)))
     {
-        QString const action = udev_device_get_action(dev);
-        QString const device = udev_device_get_devnode(dev);
+        QString const action = QString::fromUtf8(udev_device_get_action(dev));
+        QString const device = QString::fromUtf8(udev_device_get_devnode(dev));
 
         if (QStringLiteral("add") == action)
             emit deviceAdded(std::move(device));

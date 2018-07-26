@@ -27,6 +27,7 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include "lxqtmodman.h"
+#include <LXQt/Globals>
 #include <LXQt/Settings>
 #include <XdgAutoStart>
 #include <XdgDirs>
@@ -92,7 +93,7 @@ void LXQtModuleManager::startup(LXQt::Settings& s)
 
     for(const QString &path : qAsConst(paths))
     {
-        QFileInfo fi(QString("%1/lxqt/themes").arg(path));
+        QFileInfo fi(QString::fromLatin1("%1/lxqt/themes").arg(path));
         if (fi.exists())
             mThemeWatcher->addPath(fi.absoluteFilePath());
     }
@@ -107,7 +108,7 @@ void LXQtModuleManager::startAutostartApps()
     QList<const XdgDesktopFile*> trayApps;
     for (XdgDesktopFileList::const_iterator i = fileList.constBegin(); i != fileList.constEnd(); ++i)
     {
-        if (i->value("X-LXQt-Need-Tray", false).toBool())
+        if (i->value(QSL("X-LXQt-Need-Tray"), false).toBool())
             trayApps.append(&(*i));
         else
         {
@@ -150,14 +151,14 @@ void LXQtModuleManager::themeFolderChanged(const QString& /*path*/)
     else
         newTheme = lxqtTheme.currentTheme().name();
 
-    LXQt::Settings settings("lxqt");
-    if (newTheme == settings.value("theme"))
+    LXQt::Settings settings(QSL("lxqt"));
+    if (newTheme == settings.value(QL1S("theme")))
     {
         // force the same theme to be updated
-        settings.setValue("__theme_updated__", QDateTime::currentMSecsSinceEpoch());
+        settings.setValue(QSL("__theme_updated__"), QDateTime::currentMSecsSinceEpoch());
     }
     else
-        settings.setValue("theme", newTheme);
+        settings.setValue(QL1S("theme"), newTheme);
 
     sync();
 }
@@ -178,7 +179,7 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
 {
     // if the WM is active do not run WM.
     // all window managers must set their name according to the spec
-    if (!QString(NETRootInfo(QX11Info::connection(), NET::SupportingWMCheck).wmName()).isEmpty())
+    if (!QString::fromUtf8(NETRootInfo(QX11Info::connection(), NET::SupportingWMCheck).wmName()).isEmpty())
     {
         mWmStarted = true;
         return;
@@ -186,24 +187,24 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
 
     if (mWindowManager.isEmpty())
     {
-        mWindowManager = settings->value("window_manager").toString();
+        mWindowManager = settings->value(QL1S("window_manager")).toString();
     }
 
     // If previuos WM was removed, we show dialog.
-    if (mWindowManager.isEmpty() || ! findProgram(mWindowManager.split(' ')[0]))
+    if (mWindowManager.isEmpty() || ! findProgram(mWindowManager.split(QL1C(' '))[0]))
     {
         mWindowManager = showWmSelectDialog();
-        settings->setValue("window_manager", mWindowManager);
+        settings->setValue(QL1S("window_manager"), mWindowManager);
         settings->sync();
     }
 
-    if (QFileInfo(mWindowManager).baseName() == "openbox")
+    if (QFileInfo(mWindowManager).baseName() == QL1S("openbox"))
     {
         // Default settings of openbox are copied by lxqt-session/startlxqt.in
-        QString openboxSettingsPath = XdgDirs::configHome() + "/openbox/lxqt-rc.xml";
+        QString openboxSettingsPath = XdgDirs::configHome() + QSL("/openbox/lxqt-rc.xml");
         QStringList args;
         if(QFileInfo::exists(openboxSettingsPath))
-            args << "--config-file" << openboxSettingsPath;
+            args << QSL("--config-file") << openboxSettingsPath;
         mWmProcess->start(mWindowManager, args);
     }
     else
@@ -225,7 +226,7 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
 
 void LXQtModuleManager::startProcess(const XdgDesktopFile& file)
 {
-    if (!file.value("X-LXQt-Module", false).toBool())
+    if (!file.value(QL1S("X-LXQt-Module"), false).toBool())
     {
         file.startDetached();
         return;
@@ -276,9 +277,9 @@ QStringList LXQtModuleManager::listModules() const
 
 void LXQtModuleManager::startConfUpdate()
 {
-    XdgDesktopFile desktop(XdgDesktopFile::ApplicationType, ":lxqt-confupdate", "lxqt-confupdate --watch");
-    desktop.setValue("Name", "LXQt config updater");
-    desktop.setValue("X-LXQt-Module", true);
+    XdgDesktopFile desktop(XdgDesktopFile::ApplicationType, QSL(":lxqt-confupdate"), QSL("lxqt-confupdate --watch"));
+    desktop.setValue(QSL("Name"), QSL("LXQt config updater"));
+    desktop.setValue(QL1S("X-LXQt-Module"), true);
     startProcess(desktop);
 }
 
@@ -370,7 +371,7 @@ void LXQtModuleManager::logout(bool doExit)
         LXQtModule* p = i.value();
         if (p->state() != QProcess::NotRunning && !p->waitForFinished(2000))
         {
-            qCWarning(SESSION) << QString("Module '%1' won't terminate ... killing.").arg(i.key());
+            qCWarning(SESSION, "Module %s won't terminate ... killing.", qPrintable(i.key()));
             p->kill();
         }
     }
@@ -378,7 +379,7 @@ void LXQtModuleManager::logout(bool doExit)
     mWmProcess->terminate();
     if (mWmProcess->state() != QProcess::NotRunning && !mWmProcess->waitForFinished(2000))
     {
-        qCWarning(SESSION) << QString("Window Manager won't terminate ... killing.");
+        qCWarning(SESSION) << "Window Manager won't terminate ... killing.";
         mWmProcess->kill();
     }
 
@@ -410,7 +411,7 @@ bool LXQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * /
     if(!mWmStarted && mWaitLoop)
     {
         // all window managers must set their name according to the spec
-        if (!QString(NETRootInfo(QX11Info::connection(), NET::SupportingWMCheck).wmName()).isEmpty())
+        if (!QString::fromUtf8(NETRootInfo(QX11Info::connection(), NET::SupportingWMCheck).wmName()).isEmpty())
         {
             qCDebug(SESSION) << "Window Manager started";
             mWmStarted = true;
@@ -436,7 +437,7 @@ bool LXQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * /
 void lxqt_setenv(const char *env, const QByteArray &value)
 {
     wordexp_t p;
-    wordexp(value, &p, 0);
+    wordexp(value.constData(), &p, 0);
     if (p.we_wordc == 1)
     {
 
