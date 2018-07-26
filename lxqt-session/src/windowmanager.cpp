@@ -31,6 +31,7 @@
 #include <QStringList>
 #include <QFileInfo>
 #include <QDir>
+#include <LXQt/Globals>
 #include <LXQt/Settings>
 #include <QDebug>
 
@@ -41,8 +42,7 @@ bool findProgram(const QString &program)
     if (fi.isExecutable())
         return true;
 
-    QString path = qgetenv("PATH");
-    const auto paths = path.split(":");
+    const QStringList paths = QFile::decodeName(qgetenv("PATH")).split(QL1C(':'));
     for(const QString &dir : paths)
     {
         QFileInfo fi= QFileInfo(dir + QDir::separator() + program);
@@ -54,8 +54,8 @@ bool findProgram(const QString &program)
 
 WindowManagerList getWindowManagerList(bool onlyAvailable)
 {
-    LXQt::Settings cfg("windowmanagers");
-    cfg.beginGroup("KnownManagers");
+    LXQt::Settings cfg(QSL("windowmanagers"));
+    cfg.beginGroup(QSL("KnownManagers"));
     const QStringList names = cfg.childGroups();
 
     WindowManagerList ret;
@@ -68,8 +68,8 @@ WindowManagerList getWindowManagerList(bool onlyAvailable)
             cfg.beginGroup(name);
             WindowManager wm;
             wm.command = name;
-            wm.name = cfg.localizedValue("Name", wm.command).toString();
-            wm.comment = cfg.localizedValue("Comment").toString();
+            wm.name = cfg.localizedValue(QSL("Name"), wm.command).toString();
+            wm.comment = cfg.localizedValue(QSL("Comment")).toString();
             wm.exists = exists;
             ret << wm;
             cfg.endGroup();

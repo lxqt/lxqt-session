@@ -32,6 +32,8 @@
 
 #include "sessionconfigwindow.h"
 
+#include <LXQt/Globals>
+
 DefaultApps::DefaultApps(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::DefaultAppsPage)
@@ -53,16 +55,16 @@ DefaultApps::~DefaultApps()
 
 void DefaultApps::updateEnvVar(const QString& var, const QString& val)
 {
-    if (var == "BROWSER")
+    if (var == QL1S("BROWSER"))
     {
         QStringList knownBrowsers;
-        knownBrowsers << "firefox" << "qupzilla" << "arora" << "konqueror" << "opera";
+        knownBrowsers << QSL("firefox") << QSL("qupzilla") << QSL("arora") << QSL("konqueror") << QSL("opera");
         SessionConfigWindow::handleCfgComboBox(ui->browserComboBox, knownBrowsers, val);
     }
-    else if (var == "TERM")
+    else if (var == QL1S("TERM"))
     {
         QStringList knownTerms;
-        knownTerms << "qterminal" << "xterm" << "konsole" << "uterm";
+        knownTerms << QSL("qterminal") << QSL("xterm") << QSL("konsole") << QSL("uterm");
         SessionConfigWindow::handleCfgComboBox(ui->terminalComboBox, knownTerms, val);
     }
 }
@@ -79,10 +81,10 @@ void DefaultApps::browserButton_clicked()
 
 void DefaultApps::terminalChanged()
 {
-    emit defaultAppChanged("TERM", ui->terminalComboBox->lineEdit()->text());
+    emit defaultAppChanged(QL1S("TERM"), ui->terminalComboBox->lineEdit()->text());
 }
 
 void DefaultApps::browserChanged()
 {
-    emit defaultAppChanged("BROWSER", ui->browserComboBox->lineEdit()->text());
+    emit defaultAppChanged(QL1S("BROWSER"), ui->browserComboBox->lineEdit()->text());
 }

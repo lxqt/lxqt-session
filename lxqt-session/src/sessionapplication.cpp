@@ -26,6 +26,7 @@
 #include <unistd.h>
 #include <csignal>
 #include <LXQt/Settings>
+#include <LXQt/Globals>
 #include <QProcess>
 #include "log.h"
 
@@ -43,8 +44,8 @@ SessionApplication::SessionApplication(int& argc, char** argv) :
     connect(this, &LXQt::Application::unixSignal, modman, [this] { modman->logout(true); });
     new SessionDBusAdaptor(modman);
     // connect to D-Bus and register as an object:
-    QDBusConnection::sessionBus().registerService("org.lxqt.session");
-    QDBusConnection::sessionBus().registerObject("/LXQtSession", modman);
+    QDBusConnection::sessionBus().registerService(QSL("org.lxqt.session"));
+    QDBusConnection::sessionBus().registerObject(QSL("/LXQtSession"), modman);
 
     // Wait until the event loop starts
     QTimer::singleShot(0, this, SLOT(startup()));
@@ -63,7 +64,7 @@ void SessionApplication::setWindowManager(const QString& windowManager)
 void SessionApplication::setConfigName(const QString& configName)
 {
     if(configName.isEmpty())
-      this->configName = "session";
+      this->configName = QSL("session");
 
     // tell the world which config file we're using.
     qputenv("LXQT_SESSION_CONFIG", this->configName.toLocal8Bit());
@@ -114,7 +115,7 @@ void SessionApplication::mergeXrdb(const char* content, int len)
 {
     qCDebug(SESSION) << "xrdb:" << content;
     QProcess xrdb;
-    xrdb.start("xrdb -merge -");
+    xrdb.start(QSL("xrdb -merge -"));
     xrdb.write(content, len);
     xrdb.closeWriteChannel();
     xrdb.waitForFinished();
@@ -123,7 +124,7 @@ void SessionApplication::mergeXrdb(const char* content, int len)
 void SessionApplication::loadEnvironmentSettings(LXQt::Settings& settings)
 {
     // first - set some user defined environment variables (like TERM...)
-    settings.beginGroup("Environment");
+    settings.beginGroup(QSL("Environment"));
     QByteArray envVal;
     const QStringList keys = settings.childKeys();
     for(const QString& i : keys)
@@ -164,31 +165,31 @@ void SessionApplication::setxkbmap(QString layout, QString variant, QString mode
 void SessionApplication::loadKeyboardSettings(LXQt::Settings& settings)
 {
   qCDebug(SESSION) << settings.fileName();
-    settings.beginGroup("Keyboard");
+    settings.beginGroup(QSL("Keyboard"));
     XKeyboardControl values;
     /* Keyboard settings */
     unsigned int delay, interval;
     if(XkbGetAutoRepeatRate(QX11Info::display(), XkbUseCoreKbd, (unsigned int*) &delay, (unsigned int*) &interval))
     {
-        delay = settings.value("delay", delay).toUInt();
-        interval = settings.value("interval", interval).toUInt();
+        delay = settings.value(QSL("delay"), delay).toUInt();
+        interval = settings.value(QSL("interval"), interval).toUInt();
         XkbSetAutoRepeatRate(QX11Info::display(), XkbUseCoreKbd, delay, interval);
     }
 
     // turn on/off keyboard beep
-    bool beep = settings.value("beep").toBool();
+    bool beep = settings.value(QSL("beep")).toBool();
     values.bell_percent = beep ? -1 : 0;
     XChangeKeyboardControl(QX11Info::display(), KBBellPercent, &values);
 
     // turn on numlock as needed
-    if(settings.value("numlock").toBool())
+    if(settings.value(QSL("numlock")).toBool())
         enableNumlock();
 
     // keyboard layout support using setxkbmap
-    QString layout = settings.value("layout").toString();
-    QString variant = settings.value("variant").toString();
-    QString model = settings.value("model").toString();
-    QStringList options = settings.value("options").toStringList();
+    QString layout = settings.value(QSL("layout")).toString();
+    QString variant = settings.value(QSL("variant")).toString();
+    QString model = settings.value(QSL("model")).toString();
+    QStringList options = settings.value(QSL("options")).toStringList();
     setxkbmap(layout, variant, model, options);
 
     settings.endGroup();
@@ -196,35 +197,35 @@ void SessionApplication::loadKeyboardSettings(LXQt::Settings& settings)
 
 void SessionApplication::loadMouseSettings(LXQt::Settings& settings)
 {
-    settings.beginGroup("Mouse");
+    settings.beginGroup(QSL("Mouse"));
 
     // mouse cursor (does this work?)
-    QString cursorTheme = settings.value("cursor_theme").toString();
-    int cursorSize = settings.value("cursor_size").toInt();
+    QString cursorTheme = settings.value(QSL("cursor_theme")).toString();
+    int cursorSize = settings.value(QSL("cursor_size")).toInt();
     QByteArray buf;
     if(!cursorTheme.isEmpty()) {
-        buf += "Xcursor.theme:";
-        buf += cursorTheme;
-        buf += '\n';
+        buf += QBAL("Xcursor.theme:");
+        buf += cursorTheme.toLocal8Bit();
+        buf += QBAL("\n");
     }
     if(cursorSize > 0) {
-        buf += "Xcursor.size:";
-        buf += QString("%1").arg(cursorSize);
-        buf += '\n';
+        buf += QBAL("Xcursor.size:");
+        buf += QByteArray::number(cursorSize);
+        buf += QBAL("\n");
     }
     if(!buf.isEmpty()) {
-        buf += "Xcursor.theme_core:true\n";
+        buf += QBAL("Xcursor.theme_core:true\n");
         mergeXrdb(buf.constData(), buf.length());
     }
 
     // other mouse settings
-    int accel_factor = settings.value("accel_factor").toInt();
-    int accel_threshold = settings.value("accel_threshold").toInt();
+    int accel_factor = settings.value(QSL("accel_factor")).toInt();
+    int accel_threshold = settings.value(QSL("accel_threshold")).toInt();
     if(accel_factor || accel_threshold)
         XChangePointerControl(QX11Info::display(), accel_factor != 0, accel_threshold != 0, accel_factor, 10, accel_threshold);
 
     // left handed mouse?
-    bool left_handed = settings.value("left_handed", false).toBool();
+    bool left_handed = settings.value(QSL("left_handed"), false).toBool();
     setLeftHandedMouse(left_handed);
 
     settings.endGroup();

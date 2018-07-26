@@ -28,6 +28,8 @@
 #include "environmentpage.h"
 #include "ui_environmentpage.h"
 
+#include <LXQt/Globals>
+
 EnvironmentPage::EnvironmentPage(LXQt::Settings *settings, QWidget *parent) :
     QWidget(parent),
     m_settings(settings),
@@ -51,7 +53,7 @@ EnvironmentPage::~EnvironmentPage()
 
 void EnvironmentPage::restoreSettings()
 {
-    m_settings->beginGroup("Environment");
+    m_settings->beginGroup(QL1S("Environment"));
     QString value;
     ui->treeWidget->clear();
     const auto keys = m_settings->childKeys();
@@ -64,10 +66,10 @@ void EnvironmentPage::restoreSettings()
         emit envVarChanged(i, value);
     }
 
-    if (m_settings->value("BROWSER").isNull())
-        emit envVarChanged("BROWSER", "");
-    if (m_settings->value("TERM").isNull())
-        emit envVarChanged("TERM", "");
+    if (m_settings->value(QL1S("BROWSER")).isNull())
+        emit envVarChanged(QL1S("BROWSER"), QString());
+    if (m_settings->value(QL1S("TERM")).isNull())
+        emit envVarChanged(QL1S("TERM"), QString());
 
     m_settings->endGroup();
 }
@@ -77,7 +79,7 @@ void EnvironmentPage::save()
     bool doRestart = false;
     QMap<QString, QString> oldSettings;
 
-    m_settings->beginGroup("Environment");
+    m_settings->beginGroup(QL1S("Environment"));
 
     /* We erase the Enviroment group and them write the Ui settings. To know if
        they changed or not we need to save them to memory.
@@ -85,7 +87,7 @@ void EnvironmentPage::save()
     const auto keys = m_settings->childKeys();
     for (const QString &key : keys)
         oldSettings[key] = m_settings->value(key, QString()).toString();
-    m_settings->remove("");
+    m_settings->remove(QString());
 
     const int nItems = ui->treeWidget->topLevelItemCount();
     for(int i = 0; i < nItems; ++i)
@@ -110,7 +112,7 @@ void EnvironmentPage::save()
 
 void EnvironmentPage::addButton_clicked()
 {
-    QTreeWidgetItem *item = new QTreeWidgetItem(ui->treeWidget, QStringList() << "" << "");
+    QTreeWidgetItem *item = new QTreeWidgetItem(ui->treeWidget, QStringList() << QString() << QString());
     item->setFlags(item->flags() | Qt::ItemIsEditable);
     ui->treeWidget->addTopLevelItem(item);
     ui->treeWidget->setCurrentItem(item);
@@ -121,7 +123,7 @@ void EnvironmentPage::deleteButton_clicked()
     const auto items = ui->treeWidget->selectedItems();
     for (QTreeWidgetItem* item : items)
     {
-        emit envVarChanged(item->text(0), "");
+        emit envVarChanged(item->text(0), QString());
         delete item;
     }
 }

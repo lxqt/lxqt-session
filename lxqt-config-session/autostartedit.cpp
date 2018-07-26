@@ -27,6 +27,8 @@
 #include "autostartedit.h"
 #include "ui_autostartedit.h"
 
+#include <LXQt/Globals>
+
 AutoStartEdit::AutoStartEdit(QString name, QString command, bool needTray, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AutoStartEdit)
@@ -56,7 +58,7 @@ bool AutoStartEdit::needTray()
 
 void AutoStartEdit::browse()
 {
-    QString filePath = QFileDialog::getOpenFileName(this, tr("Select Application"), "/usr/bin/");
+    QString filePath = QFileDialog::getOpenFileName(this, tr("Select Application"), QSL("/usr/bin/"));
     if (!filePath.isEmpty())
         ui->commandEdit->setText(filePath);
 }

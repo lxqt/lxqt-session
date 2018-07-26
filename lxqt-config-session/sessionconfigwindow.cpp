@@ -29,6 +29,7 @@
 #include <QMessageBox>
 #include <QFileDialog>
 
+#include <LXQt/Globals>
 #include <LXQt/Settings>
 
 #include "sessionconfigwindow.h"
@@ -41,16 +42,16 @@
 
 
 SessionConfigWindow::SessionConfigWindow() :
-      LXQt::ConfigDialog(tr("LXQt Session Settings"), new LXQt::Settings("session"), 0)
+      LXQt::ConfigDialog(tr("LXQt Session Settings"), new LXQt::Settings(QSL("session")), 0)
 {
     BasicSettings* basicSettings = new BasicSettings(mSettings, this);
-    addPage(basicSettings, tr("Basic Settings"), "preferences-desktop-display-color");
+    addPage(basicSettings, tr("Basic Settings"), QSL("preferences-desktop-display-color"));
     connect(basicSettings, SIGNAL(needRestart()), SLOT(setRestart()));
     connect(this, SIGNAL(reset()), basicSettings, SLOT(restoreSettings()));
     connect(this, SIGNAL(save()), basicSettings, SLOT(save()));
 
     DefaultApps* defaultApps = new DefaultApps(this);
-    addPage(defaultApps, tr("Default Applications"), "preferences-desktop-filetype-association");
+    addPage(defaultApps, tr("Default Applications"), QSL("preferences-desktop-filetype-association"));
 
     UserLocationsPage* userLocations = new UserLocationsPage(this);
     addPage(userLocations, tr("User Directories"), QStringLiteral("folder"));
@@ -59,13 +60,13 @@ SessionConfigWindow::SessionConfigWindow() :
     connect(this, SIGNAL(save()), userLocations, SLOT(save()));
 
     AutoStartPage* autoStart = new AutoStartPage(this);
-    addPage(autoStart, tr("Autostart"), "preferences-desktop-launch-feedback");
+    addPage(autoStart, tr("Autostart"), QSL("preferences-desktop-launch-feedback"));
     connect(autoStart, SIGNAL(needRestart()), SLOT(setRestart()));
     connect(this, SIGNAL(reset()), autoStart, SLOT(restoreSettings()));
     connect(this, SIGNAL(save()), autoStart, SLOT(save()));
 
     EnvironmentPage* environmentPage = new EnvironmentPage(mSettings, this);
-    addPage(environmentPage, tr("Environment (Advanced)"), "preferences-system-session-services");
+    addPage(environmentPage, tr("Environment (Advanced)"), QSL("preferences-system-session-services"));
     connect(environmentPage, SIGNAL(needRestart()), SLOT(setRestart()));
     connect(this, SIGNAL(reset()), environmentPage, SLOT(restoreSettings()));
     connect(this, SIGNAL(save()), environmentPage, SLOT(save()));
@@ -122,7 +123,7 @@ void SessionConfigWindow::updateCfgComboBox(QComboBox * cb,
                                             const QString &prompt
                                            )
 {
-    QString fname = QFileDialog::getOpenFileName(cb, prompt, "/usr/bin/");
+    QString fname = QFileDialog::getOpenFileName(cb, prompt, QSL("/usr/bin/"));
     if (fname.isEmpty())
         return;
 

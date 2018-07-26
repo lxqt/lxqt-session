@@ -28,6 +28,9 @@
 
 #include "wmselectdialog.h"
 #include "ui_wmselectdialog.h"
+
+#include <LXQt/Globals>
+
 #include <QTreeWidget>
 #include <QVariant>
 #include <stdlib.h>
@@ -45,7 +48,7 @@ WmSelectDialog::WmSelectDialog(const WindowManagerList &availableWindowManagers,
     QDialog(parent),
     ui(new Ui::WmSelectDialog)
 {
-    qApp->setStyle("plastique");
+    qApp->setStyle(QSL("plastique"));
     ui->setupUi(this);
     setModal(true);
     connect(ui->wmList, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(accept()));
@@ -114,7 +117,7 @@ void WmSelectDialog::selectFileDialog(const QModelIndex &/*index*/)
     if (item->data(1, TYPE_ROLE) != SELECT_DLG_TYPE)
         return;
 
-    QString fname = QFileDialog::getOpenFileName(this, "", "/usr/bin/");
+    QString fname = QFileDialog::getOpenFileName(this, QString(), QSL("/usr/bin/"));
     if (fname.isEmpty())
         return;
 

@@ -27,6 +27,9 @@
 
 #include "lockscreenmanager.h"
 #include "log.h"
+
+#include <LXQt/Globals>
+
 #include <QTimer>
 #include <QDBusReply>
 #include <QDebug>
@@ -196,7 +199,7 @@ ConsoleKit2Provider::ConsoleKit2Provider() :
                 QStringLiteral("org.freedesktop.DBus.Introspectable"),
                 QDBusConnection::systemBus())
             .call(QStringLiteral("Introspect"));
-        mMethodInhibitPresent = reply.value().contains("Inhibit");
+        mMethodInhibitPresent = reply.value().contains(QL1S("Inhibit"));
 
         if (mMethodInhibitPresent)
         {
@@ -204,7 +207,7 @@ ConsoleKit2Provider::ConsoleKit2Provider() :
                     this, SIGNAL(aboutToSleep(bool)));
 
             QDBusReply<QDBusObjectPath> sessionObjectPath = mInterface
-                .call("GetCurrentSession");
+                .call(QSL("GetCurrentSession"));
 
             // listen to Lock signal as well
             mInterface.connection().connect(
