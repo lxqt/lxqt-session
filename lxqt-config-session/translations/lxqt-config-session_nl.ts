@@ -125,7 +125,7 @@
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation type="unfinished"></translation>
+        <translation>Vergrendel scherm alvorens in pauzestand/slaapstand te gaan</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="147"/>
