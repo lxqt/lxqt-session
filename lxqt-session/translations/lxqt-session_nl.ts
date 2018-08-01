@@ -19,18 +19,18 @@
     <message>
         <location filename="../src/main.cpp" line="59"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pad voor instellingenbestand.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="59"/>
         <location filename="../src/main.cpp" line="60"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>bestand</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="60"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Te gebruiken vensterbeheerder.</translation>
     </message>
 </context>
 <context>
