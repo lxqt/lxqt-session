@@ -4,12 +4,12 @@
 <context>
     <name>LXQtModuleManager</name>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="310"/>
+        <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>Crash Report</source>
         <translation>דוח קריסה</translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="311"/>
+        <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; קרס פעמים רבות מדי. מנגנון ההפעלה מחדש הושבת עד לכניסה הבאה למערכת.</translation>
     </message>
@@ -17,18 +17,18 @@
 <context>
     <name>SessionApplication</name>
     <message>
-        <location filename="../src/main.cpp" line="59"/>
+        <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
         <translation>נתיב קובץ הגדרות.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="59"/>
-        <location filename="../src/main.cpp" line="60"/>
+        <location filename="../src/main.cpp" line="62"/>
+        <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
         <translation>קובץ</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="60"/>
+        <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
         <translation>מנהל חלונות לשימוש.</translation>
     </message>
@@ -51,12 +51,12 @@
         <translation>תהיה לך אפשרות לשנות זאת בכל עת דרך העדפות -&gt; הגדרות הפעלה -&gt; הגדרות בסיסיות.</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="62"/>
+        <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Other ...</source>
         <translation>אחר…</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="63"/>
+        <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
         <translation>בחירת המועדף עליך.</translation>
     </message>

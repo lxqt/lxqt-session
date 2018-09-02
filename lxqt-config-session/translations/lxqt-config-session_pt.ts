@@ -29,7 +29,7 @@
         <translation>Esperar pela bandeja do sistema</translation>
     </message>
     <message>
-        <location filename="../autostartedit.cpp" line="59"/>
+        <location filename="../autostartedit.cpp" line="61"/>
         <source>Select Application</source>
         <translation>Escolha a aplicação</translation>
     </message>
@@ -37,22 +37,22 @@
 <context>
     <name>AutoStartItemModel</name>
     <message>
-        <location filename="../autostartmodel.cpp" line="191"/>
+        <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
         <translation>Arranque automático global</translation>
     </message>
     <message>
-        <location filename="../autostartmodel.cpp" line="193"/>
+        <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
         <translation>Arranque automático do LXQt</translation>
     </message>
     <message>
-        <location filename="../autostartmodel.cpp" line="211"/>
+        <location filename="../autostartmodel.cpp" line="213"/>
         <source>Location: %1</source>
         <translation>Localização: %1</translation>
     </message>
     <message>
-        <location filename="../autostartmodel.cpp" line="213"/>
+        <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
         <translation>Substitui: %1</translation>
     </message>
@@ -80,12 +80,12 @@
         <translation>Aplicações de arranque automático</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="141"/>
+        <location filename="../autostartpage.cpp" line="143"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="141"/>
+        <location filename="../autostartpage.cpp" line="143"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>O ficheiro &quot;%1&quot; já existe!</translation>
     </message>
@@ -146,12 +146,12 @@
 <context>
     <name>DefaultApps</name>
     <message>
-        <location filename="../defaultappspage.cpp" line="72"/>
+        <location filename="../defaultappspage.cpp" line="74"/>
         <source>Select a terminal emulator</source>
         <translation>Escolha o emulador de terminal</translation>
     </message>
     <message>
-        <location filename="../defaultappspage.cpp" line="77"/>
+        <location filename="../defaultappspage.cpp" line="79"/>
         <source>Select a web browser</source>
         <translation>Escolha o navegador web</translation>
     </message>
@@ -211,7 +211,7 @@
 <context>
     <name>ModuleModel</name>
     <message>
-        <location filename="../modulemodel.cpp" line="86"/>
+        <location filename="../modulemodel.cpp" line="87"/>
         <source>Running</source>
         <translation>Em execução</translation>
     </message>
@@ -219,42 +219,42 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="44"/>
+        <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
         <translation>Definições da sessão LXQt</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="47"/>
+        <location filename="../sessionconfigwindow.cpp" line="48"/>
         <source>Basic Settings</source>
         <translation>Definições básicas</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="53"/>
+        <location filename="../sessionconfigwindow.cpp" line="54"/>
         <source>Default Applications</source>
         <translation>Aplicações padrão</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="56"/>
+        <location filename="../sessionconfigwindow.cpp" line="57"/>
         <source>User Directories</source>
         <translation>Diretórios do utilizador</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="62"/>
+        <location filename="../sessionconfigwindow.cpp" line="63"/>
         <source>Autostart</source>
         <translation>Arranque automático</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="68"/>
+        <location filename="../sessionconfigwindow.cpp" line="69"/>
         <source>Environment (Advanced)</source>
         <translation>Ambiente (avançado)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="94"/>
+        <location filename="../sessionconfigwindow.cpp" line="95"/>
         <source>Session Restart Required</source>
         <translation>Tem que reiniciar a sessão</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="95"/>
+        <location filename="../sessionconfigwindow.cpp" line="96"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>Algumas definições apenas serão aplicadas após reiniciar a sessão.</translation>
     </message>
@@ -262,22 +262,22 @@
 <context>
     <name>UserLocationsPage</name>
     <message>
-        <location filename="../userlocationspage.cpp" line="110"/>
+        <location filename="../userlocationspage.cpp" line="116"/>
         <source>Locations for Personal Files</source>
         <translation>Localização dos ficheiros pessoais</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="179"/>
+        <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
         <translation>Definições de sessão do LXQt - Diretórios do utilizador</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="180"/>
+        <location filename="../userlocationspage.cpp" line="186"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
         <translation>Ocorreu um erro ao aplicar as definições para a localização %1</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="196"/>
+        <location filename="../userlocationspage.cpp" line="202"/>
         <source>Choose Location</source>
         <translation>Escolha a localização</translation>
     </message>
@@ -285,82 +285,82 @@
 <context>
     <name>UserLocationsPrivate</name>
     <message>
-        <location filename="../userlocationspage.cpp" line="60"/>
+        <location filename="../userlocationspage.cpp" line="63"/>
         <source>Desktop</source>
         <translation>Área de trabalho</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="61"/>
+        <location filename="../userlocationspage.cpp" line="64"/>
         <source>Downloads</source>
         <translation>Descargas</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="62"/>
+        <location filename="../userlocationspage.cpp" line="65"/>
         <source>Templates</source>
         <translation>Modelos</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="63"/>
+        <location filename="../userlocationspage.cpp" line="66"/>
         <source>Public Share</source>
         <translation>Partilha pública</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="64"/>
+        <location filename="../userlocationspage.cpp" line="67"/>
         <source>Documents</source>
         <translation>Documentos</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="65"/>
+        <location filename="../userlocationspage.cpp" line="68"/>
         <source>Music</source>
         <translation>Músicas</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="66"/>
+        <location filename="../userlocationspage.cpp" line="69"/>
         <source>Pictures</source>
         <translation>Imagens</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="67"/>
+        <location filename="../userlocationspage.cpp" line="70"/>
         <source>Videos</source>
         <translation>Vídeos</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="70"/>
+        <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
         <translation>Contém todos os ficheiros do seu ambiente de trabalho</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="71"/>
+        <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
         <translation>Pasta utilizada para guardar as descargas</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="72"/>
+        <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
         <translation>Pasta utilizada para carregar ou guardar os seus modelos</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="73"/>
+        <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
         <translation>Pasta utilizada para os ficheiros partilhados</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="74"/>
+        <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
         <translation>Pasta utilizada para carregar ou guardar os seus documentos</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="75"/>
+        <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default foldet to load or save music from or to</source>
         <translation>Pasta utilizada para carregar ou guardar as suas músicas</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="76"/>
+        <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
         <translation>Pasta utilizada para carregar ou guardar as suas imagens</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="77"/>
+        <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
         <translation>Pasta utilizada para carregar ou guardar os seus vídeos</translation>
     </message>

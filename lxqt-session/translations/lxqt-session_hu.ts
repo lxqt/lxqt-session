@@ -4,12 +4,12 @@
 <context>
     <name>LXQtModuleManager</name>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="310"/>
+        <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>Crash Report</source>
         <translation>Összeomlás</translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="311"/>
+        <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>A &lt;b&gt;%1&lt;/b&gt; gyorsan többször összeomlott. Az autorestart a következő bejelentkezésig letiltva.</translation>
     </message>
@@ -17,18 +17,18 @@
 <context>
     <name>SessionApplication</name>
     <message>
-        <location filename="../src/main.cpp" line="59"/>
+        <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
         <translation>Konfigurációs fájl útvonal.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="59"/>
-        <location filename="../src/main.cpp" line="60"/>
+        <location filename="../src/main.cpp" line="62"/>
+        <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
         <translation>fájl</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="60"/>
+        <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
         <translation>Használandó ablakkezelő.</translation>
     </message>
@@ -36,12 +36,12 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="62"/>
+        <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Other ...</source>
         <translation>Más...</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="63"/>
+        <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
         <translation>Válassz egy kedvencet.</translation>
     </message>

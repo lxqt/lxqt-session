@@ -4,12 +4,12 @@
 <context>
     <name>LXQtModuleManager</name>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="310"/>
+        <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>Crash Report</source>
         <translation>Vastlooprapport</translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="311"/>
+        <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; is te vaak vastgelopen. Zijn automatische herstart is uitgeschakeld tot de volgende aanmelding.</translation>
     </message>
@@ -17,18 +17,18 @@
 <context>
     <name>SessionApplication</name>
     <message>
-        <location filename="../src/main.cpp" line="59"/>
+        <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
         <translation>Pad voor instellingenbestand.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="59"/>
-        <location filename="../src/main.cpp" line="60"/>
+        <location filename="../src/main.cpp" line="62"/>
+        <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
         <translation>bestand</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="60"/>
+        <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
         <translation>Te gebruiken vensterbeheerder.</translation>
     </message>
@@ -46,12 +46,12 @@
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welkom bij LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Kies a.u.b. uw standaard-vensterbeheerder.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="62"/>
+        <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Other ...</source>
         <translation>Overige...</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="63"/>
+        <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
         <translation>Kies uw favoriet.</translation>
     </message>

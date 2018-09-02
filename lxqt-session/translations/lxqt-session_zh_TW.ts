@@ -4,12 +4,12 @@
 <context>
     <name>LXQtModuleManager</name>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="310"/>
+        <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>Crash Report</source>
         <translation>程式崩潰報告</translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="311"/>
+        <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; 意外終止太多次。自動重啟已被停止直到下次登入。</translation>
     </message>
@@ -17,18 +17,18 @@
 <context>
     <name>SessionApplication</name>
     <message>
-        <location filename="../src/main.cpp" line="59"/>
+        <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
         <translation>配置檔案路徑。</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="59"/>
-        <location filename="../src/main.cpp" line="60"/>
+        <location filename="../src/main.cpp" line="62"/>
+        <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
         <translation>檔案</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="60"/>
+        <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
         <translation>要使用的視窗管理器。</translation>
     </message>
@@ -41,12 +41,12 @@
         <translation>歡迎使用 LXQt</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="62"/>
+        <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Other ...</source>
         <translation>其他...</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="63"/>
+        <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
         <translation>選擇您最喜愛的。</translation>
     </message>

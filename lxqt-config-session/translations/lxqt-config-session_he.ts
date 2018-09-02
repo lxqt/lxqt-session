@@ -29,7 +29,7 @@
         <translation>המתנה למגש המערכת</translation>
     </message>
     <message>
-        <location filename="../autostartedit.cpp" line="59"/>
+        <location filename="../autostartedit.cpp" line="61"/>
         <source>Select Application</source>
         <translation>בחירת יישום</translation>
     </message>
@@ -37,22 +37,22 @@
 <context>
     <name>AutoStartItemModel</name>
     <message>
-        <location filename="../autostartmodel.cpp" line="191"/>
+        <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
         <translation>התחלה אוטומטית גלובלית</translation>
     </message>
     <message>
-        <location filename="../autostartmodel.cpp" line="193"/>
+        <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
         <translation>התחלה אוטומטית של LXQt</translation>
     </message>
     <message>
-        <location filename="../autostartmodel.cpp" line="211"/>
+        <location filename="../autostartmodel.cpp" line="213"/>
         <source>Location: %1</source>
         <translation>מיקום: %1</translation>
     </message>
     <message>
-        <location filename="../autostartmodel.cpp" line="213"/>
+        <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
         <translation>שכתובים: %1</translation>
     </message>
@@ -80,12 +80,12 @@
         <translation>התחלה אוטומטית של יישומים</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="141"/>
+        <location filename="../autostartpage.cpp" line="143"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="141"/>
+        <location filename="../autostartpage.cpp" line="143"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>הקובץ ‚%1’ כבר קיים!</translation>
     </message>
@@ -146,12 +146,12 @@
 <context>
     <name>DefaultApps</name>
     <message>
-        <location filename="../defaultappspage.cpp" line="72"/>
+        <location filename="../defaultappspage.cpp" line="74"/>
         <source>Select a terminal emulator</source>
         <translation>בחירת מדמה מסוף</translation>
     </message>
     <message>
-        <location filename="../defaultappspage.cpp" line="77"/>
+        <location filename="../defaultappspage.cpp" line="79"/>
         <source>Select a web browser</source>
         <translation>בחירת דפדפן</translation>
     </message>
@@ -211,7 +211,7 @@
 <context>
     <name>ModuleModel</name>
     <message>
-        <location filename="../modulemodel.cpp" line="86"/>
+        <location filename="../modulemodel.cpp" line="87"/>
         <source>Running</source>
         <translation>פעיל</translation>
     </message>
@@ -219,42 +219,42 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="44"/>
+        <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
         <translation>הגדרות הפעלה של LXQt</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="47"/>
+        <location filename="../sessionconfigwindow.cpp" line="48"/>
         <source>Basic Settings</source>
         <translation>הגדרות בסיסיות</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="53"/>
+        <location filename="../sessionconfigwindow.cpp" line="54"/>
         <source>Default Applications</source>
         <translation>יישומי בררת מחדל</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="56"/>
+        <location filename="../sessionconfigwindow.cpp" line="57"/>
         <source>User Directories</source>
         <translation>ספריות משתמש</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="62"/>
+        <location filename="../sessionconfigwindow.cpp" line="63"/>
         <source>Autostart</source>
         <translation>התחלה אוטומטית</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="68"/>
+        <location filename="../sessionconfigwindow.cpp" line="69"/>
         <source>Environment (Advanced)</source>
         <translation>סביבה (מתקדם)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="94"/>
+        <location filename="../sessionconfigwindow.cpp" line="95"/>
         <source>Session Restart Required</source>
         <translation>נדרשת יציאה וכניסה מחדש</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="95"/>
+        <location filename="../sessionconfigwindow.cpp" line="96"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>חלק מההגדרות לא ייכנסו לתוקף עד לכניסה הבאה למערכת.</translation>
     </message>
@@ -262,22 +262,22 @@
 <context>
     <name>UserLocationsPage</name>
     <message>
-        <location filename="../userlocationspage.cpp" line="110"/>
+        <location filename="../userlocationspage.cpp" line="116"/>
         <source>Locations for Personal Files</source>
         <translation>מיקומים לקבצים אישיים</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="179"/>
+        <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
         <translation>הגדרות הפעלה של LXQt - תיקיות משתמש</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="180"/>
+        <location filename="../userlocationspage.cpp" line="186"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
         <translation>אירעה שגיאה בעת החלת ההגדרות למיקום %1</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="196"/>
+        <location filename="../userlocationspage.cpp" line="202"/>
         <source>Choose Location</source>
         <translation>בחירת מיקום</translation>
     </message>
@@ -285,82 +285,82 @@
 <context>
     <name>UserLocationsPrivate</name>
     <message>
-        <location filename="../userlocationspage.cpp" line="60"/>
+        <location filename="../userlocationspage.cpp" line="63"/>
         <source>Desktop</source>
         <translation>שולחן עבודה</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="61"/>
+        <location filename="../userlocationspage.cpp" line="64"/>
         <source>Downloads</source>
         <translation>הורדות</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="62"/>
+        <location filename="../userlocationspage.cpp" line="65"/>
         <source>Templates</source>
         <translation>תבניות</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="63"/>
+        <location filename="../userlocationspage.cpp" line="66"/>
         <source>Public Share</source>
         <translation>שיתוף ציבורי</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="64"/>
+        <location filename="../userlocationspage.cpp" line="67"/>
         <source>Documents</source>
         <translation>מסמכים</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="65"/>
+        <location filename="../userlocationspage.cpp" line="68"/>
         <source>Music</source>
         <translation>מוזיקה</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="66"/>
+        <location filename="../userlocationspage.cpp" line="69"/>
         <source>Pictures</source>
         <translation>תמונות</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="67"/>
+        <location filename="../userlocationspage.cpp" line="70"/>
         <source>Videos</source>
         <translation>וידאו</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="70"/>
+        <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
         <translation>מכיל את כל הקבצים שמופיעים על שולחן העבודה שלך</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="71"/>
+        <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
         <translation>תיקיית בררת המחדל לשמירת הקבצים שמגיעים אליך</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="72"/>
+        <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
         <translation>תיקיית בררת המחדל לטעינה או לשמירה של תבניות</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="73"/>
+        <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
         <translation>תיקיית בררת המחדל לשיתוף ציבורי של הקבצים שלך</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="74"/>
+        <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
         <translation>תיקיית בררת המחדל לטעינה או לשמירה של מסמכים</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="75"/>
+        <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default foldet to load or save music from or to</source>
         <translation>תיקיית בררת המחדל לטעינה או לשמירה של מוזיקה</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="76"/>
+        <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
         <translation>תיקיית בררת המחדל לטעינה או לשמירה של תמונות</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="77"/>
+        <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
         <translation>תיקיית בררת המחדל לטעינה או לשמירה של סרטונים</translation>
     </message>
