@@ -19,18 +19,18 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>設定ファイルのパス。</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイル</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>使用するウィンドウマネージャ</translation>
     </message>
 </context>
 <context>
@@ -59,7 +59,7 @@
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
         <translatorcomment>動作を確認後、翻訳を要修正</translatorcomment>
-        <translation>設定-&gt; セッションの設定-&gt; 基本の設定&#x3000;からいつでも変更することができるようになります。</translation>
+        <translation>設定-&gt; セッションの設定-&gt; 基本の設定　からいつでも変更することができるようになります。</translation>
     </message>
 </context>
 </TS>
