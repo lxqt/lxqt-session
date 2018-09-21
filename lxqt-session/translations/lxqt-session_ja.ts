@@ -30,7 +30,7 @@
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation>使用するウィンドウマネージャ</translation>
+        <translation>使用するウィンドウマネージャ。</translation>
     </message>
 </context>
 <context>
