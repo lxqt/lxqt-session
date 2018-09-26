@@ -31,8 +31,10 @@
 #include <QObject>
 #include <QEventLoop>
 #include <QDBusInterface>
-#include <QDBusUnixFileDescriptor>
+#include <QScopedPointer>
 #include <LXQt/ScreenSaver>
+
+class QDBusUnixFileDescriptor;
 
 class LockScreenProvider : public QObject
 {
@@ -64,7 +66,7 @@ public:
 
 private:
     QDBusInterface mInterface;
-    QDBusUnixFileDescriptor mFileDescriptor;
+    QScopedPointer<QDBusUnixFileDescriptor> mFileDescriptor;
 };
 
 class ConsoleKit2Provider : public LockScreenProvider
@@ -82,7 +84,7 @@ public:
 private:
     QDBusInterface mInterface;
     bool mMethodInhibitPresent;
-    QDBusUnixFileDescriptor mFileDescriptor;
+    QScopedPointer<QDBusUnixFileDescriptor> mFileDescriptor;
 };
 
 class LockScreenManager : public QObject
@@ -94,6 +96,9 @@ public:
     virtual ~LockScreenManager();
 
     bool startup(bool lockBeforeSleep);
+
+private:
+    void inhibit();
 
 private:
     LockScreenProvider *mProvider;
