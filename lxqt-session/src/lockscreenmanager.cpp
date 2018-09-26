@@ -33,6 +33,7 @@
 #include <QTimer>
 #include <QDBusReply>
 #include <QDebug>
+#include <QDBusUnixFileDescriptor>
 #include <unistd.h>
 
 LockScreenManager::LockScreenManager(QObject *parent) :
@@ -92,15 +93,19 @@ bool LockScreenManager::startup(bool lockBeforeSleep)
                 mProvider->release();
             }
             else
-                mProvider->inhibit();
+                inhibit();
         });
 
-        if (!mProvider->inhibit())
-            qCDebug(SESSION) << "LockScreenManager:"
-                    << "could not inhibit session provider";
+        inhibit();
     }
 
     return true;
+}
+
+void LockScreenManager::inhibit()
+{
+    if (!mProvider->inhibit())
+        qCWarning(SESSION) << "LockScreenManager: could not inhibit session provider";
 }
 
 /*
@@ -148,7 +153,7 @@ bool LogindProvider::isValid()
 
 bool LogindProvider::inhibit()
 {
-    if (mFileDescriptor.isValid())
+    if (mFileDescriptor)
         return false;
 
     QDBusReply<QDBusUnixFileDescriptor> reply = mInterface.call(
@@ -164,17 +169,13 @@ bool LogindProvider::inhibit()
         return false;
     }
 
-    mFileDescriptor = reply.value();
+    mFileDescriptor.reset(new QDBusUnixFileDescriptor{reply.value()});
     return true;
 }
 
 void LogindProvider::release()
 {
-    if (mFileDescriptor.isValid())
-    {
-        ::close(mFileDescriptor.fileDescriptor());
-        mFileDescriptor.setFileDescriptor(-1);
-    }
+    mFileDescriptor.reset(nullptr);
 }
 
 /*
@@ -233,7 +234,7 @@ bool ConsoleKit2Provider::isValid()
 
 bool ConsoleKit2Provider::inhibit()
 {
-    if (mFileDescriptor.isValid())
+    if (mFileDescriptor)
         return false;
 
     QDBusReply<QDBusUnixFileDescriptor> reply = mInterface.call(
@@ -249,15 +250,11 @@ bool ConsoleKit2Provider::inhibit()
         return false;
     }
 
-    mFileDescriptor = reply.value();
+    mFileDescriptor.reset(new QDBusUnixFileDescriptor{reply.value()});
     return true;
 }
 
 void ConsoleKit2Provider::release()
 {
-    if (mFileDescriptor.isValid())
-    {
-        ::close(mFileDescriptor.fileDescriptor());
-        mFileDescriptor.setFileDescriptor(-1);
-    }
+    mFileDescriptor.reset(nullptr);
 }
