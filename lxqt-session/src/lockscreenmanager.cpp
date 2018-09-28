@@ -39,6 +39,7 @@
 LockScreenManager::LockScreenManager(QObject *parent) :
     QObject(parent)
     , mProvider{nullptr}
+    , mLockedBeforeSleep{false}
 {
 }
 
@@ -47,7 +48,7 @@ LockScreenManager::~LockScreenManager()
     delete mProvider;
 }
 
-bool LockScreenManager::startup(bool lockBeforeSleep)
+bool LockScreenManager::startup(bool lockBeforeSleep, int powerAfterLockDelay)
 {
     mProvider = new LogindProvider;
     if (!mProvider->isValid())
@@ -71,11 +72,22 @@ bool LockScreenManager::startup(bool lockBeforeSleep)
             << mProvider->metaObject()->className()
             << "will be used";
 
-    connect(&mScreenSaver, &LXQt::ScreenSaver::done, &mLoop, &QEventLoop::quit);
+    connect(&mScreenSaver, &LXQt::ScreenSaver::done, this, [this, powerAfterLockDelay]
+            {
+                if (mLockedBeforeSleep)
+                {
+                    mLockedBeforeSleep = false;
+                    QTimer::singleShot(powerAfterLockDelay, this, [this]
+                            {
+                                mProvider->release();
+                                qCDebug(SESSION) << "LockScreenManager: after release";
+                            });
+                }
+            });
 
     connect(mProvider, &LockScreenProvider::lockRequested, [this] {
+        qCDebug(SESSION) << "LockScreenManager: lock requested";
         mScreenSaver.lockScreen();
-        mLoop.exec();
     });
 
     if (lockBeforeSleep)
@@ -88,12 +100,13 @@ bool LockScreenManager::startup(bool lockBeforeSleep)
             {
                 qCDebug(SESSION) << "LockScreenManager: system is about to sleep";
 
+                mLockedBeforeSleep = true;
                 mScreenSaver.lockScreen();
-                mLoop.exec();
-                mProvider->release();
-            }
-            else
+                qCDebug(SESSION) << "LockScreenManager: after lockScreen";
+            } else
+            {
                 inhibit();
+            }
         });
 
         inhibit();

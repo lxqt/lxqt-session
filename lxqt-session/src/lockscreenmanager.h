@@ -29,7 +29,6 @@
 #define LOCKSCREENMANAGER_H
 
 #include <QObject>
-#include <QEventLoop>
 #include <QDBusInterface>
 #include <QScopedPointer>
 #include <LXQt/ScreenSaver>
@@ -95,7 +94,7 @@ public:
     explicit LockScreenManager(QObject *parent = nullptr);
     virtual ~LockScreenManager();
 
-    bool startup(bool lockBeforeSleep);
+    bool startup(bool lockBeforeSleep, int powerAfterLockDelay/*!< ms*/);
 
 private:
     void inhibit();
@@ -105,7 +104,7 @@ private:
 
     // screensaver
     LXQt::ScreenSaver mScreenSaver;
-    QEventLoop mLoop;
+    bool mLockedBeforeSleep;
 };
 
 #endif
