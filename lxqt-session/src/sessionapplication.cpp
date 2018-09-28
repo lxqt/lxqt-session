@@ -99,8 +99,8 @@ bool SessionApplication::startup()
             });
 #endif
 
-    bool lockBeforeSleep = settings.value(QLatin1String("lock_screen_before_power_actions"), true).toBool();
-    if (lockScreenManager->startup(lockBeforeSleep))
+    if (lockScreenManager->startup(settings.value(QLatin1String("lock_screen_before_power_actions"), true).toBool()
+                , settings.value(QLatin1String("power_actions_after_lock_delay"), 0).toInt()))
         qCDebug(SESSION) << "LockScreenManager started successfully";
     else
         qCWarning(SESSION) << "LockScreenManager couldn't start";
