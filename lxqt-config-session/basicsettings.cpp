@@ -35,6 +35,7 @@
 static const QLatin1String windowManagerKey("window_manager");
 static const QLatin1String leaveConfirmationKey("leave_confirmation");
 static const QLatin1String lockBeforePowerActionsKey("lock_screen_before_power_actions");
+static const QLatin1String powerActionsAfterLockDelayKey("power_actions_after_lock_delay");
 static const QLatin1String openboxValue("openbox");
 
 BasicSettings::BasicSettings(LXQt::Settings *settings, QWidget *parent) :
@@ -74,6 +75,7 @@ void BasicSettings::restoreSettings()
 
     ui->leaveConfirmationCheckBox->setChecked(m_settings->value(leaveConfirmationKey, false).toBool());
     ui->lockBeforePowerActionsCheckBox->setChecked(m_settings->value(lockBeforePowerActionsKey, true).toBool());
+    ui->powerAfterLockDelaySpinBox->setValue(m_settings->value(powerActionsAfterLockDelayKey, 0).toInt());
 }
 
 void BasicSettings::save()
@@ -87,6 +89,7 @@ void BasicSettings::save()
     const QString windowManager = ui->wmComboBox->currentText();
     const bool leaveConfirmation = ui->leaveConfirmationCheckBox->isChecked();
     const bool lockBeforePowerActions = ui->lockBeforePowerActionsCheckBox->isChecked();
+    const int powerAfterLockDelay = ui->powerAfterLockDelaySpinBox->value();
 
     QMap<QString, AutostartItem> previousItems(AutostartItem::createItemMap());
     QMutableMapIterator<QString, AutostartItem> i(previousItems);
@@ -113,6 +116,12 @@ void BasicSettings::save()
     if (lockBeforePowerActions != m_settings->value(lockBeforePowerActionsKey, true).toBool())
     {
         m_settings->setValue(lockBeforePowerActionsKey, lockBeforePowerActions);
+        doRestart = true;
+    }
+
+    if (powerAfterLockDelay != m_settings->value(powerActionsAfterLockDelayKey, 0).toInt())
+    {
+        m_settings->setValue(powerActionsAfterLockDelayKey, powerAfterLockDelay);
         doRestart = true;
     }
 
