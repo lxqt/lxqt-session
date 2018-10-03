@@ -41,11 +41,9 @@ DefaultApps::DefaultApps(QWidget *parent) :
     ui->setupUi(this);
 
     connect(ui->terminalButton, SIGNAL(clicked()), this, SLOT(terminalButton_clicked()));
-    connect(ui->terminalComboBox->lineEdit(), SIGNAL(editingFinished()),
-            SLOT(terminalChanged()));
+    connect(ui->terminalComboBox, &QComboBox::currentTextChanged, this, &DefaultApps::terminalChanged);
     connect(ui->browserButton, SIGNAL(clicked()), this, SLOT(browserButton_clicked()));
-    connect(ui->browserComboBox->lineEdit(), SIGNAL(editingFinished()),
-            SLOT(browserChanged()));
+    connect(ui->browserComboBox, &QComboBox::currentTextChanged, this, &DefaultApps::browserChanged);
 }
 
 DefaultApps::~DefaultApps()
@@ -59,12 +57,14 @@ void DefaultApps::updateEnvVar(const QString& var, const QString& val)
     {
         QStringList knownBrowsers;
         knownBrowsers << QSL("firefox") << QSL("qupzilla") << QSL("arora") << QSL("konqueror") << QSL("opera");
+        const QSignalBlocker guard{ui->browserComboBox};
         SessionConfigWindow::handleCfgComboBox(ui->browserComboBox, knownBrowsers, val);
     }
     else if (var == QL1S("TERM"))
     {
         QStringList knownTerms;
         knownTerms << QSL("qterminal") << QSL("xterm") << QSL("konsole") << QSL("uterm");
+        const QSignalBlocker guard{ui->terminalComboBox};
         SessionConfigWindow::handleCfgComboBox(ui->terminalComboBox, knownTerms, val);
     }
 }
@@ -81,10 +81,10 @@ void DefaultApps::browserButton_clicked()
 
 void DefaultApps::terminalChanged()
 {
-    emit defaultAppChanged(QL1S("TERM"), ui->terminalComboBox->lineEdit()->text());
+    emit defaultAppChanged(QL1S("TERM"), ui->terminalComboBox->currentText());
 }
 
 void DefaultApps::browserChanged()
 {
-    emit defaultAppChanged(QL1S("BROWSER"), ui->browserComboBox->lineEdit()->text());
+    emit defaultAppChanged(QL1S("BROWSER"), ui->browserComboBox->currentText());
 }
