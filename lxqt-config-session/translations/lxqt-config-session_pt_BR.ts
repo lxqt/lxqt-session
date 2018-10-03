@@ -31,7 +31,7 @@
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
         <source>Select Application</source>
-        <translation>Selecionar aplicativo</translation>
+        <translation>Selecionar Aplicativo</translation>
     </message>
 </context>
 <context>
@@ -39,12 +39,12 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
-        <translation>Iniciar automaticamente global</translation>
+        <translation>Início Automático Global</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation>Iniciar automaticamente do LXQt</translation>
+        <translation>Início Automático do LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
@@ -54,7 +54,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>Sobrescreve: %1</translation>
+        <translation>Substituições: %1</translation>
     </message>
 </context>
 <context>
@@ -77,7 +77,7 @@
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Início automático dos aplicativos</translation>
+        <translation>Início Automático dos Aplicativos</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
@@ -95,7 +95,7 @@
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation>Gerenciador de janelas</translation>
+        <translation>Gerenciador de Janelas</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
@@ -279,7 +279,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="202"/>
         <source>Choose Location</source>
-        <translation>Escolha um local</translation>
+        <translation>Escolha o Local</translation>
     </message>
 </context>
 <context>
