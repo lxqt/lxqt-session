@@ -1,6 +1,8 @@
-cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
-
 project(lxqt-session)
+# CMP0000 - A minimum required CMake version must be specified.
+# Note that the command invocation must appear in the CMakeLists.txt
+# file itself; a call in an included file is not sufficient.
+cmake_minimum_required(VERSION 3.6.2 FATAL_ERROR)
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
@@ -28,10 +30,6 @@ find_package(lxqt REQUIRED)
 
 # Please don't move, must be after lxqt
 find_package(XdgUserDirs REQUIRED)
-
-if(NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE Release)
-endif()
 
 # Patch Version
 set(LXQT_SESSION_PATCH_VERSION 0)
