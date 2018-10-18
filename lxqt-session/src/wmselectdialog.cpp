@@ -39,6 +39,7 @@
 #include <QApplication>
 #include <QCloseEvent>
 #include <QFileDialog>
+#include <QPushButton>
 #include <QDebug>
 
 #define TYPE_ROLE   Qt::UserRole + 1
@@ -136,5 +137,5 @@ void WmSelectDialog::selectFileDialog(const QModelIndex &/*index*/)
 void WmSelectDialog::changeBtnStatus(const QModelIndex &/*index*/)
 {
     QString wm = windowManager();
-    ui->buttonBox->setEnabled(!wm.isEmpty() && findProgram(wm));
+    ui->buttonBox->button(QDialogButtonBox::Ok)->setEnabled(!wm.isEmpty() && findProgram(wm));
 }
