@@ -19,18 +19,18 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jalur berkas konfigurasi.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>berkas</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Manajer jendela yang akan digunakan.</translation>
     </message>
 </context>
 <context>
