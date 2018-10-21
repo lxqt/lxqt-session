@@ -6,7 +6,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>Crash Report</source>
-        <translation type="unfinished"></translation>
+        <translation>Raport de erori</translation>
     </message>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
@@ -19,18 +19,18 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>Calea pentru fișierul de configurare.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>fișier</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Managerul de ferestre de folosit.</translation>
     </message>
 </context>
 <context>
@@ -58,7 +58,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Veti putea schimba aceasta oricând folosind Preferințe -&gt; Setări pentru sesiune -&gt; Setări de baza.</translation>
     </message>
 </context>
 </TS>
