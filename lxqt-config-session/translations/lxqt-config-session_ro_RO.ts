@@ -105,7 +105,7 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished">Module LXQt</translation>
+        <translation>Module LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
@@ -115,12 +115,12 @@
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>Cere confirmarea părăsirii sesiunii</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation type="unfinished"></translation>
+        <translation>Blochează ecranul înainte de suspendare/hibernare</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
