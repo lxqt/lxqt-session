@@ -125,7 +125,7 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>Definições básicas</translation>
+        <translation>Configurações Básicas</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
