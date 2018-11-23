@@ -95,7 +95,7 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation></translation>
+        <translation>Axustes básicos</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>
