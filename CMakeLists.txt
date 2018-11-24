@@ -18,17 +18,19 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 option(WITH_LIBUDEV "Build with libudev support" ON)
 
+# Minimum Versions
+set(KF5_MINIMUM_VERSION "5.36.0")
+set(LXQT_MINIMUM_VERSION "0.14.0")
+set(QT_MINIMUM_VERSION "5.7.1")
+
+find_package(Qt5DBus ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt5LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt5Widgets ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt5X11Extras ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(KF5WindowSystem ${KF5_MINIMUM_VERSION} REQUIRED)
+find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
 find_package(X11 REQUIRED)
-
-find_package(Qt5DBus REQUIRED)
-find_package(Qt5LinguistTools REQUIRED)
-find_package(Qt5Widgets REQUIRED)
-find_package(Qt5X11Extras REQUIRED)
 message(STATUS "Building with Qt${Qt5Core_VERSION}")
-
-find_package(KF5WindowSystem REQUIRED)
-
-find_package(lxqt REQUIRED)
 
 # Please don't move, must be after lxqt
 find_package(XdgUserDirs REQUIRED)
@@ -39,7 +41,6 @@ set(LXQT_SESSION_PATCH_VERSION 0)
 set(LXQT_SESSION_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_SESSION_PATCH_VERSION})
 add_definitions(
     "-DLXQT_SESSION_VERSION=\"${LXQT_SESSION_VERSION}\""
-    "-DQT_USE_QSTRINGBUILDER"
     "-DQT_NO_CAST_FROM_ASCII"
     "-DQT_NO_CAST_TO_ASCII"
     "-DQT_NO_URL_CAST_FROM_STRING"

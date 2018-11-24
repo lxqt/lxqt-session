@@ -1,9 +1,5 @@
 project("lxqt-session")
 
-if(NOT CMAKE_BUILD_TYPE)
-   set(CMAKE_BUILD_TYPE Release)
-endif()
-
 if (WITH_LIBUDEV)
     find_package(UDev REQUIRED)
     include_directories(${LIBUDEV_INCLUDE_DIR})
