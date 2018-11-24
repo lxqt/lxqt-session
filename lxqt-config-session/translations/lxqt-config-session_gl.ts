@@ -221,7 +221,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
-        <translation></translation>
+        <translation>Axustes da sesión de LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="48"/>
@@ -269,7 +269,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation></translation>
+        <translation>Axustes da sesión de LXQt - Directorios de usuarios</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
