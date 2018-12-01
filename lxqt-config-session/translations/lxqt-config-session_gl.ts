@@ -6,7 +6,7 @@
     <message>
         <location filename="../autostartedit.ui" line="14"/>
         <source>Edit</source>
-        <translation></translation>
+        <translation>Editar</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="20"/>
@@ -16,7 +16,7 @@
     <message>
         <location filename="../autostartedit.ui" line="27"/>
         <source>Search...</source>
-        <translation></translation>
+        <translation>Buscar...</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="47"/>
@@ -26,12 +26,12 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation></translation>
+        <translation>Agardar pola área de notificación</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
         <source>Select Application</source>
-        <translation></translation>
+        <translation>Seleccionar a aplicación</translation>
     </message>
 </context>
 <context>
@@ -44,17 +44,17 @@
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation></translation>
+        <translation>Inicio automático do LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
         <source>Location: %1</source>
-        <translation></translation>
+        <translation>Localización: %1</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation></translation>
+        <translation>Substituír: %1</translation>
     </message>
 </context>
 <context>
@@ -67,17 +67,17 @@
     <message>
         <location filename="../autostartpage.ui" line="24"/>
         <source>Add</source>
-        <translation></translation>
+        <translation>Engadir</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="31"/>
         <source>Edit</source>
-        <translation></translation>
+        <translation>Editar</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation></translation>
+        <translation>Inicio automático de aplicacións</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation></translation>
+        <translation>Xa existe o ficheiro «%1»!</translation>
     </message>
 </context>
 <context>
@@ -100,17 +100,17 @@
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation></translation>
+        <translation>Xestor de xanelas</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation></translation>
+        <translation>Buscar...</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation></translation>
+        <translation>Módulos de LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -125,22 +125,22 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation></translation>
+        <translation>Abandonar a sesión</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation></translation>
+        <translation>Pedir confirmación para pechar a sesión</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation></translation>
+        <translation>Bloquear a pantalla antes de suspender/hibernar</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="147"/>
         <source>Select a window manager</source>
-        <translation></translation>
+        <translation>Seleccione un xestor de xanelas</translation>
     </message>
 </context>
 <context>
@@ -148,12 +148,12 @@
     <message>
         <location filename="../defaultappspage.cpp" line="74"/>
         <source>Select a terminal emulator</source>
-        <translation></translation>
+        <translation>Seleccione un emulador de terminal</translation>
     </message>
     <message>
         <location filename="../defaultappspage.cpp" line="79"/>
         <source>Select a web browser</source>
-        <translation></translation>
+        <translation>Seleccione un navegador web</translation>
     </message>
 </context>
 <context>
@@ -161,18 +161,18 @@
     <message>
         <location filename="../defaultappspage.ui" line="23"/>
         <source>Default Applications</source>
-        <translation></translation>
+        <translation>Aplicacións predeterminadas</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation></translation>
+        <translation>Emulación de terminal:</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="52"/>
         <location filename="../defaultappspage.ui" line="79"/>
         <source>Search...</source>
-        <translation></translation>
+        <translation>Buscar...</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="59"/>
@@ -185,7 +185,7 @@
     <message>
         <location filename="../environmentpage.ui" line="17"/>
         <source>Add</source>
-        <translation></translation>
+        <translation>Engadir</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="24"/>
@@ -195,7 +195,7 @@
     <message>
         <location filename="../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
-        <translation></translation>
+        <translation>Variábeis de contorno (avanzado)</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="61"/>
@@ -205,7 +205,7 @@
     <message>
         <location filename="../environmentpage.ui" line="66"/>
         <source>Value</source>
-        <translation></translation>
+        <translation>Valor</translation>
     </message>
 </context>
 <context>
@@ -213,7 +213,7 @@
     <message>
         <location filename="../modulemodel.cpp" line="87"/>
         <source>Running</source>
-        <translation></translation>
+        <translation>En execución</translation>
     </message>
 </context>
 <context>
@@ -226,17 +226,17 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="48"/>
         <source>Basic Settings</source>
-        <translation></translation>
+        <translation>Axustes básicos</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="54"/>
         <source>Default Applications</source>
-        <translation></translation>
+        <translation>Aplicacións predeterminadas</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="57"/>
         <source>User Directories</source>
-        <translation></translation>
+        <translation>Directorios de usuario</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="63"/>
@@ -246,17 +246,17 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="69"/>
         <source>Environment (Advanced)</source>
-        <translation></translation>
+        <translation>Contorno (avanzado)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="95"/>
         <source>Session Restart Required</source>
-        <translation></translation>
+        <translation>Require o reinicio da sesión</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="96"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation></translation>
+        <translation>Algúns axustes non terán efecto ata o seguinte inicio de sesión.</translation>
     </message>
 </context>
 <context>
@@ -264,7 +264,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="116"/>
         <source>Locations for Personal Files</source>
-        <translation></translation>
+        <translation>Localizacións para os ficheiros persoais</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
@@ -274,12 +274,12 @@
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation></translation>
+        <translation>Produciuse un erro ao aplicar os axustes para a localización %1</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="202"/>
         <source>Choose Location</source>
-        <translation></translation>
+        <translation>Escolla unha localización</translation>
     </message>
 </context>
 <context>
@@ -287,7 +287,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Desktop</source>
-        <translation></translation>
+        <translation>Escritorio</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
@@ -297,12 +297,12 @@
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Templates</source>
-        <translation></translation>
+        <translation>Modelos</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Public Share</source>
-        <translation></translation>
+        <translation>Público</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
@@ -312,57 +312,57 @@
     <message>
         <location filename="../userlocationspage.cpp" line="68"/>
         <source>Music</source>
-        <translation></translation>
+        <translation>Música</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="69"/>
         <source>Pictures</source>
-        <translation></translation>
+        <translation>Imaxes</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
         <source>Videos</source>
-        <translation></translation>
+        <translation>Vídeos</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation></translation>
+        <translation>Contén todos os ficheiros que ve no escritorio</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation></translation>
+        <translation>Cartafol predeterminado onde descargar os ficheiros</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation></translation>
+        <translation>Cartafol predeterminado dende onde cargar ou gardar os modelos</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation></translation>
+        <translation>Cartafol predeterminado para compartir publicamente os seus ficheiros</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation></translation>
+        <translation>Cartafol predeterminado dende onde cargar ou gardar os documentos</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation></translation>
+        <translation>Cartafol predeterminado dende onde cargar ou gardar a música</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation></translation>
+        <translation>Cartafol predeterminado dende onde cargar ou gardar as imaxes</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation></translation>
+        <translation>Cartafol predeterminado dende onde cargar ou gardar os vídeos</translation>
     </message>
 </context>
 </TS>
