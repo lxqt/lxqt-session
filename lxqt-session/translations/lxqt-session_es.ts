@@ -43,7 +43,7 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Other ...</source>
-        <translation>Otros ...</translation>
+        <translation>Otros...</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
