@@ -362,7 +362,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>Carpeta por omision desde donde cargar o donde guardar vídeos</translation>
+        <translation>Carpeta por omisión desde donde cargar o donde guardar vídeos</translation>
     </message>
 </context>
 </TS>
