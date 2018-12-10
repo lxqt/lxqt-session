@@ -123,6 +123,16 @@
         <translation>Uzamknout obrazovku před uspáním do paměti/na disk</translation>
     </message>
     <message>
+        <location filename="../basicsettings.ui" line="131"/>
+        <source>Suspend/hibernate after lock delay:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="144"/>
+        <source> ms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
         <translation>Základní nastavení</translation>
@@ -138,7 +148,7 @@
         <translation>Zastavit</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="147"/>
+        <location filename="../basicsettings.cpp" line="156"/>
         <source>Select a window manager</source>
         <translation>Vybrat správce oken</translation>
     </message>

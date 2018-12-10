@@ -123,6 +123,16 @@
         <translation>挂起/休眠前锁屏</translation>
     </message>
     <message>
+        <location filename="../basicsettings.ui" line="131"/>
+        <source>Suspend/hibernate after lock delay:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="144"/>
+        <source> ms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
         <translation>基本设置</translation>
@@ -138,7 +148,7 @@
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="147"/>
+        <location filename="../basicsettings.cpp" line="156"/>
         <source>Select a window manager</source>
         <translation>选择窗口管理器</translation>
     </message>

@@ -59,7 +59,7 @@
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
         <translatorcomment>動作を確認後、翻訳を要修正</translatorcomment>
-        <translation>設定-&gt; セッションの設定-&gt; 基本の設定　からいつでも変更することができるようになります。</translation>
+        <translation>設定-&gt; セッションの設定-&gt; 基本の設定&#x3000;からいつでも変更することができるようになります。</translation>
     </message>
 </context>
 </TS>
