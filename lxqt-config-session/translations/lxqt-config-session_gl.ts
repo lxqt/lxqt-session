@@ -140,7 +140,7 @@
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation>Suspender/hibernar após o atraso de bloqueo:</translation>
+        <translation>Suspender ou hibernar após o atraso do bloqueo:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
