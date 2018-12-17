@@ -140,7 +140,7 @@
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pristabdyti/užmigdyti po užrakto delsos:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
