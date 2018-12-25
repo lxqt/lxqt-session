@@ -31,7 +31,7 @@
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
         <source>Select Application</source>
-        <translation>Selecionar Aplicativo</translation>
+        <translation>Selecionar aplicação</translation>
     </message>
 </context>
 <context>
@@ -77,7 +77,7 @@
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Início Automático dos Aplicativos</translation>
+        <translation>Início Automático das aplicações</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
@@ -246,7 +246,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="57"/>
         <source>User Directories</source>
-        <translation>Diretórios de usuário</translation>
+        <translation>Diretórios do usuário</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="63"/>
@@ -279,12 +279,12 @@
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>Configurações de sessão do LXQt - Diretórios de usuário</translation>
+        <translation>Configurações de sessão do LXQt - Diretórios do usuário</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation>Um erro ocorreu enquanto aplicava-se as configurações para o local %1</translation>
+        <translation>Um erro ocorreu enquanto eram aplicadas as configurações para o local %1</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="202"/>
@@ -302,7 +302,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Downloads</source>
-        <translation>Descargas</translation>
+        <translation>Downloads</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
@@ -342,7 +342,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation>Diretório padrão para salvar arquivos descarregados</translation>
+        <translation>Diretório padrão para salvar arquivos baixados</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
