@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; travou demais. A sua execução automática foi desativada até a próxima sessão.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; travou demais. A execução automática do mesmo foi desativada até o próximo login.</translation>
     </message>
 </context>
 <context>
@@ -30,7 +30,7 @@
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation>Gerenciador de arquivos a ser usado.</translation>
+        <translation>Gerenciador de janelas a ser usado.</translation>
     </message>
 </context>
 <context>
@@ -38,7 +38,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation>Bem-vindo ao LXQt</translation>
+        <translation>Bem-vindo(a) ao LXQt</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="65"/>
@@ -53,12 +53,12 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Benvindo ao LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Por favor, selecione o gerenciador de janelas padrão.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Bem-vindo(a) ao LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Por favor, selecione o gerenciador de janelas a ser utilizado.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Você pode configurar isso a qualquer momento indo a Preferências -&gt; Configurações de sessão -&gt; Configurações básicas.</translation>
+        <translation>Você poderá mudar esta configuração a qualquer momento, indo a Preferências -&gt; Configurações de sessão -&gt; Configurações básicas.</translation>
     </message>
 </context>
 </TS>
