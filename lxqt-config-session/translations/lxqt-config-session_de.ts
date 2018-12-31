@@ -140,17 +140,17 @@
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
         <source>Select a window manager</source>
-        <translation>Fenstermanager auswählen</translation>
+        <translation>Fensterverwaltung auswählen</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation>Sitzung beenden</translation>
+        <translation>Sitzung verlassen</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation>Beenden der Sitzung bestätigen</translation>
+        <translation>Nach Bestätigung zum Verlassen der Sitzung fragen</translation>
     </message>
 </context>
 <context>
@@ -176,7 +176,7 @@
     <message>
         <location filename="../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation>Terminal-Emulator:</translation>
+        <translation>Terminal-Emulation:</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="52"/>
@@ -231,7 +231,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
-        <translation>LXQt Sitzungseinstellungen</translation>
+        <translation>LXQt-Sitzungseinstellungen</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="48"/>
@@ -246,7 +246,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="57"/>
         <source>User Directories</source>
-        <translation>Nutzerverzeichnisse</translation>
+        <translation>Benutzerverzeichnisse</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="63"/>
@@ -261,12 +261,12 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="95"/>
         <source>Session Restart Required</source>
-        <translation>Erneute Anmeldung erforderlich</translation>
+        <translation>Sitzungsneustart erforderlich</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="96"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation>Einige Einstellungen werden erst nach einem erneuten Anmelden wirksam.</translation>
+        <translation>Einige Einstellungen werden erst bei der nächsten Anmeldung wirksam.</translation>
     </message>
 </context>
 <context>
@@ -279,17 +279,17 @@
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>LXQt Sitzungseinstellungen - Nutzerverzeichnisse</translation>
+        <translation>LXQt-Sitzungseinstellungen - Benutzerverzeichnisse</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation>Ein Fehler trat auf beim Anwenden der Einstellungen für den Speicherort von %1</translation>
+        <translation>Beim Anwenden der Einstellungen für den Speicherort %1 ist ein Fehler aufgetreten</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="202"/>
         <source>Choose Location</source>
-        <translation>Speicherort wählen</translation>
+        <translation>Speicherort auswählen</translation>
     </message>
 </context>
 <context>
@@ -338,42 +338,42 @@
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
         <translatorcomment>files in template translated with the German word for objects. IMO more reasonable as it&apos;s not necessarily files that are placed on the desktop. Maybe adjust the template accordingly?</translatorcomment>
-        <translation>Ordner mit den auf dem Schreibtisch (der Arbeitsfläche) angezeigten Objekten</translation>
+        <translation>Enthält alle Dateien, die Sie auf Ihrem Schreibtisch sehen</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation>Standardordner für heruntergeladene Dateien</translation>
+        <translation>Standardordner zum Speichern Ihrer heruntergeladenen Dateien</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation>Standardordner für Vorlagen</translation>
+        <translation>Standardordner zum Laden oder Speichern von Vorlagen</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation>Standardordner für öffentlich verfügbare Dateien</translation>
+        <translation>Standardordner für die öffentliche Freigabe Ihrer Dateien</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation>Standardordner für Dokumente</translation>
+        <translation>Standardordner zum Laden oder Speichern von Dokumenten</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default foldet to load or save music from or to</source>
-        <translation>Standardordner für Musik</translation>
+        <translation>Standardordner zum Laden oder Speichern von Musik</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation>Standardordner für Bilder</translation>
+        <translation>Standardordner zum Laden oder Speichern von Bildern</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>Standardordner für Videos</translation>
+        <translation>Standardordner zum Laden oder Speichern von Videos</translation>
     </message>
 </context>
 </TS>
