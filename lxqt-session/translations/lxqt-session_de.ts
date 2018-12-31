@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; stürzte zu oft ab. Ihr automatischer Neustart wurde bis zum nächsten Einloggen deaktiviert.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; stürzte zu oft ab. Dessen automatischer Neustart wurde bis zur nächsten Anmeldung deaktiviert.</translation>
     </message>
 </context>
 <context>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Konfigurationsdateipfad</translation>
+        <translation>Konfigurationsdateipfad.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
@@ -38,12 +38,12 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation>Willkommen zu LXQt</translation>
+        <translation>Willkommen bei LXQt</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Willkommen zu LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Bitte den Default-Fenstermanager auswählen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Willkommen bei LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Bitte wählen Sie Ihre Standard-Fensterverwaltung aus.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="65"/>
@@ -53,7 +53,7 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation>Den Favoriten auswählen.</translation>
+        <translation>Wählen Sie Ihren Favoriten aus.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
