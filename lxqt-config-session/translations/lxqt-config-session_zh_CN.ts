@@ -361,8 +361,8 @@
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
-        <source>Default foldet to load or save music from or to</source>
-        <translation>加载或保存音乐的默认文件夹</translation>
+        <source>Default folder to load or save music from or to</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>

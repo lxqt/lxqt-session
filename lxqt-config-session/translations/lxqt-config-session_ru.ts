@@ -361,8 +361,8 @@
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
-        <source>Default foldet to load or save music from or to</source>
-        <translation>Папка по умолчанию для загрузки или сохранения музыки</translation>
+        <source>Default folder to load or save music from or to</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
