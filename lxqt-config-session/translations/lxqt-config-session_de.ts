@@ -110,7 +110,7 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation>LXQt Module</translation>
+        <translation>LXQt-Module</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -125,17 +125,17 @@
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>Bildschirm sperren vor dem Wechsel in Bereitschaft/Ruhezustand</translation>
+        <translation>Bildschirm vor dem Wechsel in Bereitschaft/Ruhezustand sperren</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bereitschaft/Ruhezustand nach einer Sperrverzögerung:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
