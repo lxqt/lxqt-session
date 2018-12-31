@@ -75,7 +75,7 @@ char const * const UserLocationsPagePrivate::locationsToolTips[] = {
     QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default folder to load or save templates from or to"),
     QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default folder to publicly share your files"),
     QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default folder to load or save documents from or to"),
-    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default foldet to load or save music from or to"),
+    QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default folder to load or save music from or to"),
     QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default folder to load or save pictures from or to"),
     QT_TRANSLATE_NOOP("UserLocationsPrivate", "Default folder to load or save videos from or to")};
 
