@@ -30,7 +30,7 @@
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation>Zu benutzender Fenstermanager.</translation>
+        <translation>Zu verwendende Fensterverwaltung.</translation>
     </message>
 </context>
 <context>
