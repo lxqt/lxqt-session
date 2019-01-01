@@ -362,7 +362,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardmappe som musik skal indlæses fra eller gemmes til</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
