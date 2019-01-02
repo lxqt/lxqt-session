@@ -31,7 +31,7 @@
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
         <source>Select Application</source>
-        <translation>Seleccionar a aplicación</translation>
+        <translation>Seleccionar o aplicativo</translation>
     </message>
 </context>
 <context>
@@ -39,7 +39,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
-        <translation></translation>
+        <translation>Inicio automático global</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
@@ -77,12 +77,12 @@
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Inicio automático de aplicacións</translation>
+        <translation>Inicio automático de aplicativos</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
         <source>Error</source>
-        <translation></translation>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
@@ -171,12 +171,12 @@
     <message>
         <location filename="../defaultappspage.ui" line="23"/>
         <source>Default Applications</source>
-        <translation>Aplicacións predeterminadas</translation>
+        <translation>Aplicativos predeterminados</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation>Emulación de terminal:</translation>
+        <translation>Emulación do terminal:</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="52"/>
@@ -241,7 +241,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="54"/>
         <source>Default Applications</source>
-        <translation>Aplicacións predeterminadas</translation>
+        <translation>Aplicativos predeterminados</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="57"/>
