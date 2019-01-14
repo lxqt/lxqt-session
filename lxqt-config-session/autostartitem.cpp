@@ -49,14 +49,14 @@ QMap<QString,AutostartItem> AutostartItem::createItemMap()
 {
     QMap<QString,AutostartItem> items;
 
-    const XdgDesktopFileList systemList = XdgAutoStart::desktopFileList(XdgDirs::autostartDirs(), false);
+    const XdgDesktopFileList systemList = XdgAutoStart::desktopFileList(XdgDirs::autostartDirs(), false, false);
     for (const XdgDesktopFile& file : systemList)
     {
         QString name = QFileInfo(file.fileName()).fileName();
         items.insert(name, AutostartItem(file));
     }
 
-    const XdgDesktopFileList localList = XdgAutoStart::desktopFileList(QStringList(XdgDirs::autostartHome()), false);
+    const XdgDesktopFileList localList = XdgAutoStart::desktopFileList(QStringList(XdgDirs::autostartHome()), false, false);
     for (const XdgDesktopFile& file : localList)
     {
         QString name = QFileInfo(file.fileName()).fileName();
