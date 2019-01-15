@@ -363,7 +363,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Výchozí složka ze které načítat / do které ukládat hudbu</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
