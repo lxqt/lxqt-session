@@ -10,6 +10,8 @@ lxqt-session-0.14.0 / 2018-12-01
     - lxqt-config-session: Fix showing translations
     - Simplify device events/actions lookup 
     - Completed our WM list
+    - Don't default on Openbox, make the automatic WM selection
+      more reliable
   * Improved cmake scripting
     - Set cmake_minimum_required to 3.1.0
     - Removed locale compile definitons
