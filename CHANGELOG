@@ -1,5 +1,5 @@
 
-lxqt-session-0.14.0 / 2018-12-01
+lxqt-session-0.14.0 / 2019-01-25
 ================================
 
   * Bumped version to 0.14.0
@@ -39,8 +39,8 @@ lxqt-session-0.13.0 / 2018-05-21
   * Remove left over file from the lxqt-common split
   * Add Spanish desktop entries
 
-0.12.0 / 2017-10-21
-===================
+lxqt-session-0.12.0 / 2017-10-21
+================================
 
   * Release 0.12.0: Update changelog
   * Set patch version
@@ -153,8 +153,8 @@ lxqt-session-0.13.0 / 2018-05-21
   * Fix file paths, replacing razor with lxqt. * Remove Alt+F2 and Ctrl+Esc from openbox config file to avoid conflicts with lxqt-panel & lxqt-globalkeys.
   * Add default configuration files for lxde-qt session.
 
-0.11.1 / 2017-01-01
-===================
+lxqt-session-0.11.1 / 2017-01-01
+================================
 
   * Release 0.11.1: Update changelog
   * Adds an nullptr check when restarting a module (#90)
@@ -168,8 +168,8 @@ lxqt-session-0.13.0 / 2018-05-21
   * Make CMakeLists.txt more uniform.
   * Remove cpack (#83)
 
-0.11.0 / 2016-09-24
-===================
+lxqt-session-0.11.0 / 2016-09-24
+================================
 
   * Release 0.11.0: Add changelog
   * lockscreenmanager: always listen to the session provider's lock signal (#79)
@@ -222,8 +222,8 @@ lxqt-session-0.13.0 / 2018-05-21
   * Make desktop files valid
   * CMakeLists.txt: Add cmake minimum required version
 
-0.10.0 / 2015-10-31
-===================
+lxqt-session-0.10.0 / 2015-10-31
+================================
 
   * Fix license file
   * Update translations
@@ -299,8 +299,8 @@ lxqt-session-0.13.0 / 2018-05-21
   * Create lxqt-logout_it.desktop
   * remove KF5/ prefix from includes
 
-0.9.0 / 2015-01-29
-==================
+lxqt-session-0.9.0 / 2015-01-29
+===============================
 
   * Adjust the positions of buttons in autostart and environment variable settings pages.
   * Revert "don't show the lxqt-leave actions in the "other" section of the menu"
@@ -324,8 +324,8 @@ lxqt-session-0.13.0 / 2018-05-21
   * Drop Qt4 support in code
   * CMakeLists.txt cleanup, drop Qt4 support
 
-0.8.0 / 2014-10-10
-==================
+lxqt-session-0.8.0 / 2014-10-10
+===============================
 
   * Adapt to the translation infrastructure
   * Add option to disable confirmation dialogs to leave session
@@ -341,13 +341,13 @@ lxqt-session-0.13.0 / 2018-05-21
   * Update the shipped xdg-tools
   * Update WM selection dialog
 
-0.7.0 / 2014-05-07
-==================
+lxqt-session-0.7.0 / 2014-05-07
+===============================
 
   * Rename X-LxQt-Module to X-LXQt-Module and fix broken lxqt module configurations.
 
-0.6.99 / 2014-05-01
-===================
+lxqt-session-0.6.99 / 2014-05-01
+================================
 
   * Update manpages
   * remove old translation templates remove translated icon names
@@ -535,12 +535,8 @@ lxqt-session-0.13.0 / 2018-05-21
   * fixed processes restarting in session
   * forgotten paths
   * configuration reworked (may require to drop ~/.razor); plugins code split; new plugin: spacer
-  * 
   * debug outputs to help finding the session xorg resource consuming issue
   * src formatted with astyle -A1
   * settings refactored a bit: SHARE_DIR dependen on th CMAKE_INSTALL_PREFIX is defined for the compilation phase (it allows to have more razors installed eg. for development); SHARE_DIR is searched in the startup too; optimized cfg file access (1x vs. 4x as before for every file); redundant conversions merged into Razorsettings; usage of QSettings to read the settings (it does the error handling for us).
   * fixed cmake stuff (debug,lib location,do not install .svn,make uninstall,etc.); fixes for qss skinning
-  * 
-  * 
-  * 
-  * 
+
