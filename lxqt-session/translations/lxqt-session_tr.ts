@@ -19,18 +19,18 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dosya yolu yapılandırma.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>dosya</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kullanılacak pencere yöneticisi.</translation>
     </message>
 </context>
 <context>
