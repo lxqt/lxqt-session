@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; birçok kez çöktü. Oturum yeniden başatılıncaya kadar etkisizleştirildi.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; birçok kez çöktü. Oturum yeniden başlatılıncaya kadar etkisizleştirildi.</translation>
     </message>
 </context>
 <context>
