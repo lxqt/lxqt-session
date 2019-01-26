@@ -44,7 +44,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation>LXQt Kendilğinden Başlatma</translation>
+        <translation>LXQt Kendiliğinden Başlatma</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
@@ -120,22 +120,22 @@
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation type="unfinished"></translation>
+        <translation>Uykuya/Askıya alamadan önce ekranı kilitle</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kilit sonrası Bekleme/Askıya almak için bekleme süresi:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>Temel Ayarlar</translation>
+        <translation>Basit Ayarlar</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -362,12 +362,12 @@
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Müziklerinizin yükleneceği ya da kaydedileceği öntanımlı dizin</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation>Resimlerinizin kaydedileceği veya alıanacağı öntanımlı dizin</translation>
+        <translation>Resimlerinizin kaydedileceği veya alınacağı öntanımlı dizin</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
