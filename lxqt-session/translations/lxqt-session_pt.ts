@@ -6,12 +6,12 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>Crash Report</source>
-        <translation>Relatório de erros</translation>
+        <translation>Relatório de Falhas</translation>
     </message>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; terminou muitas vezes. O seu arranque automático foi desativado até à próxima sessão.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; falhou muitas vezes. Sua reinicialização automática foi desativada até o próximo login.</translation>
     </message>
 </context>
 <context>
@@ -19,18 +19,18 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Caminho do ficheiro de configuração.</translation>
+        <translation>Caminho do arquivo de configuração.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
-        <translation>ficheiro</translation>
+        <translation>Arquivo</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation>Gestor de janelas a utilizar.</translation>
+        <translation>Gerenciador de janelas para usar.</translation>
     </message>
 </context>
 <context>
@@ -53,12 +53,12 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Bem-vindo ao LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Por favor escolha o seu gestor de janelas.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Bem-vindo ao LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Por favor, selecione seu gerenciador de janelas padrão.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Posteriormente, pode mudar o gestor de janelas em Preferências -&gt; Definiçoes da sessão -&gt; Definições básicas.</translation>
+        <translation>Você poderá alterar isso a qualquer momento através de Preferências -&gt; Configurações da Sessão -&gt; Configurações Básicas.</translation>
     </message>
 </context>
 </TS>
