@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Путь к файлу конфигурации.</translation>
+        <translation>Путь к файлу настроек.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
