@@ -58,7 +58,7 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation>Izaberite vaš omiljeni.</translation>
+        <translation>Izaberite Vaš omiljeni.</translation>
     </message>
 </context>
 </TS>
