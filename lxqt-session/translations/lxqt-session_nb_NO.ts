@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; kræsjet for mange ganger. Det kan ikke autoomstartest før neste innlogging.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; kræsjet for mange ganger. Det kan ikke autoomstartes før neste innlogging.</translation>
     </message>
 </context>
 <context>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Filstil til konfigurasjon</translation>
+        <translation>Filsti til konfigurasjon.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
