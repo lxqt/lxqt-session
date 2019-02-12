@@ -25,7 +25,7 @@
         <location filename="../src/main.cpp" line="62"/>
         <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation>tiedosto</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="63"/>
