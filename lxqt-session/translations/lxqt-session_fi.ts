@@ -6,7 +6,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>Crash Report</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaatumisraportti</translation>
     </message>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
