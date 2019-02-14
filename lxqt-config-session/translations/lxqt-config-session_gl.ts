@@ -11,7 +11,7 @@
     <message>
         <location filename="../autostartedit.ui" line="20"/>
         <source>Name:</source>
-        <translation></translation>
+        <translation>Nome:</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="27"/>
@@ -21,7 +21,7 @@
     <message>
         <location filename="../autostartedit.ui" line="47"/>
         <source>Command:</source>
-        <translation></translation>
+        <translation>Orde:</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="57"/>
@@ -62,7 +62,7 @@
     <message>
         <location filename="../autostartpage.ui" line="17"/>
         <source>Delete</source>
-        <translation></translation>
+        <translation>Eliminar</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="24"/>
@@ -115,12 +115,12 @@
     <message>
         <location filename="../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation></translation>
+        <translation>Iniciar</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation></translation>
+        <translation>Parar</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
@@ -187,7 +187,7 @@
     <message>
         <location filename="../defaultappspage.ui" line="59"/>
         <source>Web Browser:</source>
-        <translation></translation>
+        <translation>Navegador web:</translation>
     </message>
 </context>
 <context>
@@ -210,7 +210,7 @@
     <message>
         <location filename="../environmentpage.ui" line="61"/>
         <source>Variable Name</source>
-        <translation></translation>
+        <translation>Nome da variábel</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="66"/>
@@ -251,7 +251,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="63"/>
         <source>Autostart</source>
-        <translation></translation>
+        <translation>Inicio automático</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="69"/>
@@ -302,7 +302,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Downloads</source>
-        <translation></translation>
+        <translation>Descargas</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
@@ -317,7 +317,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
         <source>Documents</source>
-        <translation></translation>
+        <translation>Documentos</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="68"/>
