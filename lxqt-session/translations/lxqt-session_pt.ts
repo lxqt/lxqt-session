@@ -19,18 +19,18 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Caminho do arquivo de configuração.</translation>
+        <translation>Caminho do ficheiro de configuração.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
-        <translation>Arquivo</translation>
+        <translation>ficheiro</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation>Gerenciador de janelas para usar.</translation>
+        <translation>O gestor de janelas a utilizar.</translation>
     </message>
 </context>
 <context>
@@ -53,12 +53,12 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Bem-vindo ao LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Por favor, selecione seu gerenciador de janelas padrão.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Bem-vindo ao LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Por favor, selecione o gestor de janelas padrão.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Você poderá alterar isso a qualquer momento através de Preferências -&gt; Configurações da Sessão -&gt; Configurações Básicas.</translation>
+        <translation>Pode alterar esta opção a qualquer momento através de Preferências -&gt; Definições da sessão -&gt; Definições básicas.</translation>
     </message>
 </context>
 </TS>
