@@ -231,7 +231,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
-        <translation>LXQt Sesjonsinnstillinger</translation>
+        <translation>Innstillinger for LXQt-sesjon</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="48"/>
@@ -246,7 +246,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="57"/>
         <source>User Directories</source>
-        <translation>Brukerordlister</translation>
+        <translation>Brukermapper</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="63"/>
@@ -256,7 +256,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="69"/>
         <source>Environment (Advanced)</source>
-        <translation>Miljø (Avansert)</translation>
+        <translation>Miljøvariabler (Avansert)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="95"/>
@@ -279,12 +279,12 @@
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>LXQt sesjonsinnstillinger - brukerordlister</translation>
+        <translation>Innstillinger for LXQt-sesjon - brukermapper</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation>En feil skjedde mens innstillingene for stedet %1 ble tatt i bruk.</translation>
+        <translation>En feil skjedde mens innstillingene for stedet %1 ble tatt i bruk</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="202"/>
@@ -312,7 +312,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Public Share</source>
-        <translation>Delt filområde</translation>
+        <translation>Offentlig delt</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
