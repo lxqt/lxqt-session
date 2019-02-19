@@ -36,7 +36,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="66"/>
         <source>Lock screen</source>
-        <translation>Låseskjerm</translation>
+        <translation>Lås skjerm</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="74"/>
