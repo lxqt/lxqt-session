@@ -77,7 +77,7 @@
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Aplicações de arranque automático</translation>
+        <translation>Aplicações com arranque automático</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
@@ -105,7 +105,7 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation>Módulos do LXQt</translation>
+        <translation>Módulos LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
@@ -125,17 +125,17 @@
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>Suspender/hibernar após este tempo de bloqueio:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>Configurações Básicas</translation>
+        <translation>Definições básicas</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -362,7 +362,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasta utilizada para carregar ou guardar as suas músicas</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
