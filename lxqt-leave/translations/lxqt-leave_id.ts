@@ -11,12 +11,12 @@
     <message>
         <location filename="../leavedialog.ui" line="71"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;What do you want the computer to do?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Apa yang Anda ingin komputer lakukan?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Apa yang anda ingin komputer ini lakukan?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="51"/>
         <source>Logout</source>
-        <translation>Keluar log</translation>
+        <translation>Keluar</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="69"/>
@@ -54,7 +54,7 @@
     <message>
         <location filename="../main.cpp" line="58"/>
         <source>Logout.</source>
-        <translation>Keluar log.</translation>
+        <translation>Keluar.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="61"/>
