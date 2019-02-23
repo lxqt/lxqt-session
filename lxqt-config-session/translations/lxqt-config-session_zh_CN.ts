@@ -125,12 +125,12 @@
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>在锁定延迟之后挂起/休眠：</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -362,7 +362,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>读取或保存音乐的默认文件夹</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
