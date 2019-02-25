@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; a planté plusieurs fois. Son auto-start sera désactivé jusqu&apos;à la prochaine session.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; a planté plusieurs fois. Son redémarrage automatique a été désactivé jusqu&apos;à la prochaine connexion.</translation>
     </message>
 </context>
 <context>
