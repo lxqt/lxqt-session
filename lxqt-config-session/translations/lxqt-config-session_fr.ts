@@ -39,7 +39,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
-        <translation>Lancement automatique global</translation>
+        <translation>Lancement automatique &apos;global&apos;</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
@@ -115,12 +115,12 @@
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation>Demander confirmation avant de quitter la session</translation>
+        <translation>Demander confirmation pour quitter la session</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>Verrouiller l&apos;écran avant veille/hibernation</translation>
+        <translation>Verrouiller l&apos;écran avant de suspendre/hiberner</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="131"/>
@@ -150,7 +150,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
         <source>Select a window manager</source>
-        <translation>Choisir un gestionnaire de fenêtres</translation>
+        <translation>Sélectionnez un gestionnaire de fenêtres</translation>
     </message>
 </context>
 <context>
@@ -158,12 +158,12 @@
     <message>
         <location filename="../defaultappspage.cpp" line="74"/>
         <source>Select a terminal emulator</source>
-        <translation>Choisir un émulateur de terminal</translation>
+        <translation>Sélectionnez un émulateur de terminal</translation>
     </message>
     <message>
         <location filename="../defaultappspage.cpp" line="79"/>
         <source>Select a web browser</source>
-        <translation>Choisir un navigateur de bureau</translation>
+        <translation>Sélectionnez un navigateur Web</translation>
     </message>
 </context>
 <context>
@@ -266,7 +266,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="96"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation>Certains paramétrages ne seront effectifs qu&apos;à la prochaine session.</translation>
+        <translation>Certains paramètres ne prendront effet que lors de la prochaine connexion.</translation>
     </message>
 </context>
 <context>
@@ -284,7 +284,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation>Erreur lors de l&apos;application des paramètres pour l&apos;emplacement %1</translation>
+        <translation>Une erreur s&apos;est produite lors de l&apos;application des paramètres pour l&apos;emplacement % 1</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="202"/>
@@ -352,12 +352,12 @@
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation>Répertoire par défaut de de vos fichiers partagés publiquement</translation>
+        <translation>Répertoire par défaut pour partager publiquement vos fichiers</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation>Répertoire par défaut de vos documents</translation>
+        <translation>Répertoire par défaut pour vos documents</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
