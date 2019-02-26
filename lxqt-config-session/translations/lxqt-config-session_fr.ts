@@ -26,7 +26,7 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>Attendre l&apos;exécution de &apos;system-tray&apos;</translation>
+        <translation>Attendre l&apos;exécution de system-tray</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
@@ -39,7 +39,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
-        <translation>Lancement automatique &apos;global&apos;</translation>
+        <translation>Lancement automatique global</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
@@ -150,7 +150,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
         <source>Select a window manager</source>
-        <translation>Sélectionnez un gestionnaire de fenêtres</translation>
+        <translation>Sélectionner un gestionnaire de fenêtres</translation>
     </message>
 </context>
 <context>
@@ -158,7 +158,7 @@
     <message>
         <location filename="../defaultappspage.cpp" line="74"/>
         <source>Select a terminal emulator</source>
-        <translation>Sélectionnez un émulateur de terminal</translation>
+        <translation>Sélectionner un émulateur de terminal</translation>
     </message>
     <message>
         <location filename="../defaultappspage.cpp" line="79"/>
