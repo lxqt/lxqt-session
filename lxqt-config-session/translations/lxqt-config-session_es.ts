@@ -125,7 +125,7 @@
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished">Retardo para suspender/hibernar tras bloquear:</translation>
+        <translation>Retardo para suspender/hibernar tras bloquear:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
