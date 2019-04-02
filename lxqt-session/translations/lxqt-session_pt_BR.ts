@@ -58,7 +58,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Você poderá mudar esta configuração a qualquer momento, indo a Preferências -&gt; Configurações de sessão -&gt; Configurações básicas.</translation>
+        <translation>Você poderá mudar esta configuração a qualquer momento, indo a Preferências -&gt; Configurações de Sessão do LXQt -&gt; Configurações básicas.</translation>
     </message>
 </context>
 </TS>
