@@ -77,7 +77,7 @@
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Início Automático das aplicações</translation>
+        <translation>Início automático de aplicações</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
@@ -115,7 +115,7 @@
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation>Pedir confirmação para encerrar sessão</translation>
+        <translation>Pedir confirmação ao encerrar a sessão</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
@@ -125,7 +125,7 @@
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation>Suspender/hibernar após bloqueio de tela:</translation>
+        <translation>Atraso para suspensão/hibernação após bloquear a tela:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
@@ -231,7 +231,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
-        <translation>Configurações de sessão do LXQt</translation>
+        <translation>Configurações de Sessão do LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="48"/>
@@ -266,7 +266,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="96"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation>Algumas configurações não trarão efeito até a próxima sessão.</translation>
+        <translation>Algumas configurações não surtirão efeito até a próxima sessão.</translation>
     </message>
 </context>
 <context>
@@ -279,7 +279,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>Configurações de sessão do LXQt - Diretórios do usuário</translation>
+        <translation>Configurações de Sessão do LXQt - Diretórios do usuário</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
@@ -352,7 +352,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation>Diretório padrão para compartilhamento de arquivos ao público</translation>
+        <translation>Diretório padrão para compartilhamento de arquivos</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
