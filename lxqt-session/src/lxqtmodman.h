@@ -72,7 +72,7 @@ class LXQtModuleManager : public QObject, public QAbstractNativeEventFilter
 
 public:
     //! \brief Construct LXQtModuleManager
-    LXQtModuleManager(QObject* parent = 0);
+    LXQtModuleManager(QObject* parent = nullptr);
     virtual ~LXQtModuleManager();
 
     //! \brief Set the window manager (e.g. "/usr/bin/openbox")
@@ -190,7 +190,7 @@ class LXQtModule : public QProcess
 {
     Q_OBJECT
 public:
-    LXQtModule(const XdgDesktopFile& file, QObject *parent = 0);
+    LXQtModule(const XdgDesktopFile& file, QObject *parent = nullptr);
     void start();
     void terminate();
     bool isTerminating();

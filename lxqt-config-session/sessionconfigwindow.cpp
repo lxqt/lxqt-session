@@ -42,7 +42,7 @@
 
 
 SessionConfigWindow::SessionConfigWindow() :
-      LXQt::ConfigDialog(tr("LXQt Session Settings"), new LXQt::Settings(QSL("session")), 0)
+      LXQt::ConfigDialog(tr("LXQt Session Settings"), new LXQt::Settings(QSL("session")), nullptr)
 {
     BasicSettings* basicSettings = new BasicSettings(mSettings, this);
     addPage(basicSettings, tr("Basic Settings"), QSL("preferences-desktop-display-color"));

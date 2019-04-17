@@ -45,7 +45,7 @@ class LeaveDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit LeaveDialog(QWidget *parent = 0);
+    explicit LeaveDialog(QWidget *parent = nullptr);
     ~LeaveDialog();
 
 protected:

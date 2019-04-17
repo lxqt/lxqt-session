@@ -39,7 +39,7 @@ class DefaultApps : public QWidget
     Q_OBJECT
 
 public:
-    explicit DefaultApps(QWidget *parent = 0);
+    explicit DefaultApps(QWidget *parent = nullptr);
     ~DefaultApps();
 
 signals:

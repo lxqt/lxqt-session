@@ -28,7 +28,7 @@ class UserLocationsPage : public QWidget {
     Q_OBJECT
 
 public:
-    explicit UserLocationsPage(QWidget *parent = 0);
+    explicit UserLocationsPage(QWidget *parent = nullptr);
     ~UserLocationsPage();
 
 Q_SIGNALS:

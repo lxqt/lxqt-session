@@ -42,7 +42,7 @@ public:
     };
     Q_DECLARE_FLAGS(ActiveButtons, ActiveButton)
 
-    explicit AutoStartItemModel(QObject* parent = 0);
+    explicit AutoStartItemModel(QObject* parent = nullptr);
     ~AutoStartItemModel();
     int columnCount(const QModelIndex& parent = QModelIndex()) const;
     int rowCount(const QModelIndex& parent = QModelIndex()) const;
