@@ -64,7 +64,7 @@ LXQtModuleManager::LXQtModuleManager(QObject* parent)
       mThemeWatcher(new QFileSystemWatcher(this)),
       mWmStarted(false),
       mTrayStarted(false),
-      mWaitLoop(NULL)
+      mWaitLoop(nullptr)
 {
     connect(mThemeWatcher, SIGNAL(directoryChanged(QString)), SLOT(themeFolderChanged(QString)));
     connect(LXQt::Settings::globalSettings(), SIGNAL(lxqtThemeChanged()), SLOT(themeChanged()));
@@ -127,7 +127,7 @@ void LXQtModuleManager::startAutostartApps()
             // add a timeout to avoid infinite blocking if a WM fail to execute.
             QTimer::singleShot(60 * 1000, &waitLoop, SLOT(quit()));
             waitLoop.exec();
-            mWaitLoop = NULL;
+            mWaitLoop = nullptr;
         }
         for (const XdgDesktopFile* const f : qAsConst(trayApps))
         {
@@ -218,7 +218,7 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
     // add a timeout to avoid infinite blocking if a WM fail to execute.
     QTimer::singleShot(30 * 1000, &waitLoop, SLOT(quit()));
     waitLoop.exec();
-    mWaitLoop = NULL;
+    mWaitLoop = nullptr;
     // FIXME: blocking is a bad idea. We need to start as many apps as possible and
     //         only wait for the start of WM when it's absolutely needed.
     //         Maybe we can add a X-Wait-WM=true key in the desktop entry file?
@@ -302,13 +302,13 @@ void LXQtModuleManager::restartModules(int /*exitCode*/, QProcess::ExitStatus ex
             case QProcess::CrashExit:
             {
                 qCDebug(SESSION) << "Process" << procName << "(" << proc << ") has to be restarted";
-                time_t now = time(NULL);
+                time_t now = time(nullptr);
                 mCrashReport[proc].prepend(now);
                 while (now - mCrashReport[proc].back() > 60)
                     mCrashReport[proc].pop_back();
                 if (mCrashReport[proc].length() >= MAX_CRASHES_PER_APP)
                 {
-                    QMessageBox::warning(0, tr("Crash Report"),
+                    QMessageBox::warning(nullptr, tr("Crash Report"),
                                         tr("<b>%1</b> crashed too many times. Its autorestart has been disabled until next login.").arg(procName));
                 }
                 else
@@ -341,7 +341,7 @@ LXQtModuleManager::~LXQtModuleManager()
         i.next();
 
         auto p = i.value();
-        disconnect(p, SIGNAL(finished(int, QProcess::ExitStatus)), 0, 0);
+        disconnect(p, SIGNAL(finished(int, QProcess::ExitStatus)), nullptr, nullptr);
 
         delete p;
         mNameMap[i.key()] = nullptr;

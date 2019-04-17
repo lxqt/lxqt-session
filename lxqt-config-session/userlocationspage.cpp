@@ -51,7 +51,7 @@ public:
 
 UserLocationsPagePrivate::UserLocationsPagePrivate()
     : locations(),
-      signalMapper(0)
+      signalMapper(nullptr)
 {
 }
 
@@ -153,7 +153,7 @@ UserLocationsPage::~UserLocationsPage()
 {
     // It's fine to delete a null pointer. No need to check.
     delete d;
-    d = 0;
+    d = nullptr;
 }
 
 void UserLocationsPage::restoreSettings()

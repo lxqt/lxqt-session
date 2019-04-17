@@ -34,7 +34,7 @@ class ModuleModel : public QAbstractListModel
 {
     Q_OBJECT
 public:
-    ModuleModel(QObject *parent = 0);
+    ModuleModel(QObject *parent = nullptr);
     ~ModuleModel();
     void reset();
     void writeChanges();

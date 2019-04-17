@@ -40,7 +40,7 @@ class EnvironmentPage : public QWidget
     Q_OBJECT
 
 public:
-    explicit EnvironmentPage(LXQt::Settings *settings, QWidget *parent = 0);
+    explicit EnvironmentPage(LXQt::Settings *settings, QWidget *parent = nullptr);
     ~EnvironmentPage();
 
 signals:

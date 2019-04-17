@@ -42,7 +42,7 @@ class WmSelectDialog : public QDialog
 
 public:
     explicit WmSelectDialog(const WindowManagerList &availableWindowManagers,
-                            QWidget *parent = 0);
+                            QWidget *parent = nullptr);
     ~WmSelectDialog();
     QString windowManager() const;
 

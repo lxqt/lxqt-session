@@ -42,7 +42,7 @@ class BasicSettings : public QWidget
     Q_OBJECT
 
 public:
-    explicit BasicSettings(LXQt::Settings *settings, QWidget *parent = 0);
+    explicit BasicSettings(LXQt::Settings *settings, QWidget *parent = nullptr);
     ~BasicSettings();
 
 signals:

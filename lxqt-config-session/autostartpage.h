@@ -38,7 +38,7 @@ class AutoStartPage : public QWidget
     Q_OBJECT
 
 public:
-    explicit AutoStartPage(QWidget* parent = 0);
+    explicit AutoStartPage(QWidget* parent = nullptr);
     ~AutoStartPage();
 
 signals:
