@@ -35,16 +35,16 @@ class ModuleModel : public QAbstractListModel
     Q_OBJECT
 public:
     ModuleModel(QObject *parent = nullptr);
-    ~ModuleModel();
+    ~ModuleModel() override;
     void reset();
     void writeChanges();
     void toggleModule(const QModelIndex &index, bool status);
 
-    QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const;
-    bool setData(const QModelIndex& index, const QVariant& value, int role);
-    int rowCount(const QModelIndex& parent) const;
-    int columnCount(const QModelIndex&) const { return 2; }
-    Qt::ItemFlags flags(const QModelIndex& index) const;
+    QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const override;
+    bool setData(const QModelIndex& index, const QVariant& value, int role) override;
+    int rowCount(const QModelIndex& parent) const override;
+    int columnCount(const QModelIndex&) const override { return 2; }
+    Qt::ItemFlags flags(const QModelIndex& index) const override;
 
     QMap<QString, AutostartItem> items();
 

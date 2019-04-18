@@ -37,7 +37,7 @@ class UdevNotifier : public QObject
     Q_OBJECT
 public:
     UdevNotifier(QString const & subsystem, QObject * parent = nullptr);
-    ~UdevNotifier();
+    ~UdevNotifier() override;
 
 signals:
     void deviceAdded(QString path);

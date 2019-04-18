@@ -29,7 +29,7 @@ class UserLocationsPage : public QWidget {
 
 public:
     explicit UserLocationsPage(QWidget *parent = nullptr);
-    ~UserLocationsPage();
+    ~UserLocationsPage() override;
 
 Q_SIGNALS:
     void needRestart();

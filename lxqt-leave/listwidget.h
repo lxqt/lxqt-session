@@ -41,10 +41,10 @@ public:
     void setColumns(int columns);
 
 protected:
-    virtual QSize viewportSizeHint() const override;
-    virtual QModelIndex moveCursor(CursorAction cursorAction, Qt::KeyboardModifiers modifiers) override;
-    virtual void keyPressEvent(QKeyEvent * event) override;
-    virtual void focusInEvent(QFocusEvent * event) override;
+    QSize viewportSizeHint() const override;
+    QModelIndex moveCursor(CursorAction cursorAction, Qt::KeyboardModifiers modifiers) override;
+    void keyPressEvent(QKeyEvent * event) override;
+    void focusInEvent(QFocusEvent * event) override;
 
 private:
     int mRows;

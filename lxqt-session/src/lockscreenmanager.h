@@ -40,7 +40,7 @@ class LockScreenProvider : public QObject
     Q_OBJECT
 
 public:
-    virtual ~LockScreenProvider() {}
+    ~LockScreenProvider() override {}
 
     virtual bool isValid() = 0;
     virtual bool inhibit() = 0;
@@ -57,7 +57,7 @@ class LogindProvider : public LockScreenProvider
 
 public:
     explicit LogindProvider();
-    virtual ~LogindProvider();
+    ~LogindProvider() override;
 
     bool isValid() override;
     bool inhibit() override;
@@ -74,7 +74,7 @@ class ConsoleKit2Provider : public LockScreenProvider
 
 public:
     explicit ConsoleKit2Provider();
-    virtual ~ConsoleKit2Provider();
+    ~ConsoleKit2Provider() override;
 
     bool isValid() override;
     bool inhibit() override;
@@ -92,7 +92,7 @@ class LockScreenManager : public QObject
 
 public:
     explicit LockScreenManager(QObject *parent = nullptr);
-    virtual ~LockScreenManager();
+    ~LockScreenManager() override;
 
     bool startup(bool lockBeforeSleep, int powerAfterLockDelay/*!< ms*/);
 
