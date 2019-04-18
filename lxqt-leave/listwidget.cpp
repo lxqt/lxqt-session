@@ -47,7 +47,7 @@ public:
     static constexpr QMargins MARGINS{5, 5, 5, 5};
 public:
     using QItemDelegate::QItemDelegate;
-    virtual QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override
+    QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override
     {
         if (mItemSize.isValid())
             return mItemSize;
@@ -64,7 +64,7 @@ public:
         return mItemSize;
     }
 
-    virtual void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override
+    void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override
     {
         /*
         // mimic the button visual
@@ -85,7 +85,7 @@ public:
 protected:
     // Note: We want to paint the focus rectangle around the whole (text+icon)
     //  (default in QItemDelegate is to draw the focus only in text rectangle)
-    virtual void drawFocus(QPainter *painter
+    void drawFocus(QPainter *painter
             , const QStyleOptionViewItem &option
             , const QRect &/*rect*/) const override
     {
@@ -93,7 +93,7 @@ protected:
         return QItemDelegate::drawFocus(painter, option, option.rect);
     }
 
-    virtual void drawDisplay(QPainter *painter
+    void drawDisplay(QPainter *painter
             , const QStyleOptionViewItem &option
             , const QRect &rect
             , const QString &text) const override
@@ -103,7 +103,7 @@ protected:
         return QItemDelegate::drawDisplay(painter, option, r, text);
     }
 
-    virtual void drawDecoration(QPainter *painter
+    void drawDecoration(QPainter *painter
             , const QStyleOptionViewItem &option
             , const QRect &rect
             , const QPixmap &pixmap) const override

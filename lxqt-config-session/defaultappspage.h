@@ -40,7 +40,7 @@ class DefaultApps : public QWidget
 
 public:
     explicit DefaultApps(QWidget *parent = nullptr);
-    ~DefaultApps();
+    ~DefaultApps() override;
 
 signals:
     void defaultAppChanged(const QString&, const QString&);

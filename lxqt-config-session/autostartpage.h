@@ -39,7 +39,7 @@ class AutoStartPage : public QWidget
 
 public:
     explicit AutoStartPage(QWidget* parent = nullptr);
-    ~AutoStartPage();
+    ~AutoStartPage() override;
 
 signals:
     void needRestart();

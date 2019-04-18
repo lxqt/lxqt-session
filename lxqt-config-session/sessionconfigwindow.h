@@ -38,7 +38,7 @@ class SessionConfigWindow : public LXQt::ConfigDialog
 
 public:
     SessionConfigWindow();
-    ~SessionConfigWindow();
+    ~SessionConfigWindow() override;
 
     static void handleCfgComboBox(QComboBox * cb,
                            const QStringList &availableValues,
@@ -47,7 +47,7 @@ public:
 
     static void updateCfgComboBox(QComboBox * cb, const QString &prompt);
 
-    void closeEvent(QCloseEvent * event);
+    void closeEvent(QCloseEvent * event) override;
 
 public slots:
     void setRestart();

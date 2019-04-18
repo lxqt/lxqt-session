@@ -46,10 +46,10 @@ class LeaveDialog : public QDialog
 
 public:
     explicit LeaveDialog(QWidget *parent = nullptr);
-    ~LeaveDialog();
+    ~LeaveDialog() override;
 
 protected:
-    virtual void resizeEvent(QResizeEvent* event) override;
+    void resizeEvent(QResizeEvent* event) override;
 
 private:
     Ui::LeaveDialog *ui;

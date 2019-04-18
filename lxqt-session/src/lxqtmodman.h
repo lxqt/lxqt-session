@@ -73,7 +73,7 @@ class LXQtModuleManager : public QObject, public QAbstractNativeEventFilter
 public:
     //! \brief Construct LXQtModuleManager
     LXQtModuleManager(QObject* parent = nullptr);
-    virtual ~LXQtModuleManager();
+    ~LXQtModuleManager() override;
 
     //! \brief Set the window manager (e.g. "/usr/bin/openbox")
     void setWindowManager(const QString & windowManager);
@@ -91,7 +91,7 @@ public:
     void startup(LXQt::Settings& s);
 
     // Qt5 uses native event filter
-    virtual bool nativeEventFilter(const QByteArray & eventType, void * message, long * result);
+    bool nativeEventFilter(const QByteArray & eventType, void * message, long * result) override;
 
 public slots:
     /*! \brief Exit LXQt session.

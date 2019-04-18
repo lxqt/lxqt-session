@@ -31,7 +31,7 @@ class SessionApplication : public LXQt::Application
     Q_OBJECT
 public:
     SessionApplication(int& argc, char** argv);
-    ~SessionApplication();
+    ~SessionApplication() override;
     void setWindowManager(const QString & windowManager);
     void setConfigName(const QString & configName);
 

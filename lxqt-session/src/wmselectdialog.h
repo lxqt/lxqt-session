@@ -43,11 +43,11 @@ class WmSelectDialog : public QDialog
 public:
     explicit WmSelectDialog(const WindowManagerList &availableWindowManagers,
                             QWidget *parent = nullptr);
-    ~WmSelectDialog();
+    ~WmSelectDialog() override;
     QString windowManager() const;
 
 public slots:
-    void done(int);
+    void done(int) override;
 
 private slots:
     void selectFileDialog(const QModelIndex &index);

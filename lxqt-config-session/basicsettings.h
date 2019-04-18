@@ -43,7 +43,7 @@ class BasicSettings : public QWidget
 
 public:
     explicit BasicSettings(LXQt::Settings *settings, QWidget *parent = nullptr);
-    ~BasicSettings();
+    ~BasicSettings() override;
 
 signals:
     void needRestart();

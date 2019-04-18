@@ -41,7 +41,7 @@ class EnvironmentPage : public QWidget
 
 public:
     explicit EnvironmentPage(LXQt::Settings *settings, QWidget *parent = nullptr);
-    ~EnvironmentPage();
+    ~EnvironmentPage() override;
 
 signals:
     void needRestart();
