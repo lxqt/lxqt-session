@@ -26,7 +26,7 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>Tunggu untuk baki sistem</translation>
+        <translation>Tunggu di sistem tray</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
@@ -39,12 +39,12 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
-        <translation>Memulai Otomatis Global</translation>
+        <translation>Pemulaian Otomatis Umum</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation>Memulai Otomatis LXQt</translation>
+        <translation>Pemulaian Ototmatis LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
@@ -77,7 +77,7 @@
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Memulai Otomatis Aplikasi</translation>
+        <translation>Pemulaian Otomatis untuk Aplikasi</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
@@ -135,12 +135,12 @@
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>Waktu tidur/hibernasi setelah terkunci:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
