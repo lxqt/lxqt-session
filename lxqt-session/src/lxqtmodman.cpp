@@ -467,8 +467,7 @@ LXQtModule::LXQtModule(const XdgDesktopFile& file, QObject* parent) :
     fileName(QFileInfo(file.fileName()).fileName()),
     mIsTerminating(false)
 {
-    QProcess::setStandardOutputFile(QProcess::nullDevice());
-    QProcess::setStandardErrorFile(QProcess::nullDevice());
+    QProcess::setProcessChannelMode(QProcess::ForwardedChannels);
     connect(this, SIGNAL(stateChanged(QProcess::ProcessState)), SLOT(updateState(QProcess::ProcessState)));
 }
 
