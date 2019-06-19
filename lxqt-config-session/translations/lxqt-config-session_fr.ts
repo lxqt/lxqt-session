@@ -163,7 +163,7 @@
     <message>
         <location filename="../defaultappspage.cpp" line="79"/>
         <source>Select a web browser</source>
-        <translation>Sélectionnez un navigateur Web</translation>
+        <translation>Sélection d&apos;un navigateur Web</translation>
     </message>
 </context>
 <context>
