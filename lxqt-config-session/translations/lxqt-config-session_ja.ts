@@ -26,7 +26,7 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>システムトレイを待つ</translation>
+        <translation>システムトレイに入れる</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
@@ -261,7 +261,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="95"/>
         <source>Session Restart Required</source>
-        <translation>セッション再起動の要求</translation>
+        <translation>セッションの再起動が必要</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="96"/>
