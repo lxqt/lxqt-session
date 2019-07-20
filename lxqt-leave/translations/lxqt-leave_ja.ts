@@ -54,32 +54,32 @@
     <message>
         <location filename="../main.cpp" line="58"/>
         <source>Logout.</source>
-        <translation>ログアウト.</translation>
+        <translation>ログアウトする。</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="61"/>
         <source>Lockscreen.</source>
-        <translation>画面のロック.</translation>
+        <translation>画面をロックする。</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="64"/>
         <source>Suspend.</source>
-        <translation>サスペンド.</translation>
+        <translation>サスペンドする。</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="67"/>
         <source>Hibernate.</source>
-        <translation>ハイバネート.</translation>
+        <translation>ハイバネートする。</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="70"/>
         <source>Shutdown.</source>
-        <translation>シャットダウン.</translation>
+        <translation>シャットダウンする。</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="73"/>
         <source>Reboot.</source>
-        <translation>再起動.</translation>
+        <translation>再起動する。</translation>
     </message>
 </context>
 </TS>
