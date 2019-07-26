@@ -44,17 +44,17 @@
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation>LXQt自動起動</translation>
+        <translation>LXQt 自動起動</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
         <source>Location: %1</source>
-        <translation>位置:%1</translation>
+        <translation>場所: %1</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>上書き:%1</translation>
+        <translation>上書きにより無効: %1</translation>
     </message>
 </context>
 <context>
@@ -100,7 +100,7 @@
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation>ウィンドウマネージャ</translation>
+        <translation>ウィンドウマネージャー</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
@@ -110,7 +110,7 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation>LXQtモジュール</translation>
+        <translation>LXQt モジュール</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
@@ -135,12 +135,12 @@
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>サスペンド/ハイバーネーションの前にスクリーンをロック</translation>
+        <translation>サスペンド/ハイバネートの前に画面をロックする　　　　　　</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation>ロック後に遅れてサスペンド/ハイバネーションする:</translation>
+        <translation>ロックからサスペンド/ハイバネートまでの時間:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
@@ -150,7 +150,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
         <source>Select a window manager</source>
-        <translation>ウィンドウマネージャの選択</translation>
+        <translation>ウィンドウマネージャーの選択</translation>
     </message>
 </context>
 <context>
@@ -231,7 +231,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
-        <translation>LXQtセッションの設定</translation>
+        <translation>LXQt セッションの設定</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="48"/>
@@ -279,7 +279,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>LXQtセッションの設定--ユーザーディレクトリ</translation>
+        <translation>LXQt セッションの設定--ユーザーディレクトリ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
