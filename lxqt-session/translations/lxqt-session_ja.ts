@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; が何度もクラッシュしました。次回ログイン時に自動起動は無効化されます。</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; が何度もクラッシュしました。次回ログイン時まで再起動されません。</translation>
     </message>
 </context>
 <context>
@@ -30,7 +30,7 @@
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation>使用するウィンドウマネージャ。</translation>
+        <translation>使用するウィンドウマネージャー。</translation>
     </message>
 </context>
 <context>
@@ -38,7 +38,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation>LXQt にようこそ</translation>
+        <translation>LXQt へようこそ</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="65"/>
@@ -53,13 +53,13 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;LXQt へようこそ&lt;/span&gt;&lt;/p&gt;&lt;p&gt;既定のウィンドウマネージャを選択してください。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;LXQt へようこそ&lt;/span&gt;&lt;/p&gt;&lt;p&gt;ウィンドウマネージャーを選択してください。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
         <translatorcomment>動作を確認後、翻訳を要修正</translatorcomment>
-        <translation>設定 -&gt; LXQt セッションの設定 -&gt; 基本設定　からいつでも変更できます。</translation>
+        <translation>[LXQt 設定] → [セッション] の [基本設定] から いつでも変更できます。</translation>
     </message>
 </context>
 </TS>
