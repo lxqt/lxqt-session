@@ -6,7 +6,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>Crash Report</source>
-        <translation type="unfinished"></translation>
+        <translation>Istripuen Txostena</translation>
     </message>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
@@ -19,13 +19,13 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Konfigurazio fitxategiaren bidea.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">fitxategia</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="63"/>
