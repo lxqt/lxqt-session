@@ -97,6 +97,17 @@ bool SessionApplication::startup()
                 qCWarning(SESSION) << QStringLiteral("Session '%1', new input device '%2', keyboard setting will be (optionaly) reloaded...").arg(configName).arg(device);
                 dev_timer->start();
             });
+    // Detect display connection:
+    // Intel i915 doesn't updates display status properly. The command xrandr must be run to 
+    // update display status or run:
+    // # echo detect > status
+    // at /sys/devices/pciXXX/drm/cardX/cardX-XXX
+    UdevNotifier *dev_notifier_drm_subsystem = new UdevNotifier(QStringLiteral("drm"), this); //will be released upon our destruction
+    connect(dev_notifier_drm_subsystem, &UdevNotifier::deviceChanged, [this] (QString device)
+            {
+                qCWarning(SESSION) << QStringLiteral("Session '%1': display device '%2'").arg(configName).arg(device);
+                QProcess::startDetached(QStringLiteral("lxqt-config-monitor -l"));
+            });
 #endif
 
     if (lockScreenManager->startup(settings.value(QLatin1String("lock_screen_before_power_actions"), true).toBool()
