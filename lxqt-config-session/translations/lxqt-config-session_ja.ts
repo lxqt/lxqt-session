@@ -342,37 +342,37 @@
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation>ダウンロードしたファイルを保存する既定のフォルダ</translation>
+        <translation>ダウンロードしたファイルを保存する既定のフォルダー</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation>テンプレートファイルを保存する既定のフォルダ</translation>
+        <translation>テンプレートファイルを保存する既定のフォルダー</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation>共有ファイルを公開する際の既定のフォルダ</translation>
+        <translation>共有ファイルを公開する際の既定のフォルダー</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation>文書ファイルを保存する既定のフォルダ</translation>
+        <translation>文書ファイルを保存する既定のフォルダー</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation>音楽ファイルを保存する既定のフォルダ</translation>
+        <translation>音楽ファイルを保存する既定のフォルダー</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation>画像ファイルを保存する既定のフォルダ</translation>
+        <translation>画像ファイルを保存する既定のフォルダー</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>動画ファイルを保存する既定のフォルダ</translation>
+        <translation>動画ファイルを保存する既定のフォルダー</translation>
     </message>
 </context>
 </TS>
