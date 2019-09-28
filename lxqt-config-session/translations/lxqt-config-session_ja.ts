@@ -135,7 +135,7 @@
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>サスペンド/ハイバネートの前に画面をロックする&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;</translation>
+        <translation>サスペンド/ハイバネートの前に画面をロックする　　　　　　</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="131"/>
@@ -158,7 +158,7 @@
     <message>
         <location filename="../defaultappspage.cpp" line="74"/>
         <source>Select a terminal emulator</source>
-        <translation>ターミナルエミュレータの選択</translation>
+        <translation>ターミナルエミュレーターの選択</translation>
     </message>
     <message>
         <location filename="../defaultappspage.cpp" line="79"/>
