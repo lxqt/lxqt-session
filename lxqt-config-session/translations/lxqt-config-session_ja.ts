@@ -87,7 +87,7 @@
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>File&apos;%1&apos;は既にあります!</translation>
+        <translation>ファイル &apos;%1&apos; は既にあります！</translation>
     </message>
 </context>
 <context>
@@ -95,7 +95,7 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>基本的な設定</translation>
+        <translation>基本設定</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>
@@ -163,7 +163,7 @@
     <message>
         <location filename="../defaultappspage.cpp" line="79"/>
         <source>Select a web browser</source>
-        <translation>ウェブブラウザの選択</translation>
+        <translation>ウェブブラウザーの選択</translation>
     </message>
 </context>
 <context>
@@ -187,7 +187,7 @@
     <message>
         <location filename="../defaultappspage.ui" line="59"/>
         <source>Web Browser:</source>
-        <translation>ウェブブラウザ:</translation>
+        <translation>ウェブブラウザー:</translation>
     </message>
 </context>
 <context>
