@@ -26,7 +26,7 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Odota ilmoitusaluetta</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
@@ -54,7 +54,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ohitukset: %1</translation>
     </message>
 </context>
 <context>
@@ -105,7 +105,7 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished">LXQt-moduulit</translation>
+        <translation>LXQt-moduulit</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
@@ -125,12 +125,12 @@
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>Siirry lepo/horrostilaan lukitus viiveen jälkeen:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -279,12 +279,12 @@
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation type="unfinished">LXQt-istunnon asetukset - Käyttäjien hakemistot</translation>
+        <translation>LXQt-istunnon asetukset - Käyttäjien hakemistot</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>Sijainnin %1 asetuksien käyttöönotossa tapahtui virhe</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="202"/>
@@ -312,7 +312,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Jaetut</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
@@ -347,32 +347,32 @@
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletuskansio mallitiedostojen tallentamiselle</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletuskansio jaetuille tiedostoille</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletuskansio asiakirjojen tallentamiselle</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletuskansio musiikkitiedostojen tallentamiselle</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletuskansio kuvatiedostojen tallentamiselle</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletuskansio videotiedostojen tallentamiselle</translation>
     </message>
 </context>
 </TS>
