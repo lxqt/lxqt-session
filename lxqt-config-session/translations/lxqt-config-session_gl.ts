@@ -31,7 +31,7 @@
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
         <source>Select Application</source>
-        <translation>Seleccionar o aplicativo</translation>
+        <translation>Seleccionar a aplicación</translation>
     </message>
 </context>
 <context>
@@ -77,7 +77,7 @@
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Inicio automático de aplicativos</translation>
+        <translation>Inicio automático de aplicacións</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
@@ -171,7 +171,7 @@
     <message>
         <location filename="../defaultappspage.ui" line="23"/>
         <source>Default Applications</source>
-        <translation>Aplicativos predeterminados</translation>
+        <translation>Aplicacións predeterminadas</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="32"/>
@@ -241,7 +241,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="54"/>
         <source>Default Applications</source>
-        <translation>Aplicativos predeterminados</translation>
+        <translation>Aplicacións predeterminados</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="57"/>

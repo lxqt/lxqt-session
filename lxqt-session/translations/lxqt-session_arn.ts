@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="eu">
+<TS version="2.1" language="arn">
 <context>
     <name>LXQtModuleManager</name>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>Crash Report</source>
-        <translation>Istripuen Txostena</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
@@ -19,13 +19,13 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished">Konfigurazio fitxategiaren bidea.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
-        <translation type="unfinished">fitxategia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="63"/>
@@ -38,17 +38,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation>Ongi etorri LXQt-ra</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.cpp" line="65"/>
-        <source>Other ...</source>
-        <translation>Beste bat...</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.cpp" line="66"/>
-        <source>Choose your favorite one.</source>
-        <translation>Aukeratu gogokoena.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
@@ -58,6 +48,16 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wmselectdialog.cpp" line="65"/>
+        <source>Other ...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wmselectdialog.cpp" line="66"/>
+        <source>Choose your favorite one.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

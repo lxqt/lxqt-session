@@ -87,7 +87,7 @@
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>File&apos;%1&apos;は既にあります!</translation>
+        <translation>ファイル &apos;%1&apos; は既にあります！</translation>
     </message>
 </context>
 <context>
@@ -95,7 +95,7 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>基本的な設定</translation>
+        <translation>基本設定</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>
@@ -120,7 +120,7 @@
     <message>
         <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation>終了</translation>
+        <translation>停止</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
@@ -158,12 +158,12 @@
     <message>
         <location filename="../defaultappspage.cpp" line="74"/>
         <source>Select a terminal emulator</source>
-        <translation>ターミナルエミュレータの選択</translation>
+        <translation>ターミナルエミュレーターの選択</translation>
     </message>
     <message>
         <location filename="../defaultappspage.cpp" line="79"/>
         <source>Select a web browser</source>
-        <translation>ウェブブラウザの選択</translation>
+        <translation>ウェブブラウザーの選択</translation>
     </message>
 </context>
 <context>
@@ -187,7 +187,7 @@
     <message>
         <location filename="../defaultappspage.ui" line="59"/>
         <source>Web Browser:</source>
-        <translation>ウェブブラウザ:</translation>
+        <translation>ウェブブラウザー:</translation>
     </message>
 </context>
 <context>
@@ -342,37 +342,37 @@
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation>ダウンロードしたファイルを保存する既定のフォルダ</translation>
+        <translation>ダウンロードしたファイルを保存する既定のフォルダー</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation>テンプレートファイルを保存する既定のフォルダ</translation>
+        <translation>テンプレートファイルを保存する既定のフォルダー</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation>共有ファイルを公開する際の既定のフォルダ</translation>
+        <translation>共有ファイルを公開する際の既定のフォルダー</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation>文書ファイルを保存する既定のフォルダ</translation>
+        <translation>文書ファイルを保存する既定のフォルダー</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation>音楽ファイルを保存する既定のフォルダ</translation>
+        <translation>音楽ファイルを保存する既定のフォルダー</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation>画像ファイルを保存する既定のフォルダ</translation>
+        <translation>画像ファイルを保存する既定のフォルダー</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>動画ファイルを保存する既定のフォルダ</translation>
+        <translation>動画ファイルを保存する既定のフォルダー</translation>
     </message>
 </context>
 </TS>
