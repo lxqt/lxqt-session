@@ -297,7 +297,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Desktop</source>
-        <translation>Schreibtisch</translation>
+        <translation>Arbeitsfläche</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
@@ -338,7 +338,7 @@
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
         <translatorcomment>files in template translated with the German word for objects. IMO more reasonable as it&apos;s not necessarily files that are placed on the desktop. Maybe adjust the template accordingly?</translatorcomment>
-        <translation>Enthält alle Dateien, die Sie auf Ihrem Schreibtisch sehen</translation>
+        <translation>Enthält alle Dateien, die Sie auf Ihrer Arbeitsfläche sehen</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
