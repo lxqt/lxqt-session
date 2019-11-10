@@ -36,7 +36,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="66"/>
         <source>Lock screen</source>
-        <translation>Bildschirm sperren</translation>
+        <translation>Sperre Bildschirm</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="74"/>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../main.cpp" line="61"/>
         <source>Lockscreen.</source>
-        <translation>Sperrbildschirm.</translation>
+        <translation>Sperre Bildschirm.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="64"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../main.cpp" line="73"/>
         <source>Reboot.</source>
-        <translation>Neustart.</translation>
+        <translation>Neustarten.</translation>
     </message>
 </context>
 </TS>
