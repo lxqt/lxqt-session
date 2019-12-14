@@ -31,7 +31,6 @@
 #include "ui_leavedialog.h"
 
 #include <QDialog>
-#include <QDesktopWidget>
 #include <LXQt/Power>
 #include <LXQt/PowerManager>
 #include <LXQt/ScreenSaver>

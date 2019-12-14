@@ -26,7 +26,11 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 #include "leavedialog.h"
+
 #include <QListWidgetItem>
+#include <QGuiApplication>
+#include <QRect>
+#include <QScreen>
 
 LeaveDialog::LeaveDialog(QWidget* parent)
     : QDialog(parent, Qt::Dialog | Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint),
@@ -126,7 +130,8 @@ LeaveDialog::~LeaveDialog()
 
 void LeaveDialog::resizeEvent(QResizeEvent* /*event*/)
 {
-    QRect screen = QApplication::desktop()->screenGeometry();
+    const QScreen *primaryScreen = QGuiApplication::primaryScreen();
+    const QRect screen = primaryScreen ? primaryScreen->geometry() : QRect();
     move((screen.width()  - this->width()) / 2,
          (screen.height() - this->height()) / 2);
 
