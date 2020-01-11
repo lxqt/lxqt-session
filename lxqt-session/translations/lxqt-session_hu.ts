@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Konfigurációs fájl útvonal.</translation>
+        <translation>Konfigurációs fájl útvonala.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
@@ -38,7 +38,7 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Other ...</source>
-        <translation>Más...</translation>
+        <translation>Másik ...</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
@@ -53,7 +53,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Íme az LXQt!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Ablakkezelőt kell választani.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Íme az LXQt!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Válasszon ablakkezelőt.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
