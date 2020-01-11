@@ -135,17 +135,17 @@
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>Készenlét/mélykészenlét előtt képernyőzár</translation>
+        <translation>Készenlét/mélykészenlét előtt zárolás</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Készenlét/mélykészenlét a zárolás késleltetése után:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
@@ -158,7 +158,7 @@
     <message>
         <location filename="../defaultappspage.cpp" line="74"/>
         <source>Select a terminal emulator</source>
-        <translation>Terminálemulátor választása</translation>
+        <translation>Terminál emulátor választása</translation>
     </message>
     <message>
         <location filename="../defaultappspage.cpp" line="79"/>
@@ -312,7 +312,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Public Share</source>
-        <translation>Nyilvánosak</translation>
+        <translation>Nyilvános</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
@@ -362,7 +362,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>A zenék alapértelmezett mappája</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
