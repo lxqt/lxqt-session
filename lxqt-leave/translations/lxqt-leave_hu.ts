@@ -6,7 +6,7 @@
     <message>
         <location filename="../leavedialog.ui" line="20"/>
         <source>Leave</source>
-        <translation>Elhagyás...</translation>
+        <translation>Kilépés...</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="71"/>
@@ -36,7 +36,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="66"/>
         <source>Lock screen</source>
-        <translation>Képzár</translation>
+        <translation>Zárolás</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="74"/>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../main.cpp" line="61"/>
         <source>Lockscreen.</source>
-        <translation>Képernyőzár.</translation>
+        <translation>Zárolás.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="64"/>
