@@ -140,7 +140,7 @@
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished">Készenlét/mélykészenlét a zárolás késleltetése után:</translation>
+        <translation type="unfinished">Készenlét/mélykészenlét késleltetése a zárolás után:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
@@ -150,7 +150,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
         <source>Select a window manager</source>
-        <translation>Ablakkezelő választása</translation>
+        <translation>Ablakkezelő kiválasztása</translation>
     </message>
 </context>
 <context>
@@ -158,12 +158,12 @@
     <message>
         <location filename="../defaultappspage.cpp" line="74"/>
         <source>Select a terminal emulator</source>
-        <translation>Terminál emulátor választása</translation>
+        <translation>Terminál emulátor kiválasztása</translation>
     </message>
     <message>
         <location filename="../defaultappspage.cpp" line="79"/>
         <source>Select a web browser</source>
-        <translation>Webböngésző választása</translation>
+        <translation>Webböngésző kiválasztása</translation>
     </message>
 </context>
 <context>
@@ -176,7 +176,7 @@
     <message>
         <location filename="../defaultappspage.ui" line="32"/>
         <source>Terminal Emulation:</source>
-        <translation>Terminálemuláció:</translation>
+        <translation>Terminál:</translation>
     </message>
     <message>
         <location filename="../defaultappspage.ui" line="52"/>
@@ -187,7 +187,7 @@
     <message>
         <location filename="../defaultappspage.ui" line="59"/>
         <source>Web Browser:</source>
-        <translation>Webböngésző:</translation>
+        <translation>Böngésző:</translation>
     </message>
 </context>
 <context>
@@ -231,7 +231,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
-        <translation>LXQt munkamenet beállítás</translation>
+        <translation>LXQt munkamenetbeállítás</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="48"/>
@@ -261,12 +261,12 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="95"/>
         <source>Session Restart Required</source>
-        <translation>A munkamenet újraindítandó</translation>
+        <translation>Munkamenet újraindítása szükséges</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="96"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation>Egyes beállítások csak újbóli bejelenkezéssel érvényesülnek.</translation>
+        <translation>Egyes beállítások csak újbóli bejelentkezéssel érvényesülnek.</translation>
     </message>
 </context>
 <context>
@@ -279,7 +279,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>LXQt munkamenet beállítás- Felhasználói mappák</translation>
+        <translation>LXQt munkamenetbeállítás - Felhasználói mappák</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
@@ -337,7 +337,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation>Az aszatalon látni kívánt összes fájlt tartalmazza</translation>
+        <translation>Tartalmazza az összes fájlt, amely látható az asztalon</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
