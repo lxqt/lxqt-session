@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Konfigurációs fájl útvonala.</translation>
+        <translation>Beállítófájl útvonal.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
