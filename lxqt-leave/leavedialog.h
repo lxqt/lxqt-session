@@ -48,9 +48,6 @@ public:
     explicit LeaveDialog(QWidget *parent = 0);
     ~LeaveDialog();
 
-protected:
-    virtual void resizeEvent(QResizeEvent* event) override;
-
 private:
     Ui::LeaveDialog *ui;
     // LXQt::Power is used to know if the actions are doable, while
