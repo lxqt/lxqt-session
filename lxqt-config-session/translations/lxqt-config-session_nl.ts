@@ -130,12 +130,12 @@
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>Slaapstand/winterslaap na vergrendelvertraging:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
@@ -362,7 +362,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaardmap om muziek in op te slaan of om van te laden</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
