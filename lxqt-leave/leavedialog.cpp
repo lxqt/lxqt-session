@@ -127,12 +127,3 @@ LeaveDialog::~LeaveDialog()
 {
     delete ui;
 }
-
-void LeaveDialog::resizeEvent(QResizeEvent* /*event*/)
-{
-    const QScreen *primaryScreen = QGuiApplication::primaryScreen();
-    const QRect screen = primaryScreen ? primaryScreen->geometry() : QRect();
-    move((screen.width()  - this->width()) / 2,
-         (screen.height() - this->height()) / 2);
-
-}
