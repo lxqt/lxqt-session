@@ -38,7 +38,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation>مرحبا في لكسكيوت</translation>
+        <translation>مرحبًا في «لكسكيوت»</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
