@@ -6,12 +6,12 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>Crash Report</source>
-        <translation>Relatório de travamentos</translation>
+        <translation>Relatório de Falha</translation>
     </message>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; travou demais. A execução automática do mesmo foi desativada até o próximo login.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; travou muitas vezes. A execução automática do mesmo foi desativada até o próximo login.</translation>
     </message>
 </context>
 <context>
