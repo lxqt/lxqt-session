@@ -1,3 +1,12 @@
+lxqt-session-0.15.0 / 2020-04-22
+================================
+  * Bumped version to 0.15.0.
+  * C++11 code updates.
+  * Removed redundant variable SAL_USE_VCLPLUGIN from startlxqt.
+  * Fixed lxqt-session memory leak (triggered by wine and specific games).
+  * Remove deprecated QDesktopWidget.
+  * Corrected dialog location with muti-screen setups.
+
 lxqt-session-0.14.1 / 2019-02-25
 ================================
 
@@ -13,7 +22,7 @@ lxqt-session-0.14.0 / 2019-01-25
     - confg-session: Emit each change of default app
     - lockscreenmanager: Fix renewal of inhibitor lock
     - lxqt-config-session: Fix showing translations
-    - Simplify device events/actions lookup 
+    - Simplify device events/actions lookup
     - Completed our WM list
     - Don't default on Openbox, make the automatic WM selection
       more reliable
