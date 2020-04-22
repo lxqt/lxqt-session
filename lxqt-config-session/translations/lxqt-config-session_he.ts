@@ -140,12 +140,12 @@
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>השהיית נעילה לאחר השהייה/תרדמת:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> מ״ש</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
@@ -362,7 +362,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>תיקיית בררת מחדל לטעינה או שמירה של מוזיקה ממנה או אליה</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
