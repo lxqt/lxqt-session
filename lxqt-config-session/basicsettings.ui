@@ -157,6 +157,42 @@
      </layout>
     </widget>
    </item>
+   <item row="4" column="0">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Screen Lock Command</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="1" column="0" colspan="2">
+       <widget class="QCheckBox" name="useCustomLockCommandCheckBox">
+        <property name="text">
+         <string>Use custom screen lock command</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QComboBox" name="lockCommandComboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="findLockCommandButton">
+        <property name="text">
+         <string>Search...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
   </layout>
  </widget>
  <resources/>
