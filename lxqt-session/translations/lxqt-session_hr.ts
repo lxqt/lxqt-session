@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>Komponenta &lt;b&gt;%1&lt;/b&gt; se srušila previše puta. Njeno automatsko pokretanje onemogućeno je do sljedeće prijave.</translation>
+        <translation>Komponenta &lt;b&gt;%1&lt;/b&gt; se srušila previše puta. Njeno automatsko pokretanje deaktivirano je do sljedeće prijave.</translation>
     </message>
 </context>
 <context>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Putanja konfiguracijske datoteke.</translation>
+        <translation>Staza konfiguracijske datoteke.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
@@ -30,7 +30,7 @@
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation>Korišteni upravitelj prozorima.</translation>
+        <translation>Korišteni upravljač prozorima.</translation>
     </message>
 </context>
 <context>
@@ -38,27 +38,27 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation>Dobrodošli u LXQt</translation>
+        <translation>LXQt – Uvod</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Dobrodošli u LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Molimo odaberite vaš zadani upravitelj prozorima.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;LXQt – Uvod&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Odaberi standardni upravljač prozorima.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Ovo ćete moći promijeniti bilo kada putem Postavke -&gt; Postavke sesije &gt; Osnovne postavke.</translation>
+        <translation>Ove se postavke u bilo kojem trenutku mogu promijeniti u izborniku Postavke → Postavke sesije → Osnovne postavke.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Other ...</source>
-        <translation>Ostalo...</translation>
+        <translation>Ostalo …</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation>Izaberite Vaš omiljeni.</translation>
+        <translation>Odaberi koji ti je najdraži.</translation>
     </message>
 </context>
 </TS>
