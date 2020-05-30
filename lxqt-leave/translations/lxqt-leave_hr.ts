@@ -11,42 +11,42 @@
     <message>
         <location filename="../leavedialog.ui" line="71"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;What do you want the computer to do?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Što želite da računalo učini?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Koju radnju želiš izvršiti?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="51"/>
         <source>Logout</source>
-        <translation>Odjava</translation>
+        <translation>Odjavi se</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="69"/>
         <source>Reboot</source>
-        <translation>Ponovno pokretanje</translation>
+        <translation>Ponovo pokreni</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="56"/>
         <source>Shutdown</source>
-        <translation>Isključivanje</translation>
+        <translation>Isključi</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="61"/>
         <source>Suspend</source>
-        <translation>Suspenzija</translation>
+        <translation>Pripravno stanje</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="66"/>
         <source>Lock screen</source>
-        <translation>Zaključavanje zaslona</translation>
+        <translation>Zaključaj ekran</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="74"/>
         <source>Hibernate</source>
-        <translation>Hibernacija</translation>
+        <translation>Stanje mirovanja</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="51"/>
         <source>Cancel</source>
-        <translation>Otkaži</translation>
+        <translation>Odustani</translation>
     </message>
 </context>
 <context>
@@ -54,22 +54,22 @@
     <message>
         <location filename="../main.cpp" line="58"/>
         <source>Logout.</source>
-        <translation>Odjava.</translation>
+        <translation>Odjavi se.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="61"/>
         <source>Lockscreen.</source>
-        <translation>Zaslon zaključavanja.</translation>
+        <translation>Zaključaj ekran.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="64"/>
         <source>Suspend.</source>
-        <translation>Suspendiraj.</translation>
+        <translation>Pripravno stanje.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="67"/>
         <source>Hibernate.</source>
-        <translation>Hibernacija.</translation>
+        <translation>Stanje mirovanja.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="70"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../main.cpp" line="73"/>
         <source>Reboot.</source>
-        <translation>Ponovno pokreni.</translation>
+        <translation>Ponovo pokreni.</translation>
     </message>
 </context>
 </TS>
