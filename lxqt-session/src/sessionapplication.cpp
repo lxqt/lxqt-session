@@ -106,7 +106,7 @@ bool SessionApplication::startup()
     connect(dev_notifier_drm_subsystem, &UdevNotifier::deviceChanged, [this] (QString device)
             {
                 qCWarning(SESSION) << QStringLiteral("Session '%1': display device '%2'").arg(configName).arg(device);
-                QProcess::startDetached(QStringLiteral("lxqt-config-monitor -l"));
+                QProcess::startDetached(QStringLiteral("lxqt-config-monitor"), QStringList(QStringLiteral("-l")));
             });
 #endif
 
@@ -126,7 +126,9 @@ void SessionApplication::mergeXrdb(const char* content, int len)
 {
     qCDebug(SESSION) << "xrdb:" << content;
     QProcess xrdb;
-    xrdb.start(QSL("xrdb -merge -"));
+    xrdb.setProgram(QSL("xrdb"));
+    xrdb.setArguments(QStringList(QSL("-merge -")));
+    xrdb.start();
     xrdb.write(content, len);
     xrdb.closeWriteChannel();
     xrdb.waitForFinished();
