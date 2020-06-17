@@ -208,7 +208,7 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
         mWmProcess->start(mWindowManager, args);
     }
     else
-        mWmProcess->start(mWindowManager);
+        mWmProcess->start(mWindowManager, QStringList());
     
     // other autostart apps will be handled after the WM becomes available
 
