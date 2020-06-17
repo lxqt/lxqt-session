@@ -235,7 +235,7 @@ Qt::ItemFlags AutoStartItemModel::flags(const QModelIndex& index) const
         return Qt::ItemIsEnabled | Qt::ItemIsSelectable | Qt::ItemIsUserCheckable;
     if (index.isValid())
         return Qt::ItemIsEnabled | Qt::ItemIsSelectable;
-    return 0;
+    return Qt::ItemFlags();
 }
 
 /*
