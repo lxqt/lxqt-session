@@ -38,12 +38,12 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Other ...</source>
-        <translation>Másik ...</translation>
+        <translation>Egyéb ...</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation>Válassz egy kedvencet.</translation>
+        <translation>Válasszon egy kedvencet.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
@@ -58,7 +58,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Ez a választás később módosítható a Beállítások -&gt; Munkamenet beállítás -&gt; Alapbeállítás helyen.</translation>
+        <translation>Ez a választás később módosítható a Beállítások -&gt; Munkamenet -&gt; Alapbeállítások helyen.</translation>
     </message>
 </context>
 </TS>

@@ -289,7 +289,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="202"/>
         <source>Choose Location</source>
-        <translation>Válassz helyet</translation>
+        <translation>Válasszon helyet</translation>
     </message>
 </context>
 <context>
@@ -307,7 +307,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Templates</source>
-        <translation>Ideiglenesek</translation>
+        <translation>Sablonok</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
@@ -342,12 +342,12 @@
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation>A letöltendő fájlok alapértelmezett mappája</translation>
+        <translation>A letöltött fájlok alapértelmezett mappája</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation>Az ideiglenes fájlok alapértelmezett mappája</translation>
+        <translation>A sablonfájlok alapértelmezett mappája</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
