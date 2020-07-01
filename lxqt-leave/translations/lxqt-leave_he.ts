@@ -1,85 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
-<TS version="2.1" language="he">
-<context>
-    <name>LeaveDialog</name>
-    <message>
-        <location filename="../leavedialog.ui" line="20"/>
-        <source>Leave</source>
-        <translation>עזיבה</translation>
-    </message>
-    <message>
-        <location filename="../leavedialog.ui" line="71"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;What do you want the computer to do?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;מה ברצונך להורות למחשב לבצע?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../leavedialog.cpp" line="51"/>
-        <source>Logout</source>
-        <translation>לצאת</translation>
-    </message>
-    <message>
-        <location filename="../leavedialog.cpp" line="69"/>
-        <source>Reboot</source>
-        <translation>להפעיל מחדש</translation>
-    </message>
-    <message>
-        <location filename="../leavedialog.cpp" line="56"/>
-        <source>Shutdown</source>
-        <translation>לכבות</translation>
-    </message>
-    <message>
-        <location filename="../leavedialog.cpp" line="61"/>
-        <source>Suspend</source>
-        <translation>להשהות</translation>
-    </message>
-    <message>
-        <location filename="../leavedialog.cpp" line="66"/>
-        <source>Lock screen</source>
-        <translation>לנעול מסך</translation>
-    </message>
-    <message>
-        <location filename="../leavedialog.cpp" line="74"/>
-        <source>Hibernate</source>
-        <translation>להרדם</translation>
-    </message>
-    <message>
-        <location filename="../leavedialog.ui" line="51"/>
-        <source>Cancel</source>
-        <translation>ביטול</translation>
-    </message>
-</context>
-<context>
-    <name>main</name>
-    <message>
-        <location filename="../main.cpp" line="58"/>
-        <source>Logout.</source>
-        <translation>יציאה.</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="61"/>
-        <source>Lockscreen.</source>
-        <translation>מסך נעילה.</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="64"/>
-        <source>Suspend.</source>
-        <translation>השהיה.</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="67"/>
-        <source>Hibernate.</source>
-        <translation>תרדמת.</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="70"/>
-        <source>Shutdown.</source>
-        <translation>כיבוי.</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="73"/>
-        <source>Reboot.</source>
-        <translation>הפעלה מחדש.</translation>
-    </message>
-</context>
+<TS language="he" version="2.1">&#xd;
+<context>&#xd;
+    <name>LeaveDialog</name>&#xd;
+    <message>&#xd;
+        <location line="20" filename="../leavedialog.ui"/>&#xd;
+        <source>Leave</source>&#xd;
+        <translation>עזיבה</translation>&#xd;
+    </message>&#xd;
+    <message>&#xd;
+        <location line="71" filename="../leavedialog.ui"/>&#xd;
+        <source>&lt;html>&lt;head/>&lt;body>&lt;p>&lt;span style=" font-size:12pt;">What do you want the computer to do?&lt;/span>&lt;/p>&lt;/body>&lt;/html></source>&#xd;
+        <translation>&lt;html>&lt;head/>&lt;body>&lt;p>&lt;span style=" font-size:12pt;">מה ברצונך להורות למחשב לבצע?&lt;/span>&lt;/p>&lt;/body>&lt;/html></translation>&#xd;
+    </message>&#xd;
+    <message>&#xd;
+        <location line="51" filename="../leavedialog.cpp"/>&#xd;
+        <source>Logout</source>&#xd;
+        <translation>יציאה</translation>&#xd;
+    </message>&#xd;
+    <message>&#xd;
+        <location line="69" filename="../leavedialog.cpp"/>&#xd;
+        <source>Reboot</source>&#xd;
+        <translation>אתחול</translation>&#xd;
+    </message>&#xd;
+    <message>&#xd;
+        <location line="56" filename="../leavedialog.cpp"/>&#xd;
+        <source>Shutdown</source>&#xd;
+        <translation>כיבוי</translation>&#xd;
+    </message>&#xd;
+    <message>&#xd;
+        <location line="61" filename="../leavedialog.cpp"/>&#xd;
+        <source>Suspend</source>&#xd;
+        <translation>השהיה</translation>&#xd;
+    </message>&#xd;
+    <message>&#xd;
+        <location line="66" filename="../leavedialog.cpp"/>&#xd;
+        <source>Lock screen</source>&#xd;
+        <translation>נעילת מסך</translation>&#xd;
+    </message>&#xd;
+    <message>&#xd;
+        <location line="74" filename="../leavedialog.cpp"/>&#xd;
+        <source>Hibernate</source>&#xd;
+        <translation>שינה</translation>&#xd;
+    </message>&#xd;
+    <message>&#xd;
+        <location line="51" filename="../leavedialog.ui"/>&#xd;
+        <source>Cancel</source>&#xd;
+        <translation>ביטול</translation>&#xd;
+    </message>&#xd;
+</context>&#xd;
+<context>&#xd;
+    <name>main</name>&#xd;
+    <message>&#xd;
+        <location line="58" filename="../main.cpp"/>&#xd;
+        <source>Logout.</source>&#xd;
+        <translation>יציאה.</translation>&#xd;
+    </message>&#xd;
+    <message>&#xd;
+        <location line="61" filename="../main.cpp"/>&#xd;
+        <source>Lockscreen.</source>&#xd;
+        <translation>נעילת מסך.</translation>&#xd;
+    </message>&#xd;
+    <message>&#xd;
+        <location line="64" filename="../main.cpp"/>&#xd;
+        <source>Suspend.</source>&#xd;
+        <translation>השהיה.</translation>&#xd;
+    </message>&#xd;
+    <message>&#xd;
+        <location line="67" filename="../main.cpp"/>&#xd;
+        <source>Hibernate.</source>&#xd;
+        <translation>שינה.</translation>&#xd;
+    </message>&#xd;
+    <message>&#xd;
+        <location line="70" filename="../main.cpp"/>&#xd;
+        <source>Shutdown.</source>&#xd;
+        <translation>כיבוי.</translation>&#xd;
+    </message>&#xd;
+    <message>&#xd;
+        <location line="73" filename="../main.cpp"/>&#xd;
+        <source>Reboot.</source>&#xd;
+        <translation>אתחול.</translation>&#xd;
+    </message>&#xd;
+</context>&#xd;
 </TS>
