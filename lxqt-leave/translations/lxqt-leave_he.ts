@@ -16,32 +16,32 @@
     <message>
         <location filename="../leavedialog.cpp" line="51"/>
         <source>Logout</source>
-        <translation>לצאת</translation>
+        <translation>יציאה</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="69"/>
         <source>Reboot</source>
-        <translation>להפעיל מחדש</translation>
+        <translation>אתחול</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="56"/>
         <source>Shutdown</source>
-        <translation>לכבות</translation>
+        <translation>כיבוי</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="61"/>
         <source>Suspend</source>
-        <translation>להשהות</translation>
+        <translation>השהיה</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="66"/>
         <source>Lock screen</source>
-        <translation>לנעול מסך</translation>
+        <translation>נעילת מסך</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="74"/>
         <source>Hibernate</source>
-        <translation>להרדם</translation>
+        <translation>שינה</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="51"/>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../main.cpp" line="61"/>
         <source>Lockscreen.</source>
-        <translation>מסך נעילה.</translation>
+        <translation>נעילת מסך.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="64"/>
@@ -69,7 +69,7 @@
     <message>
         <location filename="../main.cpp" line="67"/>
         <source>Hibernate.</source>
-        <translation>תרדמת.</translation>
+        <translation>שינה.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="70"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../main.cpp" line="73"/>
         <source>Reboot.</source>
-        <translation>הפעלה מחדש.</translation>
+        <translation>אתחול.</translation>
     </message>
 </context>
 </TS>
