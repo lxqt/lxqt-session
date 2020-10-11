@@ -74,16 +74,16 @@ Allows for setting arbitrary environment variables which will be available for a
 Desktop entry files providing the various invocations of the binary as depicted above are summed up in sub-menu "Leave" of the panel's main menu.   
 Item "Leave" opens a dialogue window to select from all actions which are available, all other topics trigger the action stated by their title.   
 
-## Translation (Weblate)
+### Translations
 
-<a href="https://weblate.lxqt.org/projects/lxqt/lxqt-session">
-<img src="https://weblate.lxqt.org/widgets/lxqt/-/lxqt-session/287x66-white.png" alt="Translation status" />
-</a>    
+Translations can be done in [LXQt-Weblate](https://translate.lxqt-project.org/projects/lxqt-configuration/).
 
-<a href="https://weblate.lxqt.org/projects/lxqt/lxqt-config-session">
-<img src="https://weblate.lxqt.org/widgets/lxqt/-/lxqt-config-session/287x66-white.png" alt="Translation status" />
-</a>
+#### Components:
 
-<a href="https://weblate.lxqt.org/projects/lxqt/lxqt-leave">
-<img src="https://weblate.lxqt.org/widgets/lxqt/-/lxqt-leave/287x66-white.png" alt="Translation status" />
+* [lxqt-session](https://translate.lxqt-project.org/projects/lxqt-configuration/lxqt-session)
+* [lxqt-config-session](https://translate.lxqt-project.org/projects/lxqt-configuration/lxqt-config-session)
+* [lxqt-leave](https://translate.lxqt-project.org/projects/lxqt-configuration/lxqt-config-leave)
+
+<a href="https://translate.lxqt-project.org/projects/lxqt-configuration/">
+<img src="https://translate.lxqt-project.org/widgets/lxqt-configuration/-/lxqt-config-session/multi-auto.svg" alt="Stato traduzione" />
 </a>
