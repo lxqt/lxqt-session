@@ -36,7 +36,6 @@
 #include "../lxqt-session/src/windowmanager.h"
 #include "basicsettings.h"
 #include "autostartpage.h"
-#include "defaultappspage.h"
 #include "environmentpage.h"
 #include "userlocationspage.h"
 
@@ -49,9 +48,6 @@ SessionConfigWindow::SessionConfigWindow() :
     connect(basicSettings, SIGNAL(needRestart()), SLOT(setRestart()));
     connect(this, SIGNAL(reset()), basicSettings, SLOT(restoreSettings()));
     connect(this, SIGNAL(save()), basicSettings, SLOT(save()));
-
-    DefaultApps* defaultApps = new DefaultApps(this);
-    addPage(defaultApps, tr("Default Applications"), QSL("preferences-desktop-filetype-association"));
 
     UserLocationsPage* userLocations = new UserLocationsPage(this);
     addPage(userLocations, tr("User Directories"), QStringLiteral("folder"));
@@ -72,10 +68,6 @@ SessionConfigWindow::SessionConfigWindow() :
     connect(this, SIGNAL(save()), environmentPage, SLOT(save()));
 
     // sync Default Apps and Environment
-    connect(environmentPage, SIGNAL(envVarChanged(QString,QString)),
-            defaultApps, SLOT(updateEnvVar(QString,QString)));
-    connect(defaultApps, SIGNAL(defaultAppChanged(QString,QString)),
-            environmentPage, SLOT(updateItem(QString,QString)));
     environmentPage->restoreSettings();
     connect(this, SIGNAL(reset()), SLOT(clearRestart()));
     m_restart = false;
