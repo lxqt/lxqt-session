@@ -129,7 +129,7 @@ void ModuleModel::writeChanges()
         mItemMap[key].commit();
 }
 
-void ModuleModel::updateModuleState(QString moduleName, bool state)
+void ModuleModel::updateModuleState(const QString& moduleName, bool state)
 {
     if (mItemMap.contains(moduleName))
     {

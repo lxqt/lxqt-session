@@ -29,7 +29,7 @@
 
 #include <LXQt/Globals>
 
-AutoStartEdit::AutoStartEdit(QString name, QString command, bool needTray, QWidget *parent) :
+AutoStartEdit::AutoStartEdit(const QString& name, const QString& command, bool needTray, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AutoStartEdit)
 {

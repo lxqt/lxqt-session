@@ -36,7 +36,7 @@ class AutoStartEdit : public QDialog
     Q_OBJECT
 
 public:
-    explicit AutoStartEdit(QString name, QString command, bool needTray, QWidget* parent = nullptr);
+    explicit AutoStartEdit(const QString& name, const QString& command, bool needTray, QWidget* parent = nullptr);
     ~AutoStartEdit() override;
     QString name();
     QString command();

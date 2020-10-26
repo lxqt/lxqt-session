@@ -49,7 +49,7 @@ public:
     QMap<QString, AutostartItem> items();
 
 private slots:
-    void updateModuleState(QString moduleName, bool state);
+    void updateModuleState(const QString& moduleName, bool state);
 
 private:
     QMap<QString,AutostartItem> mItemMap;
