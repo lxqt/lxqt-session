@@ -20,8 +20,8 @@ option(WITH_LIBUDEV "Build with libudev support" ON)
 
 # Minimum Versions
 set(KF5_MINIMUM_VERSION "5.36.0")
-set(LXQT_MINIMUM_VERSION "0.15.0")
-set(QT_MINIMUM_VERSION "5.10")
+set(LXQT_MINIMUM_VERSION "0.16.0")
+set(QT_MINIMUM_VERSION "5.12")
 
 find_package(Qt5DBus ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt5LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)

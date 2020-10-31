@@ -15,32 +15,32 @@
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;무엇을 하길 원하십니까?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="51"/>
+        <location filename="../leavedialog.cpp" line="55"/>
         <source>Logout</source>
         <translation>로그아웃</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="69"/>
+        <location filename="../leavedialog.cpp" line="73"/>
         <source>Reboot</source>
         <translation>재시작</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="56"/>
+        <location filename="../leavedialog.cpp" line="60"/>
         <source>Shutdown</source>
         <translation>시스템 종료</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="61"/>
+        <location filename="../leavedialog.cpp" line="65"/>
         <source>Suspend</source>
         <translation>대기</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="66"/>
+        <location filename="../leavedialog.cpp" line="70"/>
         <source>Lock screen</source>
         <translation>잠금</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="74"/>
+        <location filename="../leavedialog.cpp" line="78"/>
         <source>Hibernate</source>
         <translation>최대 절전 모드</translation>
     </message>
@@ -53,32 +53,32 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../main.cpp" line="58"/>
+        <location filename="../main.cpp" line="60"/>
         <source>Logout.</source>
         <translation>로그아웃.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="61"/>
+        <location filename="../main.cpp" line="63"/>
         <source>Lockscreen.</source>
         <translation>잠금.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="64"/>
+        <location filename="../main.cpp" line="66"/>
         <source>Suspend.</source>
         <translation>대기.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="67"/>
+        <location filename="../main.cpp" line="69"/>
         <source>Hibernate.</source>
         <translation>최대 절전 모드.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="70"/>
+        <location filename="../main.cpp" line="72"/>
         <source>Shutdown.</source>
         <translation>시스템 종료.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="73"/>
+        <location filename="../main.cpp" line="75"/>
         <source>Reboot.</source>
         <translation>재시작.</translation>
     </message>

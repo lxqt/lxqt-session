@@ -14,32 +14,32 @@
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Katero dejanje želite izvesti?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="51"/>
+        <location filename="../leavedialog.cpp" line="55"/>
         <source>Logout</source>
         <translation>Odjava</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="69"/>
+        <location filename="../leavedialog.cpp" line="73"/>
         <source>Reboot</source>
         <translation>Ponovni zagon</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="56"/>
+        <location filename="../leavedialog.cpp" line="60"/>
         <source>Shutdown</source>
         <translation>Zaustavitev</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="61"/>
+        <location filename="../leavedialog.cpp" line="65"/>
         <source>Suspend</source>
         <translation>Spanje</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="66"/>
+        <location filename="../leavedialog.cpp" line="70"/>
         <source>Lock screen</source>
         <translation>Zakleni zaslon</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="74"/>
+        <location filename="../leavedialog.cpp" line="78"/>
         <source>Hibernate</source>
         <translation>Mirovanje</translation>
     </message>
@@ -52,32 +52,32 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../main.cpp" line="58"/>
+        <location filename="../main.cpp" line="60"/>
         <source>Logout.</source>
         <translation>Odjavi.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="61"/>
+        <location filename="../main.cpp" line="63"/>
         <source>Lockscreen.</source>
         <translation>Zakleni.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="64"/>
+        <location filename="../main.cpp" line="66"/>
         <source>Suspend.</source>
         <translation>Spanje.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="67"/>
+        <location filename="../main.cpp" line="69"/>
         <source>Hibernate.</source>
         <translation>Mirovanje.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="70"/>
+        <location filename="../main.cpp" line="72"/>
         <source>Shutdown.</source>
         <translation>Zaustavitev.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="73"/>
+        <location filename="../main.cpp" line="75"/>
         <source>Reboot.</source>
         <translation>Ponovni zagon.</translation>
     </message>

@@ -154,43 +154,6 @@
     </message>
 </context>
 <context>
-    <name>DefaultApps</name>
-    <message>
-        <location filename="../defaultappspage.cpp" line="74"/>
-        <source>Select a terminal emulator</source>
-        <translation>選擇一個終端模擬機</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.cpp" line="79"/>
-        <source>Select a web browser</source>
-        <translation>選擇一個網頁瀏覽器</translation>
-    </message>
-</context>
-<context>
-    <name>DefaultAppsPage</name>
-    <message>
-        <location filename="../defaultappspage.ui" line="23"/>
-        <source>Default Applications</source>
-        <translation>預設程式</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="32"/>
-        <source>Terminal Emulation:</source>
-        <translation>終端模擬機：</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="52"/>
-        <location filename="../defaultappspage.ui" line="79"/>
-        <source>Search...</source>
-        <translation>搜尋...</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="59"/>
-        <source>Web Browser:</source>
-        <translation>網頁瀏覽器：</translation>
-    </message>
-</context>
-<context>
     <name>EnvironmentPage</name>
     <message>
         <location filename="../environmentpage.ui" line="17"/>
@@ -229,42 +192,37 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="45"/>
+        <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
         <translation>LXQt 會話設定</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="48"/>
+        <location filename="../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
         <translation>基本設定</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="54"/>
-        <source>Default Applications</source>
-        <translation>預設程式</translation>
-    </message>
-    <message>
-        <location filename="../sessionconfigwindow.cpp" line="57"/>
+        <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>User Directories</source>
         <translation>使用者目錄</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="63"/>
+        <location filename="../sessionconfigwindow.cpp" line="59"/>
         <source>Autostart</source>
         <translation>自動啟動程式</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="69"/>
+        <location filename="../sessionconfigwindow.cpp" line="65"/>
         <source>Environment (Advanced)</source>
         <translation>環境參數(進階)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="95"/>
+        <location filename="../sessionconfigwindow.cpp" line="87"/>
         <source>Session Restart Required</source>
         <translation>重新啟動會話請求</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="96"/>
+        <location filename="../sessionconfigwindow.cpp" line="88"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>某些設定不會立刻生效直到下次登入。</translation>
     </message>

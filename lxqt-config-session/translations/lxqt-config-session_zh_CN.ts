@@ -154,43 +154,6 @@
     </message>
 </context>
 <context>
-    <name>DefaultApps</name>
-    <message>
-        <location filename="../defaultappspage.cpp" line="74"/>
-        <source>Select a terminal emulator</source>
-        <translation>选择终端模拟器</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.cpp" line="79"/>
-        <source>Select a web browser</source>
-        <translation>选择网页浏览器</translation>
-    </message>
-</context>
-<context>
-    <name>DefaultAppsPage</name>
-    <message>
-        <location filename="../defaultappspage.ui" line="23"/>
-        <source>Default Applications</source>
-        <translation>默认程序</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="32"/>
-        <source>Terminal Emulation:</source>
-        <translation>终端模拟器:</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="52"/>
-        <location filename="../defaultappspage.ui" line="79"/>
-        <source>Search...</source>
-        <translation>查找...</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="59"/>
-        <source>Web Browser:</source>
-        <translation>网页浏览器:</translation>
-    </message>
-</context>
-<context>
     <name>EnvironmentPage</name>
     <message>
         <location filename="../environmentpage.ui" line="17"/>
@@ -229,42 +192,37 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="45"/>
+        <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
         <translation>LXQt 会话配置</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="48"/>
+        <location filename="../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
         <translation>基本设置</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="54"/>
-        <source>Default Applications</source>
-        <translation>默认程序</translation>
-    </message>
-    <message>
-        <location filename="../sessionconfigwindow.cpp" line="57"/>
+        <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>User Directories</source>
         <translation>用户目录</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="63"/>
+        <location filename="../sessionconfigwindow.cpp" line="59"/>
         <source>Autostart</source>
         <translation>自动启动</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="69"/>
+        <location filename="../sessionconfigwindow.cpp" line="65"/>
         <source>Environment (Advanced)</source>
         <translation>环境（高级）</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="95"/>
+        <location filename="../sessionconfigwindow.cpp" line="87"/>
         <source>Session Restart Required</source>
         <translation>需要重启会话</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="96"/>
+        <location filename="../sessionconfigwindow.cpp" line="88"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>某些设置只会在下一次登录后才会生效。</translation>
     </message>

@@ -154,43 +154,6 @@
     </message>
 </context>
 <context>
-    <name>DefaultApps</name>
-    <message>
-        <location filename="../defaultappspage.cpp" line="74"/>
-        <source>Select a terminal emulator</source>
-        <translation>Оберіть емулятор терміналу</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.cpp" line="79"/>
-        <source>Select a web browser</source>
-        <translation>Оберіть веб-переглядач</translation>
-    </message>
-</context>
-<context>
-    <name>DefaultAppsPage</name>
-    <message>
-        <location filename="../defaultappspage.ui" line="23"/>
-        <source>Default Applications</source>
-        <translation>Типові програми</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="32"/>
-        <source>Terminal Emulation:</source>
-        <translation>Емуляція терміналу:</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="52"/>
-        <location filename="../defaultappspage.ui" line="79"/>
-        <source>Search...</source>
-        <translation>Пошук...</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="59"/>
-        <source>Web Browser:</source>
-        <translation>Веб-переглядач:</translation>
-    </message>
-</context>
-<context>
     <name>EnvironmentPage</name>
     <message>
         <location filename="../environmentpage.ui" line="17"/>
@@ -229,42 +192,37 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="45"/>
+        <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
         <translation>Налаштування сесії LXQT</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="48"/>
+        <location filename="../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
         <translation>Базові налаштування</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="54"/>
-        <source>Default Applications</source>
-        <translation>Типові програми</translation>
-    </message>
-    <message>
-        <location filename="../sessionconfigwindow.cpp" line="57"/>
+        <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>User Directories</source>
         <translation>Теки користувача</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="63"/>
+        <location filename="../sessionconfigwindow.cpp" line="59"/>
         <source>Autostart</source>
         <translation>Автозапуск</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="69"/>
+        <location filename="../sessionconfigwindow.cpp" line="65"/>
         <source>Environment (Advanced)</source>
         <translation>Середовище (розширено)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="95"/>
+        <location filename="../sessionconfigwindow.cpp" line="87"/>
         <source>Session Restart Required</source>
         <translation>Необхідно перезапустити сеанс</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="96"/>
+        <location filename="../sessionconfigwindow.cpp" line="88"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>Деякі налаштування застосуються після наступного входу. </translation>
     </message>
