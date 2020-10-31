@@ -1,3 +1,9 @@
+lxqt-session-0.16.0 / 2020-11-01
+================================
+  * Don't use deprecated QProcess methods.
+  * Don't use 0/nullptr to initialize QFlags.
+  * Removed Default Applications page.
+
 lxqt-session-0.15.0 / 2020-04-22
 ================================
   * Bumped version to 0.15.0.

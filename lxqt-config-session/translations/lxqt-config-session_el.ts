@@ -154,43 +154,6 @@
     </message>
 </context>
 <context>
-    <name>DefaultApps</name>
-    <message>
-        <location filename="../defaultappspage.cpp" line="74"/>
-        <source>Select a terminal emulator</source>
-        <translation>Επιλογή εξομοιωτή τερματικού</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.cpp" line="79"/>
-        <source>Select a web browser</source>
-        <translation>Επιλογή περιηγητή ιστού</translation>
-    </message>
-</context>
-<context>
-    <name>DefaultAppsPage</name>
-    <message>
-        <location filename="../defaultappspage.ui" line="23"/>
-        <source>Default Applications</source>
-        <translation>Προεπιλεγμένες εφαρμογές</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="32"/>
-        <source>Terminal Emulation:</source>
-        <translation>Εξομοιωτής τερματικού:</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="52"/>
-        <location filename="../defaultappspage.ui" line="79"/>
-        <source>Search...</source>
-        <translation>Αναζήτηση...</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="59"/>
-        <source>Web Browser:</source>
-        <translation>Περιηγητής ιστού:</translation>
-    </message>
-</context>
-<context>
     <name>EnvironmentPage</name>
     <message>
         <location filename="../environmentpage.ui" line="17"/>
@@ -229,42 +192,37 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="45"/>
+        <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
         <translation>Ρυθμίσεις συνεδρίας LXQt</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="48"/>
+        <location filename="../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
         <translation>Βασικές ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="54"/>
-        <source>Default Applications</source>
-        <translation>Προεπιλεγμένες εφαρμογές</translation>
-    </message>
-    <message>
-        <location filename="../sessionconfigwindow.cpp" line="57"/>
+        <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>User Directories</source>
         <translation>Κατάλογοι του χρήστη</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="63"/>
+        <location filename="../sessionconfigwindow.cpp" line="59"/>
         <source>Autostart</source>
         <translation>Αυτόματη εκκίνηση</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="69"/>
+        <location filename="../sessionconfigwindow.cpp" line="65"/>
         <source>Environment (Advanced)</source>
         <translation>Περιβάλλον (για προχωρημένους)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="95"/>
+        <location filename="../sessionconfigwindow.cpp" line="87"/>
         <source>Session Restart Required</source>
         <translation>Απαιτείται επανεκκίνηση συνεδρίας</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="96"/>
+        <location filename="../sessionconfigwindow.cpp" line="88"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>Μερικές ρυθμίσεις λαμβάνουν χώρα μετά από επανασύνδεση.</translation>
     </message>

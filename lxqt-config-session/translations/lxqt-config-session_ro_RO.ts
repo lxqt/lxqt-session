@@ -154,43 +154,6 @@
     </message>
 </context>
 <context>
-    <name>DefaultApps</name>
-    <message>
-        <location filename="../defaultappspage.cpp" line="74"/>
-        <source>Select a terminal emulator</source>
-        <translation>Selectați un emulator de terminal</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.cpp" line="79"/>
-        <source>Select a web browser</source>
-        <translation>Selectați un navigator web</translation>
-    </message>
-</context>
-<context>
-    <name>DefaultAppsPage</name>
-    <message>
-        <location filename="../defaultappspage.ui" line="23"/>
-        <source>Default Applications</source>
-        <translation>Aplicații implicite</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="32"/>
-        <source>Terminal Emulation:</source>
-        <translation>Emulatoare de terminal:</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="52"/>
-        <location filename="../defaultappspage.ui" line="79"/>
-        <source>Search...</source>
-        <translation>Se caută...</translation>
-    </message>
-    <message>
-        <location filename="../defaultappspage.ui" line="59"/>
-        <source>Web Browser:</source>
-        <translation>Navigator web:</translation>
-    </message>
-</context>
-<context>
     <name>EnvironmentPage</name>
     <message>
         <location filename="../environmentpage.ui" line="17"/>
@@ -229,42 +192,37 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="45"/>
+        <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="48"/>
+        <location filename="../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
         <translation>Setări de bază</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="54"/>
-        <source>Default Applications</source>
-        <translation>Aplicații implicite</translation>
-    </message>
-    <message>
-        <location filename="../sessionconfigwindow.cpp" line="57"/>
+        <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>User Directories</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="63"/>
+        <location filename="../sessionconfigwindow.cpp" line="59"/>
         <source>Autostart</source>
         <translation>Autostart</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="69"/>
+        <location filename="../sessionconfigwindow.cpp" line="65"/>
         <source>Environment (Advanced)</source>
         <translation>Mediu (mod avansat)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="95"/>
+        <location filename="../sessionconfigwindow.cpp" line="87"/>
         <source>Session Restart Required</source>
         <translation>Se necesită repornirea sesiunii</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="96"/>
+        <location filename="../sessionconfigwindow.cpp" line="88"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation type="unfinished"></translation>
     </message>
