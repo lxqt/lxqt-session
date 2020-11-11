@@ -165,7 +165,7 @@ QModelIndex ListWidget::moveCursor(CursorAction cursorAction, Qt::KeyboardModifi
     // if not enabled, try to find any next enabled
     for (int tries = 1; tries < count && 0 == (model()->flags(index) & Qt::ItemIsEnabled); ++tries)
     {
-        int next;
+        int next = 0;
         switch (cursorAction)
         {
             case MoveUp:
