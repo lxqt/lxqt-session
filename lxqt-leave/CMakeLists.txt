@@ -26,6 +26,7 @@ lxqt_translate_desktop(DESKTOP_FILES
     resources/lxqt-reboot.desktop.in
     resources/lxqt-shutdown.desktop.in
     resources/lxqt-suspend.desktop.in
+    USE_YAML
 )
 
 lxqt_translate_ts(lxqt-leave_QM_FILES

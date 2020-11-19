@@ -4,6 +4,7 @@ file(GLOB SESSION_FILES_IN *.desktop.in)
 lxqt_translate_desktop(SESSION_FILES
     SOURCES
         ${SESSION_FILES_IN}
+    USE_YAML
 )
 add_custom_target(xsession_desktop_files ALL DEPENDS ${SESSION_FILES})
 #************************************************

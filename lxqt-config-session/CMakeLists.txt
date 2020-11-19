@@ -49,7 +49,7 @@ lxqt_translate_ts(lxqt-sessioncfg_QM_FILES
 )
 
 lxqt_app_translation_loader(lxqt-sessioncfg_QM_LOADER ${PROJECT_NAME})
-lxqt_translate_desktop(lxqt-sessioncfg_DESKTOP_FILES SOURCES lxqt-config-session.desktop.in)
+lxqt_translate_desktop(lxqt-sessioncfg_DESKTOP_FILES SOURCES lxqt-config-session.desktop.in USE_YAML)
 
 add_executable(lxqt-config-session
     ${lxqt-sessioncfg_SRCS}
