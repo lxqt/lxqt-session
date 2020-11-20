@@ -78,7 +78,7 @@ UdevNotifier::~UdevNotifier()
 
 void UdevNotifier::eventReady(int /*socket*/)
 {
-    struct udev_device * dev;
+    struct udev_device * dev = nullptr;
     while (nullptr != (dev = udev_monitor_receive_device(d->monitor)))
     {
         const char *action = udev_device_get_action(dev);

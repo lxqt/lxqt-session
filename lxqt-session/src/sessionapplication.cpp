@@ -181,7 +181,8 @@ void SessionApplication::loadKeyboardSettings(LXQt::Settings& settings)
     settings.beginGroup(QSL("Keyboard"));
     XKeyboardControl values;
     /* Keyboard settings */
-    unsigned int delay, interval;
+    unsigned int delay = 0;
+    unsigned int interval = 0;
     if(XkbGetAutoRepeatRate(QX11Info::display(), XkbUseCoreKbd, (unsigned int*) &delay, (unsigned int*) &interval))
     {
         delay = settings.value(QSL("delay"), delay).toUInt();
@@ -286,8 +287,10 @@ void SessionApplication::loadFontSettings(LXQt::Settings& settings)
 #define DEFAULT_PTR_MAP_SIZE 128
 void SessionApplication::setLeftHandedMouse(bool mouse_left_handed)
 {
-    unsigned char *buttons, *more_buttons;
-    int n_buttons, i;
+    unsigned char *buttons = nullptr;
+    unsigned char *more_buttons = nullptr;
+    int n_buttons = 0;
+    int i = 0;
     int idx_1 = 0, idx_3 = 1;
 
     buttons = (unsigned char*)malloc(DEFAULT_PTR_MAP_SIZE);

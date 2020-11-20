@@ -40,13 +40,13 @@
 
 static unsigned int xkb_mask_modifier(Display* /*dpy*/, XkbDescPtr xkb, const char *name )
 {
-    int i;
+    int i = 0;
     if( !xkb || !xkb->names )
         return 0;
     for( i = 0; i < XkbNumVirtualMods; i++ ) {
         char* modStr = XGetAtomName( xkb->dpy, xkb->names->vmods[i] );
         if( modStr != nullptr && strcmp(name, modStr) == 0 ) {
-            unsigned int mask;
+            unsigned int mask = 0;
             XkbVirtualModsToReal( xkb, 1 << i, &mask );
             return mask;
         }
@@ -56,7 +56,7 @@ static unsigned int xkb_mask_modifier(Display* /*dpy*/, XkbDescPtr xkb, const ch
 
 static unsigned int xkb_numlock_mask(Display* dpy)
 {
-    XkbDescPtr xkb;
+    XkbDescPtr xkb = nullptr;
     if(( xkb = XkbGetKeyboard( dpy, XkbAllComponentsMask, XkbUseCoreKbd )) != nullptr ) {
         unsigned int mask = xkb_mask_modifier( dpy, xkb, "NumLock" );
         XkbFreeKeyboard( xkb, 0, True );
@@ -67,7 +67,7 @@ static unsigned int xkb_numlock_mask(Display* dpy)
 
 static int xkb_set_on(Display* dpy)
 {
-    unsigned int mask;
+    unsigned int mask = 0;
     mask = xkb_numlock_mask(dpy);
     if( mask == 0 )
         return 0;
