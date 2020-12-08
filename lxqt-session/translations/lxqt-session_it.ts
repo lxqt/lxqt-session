@@ -30,7 +30,7 @@
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation>Manager finestre da usare.</translation>
+        <translation>Gestore finestre da usare.</translation>
     </message>
 </context>
 <context>
@@ -58,7 +58,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>È possibile cambiarlo in ogni momento da: Preferenze -&gt;Impostazioni della sessione -&gt; Impostazioni di base.</translation>
+        <translation>È possibile cambiarlo in ogni momento da: Preferenze -&gt; Impostazioni della sessione -&gt; Impostazioni di base.</translation>
     </message>
 </context>
 </TS>
