@@ -11,7 +11,7 @@
     <message>
         <location filename="../leavedialog.ui" line="71"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;What do you want the computer to do?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Mit szeretne tenni a számítógéppel?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Mit csináljon a számítógép?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="55"/>
@@ -26,7 +26,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="60"/>
         <source>Shutdown</source>
-        <translation>Kikapcsolás</translation>
+        <translation>Leállítás</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="65"/>
@@ -41,7 +41,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="78"/>
         <source>Hibernate</source>
-        <translation>Mélykészenlét</translation>
+        <translation>Hibernálás</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="51"/>
@@ -69,12 +69,12 @@
     <message>
         <location filename="../main.cpp" line="69"/>
         <source>Hibernate.</source>
-        <translation>Mélykészenlét.</translation>
+        <translation>Hibernálás.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="72"/>
         <source>Shutdown.</source>
-        <translation>Kikapcsolás.</translation>
+        <translation>Leállítás.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="75"/>
