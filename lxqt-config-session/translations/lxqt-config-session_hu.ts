@@ -16,7 +16,7 @@
     <message>
         <location filename="../autostartedit.ui" line="27"/>
         <source>Search...</source>
-        <translation>Keresés…</translation>
+        <translation>Keresés...</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="47"/>
@@ -26,7 +26,7 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>Várakozás a paneltálcára</translation>
+        <translation>Várakozás rendszertálcára</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
@@ -39,12 +39,12 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
-        <translation>Automatikus indítás</translation>
+        <translation>Globális automatikus indítás</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation>LXQt automatikus indítás</translation>
+        <translation>Automatikus indítás LXQt alatt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>Van már &apos;%1&apos; fájl!</translation>
+        <translation>Létezik már &apos;%1&apos; fájl!</translation>
     </message>
 </context>
 <context>
@@ -105,7 +105,7 @@
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation>Keresés…</translation>
+        <translation>Keresés...</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="59"/>
@@ -130,17 +130,17 @@
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation>Munkamenet elhagyása rákérdezéssel</translation>
+        <translation>Rákérdezés munkamenet elhagyásakor</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>Készenlét/mélykészenlét előtt zárolás</translation>
+        <translation>Készenlét/hibernálás előtt zárolás</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished">Készenlét/mélykészenlét késleltetése a zárolás után:</translation>
+        <translation>Készenlét/hibernálás késleltetése a zárolás után:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation>LXQt munkamenetbeállítás</translation>
+        <translation>LXQt munkamenet beállítások</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="47"/>
@@ -237,12 +237,12 @@
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>LXQt munkamenetbeállítás - Felhasználói mappák</translation>
+        <translation>LXQt munkamenet beállítások - Felhasználói mappák</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation>A %1 helyű beállításoknál hiba lépett fel</translation>
+        <translation>Hiba történt a beállítások alkalmazásánál a %1 helyre</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="202"/>
