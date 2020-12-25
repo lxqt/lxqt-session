@@ -6,12 +6,12 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="311"/>
         <source>Crash Report</source>
-        <translation>Összeomlás</translation>
+        <translation>Összeomlás jelentés</translation>
     </message>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>A &lt;b&gt;%1&lt;/b&gt; gyorsan többször összeomlott. Az autorestart a következő bejelentkezésig letiltva.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; többször is összeomlott. Az automatikus újraindítása a következő bejelentkezésig le lesz tiltva.</translation>
     </message>
 </context>
 <context>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Beállítófájl útvonal.</translation>
+        <translation>A konfigurációs fájl útvonala.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
@@ -43,7 +43,7 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation>Válasszon egy kedvencet.</translation>
+        <translation>Válassza ki a kedvencét.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
@@ -53,12 +53,12 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Íme az LXQt!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Válasszon ablakkezelőt.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Üdvözli az LXQt!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Válassza ki az alapértelmezett ablakkezelőjét.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Ez a választás később módosítható a Beállítások -&gt; Munkamenet -&gt; Alapbeállítások helyen.</translation>
+        <translation>Ezt később módosíthatja itt: Beállítások -&gt; Munkamenet -&gt; Alapbeállítások.</translation>
     </message>
 </context>
 </TS>
