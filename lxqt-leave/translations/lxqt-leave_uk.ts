@@ -26,7 +26,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="60"/>
         <source>Shutdown</source>
-        <translation>Виключити</translation>
+        <translation>Вимкнути</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="65"/>
@@ -36,7 +36,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="70"/>
         <source>Lock screen</source>
-        <translation>Замкнути екран</translation>
+        <translation>Заблокувати екран</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="78"/>
@@ -46,7 +46,7 @@
     <message>
         <location filename="../leavedialog.ui" line="51"/>
         <source>Cancel</source>
-        <translation>Відмінити</translation>
+        <translation>Скасувати</translation>
     </message>
 </context>
 <context>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../main.cpp" line="63"/>
         <source>Lockscreen.</source>
-        <translation>Замкнути екран.</translation>
+        <translation>Заблокувати екран.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="66"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../main.cpp" line="72"/>
         <source>Shutdown.</source>
-        <translation>Виключити.</translation>
+        <translation>Вимкнути.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="75"/>

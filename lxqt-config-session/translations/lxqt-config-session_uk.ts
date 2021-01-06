@@ -130,7 +130,7 @@
     <message>
         <location filename="../basicsettings.ui" line="144"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> мс</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -224,7 +224,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="88"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation>Деякі налаштування застосуються після наступного входу. </translation>
+        <translation>Деякі налаштування застосуються після наступного входу.</translation>
     </message>
 </context>
 <context>
@@ -285,7 +285,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="69"/>
         <source>Pictures</source>
-        <translation>Малюнки</translation>
+        <translation>Зображення</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
@@ -325,7 +325,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation>Типова тека для завантаження або збереження малюнків з або до</translation>
+        <translation>Типова тека для завантаження або збереження зображень з або до</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
