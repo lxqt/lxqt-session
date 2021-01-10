@@ -36,7 +36,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="70"/>
         <source>Lock screen</source>
-        <translation>画面のロック</translation>
+        <translation>画面ロック</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="78"/>

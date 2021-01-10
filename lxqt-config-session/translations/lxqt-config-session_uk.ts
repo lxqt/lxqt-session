@@ -110,12 +110,12 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation>Вийти з сесії</translation>
+        <translation>Вийти з сеансу</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation>Запитати про підтвердження виходу з сесії</translation>
+        <translation>Запитувати підтвердження про вихід з сеансу</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
