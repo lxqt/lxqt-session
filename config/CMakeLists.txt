@@ -6,7 +6,3 @@ install(FILES
     DESTINATION "${CMAKE_INSTALL_DATADIR}/lxqt"
     COMPONENT Runtime
 )
-install(DIRECTORY openbox
-    DESTINATION "${LXQT_ETC_XDG_DIR}"
-    COMPONENT Runtime
-)
