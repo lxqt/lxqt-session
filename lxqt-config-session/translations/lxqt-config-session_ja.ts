@@ -135,7 +135,7 @@
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>サスペンド/ハイバネートの前に画面をロックする&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;</translation>
+        <translation>サスペンド/ハイバネートの前に画面をロックする　　　　　　</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="131"/>
@@ -237,7 +237,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>LXQt セッションの設定--ユーザーディレクトリ</translation>
+        <translation>LXQt セッションの設定 - ユーザーディレクトリ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
@@ -255,7 +255,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Desktop</source>
-        <translation>デスクトップ</translation>
+        <translation>Desktop</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
@@ -275,7 +275,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
         <source>Documents</source>
-        <translation>文書</translation>
+        <translation>ドキュメント</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="68"/>
@@ -290,47 +290,47 @@
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
         <source>Videos</source>
-        <translation>動画</translation>
+        <translation>ビデオ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation>デスクトップ上で見ることができるファイルを全て含む</translation>
+        <translation>デスクトップ上で見れる全てのファイルを含みます</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation>ダウンロードしたファイルを保存する既定のフォルダー</translation>
+        <translation>ダウンロードしたファイルを保存する既定のフォルダーです</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation>テンプレートファイルを保存する既定のフォルダー</translation>
+        <translation>テンプレートファイルを保存する既定のフォルダーです</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation>共有ファイルを公開する際の既定のフォルダー</translation>
+        <translation>共有ファイルを公開する際の既定のフォルダーです</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation>文書ファイルを保存する既定のフォルダー</translation>
+        <translation>文書ファイルを保存する既定のフォルダーです</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation>音楽ファイルを保存する既定のフォルダー</translation>
+        <translation>音楽ファイルを保存する既定のフォルダーです</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation>画像ファイルを保存する既定のフォルダー</translation>
+        <translation>画像ファイルを保存する既定のフォルダーです</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>動画ファイルを保存する既定のフォルダー</translation>
+        <translation>動画ファイルを保存する既定のフォルダーです</translation>
     </message>
 </context>
 </TS>
