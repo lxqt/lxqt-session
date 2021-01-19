@@ -26,7 +26,7 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>システムトレイに入れる</translation>
+        <translation>システムトレイの起動を待つ</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
@@ -310,7 +310,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation>共有ファイルを公開する際の既定のフォルダーです</translation>
+        <translation>共有ファイルを公開する既定のフォルダーです</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
