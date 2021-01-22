@@ -198,17 +198,7 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
         settings->sync();
     }
 
-    if (QFileInfo(mWindowManager).baseName() == QL1S("openbox"))
-    {
-        // Default settings of openbox are copied by lxqt-session/startlxqt.in
-        QString openboxSettingsPath = XdgDirs::configHome() + QSL("/openbox/lxqt-rc.xml");
-        QStringList args;
-        if(QFileInfo::exists(openboxSettingsPath))
-            args << QSL("--config-file") << openboxSettingsPath;
-        mWmProcess->start(mWindowManager, args);
-    }
-    else
-        mWmProcess->start(mWindowManager, QStringList());
+    mWmProcess->start(mWindowManager, QStringList());
     
     // other autostart apps will be handled after the WM becomes available
 
