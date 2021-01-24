@@ -85,16 +85,14 @@ bool LockScreenManager::startup(bool lockBeforeSleep, int powerAfterLockDelay)
                 }
             });
 
-    connect(mProvider, &LockScreenProvider::lockRequested, [this] {
+    connect(mProvider, &LockScreenProvider::lockRequested, this, [this] {
         qCDebug(SESSION) << "LockScreenManager: lock requested";
         mScreenSaver.lockScreen();
     });
 
     if (lockBeforeSleep)
     {
-        connect(mProvider,
-                &LockScreenProvider::aboutToSleep,
-                [this] (bool beforeSleep)
+        connect(mProvider, &LockScreenProvider::aboutToSleep, this, [this] (bool beforeSleep)
         {
             if (beforeSleep)
             {
@@ -133,8 +131,8 @@ LogindProvider::LogindProvider() :
 {
     if (mInterface.isValid())
     {
-        connect(&mInterface, SIGNAL(PrepareForSleep(bool)),
-                this, SIGNAL(aboutToSleep(bool)));
+        // SIGNAL/SLOT macros are needed here
+        connect(&mInterface, SIGNAL(PrepareForSleep(bool)), this, SIGNAL(aboutToSleep(bool)));
 
         QString sessionId = QDBusInterface(
                 QStringLiteral("org.freedesktop.login1"),
@@ -217,8 +215,8 @@ ConsoleKit2Provider::ConsoleKit2Provider() :
 
         if (mMethodInhibitPresent)
         {
-            connect(&mInterface, SIGNAL(PrepareForSleep(bool)),
-                    this, SIGNAL(aboutToSleep(bool)));
+            // SIGNAL/SLOT macros are needed here
+            connect(&mInterface, SIGNAL(PrepareForSleep(bool)), this, SIGNAL(aboutToSleep(bool)));
 
             QDBusReply<QDBusObjectPath> sessionObjectPath = mInterface
                 .call(QSL("GetCurrentSession"));

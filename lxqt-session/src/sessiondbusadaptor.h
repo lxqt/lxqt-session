@@ -50,7 +50,7 @@ public:
           m_manager(manager),
           m_power(false/*don't use ourself, just all other power providers*/)
     {
-        connect(m_manager, SIGNAL(moduleStateChanged(QString,bool)), SIGNAL(moduleStateChanged(QString,bool)));
+        connect(m_manager, &LXQtModuleManager::moduleStateChanged, this, &SessionDBusAdaptor::moduleStateChanged);
     }
 
 signals:

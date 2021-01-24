@@ -37,10 +37,9 @@ EnvironmentPage::EnvironmentPage(LXQt::Settings *settings, QWidget *parent) :
 {
     ui->setupUi(this);
 
-    connect(ui->addButton, SIGNAL(clicked()), SLOT(addButton_clicked()));
-    connect(ui->deleteButton, SIGNAL(clicked()), SLOT(deleteButton_clicked()));
-    connect(ui->treeWidget, SIGNAL(itemChanged(QTreeWidgetItem*,int)),
-            SLOT(itemChanged(QTreeWidgetItem*,int)));
+    connect(ui->addButton,    &QPushButton::clicked,     this, &EnvironmentPage::addButton_clicked);
+    connect(ui->deleteButton, &QPushButton::clicked,     this, &EnvironmentPage::deleteButton_clicked);
+    connect(ui->treeWidget,   &QTreeWidget::itemChanged, this, &EnvironmentPage::itemChanged);
 
     /* restoreSettings() is called from SessionConfigWindow
        after connections with DefaultApps have been set up */

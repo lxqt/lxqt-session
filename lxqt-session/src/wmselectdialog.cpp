@@ -51,9 +51,9 @@ WmSelectDialog::WmSelectDialog(const WindowManagerList &availableWindowManagers,
     qApp->setStyle(QSL("plastique"));
     ui->setupUi(this);
     setModal(true);
-    connect(ui->wmList, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(accept()));
-    connect(ui->wmList, SIGNAL(clicked(QModelIndex)), this, SLOT(selectFileDialog(QModelIndex)));
-    connect(ui->wmList, SIGNAL(activated(QModelIndex)), this, SLOT(changeBtnStatus(QModelIndex)));
+    connect(ui->wmList, &QTreeWidget::doubleClicked, this, &WmSelectDialog::accept);
+    connect(ui->wmList, &QTreeWidget::clicked,       this, &WmSelectDialog::selectFileDialog);
+    connect(ui->wmList, &QTreeWidget::activated,     this, &WmSelectDialog::changeBtnStatus);
 
     for (const WindowManager &wm : availableWindowManagers)
     {

@@ -38,9 +38,9 @@ AutoStartPage::AutoStartPage(QWidget* parent) :
 {
     ui->setupUi(this);
 
-    connect(ui->addButton, SIGNAL(clicked()), SLOT(addButton_clicked()));
-    connect(ui->editButton, SIGNAL(clicked()), SLOT(editButton_clicked()));
-    connect(ui->deleteButton, SIGNAL(clicked()), SLOT(deleteButton_clicked()));
+    connect(ui->addButton,    &QPushButton::clicked, this, &AutoStartPage::addButton_clicked);
+    connect(ui->editButton,   &QPushButton::clicked, this, &AutoStartPage::editButton_clicked);
+    connect(ui->deleteButton, &QPushButton::clicked, this, &AutoStartPage::deleteButton_clicked);
 
     restoreSettings();
 }
@@ -59,9 +59,8 @@ void AutoStartPage::restoreSettings()
     ui->autoStartView->setExpanded(mXdgAutoStartModel->index(0, 0), true);
     ui->autoStartView->setExpanded(mXdgAutoStartModel->index(1, 0), true);
     updateButtons();
-    connect(mXdgAutoStartModel, SIGNAL(dataChanged(QModelIndex,QModelIndex)), SLOT(updateButtons()));
-    connect(ui->autoStartView->selectionModel(), SIGNAL(currentChanged(QModelIndex,QModelIndex)),
-            SLOT(selectionChanged(QModelIndex)));
+    connect(mXdgAutoStartModel, &AutoStartItemModel::dataChanged, this, &AutoStartPage::updateButtons);
+    connect(ui->autoStartView->selectionModel(), &QItemSelectionModel::currentChanged, this, &AutoStartPage::selectionChanged);
 }
 
 void AutoStartPage::save()

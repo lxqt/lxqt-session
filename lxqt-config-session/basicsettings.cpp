@@ -45,9 +45,9 @@ BasicSettings::BasicSettings(LXQt::Settings *settings, QWidget *parent) :
     ui(new Ui::BasicSettings)
 {
     ui->setupUi(this);
-    connect(ui->findWmButton, SIGNAL(clicked()), this, SLOT(findWmButton_clicked()));
-    connect(ui->startButton, SIGNAL(clicked()), this, SLOT(startButton_clicked()));
-    connect(ui->stopButton, SIGNAL(clicked()), this, SLOT(stopButton_clicked()));
+    connect(ui->findWmButton, &QPushButton::clicked, this, &BasicSettings::findWmButton_clicked);
+    connect(ui->startButton,  &QPushButton::clicked, this, &BasicSettings::startButton_clicked);
+    connect(ui->stopButton,   &QPushButton::clicked, this, &BasicSettings::stopButton_clicked);
     restoreSettings();
 
     ui->moduleView->setModel(m_moduleModel);
