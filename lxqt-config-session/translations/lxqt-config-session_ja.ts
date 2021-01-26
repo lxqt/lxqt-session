@@ -87,7 +87,7 @@
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>ファイル &apos;%1&apos; は既にあります！</translation>
+        <translation>ファイル &apos;%1&apos; が既に存在しています！</translation>
     </message>
 </context>
 <context>
