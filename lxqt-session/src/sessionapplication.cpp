@@ -85,16 +85,16 @@ bool SessionApplication::startup()
     QTimer * dev_timer = new QTimer{this}; //will be released upon our destruction
     dev_timer->setSingleShot(true);
     dev_timer->setInterval(500); //give some time to xorg... we need to reset keyboard afterwards
-    connect(dev_timer, &QTimer::timeout, [this]
+    connect(dev_timer, &QTimer::timeout, this, [this]
             {
                 //XXX: is this a race? (because settings can be currently changed by lxqt-config-input)
                 //     but with such a little probablity we can live...
                 LXQt::Settings settings(configName);
                 loadKeyboardSettings(settings);
             });
-    connect(dev_notifier, &UdevNotifier::deviceAdded, [this, dev_timer] (QString device)
+    connect(dev_notifier, &UdevNotifier::deviceAdded, this, [this, dev_timer] (QString device)
             {
-                qCWarning(SESSION) << QStringLiteral("Session '%1', new input device '%2', keyboard setting will be (optionaly) reloaded...").arg(configName).arg(device);
+                qCWarning(SESSION) << QStringLiteral("Session '%1', new input device '%2', keyboard setting will be (optionaly) reloaded...").arg(configName,device);
                 dev_timer->start();
             });
     // Detect display connection:
@@ -103,9 +103,9 @@ bool SessionApplication::startup()
     // # echo detect > status
     // at /sys/devices/pciXXX/drm/cardX/cardX-XXX
     UdevNotifier *dev_notifier_drm_subsystem = new UdevNotifier(QStringLiteral("drm"), this); //will be released upon our destruction
-    connect(dev_notifier_drm_subsystem, &UdevNotifier::deviceChanged, [this] (QString device)
+    connect(dev_notifier_drm_subsystem, &UdevNotifier::deviceChanged, this, [this] (QString device)
             {
-                qCWarning(SESSION) << QStringLiteral("Session '%1': display device '%2'").arg(configName).arg(device);
+                qCWarning(SESSION) << QStringLiteral("Session '%1': display device '%2'").arg(configName,device);
                 QProcess::startDetached(QStringLiteral("lxqt-config-monitor"), QStringList(QStringLiteral("-l")));
             });
 #endif

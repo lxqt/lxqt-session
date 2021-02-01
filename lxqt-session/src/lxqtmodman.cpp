@@ -66,8 +66,8 @@ LXQtModuleManager::LXQtModuleManager(QObject* parent)
       mTrayStarted(false),
       mWaitLoop(nullptr)
 {
-    connect(mThemeWatcher, SIGNAL(directoryChanged(QString)), SLOT(themeFolderChanged(QString)));
-    connect(LXQt::Settings::globalSettings(), SIGNAL(lxqtThemeChanged()), SLOT(themeChanged()));
+    connect(mThemeWatcher, &QFileSystemWatcher::directoryChanged, this, &LXQtModuleManager::themeFolderChanged);
+    connect(LXQt::Settings::globalSettings(), &LXQt::GlobalSettings::lxqtThemeChanged, this, &LXQtModuleManager::themeChanged);
 
     qApp->installNativeEventFilter(this);
 }
@@ -228,14 +228,13 @@ void LXQtModuleManager::startProcess(const XdgDesktopFile& file)
         return;
     }
     LXQtModule* proc = new LXQtModule(file, this);
-    connect(proc, SIGNAL(moduleStateChanged(QString,bool)), this, SIGNAL(moduleStateChanged(QString,bool)));
+    connect(proc, &LXQtModule::moduleStateChanged, this, &LXQtModuleManager::moduleStateChanged);
     proc->start();
 
     QString name = QFileInfo(file.fileName()).fileName();
     mNameMap[name] = proc;
 
-    connect(proc, SIGNAL(finished(int, QProcess::ExitStatus)),
-            this, SLOT(restartModules(int, QProcess::ExitStatus)));
+    connect(proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, &LXQtModuleManager::restartModules);
 }
 
 void LXQtModuleManager::startProcess(const QString& name)
@@ -331,7 +330,7 @@ LXQtModuleManager::~LXQtModuleManager()
         i.next();
 
         auto p = i.value();
-        disconnect(p, SIGNAL(finished(int, QProcess::ExitStatus)), nullptr, nullptr);
+        disconnect(p);
 
         delete p;
         mNameMap[i.key()] = nullptr;
@@ -458,7 +457,7 @@ LXQtModule::LXQtModule(const XdgDesktopFile& file, QObject* parent) :
     mIsTerminating(false)
 {
     QProcess::setProcessChannelMode(QProcess::ForwardedChannels);
-    connect(this, SIGNAL(stateChanged(QProcess::ProcessState)), SLOT(updateState(QProcess::ProcessState)));
+    connect(this, &LXQtModule::stateChanged, this, &LXQtModule::updateState);
 }
 
 void LXQtModule::start()

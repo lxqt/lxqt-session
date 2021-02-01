@@ -38,7 +38,7 @@ AutoStartEdit::AutoStartEdit(const QString& name, const QString& command, bool n
     ui->nameEdit->setText(name);
     ui->commandEdit->setText(command);
     ui->trayCheckBox->setChecked(needTray);
-    connect(ui->browseButton, SIGNAL(clicked()), SLOT(browse()));
+    connect(ui->browseButton, &QPushButton::clicked, this, &AutoStartEdit::browse);
 }
 
 QString AutoStartEdit::name()

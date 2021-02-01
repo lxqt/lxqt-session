@@ -45,31 +45,31 @@ SessionConfigWindow::SessionConfigWindow() :
 {
     BasicSettings* basicSettings = new BasicSettings(mSettings, this);
     addPage(basicSettings, tr("Basic Settings"), QSL("preferences-desktop-display-color"));
-    connect(basicSettings, SIGNAL(needRestart()), SLOT(setRestart()));
-    connect(this, SIGNAL(reset()), basicSettings, SLOT(restoreSettings()));
-    connect(this, SIGNAL(save()), basicSettings, SLOT(save()));
+    connect(basicSettings, &BasicSettings::needRestart, this, &SessionConfigWindow::setRestart);
+    connect(this, &SessionConfigWindow::reset, basicSettings, &BasicSettings::restoreSettings);
+    connect(this, &SessionConfigWindow::save,  basicSettings, &BasicSettings::save);
 
     UserLocationsPage* userLocations = new UserLocationsPage(this);
     addPage(userLocations, tr("User Directories"), QStringLiteral("folder"));
-    connect(userLocations, SIGNAL(needRestart()), SLOT(setRestart()));
-    connect(this, SIGNAL(reset()), userLocations, SLOT(restoreSettings()));
-    connect(this, SIGNAL(save()), userLocations, SLOT(save()));
+    connect(userLocations, &UserLocationsPage::needRestart, this, &SessionConfigWindow::setRestart);
+    connect(this, &SessionConfigWindow::reset, userLocations, &UserLocationsPage::restoreSettings);
+    connect(this, &SessionConfigWindow::save,  userLocations, &UserLocationsPage::save);
 
     AutoStartPage* autoStart = new AutoStartPage(this);
     addPage(autoStart, tr("Autostart"), QSL("preferences-desktop-launch-feedback"));
-    connect(autoStart, SIGNAL(needRestart()), SLOT(setRestart()));
-    connect(this, SIGNAL(reset()), autoStart, SLOT(restoreSettings()));
-    connect(this, SIGNAL(save()), autoStart, SLOT(save()));
+    connect(autoStart, &AutoStartPage::needRestart, this, &SessionConfigWindow::setRestart);
+    connect(this, &SessionConfigWindow::reset, autoStart, &AutoStartPage::restoreSettings);
+    connect(this, &SessionConfigWindow::save, autoStart, &AutoStartPage::save);
 
     EnvironmentPage* environmentPage = new EnvironmentPage(mSettings, this);
     addPage(environmentPage, tr("Environment (Advanced)"), QSL("preferences-system-session-services"));
-    connect(environmentPage, SIGNAL(needRestart()), SLOT(setRestart()));
-    connect(this, SIGNAL(reset()), environmentPage, SLOT(restoreSettings()));
-    connect(this, SIGNAL(save()), environmentPage, SLOT(save()));
+    connect(environmentPage, &EnvironmentPage::needRestart, this, &SessionConfigWindow::setRestart);
+    connect(this, &SessionConfigWindow::reset, environmentPage, &EnvironmentPage::restoreSettings);
+    connect(this, &SessionConfigWindow::save,  environmentPage, &EnvironmentPage::save);
 
     // sync Default Apps and Environment
     environmentPage->restoreSettings();
-    connect(this, SIGNAL(reset()), SLOT(clearRestart()));
+    connect(this, &SessionConfigWindow::reset, this, &SessionConfigWindow::clearRestart);
     m_restart = false;
 
     adjustSize();
