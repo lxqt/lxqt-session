@@ -64,5 +64,6 @@ export XDG_MENU_PREFIX="lxqt-"
 
 export XDG_CURRENT_DESKTOP="LXQt"
 
+export QTXDG_START_DETACH_TRULY=0
 # Start the LXQt session
 exec lxqt-session
