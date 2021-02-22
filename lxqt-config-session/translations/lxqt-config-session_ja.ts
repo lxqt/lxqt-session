@@ -77,7 +77,7 @@
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>アプリケーション自動起動</translation>
+        <translation>アプリケーションの自動起動</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
