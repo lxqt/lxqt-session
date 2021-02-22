@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ja">
+<TS version="2.1" language="oc">
 <context>
     <name>AutoStartEdit</name>
     <message>
         <location filename="../autostartedit.ui" line="14"/>
         <source>Edit</source>
-        <translation>編集</translation>
+        <translation>Modificar</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="20"/>
         <source>Name:</source>
-        <translation>名称:</translation>
+        <translation>Nom :</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="27"/>
         <source>Search...</source>
-        <translation>検索...</translation>
+        <translation>Cercar...</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="47"/>
         <source>Command:</source>
-        <translation>コマンド:</translation>
+        <translation>Comanda :</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>システムトレイの起動を待つ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
         <source>Select Application</source>
-        <translation>アプリケーションの選択</translation>
+        <translation>Causir aplicacion</translation>
     </message>
 </context>
 <context>
@@ -39,22 +39,22 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
-        <translation>全体的な自動起動</translation>
+        <translation>Aviada automatica globala</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation>LXQt 自動起動</translation>
+        <translation>Aviada automatica de LXQt</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
         <source>Location: %1</source>
-        <translation>場所: %1</translation>
+        <translation>Emplaçament : %1</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>上書きにより無効: %1</translation>
+        <translation>Remplaçament : %1</translation>
     </message>
 </context>
 <context>
@@ -62,32 +62,32 @@
     <message>
         <location filename="../autostartpage.ui" line="17"/>
         <source>Delete</source>
-        <translation>削除</translation>
+        <translation>Suprimir</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="24"/>
         <source>Add</source>
-        <translation>追加</translation>
+        <translation>Ajustar</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="31"/>
         <source>Edit</source>
-        <translation>編集</translation>
+        <translation>Modificar</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>アプリケーションの自動起動</translation>
+        <translation>Aviada automatica d’aplicacion</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
         <source>Error</source>
-        <translation>エラー</translation>
+        <translation>Error</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>ファイル &apos;%1&apos; が既に存在しています！</translation>
+        <translation>Lo fichièr « %1 » existís ja !</translation>
     </message>
 </context>
 <context>
@@ -95,62 +95,62 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>基本設定</translation>
+        <translation>Paramètres de basa</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation>ウィンドウマネージャー</translation>
+        <translation>Gestionari de fenèstras</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation>検索...</translation>
+        <translation>Recercar...</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation>LXQt モジュール</translation>
+        <translation>Moduls de LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation>開始</translation>
+        <translation>Aviar</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation>停止</translation>
+        <translation>Arrestar</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation>セッションの終了</translation>
+        <translation>Quitar la session</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation>セッション終了時に確認する</translation>
+        <translation>Demandar la confirmacion per quitar la session</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>サスペンド/ハイバネートの前に画面をロックする　　　　　　</translation>
+        <translation>Verrolhar l’ecran abans de suspendre/ivernar</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation>ロックからサスペンド/ハイバネートまでの時間:</translation>
+        <translation>Suspendre/Ivernar aprèp lo relambi de verrolhatge :</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
         <source> ms</source>
-        <translation> ミリ秒</translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
         <source>Select a window manager</source>
-        <translation>ウィンドウマネージャーの選択</translation>
+        <translation>Seleccionar un gestionari de fenèstras</translation>
     </message>
 </context>
 <context>
@@ -158,27 +158,27 @@
     <message>
         <location filename="../environmentpage.ui" line="17"/>
         <source>Add</source>
-        <translation>追加</translation>
+        <translation>Apondre</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="24"/>
         <source>Delete</source>
-        <translation>削除</translation>
+        <translation>Suprimir</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
-        <translation>環境変数(詳細)</translation>
+        <translation>Variablas d’environament (avançat)</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="61"/>
         <source>Variable Name</source>
-        <translation>変数名</translation>
+        <translation>Nom de la variabla</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="66"/>
         <source>Value</source>
-        <translation>値</translation>
+        <translation>Valor</translation>
     </message>
 </context>
 <context>
@@ -186,7 +186,7 @@
     <message>
         <location filename="../modulemodel.cpp" line="87"/>
         <source>Running</source>
-        <translation>実行中</translation>
+        <translation>En execucion</translation>
     </message>
 </context>
 <context>
@@ -194,37 +194,37 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation>LXQt セッションの設定</translation>
+        <translation>Paramètre de la session LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
-        <translation>基本設定</translation>
+        <translation>Paramètres de basa</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>User Directories</source>
-        <translation>ユーザーディレクトリ</translation>
+        <translation>Repertòri utilizaire</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="59"/>
         <source>Autostart</source>
-        <translation>自動起動</translation>
+        <translation>Aviada automatica</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="65"/>
         <source>Environment (Advanced)</source>
-        <translation>環境(詳細)</translation>
+        <translation>Environament (avançat)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="87"/>
         <source>Session Restart Required</source>
-        <translation>セッションの再起動が必要</translation>
+        <translation>Reaviada de session requerit</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="88"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation>いくつかの設定項目は次のログインまで反映されません。</translation>
+        <translation>D’unes paramètres seràn sonque preses en compte a la session venenta.</translation>
     </message>
 </context>
 <context>
@@ -232,22 +232,22 @@
     <message>
         <location filename="../userlocationspage.cpp" line="116"/>
         <source>Locations for Personal Files</source>
-        <translation>個人ファイルの場所</translation>
+        <translation>Emplaçament dels fichièrs personalas</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>LXQt セッションの設定 - ユーザーディレクトリ</translation>
+        <translation>Paramètres de LXQt - Repertòris utilizaire</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation>%1 の場所の設定を適用している間にエラーが発生しました</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="202"/>
         <source>Choose Location</source>
-        <translation>場所の選択</translation>
+        <translation>Causir un emplaçament</translation>
     </message>
 </context>
 <context>
@@ -255,82 +255,82 @@
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Desktop</source>
-        <translation>Desktop</translation>
+        <translation>Burèu</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Downloads</source>
-        <translation>ダウンロード</translation>
+        <translation>Telecargaments</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Templates</source>
-        <translation>テンプレート</translation>
+        <translation>Modèls</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Public Share</source>
-        <translation>共有</translation>
+        <translation>Espaci public</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
         <source>Documents</source>
-        <translation>ドキュメント</translation>
+        <translation>Documents</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="68"/>
         <source>Music</source>
-        <translation>音楽</translation>
+        <translation>Musica</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="69"/>
         <source>Pictures</source>
-        <translation>画像</translation>
+        <translation>Imatges</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
         <source>Videos</source>
-        <translation>ビデオ</translation>
+        <translation>Vidèos</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation>デスクトップ上で見れる全てのファイルを含みます</translation>
+        <translation>Conten totes los fichièrs visibles pel burèu</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation>ダウンロードしたファイルを保存する既定のフォルダーです</translation>
+        <translation>Repertòri per defaut de vòstres telecargaments</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation>テンプレートファイルを保存する既定のフォルダーです</translation>
+        <translation>Repertòri per defaut de vòstres modèls</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation>共有ファイルを公開する既定のフォルダーです</translation>
+        <translation>Repertòri per defaut per partejar publicament vòstres fichièrs</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation>文書ファイルを保存する既定のフォルダーです</translation>
+        <translation>Repertòri per defaut de vòstres documents</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation>音楽ファイルを保存する既定のフォルダーです</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation>画像ファイルを保存する既定のフォルダーです</translation>
+        <translation>Repertòri per defaut de vòstres imatges</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>動画ファイルを保存する既定のフォルダーです</translation>
+        <translation>Repertòri per defaut de vòstras vidèos</translation>
     </message>
 </context>
 </TS>

@@ -120,12 +120,12 @@
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation type="unfinished"></translation>
+        <translation>Блокувати екран перед переходом з режим зупинення/сну</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>Перехід в режим зупинення/сну після блокування через:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Типова тека для завантаження або збереження музики з або до</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
