@@ -39,12 +39,12 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
-        <translation>全体的な自動起動</translation>
+        <translation>全体の自動起動</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation>LXQt 自動起動</translation>
+        <translation>LXQt の自動起動</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
@@ -115,7 +115,7 @@
     <message>
         <location filename="../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation>開始</translation>
+        <translation>実行</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="72"/>
