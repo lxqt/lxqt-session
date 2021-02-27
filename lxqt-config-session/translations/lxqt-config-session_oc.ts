@@ -26,7 +26,7 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Esperar l’execucion del system-tray</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
@@ -242,7 +242,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;es producha una error pendent l’aplicacion dels paramètres per l’emplaçament %1</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="202"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Dossièr per defaut per cargar o salvar la musica</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
