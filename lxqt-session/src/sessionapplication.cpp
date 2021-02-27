@@ -30,6 +30,9 @@
 #include <QProcess>
 #include "log.h"
 
+#include <QGuiApplication>
+#include <QDebug>
+
 #include <QX11Info>
 // XKB, this should be disabled in Wayland?
 #include <X11/XKBlib.h>
@@ -39,6 +42,14 @@ SessionApplication::SessionApplication(int& argc, char** argv) :
     lockScreenManager(new LockScreenManager(this))
 {
     listenToUnixSignals({SIGINT, SIGTERM, SIGQUIT, SIGHUP});
+
+    {
+        // Checks wayland session
+        QString platform = QGuiApplication::platformName();
+	qDebug() << "Platform" << platform;
+	if(platform == QStringLiteral("wayland"))
+		qDebug() << "\tWayland session";
+    }
 
     modman = new LXQtModuleManager;
     connect(this, &LXQt::Application::unixSignal, modman, [this] { modman->logout(true); });
@@ -77,8 +88,10 @@ bool SessionApplication::startup()
 
     loadEnvironmentSettings(settings);
     // loadFontSettings(settings);
-    loadKeyboardSettings(settings);
-    loadMouseSettings(settings);
+    if(QX11Info::isPlatformX11()) {
+        loadKeyboardSettings(settings);
+        loadMouseSettings(settings);
+    }
 
 #if defined(WITH_LIBUDEV_MONITOR)
     UdevNotifier * dev_notifier = new UdevNotifier{QStringLiteral("input"), this}; //will be released upon our destruction
