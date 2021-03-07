@@ -194,7 +194,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation>Nastavení LXQt sezení</translation>
+        <translation>Nastavení sezení LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="47"/>
