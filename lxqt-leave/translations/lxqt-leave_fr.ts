@@ -31,7 +31,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="65"/>
         <source>Suspend</source>
-        <translation>Suspendre</translation>
+        <translation>Mettre en veille</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="78"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../main.cpp" line="66"/>
         <source>Suspend.</source>
-        <translation>Suspendre.</translation>
+        <translation>Mettre en veille.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="69"/>
