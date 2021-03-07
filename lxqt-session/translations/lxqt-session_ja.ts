@@ -48,12 +48,12 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation>お好みのものを選んでください。</translation>
+        <translation>お好みのものを選んで下さい。</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;LXQt へようこそ&lt;/span&gt;&lt;/p&gt;&lt;p&gt;ウィンドウマネージャーを選択してください。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;LXQt へようこそ&lt;/span&gt;&lt;/p&gt;&lt;p&gt;ウィンドウマネージャーを選択して下さい。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
