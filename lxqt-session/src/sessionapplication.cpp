@@ -37,19 +37,13 @@
 // XKB, this should be disabled in Wayland?
 #include <X11/XKBlib.h>
 
+#include <LXQt/lxqtplatform.h>
+
 SessionApplication::SessionApplication(int& argc, char** argv) :
     LXQt::Application(argc, argv),
     lockScreenManager(new LockScreenManager(this))
 {
     listenToUnixSignals({SIGINT, SIGTERM, SIGQUIT, SIGHUP});
-
-    {
-        // Checks wayland session
-        QString platform = QGuiApplication::platformName();
-	qDebug() << "Platform" << platform;
-	if(platform == QStringLiteral("wayland"))
-		qDebug() << "\tWayland session";
-    }
 
     modman = new LXQtModuleManager;
     connect(this, &LXQt::Application::unixSignal, modman, [this] { modman->logout(true); });
@@ -88,7 +82,10 @@ bool SessionApplication::startup()
 
     loadEnvironmentSettings(settings);
     // loadFontSettings(settings);
-    if(QX11Info::isPlatformX11()) {
+
+    LXQt::Platform::PLATFORM platform = LXQt::Platform::getPlatform();
+    if(platform == LXQt::Platform::X11) {
+        // X11 session is started
         loadKeyboardSettings(settings);
         loadMouseSettings(settings);
     }
