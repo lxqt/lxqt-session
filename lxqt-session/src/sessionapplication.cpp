@@ -37,8 +37,6 @@
 // XKB, this should be disabled in Wayland?
 #include <X11/XKBlib.h>
 
-#include <LXQt/lxqtplatform.h>
-
 SessionApplication::SessionApplication(int& argc, char** argv) :
     LXQt::Application(argc, argv),
     lockScreenManager(new LockScreenManager(this))
@@ -83,8 +81,7 @@ bool SessionApplication::startup()
     loadEnvironmentSettings(settings);
     // loadFontSettings(settings);
 
-    LXQt::Platform::PLATFORM platform = LXQt::Platform::getPlatform();
-    if(platform == LXQt::Platform::X11) {
+    if(QGuiApplication::platformName() == QStringLiteral("xcb")) {
         // X11 session is started
         loadKeyboardSettings(settings);
         loadMouseSettings(settings);
@@ -100,7 +97,8 @@ bool SessionApplication::startup()
                 //XXX: is this a race? (because settings can be currently changed by lxqt-config-input)
                 //     but with such a little probablity we can live...
                 LXQt::Settings settings(configName);
-                loadKeyboardSettings(settings);
+                if(QGuiApplication::platformName() == QStringLiteral("xcb"))
+                    loadKeyboardSettings(settings);
             });
     connect(dev_notifier, &UdevNotifier::deviceAdded, this, [this, dev_timer] (QString device)
             {
