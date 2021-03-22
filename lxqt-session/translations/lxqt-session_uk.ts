@@ -48,7 +48,7 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation>Оберіть Ваш улюблений.</translation>
+        <translation>Виберіть свій улюблений.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>

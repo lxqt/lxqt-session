@@ -295,7 +295,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation>Містить всі файли, які Ви бачите на Вашій стільниці</translation>
+        <translation>Містить всі файли, які ви бачите на своїй стільниці</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
@@ -310,7 +310,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation>Типова тека для публічно доступних Ваших файлів</translation>
+        <translation>Типова тека для ваших загальнодоступних файлів</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
