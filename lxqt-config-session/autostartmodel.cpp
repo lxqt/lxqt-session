@@ -150,8 +150,8 @@ bool AutoStartItemModel::removeRow(int row, const QModelIndex& parent)
 
     if (!mItemMap[item].removeLocal())
     {
-        QModelIndex index = parent.child(row, 0);
-        emit dataChanged(index, index);
+        QModelIndex indx = index(row, 0, parent);
+        emit dataChanged(indx, indx);
         return false;
     }
 
