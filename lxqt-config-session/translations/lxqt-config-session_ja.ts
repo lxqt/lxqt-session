@@ -255,7 +255,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Desktop</source>
-        <translation>Desktop</translation>
+        <translation>デスクトップ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
