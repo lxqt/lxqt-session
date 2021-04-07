@@ -31,6 +31,10 @@ find_package(KF5WindowSystem ${KF5_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
 find_package(X11 REQUIRED)
 message(STATUS "Building with Qt${Qt5Core_VERSION}")
+find_package(PkgConfig REQUIRED)
+if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    pkg_search_module(PROCPS REQUIRED libprocps)
+endif()
 
 # Please don't move, must be after lxqt
 find_package(XdgUserDirs REQUIRED)

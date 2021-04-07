@@ -36,6 +36,7 @@
 #include <XdgDesktopFile>
 #include <QEventLoop>
 #include <time.h>
+#include "procreaper.h"
 
 class LXQtModule;
 namespace LXQt {
@@ -141,6 +142,8 @@ private:
     bool mWmStarted;
     bool mTrayStarted;
     QEventLoop* mWaitLoop;
+
+    ProcReaper mProcReaper;
 
 private slots:
 

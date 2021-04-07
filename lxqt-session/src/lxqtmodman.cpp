@@ -70,6 +70,7 @@ LXQtModuleManager::LXQtModuleManager(QObject* parent)
     connect(LXQt::Settings::globalSettings(), &LXQt::GlobalSettings::lxqtThemeChanged, this, &LXQtModuleManager::themeChanged);
 
     qApp->installNativeEventFilter(this);
+    mProcReaper.start();
 }
 
 void LXQtModuleManager::setWindowManager(const QString & windowManager)
@@ -364,6 +365,9 @@ void LXQtModuleManager::logout(bool doExit)
             p->kill();
         }
     }
+
+    // terminate all possible children except WM
+    mProcReaper.stop({mWmProcess->processId()});
 
     mWmProcess->terminate();
     if (mWmProcess->state() != QProcess::NotRunning && !mWmProcess->waitForFinished(2000))
