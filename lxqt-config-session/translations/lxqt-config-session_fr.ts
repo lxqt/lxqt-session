@@ -194,7 +194,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation>Paramétrage de la session LXQt</translation>
+        <translation>Paramétres de la session LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="47"/>
@@ -242,7 +242,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation>Une erreur s&apos;est produite lors de l&apos;application des paramètres pour l&apos;emplacement % 1</translation>
+        <translation>Une erreur s&apos;est produite lors de l&apos;application des paramètres pour l&apos;emplacement %1</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="202"/>
