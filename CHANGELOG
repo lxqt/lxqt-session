@@ -1,3 +1,10 @@
+lxqt-session-0.17.0 / 2021-04-15
+================================
+  * Code cleanup and modernization (use const references where possible, fix possible use of uninitialized variables, removing deprectaed methods, etc.).
+  * Remove Openbox configuration for WM agnosticism.
+  * Completely moved to Qt5 signal/slot syntax.
+  * Become subreaper and end children on finishing session.
+
 lxqt-session-0.16.0 / 2020-11-01
 ================================
   * Don't use deprecated QProcess methods.
