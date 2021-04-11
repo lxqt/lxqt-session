@@ -71,6 +71,10 @@ if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
     target_link_libraries(lxqt-session
         ${PROCPS_LIBRARIES}
     )
+elseif (CMAKE_SYSTEM_NAME STREQUAL "FreeBSD")
+    target_link_libraries(lxqt-session
+        -lutil
+    )
 endif()
 
 if (WITH_LIBUDEV)
