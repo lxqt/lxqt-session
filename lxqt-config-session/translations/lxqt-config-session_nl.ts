@@ -95,7 +95,7 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>Basisinstellingen</translation>
+        <translation>Algemene instellingen</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>

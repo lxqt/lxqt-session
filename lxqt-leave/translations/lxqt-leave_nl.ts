@@ -6,12 +6,12 @@
     <message>
         <location filename="../leavedialog.ui" line="20"/>
         <source>Leave</source>
-        <translation>Verlaten</translation>
+        <translation>Afsluiten</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="71"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;What do you want the computer to do?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Wat wilt u, dat de computer doet?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Wat wilt u dat de computer doet?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="55"/>
@@ -46,7 +46,7 @@
     <message>
         <location filename="../leavedialog.ui" line="51"/>
         <source>Cancel</source>
-        <translation>Afbreken</translation>
+        <translation>Annuleren</translation>
     </message>
 </context>
 <context>
