@@ -58,7 +58,7 @@ void ProcReaper::run()
         if (pid <= 0)
         {
             QMutexLocker guard{&mMutex};
-            mWait.wait(&mMutex, std::chrono::seconds(1));
+            mWait.wait(&mMutex, 1000); // 1 second
         }
 
         int status;
@@ -111,5 +111,5 @@ void ProcReaper::stop(const std::set<int64_t> & excludedPids)
         QMutexLocker guard{&mMutex};
         mShouldRun = false;
     }
-    QThread::wait(std::chrono::seconds(5));
+    QThread::wait(5000); // 5 seconds
 }
