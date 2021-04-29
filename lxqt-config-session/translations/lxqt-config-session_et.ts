@@ -26,12 +26,12 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Oota süsteemisalve laadimist</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
         <source>Select Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali rakendus</translation>
     </message>
 </context>
 <context>
@@ -39,22 +39,22 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Käivitatakse koos arvutiga</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Käivitatakse koos LXQT&apos;ga</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
         <source>Location: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Asukoht: %1</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Asendused: %1</translation>
     </message>
 </context>
 <context>
@@ -62,32 +62,32 @@
     <message>
         <location filename="../autostartpage.ui" line="17"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Kustuta</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="24"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Lisa</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="31"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Muuda</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Rakenduste automaatne käivitamine</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Viga</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="143"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation type="unfinished"></translation>
+        <translation>„%1“ fail on juba olemas!</translation>
     </message>
 </context>
 <context>
@@ -95,62 +95,62 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Põhiseadistused</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Aknahaldur</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation>Otsi...</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt moodulid</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Käivita teenus</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Peata teenus</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessiooni lõpetamisel</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>Küsi lahkumise kohta kinnitust</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation type="unfinished"></translation>
+        <translation>Enne unnejäämist (muut- või püsimälusse salvestamist) lukusta ekraan</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="131"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>Lukustuse viivitus uinumisel:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="144"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="156"/>
         <source>Select a window manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali aknahaldur</translation>
     </message>
 </context>
 <context>
@@ -158,27 +158,27 @@
     <message>
         <location filename="../environmentpage.ui" line="17"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Lisa</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="24"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Kustuta</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
-        <translation type="unfinished"></translation>
+        <translation>Keskkonnamuutujad (lisaseadistused)</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="61"/>
         <source>Variable Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Muutuja nimi</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="66"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Väärtus</translation>
     </message>
 </context>
 <context>
@@ -186,7 +186,7 @@
     <message>
         <location filename="../modulemodel.cpp" line="87"/>
         <source>Running</source>
-        <translation type="unfinished"></translation>
+        <translation>Töötab</translation>
     </message>
 </context>
 <context>
@@ -194,37 +194,37 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt sessiooniseadistused</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Põhiseadistused</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasutaja kaustad</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="59"/>
         <source>Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaatne käivitamine</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="65"/>
         <source>Environment (Advanced)</source>
-        <translation type="unfinished"></translation>
+        <translation>Keskkonnamuutujad (lisaseadistused)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="87"/>
         <source>Session Restart Required</source>
-        <translation type="unfinished"></translation>
+        <translation>Palun käivita sessioon uuesti</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="88"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mõned seadistused ei jõustu enne, kui sa sisse logid.</translation>
     </message>
 </context>
 <context>
@@ -232,12 +232,12 @@
     <message>
         <location filename="../userlocationspage.cpp" line="116"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Sinu failide asukohad</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt sessiooniseadistused - kasutaja kaustad</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
