@@ -242,12 +242,12 @@
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>Seadistuste rakendamisel asukohale „%1“ tekkis viga</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="202"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali asukoht</translation>
     </message>
 </context>
 <context>
@@ -255,82 +255,82 @@
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Töölaud</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Allalaadimised</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Mallid</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Avalikud failid</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokumendid</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="68"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>Muusika</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="69"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Pildid</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Videod</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Sisaldab kõiki faile ja alamkaustu, mida sa näed oma töölaual</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaikimisi kaust allalaaditud failide salvestamiseks</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaikimisi kaust mallide hoidmiseks ja salvestamiseks</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaikimisi kaust sinu avalikult jagatavate failide ja alamkaustade jaoks</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaikimisi kaust dokumentide hoidmiseks ja salvestamiseks</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaikimisi kaust muusikafailide hoidmiseks ja salvestamiseks</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaikimisi kaust pildifailide hoidmiseks ja salvestamiseks</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaikimisi kaust videofailide hoidmiseks ja salvestamiseks</translation>
     </message>
 </context>
 </TS>
