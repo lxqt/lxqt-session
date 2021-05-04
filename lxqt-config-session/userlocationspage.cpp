@@ -137,11 +137,7 @@ UserLocationsPage::UserLocationsPage(QWidget *parent)
         gridLayout->addWidget(edit, row, 1);
         gridLayout->addWidget(button, row, 2);
     }
-#if (QT_VERSION >= QT_VERSION_CHECK(5,15,0))
     connect(d->signalMapper, &QSignalMapper::mappedInt, this, &UserLocationsPage::clicked);
-#else
-    connect(d->signalMapper, QOverload<int>::of(&QSignalMapper::mapped), this, &UserLocationsPage::clicked);
-#endif
 
     QSpacerItem *verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum,
                                                   QSizePolicy::Expanding);
