@@ -7,7 +7,7 @@
         <location filename="../leavedialog.ui" line="20"/>
         <source>Leave</source>
         <translatorcomment>적절한 표현을 모르겠습니다.</translatorcomment>
-        <translation type="unfinished">떠나기</translation>
+        <translation>그만두기</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="71"/>
