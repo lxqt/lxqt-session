@@ -120,7 +120,7 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Leave Session</source>
-        <translation>Opustiť sedenie</translation>
+        <translation>Opustiť reláciu</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="117"/>
@@ -158,7 +158,7 @@
     <message>
         <location filename="../environmentpage.ui" line="17"/>
         <source>Add</source>
-        <translation>Pridaj</translation>
+        <translation>Pridať</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="24"/>
@@ -173,7 +173,7 @@
     <message>
         <location filename="../environmentpage.ui" line="61"/>
         <source>Variable Name</source>
-        <translation>Premenné meno</translation>
+        <translation>Názov premennej</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="66"/>
