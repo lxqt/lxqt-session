@@ -49,12 +49,12 @@
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
         <source>Location: %1</source>
-        <translation>位置 :%1</translation>
+        <translation>位置: %1</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>覆蓋 : %1</translation>
+        <translation>覆蓋: %1</translation>
     </message>
 </context>
 <context>
