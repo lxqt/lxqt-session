@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Pad van het instellingenbestand.</translation>
+        <translation>De locatie van het instellingenbestand.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
