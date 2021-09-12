@@ -194,7 +194,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation>Налаштування сесії LXQT</translation>
+        <translation>Налаштування сеансу LXQT</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="47"/>
@@ -237,7 +237,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>Налаштування сесії LXQT - Теки користувача</translation>
+        <translation>Налаштування сеансу LXQT - Теки користувача</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="186"/>

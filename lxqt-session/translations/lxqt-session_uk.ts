@@ -58,7 +58,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Ви зможете його змінити через Налаштування -&gt; Налаштування сесії -&gt; Базові налаштування.</translation>
+        <translation>Ви зможете його змінити через Налаштування -&gt; Налаштування сеансу -&gt; Базові налаштування.</translation>
     </message>
 </context>
 </TS>
