@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="312"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; zhavarovalo příliš hodněkrát. Automatické opětovné spuštění proto bylo vypnuto až do příštího přihlášení.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; zhavarovalo příliš mnohokrát. Automatické opětovné spuštění proto bylo vypnuto až do příštího přihlášení.</translation>
     </message>
 </context>
 <context>

@@ -46,7 +46,7 @@
     <message>
         <location filename="../leavedialog.ui" line="51"/>
         <source>Cancel</source>
-        <translation>Zrušit</translation>
+        <translation>Storno</translation>
     </message>
 </context>
 <context>
