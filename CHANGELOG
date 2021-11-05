@@ -1,3 +1,8 @@
+lxqt-session-1.0.0 / 2021-11-04
+================================
+ * Updated AUTHORS.
+ * Bumped minimum required Qt version to 5.15.
+
 lxqt-session-0.17.1 / 2021-04-16
 ================================
   * Fixed compilation against Qt < 5.15.
