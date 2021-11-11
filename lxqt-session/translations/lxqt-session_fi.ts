@@ -48,7 +48,7 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation>Valitse suosikkisi,</translation>
+        <translation>Valitse suosikkisi.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
@@ -58,7 +58,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Voit muuttaa asetusta päävalikon kohteesta Asetukset &gt; LXQt-asetukset &gt; Istuntoasetukset &gt; Perusasetukset</translation>
+        <translation>Voit muuttaa asetusta päävalikon kohteesta Asetukset &gt; LXQt-asetukset &gt; Istuntoasetukset &gt; Perusasetukset.</translation>
     </message>
 </context>
 </TS>

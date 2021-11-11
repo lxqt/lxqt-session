@@ -115,7 +115,7 @@
     <message>
         <location filename="../basicsettings.ui" line="117"/>
         <source>Ask for confirmation to leave session</source>
-        <translation>Vyžadovat potvrzení opouštění relace</translation>
+        <translation>Vyžadovat potvrzení opouštění sezení</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="124"/>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation>Nastavení sezení LXQt</translation>
+        <translation>Nastavení LXQt sezení</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="47"/>
@@ -321,7 +321,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation>Výchozí složka ze které ukládat a načítat z ní hudbu</translation>
+        <translation>Výchozí složka do které ukládat a načítat z ní hudbu</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
