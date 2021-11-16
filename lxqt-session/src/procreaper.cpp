@@ -35,6 +35,11 @@
 #include <libutil.h>
 #include <sys/user.h>
 #include <signal.h>
+#elif defined(Q_OS_NETBSD)
+#include <kvm.h>
+#include <sys/param.h>
+#include <sys/sysctl.h>
+#include <signal.h>
 #endif
 #include <unistd.h>
 #include <cstring>
@@ -128,6 +133,31 @@ void ProcReaper::stop(const std::set<int64_t> & excludedPids)
         }
         free(proc_info);
     }
+#elif defined(Q_OS_NETBSD)
+    int cnt = 0;
+    kvm_t * kd;
+    char buf[_POSIX2_LINE_MAX];
+
+    if (kd = kvm_openfiles(NULL, NULL, NULL, KVM_NO_FILES, buf))
+    {
+        if (kinfo_proc2 *proc_info = kvm_getproc2(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc2), &cnt))
+        {
+            for (int i = 0; i < cnt; ++i)
+            {
+                if (proc_info[i].p_ppid == my_pid)
+                {
+                    children.push_back(proc_info[i].p_pid);
+                }
+            }
+            free(proc_info);
+        }
+        else
+            qCWarning(SESSION) << "Unable to access process information: " << kvm_geterr(kd);
+
+        free(kd);
+    }
+    else
+        qCWarning(SESSION) << "Unable to access kernel virtual memory: " << buf;
 #endif
     for (auto const & child : children)
     {
