@@ -34,16 +34,15 @@
 #include <sys/procctl.h>
 #include <libutil.h>
 #include <sys/user.h>
-#include <signal.h>
 #elif defined(Q_OS_NETBSD)
 #include <kvm.h>
 #include <sys/param.h>
 #include <sys/sysctl.h>
-#include <signal.h>
 #endif
 #include <unistd.h>
 #include <cstring>
 #include <cerrno>
+#include <signal.h>
 #include <sys/wait.h>
 
 ProcReaper::ProcReaper()
@@ -138,7 +137,7 @@ void ProcReaper::stop(const std::set<int64_t> & excludedPids)
     kvm_t * kd;
     char buf[_POSIX2_LINE_MAX];
 
-    if (kd = kvm_openfiles(NULL, NULL, NULL, KVM_NO_FILES, buf))
+    if ((kd = kvm_openfiles(nullptr, nullptr, nullptr, KVM_NO_FILES, buf)))
     {
         if (kinfo_proc2 *proc_info = kvm_getproc2(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc2), &cnt))
         {
