@@ -58,7 +58,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Toto pak budete moci kdykoli změnit přes Nastavení → Nastavení sezení → Základní nastavení.</translation>
+        <translation>Toto pak budete moci kdykoli změnit prostřednictvím Nastavení → Nastavení sezení → Základní nastavení.</translation>
     </message>
 </context>
 </TS>
