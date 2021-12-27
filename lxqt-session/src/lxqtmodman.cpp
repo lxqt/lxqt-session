@@ -200,7 +200,7 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
     }
 
     mWmProcess->start(mWindowManager, QStringList());
-    
+
     // other autostart apps will be handled after the WM becomes available
 
     // Wait until the WM loads
@@ -287,7 +287,7 @@ void LXQtModuleManager::restartModules(int exitCode, QProcess::ExitStatus exitSt
         switch (exitStatus)
         {
             case QProcess::NormalExit:
-                qCDebug(SESSION) << "Process" << procName << "(" << proc << ") exited correctly.";
+                qCDebug(SESSION) << "Process" << procName << "(" << proc << ") exited with code" << exitCode;
                 if (exitCode == 0)
                     break;
                 // Falls through.
