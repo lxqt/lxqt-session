@@ -273,7 +273,7 @@ void LXQtModuleManager::startConfUpdate()
     startProcess(desktop);
 }
 
-void LXQtModuleManager::restartModules(int /*exitCode*/, QProcess::ExitStatus exitStatus)
+void LXQtModuleManager::restartModules(int exitCode, QProcess::ExitStatus exitStatus)
 {
     LXQtModule* proc = qobject_cast<LXQtModule*>(sender());
     if (nullptr == proc) {
@@ -288,7 +288,9 @@ void LXQtModuleManager::restartModules(int /*exitCode*/, QProcess::ExitStatus ex
         {
             case QProcess::NormalExit:
                 qCDebug(SESSION) << "Process" << procName << "(" << proc << ") exited correctly.";
-                break;
+                if (exitCode == 0)
+                    break;
+                // Falls through.
             case QProcess::CrashExit:
             {
                 qCDebug(SESSION) << "Process" << procName << "(" << proc << ") has to be restarted";
