@@ -108,7 +108,7 @@
    <item row="3" column="0">
     <widget class="QGroupBox" name="groupBox_4">
      <property name="title">
-      <string>Screen Scale</string>
+      <string>Global Screen Scaling</string>
      </property>
      <layout class="QFormLayout" name="formLayout">
       <property name="fieldGrowthPolicy">
