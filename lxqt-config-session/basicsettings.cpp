@@ -36,6 +36,8 @@ static const QLatin1String windowManagerKey("window_manager");
 static const QLatin1String leaveConfirmationKey("leave_confirmation");
 static const QLatin1String lockBeforePowerActionsKey("lock_screen_before_power_actions");
 static const QLatin1String powerActionsAfterLockDelayKey("power_actions_after_lock_delay");
+static const QLatin1String QtScaleKey("QT_SCALE_FACTOR");
+static const QLatin1String GdkScaleKey("GDK_SCALE");
 static const QLatin1String openboxValue("openbox");
 
 BasicSettings::BasicSettings(LXQt::Settings *settings, QWidget *parent) :
@@ -76,6 +78,10 @@ void BasicSettings::restoreSettings()
     ui->leaveConfirmationCheckBox->setChecked(m_settings->value(leaveConfirmationKey, false).toBool());
     ui->lockBeforePowerActionsCheckBox->setChecked(m_settings->value(lockBeforePowerActionsKey, true).toBool());
     ui->powerAfterLockDelaySpinBox->setValue(m_settings->value(powerActionsAfterLockDelayKey, 0).toInt());
+
+    m_settings->beginGroup(QL1S("Environment"));
+    ui->scaleSpinBox->setValue(m_settings->value(QtScaleKey, 1.0).toDouble());
+    m_settings->endGroup();
 }
 
 void BasicSettings::save()
@@ -90,6 +96,7 @@ void BasicSettings::save()
     const bool leaveConfirmation = ui->leaveConfirmationCheckBox->isChecked();
     const bool lockBeforePowerActions = ui->lockBeforePowerActionsCheckBox->isChecked();
     const int powerAfterLockDelay = ui->powerAfterLockDelaySpinBox->value();
+    const double scaleFactor = ui->scaleSpinBox->value();
 
     QMap<QString, AutostartItem> previousItems(AutostartItem::createItemMap());
     QMutableMapIterator<QString, AutostartItem> i(previousItems);
@@ -125,6 +132,19 @@ void BasicSettings::save()
         doRestart = true;
     }
 
+    bool scaleChanged = false;
+    m_settings->beginGroup(QL1S("Environment"));
+    if (scaleFactor != m_settings->value(QtScaleKey, 1.0).toDouble()
+        || scaleFactor != m_settings->value(GdkScaleKey, 1.0).toDouble())
+    {
+        m_settings->setValue(QtScaleKey, scaleFactor);
+        m_settings->setValue(GdkScaleKey, scaleFactor);
+        scaleChanged = true;
+    }
+    m_settings->endGroup();
+    if (scaleChanged)
+        emit scaleFactorChanged(); // will update EnvironmentPage in SessionConfigWindow
+
     QMap<QString, AutostartItem> currentItems = m_moduleModel->items();
     QMap<QString, AutostartItem>::const_iterator k = currentItems.constBegin();
     while (k != currentItems.constEnd())
@@ -145,7 +165,7 @@ void BasicSettings::save()
         ++k;
     }
 
-    if (doRestart)
+    if (doRestart || scaleChanged)
         emit needRestart();
 
     m_moduleModel->writeChanges();

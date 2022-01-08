@@ -47,6 +47,7 @@ public:
 
 signals:
     void needRestart();
+    void scaleFactorChanged();
 
 public slots:
     void restoreSettings();

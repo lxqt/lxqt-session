@@ -67,6 +67,10 @@ SessionConfigWindow::SessionConfigWindow() :
     connect(this, &SessionConfigWindow::reset, environmentPage, &EnvironmentPage::restoreSettings);
     connect(this, &SessionConfigWindow::save,  environmentPage, &EnvironmentPage::save);
 
+    // Update EnvironmentPage on changing scale factor; otherwise, scale factor will not change
+    // because "EnvironmentPage::save()" overwrites EVs.
+    connect(basicSettings, &BasicSettings::scaleFactorChanged, environmentPage, &EnvironmentPage::updateScaleFactor);
+
     // sync Default Apps and Environment
     environmentPage->restoreSettings();
     connect(this, &SessionConfigWindow::reset, this, &SessionConfigWindow::clearRestart);

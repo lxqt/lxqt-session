@@ -50,11 +50,13 @@ signals:
 public slots:
     void restoreSettings();
     void save();
-    void updateItem(const QString &var, const QString &val);
+    void updateScaleFactor();
 
 private:
     LXQt::Settings *m_settings;
     Ui::EnvironmentPage *ui;
+
+    void updateItem(const QString &var, const QString &val);
 
 private slots:
     void addButton_clicked();
