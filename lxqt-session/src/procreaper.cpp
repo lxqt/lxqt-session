@@ -51,11 +51,11 @@ ProcReaper::ProcReaper()
 #if defined(Q_OS_LINUX)
     int result = prctl(PR_SET_CHILD_SUBREAPER, 1);
     if (result != 0)
-        qCWarning(SESSION) << "Unable to to set PR_SET_CHILD_SUBREAPER, " << result << " - " << strerror(errno);
+        qCWarning(SESSION) << "Unable to set PR_SET_CHILD_SUBREAPER, " << result << " - " << strerror(errno);
 #elif defined(Q_OS_FREEBSD)
     int result = procctl(P_PID, ::getpid(), PROC_REAP_ACQUIRE, nullptr);
     if (result != 0)
-        qCWarning(SESSION) << "Unable to to set PROC_REAP_ACQUIRE, " << result << " - " << strerror(errno);
+        qCWarning(SESSION) << "Unable to set PROC_REAP_ACQUIRE, " << result << " - " << strerror(errno);
 #endif
 }
 
