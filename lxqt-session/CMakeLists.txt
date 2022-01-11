@@ -75,6 +75,10 @@ elseif (CMAKE_SYSTEM_NAME STREQUAL "FreeBSD")
     target_link_libraries(lxqt-session
         -lutil
     )
+elseif (CMAKE_SYSTEM_NAME STREQUAL "NetBSD")
+    target_link_libraries(lxqt-session
+        -lkvm
+    )
 endif()
 
 if (WITH_LIBUDEV)
