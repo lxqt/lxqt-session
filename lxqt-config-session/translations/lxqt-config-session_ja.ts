@@ -80,12 +80,12 @@
         <translation>アプリケーションの自動起動</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="143"/>
+        <location filename="../autostartpage.cpp" line="142"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="143"/>
+        <location filename="../autostartpage.cpp" line="142"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>ファイル &apos;%1&apos; が既に存在しています！</translation>
     </message>
@@ -124,31 +124,41 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
+        <source>Global Screen Scaling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="123"/>
+        <source>Scale factor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="149"/>
         <source>Leave Session</source>
         <translation>セッションの終了</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="117"/>
+        <location filename="../basicsettings.ui" line="155"/>
         <source>Ask for confirmation to leave session</source>
         <translation>セッション終了時に確認する</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="124"/>
+        <location filename="../basicsettings.ui" line="162"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>サスペンド/ハイバネートの前に画面をロックする　　　　　　</translation>
+        <translation>サスペンド/ハイバネートの前に画面をロックする&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="131"/>
+        <location filename="../basicsettings.ui" line="169"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>ロックからサスペンド/ハイバネートまでの時間:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="144"/>
+        <location filename="../basicsettings.ui" line="182"/>
         <source> ms</source>
         <translation> ミリ秒</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="156"/>
+        <location filename="../basicsettings.cpp" line="176"/>
         <source>Select a window manager</source>
         <translation>ウィンドウマネージャーの選択</translation>
     </message>
@@ -217,12 +227,12 @@
         <translation>環境(詳細)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="87"/>
+        <location filename="../sessionconfigwindow.cpp" line="91"/>
         <source>Session Restart Required</source>
         <translation>セッションの再起動が必要</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="88"/>
+        <location filename="../sessionconfigwindow.cpp" line="92"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>いくつかの設定項目は次のログインまで反映されません。</translation>
     </message>
@@ -235,17 +245,17 @@
         <translation>個人ファイルの場所</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="185"/>
+        <location filename="../userlocationspage.cpp" line="184"/>
         <source>LXQt Session Settings - User Directories</source>
         <translation>LXQt セッションの設定 - ユーザーディレクトリ</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="186"/>
+        <location filename="../userlocationspage.cpp" line="185"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
         <translation>%1 の場所の設定を適用している間にエラーが発生しました</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="202"/>
+        <location filename="../userlocationspage.cpp" line="201"/>
         <source>Choose Location</source>
         <translation>場所の選択</translation>
     </message>

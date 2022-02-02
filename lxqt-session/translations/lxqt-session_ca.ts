@@ -4,12 +4,12 @@
 <context>
     <name>LXQtModuleManager</name>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="311"/>
+        <location filename="../src/lxqtmodman.cpp" line="303"/>
         <source>Crash Report</source>
         <translation>Informació de col·lisió</translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="312"/>
+        <location filename="../src/lxqtmodman.cpp" line="304"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; s&apos;ha estavellat moltes vegades. Els seus reinicis automàtics han estat inhabilitats fins al següent inici de sessió.</translation>
     </message>

@@ -80,12 +80,12 @@
         <translation>Anwendung-Autostart</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="143"/>
+        <location filename="../autostartpage.cpp" line="142"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="143"/>
+        <location filename="../autostartpage.cpp" line="142"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>Datei &apos;%1&apos; existiert bereits!</translation>
     </message>
@@ -123,32 +123,42 @@
         <translation>Anhalten</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="124"/>
+        <location filename="../basicsettings.ui" line="111"/>
+        <source>Global Screen Scaling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="123"/>
+        <source>Scale factor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="162"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>Bildschirm vor dem Wechsel in Bereitschaft/Ruhezustand sperren</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="131"/>
+        <location filename="../basicsettings.ui" line="169"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>Bereitschaft/Ruhezustand nach einer Sperrverzögerung:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="144"/>
+        <location filename="../basicsettings.ui" line="182"/>
         <source> ms</source>
         <translation> ms</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="156"/>
+        <location filename="../basicsettings.cpp" line="176"/>
         <source>Select a window manager</source>
         <translation>Fensterverwaltung auswählen</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="111"/>
+        <location filename="../basicsettings.ui" line="149"/>
         <source>Leave Session</source>
         <translation>Sitzung verlassen</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="117"/>
+        <location filename="../basicsettings.ui" line="155"/>
         <source>Ask for confirmation to leave session</source>
         <translation>Nach Bestätigung zum Verlassen der Sitzung fragen</translation>
     </message>
@@ -217,12 +227,12 @@
         <translation>Umgebung (Erweitert)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="87"/>
+        <location filename="../sessionconfigwindow.cpp" line="91"/>
         <source>Session Restart Required</source>
         <translation>Sitzungsneustart erforderlich</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="88"/>
+        <location filename="../sessionconfigwindow.cpp" line="92"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>Einige Einstellungen werden erst bei der nächsten Anmeldung wirksam.</translation>
     </message>
@@ -235,17 +245,17 @@
         <translation>Speicherorte für persönliche Dateien</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="185"/>
+        <location filename="../userlocationspage.cpp" line="184"/>
         <source>LXQt Session Settings - User Directories</source>
         <translation>LXQt-Sitzungseinstellungen - Benutzerverzeichnisse</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="186"/>
+        <location filename="../userlocationspage.cpp" line="185"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
         <translation>Beim Anwenden der Einstellungen für den Speicherort %1 ist ein Fehler aufgetreten</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="202"/>
+        <location filename="../userlocationspage.cpp" line="201"/>
         <source>Choose Location</source>
         <translation>Speicherort auswählen</translation>
     </message>

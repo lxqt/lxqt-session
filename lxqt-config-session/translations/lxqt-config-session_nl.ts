@@ -80,12 +80,12 @@
         <translation>Programma&apos;s automatisch opstarten</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="143"/>
+        <location filename="../autostartpage.cpp" line="142"/>
         <source>Error</source>
         <translation>Foutmelding</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="143"/>
+        <location filename="../autostartpage.cpp" line="142"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>&apos;%1&apos; bestaat al!</translation>
     </message>
@@ -123,32 +123,42 @@
         <translation>Stoppen</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="124"/>
+        <location filename="../basicsettings.ui" line="111"/>
+        <source>Global Screen Scaling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="123"/>
+        <source>Scale factor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="162"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>Scherm vergrendelen alvorens in pauze- of slaapstand te gaan</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="131"/>
+        <location filename="../basicsettings.ui" line="169"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>Pauzestand/Winterstand na vergrendelvertraging:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="144"/>
+        <location filename="../basicsettings.ui" line="182"/>
         <source> ms</source>
         <translation> ms</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="156"/>
+        <location filename="../basicsettings.cpp" line="176"/>
         <source>Select a window manager</source>
         <translation>Kies een vensterbeheerder</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="111"/>
+        <location filename="../basicsettings.ui" line="149"/>
         <source>Leave Session</source>
         <translation>Sessie beëindigen</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="117"/>
+        <location filename="../basicsettings.ui" line="155"/>
         <source>Ask for confirmation to leave session</source>
         <translation>Vragen om bevestiging bij beëindigen van sessie</translation>
     </message>
@@ -217,12 +227,12 @@
         <translation>Omgeving (voor ervaren gebruikers)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="87"/>
+        <location filename="../sessionconfigwindow.cpp" line="91"/>
         <source>Session Restart Required</source>
         <translation>Herstart van sessie vereist</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="88"/>
+        <location filename="../sessionconfigwindow.cpp" line="92"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>Sommige instellingen worden pas toegepast na de volgende aanmelding.</translation>
     </message>
@@ -235,17 +245,17 @@
         <translation>Opslaglocaties van persoonlijke bestanden</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="185"/>
+        <location filename="../userlocationspage.cpp" line="184"/>
         <source>LXQt Session Settings - User Directories</source>
         <translation>LXQt-sessie-instellingen - Gebruikersmappen</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="186"/>
+        <location filename="../userlocationspage.cpp" line="185"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
         <translation>Er is een fout opgetreden bij het toepassen van de instellingen van de locatie &apos;%1&apos;</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="202"/>
+        <location filename="../userlocationspage.cpp" line="201"/>
         <source>Choose Location</source>
         <translation>Kies een locatie</translation>
     </message>

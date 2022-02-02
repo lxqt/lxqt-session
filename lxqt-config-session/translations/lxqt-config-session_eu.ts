@@ -80,12 +80,12 @@
         <translation>Aplikazioaren autoabioa</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="143"/>
+        <location filename="../autostartpage.cpp" line="142"/>
         <source>Error</source>
         <translation>Errorea</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="143"/>
+        <location filename="../autostartpage.cpp" line="142"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>&apos;%1&apos; fitxategia dagoeneko existitzen da!</translation>
     </message>
@@ -109,26 +109,36 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
+        <source>Global Screen Scaling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="123"/>
+        <source>Scale factor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="149"/>
         <source>Leave Session</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="117"/>
+        <location filename="../basicsettings.ui" line="155"/>
         <source>Ask for confirmation to leave session</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="124"/>
+        <location filename="../basicsettings.ui" line="162"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="131"/>
+        <location filename="../basicsettings.ui" line="169"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="144"/>
+        <location filename="../basicsettings.ui" line="182"/>
         <source> ms</source>
         <translation type="unfinished"></translation>
     </message>
@@ -148,7 +158,7 @@
         <translation>Gelditu</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="156"/>
+        <location filename="../basicsettings.cpp" line="176"/>
         <source>Select a window manager</source>
         <translation>Hautatu leiho-kudeatzaile bat</translation>
     </message>
@@ -217,12 +227,12 @@
         <translation>Ingurunea (aurreratua)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="87"/>
+        <location filename="../sessionconfigwindow.cpp" line="91"/>
         <source>Session Restart Required</source>
         <translation>Saioa berrabiarazi behar da</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="88"/>
+        <location filename="../sessionconfigwindow.cpp" line="92"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -235,17 +245,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="185"/>
+        <location filename="../userlocationspage.cpp" line="184"/>
         <source>LXQt Session Settings - User Directories</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="186"/>
+        <location filename="../userlocationspage.cpp" line="185"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="202"/>
+        <location filename="../userlocationspage.cpp" line="201"/>
         <source>Choose Location</source>
         <translation type="unfinished"></translation>
     </message>
