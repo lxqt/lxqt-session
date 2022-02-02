@@ -11,7 +11,7 @@
     <message>
         <location filename="../autostartedit.ui" line="20"/>
         <source>Name:</source>
-        <translation>Nom :</translation>
+        <translation>Nom&#x202f;:</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="27"/>
@@ -21,7 +21,7 @@
     <message>
         <location filename="../autostartedit.ui" line="47"/>
         <source>Command:</source>
-        <translation>Comanda :</translation>
+        <translation>Comanda&#x202f;:</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="57"/>
@@ -49,12 +49,12 @@
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
         <source>Location: %1</source>
-        <translation>Emplaçament : %1</translation>
+        <translation>Emplaçament&#x202f;: %1</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>Remplaçament : %1</translation>
+        <translation>Remplaçament&#x202f;: %1</translation>
     </message>
 </context>
 <context>
@@ -80,14 +80,14 @@
         <translation>Aviada automatica d’aplicacion</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="143"/>
+        <location filename="../autostartpage.cpp" line="142"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="143"/>
+        <location filename="../autostartpage.cpp" line="142"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>Lo fichièr « %1 » existís ja !</translation>
+        <translation>Lo fichièr «&#x202f;%1&#x202f;» existís ja&#x202f;!</translation>
     </message>
 </context>
 <context>
@@ -124,31 +124,41 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
+        <source>Global Screen Scaling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="123"/>
+        <source>Scale factor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="149"/>
         <source>Leave Session</source>
         <translation>Quitar la session</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="117"/>
+        <location filename="../basicsettings.ui" line="155"/>
         <source>Ask for confirmation to leave session</source>
         <translation>Demandar la confirmacion per quitar la session</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="124"/>
+        <location filename="../basicsettings.ui" line="162"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>Verrolhar l’ecran abans de suspendre/ivernar</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="131"/>
+        <location filename="../basicsettings.ui" line="169"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation>Suspendre/Ivernar aprèp lo relambi de verrolhatge :</translation>
+        <translation>Suspendre/Ivernar aprèp lo relambi de verrolhatge&#x202f;:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="144"/>
+        <location filename="../basicsettings.ui" line="182"/>
         <source> ms</source>
         <translation> ms</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="156"/>
+        <location filename="../basicsettings.cpp" line="176"/>
         <source>Select a window manager</source>
         <translation>Seleccionar un gestionari de fenèstras</translation>
     </message>
@@ -217,12 +227,12 @@
         <translation>Environament (avançat)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="87"/>
+        <location filename="../sessionconfigwindow.cpp" line="91"/>
         <source>Session Restart Required</source>
         <translation>Reaviada de session requerit</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="88"/>
+        <location filename="../sessionconfigwindow.cpp" line="92"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>D’unes paramètres seràn sonque preses en compte a la session venenta.</translation>
     </message>
@@ -235,17 +245,17 @@
         <translation>Emplaçament dels fichièrs personalas</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="185"/>
+        <location filename="../userlocationspage.cpp" line="184"/>
         <source>LXQt Session Settings - User Directories</source>
         <translation>Paramètres de LXQt - Repertòris utilizaire</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="186"/>
+        <location filename="../userlocationspage.cpp" line="185"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
         <translation>S&apos;es producha una error pendent l’aplicacion dels paramètres per l’emplaçament %1</translation>
     </message>
     <message>
-        <location filename="../userlocationspage.cpp" line="202"/>
+        <location filename="../userlocationspage.cpp" line="201"/>
         <source>Choose Location</source>
         <translation>Causir un emplaçament</translation>
     </message>
