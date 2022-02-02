@@ -80,7 +80,7 @@ void EnvironmentPage::save()
 
     m_settings->beginGroup(QL1S("Environment"));
 
-    /* We erase the Enviroment group and them write the Ui settings. To know if
+    /* We erase the Enviroment group and then write the Ui settings. To know if
        they changed or not we need to save them to memory.
      */
     const auto keys = m_settings->childKeys();
@@ -152,3 +152,12 @@ void EnvironmentPage::updateItem(const QString& var, const QString& val)
             delete item;
     }
 }
+
+void EnvironmentPage::updateScaleFactor()
+{
+    m_settings->beginGroup(QL1S("Environment"));
+    updateItem(QL1S("QT_SCALE_FACTOR"), m_settings->value(QL1S("QT_SCALE_FACTOR"), 1).toString());
+    updateItem(QL1S("GDK_SCALE"), m_settings->value(QL1S("GDK_SCALE"), 1).toString());
+    m_settings->endGroup();
+}
+
