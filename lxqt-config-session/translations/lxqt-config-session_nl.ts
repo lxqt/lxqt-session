@@ -87,7 +87,7 @@
     <message>
         <location filename="../autostartpage.cpp" line="142"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>&apos;%1&apos; bestaat al!</translation>
+        <translation>‘%1’ bestaat al!</translation>
     </message>
 </context>
 <context>
@@ -125,12 +125,12 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished"></translation>
+        <translation>Globale beeldgrootte</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="123"/>
         <source>Scale factor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Beeldgrootte:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="162"/>
@@ -252,7 +252,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>An error ocurred while applying the settings for the %1 location</source>
-        <translation>Er is een fout opgetreden bij het toepassen van de instellingen van de locatie &apos;%1&apos;</translation>
+        <translation>Er is een fout opgetreden bij het toepassen van de instellingen van de locatie ‘%1’</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="201"/>
