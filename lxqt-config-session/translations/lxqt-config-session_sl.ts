@@ -100,7 +100,7 @@
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation>Iskanje ...</translation>
+        <translation>Iskanje...</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="59"/>
@@ -110,12 +110,12 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished"></translation>
+        <translation>Globalno merilo zaslona</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="123"/>
         <source>Scale factor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Merilni faktor:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="149"/>

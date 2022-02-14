@@ -120,12 +120,12 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished"></translation>
+        <translation>전역 화면 크기조정</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="123"/>
         <source>Scale factor:</source>
-        <translation type="unfinished"></translation>
+        <translation>배율:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="149"/>
