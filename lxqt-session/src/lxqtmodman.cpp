@@ -84,7 +84,8 @@ void LXQtModuleManager::startup(LXQt::Settings& s)
     startConfUpdate();
 
     // Start window manager
-    startWm(&s);
+    if (!startWm(&s))
+        return;
 
     startAutostartApps();
 
@@ -176,14 +177,14 @@ void LXQtModuleManager::themeChanged()
     }
 }
 
-void LXQtModuleManager::startWm(LXQt::Settings *settings)
+bool LXQtModuleManager::startWm(LXQt::Settings *settings)
 {
     // if the WM is active do not run WM.
     // all window managers must set their name according to the spec
     if (!QString::fromUtf8(NETRootInfo(QX11Info::connection(), NET::SupportingWMCheck).wmName()).isEmpty())
     {
         mWmStarted = true;
-        return;
+        return true;
     }
 
     if (mWindowManager.isEmpty())
@@ -195,6 +196,8 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
     if (mWindowManager.isEmpty() || ! findProgram(mWindowManager.split(QL1C(' '))[0]))
     {
         mWindowManager = showWmSelectDialog();
+        if (mWindowManager.isEmpty())
+            return false;
         settings->setValue(QL1S("window_manager"), mWindowManager);
         settings->sync();
     }
@@ -213,6 +216,7 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
     // FIXME: blocking is a bad idea. We need to start as many apps as possible and
     //         only wait for the start of WM when it's absolutely needed.
     //         Maybe we can add a X-Wait-WM=true key in the desktop entry file?
+    return true;
 }
 
 void LXQtModuleManager::startProcess(const XdgDesktopFile& file)
@@ -390,7 +394,11 @@ QString LXQtModuleManager::showWmSelectDialog()
 
     WmSelectDialog dlg(availableWM);
     dlg.exec();
-    return dlg.windowManager();
+    if (dlg.result() == QDialog::Accepted)
+        return dlg.windowManager();
+
+    QCoreApplication::exit(1);
+    return QString{};
 }
 
 void LXQtModuleManager::resetCrashReport()

@@ -107,7 +107,7 @@ signals:
 
 private:
     //! \brief Start Window Manager
-    void startWm(LXQt::Settings *settings);
+    bool startWm(LXQt::Settings *settings);
     void wmStarted();
 
     void startAutostartApps();
