@@ -110,12 +110,12 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Ingrandimento globale dello schermo</translation>
+        <translation>Ridimensionamento globale dello schermo</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="123"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Fattore di ingrandimento:</translation>
+        <translation>Fattore di ridimensionamento:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="149"/>
