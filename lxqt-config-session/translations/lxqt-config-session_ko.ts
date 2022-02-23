@@ -31,7 +31,7 @@
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
         <source>Select Application</source>
-        <translation>애플리케이션 선택</translation>
+        <translation>응용 프로그램 선택</translation>
     </message>
 </context>
 <context>
@@ -77,7 +77,7 @@
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>애플리케이션 자동 시작</translation>
+        <translation>응용 프로그램 자동 시작</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="142"/>
