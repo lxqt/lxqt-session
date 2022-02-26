@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>설정 파일 경로.</translation>
+        <translation>구성 파일 경로입니다.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
