@@ -29,6 +29,7 @@
 #include "ui_environmentpage.h"
 
 #include <LXQt/Globals>
+#include <QHeaderView>
 
 EnvironmentPage::EnvironmentPage(LXQt::Settings *settings, QWidget *parent) :
     QWidget(parent),
@@ -36,6 +37,9 @@ EnvironmentPage::EnvironmentPage(LXQt::Settings *settings, QWidget *parent) :
     ui(new Ui::EnvironmentPage)
 {
     ui->setupUi(this);
+
+    // give enough space to the first section of the header
+    ui->treeWidget->header()->resizeSection(0, ui->treeWidget->header()->sectionSizeHint(0));
 
     connect(ui->addButton,    &QPushButton::clicked,     this, &EnvironmentPage::addButton_clicked);
     connect(ui->deleteButton, &QPushButton::clicked,     this, &EnvironmentPage::deleteButton_clicked);
