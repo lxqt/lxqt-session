@@ -20,7 +20,7 @@ option(WITH_LIBUDEV "Build with libudev support" ON)
 
 # Minimum Versions
 set(KF5_MINIMUM_VERSION "5.36.0")
-set(LXQT_MINIMUM_VERSION "1.0.0")
+set(LXQT_MINIMUM_VERSION "1.1.0")
 set(QT_MINIMUM_VERSION "5.15.0")
 
 find_package(Qt5DBus ${QT_MINIMUM_VERSION} REQUIRED)
@@ -40,7 +40,7 @@ endif()
 find_package(XdgUserDirs REQUIRED)
 
 # Patch Version
-set(LXQT_SESSION_PATCH_VERSION 1)
+set(LXQT_SESSION_PATCH_VERSION 0)
 
 set(LXQT_SESSION_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_SESSION_PATCH_VERSION})
 add_definitions(

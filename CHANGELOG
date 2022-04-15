@@ -1,3 +1,13 @@
+lxqt-session-1.1.0 / 2022-04-15
+================================
+ * Removed obsolete kdm session file.
+ * Add NetBSD support.
+ * Fixed typos in procreaper warning messages.
+ * Added an option for global screen scaling.
+ * Changed default icon theme to breeze .
+ * Prevented cut text in header of Environment page.
+ * Set Clearlooks as the default LXQt theme.
+
 lxqt-session-1.0.1 / 2022-01-01
 ================================
  * Restart failed modules with exit codes other than 0.
