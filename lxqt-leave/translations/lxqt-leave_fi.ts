@@ -16,12 +16,12 @@
     <message>
         <location filename="../leavedialog.cpp" line="55"/>
         <source>Logout</source>
-        <translation>Kirjaudu Ulos</translation>
+        <translation>Kirjaudu ulos</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="73"/>
         <source>Reboot</source>
-        <translation>Käynnistä Uudelleen</translation>
+        <translation>Käynnistä uudelleen</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="60"/>
@@ -36,7 +36,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="70"/>
         <source>Lock screen</source>
-        <translation>Lukitse Näyttö</translation>
+        <translation>Lukitse näyttö</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="78"/>

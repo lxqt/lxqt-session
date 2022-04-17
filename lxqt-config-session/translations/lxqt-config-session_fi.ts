@@ -44,7 +44,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation>LXQtin automaattikäynnistys</translation>
+        <translation>LXQt:n automaattikäynnistys</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
@@ -110,12 +110,12 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished"></translation>
+        <translation>Yleinen näytön skaalaus</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="123"/>
         <source>Scale factor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skaalauskerroin:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="149"/>
