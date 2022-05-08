@@ -1,3 +1,7 @@
+lxqt-session-1.1.1 / 2022-05-08
+================================
+ * Added `qtxdg-tools` as a dependency (to be used by `xdg-utils` under LXQt Session).
+
 lxqt-session-1.1.0 / 2022-04-15
 ================================
  * Removed obsolete kdm session file.
