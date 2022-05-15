@@ -30,7 +30,7 @@
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation>사용할 창 관리자.</translation>
+        <translation>사용할 창 관리자입니다.</translation>
     </message>
 </context>
 <context>
@@ -43,7 +43,7 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation>즐겨 쓰실 것을 고르세요.</translation>
+        <translation>가장 마음에 드는 것을 고르세요.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
