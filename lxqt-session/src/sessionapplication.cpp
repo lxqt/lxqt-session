@@ -91,10 +91,11 @@ bool SessionApplication::startup()
                 //     but with such a little probablity we can live...
                 LXQt::Settings settings(configName);
                 loadKeyboardSettings(settings);
+                QProcess::startDetached(QStringLiteral("lxqt-config-input"), QStringList(QStringLiteral("--load-touchpad")));
             });
     connect(dev_notifier, &UdevNotifier::deviceAdded, this, [this, dev_timer] (QString device)
             {
-                qCWarning(SESSION) << QStringLiteral("Session '%1', new input device '%2', keyboard setting will be (optionaly) reloaded...").arg(configName,device);
+                qCWarning(SESSION) << QStringLiteral("Session '%1', new input device '%2', keyboard, mouse and touchpad settings will be (optionaly) reloaded...").arg(configName,device);
                 dev_timer->start();
             });
     // Detect display connection:
