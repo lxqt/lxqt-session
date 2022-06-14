@@ -140,12 +140,12 @@
     <message>
         <location filename="../basicsettings.ui" line="162"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>대기/최대 절전하기 전에 화면 잠그기</translation>
+        <translation>절전/최대절전 모드 전 화면 잠금</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="169"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation>대기/최대 절전하기 전 대기 시간:</translation>
+        <translation>잠금 지연 후 절전/최대절전 모드:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="182"/>

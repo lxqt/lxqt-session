@@ -7,7 +7,7 @@
         <location filename="../leavedialog.ui" line="20"/>
         <source>Leave</source>
         <translatorcomment>적절한 표현을 모르겠습니다.</translatorcomment>
-        <translation>떠나기</translation>
+        <translation>나가기</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="71"/>
@@ -32,7 +32,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="65"/>
         <source>Suspend</source>
-        <translation>절전</translation>
+        <translation>절전모드</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="70"/>
@@ -42,7 +42,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="78"/>
         <source>Hibernate</source>
-        <translation>최대 절전</translation>
+        <translation>최대 절전모드</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="51"/>
@@ -65,12 +65,12 @@
     <message>
         <location filename="../main.cpp" line="66"/>
         <source>Suspend.</source>
-        <translation>절전 모드입니다.</translation>
+        <translation>절전모드입니다.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="69"/>
         <source>Hibernate.</source>
-        <translation>최대 절전 모드입니다.</translation>
+        <translation>최대 절전모드입니다.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="72"/>
