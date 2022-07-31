@@ -130,7 +130,7 @@
     <message>
         <location filename="../basicsettings.ui" line="123"/>
         <source>Scale factor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skaleringsfaktor:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="149"/>
