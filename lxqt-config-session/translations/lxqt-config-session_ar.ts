@@ -125,12 +125,12 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished"></translation>
+        <translation>تحجيم الشاشة العالمي</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="123"/>
         <source>Scale factor:</source>
-        <translation type="unfinished"></translation>
+        <translation>عامل المقياس:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="149"/>
@@ -150,12 +150,12 @@
     <message>
         <location filename="../basicsettings.ui" line="169"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>التعليق/السبات بعد تأخير القفل:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="182"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ملي ثانية</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="176"/>
@@ -330,7 +330,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>المجلد الافتراضي لتحميل الموسيقى أو حفظها</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
