@@ -84,7 +84,8 @@ void LXQtModuleManager::startup(LXQt::Settings& s)
     startConfUpdate();
 
     // Start window manager
-    startWm(&s);
+    if(QX11Info::isPlatformX11())
+        startWm(&s);
 
     startAutostartApps();
 
