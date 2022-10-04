@@ -28,10 +28,8 @@
 #include <LXQt/Settings>
 #include <LXQt/Globals>
 #include <QProcess>
-#include "log.h"
-
 #include <QGuiApplication>
-#include <QDebug>
+#include "log.h"
 
 #include <QX11Info>
 // XKB, this should be disabled in Wayland?
@@ -81,8 +79,8 @@ bool SessionApplication::startup()
     loadEnvironmentSettings(settings);
     // loadFontSettings(settings);
 
-    if(QGuiApplication::platformName() == QStringLiteral("xcb")) {
-        // X11 session is started
+    if (QGuiApplication::platformName() == QStringLiteral("xcb"))
+    {
         loadKeyboardSettings(settings);
         loadMouseSettings(settings);
     }
@@ -94,11 +92,11 @@ bool SessionApplication::startup()
     dev_timer->setInterval(500); //give some time to xorg... we need to reset keyboard afterwards
     connect(dev_timer, &QTimer::timeout, this, [this]
             {
-                //XXX: is this a race? (because settings can be currently changed by lxqt-config-input)
-                //     but with such a little probablity we can live...
-                LXQt::Settings settings(configName);
-
-                if(QGuiApplication::platformName() == QStringLiteral("xcb")) {
+                if (QGuiApplication::platformName() == QStringLiteral("xcb"))
+                {
+                    //XXX: is this a race? (because settings can be currently changed by lxqt-config-input)
+                    //     but with such a little probablity we can live...
+                    LXQt::Settings settings(configName);
                     loadKeyboardSettings(settings);
                     QProcess::startDetached(QStringLiteral("lxqt-config-input"), QStringList(QStringLiteral("--load-touchpad")));
                 }
@@ -109,7 +107,7 @@ bool SessionApplication::startup()
                 dev_timer->start();
             });
     // Detect display connection:
-    // Intel i915 doesn't updates display status properly. The command xrandr must be run to 
+    // Intel i915 doesn't updates display status properly. The command xrandr must be run to
     // update display status or run:
     // # echo detect > status
     // at /sys/devices/pciXXX/drm/cardX/cardX-XXX
