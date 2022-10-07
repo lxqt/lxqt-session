@@ -33,7 +33,7 @@
 #include <XdgDirs>
 #include <unistd.h>
 
-#include <QCoreApplication>
+#include <QApplication>
 #include <QMessageBox>
 #include <QSystemTrayIcon>
 #include <QFileInfo>
@@ -84,7 +84,7 @@ void LXQtModuleManager::startup(LXQt::Settings& s)
     startConfUpdate();
 
     // Start window manager
-    if(QX11Info::isPlatformX11())
+    if (QGuiApplication::platformName() == QStringLiteral("xcb"))
         startWm(&s);
 
     startAutostartApps();
