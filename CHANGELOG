@@ -1,3 +1,8 @@
+lxqt-session-1.2.0 / 2022-11-05
+================================
+ * Fixed the core code when lxqt-session is started under Wayland.
+ * Reload mouse & touchpad settings when devices are reconnected.
+
 lxqt-session-1.1.1 / 2022-05-08
 ================================
  * Added `qtxdg-tools` as a dependency (to be used by `xdg-utils` under LXQt Session).
