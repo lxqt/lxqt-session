@@ -115,7 +115,7 @@
     <message>
         <location filename="../basicsettings.ui" line="123"/>
         <source>Scale factor:</source>
-        <translation>Facteur d&apos;échelle :</translation>
+        <translation>Facteur d&apos;échelle&#xa0;:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="149"/>
