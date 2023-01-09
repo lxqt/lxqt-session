@@ -35,7 +35,11 @@ find_package(X11 REQUIRED)
 message(STATUS "Building with Qt${Qt5Core_VERSION}")
 find_package(PkgConfig REQUIRED)
 if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
-    pkg_search_module(PROCPS REQUIRED libprocps)
+    pkg_search_module(PROCPS REQUIRED libproc2 libprocps)
+    message(STATUS "Using PROCPS -> ${PROCPS_MODULE_NAME} v${PROCPS_VERSION}")
+    if (PROCPS_VERSION VERSION_GREATER_EQUAL 4.0.0)
+        add_definitions("-DUSING_LIBPROC2")
+    endif()
 endif()
 
 # Please don't move, must be after lxqt
