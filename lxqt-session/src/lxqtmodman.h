@@ -67,7 +67,7 @@ Processes in LXQtModuleManager are started as follows:
 Potential process recovering is done in \see restartModules()
 */
 
-class LXQtModuleManager : public QObject, public QAbstractNativeEventFilter
+class LXQtModuleManager : public QObject
 {
     Q_OBJECT
 
@@ -90,9 +90,6 @@ public:
 
     //! \brief Read configuration and start processes
     void startup(LXQt::Settings& s);
-
-    // Qt5 uses native event filter
-    bool nativeEventFilter(const QByteArray & eventType, void * message, long * result) override;
 
 public slots:
     /*! \brief Exit LXQt session.
@@ -138,10 +135,6 @@ private:
     //! \brief file system watcher to react on theme modifications
     QFileSystemWatcher *mThemeWatcher;
     QString mCurrentThemePath;
-
-    bool mWmStarted;
-    bool mTrayStarted;
-    QEventLoop* mWaitLoop;
 
     ProcReaper mProcReaper;
 

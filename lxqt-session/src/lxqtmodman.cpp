@@ -41,6 +41,7 @@
 #include <QDir>
 #include <QFileSystemWatcher>
 #include <QDateTime>
+#include <QPointer>
 #include "wmselectdialog.h"
 #include "windowmanager.h"
 #include <wordexp.h>
@@ -61,15 +62,11 @@ using namespace LXQt;
 LXQtModuleManager::LXQtModuleManager(QObject* parent)
     : QObject(parent),
       mWmProcess(new QProcess(this)),
-      mThemeWatcher(new QFileSystemWatcher(this)),
-      mWmStarted(false),
-      mTrayStarted(false),
-      mWaitLoop(nullptr)
+      mThemeWatcher(new QFileSystemWatcher(this))
 {
     connect(mThemeWatcher, &QFileSystemWatcher::directoryChanged, this, &LXQtModuleManager::themeFolderChanged);
     connect(LXQt::Settings::globalSettings(), &LXQt::GlobalSettings::lxqtThemeChanged, this, &LXQtModuleManager::themeChanged);
 
-    qApp->installNativeEventFilter(this);
     mProcReaper.start();
 }
 
@@ -121,21 +118,33 @@ void LXQtModuleManager::startAutostartApps()
 
     if (!trayApps.isEmpty())
     {
-        mTrayStarted = QSystemTrayIcon::isSystemTrayAvailable();
-        if(!mTrayStarted)
-        {
-            QEventLoop waitLoop;
-            mWaitLoop = &waitLoop;
-            // add a timeout to avoid infinite blocking if a WM fail to execute.
-            QTimer::singleShot(60 * 1000, &waitLoop, SLOT(quit()));
-            waitLoop.exec();
-            mWaitLoop = nullptr;
-        }
-        for (const XdgDesktopFile* const f : qAsConst(trayApps))
-        {
-            qCDebug(SESSION) << "start tray app" << f->fileName();
-            startProcess(*f);
-        }
+        QPointer<QTimer> t{new QTimer};
+        auto starter = [this, fileList, trayApps, t] (const bool forceStart = false) {
+            if (!t)
+                return;
+
+            if (QSystemTrayIcon::isSystemTrayAvailable())
+                qCDebug(SESSION) << "System Tray started";
+            else if (forceStart)
+                qCWarning(SESSION) << "System Tray haven't stared yet! Starting tray apps anyway...";
+            else
+                return;
+
+            QScopedPointer<QTimer> releaser{t};
+            for (const XdgDesktopFile* const f : qAsConst(trayApps))
+            {
+                qCDebug(SESSION) << "start tray app" << f->fileName();
+                startProcess(*f);
+            }
+            t->stop();
+        };
+        connect(t, &QTimer::timeout, this, starter);
+        t->setSingleShot(false);
+        t->start(1000);
+        // try to start instantly, no need to wait the 1st sec
+        starter();
+        // start the apps anyway after a timeout
+        QTimer::singleShot(15 * 1000, this, std::bind(starter, true));
     }
 }
 
@@ -183,7 +192,6 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
     // all window managers must set their name according to the spec
     if (!QString::fromUtf8(NETRootInfo(QX11Info::connection(), NET::SupportingWMCheck).wmName()).isEmpty())
     {
-        mWmStarted = true;
         return;
     }
 
@@ -206,11 +214,22 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
 
     // Wait until the WM loads
     QEventLoop waitLoop;
-    mWaitLoop = &waitLoop;
+    auto checker = [&waitLoop] {
+        // all window managers must set their name according to the spec
+        if (!QString::fromUtf8(NETRootInfo(QX11Info::connection(), NET::SupportingWMCheck).wmName()).isEmpty())
+        {
+            qCDebug(SESSION) << "Window Manager started";
+            waitLoop.exit();
+        }
+    };
+    QTimer t;
+    connect(&t, &QTimer::timeout, this, checker);
+    t.setSingleShot(false);
+    t.start(500);
     // add a timeout to avoid infinite blocking if a WM fail to execute.
-    QTimer::singleShot(30 * 1000, &waitLoop, SLOT(quit()));
+    QTimer::singleShot(30 * 1000, &waitLoop, &QEventLoop::quit);
+    // Note: the timer object is destructed sooner than the wait loop upon finishing this method
     waitLoop.exec();
-    mWaitLoop = nullptr;
     // FIXME: blocking is a bad idea. We need to start as many apps as possible and
     //         only wait for the start of WM when it's absolutely needed.
     //         Maybe we can add a X-Wait-WM=true key in the desktop entry file?
@@ -320,8 +339,6 @@ void LXQtModuleManager::restartModules(int exitCode, QProcess::ExitStatus exitSt
 
 LXQtModuleManager::~LXQtModuleManager()
 {
-    qApp->removeNativeEventFilter(this);
-
     // We disconnect the finished signal before deleting the process. We do
     // this to prevent a crash that results from a state change signal being
     // emmited while deleting a crashing module.
@@ -397,37 +414,6 @@ QString LXQtModuleManager::showWmSelectDialog()
 void LXQtModuleManager::resetCrashReport()
 {
     mCrashReport.clear();
-}
-
-bool LXQtModuleManager::nativeEventFilter(const QByteArray & eventType, void * /*message*/, long * /*result*/)
-{
-    if (eventType != "xcb_generic_event_t") // We only want to handle XCB events
-        return false;
-
-    if(!mWmStarted && mWaitLoop)
-    {
-        // all window managers must set their name according to the spec
-        if (!QString::fromUtf8(NETRootInfo(QX11Info::connection(), NET::SupportingWMCheck).wmName()).isEmpty())
-        {
-            qCDebug(SESSION) << "Window Manager started";
-            mWmStarted = true;
-            if (mWaitLoop->isRunning())
-                mWaitLoop->exit();
-        }
-    }
-
-    if (!mTrayStarted && QSystemTrayIcon::isSystemTrayAvailable() && mWaitLoop)
-    {
-        qCDebug(SESSION) << "System Tray started";
-        mTrayStarted = true;
-        if (mWaitLoop->isRunning())
-            mWaitLoop->exit();
-
-        // window manager and system tray have started
-        qApp->removeNativeEventFilter(this);
-    }
-
-    return false;
 }
 
 void lxqt_setenv(const char *env, const QByteArray &value)
