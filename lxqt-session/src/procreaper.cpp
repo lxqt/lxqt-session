@@ -29,7 +29,11 @@
 #include "log.h"
 #if defined(Q_OS_LINUX)
 #include <sys/prctl.h>
-#include <proc/readproc.h>
+# if defined(USING_LIBPROC2)
+#  include <libproc2/pids.h>
+# else
+#  include <proc/readproc.h>
+# endif
 #elif defined(Q_OS_FREEBSD)
 #include <sys/procctl.h>
 #include <libutil.h>
@@ -109,6 +113,23 @@ void ProcReaper::stop(const std::set<int64_t> & excludedPids)
     const pid_t my_pid = ::getpid();
     std::vector<pid_t> children;
 #if defined(Q_OS_LINUX)
+# if defined(USING_LIBPROC2)
+    constexpr pids_item items[] = { PIDS_ID_PPID, PIDS_ID_TGID };
+    enum rel_items { rel_ppid, rel_tgid };
+    pids_info * info = nullptr;
+    procps_pids_new(&info, const_cast<pids_item *>(items), sizeof(items) / sizeof(pids_item));
+    pids_stack * stack = nullptr;
+    while ((stack = procps_pids_get(info, PIDS_FETCH_TASKS_ONLY)))
+    {
+        const int ppid = PIDS_VAL(rel_ppid, s_int, stack, info);
+        if (ppid == my_pid)
+        {
+            const int tgid = PIDS_VAL(rel_tgid, s_int, stack, info);
+            children.push_back(tgid);
+        }
+    }
+    procps_pids_unref(&info);
+# else
     PROCTAB * proc_dir = ::openproc(PROC_FILLSTAT);
     while (proc_t * proc = ::readproc(proc_dir, nullptr))
     {
@@ -119,6 +140,7 @@ void ProcReaper::stop(const std::set<int64_t> & excludedPids)
         ::freeproc(proc);
     }
     ::closeproc(proc_dir);
+# endif
 #elif defined(Q_OS_FREEBSD)
     int cnt = 0;
     if (kinfo_proc *proc_info = kinfo_getallproc(&cnt))
