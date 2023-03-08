@@ -32,7 +32,7 @@ lxqt-session-0.17.1 / 2021-04-16
 
 lxqt-session-0.17.0 / 2021-04-15
 ================================
-  * Code cleanup and modernization (use const references where possible, fix possible use of uninitialized variables, removing deprectaed methods, etc.).
+  * Code cleanup and modernization (use const references where possible, fix possible use of uninitialized variables, removing deprecated methods, etc.).
   * Remove Openbox configuration for WM agnosticism.
   * Completely moved to Qt5 signal/slot syntax.
   * Become subreaper and end children on finishing session.
@@ -50,7 +50,7 @@ lxqt-session-0.15.0 / 2020-04-22
   * Removed redundant variable SAL_USE_VCLPLUGIN from startlxqt.
   * Fixed lxqt-session memory leak (triggered by wine and specific games).
   * Remove deprecated QDesktopWidget.
-  * Corrected dialog location with muti-screen setups.
+  * Corrected dialog location with multi-screen setups.
 
 lxqt-session-0.14.1 / 2019-02-25
 ================================
@@ -73,7 +73,7 @@ lxqt-session-0.14.0 / 2019-01-25
       more reliable
   * Improved cmake scripting
     - Set cmake_minimum_required to 3.1.0
-    - Removed locale compile definitons
+    - Removed locale compile definitions
   * Moved translations from lxqt-l10n back to lxqt-session
     - Removed obsolete translation fuctionality
     - Added translation promo in README.md
@@ -140,7 +140,7 @@ lxqt-session-0.12.0 / 2017-10-21
   * startlxqt: Consider LXQT_DEFAULT_OPENBOX_CONFIG
   * startlxqt: Honor the pre-defined SAL_USE_VLCPLUGIN
   * Replace lxqt-rc.xml with latest openbox version
-  * startlxqt: Consider pre-exising LXDE OB config also
+  * startlxqt: Consider pre-existing LXDE OB config also
   * build: Revert @6d6d2bef54
   * build: Add xmessage as "dependency"
   * Openbox: Fix informational message about adoption of rc.xml
@@ -177,7 +177,7 @@ lxqt-session-0.12.0 / 2017-10-21
   * Sets env variable XDG_CONFIG_DIRS
   * Drops hardcoded /etc/xdg paths
   * Set LibreOffice's plugin env var to kde4
-  * config: auto-detect succesfully kwin on recent kwin versions
+  * config: auto-detect successfully kwin on recent kwin versions
   * Updated german translation, replaced Qt4 by Qt in all xsession/translations
   * Adds an scalable start-here-lxqt icon
   * use LXQt-specific menu file
@@ -201,7 +201,7 @@ lxqt-session-0.12.0 / 2017-10-21
   * Add CPack rules for creating tarball
   * Add session.conf and windowmanagers.conf.
   * Change XDG_CURRENT_DESKTOP to Razor for now. (May rename to LxQt or something else in the future.)
-  * Export environment varialbe QT_PLATFORM_PLUGIN=lxqt to let all Qt programs load lxqt-qtplugin and apply lxqt settings.
+  * Export environment variable QT_PLATFORM_PLUGIN=lxqt to let all Qt programs load lxqt-qtplugin and apply lxqt settings.
   * Support lxqt-session and add necessary xdg autostart desktop entry files.
   * Run lxde-qt with XDG_CURRENT_DESKTOP=RAZOR
   * Fix renaming bugs, replacing lxqt-qt with lxde-qt
@@ -267,7 +267,7 @@ lxqt-session-0.11.0 / 2016-09-24
   * lxqt-leave: Make all buttons of equal width
   * lxqt-leave: Center the dialog relative to the screen
   * lxqt-leave: Removes window border and makes it stay on top
-  * lxqt-leave: Make the icons bigger and improves button alignement
+  * lxqt-leave: Make the icons bigger and improves button alignment
   * Updated german translation.
   * Fix realloc() usage Check malloc() call result against NULL
   * Add HR translations
@@ -347,7 +347,7 @@ lxqt-session-0.10.0 / 2015-10-31
   * Better C++11 detection
   * Set C++11 to lxqt-session and add leave dialog
   * Add KDevelop 4 format to .gitignore
-  * lxqtleave: *.dekstop translations cleanup
+  * lxqtleave: *.desktop translations cleanup
   * Update Russian translation
   * Create lxqt-suspend_it.desktop
   * Moves lxqt-lockscreen_it.desktop to the proper place
@@ -517,7 +517,7 @@ lxqt-session-0.6.99 / 2014-05-01
   * add razor-policykit-agent into config
   * prevent the forever autorestart of still-crashing-app in the session. The count of crashes is limited now.
   * Relicense
-  * XdgAutoStart rewriten (lgpl2+)
+  * XdgAutoStart rewritten (lgpl2+)
   * Fix gmail.ru -> gmail.com
   * menus are adopted to the new backends; old code removed; check for running razor-session to allow/disallow "logout" item
   * Sawfish DE
@@ -567,10 +567,10 @@ lxqt-session-0.6.99 / 2014-05-01
   * issue #37 config list widgets: no dnd, no editation
   * config tools are registered in config center; desktop file for CC
   * "pause" session for a while until all razor modules are set up and running
-  * Fixed incorrect incude <razorqt/xdgicon.h>
+  * Fixed incorrect include <razorqt/xdgicon.h>
   * session config: missing actions
   * initial version of "session config". In progress.
-  * XDG-files are splitted into qtxdg library.
+  * XDG-files are split into qtxdg library.
   * implementation of issue #19: environment variables for razor-session
   * The project uses RazorTheme. All except the desktop, switched to RazorSettings.
   * initial support for screensaver/screen locking

@@ -103,7 +103,7 @@ bool SessionApplication::startup()
             });
     connect(dev_notifier, &UdevNotifier::deviceAdded, this, [this, dev_timer] (QString device)
             {
-                qCWarning(SESSION) << QStringLiteral("Session '%1', new input device '%2', keyboard, mouse and touchpad settings will be (optionaly) reloaded...").arg(configName,device);
+                qCWarning(SESSION) << QStringLiteral("Session '%1', new input device '%2', keyboard, mouse and touchpad settings will be (optionally) reloaded...").arg(configName,device);
                 dev_timer->start();
             });
     // Detect display connection:
