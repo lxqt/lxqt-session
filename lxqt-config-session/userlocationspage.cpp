@@ -182,7 +182,7 @@ void UserLocationsPage::save()
             if (!ok) {
                 const int ret = QMessageBox::warning(this,
                     tr("LXQt Session Settings - User Directories"),
-                    tr("An error ocurred while applying the settings for the %1 location").arg(QCoreApplication::translate("UserLocationsPrivate", d->locationsName[i])),
+                    tr("An error occurred while applying the settings for the %1 location").arg(QCoreApplication::translate("UserLocationsPrivate", d->locationsName[i])),
                     QMessageBox::Ok);
                 Q_UNUSED(ret);
             }
