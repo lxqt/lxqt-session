@@ -145,7 +145,7 @@
     <message>
         <location filename="../basicsettings.ui" line="162"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>サスペンド/ハイバネートの前に画面をロックする　　　　　　</translation>
+        <translation>サスペンド/ハイバネートの前に画面をロックする&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="169"/>
@@ -251,7 +251,7 @@
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
-        <source>An error ocurred while applying the settings for the %1 location</source>
+        <source>An error occurred while applying the settings for the %1 location</source>
         <translation>%1 の場所の設定を適用している間にエラーが発生しました</translation>
     </message>
     <message>

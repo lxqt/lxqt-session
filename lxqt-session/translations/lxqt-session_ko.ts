@@ -4,12 +4,12 @@
 <context>
     <name>LXQtModuleManager</name>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="304"/>
+        <location filename="../src/lxqtmodman.cpp" line="323"/>
         <source>Crash Report</source>
         <translation>충돌 보고서</translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="305"/>
+        <location filename="../src/lxqtmodman.cpp" line="324"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt;의 충돌이 여러 차례 생겼습니다. 다음 로그인 때 까지는 자동 시작이 되지 않습니다.</translation>
     </message>
