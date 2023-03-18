@@ -135,7 +135,7 @@
     <message>
         <location filename="../basicsettings.ui" line="169"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation>Siirry lepo/horrostilaan lukitus viiveen jälkeen:</translation>
+        <translation>Siirry valmius-/lepotilaan lukitusviiveen jälkeen:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="182"/>
