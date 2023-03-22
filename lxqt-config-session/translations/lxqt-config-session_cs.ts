@@ -252,7 +252,7 @@
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
-        <source>An error ocurred while applying the settings for the %1 location</source>
+        <source>An error occurred while applying the settings for the %1 location</source>
         <translation>Při uplatnění nastavení místa pro ukládání %1 se vyskytla chyba</translation>
     </message>
     <message>

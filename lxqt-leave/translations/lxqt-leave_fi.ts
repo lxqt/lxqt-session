@@ -31,7 +31,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="65"/>
         <source>Suspend</source>
-        <translation>Lepotila</translation>
+        <translation>Valmiustila</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="70"/>
@@ -41,7 +41,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="78"/>
         <source>Hibernate</source>
-        <translation>Horrostila</translation>
+        <translation>Lepotila</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="51"/>
@@ -64,12 +64,12 @@
     <message>
         <location filename="../main.cpp" line="66"/>
         <source>Suspend.</source>
-        <translation>Siirry lepotilaan.</translation>
+        <translation>Siirry valmiustilaan.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="69"/>
         <source>Hibernate.</source>
-        <translation>Siirry horrostilaan.</translation>
+        <translation>Siirry lepotilaan.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="72"/>

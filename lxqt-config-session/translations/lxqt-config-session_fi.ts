@@ -135,7 +135,7 @@
     <message>
         <location filename="../basicsettings.ui" line="169"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation>Siirry lepo/horrostilaan lukitus viiveen jälkeen:</translation>
+        <translation>Siirry valmius-/lepotilaan lukitusviiveen jälkeen:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="182"/>
@@ -251,7 +251,7 @@
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
-        <source>An error ocurred while applying the settings for the %1 location</source>
+        <source>An error occurred while applying the settings for the %1 location</source>
         <translation>Sijainnin %1 asetuksien käyttöönotossa tapahtui virhe</translation>
     </message>
     <message>

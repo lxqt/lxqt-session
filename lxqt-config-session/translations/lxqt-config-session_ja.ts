@@ -125,12 +125,12 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">グローバル画面スケーリング</translation>
+        <translation>グローバル画面スケーリング</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="123"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">スケール係数:</translation>
+        <translation>スケール係数:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="149"/>
@@ -251,7 +251,7 @@
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
-        <source>An error ocurred while applying the settings for the %1 location</source>
+        <source>An error occurred while applying the settings for the %1 location</source>
         <translation>%1 の場所の設定を適用している間にエラーが発生しました</translation>
     </message>
     <message>

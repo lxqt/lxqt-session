@@ -251,7 +251,7 @@
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
-        <source>An error ocurred while applying the settings for the %1 location</source>
+        <source>An error occurred while applying the settings for the %1 location</source>
         <translation>Seadistuste rakendamisel asukohale „%1“ tekkis viga</translation>
     </message>
     <message>
