@@ -33,7 +33,7 @@
 /*!
  * This private delegate does:
  * - returns unified sizeHint() -> maximum of all items in (list) model
- * - cahes the sizeHint() to not iterate over all items and checking their size
+ * - caches the sizeHint() to not iterate over all items and checking their size
  * - overrides decoration position to Qt::Top
  * - gives the items margins (increasing sizeHint()) ~~and mimics Button visual~~
  * - overrides painting the focus around the whole item (with the decoration)

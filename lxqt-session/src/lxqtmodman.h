@@ -1,7 +1,7 @@
 /* BEGIN_COMMON_COPYRIGHT_HEADER
  * (c)LGPL2+
  *
- * LXQt - a lightweight, Qt based, deskop environment
+ * LXQt - a lightweight, Qt based, desktop environment
  * https://lxqt.org/
  *
  * Copyright: 2010-2011 LXQt team
@@ -167,7 +167,7 @@ private slots:
 
 
 /*! \brief platform independent way how to set up an environment variable.
-It sets env variable for all lxqt-session childs.
+It sets env variable for all lxqt-session children.
 \param env a raw string variable name (PATH, TERM, ...)
 \param value a QByteArray with the value. Variable will use this new value only
              - no appending/prepending is performed.

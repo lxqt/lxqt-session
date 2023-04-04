@@ -55,7 +55,7 @@ AutoStartItemModel::~AutoStartItemModel()
 }
 
 /*
- * All actual file operations are perfomed here when the window is closed.
+ * All actual file operations are performed here when the window is closed.
  */
 bool AutoStartItemModel::writeChanges()
 {
@@ -239,7 +239,7 @@ Qt::ItemFlags AutoStartItemModel::flags(const QModelIndex& index) const
 }
 
 /*
- * Controls which buttons are enabled/disabled based on the selecton.
+ * Controls which buttons are enabled/disabled based on the selection.
  */
 AutoStartItemModel::ActiveButtons AutoStartItemModel::activeButtons(const QModelIndex& selection) const
 {

@@ -341,7 +341,7 @@ LXQtModuleManager::~LXQtModuleManager()
 {
     // We disconnect the finished signal before deleting the process. We do
     // this to prevent a crash that results from a state change signal being
-    // emmited while deleting a crashing module.
+    // emitted while deleting a crashing module.
     // If the module is still connect restartModules will be called with a
     // invalid sender.
 

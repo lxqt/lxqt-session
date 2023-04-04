@@ -84,7 +84,7 @@ void EnvironmentPage::save()
 
     m_settings->beginGroup(QL1S("Environment"));
 
-    /* We erase the Enviroment group and then write the Ui settings. To know if
+    /* We erase the Environment group and then write the UI settings. To know if
        they changed or not we need to save them to memory.
      */
     const auto keys = m_settings->childKeys();
