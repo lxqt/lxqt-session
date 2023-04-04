@@ -79,47 +79,46 @@ bool SessionApplication::startup()
     loadEnvironmentSettings(settings);
     // loadFontSettings(settings);
 
-    if (QGuiApplication::platformName() == QStringLiteral("xcb"))
+    bool isX11(QGuiApplication::platformName() == QStringLiteral("xcb"));
+    if (isX11)
     {
         loadKeyboardSettings(settings);
         loadMouseSettings(settings);
-    }
 
 #if defined(WITH_LIBUDEV_MONITOR)
-    UdevNotifier * dev_notifier = new UdevNotifier{QStringLiteral("input"), this}; //will be released upon our destruction
-    QTimer * dev_timer = new QTimer{this}; //will be released upon our destruction
-    dev_timer->setSingleShot(true);
-    dev_timer->setInterval(500); //give some time to xorg... we need to reset keyboard afterwards
-    connect(dev_timer, &QTimer::timeout, this, [this]
-            {
-                if (QGuiApplication::platformName() == QStringLiteral("xcb"))
+        UdevNotifier * dev_notifier = new UdevNotifier{QStringLiteral("input"), this}; //will be released upon our destruction
+        QTimer * dev_timer = new QTimer{this}; //will be released upon our destruction
+        dev_timer->setSingleShot(true);
+        dev_timer->setInterval(500); //give some time to xorg... we need to reset keyboard afterwards
+        connect(dev_timer, &QTimer::timeout, this, [this]
                 {
                     //XXX: is this a race? (because settings can be currently changed by lxqt-config-input)
                     //     but with such a little probablity we can live...
                     LXQt::Settings settings(configName);
                     loadKeyboardSettings(settings);
                     QProcess::startDetached(QStringLiteral("lxqt-config-input"), QStringList(QStringLiteral("--load-touchpad")));
-                }
-            });
-    connect(dev_notifier, &UdevNotifier::deviceAdded, this, [this, dev_timer] (QString device)
-            {
-                qCWarning(SESSION) << QStringLiteral("Session '%1', new input device '%2', keyboard, mouse and touchpad settings will be (optionaly) reloaded...").arg(configName,device);
-                dev_timer->start();
-            });
-    // Detect display connection:
-    // Intel i915 doesn't updates display status properly. The command xrandr must be run to
-    // update display status or run:
-    // # echo detect > status
-    // at /sys/devices/pciXXX/drm/cardX/cardX-XXX
-    UdevNotifier *dev_notifier_drm_subsystem = new UdevNotifier(QStringLiteral("drm"), this); //will be released upon our destruction
-    connect(dev_notifier_drm_subsystem, &UdevNotifier::deviceChanged, this, [this] (QString device)
-            {
-                qCWarning(SESSION) << QStringLiteral("Session '%1': display device '%2'").arg(configName,device);
-                QProcess::startDetached(QStringLiteral("lxqt-config-monitor"), QStringList(QStringLiteral("-l")));
-            });
-#endif
+                });
+        connect(dev_notifier, &UdevNotifier::deviceAdded, this, [this, dev_timer] (QString device)
+                {
+                    qCWarning(SESSION) << QStringLiteral("Session '%1', new input device '%2', keyboard, mouse and touchpad settings will be (optionaly) reloaded...").arg(configName,device);
+                    dev_timer->start();
+                });
 
-    if (lockScreenManager->startup(settings.value(QLatin1String("lock_screen_before_power_actions"), true).toBool()
+        // Detect display connection:
+        // Intel i915 doesn't updates display status properly. The command xrandr must be run to
+        // update display status or run:
+        // # echo detect > status
+        // at /sys/devices/pciXXX/drm/cardX/cardX-XXX
+        UdevNotifier *dev_notifier_drm_subsystem = new UdevNotifier(QStringLiteral("drm"), this); //will be released upon our destruction
+        connect(dev_notifier_drm_subsystem, &UdevNotifier::deviceChanged, this, [this] (QString device)
+                {
+                    qCWarning(SESSION) << QStringLiteral("Session '%1': display device '%2'").arg(configName,device);
+                    QProcess::startDetached(QStringLiteral("lxqt-config-monitor"), QStringList(QStringLiteral("-l")));
+                });
+#endif
+    }
+
+    if (lockScreenManager->startup(isX11 ? settings.value(QLatin1String("lock_screen_before_power_actions"), true).toBool() : false
                 , settings.value(QLatin1String("power_actions_after_lock_delay"), 0).toInt()))
         qCDebug(SESSION) << "LockScreenManager started successfully";
     else
