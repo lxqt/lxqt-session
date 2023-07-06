@@ -11,11 +11,24 @@
    </rect>
   </property>
   <layout class="QGridLayout" name="gridLayout_10">
-   <item row="4" column="1">
-    <widget class="QPushButton" name="deleteButton">
-     <property name="text">
-      <string>Delete</string>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
+     <property name="text">
+      <string>Application Autostart</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" rowspan="5">
+    <widget class="QTreeView" name="autoStartView">
+     <attribute name="headerVisible">
+      <bool>false</bool>
+     </attribute>
     </widget>
    </item>
    <item row="2" column="1">
@@ -32,16 +45,10 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="0">
-    <widget class="QLabel" name="label">
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
+   <item row="4" column="1">
+    <widget class="QPushButton" name="deleteButton">
      <property name="text">
-      <string>Application Autostart</string>
+      <string>Delete</string>
      </property>
     </widget>
    </item>
@@ -57,13 +64,6 @@
       </size>
      </property>
     </spacer>
-   </item>
-   <item row="1" column="0" rowspan="5">
-    <widget class="QTreeView" name="autoStartView">
-     <attribute name="headerVisible">
-      <bool>false</bool>
-     </attribute>
-    </widget>
    </item>
   </layout>
  </widget>
