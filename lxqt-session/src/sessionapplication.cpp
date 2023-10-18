@@ -27,6 +27,7 @@
 #include <csignal>
 #include <LXQt/Settings>
 #include <LXQt/Globals>
+#include <QMessageBox>
 #include <QProcess>
 #include <QGuiApplication>
 #include "log.h"
@@ -77,6 +78,12 @@ bool SessionApplication::startup()
     qCDebug(SESSION) << __FILE__ << ":" << __LINE__ << "Session" << configName << "about to launch (default 'session')";
 
     loadEnvironmentSettings(settings);
+
+    if (!updateDBusEnvironment()) {
+        QMessageBox::warning(nullptr, tr("DBus Environment"),
+                tr("The DBus Activation Environment wasn't updated. Some apps might not work properly"));
+    }
+
     // loadFontSettings(settings);
 
     bool isX11(QGuiApplication::platformName() == QStringLiteral("xcb"));
@@ -335,4 +342,26 @@ void SessionApplication::setLeftHandedMouse(bool mouse_left_handed)
         XSetPointerMapping(QX11Info::display(), buttons, n_buttons);
     }
     free(buttons);
+}
+
+bool SessionApplication::updateDBusEnvironment()
+{
+    qCDebug(SESSION) << "Updating DBus activation environment:";
+    QProcess p;
+    p.setProgram(QStringLiteral("dbus-update-activation-environment"));
+    p.setArguments(QStringList(QStringLiteral("--all")));
+    p.start();
+    if (!p.waitForStarted(2000)) {
+        qCWarning(SESSION, "Failed to start dbus-update-activation-environment. It is expected to be in the PATH");
+        return false;
+    }
+    if (!p.waitForFinished(5000) || p.exitStatus() != QProcess::NormalExit) {
+        qCWarning(SESSION, "dbus-updatee-activation-environment failed: %s", qUtf8Printable(p.errorString()));
+        return false;
+    }
+    if (p.exitCode() != 0) {
+        qCWarning(SESSION, "dbus-updatee-activation-environment failed: %s", p.readAllStandardError().constData());
+        return false;
+    }
+    return true;
 }
