@@ -48,6 +48,7 @@ private:
 
     void mergeXrdb(const char* content, int len);
     void setLeftHandedMouse(bool mouse_left_handed);
+    bool updateDBusEnvironment();
 private:
     LXQtModuleManager* modman;
     LockScreenManager *lockScreenManager;
