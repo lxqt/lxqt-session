@@ -105,32 +105,32 @@
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished">LXQt moduluak</translation>
+        <translation>LXQt moduluak</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished"></translation>
+        <translation>Pantailaren eskalatze globala</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="123"/>
         <source>Scale factor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Eskala faktorea:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="149"/>
         <source>Leave Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Utzi saioa</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="155"/>
         <source>Ask for confirmation to leave session</source>
-        <translation type="unfinished"></translation>
+        <translation>Saiotik irteteko baieztapena eskatu</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="162"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokeatu pantaila eten/hibernatu aurretik</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="169"/>

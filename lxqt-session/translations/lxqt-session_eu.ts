@@ -19,18 +19,18 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation type="unfinished">Konfigurazio fitxategiaren bidea.</translation>
+        <translation>Konfigurazio fitxategiaren bidea.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
-        <translation type="unfinished">fitxategia</translation>
+        <translation>fitxategia</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Erabili beharreko leiho kudeatzailea.</translation>
     </message>
 </context>
 <context>
@@ -58,7 +58,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hau edozein unetan aldatzeko aukera izango duzu Hobespenak -&gt; Saioaren ezarpenak -&gt; Oinarrizko ezarpenak.</translation>
     </message>
 </context>
 </TS>
