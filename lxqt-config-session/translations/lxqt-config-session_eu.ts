@@ -135,12 +135,12 @@
     <message>
         <location filename="../basicsettings.ui" line="169"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>Eten/hibernatu blokeo atzerapenaren ondoren:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="182"/>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ms</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -204,7 +204,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt saioaren ezarpenak</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="47"/>
@@ -214,7 +214,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>Erabiltzaileen direktorioa</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="59"/>
@@ -234,7 +234,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="92"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ezarpen batzuek ez dute eraginik izango hurrengo saioa hasi arte.</translation>
     </message>
 </context>
 <context>
@@ -242,22 +242,22 @@
     <message>
         <location filename="../userlocationspage.cpp" line="116"/>
         <source>Locations for Personal Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Fitxategi pertsonaletarako kokapenak</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="184"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt Saioaren ezarpenak - Erabiltzaileen direktorioa</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>An error occurred while applying the settings for the %1 location</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore bat gertatu da %1 kokapenaren ezarpenak aplikatzean</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="201"/>
         <source>Choose Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Aukeratu Kokapena</translation>
     </message>
 </context>
 <context>
@@ -265,82 +265,82 @@
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Mahaigaina</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Deskargak</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Txantiloiak</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Public Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Partekatzea publikoa</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokumentuak</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="68"/>
         <source>Music</source>
-        <translation type="unfinished"></translation>
+        <translation>Musika</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="69"/>
         <source>Pictures</source>
-        <translation type="unfinished"></translation>
+        <translation>Irudiak</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
         <source>Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Bideoak</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>Zure mahaigainean ikusten dituzun fitxategi guztiak ditu</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation type="unfinished"></translation>
+        <translation>Karpeta lehenetsia deskargatutako fitxategiak gordetzeko</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Karpeta lehenetsia txantiloiak kargatzeko edo gordetzeko</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation type="unfinished"></translation>
+        <translation>Zure fitxategiak publikoki partekatzeko karpeta lehenetsia</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Karpeta lehenetsia dokumentuak kargatzeko edo gordetzeko</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Musika kargatzeko edo gordetzeko karpeta lehenetsia</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Argazkiak kargatzeko edo gordetzeko karpeta lehenetsia</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation type="unfinished"></translation>
+        <translation>Karpeta lehenetsia bideoak kargatzeko edo gordetzeko</translation>
     </message>
 </context>
 </TS>

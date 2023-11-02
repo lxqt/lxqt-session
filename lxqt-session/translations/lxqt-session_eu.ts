@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="324"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; askotan huts egin du.  Haren abiarazte automatikoa desgaitu egin da hurrengo saioa hasi arte.</translation>
     </message>
 </context>
 <context>
@@ -43,7 +43,7 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Other ...</source>
-        <translation>Beste bat...</translation>
+        <translation>Beste bat ...</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
@@ -53,7 +53,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Ongi etorri LXQt-era&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Hautatu leiho-kudeatzaile lehenetsia.&lt;/p  &gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
