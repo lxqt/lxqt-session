@@ -133,6 +133,11 @@ void AutoStartPage::addButton_clicked()
     while (!success && edit.exec() == QDialog::Accepted)
     {
         QModelIndex index = ui->autoStartView->selectionModel()->currentIndex();
+        if (edit.name().isEmpty() || edit.command().isEmpty() )
+        {
+            QMessageBox::critical(this, tr("Error"), tr("Please provide Name and Command"));
+            continue;
+        }
         XdgDesktopFile file(XdgDesktopFile::ApplicationType, edit.name(), edit.command());
         if (edit.needTray())
             file.setValue(QL1S("X-LXQt-Need-Tray"), true);
@@ -148,8 +153,14 @@ void AutoStartPage::editButton_clicked()
     QModelIndex index = ui->autoStartView->selectionModel()->currentIndex();
     XdgDesktopFile file = mXdgAutoStartModel->desktopFile(index);
     AutoStartEdit edit(file.name(), file.value(QL1S("Exec")).toString(), file.contains(QL1S("X-LXQt-Need-Tray")));
-    if (edit.exec() == QDialog::Accepted)
+    bool success = false;
+    while (!success && edit.exec() == QDialog::Accepted)
     {
+        if (edit.name().isEmpty() || edit.command().isEmpty() )
+        {
+            QMessageBox::critical(this, tr("Error"), tr("Please provide Name and Command"));
+            continue;
+        }
         file.setLocalizedValue(QL1S("Name"), edit.name());
         file.setValue(QL1S("Exec"), edit.command());
         if (edit.needTray())
@@ -157,7 +168,10 @@ void AutoStartPage::editButton_clicked()
         else
             file.removeEntry(QL1S("X-LXQt-Need-Tray"));
 
-        mXdgAutoStartModel->setEntry(index, file, true);
+        if (mXdgAutoStartModel->setEntry(index, file, true))
+            success = true;
+        else
+            QMessageBox::critical(this, tr("Error"), tr("File '%1' already exists!").arg(file.fileName()));
     }
 }
 
