@@ -80,12 +80,22 @@
         <translation>Avvio automatico delle applicazioni</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="142"/>
+        <location filename="../autostartpage.cpp" line="138"/>
+        <location filename="../autostartpage.cpp" line="147"/>
+        <location filename="../autostartpage.cpp" line="161"/>
+        <location filename="../autostartpage.cpp" line="174"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="142"/>
+        <location filename="../autostartpage.cpp" line="138"/>
+        <location filename="../autostartpage.cpp" line="161"/>
+        <source>Please provide Name and Command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autostartpage.cpp" line="147"/>
+        <location filename="../autostartpage.cpp" line="174"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>Il file &apos;%1&apos; esiste già!</translation>
     </message>
