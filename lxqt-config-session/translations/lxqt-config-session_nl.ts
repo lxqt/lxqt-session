@@ -91,7 +91,7 @@
         <location filename="../autostartpage.cpp" line="138"/>
         <location filename="../autostartpage.cpp" line="161"/>
         <source>Please provide Name and Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Voer een naam en opdracht in</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="147"/>
@@ -150,7 +150,7 @@
     <message>
         <location filename="../basicsettings.ui" line="169"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation>Pauzestand/Winterstand na vergrendelvertraging:</translation>
+        <translation>Pauze-/Slaapstand na vergrendelvertraging:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="182"/>

@@ -35,7 +35,7 @@
     <message>
         <location filename="../src/sessionapplication.cpp" line="83"/>
         <source>DBus Environment</source>
-        <translation type="unfinished">DBus Environment</translation>
+        <translation>DBus Environment</translation>
     </message>
     <message>
         <location filename="../src/sessionapplication.cpp" line="84"/>

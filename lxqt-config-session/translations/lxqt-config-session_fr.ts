@@ -91,7 +91,7 @@
         <location filename="../autostartpage.cpp" line="138"/>
         <location filename="../autostartpage.cpp" line="161"/>
         <source>Please provide Name and Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Veuillez indiquer le nom et la commande</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="147"/>
@@ -125,7 +125,7 @@
     <message>
         <location filename="../basicsettings.ui" line="123"/>
         <source>Scale factor:</source>
-        <translation>Facteur d&apos;échelle&#xa0;:</translation>
+        <translation>Facteur d&apos;échelle :</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="149"/>
