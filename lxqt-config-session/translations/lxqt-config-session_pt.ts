@@ -26,12 +26,12 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>Esperar pela bandeja do sistema</translation>
+        <translation>Aguardar pela área de notificação do sistema</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
         <source>Select Application</source>
-        <translation>Escolha a aplicação</translation>
+        <translation>Selecionar aplicação</translation>
     </message>
 </context>
 <context>
@@ -62,7 +62,7 @@
     <message>
         <location filename="../autostartpage.ui" line="17"/>
         <source>Delete</source>
-        <translation>Apagar</translation>
+        <translation>Eliminar</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="24"/>
@@ -91,7 +91,7 @@
         <location filename="../autostartpage.cpp" line="138"/>
         <location filename="../autostartpage.cpp" line="161"/>
         <source>Please provide Name and Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Indicar o nome e o comando</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="147"/>
