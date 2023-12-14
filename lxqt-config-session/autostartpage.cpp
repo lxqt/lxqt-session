@@ -132,13 +132,15 @@ void AutoStartPage::addButton_clicked()
     bool success = false;
     while (!success && edit.exec() == QDialog::Accepted)
     {
+        const auto trimmedName = edit.name().trimmed();
+        const auto trimmedCommand = edit.command().trimmed();
         QModelIndex index = ui->autoStartView->selectionModel()->currentIndex();
-        if (edit.name().isEmpty() || edit.command().isEmpty() )
+        if (trimmedName.isEmpty() || trimmedCommand.isEmpty() )
         {
             QMessageBox::critical(this, tr("Error"), tr("Please provide Name and Command"));
             continue;
         }
-        XdgDesktopFile file(XdgDesktopFile::ApplicationType, edit.name(), edit.command());
+        XdgDesktopFile file(XdgDesktopFile::ApplicationType, trimmedName, trimmedCommand);
         if (edit.needTray())
             file.setValue(QL1S("X-LXQt-Need-Tray"), true);
         if (mXdgAutoStartModel->setEntry(index, file))
@@ -156,13 +158,15 @@ void AutoStartPage::editButton_clicked()
     bool success = false;
     while (!success && edit.exec() == QDialog::Accepted)
     {
-        if (edit.name().isEmpty() || edit.command().isEmpty() )
+        const auto trimmedName = edit.name().trimmed();
+        const auto trimmedCommand = edit.command().trimmed();
+        if (trimmedName.isEmpty() || trimmedCommand.isEmpty() )
         {
             QMessageBox::critical(this, tr("Error"), tr("Please provide Name and Command"));
             continue;
         }
-        file.setLocalizedValue(QL1S("Name"), edit.name());
-        file.setValue(QL1S("Exec"), edit.command());
+        file.setLocalizedValue(QL1S("Name"), trimmedName);
+        file.setValue(QL1S("Exec"), trimmedCommand);
         if (edit.needTray())
             file.setValue(QL1S("X-LXQt-Need-Tray"), true);
         else
