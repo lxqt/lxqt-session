@@ -91,7 +91,7 @@
         <location filename="../autostartpage.cpp" line="138"/>
         <location filename="../autostartpage.cpp" line="161"/>
         <source>Please provide Name and Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Palun sisesta nimi ja käsk</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="147"/>

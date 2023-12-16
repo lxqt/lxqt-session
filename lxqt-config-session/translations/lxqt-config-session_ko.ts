@@ -91,7 +91,7 @@
         <location filename="../autostartpage.cpp" line="138"/>
         <location filename="../autostartpage.cpp" line="161"/>
         <source>Please provide Name and Command</source>
-        <translation type="unfinished"></translation>
+        <translation>이름과 명령을 입력해 주세요</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="147"/>
