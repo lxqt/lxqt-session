@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="es">
+<TS version="2.1" language="pa">
 <context>
     <name>AutoStartEdit</name>
     <message>
         <location filename="../autostartedit.ui" line="14"/>
         <source>Edit</source>
-        <translation>Editar</translation>
+        <translation>ਸੋਧੋ</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="20"/>
         <source>Name:</source>
-        <translation>Nombre:</translation>
+        <translation>ਨਾਂ:</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="27"/>
         <source>Search...</source>
-        <translation>Buscar...</translation>
+        <translation>ਖੋਜੋ...</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="47"/>
         <source>Command:</source>
-        <translation>Comando:</translation>
+        <translation>ਕਮਾਂਡ:</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>Esperar a la bandeja del sistema</translation>
+        <translation>ਸਿਸਟਮ ਟਰੇ ਨੂੰ ਉਡੀਕੋ</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
         <source>Select Application</source>
-        <translation>Seleccionar aplicación</translation>
+        <translation>ਐਪਲੀਕੇਸ਼ਨ ਚੁਣੋ</translation>
     </message>
 </context>
 <context>
@@ -39,22 +39,22 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
-        <translation>Autoinicio global</translation>
+        <translation>ਗਲੋਬਲ ਆਟੋ-ਸਟਾਰ:ਟ</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation>Autoinicio de LXQt</translation>
+        <translation>LXQt ਆਟੋ-ਸਟਾਰਟ</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
         <source>Location: %1</source>
-        <translation>Ubicación: %1</translation>
+        <translation>ਟਿਕਾਣਾ: %1</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>Sobrescribe: %1</translation>
+        <translation>ਅਣਡਿੱਠਾ: %1</translation>
     </message>
 </context>
 <context>
@@ -62,22 +62,22 @@
     <message>
         <location filename="../autostartpage.ui" line="17"/>
         <source>Delete</source>
-        <translation>Eliminar</translation>
+        <translation>ਹਟਾਓ</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="24"/>
         <source>Add</source>
-        <translation>Añadir</translation>
+        <translation>ਜੋੜੋ</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="31"/>
         <source>Edit</source>
-        <translation>Editar</translation>
+        <translation>ਸੋਧੋ</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Application Autostart</source>
-        <translation>Inicio automático de aplicaciones</translation>
+        <translation>ਐਪਲੀਕੇਸ਼ਨ ਆਟੋ-ਸਟਾਰਟ</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="138"/>
@@ -85,92 +85,92 @@
         <location filename="../autostartpage.cpp" line="161"/>
         <location filename="../autostartpage.cpp" line="174"/>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation>ਗਲਤੀ</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="138"/>
         <location filename="../autostartpage.cpp" line="161"/>
         <source>Please provide Name and Command</source>
-        <translation>Mesedez, eman izena eta komandoa</translation>
+        <translation>ਨਾਂ ਅਤੇ ਕਮਾਂਡ ਦਿਓ</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="147"/>
         <location filename="../autostartpage.cpp" line="174"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>¡Ya existe el archivo &apos;%1&apos;!</translation>
+        <translation>ਫਾਇਲ &apos;%1&apos; ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ!</translation>
     </message>
 </context>
 <context>
     <name>BasicSettings</name>
     <message>
+        <location filename="../basicsettings.ui" line="23"/>
+        <source>Basic Settings</source>
+        <translation>ਮੁੱਢਲੀਆਂ ਸੈਟਿੰਗਾਂ</translation>
+    </message>
+    <message>
         <location filename="../basicsettings.ui" line="30"/>
         <source>Window Manager</source>
-        <translation>Gestor de ventanas</translation>
+        <translation>ਵਿੰਡੋ ਮੈਨੇਜਰ</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
         <source>Search...</source>
-        <translation>Buscar...</translation>
+        <translation>ਖੋਜੋ...</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="59"/>
         <source>LXQt Modules</source>
-        <translation>Módulos de LXQt</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="111"/>
-        <source>Global Screen Scaling</source>
-        <translation>Escala global de la pantalla</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="123"/>
-        <source>Scale factor:</source>
-        <translation>Factor de escala:</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="149"/>
-        <source>Leave Session</source>
-        <translation>Cerrar la sesión</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="155"/>
-        <source>Ask for confirmation to leave session</source>
-        <translation>Pedir confirmación al cerrar la sesión</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="162"/>
-        <source>Lock screen before suspending/hibernating</source>
-        <translation>Bloquear la pantalla antes de suspender/hibernar</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="169"/>
-        <source>Suspend/hibernate after lock delay:</source>
-        <translation>Retardo para suspender/hibernar tras bloquear:</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="182"/>
-        <source> ms</source>
-        <translation> ms</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="23"/>
-        <source>Basic Settings</source>
-        <translation>Configuración básica</translation>
+        <translation>LXQt ਮੋਡੀਊਲ</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation>Iniciar</translation>
+        <translation>ਸ਼ੁਰੂ</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation>Detener</translation>
+        <translation>ਰੋਕੋ</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="111"/>
+        <source>Global Screen Scaling</source>
+        <translation>ਗਲੋਬਰ ਸਕਰੀਨ ਸਕੇਲਿੰਗ</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="123"/>
+        <source>Scale factor:</source>
+        <translation>ਸਕੇਲ ਫੈਕਟਰ:</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="149"/>
+        <source>Leave Session</source>
+        <translation>ਸ਼ੈਸ਼ਨ ਛੱਡੋ</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="155"/>
+        <source>Ask for confirmation to leave session</source>
+        <translation>ਸ਼ੈਸ਼ਨ ਛੱਡਣ ਤੋਂ ਪਹਿਲਾਂ ਤਸਦੀਕ ਕਰਵਾਓ</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="162"/>
+        <source>Lock screen before suspending/hibernating</source>
+        <translation>ਸਸਪੈਂਡ/ਹਾਈਬਰਨੇਟ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਤਸਦੀਕ ਕਰਵਾਓ</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="169"/>
+        <source>Suspend/hibernate after lock delay:</source>
+        <translation>ਦੇਰੀ ਲਈ ਲਾਕ ਦੇ ਬਾਅਦ ਸਸੈਂਡ/ਹਾਈਬਰਨੇਟ ਕਰੋ:</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="182"/>
+        <source> ms</source>
+        <translation> ਮਿ.ਸ.</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="176"/>
         <source>Select a window manager</source>
-        <translation>Seleccione un gestor de ventanas</translation>
+        <translation>ਵਿੰਡੋ ਮੈਨੇਜਰ ਚੁਣੋ</translation>
     </message>
 </context>
 <context>
@@ -178,27 +178,27 @@
     <message>
         <location filename="../environmentpage.ui" line="17"/>
         <source>Add</source>
-        <translation>Añadir</translation>
+        <translation>ਜੋੜੋ</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="24"/>
         <source>Delete</source>
-        <translation>Eliminar</translation>
+        <translation>ਹਟਾਓ</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="50"/>
         <source>Environment Variables (Advanced)</source>
-        <translation>Variables de entorno (avanzado)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="61"/>
         <source>Variable Name</source>
-        <translation>Nombre de la variable</translation>
+        <translation>ਵੇਰੀਬਲ ਨਾਂ</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="66"/>
         <source>Value</source>
-        <translation>Valor</translation>
+        <translation>ਮੁੱਲ</translation>
     </message>
 </context>
 <context>
@@ -206,7 +206,7 @@
     <message>
         <location filename="../modulemodel.cpp" line="87"/>
         <source>Running</source>
-        <translation>Ejecutándose</translation>
+        <translation>ਚੱਲ ਰਿਹਾ ਹੈ</translation>
     </message>
 </context>
 <context>
@@ -214,37 +214,37 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="44"/>
         <source>LXQt Session Settings</source>
-        <translation>Configuración de la sesión de LXQt</translation>
+        <translation>LXQt ਸ਼ੈਸ਼ਨ ਸੈਟਿੰਗਾਂ</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="47"/>
         <source>Basic Settings</source>
-        <translation>Configuración básica</translation>
+        <translation>ਮੁੱਢਲੀਆਂ ਸੈਟਿੰਗਾਂ</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="53"/>
         <source>User Directories</source>
-        <translation>Directorios de usuario</translation>
+        <translation>ਵਰਤੋਂਕਾਰ ਡਾਇਰੈਕਟਰੀਆਂ</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="59"/>
         <source>Autostart</source>
-        <translation>Inicio automático</translation>
+        <translation>ਆਟੋ-ਸਟਾਰਟ</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="65"/>
         <source>Environment (Advanced)</source>
-        <translation>Entorno (avanzado)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="91"/>
         <source>Session Restart Required</source>
-        <translation>Se requiere un reinicio de sesión</translation>
+        <translation>ਸ਼ੈਸ਼ਨ ਮੁੜ-ਸ਼ੁਰੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="92"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation>Algunos ajustes no tendrán efecto hasta el siguiente inicio de sesión.</translation>
+        <translation>ਕੁਝ ਸੈਟਿੰਗਾਂ ਅਗਲੀ ਵਾਰ ਲਾਗਇਨ ਹੋਣ ਤੱਕ ਪ੍ਰਭਾਵੀ ਨਹੀਂ ਹੋਣਗੀਆਂ।</translation>
     </message>
 </context>
 <context>
@@ -252,22 +252,22 @@
     <message>
         <location filename="../userlocationspage.cpp" line="116"/>
         <source>Locations for Personal Files</source>
-        <translation>Ubicaciones para los archivos personales</translation>
+        <translation>ਨਿੱਜੀ ਫਾਇਲਾਂ ਲਈ ਟਿਕਾਣੇ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="184"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>Configuración de la sesión de LXQt - Directorios de usuario</translation>
+        <translation>LXQt ਸ਼ੈਸ਼ਨ ਸੈਟਿੰਗਾਂ -ਵਰਤੋਂਕਾਰ ਡਾਇਰੈਕਟਰੀਆਂ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>An error occurred while applying the settings for the %1 location</source>
-        <translation>Ha ocurrido un error al aplicar la configuración para la ubicación %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="201"/>
         <source>Choose Location</source>
-        <translation>Elija una ubicación</translation>
+        <translation>ਟਿਕਾਣਾ ਚੁਣੋ</translation>
     </message>
 </context>
 <context>
@@ -275,82 +275,82 @@
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Desktop</source>
-        <translation>Escritorio</translation>
+        <translation>ਡੈਸਕਟਾਪ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Downloads</source>
-        <translation>Descargas</translation>
+        <translation>ਡਾਊਨਲੋਡ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Templates</source>
-        <translation>Plantillas</translation>
+        <translation>ਟੈਂਪਲੇਟ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Public Share</source>
-        <translation>Público</translation>
+        <translation>ਪਬਲਿਕ ਸ਼ੇਅਰ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
         <source>Documents</source>
-        <translation>Documentos</translation>
+        <translation>ਡੌਕੂਮੈੰਟ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="68"/>
         <source>Music</source>
-        <translation>Música</translation>
+        <translation>ਸੰਗੀਤ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="69"/>
         <source>Pictures</source>
-        <translation>Imágenes</translation>
+        <translation>ਤਸਵੀਰਾਂ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
         <source>Videos</source>
-        <translation>Vídeos</translation>
+        <translation>ਵੀਡੀਓ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation>Contiene todos los archivos que ve en el escritorio</translation>
+        <translation>ਤੁਹਾਡੇ ਡੈਸਕਟਾਪ ਉੱਤੇ ਤੁਹਾਨੂੰ ਦਿਸਣ ਵਾਲੀਆਂ ਸਾਰੀਆਂ ਫਾਇਲਾਂ ਰੱਖਦਾ ਹੈ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation>Carpeta por omisión donde descargar archivos</translation>
+        <translation>ਤੁਹਾਡੀਆਂ ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਫਾਇਲਾਂ ਨੂੰ ਸੰਭਾਲਣ ਲਈ ਮੂਲ ਫੋਲਡਰ ਹੈ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation>Carpeta por omisión desde donde cargar o donde guardar plantillas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation>Carpeta por omisión para compartir públicamente archivos</translation>
+        <translation>ਤੁਹਾਡੀਆਂ ਫਾਇਲਾਂ ਨੂੰ ਲੋਕਾਂ ਨਾਲ ਸਾਂਝਾ ਕਰਨ ਲਈ ਮੂਲ ਫੋਲਡਰ ਹੈ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation>Carpeta por omisión donde guardar o desde donde cargar documentos</translation>
+        <translation>ਦਸਤਾਵੇਜ਼ਾਂ ਨੂੰ ਲੋਡ ਕਰਨ ਜਾਂ ਸੰਭਾਲਣ ਲਈ ਮੂਲ ਫੋਲਡਰ ਹੈ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation>Carpeta por defecto desde donde cargar o donde guardar música</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation>Carpeta por omisión desde donde cargar o donde guardar imágenes</translation>
+        <translation>ਤਸਵੀਰਾਂ ਨੂੰ ਲੋਡ ਕਰਨ ਜਾਂ ਸੰਭਾਲਣ ਲਈ ਮੂਲ ਫੋਲਡਰ ਹੈ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>Carpeta por omisión desde donde cargar o donde guardar vídeos</translation>
+        <translation>ਵੀਡੀਓ ਨੂੰ ਲੋਡ ਕਰਨ ਜਾਂ ਸੰਭਾਲਣ ਲਈ ਮੂਲ ਫੋਲਡਰ ਹੈ</translation>
     </message>
 </context>
 </TS>
