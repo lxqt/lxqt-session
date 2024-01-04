@@ -234,7 +234,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="65"/>
         <source>Environment (Advanced)</source>
-        <translation type="unfinished"></translation>
+        <translation>ਇਨਵਾਇਰਨਮੈਂਟ (ਤਕਨੀਕੀ)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="91"/>
