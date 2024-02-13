@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="324"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; terlalu sering rusak. Memulai otomatisnya telah dinonaktifkan sampai masuk log berikutnya.</translation>
+        <translation type="unfinished">&lt;b&gt;%1&lt;/b&gt; terlalu sering rusak. Memulai otomatisnya telah dinonaktifkan sampai masuk log berikutnya.</translation>
     </message>
 </context>
 <context>
@@ -53,7 +53,7 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation>Pilih yang favorit.</translation>
+        <translation>Pilih satu yang menjadi favorit.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
