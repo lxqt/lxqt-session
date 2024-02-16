@@ -54,7 +54,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Kidda mu kifo kya: %1</translation>
     </message>
 </context>
 <context>
