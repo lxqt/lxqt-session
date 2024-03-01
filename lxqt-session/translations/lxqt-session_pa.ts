@@ -35,7 +35,7 @@
     <message>
         <location filename="../src/sessionapplication.cpp" line="83"/>
         <source>DBus Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>ਡੀਬੱਸ ਇਨਵਾਇਰਨਮੈਂਟ</translation>
     </message>
     <message>
         <location filename="../src/sessionapplication.cpp" line="84"/>
@@ -53,12 +53,12 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;LXQt ਵਲੋਂ ਜੀ ਆਇਆਂ ਨੂੰ&lt;/span&gt;&lt;/p&gt;&lt;p&gt;ਆਪਣੇ ਮੂਲ ਵਿੰਡੋ ਮੈਨੇਜਰ ਨੂੰ ਚੁਣੋ।&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>ਤੁਸੀਂ ਇਸ ਨੂੰ ਕਿਸੇ ਵੀ ਵੇਲੇ ਪਸੰਦਾਂ -&gt; ਸ਼ੈਸ਼ਨ ਸੈਟਿੰਗਾਂ -&gt; ਮੁੱਢਲੀਆਂ ਸੈਟਿੰਗਾਂ ਰਾਹੀਂ ਬਦਲ ਸਕਦੇ ਹੋ।</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="65"/>
@@ -68,7 +68,7 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation type="unfinished"></translation>
+        <translation>ਆਪਣਾ ਮਨਪਸੰਦ ਚੁਣੋ।</translation>
     </message>
 </context>
 </TS>

@@ -35,12 +35,12 @@
     <message>
         <location filename="../src/sessionapplication.cpp" line="83"/>
         <source>DBus Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>סביבת DBus</translation>
     </message>
     <message>
         <location filename="../src/sessionapplication.cpp" line="84"/>
         <source>The DBus Activation Environment wasn&apos;t updated. Some apps might not work properly</source>
-        <translation type="unfinished"></translation>
+        <translation>סביבת הפעלת DBus לא עודכנה. יכול להיות שחלק מהיישומים לא יעבדו כראוי</translation>
     </message>
 </context>
 <context>
