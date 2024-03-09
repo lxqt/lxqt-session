@@ -60,12 +60,11 @@ add_executable(lxqt-session
 )
 
 target_link_libraries(lxqt-session
-    Qt5::Widgets
-    Qt5::DBus
-    Qt5::X11Extras
+    Qt6::Widgets
+    Qt6::DBus
     lxqt
     ${X11_LIBRARIES}
-    KF5::WindowSystem
+    KF6::WindowSystem
 )
 if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
     target_link_libraries(lxqt-session

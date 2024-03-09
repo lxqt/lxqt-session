@@ -58,10 +58,9 @@ add_executable(lxqt-config-session
     ${lxqt-sessioncfg_QM_LOADER})
 
 target_link_libraries(lxqt-config-session
-    KF5::WindowSystem
-    Qt5::Widgets
-    Qt5::DBus
-    Qt5::X11Extras
+    KF6::WindowSystem
+    Qt6::Widgets
+    Qt6::DBus
     lxqt
 )
 
