@@ -197,8 +197,8 @@ void SessionApplication::loadKeyboardSettings(LXQt::Settings& settings)
     /* Keyboard settings */
     unsigned int delay = 0;
     unsigned int interval = 0;
-    if (auto x11NativeInterfce = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
-        if (Display* dpy = x11NativeInterfce->display()) {
+    if (auto x11NativeInterface = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
+        if (Display* dpy = x11NativeInterface->display()) {
             if(XkbGetAutoRepeatRate(dpy, XkbUseCoreKbd, (unsigned int*) &delay, (unsigned int*) &interval))
             {
                 delay = settings.value(QSL("delay"), delay).toUInt();
@@ -254,8 +254,8 @@ void SessionApplication::loadMouseSettings(LXQt::Settings& settings)
     int accel_factor = settings.value(QSL("accel_factor")).toInt();
     int accel_threshold = settings.value(QSL("accel_threshold")).toInt();
     if(accel_factor || accel_threshold) {
-        if (auto x11NativeInterfce = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
-            if (Display* dpy = x11NativeInterfce->display()) {
+        if (auto x11NativeInterface = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
+            if (Display* dpy = x11NativeInterface->display()) {
                 XChangePointerControl(dpy, accel_factor != 0, accel_threshold != 0, accel_factor, 10, accel_threshold);
             }
         }
@@ -316,8 +316,8 @@ void SessionApplication::setLeftHandedMouse(bool mouse_left_handed)
     int i = 0;
     int idx_1 = 0, idx_3 = 1;
 
-    if (auto x11NativeInterfce = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
-        if (Display* dpy = x11NativeInterfce->display()) {
+    if (auto x11NativeInterface = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
+        if (Display* dpy = x11NativeInterface->display()) {
             buttons = (unsigned char*)malloc(DEFAULT_PTR_MAP_SIZE);
             if (!buttons)
             {

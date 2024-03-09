@@ -188,8 +188,8 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
 {
     // if the WM is active do not run WM.
     // all window managers must set their name according to the spec
-    if (auto x11NativeInterfce = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
-        if (!QString::fromUtf8(NETRootInfo(x11NativeInterfce->connection(), NET::SupportingWMCheck).wmName()).isEmpty())
+    if (auto x11NativeInterface = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
+        if (!QString::fromUtf8(NETRootInfo(x11NativeInterface->connection(), NET::SupportingWMCheck).wmName()).isEmpty())
         {
             return;
         }
@@ -216,8 +216,8 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
     QEventLoop waitLoop;
     auto checker = [&waitLoop] {
         // all window managers must set their name according to the spec
-        if (auto x11NativeInterfce = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
-            if (!QString::fromUtf8(NETRootInfo(x11NativeInterfce->connection(), NET::SupportingWMCheck).wmName()).isEmpty())
+        if (auto x11NativeInterface = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
+            if (!QString::fromUtf8(NETRootInfo(x11NativeInterface->connection(), NET::SupportingWMCheck).wmName()).isEmpty())
             {
                 qCDebug(SESSION) << "Window Manager started";
                 waitLoop.exit();

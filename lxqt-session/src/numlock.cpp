@@ -79,8 +79,8 @@ void enableNumlock()
 {
     // this currently only works for X11
     if (QGuiApplication::platformName() == QStringLiteral("xcb")) {
-        if (auto x11NativeInterfce = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
-            if (Display* dpy = x11NativeInterfce->display()) {
+        if (auto x11NativeInterface = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
+            if (Display* dpy = x11NativeInterface->display()) {
                 xkb_set_on(dpy);
             }
         }
