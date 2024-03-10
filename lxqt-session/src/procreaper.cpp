@@ -184,7 +184,7 @@ void ProcReaper::stop(const std::set<int64_t> & excludedPids)
     {
         if (excludedPids.count(child) == 0)
         {
-            qCDebug(SESSION) << "Seding TERM to child " << child;
+            qCDebug(SESSION) << "Sending TERM to child " << child;
             ::kill(child, SIGTERM);
         }
     }
