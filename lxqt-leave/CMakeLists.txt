@@ -53,6 +53,7 @@ add_executable(lxqt-leave
 
 target_link_libraries(lxqt-leave
     lxqt
+    LayerShellQtInterface
 )
 
 install(TARGETS
