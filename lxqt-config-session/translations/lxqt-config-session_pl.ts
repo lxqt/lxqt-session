@@ -160,12 +160,12 @@
     <message>
         <location filename="../basicsettings.ui" line="65"/>
         <source>Start</source>
-        <translation>Start</translation>
+        <translation>Rozpocznij</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="72"/>
         <source>Stop</source>
-        <translation>Stop</translation>
+        <translation>Zatrzymaj</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="176"/>
