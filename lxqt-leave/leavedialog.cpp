@@ -31,6 +31,12 @@
 #include <QGuiApplication>
 #include <QRect>
 #include <QScreen>
+#include <QWindow>
+#include <QShowEvent>
+
+#include <LayerShellQt/shell.h>
+#include <LayerShellQt/window.h>
+
 
 LeaveDialog::LeaveDialog(QWidget* parent)
     : QDialog(parent, Qt::Dialog | Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint),
@@ -126,4 +132,34 @@ LeaveDialog::LeaveDialog(QWidget* parent)
 LeaveDialog::~LeaveDialog()
 {
     delete ui;
+}
+
+void LeaveDialog::showEvent(QShowEvent *event)
+{
+    // set the layer and centered position under Wayland
+    if (QGuiApplication::platformName() == QStringLiteral("wayland"))
+    {
+        winId();
+        if(QWindow *win = windowHandle())
+        {
+            if (LayerShellQt::Window *layershell = LayerShellQt::Window::get(win))
+            {
+                layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
+                layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityExclusive);
+                LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
+                layershell->setAnchors(anchors);
+                layershell->setExclusiveZone(-1);
+                QScreen *screen = win->screen();
+                if (screen == nullptr)
+                    screen = QGuiApplication::primaryScreen();
+                if (screen != nullptr)
+                {
+                    QRect desktop = screen->availableGeometry();
+                    int topMargin = desktop.center().y() - height() / 2;
+                    layershell->setMargins(QMargins(0, topMargin, 0, 0));
+                }
+            }
+        }
+    }
+    QDialog::showEvent(event);
 }
