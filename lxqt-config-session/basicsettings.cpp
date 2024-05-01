@@ -39,6 +39,8 @@ static const QLatin1String powerActionsAfterLockDelayKey("power_actions_after_lo
 static const QLatin1String QtScaleKey("QT_SCALE_FACTOR");
 static const QLatin1String GdkScaleKey("GDK_SCALE");
 static const QLatin1String openboxValue("openbox");
+static const QLatin1String useCustomLockCommandKey("use_custom_lock_command");
+static const QLatin1String lockCommandKey("lock_command");
 
 BasicSettings::BasicSettings(LXQt::Settings *settings, QWidget *parent) :
     QWidget(parent),
@@ -50,6 +52,7 @@ BasicSettings::BasicSettings(LXQt::Settings *settings, QWidget *parent) :
     connect(ui->findWmButton, &QPushButton::clicked, this, &BasicSettings::findWmButton_clicked);
     connect(ui->startButton,  &QPushButton::clicked, this, &BasicSettings::startButton_clicked);
     connect(ui->stopButton,   &QPushButton::clicked, this, &BasicSettings::stopButton_clicked);
+    connect(ui->findLockCommandButton, SIGNAL(clicked()), this, SLOT(findLockCommandButton_clicked()));
     restoreSettings();
 
     ui->moduleView->setModel(m_moduleModel);
@@ -73,11 +76,19 @@ void BasicSettings::restoreSettings()
 
     QString wm = m_settings->value(windowManagerKey, openboxValue).toString();
     SessionConfigWindow::handleCfgComboBox(ui->wmComboBox, knownWMs, wm);
+
+    QStringList knownLockCommands;
+    knownLockCommands << QSL("slock");
+
+    QString lockCommand(m_settings->value(lockCommandKey, QLatin1String("")).toString());
+
+    SessionConfigWindow::handleCfgComboBox(ui->lockCommandComboBox, knownLockCommands, lockCommand);
     m_moduleModel->reset();
 
     ui->leaveConfirmationCheckBox->setChecked(m_settings->value(leaveConfirmationKey, false).toBool());
     ui->lockBeforePowerActionsCheckBox->setChecked(m_settings->value(lockBeforePowerActionsKey, true).toBool());
     ui->powerAfterLockDelaySpinBox->setValue(m_settings->value(powerActionsAfterLockDelayKey, 0).toInt());
+    ui->useCustomLockCommandCheckBox->setChecked(m_settings->value(useCustomLockCommand, false).toBool());
 
     m_settings->beginGroup(QL1S("Environment"));
     ui->scaleSpinBox->setValue(m_settings->value(QtScaleKey, 1.0).toDouble());
@@ -93,6 +104,7 @@ void BasicSettings::save()
 
     bool doRestart = false;
     const QString windowManager = ui->wmComboBox->currentText();
+    const QString lockCommand = ui->lockCommandComboBox->currentText();
     const bool leaveConfirmation = ui->leaveConfirmationCheckBox->isChecked();
     const bool lockBeforePowerActions = ui->lockBeforePowerActionsCheckBox->isChecked();
     const int powerAfterLockDelay = ui->powerAfterLockDelaySpinBox->value();
@@ -131,6 +143,21 @@ void BasicSettings::save()
         m_settings->setValue(powerActionsAfterLockDelayKey, powerAfterLockDelay);
         doRestart = true;
     }
+
+    if (useCustomLockCommand && lockCommand != m_settings->value(lockCommandKey, QLatin1String("")).toString())
+    {
+        m_settings->setValue(lockCommandKey, lockCommand);
+    }
+    else if (!useCustomLockCommand && lockCommand != QLatin1String(""))
+    {
+        m_settings->remove(lockCommandKey);
+    }
+
+    if (useCustomLockCommand != m_settings->value(useCustomLockCommandKey, false).toBool())
+    {
+        m_settings->setValue(useCustomLockCommandKey, useCustomLockCommand);
+    }
+
 
     bool scaleChanged = false;
     m_settings->beginGroup(QL1S("Environment"));
@@ -184,4 +211,9 @@ void BasicSettings::startButton_clicked()
 void BasicSettings::stopButton_clicked()
 {
     m_moduleModel->toggleModule(ui->moduleView->selectionModel()->currentIndex(), false);
+}
+
+void BasicSettings::findLockCommandButton_clicked()
+{
+    SessionConfigWindow::updateCfgComboBox(ui->lockCommandComboBox, tr("Select a custom lock command"));
 }
