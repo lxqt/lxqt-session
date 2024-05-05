@@ -54,7 +54,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>Преопределяне: %1</translation>
+        <translation>Презаписване: %1</translation>
     </message>
 </context>
 <context>
@@ -91,7 +91,7 @@
         <location filename="../autostartpage.cpp" line="138"/>
         <location filename="../autostartpage.cpp" line="161"/>
         <source>Please provide Name and Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Моля, посочете име и команда</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="147"/>
