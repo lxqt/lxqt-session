@@ -91,7 +91,7 @@
         <location filename="../autostartpage.cpp" line="138"/>
         <location filename="../autostartpage.cpp" line="161"/>
         <source>Please provide Name and Command</source>
-        <translation type="unfinished"></translation>
+        <translation>名前とコマンドを入力して下さい</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="147"/>
@@ -155,7 +155,7 @@
     <message>
         <location filename="../basicsettings.ui" line="162"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>サスペンド/ハイバネートの前に画面をロックする&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;</translation>
+        <translation>サスペンド/ハイバネートの前に画面をロックする　　　　　　</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="169"/>
