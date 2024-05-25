@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>322</width>
-    <height>380</height>
+    <width>446</width>
+    <height>711</height>
    </rect>
   </property>
   <layout class="QGridLayout" name="gridLayout_3">
@@ -15,7 +15,6 @@
     <widget class="QLabel" name="label">
      <property name="font">
       <font>
-       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -27,7 +26,7 @@
    <item row="1" column="0">
     <widget class="QGroupBox" name="groupBox">
      <property name="title">
-      <string>Window Manager</string>
+      <string>X11 Window Manager</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_2">
       <item row="0" column="0">
@@ -53,19 +52,12 @@
      </layout>
     </widget>
    </item>
-   <item row="2" column="0">
+   <item row="3" column="0">
     <widget class="QGroupBox" name="groupBox_2">
      <property name="title">
       <string>LXQt Modules</string>
      </property>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="7" column="1">
-       <widget class="QPushButton" name="startButton">
-        <property name="text">
-         <string>Start</string>
-        </property>
-       </widget>
-      </item>
       <item row="7" column="2">
        <widget class="QPushButton" name="stopButton">
         <property name="text">
@@ -73,18 +65,12 @@
         </property>
        </widget>
       </item>
-      <item row="7" column="0">
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+      <item row="7" column="1">
+       <widget class="QPushButton" name="startButton">
+        <property name="text">
+         <string>Start</string>
         </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
+       </widget>
       </item>
       <item row="0" column="0" colspan="3">
        <widget class="QTreeView" name="moduleView">
@@ -102,17 +88,30 @@
         </attribute>
        </widget>
       </item>
+      <item row="7" column="0">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
      </layout>
     </widget>
    </item>
-   <item row="3" column="0">
+   <item row="4" column="0">
     <widget class="QGroupBox" name="groupBox_4">
      <property name="title">
       <string>Global Screen Scaling</string>
      </property>
      <layout class="QFormLayout" name="formLayout">
       <property name="fieldGrowthPolicy">
-       <enum>QFormLayout::ExpandingFieldsGrow</enum>
+       <enum>QFormLayout::FieldGrowthPolicy::ExpandingFieldsGrow</enum>
       </property>
       <property name="horizontalSpacing">
        <number>6</number>
@@ -143,16 +142,23 @@
      </layout>
     </widget>
    </item>
-   <item row="4" column="0">
+   <item row="5" column="0">
     <widget class="QGroupBox" name="groupBox_3">
      <property name="title">
       <string>Leave Session</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_4">
-      <item row="0" column="0" colspan="2">
-       <widget class="QCheckBox" name="leaveConfirmationCheckBox">
+      <item row="3" column="0">
+       <widget class="QLabel" name="X11LockCommandLabel">
         <property name="text">
-         <string>Ask for confirmation to leave session</string>
+         <string>Custom screenlock command:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="findX11LockCommandButton">
+        <property name="text">
+         <string>Search...</string>
         </property>
        </widget>
       </item>
@@ -160,6 +166,29 @@
        <widget class="QCheckBox" name="lockBeforePowerActionsCheckBox">
         <property name="text">
          <string>Lock screen before suspending/hibernating</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QCheckBox" name="leaveConfirmationCheckBox">
+        <property name="text">
+         <string>Ask for confirmation to leave session</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QComboBox" name="x11LockCommandComboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip">
+         <string>If empty "xdg-screensaver lock" is used</string>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
@@ -202,14 +231,18 @@
   <connection>
    <sender>lockBeforePowerActionsCheckBox</sender>
    <signal>toggled(bool)</signal>
-   <receiver>powerAfterLockDelaySpinBox</receiver>
-   <slot>setEnabled(bool)</slot>
-  </connection>
-  <connection>
-   <sender>lockBeforePowerActionsCheckBox</sender>
-   <signal>toggled(bool)</signal>
    <receiver>powerDelayLabel</receiver>
    <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
   </connection>
  </connections>
 </ui>
