@@ -124,7 +124,7 @@ bool SessionApplication::startup()
 #endif
     }
 
-    if (lockScreenManager->startup(isX11 ? settings.value(QLatin1String("lock_screen_before_power_actions"), true).toBool() : false
+    if (lockScreenManager->startup(settings.value(QLatin1String("lock_screen_before_power_actions"), true).toBool()
                 , settings.value(QLatin1String("power_actions_after_lock_delay"), 0).toInt()))
         qCDebug(SESSION) << "LockScreenManager started successfully";
     else
