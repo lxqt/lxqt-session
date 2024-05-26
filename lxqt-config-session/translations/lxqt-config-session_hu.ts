@@ -80,22 +80,22 @@
         <translation>Alkalmazás automatikus indítása</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="138"/>
-        <location filename="../autostartpage.cpp" line="147"/>
-        <location filename="../autostartpage.cpp" line="161"/>
-        <location filename="../autostartpage.cpp" line="174"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="149"/>
+        <location filename="../autostartpage.cpp" line="165"/>
+        <location filename="../autostartpage.cpp" line="178"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="138"/>
-        <location filename="../autostartpage.cpp" line="161"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="165"/>
         <source>Please provide Name and Command</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="147"/>
-        <location filename="../autostartpage.cpp" line="174"/>
+        <location filename="../autostartpage.cpp" line="149"/>
+        <location filename="../autostartpage.cpp" line="178"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>Létezik már &apos;%1&apos; fájl!</translation>
     </message>

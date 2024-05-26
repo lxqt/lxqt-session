@@ -80,22 +80,22 @@
         <translation>Lancement automatique d&apos;applications</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="138"/>
-        <location filename="../autostartpage.cpp" line="147"/>
-        <location filename="../autostartpage.cpp" line="161"/>
-        <location filename="../autostartpage.cpp" line="174"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="149"/>
+        <location filename="../autostartpage.cpp" line="165"/>
+        <location filename="../autostartpage.cpp" line="178"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="138"/>
-        <location filename="../autostartpage.cpp" line="161"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="165"/>
         <source>Please provide Name and Command</source>
         <translation>Veuillez indiquer le nom et la commande</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="147"/>
-        <location filename="../autostartpage.cpp" line="174"/>
+        <location filename="../autostartpage.cpp" line="149"/>
+        <location filename="../autostartpage.cpp" line="178"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>Le fichier &apos;%1&apos; existe déjà !</translation>
     </message>
@@ -125,7 +125,7 @@
     <message>
         <location filename="../basicsettings.ui" line="123"/>
         <source>Scale factor:</source>
-        <translation>Facteur d&apos;échelle :</translation>
+        <translation>Facteur d&apos;échelle&#xa0;:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="149"/>

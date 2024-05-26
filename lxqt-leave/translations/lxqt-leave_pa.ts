@@ -14,32 +14,32 @@
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;ਤੁਸੀਂ ਕੀ ਚਾਹੁੰਦੇ ਹੋ ਕਿ ਕੰਪਿਊਟਰ ਕੀ ਕਰੇ?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="55"/>
+        <location filename="../leavedialog.cpp" line="61"/>
         <source>Logout</source>
         <translation>ਲਾਗ ਆਉਟ</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="73"/>
+        <location filename="../leavedialog.cpp" line="79"/>
         <source>Reboot</source>
         <translation>ਮੁੜ-ਚਾਲੂ</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="60"/>
+        <location filename="../leavedialog.cpp" line="66"/>
         <source>Shutdown</source>
         <translation>ਬੰਦ ਕਰੋ</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="65"/>
+        <location filename="../leavedialog.cpp" line="71"/>
         <source>Suspend</source>
         <translation>ਸਸਪੈਂਡ</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="70"/>
+        <location filename="../leavedialog.cpp" line="76"/>
         <source>Lock screen</source>
         <translation>ਸਕਰੀਨ ਲਾਕ</translation>
     </message>
     <message>
-        <location filename="../leavedialog.cpp" line="78"/>
+        <location filename="../leavedialog.cpp" line="84"/>
         <source>Hibernate</source>
         <translation>ਹਾਈਬਰਨੇਟ</translation>
     </message>
@@ -52,32 +52,32 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../main.cpp" line="60"/>
+        <location filename="../main.cpp" line="59"/>
         <source>Logout.</source>
         <translation>ਲਾਗ ਆਉਟ।</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="63"/>
+        <location filename="../main.cpp" line="62"/>
         <source>Lockscreen.</source>
         <translation>ਸਕਰੀਨ ਲਾ।</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="66"/>
+        <location filename="../main.cpp" line="65"/>
         <source>Suspend.</source>
         <translation>ਸਸਪੈਂਡ।</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="69"/>
+        <location filename="../main.cpp" line="68"/>
         <source>Hibernate.</source>
         <translation>ਹਾਈਬਰਨੇਟ।</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="72"/>
+        <location filename="../main.cpp" line="71"/>
         <source>Shutdown.</source>
         <translation>ਬੰਦ ਕਰੋ।</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="75"/>
+        <location filename="../main.cpp" line="74"/>
         <source>Reboot.</source>
         <translation>ਮੁੜ-ਚਾਲੂ ਕਰੋ।</translation>
     </message>

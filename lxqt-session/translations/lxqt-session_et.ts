@@ -4,12 +4,12 @@
 <context>
     <name>LXQtModuleManager</name>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="323"/>
+        <location filename="../src/lxqtmodman.cpp" line="325"/>
         <source>Crash Report</source>
         <translation>Veast teatamine</translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="324"/>
+        <location filename="../src/lxqtmodman.cpp" line="326"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; on liiga palju kordi kokku jooksnud. Selle teenuse automaatne käivitamine on kuni järgmise sisselogimiseni edasi lükatud.</translation>
     </message>
@@ -33,12 +33,12 @@
         <translation>Kasutatav aknahaldur.</translation>
     </message>
     <message>
-        <location filename="../src/sessionapplication.cpp" line="83"/>
+        <location filename="../src/sessionapplication.cpp" line="82"/>
         <source>DBus Environment</source>
         <translation>DBus keskkkond</translation>
     </message>
     <message>
-        <location filename="../src/sessionapplication.cpp" line="84"/>
+        <location filename="../src/sessionapplication.cpp" line="83"/>
         <source>The DBus Activation Environment wasn&apos;t updated. Some apps might not work properly</source>
         <translation>DBusi aktiveerimiskeskkonda ei värskendatud. Mõned rakendused ei pruugi korralikult töötada</translation>
     </message>

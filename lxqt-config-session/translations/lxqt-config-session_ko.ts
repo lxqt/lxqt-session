@@ -80,22 +80,22 @@
         <translation>응용 프로그램 자동 시작</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="138"/>
-        <location filename="../autostartpage.cpp" line="147"/>
-        <location filename="../autostartpage.cpp" line="161"/>
-        <location filename="../autostartpage.cpp" line="174"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="149"/>
+        <location filename="../autostartpage.cpp" line="165"/>
+        <location filename="../autostartpage.cpp" line="178"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="138"/>
-        <location filename="../autostartpage.cpp" line="161"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="165"/>
         <source>Please provide Name and Command</source>
         <translation>이름과 명령을 입력해 주세요</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="147"/>
-        <location filename="../autostartpage.cpp" line="174"/>
+        <location filename="../autostartpage.cpp" line="149"/>
+        <location filename="../autostartpage.cpp" line="178"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>파일 &apos;%1&apos;이 이미 있습니다!</translation>
     </message>

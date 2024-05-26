@@ -80,22 +80,22 @@
         <translation>アプリケーションの自動起動</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="138"/>
-        <location filename="../autostartpage.cpp" line="147"/>
-        <location filename="../autostartpage.cpp" line="161"/>
-        <location filename="../autostartpage.cpp" line="174"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="149"/>
+        <location filename="../autostartpage.cpp" line="165"/>
+        <location filename="../autostartpage.cpp" line="178"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="138"/>
-        <location filename="../autostartpage.cpp" line="161"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="165"/>
         <source>Please provide Name and Command</source>
         <translation>名前とコマンドを入力して下さい</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="147"/>
-        <location filename="../autostartpage.cpp" line="174"/>
+        <location filename="../autostartpage.cpp" line="149"/>
+        <location filename="../autostartpage.cpp" line="178"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>ファイル &apos;%1&apos; が既に存在しています！</translation>
     </message>
@@ -155,7 +155,7 @@
     <message>
         <location filename="../basicsettings.ui" line="162"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>サスペンド/ハイバネートの前に画面をロックする　　　　　　</translation>
+        <translation>サスペンド/ハイバネートの前に画面をロックする&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="169"/>
