@@ -80,22 +80,22 @@
         <translation>程序自动启动</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="138"/>
-        <location filename="../autostartpage.cpp" line="147"/>
-        <location filename="../autostartpage.cpp" line="161"/>
-        <location filename="../autostartpage.cpp" line="174"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="149"/>
+        <location filename="../autostartpage.cpp" line="165"/>
+        <location filename="../autostartpage.cpp" line="178"/>
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="138"/>
-        <location filename="../autostartpage.cpp" line="161"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="165"/>
         <source>Please provide Name and Command</source>
         <translation>请提供名称和命令</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="147"/>
-        <location filename="../autostartpage.cpp" line="174"/>
+        <location filename="../autostartpage.cpp" line="149"/>
+        <location filename="../autostartpage.cpp" line="178"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>文件 &apos;%1&apos; 已存在！</translation>
     </message>
