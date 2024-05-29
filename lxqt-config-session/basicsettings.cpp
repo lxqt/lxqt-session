@@ -40,7 +40,6 @@ static const QLatin1String QtScaleKey("QT_SCALE_FACTOR");
 static const QLatin1String x11LockCommandKey("lock_command");
 static const QLatin1String GdkScaleKey("GDK_SCALE");
 static const QLatin1String openboxValue("openbox");
-static const QLatin1String emptyValue("");
 
 BasicSettings::BasicSettings(LXQt::Settings *settings, QWidget *parent) :
     QWidget(parent),
@@ -75,9 +74,7 @@ void BasicSettings::restoreSettings()
     }
 
     QStringList knownX11Locker;
-    knownX11Locker << QStringLiteral("i3lock") << QStringLiteral("kscreenlocker") << QStringLiteral("slock")  << QStringLiteral("xss-lock") << QStringLiteral("xsecurelock")<< QStringLiteral("xlock");//we could also add "xdg-screensaver lock"" and make it the default value, removing the "custom"
-
-    QString currentPlatform = QGuiApplication::platformName();
+    knownX11Locker << QStringLiteral("i3lock") << QStringLiteral("kscreenlocker") << QStringLiteral("slock") << QStringLiteral("xsecurelock") << QStringLiteral("xlock");
 
     QString wm = m_settings->value(windowManagerKey, openboxValue).toString();
     SessionConfigWindow::handleCfgComboBox(ui->wmComboBox, knownWMs, wm);
@@ -91,9 +88,10 @@ void BasicSettings::restoreSettings()
     ui->scaleSpinBox->setValue(m_settings->value(QtScaleKey, 1.0).toDouble());
     m_settings->endGroup();
 
-    QString x11LockCommand = m_settings->value(x11LockCommandKey, emptyValue).toString();
+    QString x11LockCommand = m_settings->value(x11LockCommandKey, QString()).toString();
     SessionConfigWindow::handleCfgComboBox(ui->x11LockCommandComboBox, knownX11Locker, x11LockCommand);
-    m_moduleModel->reset();
+
+    ui->customLockBox->setChecked(!x11LockCommand.isEmpty());
 }
 
 void BasicSettings::save()
@@ -109,7 +107,8 @@ void BasicSettings::save()
     const bool lockBeforePowerActions = ui->lockBeforePowerActionsCheckBox->isChecked();
     const int powerAfterLockDelay = ui->powerAfterLockDelaySpinBox->value();
     const double scaleFactor = ui->scaleSpinBox->value();
-    const QString x11LockCommand = ui->x11LockCommandComboBox->currentText();
+    const QString x11LockCommand = ui->customLockBox->isChecked() ? ui->x11LockCommandComboBox->currentText()
+                                                                  : QString();
 
     QMap<QString, AutostartItem> previousItems(AutostartItem::createItemMap());
     QMutableMapIterator<QString, AutostartItem> i(previousItems);
@@ -125,6 +124,7 @@ void BasicSettings::save()
         m_settings->setValue(windowManagerKey, windowManager);
         doRestart = true;
     }
+
 
     if (leaveConfirmation != m_settings->value(leaveConfirmationKey, false).toBool())
     {
@@ -144,9 +144,12 @@ void BasicSettings::save()
         doRestart = true;
     }
 
-    if (x11LockCommand != m_settings->value(x11LockCommandKey, emptyValue).toString())
+    if (x11LockCommand != m_settings->value(x11LockCommandKey, QString()).toString())
     {
-        m_settings->setValue(x11LockCommandKey, x11LockCommand);
+        if (x11LockCommand.isEmpty())
+            m_settings->remove(x11LockCommandKey);
+        else
+            m_settings->setValue(x11LockCommandKey, x11LockCommand);
         doRestart = true;
     }
 
