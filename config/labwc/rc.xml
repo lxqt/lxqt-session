@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+
+<!--
+  This is a very basic config file for labwc with LXQt with many options missing. For a complete
+  set of options with comments, see docs/rc.xml.all
+  Theme "Vent-dark" has to be copied to ~/.local/share/themes/Vent-dark"
+-->
+
+<labwc_config>
+
+  <core>
+    <gap>10</gap>
+  </core>
+
+ <theme>
+    <name>Vent</name>
+    <cornerRadius>10</cornerRadius>
+    <font place="ActiveWindow">
+      <name>sans</name>
+      <size>13</size>
+      <slant>normal</slant>
+      <weight>bold</weight>
+    </font>
+    <font place="InActiveWindow">
+      <name>sans</name>
+      <size>13</size>
+      <slant>normal</slant>
+      <weight>bold</weight>
+    </font>
+    <font place="MenuItem">
+      <name>sans</name>
+      <size>12</size>
+      <slant>normal</slant>
+      <weight>normal</weight>
+    </font>
+    <font place="OnScreenDisplay">
+      <name>sans</name>
+      <size>13</size>
+      <slant>normal</slant>
+      <weight>normal</weight>
+    </font>
+  </theme>
+
+  <keyboard>
+    <default />
+    <!-- Reload config -->
+    <keybind key="C-S-r">
+      <action name="Reconfigure"/>
+    </keybind>
+    <!-- LXQt Keybindings -->
+    <keybind key="W-Return">
+      <action name="Execute" command="qterminal" />
+    </keybind>
+    <keybind key="W-p">
+      <action name="Execute" command="pcmanfm-qt" />
+    </keybind>
+    <keybind key="W-f">
+      <action name="Execute" command="fpad" />
+    </keybind>
+    <keybind key="A-Space">
+      <action name="Execute" command="lxqt-runner" />
+    </keybind>
+    <keybind key="A-F2">
+      <action name="Execute" command="lxqt-runner" />
+    </keybind>
+    <!-- For qterminal dropdown -->
+    <keybind key="F12">
+      <action name="Execute" command="toggledropdown" />
+    </keybind>
+  </keyboard>
+
+  <mouse>
+    <default />
+    <!-- Show root menu on desktop also with right click -->
+   <context name="Root">
+      <mousebind button="Left" action="Press">
+        <action name="ShowMenu">
+          <menu>root-menu</menu>
+        </action>
+      </mousebind>
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu">
+          <menu>root-menu</menu>
+        </action>
+      </mousebind>
+      <mousebind button="Middle" action="Press">
+        <action name="ShowMenu">
+          <menu>root-menu</menu>
+        </action>
+      </mousebind>
+    </context>
+  </mouse>
+
+
+    <!--
+    The *category* element can be set to touch, non-touch, default or the name
+    of a device. You can obtain device names by running *libinput list-devices*
+    as root or member of the input group.
+    Tap is set to *yes* be default. All others are left blank in order to use
+    device defaults.
+    All values are [yes|no] except for:
+      - pointerSpeed [-1.0 to 1.0]
+      - accelProfile [flat|adaptive]
+      - tapButtonMap [lrm|lmr]
+  -->
+  <libinput>
+    <device category="default">
+      <naturalScroll>no</naturalScroll>
+      <leftHanded/>
+      <pointerSpeed>1</pointerSpeed>
+      <accelProfile>adaptive</accelProfile>
+      <tap>yes</tap>
+      <tapButtonMap/>
+      <middleEmulation/>
+      <disableWhileTyping>yes</disableWhileTyping>
+    </device>
+  </libinput>
+
+</labwc_config>

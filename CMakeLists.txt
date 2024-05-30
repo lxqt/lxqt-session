@@ -28,7 +28,7 @@ set(SHELLQT_MINIMUM_VERSION "6.0.0")
 find_package(Qt6DBus ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6Widgets ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(KF6WindowSystem ${KF5_MINIMUM_VERSION} REQUIRED)
+find_package(KF6WindowSystem ${KF6_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
 find_package(qtxdg-tools ${QTXDG_MINIMUM_VERSION} REQUIRED)
 find_package(X11 REQUIRED)
@@ -75,8 +75,10 @@ endif()
 set(PREDEF_XDG_DATA_DIRS "${PREDEF_XDG_DATA_DIRS}:/usr/local/share:/usr/share")
 set(PREDEF_XDG_CONFIG_DIRS "/etc:${LXQT_ETC_XDG_DIR}:/usr/share")
 configure_file(startlxqt.in startlxqt @ONLY)
+configure_file(startlxqtwayland.in startlxqtwayland @ONLY)
 install(PROGRAMS
     "${CMAKE_CURRENT_BINARY_DIR}/startlxqt"
+    "${CMAKE_CURRENT_BINARY_DIR}/startlxqtwayland"
     DESTINATION "${CMAKE_INSTALL_BINDIR}"
     COMPONENT Runtime
 )
@@ -90,6 +92,6 @@ install(FILES
 add_subdirectory(config)
 add_subdirectory(autostart)
 
-# xsession *.desktop file for display managers
+# *.desktop files for display managers
 add_subdirectory(xsession)
-
+add_subdirectory(waylandsession)

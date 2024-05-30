@@ -1,0 +1,21 @@
+# LXQt labwc environment file
+
+# This allows xdg-desktop-portal-wlr to function (e.g. for screen-recording)
+# XDG_CURRENT_DESKTOP is set to LXQt:labwc:wlroots at startup.
+# XDG_CURRENT_DESKTOP=wlroots
+
+# Disable hardware cursors. Most users wouldn't want to do this, but if you
+# are experiencing issues with disappearing cursors, this might fix it.
+# Autodetected at startup on virtualized hardware which use systemd
+#WLR_NO_HARDWARE_CURSORS=1
+
+# For Java applications such as JetBrains/Intellij Idea, set this variable
+# to avoid menus with incorrect offset and blank windows
+# See https://github.com/swaywm/sway/issues/595
+_JAVA_AWT_WM_NONREPARENTING=1
+
+# Firefox
+MOZ_ENABLE_WAYLAND=1
+
+# Cursor theme and size are imported from LXQt at login. Configure under LXQt in "Appearance → Cursor".
+# Keyboard layout and toggle options are imported only once from LXQt, edit here to change
