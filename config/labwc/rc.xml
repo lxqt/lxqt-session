@@ -67,6 +67,12 @@
     <keybind key="F12">
       <action name="Execute" command="toggledropdown" />
     </keybind>
+    <!-- Powerbutton-->
+    <keybind key="XF86PowerOff">
+      <action name="Execute">
+        <command>lxqt-leave</command>
+      </action>
+    </keybind>
   </keyboard>
 
   <mouse>
