@@ -19,7 +19,7 @@ option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" O
 option(WITH_LIBUDEV "Build with libudev support" ON)
 
 # Minimum Versions
-set(KF6_MINIMUM_VERSION "6.6.0")
+set(KF6_MINIMUM_VERSION "6.0.0")
 set(LXQT_MINIMUM_VERSION "2.0.0")
 set(QTXDG_MINIMUM_VERSION "4.0.0")
 set(QT_MINIMUM_VERSION "6.6.0")
@@ -28,7 +28,7 @@ set(SHELLQT_MINIMUM_VERSION "6.0.0")
 find_package(Qt6DBus ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6Widgets ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(KF6WindowSystem ${KF5_MINIMUM_VERSION} REQUIRED)
+find_package(KF6WindowSystem ${KF6_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
 find_package(qtxdg-tools ${QTXDG_MINIMUM_VERSION} REQUIRED)
 find_package(X11 REQUIRED)
