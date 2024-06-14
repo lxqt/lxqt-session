@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<openbox_menu>
+
+<menu id="root-menu" label="">
+  <item label="QTerminal"><action name="Execute" command="qterminal" /></item>
+  <item label="Filemanager"><action name="Execute" command="pcmanfm-qt"/></item>
+  <item label="Start LXQt Session"><action name="Execute" command="lxqt-session"/></item>
+
+  <separator />
+  <item label="LXQt Settings"><action name="Execute" command="lxqt-config" /></item>
+  <item label="Reconfigure Labwc"><action name="Reconfigure" /></item>
+  <separator />
+  <item label="Logout"><action name="Exit" /></item>
+</menu>
+
+</openbox_menu>
+

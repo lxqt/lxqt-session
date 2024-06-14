@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=startlxqtwayland
+TryExec=startlxqtwayland
+DesktopNames=LXQt
+
+#TRANSLATIONS_DIR=translations
