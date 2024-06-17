@@ -146,6 +146,7 @@ void LeaveDialog::showEvent(QShowEvent *event)
             {
                 layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
                 layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityExclusive);
+                layershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
                 LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
                 layershell->setAnchors(anchors);
                 layershell->setExclusiveZone(-1);
