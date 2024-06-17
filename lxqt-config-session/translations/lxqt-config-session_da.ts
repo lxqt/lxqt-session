@@ -26,7 +26,7 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>Vent på systembakke</translation>
+        <translation>Vent på statusfelt</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
@@ -91,7 +91,7 @@
         <location filename="../autostartpage.cpp" line="140"/>
         <location filename="../autostartpage.cpp" line="165"/>
         <source>Please provide Name and Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Angiv venligst navn og kommando</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="149"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation>Standardmappe til at gemme dine downloadede filer</translation>
+        <translation>Standardmappe til at gemme dine nedhentede filer</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>

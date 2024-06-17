@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Sti til konfigurationsfil.</translation>
+        <translation>Sti til indstillingsfil.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
@@ -35,12 +35,12 @@
     <message>
         <location filename="../src/sessionapplication.cpp" line="82"/>
         <source>DBus Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>DBus miljø</translation>
     </message>
     <message>
         <location filename="../src/sessionapplication.cpp" line="83"/>
         <source>The DBus Activation Environment wasn&apos;t updated. Some apps might not work properly</source>
-        <translation type="unfinished"></translation>
+        <translation>DBus aktiveringsmiljøet blev ikke ajourført. Nogle programmer fungerer muligvis ikke korrekt</translation>
     </message>
 </context>
 <context>
@@ -68,7 +68,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Du kan når som helst ændre dette gennem Præferencer -&gt; Sessionsindstillinger -&gt; Grundlæggende indstillinger.</translation>
+        <translation>Du kan når som helst ændre dette gennem Indstillinger -&gt; Sessionsindstillinger -&gt; Grundlæggende indstillinger.</translation>
     </message>
 </context>
 </TS>
