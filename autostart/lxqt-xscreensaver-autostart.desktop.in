@@ -4,5 +4,6 @@ Version=1.0
 TryExec=xscreensaver
 Exec=xscreensaver -no-splash
 OnlyShowIn=LXQt;
+X-LXQt-X11-Only=true;
 
 #TRANSLATIONS_DIR=translations

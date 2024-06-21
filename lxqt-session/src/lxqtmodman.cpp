@@ -103,8 +103,13 @@ void LXQtModuleManager::startAutostartApps()
     // XDG autostart
     const XdgDesktopFileList fileList = XdgAutoStart::desktopFileList();
     QList<const XdgDesktopFile*> trayApps;
+    bool isWayland((QGuiApplication::platformName() == QLatin1String("wayland")));
     for (XdgDesktopFileList::const_iterator i = fileList.constBegin(); i != fileList.constEnd(); ++i)
     {
+        if (isWayland && i->value(QSL("X-LXQt-X11-Only"), false).toBool())
+        {
+            continue;
+        }
         if (i->value(QSL("X-LXQt-Need-Tray"), false).toBool())
             trayApps.append(&(*i));
         else
