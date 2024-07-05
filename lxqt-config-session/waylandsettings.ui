@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WaylandSettings</class>
+ <widget class="QWidget" name="WaylandSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>446</width>
+    <height>404</height>
+   </rect>
+  </property>
+  <widget class="QPushButton" name="findWayLockCommandButton">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>230</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Search...</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="wayLockCommandComboBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>230</y>
+     <width>291</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="toolTip">
+    <string>Use &quot;loginctl lock-session&quot; on kwin_wayland</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="wayLockCommandLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>286</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Screenlock command:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>168</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Wayland Settings</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="findCompositorButton">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>120</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Search...</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="compositorComboBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>291</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <property name="text" stdset="0">
+    <string>Wayland Compotis:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="wayLockCommandLabel_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>404</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Wayland compositor:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

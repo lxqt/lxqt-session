@@ -12,6 +12,7 @@ set(lxqt-sessioncfg_HDRS
     autostartutils.h
     environmentpage.h
     userlocationspage.h
+    waylandsettings.h
 )
 
 set(lxqt-sessioncfg_SRCS
@@ -26,6 +27,7 @@ set(lxqt-sessioncfg_SRCS
     autostartutils.cpp
     environmentpage.cpp
     userlocationspage.cpp
+    waylandsettings.cpp
     ../lxqt-session/src/windowmanager.cpp
 )
 
@@ -34,6 +36,7 @@ set(lxqt-sessioncfg_UI_FILES
     autostartpage.ui
     autostartedit.ui
     environmentpage.ui
+    waylandsettings.ui
 )
 
 # Translations
