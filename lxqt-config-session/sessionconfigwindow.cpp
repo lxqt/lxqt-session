@@ -4,7 +4,7 @@
  * LXQt - a lightweight, Qt based, desktop toolset
  * https://lxqt.org/
  *
- * Copyright: 2010-2011 LXQt team
+ * Copyright: 2010-2024 LXQt team
  * Authors:
  *   Petr Vanek <petr@scribus.info>
  *

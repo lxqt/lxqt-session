@@ -4,10 +4,8 @@
  * LXQt - a lightweight, Qt based, desktop toolset
  * https://lxqt.org/
  *
- * Copyright: 2010-2012 LXQt team
- * Authors:
- *   Petr Vanek <petr@scribus.info>
- *
+ * Copyright: 2010-2024 LXQt team
+
  * This program or library is free software; you can redistribute it
  * and/or modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either

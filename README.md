@@ -66,6 +66,10 @@ Applications to launch according to the [Autostart Specification](https://www.fr
 Term "LXQt Autostart" refers to applications launched in LXQt sessions only, "Global Autostart" to those launched in all kinds of session. The distinction is relying on keys `OnlyShowIn` and `NotShowIn` of the desktop entry files in use.  
 The underlying desktop entry files can be edited manually, buttons `Add`, `Edit` and `Delete` at the right of pane "Autostart" can serve as some rudimentary editor, too.  
 
+#### Wayland Settings (experimental)
+
+Allows setting the compositor and the screenlocker under wayland. Will be shown only if [lxqt-wayland](https://github.com/lxqt/lxqt-wayland/) is installed.
+
 #### Environment (Advanced)
 Allows for setting arbitrary environment variables which will be available for all software running within LXQt sessions (so not only the components of LXQt itself).
 
