@@ -56,8 +56,6 @@ void WaylandSettings::restoreSettings()
     QStringList knownWayLocker;
     knownWayLocker << QStringLiteral("swaylock") << QStringLiteral("waylock") << QStringLiteral("waylock-fancy") << QStringLiteral("hyprlock");
 
-    QString currentPlatform = QGuiApplication::platformName();
-
     QString compositor = m_settings->value(compositorKey, emptyValue).toString();
     SessionConfigWindow::handleCfgComboBox(ui->compositorComboBox, knownCompositors, compositor);
 
