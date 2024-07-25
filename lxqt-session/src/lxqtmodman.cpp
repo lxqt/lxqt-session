@@ -426,19 +426,28 @@ void LXQtModuleManager::resetCrashReport()
 void lxqt_setenv(const char *env, const QByteArray &value)
 {
     wordexp_t p;
-    wordexp(value.constData(), &p, 0);
-    if (p.we_wordc == 1)
-    {
 
-        qCDebug(SESSION) << "Environment variable" << env << "=" << p.we_wordv[0];
-        qputenv(env, p.we_wordv[0]);
-    }
-    else
+    switch (wordexp(value.constData(), &p, 0))
     {
-        qCWarning(SESSION) << "Error expanding environment variable" << env << "=" << value;
-        qputenv(env, value);
+    case 0:
+        if (p.we_wordc == 1)
+        {
+            qCDebug(SESSION) << "Environment variable" << env << "=" << p.we_wordv[0];
+            qputenv(env, p.we_wordv[0]);
+            wordfree(&p);
+            return;
+        }
+        wordfree(&p);
+        break;
+    case WRDE_NOSPACE:
+        // wordfree needed: https://www.gnu.org/software/libc/manual/html_node/Wordexp-Example.html
+        wordfree(&p);
+        break;
+    default:
+        break;
     }
-     wordfree(&p);
+    qCWarning(SESSION) << "Error expanding environment variable" << env << "=" << value;
+    qputenv(env, value);
 }
 
 void lxqt_setenv_prepend(const char *env, const QByteArray &value, const QByteArray &separator)
