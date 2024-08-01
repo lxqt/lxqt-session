@@ -30,7 +30,6 @@
 
 static const QLatin1String compositorKey("compositor");
 static const QLatin1String wayLockCommandKey("lock_command_wayland");
-static const QLatin1String emptyValue("");
 
 WaylandSettings::WaylandSettings(LXQt::Settings *settings, QWidget *parent) :
     QWidget(parent),
@@ -56,10 +55,10 @@ void WaylandSettings::restoreSettings()
     QStringList knownWayLocker;
     knownWayLocker << QStringLiteral("swaylock") << QStringLiteral("waylock") << QStringLiteral("waylock-fancy") << QStringLiteral("hyprlock");
 
-    QString compositor = m_settings->value(compositorKey, emptyValue).toString();
+    QString compositor = m_settings->value(compositorKey).toString();
     SessionConfigWindow::handleCfgComboBox(ui->compositorComboBox, knownCompositors, compositor);
 
-    QString wayLockCommand = m_settings->value(wayLockCommandKey, emptyValue).toString();
+    QString wayLockCommand = m_settings->value(wayLockCommandKey).toString();
     SessionConfigWindow::handleCfgComboBox(ui->wayLockCommandComboBox, knownWayLocker, wayLockCommand);
 }
 
@@ -74,13 +73,13 @@ void WaylandSettings::save()
     const QString compositor = ui->compositorComboBox->currentText();
     const QString wayLockCommand = ui->wayLockCommandComboBox->currentText();
 
-    if (compositor != m_settings->value(compositorKey, emptyValue).toString())
+    if (compositor != m_settings->value(compositorKey).toString())
     {
         m_settings->setValue(compositorKey, compositor);
         doRestart = true;
     }
 
-    if (wayLockCommand != m_settings->value(wayLockCommandKey, emptyValue).toString())
+    if (wayLockCommand != m_settings->value(wayLockCommandKey).toString())
     {
         m_settings->setValue(wayLockCommandKey, wayLockCommand);
         doRestart = true;
