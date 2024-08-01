@@ -4,7 +4,7 @@
  * LXQt - a lightweight, Qt based, desktop toolset
  * https://lxqt.org/
  *
- * Copyright: 2010-2011 LXQt team
+ * Copyright: 2010-2024 LXQt team
  * Authors:
  *   Petr Vanek <petr@scribus.info>
  *
@@ -28,6 +28,7 @@
 #include <QLineEdit>
 #include <QMessageBox>
 #include <QFileDialog>
+#include <QStandardPaths>
 
 #include <LXQt/Globals>
 #include <LXQt/Settings>
@@ -36,9 +37,9 @@
 #include "../lxqt-session/src/windowmanager.h"
 #include "basicsettings.h"
 #include "autostartpage.h"
+#include "waylandsettings.h"
 #include "environmentpage.h"
 #include "userlocationspage.h"
-
 
 SessionConfigWindow::SessionConfigWindow() :
       LXQt::ConfigDialog(tr("LXQt Session Settings"), new LXQt::Settings(QSL("session")), nullptr)
@@ -60,6 +61,14 @@ SessionConfigWindow::SessionConfigWindow() :
     connect(autoStart, &AutoStartPage::needRestart, this, &SessionConfigWindow::setRestart);
     connect(this, &SessionConfigWindow::reset, autoStart, &AutoStartPage::restoreSettings);
     connect(this, &SessionConfigWindow::save, autoStart, &AutoStartPage::save);
+
+    if (!QStandardPaths::findExecutable(QLatin1String("startlxqtwayland")).isEmpty()) {
+        WaylandSettings* waylandSettings = new WaylandSettings(mSettings, this);
+        addPage(waylandSettings, tr("Wayland Settings (Experimental)"), QSL("wayland"));
+        connect(waylandSettings, &WaylandSettings::needRestart, this, &SessionConfigWindow::setRestart);
+        connect(this, &SessionConfigWindow::reset, waylandSettings, &WaylandSettings::restoreSettings);
+        connect(this, &SessionConfigWindow::save,  waylandSettings, &WaylandSettings::save);
+    }
 
     EnvironmentPage* environmentPage = new EnvironmentPage(mSettings, this);
     addPage(environmentPage, tr("Environment (Advanced)"), QSL("preferences-system-session-services"));
