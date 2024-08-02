@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="331"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation type="unfinished">&lt;b&gt;%1&lt;/b&gt; terlalu sering rusak. Memulai otomatisnya telah dinonaktifkan sampai masuk log berikutnya.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; terlalu sering galat. Memulai otomatisnya telah dinonaktifkan sampai masuk log berikutnya.</translation>
     </message>
 </context>
 <context>
@@ -35,12 +35,12 @@
     <message>
         <location filename="../src/sessionapplication.cpp" line="82"/>
         <source>DBus Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Lingkungan DBus</translation>
     </message>
     <message>
         <location filename="../src/sessionapplication.cpp" line="83"/>
         <source>The DBus Activation Environment wasn&apos;t updated. Some apps might not work properly</source>
-        <translation type="unfinished"></translation>
+        <translation>Lingkungan Aktivasi DBus tidak diperbarui. Beberapa aplikasi mungkin tidak berfungsi dengan baik.</translation>
     </message>
 </context>
 <context>
