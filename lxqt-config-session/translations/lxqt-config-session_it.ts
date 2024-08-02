@@ -388,13 +388,13 @@
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="93"/>
-        <source>Select a  wayland compositor</source>
-        <translation>Seleziona un compositor wayland</translation>
+        <source>Select a Wayland Compositor</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="98"/>
-        <source>Select a screenlocker for wayland</source>
-        <translation>Seleziona un bloccoschermo per wayland</translation>
+        <source>Select a Screenlocker for Wayland</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
