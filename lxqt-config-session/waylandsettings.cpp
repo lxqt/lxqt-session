@@ -90,10 +90,10 @@ void WaylandSettings::save()
 
 void WaylandSettings::findCompositorButton_clicked()
 {
-    SessionConfigWindow::updateCfgComboBox(ui->compositorComboBox, tr("Select a  wayland compositor"));
+    SessionConfigWindow::updateCfgComboBox(ui->compositorComboBox, tr("Select a Wayland Compositor"));
 }
 
 void WaylandSettings::findWayLockCommandButton_clicked()
 {
-    SessionConfigWindow::updateCfgComboBox(ui->wayLockCommandComboBox, tr("Select a screenlocker for wayland"));
+    SessionConfigWindow::updateCfgComboBox(ui->wayLockCommandComboBox, tr("Select a Screenlocker for Wayland"));
 }
