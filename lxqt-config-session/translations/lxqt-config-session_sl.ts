@@ -212,37 +212,42 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="44"/>
+        <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
         <translation>Nastavitve seje LXQt</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="47"/>
+        <location filename="../sessionconfigwindow.cpp" line="48"/>
         <source>Basic Settings</source>
         <translation>Osnovne nastavitve</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="53"/>
+        <location filename="../sessionconfigwindow.cpp" line="54"/>
         <source>User Directories</source>
         <translation>Uporabniške mape</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="59"/>
+        <location filename="../sessionconfigwindow.cpp" line="60"/>
         <source>Autostart</source>
         <translation>Samodejni zagon</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="65"/>
+        <location filename="../sessionconfigwindow.cpp" line="67"/>
+        <source>Wayland Settings (Experimental)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../sessionconfigwindow.cpp" line="74"/>
         <source>Environment (Advanced)</source>
         <translation>Okolje (napredno)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="91"/>
+        <location filename="../sessionconfigwindow.cpp" line="100"/>
         <source>Session Restart Required</source>
         <translation>Potreben je ponovni zagon seje</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="92"/>
+        <location filename="../sessionconfigwindow.cpp" line="101"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>Nekatere nastavitve se bodo uveljavile pri naslednji prijavi.</translation>
     </message>
@@ -351,6 +356,45 @@
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
         <translation>Lokacija za shranjevanje in nalaganje videoposnetkov in filmov</translation>
+    </message>
+</context>
+<context>
+    <name>WaylandSettings</name>
+    <message>
+        <location filename="../waylandsettings.ui" line="23"/>
+        <source>Wayland Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="30"/>
+        <source>Wayland compositor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="49"/>
+        <location filename="../waylandsettings.ui" line="81"/>
+        <source>Search...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="59"/>
+        <source>Screenlock command:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="71"/>
+        <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.cpp" line="93"/>
+        <source>Select a  wayland compositor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.cpp" line="98"/>
+        <source>Select a screenlocker for wayland</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
