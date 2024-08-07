@@ -389,12 +389,12 @@
     <message>
         <location filename="../waylandsettings.cpp" line="93"/>
         <source>Select a Wayland Compositor</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleziona un compositore Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Screenlocker for Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleziona un bloccoschermo per Wayland</translation>
     </message>
 </context>
 </TS>
