@@ -234,7 +234,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="67"/>
         <source>Wayland Settings (Experimental)</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland-Einstellungen (experimentell)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="74"/>
@@ -364,38 +364,38 @@
     <message>
         <location filename="../waylandsettings.ui" line="23"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland-Einstellungen</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland-Compositor:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Suchen...</translation>
+        <translation>Suchen...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Befehl für Bildschirm sperren:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
         <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Unter kwin_wayland &quot;loginctl lock-session&quot; benutzen</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="93"/>
         <source>Select a Wayland Compositor</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland Compositor auswählen</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Screenlocker for Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildschirmsperre unter Wayland auswählen</translation>
     </message>
 </context>
 </TS>

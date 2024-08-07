@@ -26,7 +26,7 @@
     <message>
         <location filename="../autostartedit.ui" line="57"/>
         <source>Wait for system tray</source>
-        <translation>Vent på systemtrau</translation>
+        <translation>Vent på systemkurv</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="61"/>
@@ -54,7 +54,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>Gjort om: %1</translation>
+        <translation>Overstyrer: %1</translation>
     </message>
 </context>
 <context>
