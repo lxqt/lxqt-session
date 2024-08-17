@@ -368,7 +368,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor:</source>
-        <translation>Compositore wayland:</translation>
+        <translation>Compositore Wayland:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
