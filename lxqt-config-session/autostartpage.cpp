@@ -128,7 +128,7 @@ void AutoStartPage::save()
 
 void AutoStartPage::addButton_clicked()
 {
-    AutoStartEdit edit(QString(), QString(), false);
+    AutoStartEdit edit(QString(), QString(), false, false);
     bool success = false;
     while (!success && edit.exec() == QDialog::Accepted)
     {
@@ -143,6 +143,8 @@ void AutoStartPage::addButton_clicked()
         XdgDesktopFile file(XdgDesktopFile::ApplicationType, trimmedName, trimmedCommand);
         if (edit.needTray())
             file.setValue(QL1S("X-LXQt-Need-Tray"), true);
+        if (edit.x11Only())
+            file.setValue(QL1S("X-LXQt-X11-Only"), true);
         if (mXdgAutoStartModel->setEntry(index, file))
             success = true;
         else
@@ -154,7 +156,10 @@ void AutoStartPage::editButton_clicked()
 {
     QModelIndex index = ui->autoStartView->selectionModel()->currentIndex();
     XdgDesktopFile file = mXdgAutoStartModel->desktopFile(index);
-    AutoStartEdit edit(file.name(), file.value(QL1S("Exec")).toString(), file.contains(QL1S("X-LXQt-Need-Tray")));
+    AutoStartEdit edit(file.name(),
+                       file.value(QL1S("Exec")).toString(),
+                       file.value(QL1S("X-LXQt-Need-Tray"), false).toBool(),
+                       file.value(QL1S("X-LXQt-X11-Only"), false).toBool());
     bool success = false;
     while (!success && edit.exec() == QDialog::Accepted)
     {
@@ -171,6 +176,10 @@ void AutoStartPage::editButton_clicked()
             file.setValue(QL1S("X-LXQt-Need-Tray"), true);
         else
             file.removeEntry(QL1S("X-LXQt-Need-Tray"));
+        if (edit.x11Only())
+            file.setValue(QL1S("X-LXQt-X11-Only"), true);
+        else
+            file.removeEntry(QL1S("X-LXQt-X11-Only"));
 
         if (mXdgAutoStartModel->setEntry(index, file, true))
             success = true;
