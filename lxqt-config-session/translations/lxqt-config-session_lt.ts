@@ -14,22 +14,27 @@
         <translation>Pavadinimas:</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="27"/>
+        <location filename="../autostartedit.ui" line="40"/>
         <source>Search...</source>
         <translation>Ieškoti...</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="47"/>
+        <location filename="../autostartedit.ui" line="54"/>
+        <source>Start only in X11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autostartedit.ui" line="30"/>
         <source>Command:</source>
         <translation>Komanda:</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="57"/>
+        <location filename="../autostartedit.ui" line="47"/>
         <source>Wait for system tray</source>
         <translation>Laukti sistemos dėklo</translation>
     </message>
     <message>
-        <location filename="../autostartedit.cpp" line="61"/>
+        <location filename="../autostartedit.cpp" line="67"/>
         <source>Select Application</source>
         <translation>Pasirinkite programą</translation>
     </message>
@@ -81,21 +86,21 @@
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="140"/>
-        <location filename="../autostartpage.cpp" line="149"/>
-        <location filename="../autostartpage.cpp" line="165"/>
-        <location filename="../autostartpage.cpp" line="178"/>
+        <location filename="../autostartpage.cpp" line="151"/>
+        <location filename="../autostartpage.cpp" line="170"/>
+        <location filename="../autostartpage.cpp" line="187"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="140"/>
-        <location filename="../autostartpage.cpp" line="165"/>
+        <location filename="../autostartpage.cpp" line="170"/>
         <source>Please provide Name and Command</source>
         <translation>Pateikite pavadinimą ir komandą</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="149"/>
-        <location filename="../autostartpage.cpp" line="178"/>
+        <location filename="../autostartpage.cpp" line="151"/>
+        <location filename="../autostartpage.cpp" line="187"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>Failas „%1“ jau yra!</translation>
     </message>

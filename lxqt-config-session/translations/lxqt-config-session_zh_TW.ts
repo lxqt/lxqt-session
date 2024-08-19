@@ -14,22 +14,27 @@
         <translation>名稱:</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="27"/>
+        <location filename="../autostartedit.ui" line="40"/>
         <source>Search...</source>
         <translation>搜尋...</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="47"/>
+        <location filename="../autostartedit.ui" line="54"/>
+        <source>Start only in X11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autostartedit.ui" line="30"/>
         <source>Command:</source>
         <translation>命令:</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="57"/>
+        <location filename="../autostartedit.ui" line="47"/>
         <source>Wait for system tray</source>
         <translation>等候系統欄</translation>
     </message>
     <message>
-        <location filename="../autostartedit.cpp" line="61"/>
+        <location filename="../autostartedit.cpp" line="67"/>
         <source>Select Application</source>
         <translation>選擇應用程式</translation>
     </message>
@@ -81,21 +86,21 @@
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="140"/>
-        <location filename="../autostartpage.cpp" line="149"/>
-        <location filename="../autostartpage.cpp" line="165"/>
-        <location filename="../autostartpage.cpp" line="178"/>
+        <location filename="../autostartpage.cpp" line="151"/>
+        <location filename="../autostartpage.cpp" line="170"/>
+        <location filename="../autostartpage.cpp" line="187"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="140"/>
-        <location filename="../autostartpage.cpp" line="165"/>
+        <location filename="../autostartpage.cpp" line="170"/>
         <source>Please provide Name and Command</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="149"/>
-        <location filename="../autostartpage.cpp" line="178"/>
+        <location filename="../autostartpage.cpp" line="151"/>
+        <location filename="../autostartpage.cpp" line="187"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>檔案 &apos;%1&apos; 已經存在!</translation>
     </message>
