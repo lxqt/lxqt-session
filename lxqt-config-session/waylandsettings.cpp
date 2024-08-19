@@ -50,7 +50,7 @@ WaylandSettings::~WaylandSettings()
 void WaylandSettings::restoreSettings()
 {
     QStringList knownCompositors;
-    knownCompositors << QStringLiteral("Hyprland") << QStringLiteral("kwin_wayland") << QStringLiteral("labwc") << QStringLiteral("sway") << QStringLiteral("wayfire");
+    knownCompositors << QStringLiteral("Hyprland") << QStringLiteral("kwin_wayland") << QStringLiteral("labwc") << QStringLiteral("river") << QStringLiteral("sway") << QStringLiteral("wayfire");
 
     QStringList knownWayLocker;
     knownWayLocker << QStringLiteral("swaylock") << QStringLiteral("waylock") << QStringLiteral("waylock-fancy") << QStringLiteral("hyprlock");
