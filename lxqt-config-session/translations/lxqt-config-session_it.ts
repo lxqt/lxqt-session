@@ -21,7 +21,7 @@
     <message>
         <location filename="../autostartedit.ui" line="54"/>
         <source>Start only in X11</source>
-        <translation type="unfinished"></translation>
+        <translation>Avvia solo in X11</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="30"/>
@@ -389,7 +389,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
         <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
-        <translation>Usare &quot;loginctl lock-session&quot; sotto kwin_wayland</translation>
+        <translation>Usare &quot;loginctl lock-session&quot; in kwin_wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="93"/>
