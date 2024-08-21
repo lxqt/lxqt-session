@@ -21,7 +21,7 @@
     <message>
         <location filename="../autostartedit.ui" line="54"/>
         <source>Start only in X11</source>
-        <translation type="unfinished"></translation>
+        <translation>Démarrer seulement dans X11</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="30"/>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>Ignorer : %1</translation>
+        <translation type="unfinished">Ignorer : %1</translation>
     </message>
 </context>
 <context>
@@ -130,7 +130,7 @@
     <message>
         <location filename="../basicsettings.ui" line="123"/>
         <source>Scale factor:</source>
-        <translation>Facteur d&apos;échelle&#xa0;:</translation>
+        <translation>Facteur d&apos;échelle :</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="149"/>
@@ -219,7 +219,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
-        <translation>Paramétres de la session LXQt</translation>
+        <translation>Paramètres de la session LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="48"/>
@@ -239,7 +239,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="67"/>
         <source>Wayland Settings (Experimental)</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres Waylant (Expérimental)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="74"/>
@@ -368,12 +368,12 @@
     <message>
         <location filename="../waylandsettings.ui" line="23"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Compositeur Wayland :</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
@@ -384,22 +384,22 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Commande de verrouillage de l&apos;écran :</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
         <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilisez &quot;loginctl lock-session&quot; sur kwin_wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="93"/>
         <source>Select a Wayland Compositor</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionnez un compositeur Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Screenlocker for Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionnez un vérouilleur d&apos;écran pour Wayland</translation>
     </message>
 </context>
 </TS>

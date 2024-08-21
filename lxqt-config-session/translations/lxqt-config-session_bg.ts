@@ -21,7 +21,7 @@
     <message>
         <location filename="../autostartedit.ui" line="54"/>
         <source>Start only in X11</source>
-        <translation type="unfinished"></translation>
+        <translation>Стартиране само в X11</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="30"/>
