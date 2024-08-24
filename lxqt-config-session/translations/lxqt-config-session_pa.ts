@@ -239,7 +239,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="67"/>
         <source>Wayland Settings (Experimental)</source>
-        <translation type="unfinished"></translation>
+        <translation>ਵੇਅਲੈਂਡ ਸੈਟਿੰਗਾਂ (ਤਜਰਬੇ ਅਧੀਨ)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="74"/>
@@ -368,7 +368,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="23"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>ਵੇਅਲੈਂਡ ਸੈਟਿੰਗਾਂ</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
@@ -384,7 +384,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command:</source>
-        <translation type="unfinished"></translation>
+        <translation>ਸਕਰੀਨ ਲਾਕ ਕਰਨ ਵਾਲੀ ਕਮਾਂਡ:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
