@@ -59,7 +59,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation type="unfinished">Ignorer : %1</translation>
+        <translation>Remplacements : %1</translation>
     </message>
 </context>
 <context>
@@ -379,7 +379,7 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Chercher...</translation>
+        <translation>Rechercher...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>

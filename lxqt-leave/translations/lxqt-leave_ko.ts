@@ -32,7 +32,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="71"/>
         <source>Suspend</source>
-        <translation>절전모드</translation>
+        <translation>절전</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="76"/>
@@ -42,7 +42,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="84"/>
         <source>Hibernate</source>
-        <translation>최대 절전모드</translation>
+        <translation>최대 절전</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="51"/>
