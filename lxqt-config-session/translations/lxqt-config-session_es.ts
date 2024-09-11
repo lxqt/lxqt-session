@@ -379,7 +379,7 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Buscar...</translation>
+        <translation>Búsqueda...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
