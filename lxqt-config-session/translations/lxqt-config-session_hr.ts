@@ -21,7 +21,7 @@
     <message>
         <location filename="../autostartedit.ui" line="54"/>
         <source>Start only in X11</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokreni samo u X11</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="30"/>
@@ -239,7 +239,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="67"/>
         <source>Wayland Settings (Experimental)</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland postavke (eksperimentalno)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="74"/>
@@ -368,7 +368,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="23"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland postavke</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
@@ -379,17 +379,17 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Traži …</translation>
+        <translation>Traži …</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Naredba za zaključavanje ekrana:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
         <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Koristi „loginctl lock-session” na kwin_wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="93"/>
@@ -399,7 +399,7 @@
     <message>
         <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Screenlocker for Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Odaberi zaključavanje ekrana za Wayland</translation>
     </message>
 </context>
 </TS>

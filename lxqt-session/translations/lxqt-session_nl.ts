@@ -48,12 +48,12 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation>Welkom bij LXQt</translation>
+        <translation>Welkom in LXQt</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welkom bij LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Kies uw standaard vensterbeheerder.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welkom in LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Kies uw standaard vensterbeheerder.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="65"/>
@@ -63,12 +63,12 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation>Kies uw favoriet.</translation>
+        <translation>Kies uw favoriete beheerder.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>U kunt dit ten allen tijde wijzigen via Instellingen -&gt; Sessie-instellingen -&gt; Algemene instellingen.</translation>
+        <translation>U kunt dit te allen tijde wijzigen via Instellingen → Sessie-instellingen → Algemene instellingen.</translation>
     </message>
 </context>
 </TS>
