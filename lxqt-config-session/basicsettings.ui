@@ -107,6 +107,9 @@
    </item>
    <item row="3" column="0">
     <widget class="QGroupBox" name="groupBox_4">
+     <property name="toolTip">
+      <string>Under Wayland, adjust scaling via compositor settings or kanshi instead.</string>
+     </property>
      <property name="title">
       <string>Global Screen Scaling</string>
      </property>
