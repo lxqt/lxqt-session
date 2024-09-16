@@ -124,36 +124,41 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
+        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="114"/>
         <source>Global Screen Scaling</source>
         <translation>Ridimensionamento globale dello schermo</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="123"/>
+        <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
         <translation>Fattore di ridimensionamento:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="149"/>
+        <location filename="../basicsettings.ui" line="152"/>
         <source>Leave Session</source>
         <translation>Chiusura sessione</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="155"/>
+        <location filename="../basicsettings.ui" line="158"/>
         <source>Ask for confirmation to leave session</source>
         <translation>Chiedi una conferma per terminare la sessione</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="162"/>
+        <location filename="../basicsettings.ui" line="165"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>Blocca lo schermo prima di sospendere o ibernare</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="169"/>
+        <location filename="../basicsettings.ui" line="172"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>Sospendi/iberna dopo il blocco:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="182"/>
+        <location filename="../basicsettings.ui" line="185"/>
         <source> ms</source>
         <translation> ms</translation>
     </message>

@@ -124,36 +124,41 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
+        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="114"/>
         <source>Global Screen Scaling</source>
         <translation>Глобальний масштаб екрана</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="123"/>
+        <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
         <translation>Масштаб:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="149"/>
+        <location filename="../basicsettings.ui" line="152"/>
         <source>Leave Session</source>
         <translation>Вийти з сеансу</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="155"/>
+        <location filename="../basicsettings.ui" line="158"/>
         <source>Ask for confirmation to leave session</source>
         <translation>Запитувати підтвердження про вихід з сеансу</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="162"/>
+        <location filename="../basicsettings.ui" line="165"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>Блокувати екран перед переходом з режим зупинення/сну</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="169"/>
+        <location filename="../basicsettings.ui" line="172"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>Перехід в режим зупинення/сну після блокування через:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="182"/>
+        <location filename="../basicsettings.ui" line="185"/>
         <source> ms</source>
         <translation> мс</translation>
     </message>

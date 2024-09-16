@@ -139,36 +139,41 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
+        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="114"/>
         <source>Global Screen Scaling</source>
         <translation>グローバル画面スケーリング</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="123"/>
+        <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
         <translation>スケール係数:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="149"/>
+        <location filename="../basicsettings.ui" line="152"/>
         <source>Leave Session</source>
         <translation>セッションの終了</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="155"/>
+        <location filename="../basicsettings.ui" line="158"/>
         <source>Ask for confirmation to leave session</source>
         <translation>セッション終了時に確認する</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="162"/>
+        <location filename="../basicsettings.ui" line="165"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>サスペンド/ハイバネートの前に画面をロックする&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="169"/>
+        <location filename="../basicsettings.ui" line="172"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>ロックからサスペンド/ハイバネートまでの時間:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="182"/>
+        <location filename="../basicsettings.ui" line="185"/>
         <source> ms</source>
         <translation> ミリ秒</translation>
     </message>

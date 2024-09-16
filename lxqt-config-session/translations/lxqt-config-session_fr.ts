@@ -124,36 +124,41 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
+        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="114"/>
         <source>Global Screen Scaling</source>
         <translation>Mise à l&apos;échelle globale de l&apos;écran</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="123"/>
+        <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
-        <translation>Facteur d&apos;échelle :</translation>
+        <translation>Facteur d&apos;échelle&#xa0;:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="149"/>
+        <location filename="../basicsettings.ui" line="152"/>
         <source>Leave Session</source>
         <translation>Quitter la session</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="155"/>
+        <location filename="../basicsettings.ui" line="158"/>
         <source>Ask for confirmation to leave session</source>
         <translation>Demander confirmation pour quitter la session</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="162"/>
+        <location filename="../basicsettings.ui" line="165"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>Verrouiller l&apos;écran avant de suspendre/hiberner</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="169"/>
+        <location filename="../basicsettings.ui" line="172"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>Suspendre/hiberner après le délai de verrouillage :</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="182"/>
+        <location filename="../basicsettings.ui" line="185"/>
         <source> ms</source>
         <translation> ms</translation>
     </message>
@@ -373,7 +378,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor:</source>
-        <translation>Compositeur Wayland :</translation>
+        <translation>Compositeur Wayland&#xa0;:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
@@ -384,7 +389,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command:</source>
-        <translation>Commande de verrouillage de l&apos;écran :</translation>
+        <translation>Commande de verrouillage de l&apos;écran&#xa0;:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>

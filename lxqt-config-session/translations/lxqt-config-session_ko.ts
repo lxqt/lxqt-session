@@ -134,36 +134,41 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
+        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="114"/>
         <source>Global Screen Scaling</source>
         <translation>전역 화면 크기조정</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="123"/>
+        <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
         <translation>배율:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="149"/>
+        <location filename="../basicsettings.ui" line="152"/>
         <source>Leave Session</source>
         <translation>세션 나가기</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="155"/>
+        <location filename="../basicsettings.ui" line="158"/>
         <source>Ask for confirmation to leave session</source>
         <translation>세션에서 나갈 것인지를 묻습니다</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="162"/>
+        <location filename="../basicsettings.ui" line="165"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>절전/최대절전 모드 전에 화면 잠금</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="169"/>
+        <location filename="../basicsettings.ui" line="172"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>잠금 지연 후에 절전/최대절전 모드:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="182"/>
+        <location filename="../basicsettings.ui" line="185"/>
         <source> ms</source>
         <translation> ms</translation>
     </message>
