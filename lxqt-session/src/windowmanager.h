@@ -42,7 +42,7 @@ struct WindowManager
 typedef QList<WindowManager> WindowManagerList;
 
 /*! Helper functions for window manager detection */
-WindowManagerList  getWindowManagerList(bool onlyAvailable=true);
+WindowManagerList  getWindowManagerList(bool onlyAvailable=true, bool wayland=false);
 
 bool findProgram(const QString &program);
 

@@ -27,6 +27,7 @@
 #include "ui_waylandsettings.h"
 
 #include "sessionconfigwindow.h"
+#include "../lxqt-session/src/windowmanager.h"
 
 static const QLatin1String compositorKey("compositor");
 static const QLatin1String wayLockCommandKey("lock_command_wayland");
@@ -50,13 +51,17 @@ WaylandSettings::~WaylandSettings()
 void WaylandSettings::restoreSettings()
 {
     QStringList knownCompositors;
-    knownCompositors << QStringLiteral("Hyprland") << QStringLiteral("kwin_wayland") << QStringLiteral("labwc") << QStringLiteral("river") << QStringLiteral("sway") << QStringLiteral("wayfire");
-
-    QStringList knownWayLocker;
-    knownWayLocker << QStringLiteral("swaylock") << QStringLiteral("waylock") << QStringLiteral("waylock-fancy") << QStringLiteral("hyprlock");
+    const auto wmList = getWindowManagerList(true, true);
+    for (const WindowManager &wm : wmList)
+    {
+        knownCompositors << wm.command;
+    }
 
     QString compositor = m_settings->value(compositorKey).toString();
     SessionConfigWindow::handleCfgComboBox(ui->compositorComboBox, knownCompositors, compositor);
+
+    QStringList knownWayLocker;
+    knownWayLocker << QStringLiteral("swaylock") << QStringLiteral("waylock") << QStringLiteral("waylock-fancy") << QStringLiteral("hyprlock");
 
     QString wayLockCommand = m_settings->value(wayLockCommandKey).toString();
     SessionConfigWindow::handleCfgComboBox(ui->wayLockCommandComboBox, knownWayLocker, wayLockCommand);
