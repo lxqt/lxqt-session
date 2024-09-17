@@ -29,8 +29,7 @@
 
 #include <QObject>
 #include <QStringList>
-#include <QFileInfo>
-#include <QDir>
+#include <QStandardPaths>
 #include <LXQt/Globals>
 #include <LXQt/Settings>
 #include <QDebug>
@@ -38,23 +37,12 @@
 
 bool findProgram(const QString &program)
 {
-    QFileInfo fi(program);
-    if (fi.isExecutable())
-        return true;
-
-    const QStringList paths = QFile::decodeName(qgetenv("PATH")).split(QL1C(':'));
-    for(const QString &dir : paths)
-    {
-        QFileInfo fi= QFileInfo(dir + QDir::separator() + program);
-        if (fi.isExecutable() )
-            return true;
-    }
-    return false;
+    return !QStandardPaths::findExecutable(program).isEmpty();
 }
 
-WindowManagerList getWindowManagerList(bool onlyAvailable)
+WindowManagerList getWindowManagerList(bool onlyAvailable, bool wayland)
 {
-    LXQt::Settings cfg(QSL("windowmanagers"));
+    LXQt::Settings cfg(!wayland ? QSL("windowmanagers") : QSL("waylandwindowmanagers"));
     cfg.beginGroup(QSL("KnownManagers"));
     const QStringList names = cfg.childGroups();
 
