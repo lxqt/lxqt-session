@@ -161,7 +161,7 @@ void EnvironmentPage::updateScaleFactor()
 {
     m_settings->beginGroup(QL1S("Environment"));
     updateItem(QL1S("QT_SCALE_FACTOR"), m_settings->value(QL1S("QT_SCALE_FACTOR"), 1).toString());
-    updateItem(QL1S("GDK_SCALE"), m_settings->value(QL1S("GDK_SCALE"), 1).toString());
+    updateItem(QL1S("GDK_DPI_SCALE"), m_settings->value(QL1S("GDK_DPI_SCALE"), 1).toString());
     m_settings->endGroup();
 }
 
