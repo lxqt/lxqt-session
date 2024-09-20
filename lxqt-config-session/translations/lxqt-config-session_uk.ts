@@ -125,7 +125,7 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>У Wayland налаштуйте масштаб за допомогою налаштувань композитора або kanshi.</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="114"/>
