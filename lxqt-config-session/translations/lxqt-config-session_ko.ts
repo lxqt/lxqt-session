@@ -135,12 +135,12 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland에서 대신 컴포지터 설정이나 kanshi를 통해 배율을 조정합니다.</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="114"/>
         <source>Global Screen Scaling</source>
-        <translation>전역 화면 크기조정</translation>
+        <translation>전역 화면 배율</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="126"/>

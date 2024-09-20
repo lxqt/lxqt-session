@@ -140,7 +140,7 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>في Wayland، اضبط التدرج عبر إعدادات المركب أو kanshi بدلاً من ذلك.</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="114"/>

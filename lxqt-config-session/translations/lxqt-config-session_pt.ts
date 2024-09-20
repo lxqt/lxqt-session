@@ -125,7 +125,7 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Em Wayland, ajuste a escala através das definições do compositor ou do kanshi.</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="114"/>
@@ -193,7 +193,7 @@
     <message>
         <location filename="../environmentpage.ui" line="24"/>
         <source>Delete</source>
-        <translation>Apagar</translation>
+        <translation>Eliminar</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="50"/>
