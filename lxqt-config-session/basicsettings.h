@@ -62,6 +62,7 @@ private slots:
     void findWmButton_clicked();
     void startButton_clicked();
     void stopButton_clicked();
+    void findX11LockCommandButton_clicked();
 };
 
 #endif // BASICSETTINGS_H
