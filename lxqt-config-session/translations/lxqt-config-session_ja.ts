@@ -384,7 +384,7 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation>検索 ...</translation>
+        <translation>検索...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
