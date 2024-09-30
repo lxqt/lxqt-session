@@ -125,7 +125,7 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sous Wayland, réglez la mise à l&apos;échelle via les paramètres du compositeur ou kanshi.</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="114"/>
@@ -135,7 +135,7 @@
     <message>
         <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
-        <translation>Facteur d&apos;échelle&#xa0;:</translation>
+        <translation>Facteur d&apos;échelle :</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="152"/>
@@ -378,7 +378,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor:</source>
-        <translation>Compositeur Wayland&#xa0;:</translation>
+        <translation>Compositeur Wayland :</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
@@ -389,7 +389,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command:</source>
-        <translation>Commande de verrouillage de l&apos;écran&#xa0;:</translation>
+        <translation>Commande de verrouillage de l&apos;écran :</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
