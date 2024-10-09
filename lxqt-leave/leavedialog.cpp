@@ -150,6 +150,7 @@ void LeaveDialog::showEvent(QShowEvent *event)
                 LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
                 layershell->setAnchors(anchors);
                 layershell->setExclusiveZone(-1);
+                layershell->setScope(QStringLiteral("dialog"));
                 QScreen *screen = win->screen();
                 if (screen == nullptr)
                     screen = QGuiApplication::primaryScreen();
