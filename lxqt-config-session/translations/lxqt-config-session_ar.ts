@@ -397,12 +397,12 @@
         <translation>استخدم &quot;loginctl lock-session&quot; على kwin_wayland</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="93"/>
+        <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Wayland Compositor</source>
         <translation>حدد Wayland مؤلّف</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="98"/>
+        <location filename="../waylandsettings.cpp" line="103"/>
         <source>Select a Screenlocker for Wayland</source>
         <translation>حدد قفل الشاشة لـ Wayland</translation>
     </message>

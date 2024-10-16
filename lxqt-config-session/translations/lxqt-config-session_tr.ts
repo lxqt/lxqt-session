@@ -397,12 +397,12 @@
         <translation>kwin_wayland üzerinde &quot;loginctl lock-session&quot; kullanın</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="93"/>
+        <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Wayland Compositor</source>
         <translation>Bir Wayland Kompozitörü Seçin</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="98"/>
+        <location filename="../waylandsettings.cpp" line="103"/>
         <source>Select a Screenlocker for Wayland</source>
         <translation>Wayland için bir Ekran Kilidi seçin</translation>
     </message>

@@ -397,12 +397,12 @@
         <translation>Kui kasutusel on kwin_wayland, siis pruugi käsku „loginctl lock-session“</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="93"/>
+        <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Wayland Compositor</source>
         <translation>Vali Waylandi komposiitor</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="98"/>
+        <location filename="../waylandsettings.cpp" line="103"/>
         <source>Select a Screenlocker for Wayland</source>
         <translation>Vali Waylandi puhul kasutatav ekraanilukustuse tarvik</translation>
     </message>

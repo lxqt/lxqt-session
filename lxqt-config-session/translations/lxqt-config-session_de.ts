@@ -398,12 +398,12 @@
         <translation>Unter kwin_wayland &quot;loginctl lock-session&quot; benutzen</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="93"/>
+        <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Wayland Compositor</source>
         <translation>Wayland Compositor auswählen</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="98"/>
+        <location filename="../waylandsettings.cpp" line="103"/>
         <source>Select a Screenlocker for Wayland</source>
         <translation>Bildschirmsperre unter Wayland auswählen</translation>
     </message>
