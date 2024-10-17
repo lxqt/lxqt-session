@@ -165,7 +165,7 @@
     <message>
         <location filename="../basicsettings.ui" line="165"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>サスペンド/ハイバネートの前に画面をロックする　　　　　　</translation>
+        <translation>サスペンド/ハイバネートの前に画面をロックする&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="172"/>
@@ -397,12 +397,12 @@
         <translation>kwin_waylandでは &quot;loginctl lock-session&quot; を使用します</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="93"/>
+        <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Wayland Compositor</source>
         <translation>Wayland コンポジターの選択</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="98"/>
+        <location filename="../waylandsettings.cpp" line="103"/>
         <source>Select a Screenlocker for Wayland</source>
         <translation>Wayland の画面ロッカーの選択</translation>
     </message>

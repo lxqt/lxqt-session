@@ -397,12 +397,12 @@
         <translation>להשתמש ב־„loginctl” ב־</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="93"/>
+        <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Wayland Compositor</source>
         <translation>נא לבחור מנהל חלונאי ל־Wayland</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="98"/>
+        <location filename="../waylandsettings.cpp" line="103"/>
         <source>Select a Screenlocker for Wayland</source>
         <translation>נא לבחור נועל מסך ל־Wayland</translation>
     </message>

@@ -397,12 +397,12 @@
         <translation>kwin_wayland에서 &quot;loginctl lock-session&quot;을 사용합니다</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="93"/>
+        <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Wayland Compositor</source>
         <translation>Wayland 컴포지터를 선택합니다</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="98"/>
+        <location filename="../waylandsettings.cpp" line="103"/>
         <source>Select a Screenlocker for Wayland</source>
         <translation>Wayland용 화면잠금을 선택합니다</translation>
     </message>
