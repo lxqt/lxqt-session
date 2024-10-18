@@ -110,7 +110,7 @@
     <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
-        <translation>Algemene instellingen</translation>
+        <translation>Algemeen</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="30"/>
@@ -160,7 +160,7 @@
     <message>
         <location filename="../basicsettings.ui" line="172"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation>Pauze-/Slaapstand na vergrendelvertraging:</translation>
+        <translation>Pauze-/Slaapstand inschakelen na vergrendelen:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="185"/>
