@@ -26,7 +26,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="66"/>
         <source>Shutdown</source>
-        <translation>Skru av</translation>
+        <translation>Slå av</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="71"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Shutdown.</source>
-        <translation>Skru av.</translation>
+        <translation>Slå av.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="74"/>
