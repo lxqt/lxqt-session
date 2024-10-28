@@ -16,7 +16,7 @@
     <message>
         <location filename="../autostartedit.ui" line="40"/>
         <source>Search...</source>
-        <translation>Søk..</translation>
+        <translation>Søk...</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="54"/>
@@ -145,7 +145,7 @@
     <message>
         <location filename="../basicsettings.ui" line="114"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished"></translation>
+        <translation>Global skjermskalering</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="126"/>
