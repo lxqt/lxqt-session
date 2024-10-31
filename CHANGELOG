@@ -1,6 +1,6 @@
 lxqt-session-2.1.0 / 2024-11-05
 ================================
- * Reenable locks ettings under wayland.
+ * Reenable lock settings under wayland.
  * Fixed the errors in KF6 check.
  * Under wayland, show the leave dialog on the screen with the cursor.
  * Don't start apps with "X-LXQt-X11-Only" under wayland.
