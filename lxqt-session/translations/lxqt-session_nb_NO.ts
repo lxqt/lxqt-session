@@ -58,7 +58,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Du kan endre dette når som helst ved å gå til Innstillinger -&gt; Sesjonsinnstillinger -&gt; Grunnleggende innstillinger.</translation>
+        <translation>Du kan endre dette når som helst ved å gå til Innstillinger -&gt; Øktinnstillinger -&gt; Grunnleggende innstillinger.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="65"/>
