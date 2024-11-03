@@ -114,6 +114,7 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
+        <location filename="../basicsettings.ui" line="213"/>
         <source>Search...</source>
         <translation>Hľadať...</translation>
     </message>
@@ -173,14 +174,24 @@
         <translation> ms</translation>
     </message>
     <message>
+        <location filename="../basicsettings.ui" line="201"/>
+        <source>Use custom screen lock command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
         <translation>Základné nastavenia</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="176"/>
+        <location filename="../basicsettings.cpp" line="197"/>
         <source>Select a window manager</source>
         <translation>Vybrať správcu okien</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="212"/>
+        <source>Select a screenlocker</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

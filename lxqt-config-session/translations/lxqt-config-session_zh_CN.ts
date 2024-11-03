@@ -114,6 +114,7 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
+        <location filename="../basicsettings.ui" line="213"/>
         <source>Search...</source>
         <translation>查找...</translation>
     </message>
@@ -163,6 +164,11 @@
         <translation> ms</translation>
     </message>
     <message>
+        <location filename="../basicsettings.ui" line="201"/>
+        <source>Use custom screen lock command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../basicsettings.ui" line="23"/>
         <source>Basic Settings</source>
         <translation>基本设置</translation>
@@ -178,9 +184,14 @@
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="176"/>
+        <location filename="../basicsettings.cpp" line="197"/>
         <source>Select a window manager</source>
         <translation>选择窗口管理器</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="212"/>
+        <source>Select a screenlocker</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

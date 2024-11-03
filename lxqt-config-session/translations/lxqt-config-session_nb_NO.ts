@@ -119,6 +119,7 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
+        <location filename="../basicsettings.ui" line="213"/>
         <source>Search...</source>
         <translation>Søk...</translation>
     </message>
@@ -178,9 +179,19 @@
         <translation> ms</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="176"/>
+        <location filename="../basicsettings.ui" line="201"/>
+        <source>Use custom screen lock command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="197"/>
         <source>Select a window manager</source>
         <translation>Velg en vindushåndterer</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="212"/>
+        <source>Select a screenlocker</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -384,7 +395,7 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Søk...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
