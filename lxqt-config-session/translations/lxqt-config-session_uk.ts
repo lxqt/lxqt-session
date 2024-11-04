@@ -166,7 +166,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовувати власну команду блокування екрана</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -191,7 +191,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати блокувальник екрана</translation>
     </message>
 </context>
 <context>

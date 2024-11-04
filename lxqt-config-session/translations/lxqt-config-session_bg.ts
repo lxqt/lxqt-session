@@ -181,7 +181,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Използване на персонализирана команда за заключване на екрана</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="197"/>
@@ -191,7 +191,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Избиране на програма за заключване на екрана</translation>
     </message>
 </context>
 <context>

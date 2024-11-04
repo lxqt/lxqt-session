@@ -30,7 +30,7 @@
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation>Используемый менеджер окон.</translation>
+        <translation>Используемый оконный менеджер.</translation>
     </message>
     <message>
         <location filename="../src/sessionapplication.cpp" line="82"/>

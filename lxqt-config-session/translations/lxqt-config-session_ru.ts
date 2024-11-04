@@ -21,7 +21,7 @@
     <message>
         <location filename="../autostartedit.ui" line="54"/>
         <source>Start only in X11</source>
-        <translation type="unfinished"></translation>
+        <translation>Запускать только в X11</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="30"/>
@@ -141,7 +141,7 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Под Wayland, вместо изменения настроек масштабирования здесь, сделайте это в настройках своего композитора или с помощью kanshi.</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="114"/>
@@ -181,17 +181,17 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Использовать нестандартную команду блокировки экрана</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="197"/>
         <source>Select a window manager</source>
-        <translation>Укажите менеджер окон</translation>
+        <translation>Укажите оконный менеджер</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Выберите блокировщик экрана</translation>
     </message>
 </context>
 <context>
@@ -255,7 +255,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="67"/>
         <source>Wayland Settings (Experimental)</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки Wayland (Экспериментально)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="74"/>
@@ -384,38 +384,38 @@
     <message>
         <location filename="../waylandsettings.ui" line="23"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Композитор Wayland:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation>Поиск…</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда блокировки экрана:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
         <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Используйте &quot;loginctl lock-session&quot; на kwin_wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Wayland Compositor</source>
-        <translation type="unfinished"></translation>
+        <translation>Выберите композитор Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="103"/>
         <source>Select a Screenlocker for Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Выберите блокировщик экрана для Wayland</translation>
     </message>
 </context>
 </TS>
