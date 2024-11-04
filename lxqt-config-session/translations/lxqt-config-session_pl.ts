@@ -166,7 +166,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Użyj niestandardowego polecenia blokady ekranu</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -191,7 +191,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Wybierz blokadę ekranu</translation>
     </message>
 </context>
 <context>

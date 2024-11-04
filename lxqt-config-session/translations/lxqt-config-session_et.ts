@@ -181,7 +181,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasuta endamääratud lukustuskäsku</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="197"/>
@@ -191,7 +191,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali ekraanilukustaja</translation>
     </message>
 </context>
 <context>
