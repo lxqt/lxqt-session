@@ -20,8 +20,8 @@ option(WITH_LIBUDEV "Build with libudev support" ON)
 
 # Minimum Versions
 set(KF6_MINIMUM_VERSION "6.0.0")
-set(LXQT_MINIMUM_VERSION "2.0.0")
-set(QTXDG_MINIMUM_VERSION "4.0.0")
+set(LXQT_MINIMUM_VERSION "2.1.0")
+set(QTXDG_MINIMUM_VERSION "4.1.0")
 set(QT_MINIMUM_VERSION "6.6.0")
 set(SHELLQT_MINIMUM_VERSION "6.0.0")
 
