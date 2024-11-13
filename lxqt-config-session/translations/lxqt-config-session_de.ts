@@ -21,7 +21,7 @@
     <message>
         <location filename="../autostartedit.ui" line="54"/>
         <source>Start only in X11</source>
-        <translation type="unfinished"></translation>
+        <translation>Nur in X11 starten</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="30"/>
@@ -141,7 +141,7 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Unter Wayland können Sie die Skalierung stattdessen über die Compositor-Einstellungen oder kanshi anpassen.</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="114"/>
@@ -171,7 +171,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzerdefinierten Befehl zur Bildschirmsperre verwenden</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="197"/>

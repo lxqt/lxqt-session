@@ -166,7 +166,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Usar o comando personalizado de bloqueio do ecrã</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -186,12 +186,12 @@
     <message>
         <location filename="../basicsettings.cpp" line="197"/>
         <source>Select a window manager</source>
-        <translation>Escolha um gestor de janelas</translation>
+        <translation>Selecione um gestor de janelas</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecione um bloqueador de ecrã</translation>
     </message>
 </context>
 <context>
