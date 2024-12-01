@@ -176,7 +176,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>사용자 정의 화면 잠금 명령 사용</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -191,7 +191,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>화면잠금도구 선택</translation>
     </message>
 </context>
 <context>
@@ -245,7 +245,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="54"/>
         <source>User Directories</source>
-        <translation>사용자 디렉토리</translation>
+        <translation>사용자 디렉터리</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="60"/>
@@ -265,7 +265,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="100"/>
         <source>Session Restart Required</source>
-        <translation>세션 다시 시작 필요</translation>
+        <translation>세션 재시작 필요함</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="101"/>
@@ -283,7 +283,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="184"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>LXQt 세션 설정 - 사용자 디렉토리</translation>
+        <translation>LXQt 세션 설정 - 사용자 디렉터리</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
@@ -415,7 +415,7 @@
     <message>
         <location filename="../waylandsettings.cpp" line="103"/>
         <source>Select a Screenlocker for Wayland</source>
-        <translation>Wayland용 화면잠금을 선택합니다</translation>
+        <translation>Wayland용 화면잠금도구 선택</translation>
     </message>
 </context>
 </TS>
