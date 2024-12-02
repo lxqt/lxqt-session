@@ -141,7 +141,7 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>„Wayland“ aplinkoje reguliuokite mastelį per tvarkytojo nustatymus arba, vietoj to, per kanshi.</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="114"/>
@@ -181,7 +181,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Naudoti tinkintą ekrano užrakto komandą</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="197"/>
@@ -191,7 +191,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasirinkti ekrano užraktą</translation>
     </message>
 </context>
 <context>

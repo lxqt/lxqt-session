@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="oc">
+<TS version="2.1" language="kab">
 <context>
     <name>LXQtModuleManager</name>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="330"/>
         <source>Crash Report</source>
-        <translation>Rapòrt de plantatge</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="331"/>
@@ -19,23 +19,23 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Camin del fichièr de configuracion.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <location filename="../src/main.cpp" line="63"/>
         <source>file</source>
-        <translation>fichièr</translation>
+        <translation>afaylu</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation>Gestionari de fenèstra d’utilizar.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/sessionapplication.cpp" line="82"/>
         <source>DBus Environment</source>
-        <translation>Environament DBus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/sessionapplication.cpp" line="83"/>
@@ -48,7 +48,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>
         <source>Welcome to LXQt</source>
-        <translation>La benvenguda a LXQt</translation>
+        <translation>Ansuf ɣer LXQt</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
@@ -63,12 +63,12 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Other ...</source>
-        <translation>Autre...</translation>
+        <translation>Wayeḍ ...</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation>Causissètz vòstre preferit.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
