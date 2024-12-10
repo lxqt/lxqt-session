@@ -166,7 +166,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Käytä omaa näytönlukituskomentoa</translation>
+        <translation>Mukautettu näytönlukituskomento</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
