@@ -384,7 +384,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="23"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Configurações do Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
