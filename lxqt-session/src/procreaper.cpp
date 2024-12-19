@@ -121,10 +121,18 @@ void ProcReaper::stop(const std::set<int64_t> & excludedPids)
     pids_stack * stack = nullptr;
     while ((stack = procps_pids_get(info, PIDS_FETCH_TASKS_ONLY)))
     {
+# if defined(USING_LIBPROC2_1)
+        const int ppid = PIDS_VAL(rel_ppid, s_int, stack);
+# else
         const int ppid = PIDS_VAL(rel_ppid, s_int, stack, info);
+# endif
         if (ppid == my_pid)
         {
+# if defined(USING_LIBPROC2_1)
+            const int tgid = PIDS_VAL(rel_tgid, s_int, stack);
+# else
             const int tgid = PIDS_VAL(rel_tgid, s_int, stack, info);
+# endif
             children.push_back(tgid);
         }
     }
