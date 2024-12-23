@@ -1,3 +1,7 @@
+lxqt-session-2.1.1 / 2024-12-23
+================================
+ * Supported compilation against procps-ng ≥ 4.0.5.
+
 lxqt-session-2.1.0 / 2024-11-05
 ================================
  * Reenable lock settings under wayland.
