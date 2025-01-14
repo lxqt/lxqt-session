@@ -1,15 +1,14 @@
-.TH lxqt-session "1" "2015-11-05" "LXQt 0.10.0" "LXQt Session Module"
-.SH NAME
+.TH lxqt-session "1" "January 2025" "LXQt 2.1.0" "LXQt Session Module"
+.SH NAME.
 \fBlxqt-session\fR \- Session manager of \fBLXQt\fR: The Lightweight Qt Desktop
 Environment
 .SH SYNOPSIS
 .B lxqt-session
 .br
 .SH DESCRIPTION
-This module handles session autostart application over \fBLXQt\fR desktop
-environment startup.
+This module handles starting applications under LXQt
 .P
-The \fBLXQt modules\fR are desktop independent tools, and operate as daemons
+The \fBLXQt modules\fR are desktop-independent tools and operate as daemons
 for the local user on desktop specific operations.
 .P
 \fBLXQt\fR is an advanced, easy-to-use, and fast desktop environment based on
@@ -17,49 +16,59 @@ the Qt framework. It has been tailored for users who value simplicity, speed,
 and an intuitive interface, with minimal resource requirements. It comprises
 several optional desktop components:
 .P
- * Session module (\fIthis\fR, normally invoked with \fBstartlxqt\fR)
- * Settings configuration center
+ * Session module (\fIthis\fR, normally invoked by \fBstartlxqt\fR (X11)) or by the
+compositor)
+ * Wayland session
+ * Configuration center
  * Application launcher
  * Desktop
  * Panel with optional plugins
  * Polkit authorization agent
  * SSH password access
- * Display manager module
- * Power management module
+ * Global shortcuts
+ * Power management
+ * Localization
+ * User and system time administration
  * Sudo/su module (privilege elevation)
 .P
 These components perform similar actions to those available in other desktop
 environments, and their name is self-descriptive.  They are usually launched
-automatically, when choosing a \fBLXQt\fR session in the Display Manager.
+automatically, when choosing a \fBLXQt\fR session in the Display Manager, except
+Global shortcuts which is not launched under Wayland.
 .SH BEHAVIOR
 This application manages the \fBLXQt\fR session desktop behavior, module
 loading, and related startup programs prior loading the user workspace.
-By default this module loads the panel, desktop, and power management
-modules, thus it is important for a working \fBLXQt\fR session.
+By default this module loads the panel, desktop, globalshortcut, runner, notifications,
+policykit, and power management modules, thus it is important for a working \fBLXQt\fR
+session.
 .SH AUTOSTART
 The modules are only shown by default in the \fBLXQt\fR desktop environment, but
-an autostart action can be created for other preferred desktop environments.
+an autostart action can be created for other desktop environments.
 .SH "REPORTING BUGS"
-Report bugs to https://github.com/lxqt/lxqt/issues
+Report bugs to https://github.com/lxqt/lxqt-session/issues
 .SH "SEE ALSO"
 .\" any module must refer to the session application, for module overview and initiation
-\fBstartlxqt.1\fR  LXQt session initialization and launch script (e.g. in \fB.xinitrc\fR)
+\fBstartlxqt(1)\fR  LXQt session initialization and launch script (e.g. in \fB.xinitrc\fR)
 .P
-\fBlxqt-config-session.1\fR  LXQt default and autostart applications settings,
+\fBlxqt-config-session(1)\fR  LXQt default and autostart applications settings,
 plus environment settings
 .P
-\fBlxqt-config.1\fR  LXQt settings Configuration Center interface
+\fBlxqt-wayland-session(1)\fR  LXQt Wayland session
 .P
-\fBlxqt-leave.1\fR  LXQt session logout, reboot, shutdown, suspend, hibernate
+\fBlxqt-config(1)\fR  LXQt Configuration Center
+.P
+\fBlxqt-leave(1)\fR  Session logout, reboot, shutdown, suspend, hibernate
 and lock screen
 .P
-\fBlxqt-openssh-askpass.1\fR  LXQt password access over ssh cryptography toolkit
+\fBlxqt-openssh-askpass(1)\fR  Password access over ssh cryptography toolkit
 .P
-\fBlxqt-panel.1\fR  LXQt desktop panel with optional plugins
+\fBlxqt-panel(1)\fR  Desktop panel with optional plugins
 .P
-\fBlxqt-policykit-agent.1\fR  LXQt polkit authorization agent
+\fBlxqt-policykit-agent(1)\fR Polkit authorization agent
 .P
-\fBlxqt-runner.1\fR  LXQt application launcher by keyboard shortcut
+\fBlxqt-globalshortcuts(1)\fR Global shortcuts // missing //
 .P
-\fBlxqt-sudo.1\fR  LXQt sudo/su GUI for application privilege elevation
+\fBlxqt-runner(1)\fR  Application launcher
+.P
+\fBlxqt-sudo(1)\fR  sudo/su GUI
 .P

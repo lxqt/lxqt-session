@@ -1,4 +1,4 @@
-.TH lxqt-config-session "1" "2015-11-05" "LXQt 0.10.0" "LXQt Application/Environment Configuration"
+.TH lxqt-config-session "1" "January 2025" "LXQt 2.1.0" "LXQt Configuration"
 .SH NAME
 \fBlxqt-config-session\fR \- Application settings of \fBLXQt\fR: The Lightweight
 Qt Desktop Environment
@@ -6,15 +6,18 @@ Qt Desktop Environment
 .B lxqt-config-session
 .br
 .SH DESCRIPTION
-This application handles \fBLXQt\fR default applications settings, autostart
-configuration, and environment settings.
+This application handles \fBLXQt\fR X11 window manager selection, autostart of LXQt modules
+and other applications, settings for Qt scaling, confirmation for session exit,
+screenlocking, besides XDG user directories paths and advanced environment settings.
+.P
+If the \fBlxqt-wayland-session\fR module is installed Wayland-related configuration
+for selecting the compositor and the screenlock command is enabled.
 .SH "REPORTING BUGS"
-Report bugs to https://github.com/lxqt/lxqt/issues
+Report bugs to https://github.com/lxqt/lxqt-session/issues
 .SH "SEE ALSO"
 .\" any module must refer to the session application, for module overview and initiation
-\fBstartlxqt.1\fR  LXQt session initialization and launch script (e.g. in \fB.xinitrc\fR)
-.P
-\fBlxqt-session.1\fR  LXQt \fIoverview\fR and complete session environment
-.P
-\fBlxqt-config.1\fR  LXQt settings Configuration Center interface
-.P
+\fBlxqt-session.1\fR
+\fBlxqt-wayland-session.1\fR
+\fBstartlxqt.1\fR
+\fBstartlxqtwayland.1\fR
+\fBlxqt-config.1\fR

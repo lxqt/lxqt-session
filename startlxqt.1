@@ -1,4 +1,4 @@
-.TH STARTLXQT 1 2015-11-03 "LXQt 0.10.0" "LXQt session management"
+.TH STARTLXQT "1" "April 2025"  "LXQt 2.2.0" "LXQt session management"
 .SH NAME
 startlxqt \- script to initialize and launch LXQt sessions
 .SH SYNOPSIS
@@ -6,9 +6,9 @@ startlxqt \- script to initialize and launch LXQt sessions
 .SH DESCRIPTION
 \fBstartlxqt\fR is a shell script meant to initialize and launch LXQt sessions.
 It is as such similar to counterparts of other desktop environments like startlxde in
-LXDE or startkde in KDE.
+LXDE or startxfce in XFCE.
 .P
-It's main tasks are exporting environment variables, partly after performing
+Its main tasks are exporting environment variables, partly after performing
 corresponding checks, and launching \fBlxqt-session\fR, the LXQt session manager.
 .P
 It is not meant to be run by users.
@@ -21,7 +21,7 @@ Desktop entry file stating startlxqt as binary needed to start LXQt sessions. So
 by display managers.
 .RE
 .SH BUGS
-None at the time of this writing. Bugs can be reported on https://github.com/lxqt/lxqt/issues.
+None at the time of this writing. Bugs can be reported on https://github.com/lxqt/lxqt-session/issues.
 .SH EXAMPLE
 To start an LXQt session from a virtual terminal (virtual console) add a line
 .P
@@ -39,10 +39,6 @@ File \fIlxqt.desktop\fR provided by LXQt is stating \fBstartlxqt\fR in key \fIEx
 manager \fBlxqt-session\fR does exist by stating it in key \fITryExec\fR.
 .SH SEE ALSO
 .BR lxqt-session (1)
-.BR startx (1)
+.BR lxqt-wayland-session (1)
+.BR startlxqtwayland (1)
 .BR sddm (1)
-.P
-.B https://www.freedesktop.org/wiki/Specifications/desktop-entry-spec/
-.RS 5
-Desktop Entry Specification defining desktop entry files (*.desktop).
-.RE
