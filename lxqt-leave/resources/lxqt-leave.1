@@ -1,16 +1,18 @@
-.TH lxqt-leave 1 "2015-11-05" "LXQt 0.10.0" "LXQt Leave Session Module"
+.TH lxqt-leave 1 "January 2025" "LXQt 2.1." "LXQt Session Module"
 .SH NAME
-\fBlxqt-leave\fR \- Dialog to easily select logout, reboot, shutdown,
+\fBlxqt-leave\fR \- Dialog to select logout, reboot, shutdown,
 suspend, hibernate, and lock screen
 .SH SYNOPSIS
 \fBlxqt-leave\fR [\fIargument\fR]
+
 .SH DESCRIPTION
 \fBlxqt-leave\fR is a graphical Qt tool for easily triggering leave session
 actions: logout, reboot, shutdown, hibernate, and lock screen. If run with
-an argument, the dialog is not shown and the action is executed directly.
+an argument, the dialog is not shown and the action is executed directly, unless "Ask for
+confirmation" is checked in \fBlxqt-config-session\fR.
 .SH OPTIONS
 .PP
-The options which apply to the \fBlxqt-leave\fR command are:
+Available options:
 .PP
 \fB\-\-logout\fR
 .RE
@@ -31,19 +33,20 @@ The options which apply to the \fBlxqt-leave\fR command are:
 .RE
 .PP
 \fB\-\-help\fR
+.PP
+\fB\-\-version\fR
 .RE
 .SH "REPORTING BUGS"
-Report bugs to https://github.com/lxqt/lxqt/issues
+Report bugs to https://github.com/lxqt/lxqt-session/issues
 .SH "SEE ALSO"
 .\" any module must refer to the session application, for module overview and initiation
 \fBstartlxqt.1\fR  LXQt session initialization and launch script (e.g. in \fB.xinitrc\fR)
 .P
 \fBlxqt-session.1\fR  LXQt \fIoverview\fR and complete session environment
 .P
-\fBlxqt-config-session.1\fR  LXQt default and autostart applications settings,
-plus environment settings
+\fBlxqt-wayland-session.1\fR  LXQt Wayland session
 .P
-\fBlxqt-config.1\fR  LXQt settings Configuration Center interface
+\fBlxqt-config-session.1\fR  LXQt session configuration
 .P
-.SH AUTHOR
-This manual page was created by \fBPaulo Lieuthier\fR \fI<paulolieuthier@gmail.com>\fR for the \fBLXQt\fR project.
+\fBlxqt-config.1\fR  LXQt Configuration Center
+
