@@ -206,7 +206,7 @@
         <property name="checked">
          <bool>false</bool>
         </property>
-        <layout class="QGridLayout" name="gridLayout_4">
+        <layout class="QGridLayout" name="gridLayout_5">
          <item row="1" column="1">
           <widget class="QPushButton" name="findX11LockCommandButton">
            <property name="text">
