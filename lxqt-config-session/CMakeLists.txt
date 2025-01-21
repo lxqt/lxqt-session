@@ -12,6 +12,7 @@ set(lxqt-sessioncfg_HDRS
     autostartutils.h
     environmentpage.h
     userlocationspage.h
+    waylandsettings.h
 )
 
 set(lxqt-sessioncfg_SRCS
@@ -26,6 +27,7 @@ set(lxqt-sessioncfg_SRCS
     autostartutils.cpp
     environmentpage.cpp
     userlocationspage.cpp
+    waylandsettings.cpp
     ../lxqt-session/src/windowmanager.cpp
 )
 
@@ -34,6 +36,7 @@ set(lxqt-sessioncfg_UI_FILES
     autostartpage.ui
     autostartedit.ui
     environmentpage.ui
+    waylandsettings.ui
 )
 
 # Translations
@@ -58,10 +61,9 @@ add_executable(lxqt-config-session
     ${lxqt-sessioncfg_QM_LOADER})
 
 target_link_libraries(lxqt-config-session
-    KF5::WindowSystem
-    Qt5::Widgets
-    Qt5::DBus
-    Qt5::X11Extras
+    KF6::WindowSystem
+    Qt6::Widgets
+    Qt6::DBus
     lxqt
 )
 

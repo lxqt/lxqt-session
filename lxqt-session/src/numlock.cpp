@@ -29,9 +29,9 @@
 // Copyright (C) 2000-2001 Lubos Lunak        <l.lunak@kde.org>
 // Copyright (C) 2001      Oswald Buddenhagen <ossi@kde.org>
 
+#include <QGuiApplication>
 #include <string.h>
 #include <stdlib.h>
-#include <QX11Info>
 #include <X11/Xlib.h>
 #include <X11/XKBlib.h>
 #include <X11/keysym.h>
@@ -78,6 +78,11 @@ static int xkb_set_on(Display* dpy)
 void enableNumlock()
 {
     // this currently only works for X11
-    if(QX11Info::isPlatformX11())
-        xkb_set_on(QX11Info::display());
+    if (QGuiApplication::platformName() == QStringLiteral("xcb")) {
+        if (auto x11NativeInterface = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
+            if (Display* dpy = x11NativeInterface->display()) {
+                xkb_set_on(dpy);
+            }
+        }
+    }
 }

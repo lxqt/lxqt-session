@@ -48,7 +48,14 @@
      </property>
     </widget>
    </item>
-   <item row="3" column="0" colspan="3">
+   <item row="3" column="1" colspan="2">
+    <widget class="QCheckBox" name="x11CheckBox">
+     <property name="text">
+      <string>Start only in X11</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="3">
     <widget class="QDialogButtonBox" name="buttonBox">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>

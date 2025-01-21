@@ -14,22 +14,27 @@
         <translation>Ime:</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="27"/>
+        <location filename="../autostartedit.ui" line="40"/>
         <source>Search...</source>
         <translation>Traži …</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="47"/>
+        <location filename="../autostartedit.ui" line="54"/>
+        <source>Start only in X11</source>
+        <translation>Pokreni samo u X11</translation>
+    </message>
+    <message>
+        <location filename="../autostartedit.ui" line="30"/>
         <source>Command:</source>
         <translation>Naredba:</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="57"/>
+        <location filename="../autostartedit.ui" line="47"/>
         <source>Wait for system tray</source>
         <translation>Čekaj na programsku traku</translation>
     </message>
     <message>
-        <location filename="../autostartedit.cpp" line="61"/>
+        <location filename="../autostartedit.cpp" line="67"/>
         <source>Select Application</source>
         <translation>Odaberi program</translation>
     </message>
@@ -80,12 +85,22 @@
         <translation>Automatsko pokretanje programa</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="142"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="151"/>
+        <location filename="../autostartpage.cpp" line="170"/>
+        <location filename="../autostartpage.cpp" line="187"/>
         <source>Error</source>
         <translation>Greška</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="142"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="170"/>
+        <source>Please provide Name and Command</source>
+        <translation>Navedi ime i naredbu</translation>
+    </message>
+    <message>
+        <location filename="../autostartpage.cpp" line="151"/>
+        <location filename="../autostartpage.cpp" line="187"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>Datoteka „%1” već postoji!</translation>
     </message>
@@ -104,6 +119,7 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
+        <location filename="../basicsettings.ui" line="213"/>
         <source>Search...</source>
         <translation>Traži …</translation>
     </message>
@@ -124,43 +140,58 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
+        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="114"/>
         <source>Global Screen Scaling</source>
         <translation>Globalno mijenjanje veličine ekrana</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="123"/>
+        <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
         <translation>Faktor mijenjanje veličine ekrana:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="149"/>
+        <location filename="../basicsettings.ui" line="152"/>
         <source>Leave Session</source>
         <translation>Napusti sesiju</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="155"/>
+        <location filename="../basicsettings.ui" line="158"/>
         <source>Ask for confirmation to leave session</source>
         <translation>Zatraži potvrdu za napuštanje sesije</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="162"/>
+        <location filename="../basicsettings.ui" line="165"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>Zaključaj ekran prije postavljanja u stanje mirovanja ili u pripravno stanje</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="169"/>
+        <location filename="../basicsettings.ui" line="172"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>Postavi u stanje mirovanja ili pripravno stanje nakon odgađanja zaključavanja:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="182"/>
+        <location filename="../basicsettings.ui" line="185"/>
         <source> ms</source>
         <translation> ms</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="176"/>
+        <location filename="../basicsettings.ui" line="201"/>
+        <source>Use custom screen lock command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="197"/>
         <source>Select a window manager</source>
         <translation>Odaberi upravljač prozora</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="212"/>
+        <source>Select a screenlocker</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -202,37 +233,42 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="44"/>
+        <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
         <translation>LXQt sesija – Postavke</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="47"/>
+        <location filename="../sessionconfigwindow.cpp" line="48"/>
         <source>Basic Settings</source>
         <translation>Osnovne postavke</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="53"/>
+        <location filename="../sessionconfigwindow.cpp" line="54"/>
         <source>User Directories</source>
         <translation>Korisničke mape</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="59"/>
+        <location filename="../sessionconfigwindow.cpp" line="60"/>
         <source>Autostart</source>
         <translation>Automatsko pokretanje</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="65"/>
+        <location filename="../sessionconfigwindow.cpp" line="67"/>
+        <source>Wayland Settings (Experimental)</source>
+        <translation>Wayland postavke (eksperimentalno)</translation>
+    </message>
+    <message>
+        <location filename="../sessionconfigwindow.cpp" line="74"/>
         <source>Environment (Advanced)</source>
         <translation>Okruženje (napredno)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="91"/>
+        <location filename="../sessionconfigwindow.cpp" line="100"/>
         <source>Session Restart Required</source>
         <translation>Potrebno je ponovno pokretanje sesije</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="92"/>
+        <location filename="../sessionconfigwindow.cpp" line="101"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>Neke se postavke neće primijeniti bez ponovnog prijavljivanja.</translation>
     </message>
@@ -341,6 +377,45 @@
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
         <translation>Standardna mapa za učitavanje ili spremanje video snimaka</translation>
+    </message>
+</context>
+<context>
+    <name>WaylandSettings</name>
+    <message>
+        <location filename="../waylandsettings.ui" line="23"/>
+        <source>Wayland Settings</source>
+        <translation>Wayland postavke</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="30"/>
+        <source>Wayland compositor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="49"/>
+        <location filename="../waylandsettings.ui" line="81"/>
+        <source>Search...</source>
+        <translation>Traži …</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="59"/>
+        <source>Screenlock command:</source>
+        <translation>Naredba za zaključavanje ekrana:</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="71"/>
+        <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
+        <translation>Koristi „loginctl lock-session” na kwin_wayland</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.cpp" line="98"/>
+        <source>Select a Wayland Compositor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.cpp" line="103"/>
+        <source>Select a Screenlocker for Wayland</source>
+        <translation>Odaberi zaključavanje ekrana za Wayland</translation>
     </message>
 </context>
 </TS>

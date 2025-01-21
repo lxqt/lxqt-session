@@ -47,10 +47,8 @@
 #include <wordexp.h>
 #include "log.h"
 
-#include <KWindowSystem/KWindowSystem>
-#include <KWindowSystem/netwm.h>
-
-#include <QX11Info>
+#include <KWindowSystem>
+#include <NETWM>
 
 #define MAX_CRASHES_PER_APP 5
 
@@ -90,7 +88,7 @@ void LXQtModuleManager::startup(LXQt::Settings& s)
     paths << XdgDirs::dataHome(false);
     paths << XdgDirs::dataDirs();
 
-    for(const QString &path : qAsConst(paths))
+    for(const QString &path : std::as_const(paths))
     {
         QFileInfo fi(QString::fromLatin1("%1/lxqt/themes").arg(path));
         if (fi.exists())
@@ -105,8 +103,14 @@ void LXQtModuleManager::startAutostartApps()
     // XDG autostart
     const XdgDesktopFileList fileList = XdgAutoStart::desktopFileList();
     QList<const XdgDesktopFile*> trayApps;
+    bool isWayland((QGuiApplication::platformName() == QLatin1String("wayland")));
     for (XdgDesktopFileList::const_iterator i = fileList.constBegin(); i != fileList.constEnd(); ++i)
     {
+        if (i->value(QSL("X-LXQt-Autostart-disabled"), false).toBool()
+            || (isWayland && i->value(QSL("X-LXQt-X11-Only"), false).toBool()))
+        {
+            continue;
+        }
         if (i->value(QSL("X-LXQt-Need-Tray"), false).toBool())
             trayApps.append(&(*i));
         else
@@ -131,7 +135,7 @@ void LXQtModuleManager::startAutostartApps()
                 return;
 
             QScopedPointer<QTimer> releaser{t};
-            for (const XdgDesktopFile* const f : qAsConst(trayApps))
+            for (const XdgDesktopFile* const f : std::as_const(trayApps))
             {
                 qCDebug(SESSION) << "start tray app" << f->fileName();
                 startProcess(*f);
@@ -190,9 +194,11 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
 {
     // if the WM is active do not run WM.
     // all window managers must set their name according to the spec
-    if (!QString::fromUtf8(NETRootInfo(QX11Info::connection(), NET::SupportingWMCheck).wmName()).isEmpty())
-    {
-        return;
+    if (auto x11NativeInterface = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
+        if (!QString::fromUtf8(NETRootInfo(x11NativeInterface->connection(), NET::SupportingWMCheck).wmName()).isEmpty())
+        {
+            return;
+        }
     }
 
     if (mWindowManager.isEmpty())
@@ -216,10 +222,12 @@ void LXQtModuleManager::startWm(LXQt::Settings *settings)
     QEventLoop waitLoop;
     auto checker = [&waitLoop] {
         // all window managers must set their name according to the spec
-        if (!QString::fromUtf8(NETRootInfo(QX11Info::connection(), NET::SupportingWMCheck).wmName()).isEmpty())
-        {
-            qCDebug(SESSION) << "Window Manager started";
-            waitLoop.exit();
+        if (auto x11NativeInterface = qGuiApp->nativeInterface<QNativeInterface::QX11Application>()) {
+            if (!QString::fromUtf8(NETRootInfo(x11NativeInterface->connection(), NET::SupportingWMCheck).wmName()).isEmpty())
+            {
+                qCDebug(SESSION) << "Window Manager started";
+                waitLoop.exit();
+            }
         }
     };
     QTimer t;
@@ -419,19 +427,28 @@ void LXQtModuleManager::resetCrashReport()
 void lxqt_setenv(const char *env, const QByteArray &value)
 {
     wordexp_t p;
-    wordexp(value.constData(), &p, 0);
-    if (p.we_wordc == 1)
-    {
 
-        qCDebug(SESSION) << "Environment variable" << env << "=" << p.we_wordv[0];
-        qputenv(env, p.we_wordv[0]);
-    }
-    else
+    switch (wordexp(value.constData(), &p, 0))
     {
-        qCWarning(SESSION) << "Error expanding environment variable" << env << "=" << value;
-        qputenv(env, value);
+    case 0:
+        if (p.we_wordc == 1)
+        {
+            qCDebug(SESSION) << "Environment variable" << env << "=" << p.we_wordv[0];
+            qputenv(env, p.we_wordv[0]);
+            wordfree(&p);
+            return;
+        }
+        wordfree(&p);
+        break;
+    case WRDE_NOSPACE:
+        // wordfree needed: https://www.gnu.org/software/libc/manual/html_node/Wordexp-Example.html
+        wordfree(&p);
+        break;
+    default:
+        break;
     }
-     wordfree(&p);
+    qCWarning(SESSION) << "Error expanding environment variable" << env << "=" << value;
+    qputenv(env, value);
 }
 
 void lxqt_setenv_prepend(const char *env, const QByteArray &value, const QByteArray &separator)

@@ -1,3 +1,35 @@
+lxqt-session-2.1.1 / 2024-12-23
+================================
+ * Supported compilation against procps-ng ≥ 4.0.5.
+
+lxqt-session-2.1.0 / 2024-11-05
+================================
+ * Reenable lock settings under wayland.
+ * Fixed the errors in KF6 check.
+ * Under wayland, show the leave dialog on the screen with the cursor.
+ * Don't start apps with "X-LXQt-X11-Only" under wayland.
+ * Check if `wordexp` succeeds before using output (to prevent a segfault).
+ * Improved the desktop entry.
+ * Added a section for wayland settings.
+ * Added a checkbox for "X-LXQt-X11-Only" to autostart editor.
+ * Set `palette_override` to `true` by default.
+ * Added tooltip for screen scaling under Wayland.
+ * Added a config file for Wayland compositors.
+ * Set the layer shell scope to "dialog" for the leave dialog.
+ * Added GUI for custom screenlocker on x11.
+
+lxqt-session-2.0.0 / 2024-04-17
+================================
+ * Made the user inputs stricter in auto-start.
+ * Don't allow inputs consisting of only whitespaces, and remove start and end whitespaces from them.
+ * Fixed a typo.
+ * Ported to Qt6.
+ * Used an overlay layer shell for the leaving dialog and centered it under Wayland.
+
+lxqt-session-1.4.0 / 2023-11-05
+================================
+ * Update the DBus activation environment, to fix problems with apps (like Telegram) which set `DBusActivatable` to `true` in their desktop entries.
+
 lxqt-session-1.3.0 / 2023-04-15
 ================================
  * Added support for procps-ng >= 4.0.0.

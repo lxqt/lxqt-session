@@ -4,12 +4,12 @@
 <context>
     <name>LXQtModuleManager</name>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="323"/>
+        <location filename="../src/lxqtmodman.cpp" line="330"/>
         <source>Crash Report</source>
         <translation>Rapport de plantage</translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="324"/>
+        <location filename="../src/lxqtmodman.cpp" line="331"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; a planté plusieurs fois. Son redémarrage automatique a été désactivé jusqu&apos;à la prochaine connexion.</translation>
     </message>
@@ -31,6 +31,16 @@
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
         <translation>Gestionnaire de fenêtre à utiliser.</translation>
+    </message>
+    <message>
+        <location filename="../src/sessionapplication.cpp" line="82"/>
+        <source>DBus Environment</source>
+        <translation>Environnement DBus</translation>
+    </message>
+    <message>
+        <location filename="../src/sessionapplication.cpp" line="83"/>
+        <source>The DBus Activation Environment wasn&apos;t updated. Some apps might not work properly</source>
+        <translation>L&apos;environnement d&apos;activation de DBus n&apos;a pas été mis à jour. Certaines applications peuvent ne pas fonctionner correctement</translation>
     </message>
 </context>
 <context>

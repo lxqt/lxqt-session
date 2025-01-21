@@ -14,22 +14,27 @@
         <translation>Pavadinimas:</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="27"/>
+        <location filename="../autostartedit.ui" line="40"/>
         <source>Search...</source>
         <translation>Ieškoti...</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="47"/>
+        <location filename="../autostartedit.ui" line="54"/>
+        <source>Start only in X11</source>
+        <translation>Paleisti tik X11 aplinkoje</translation>
+    </message>
+    <message>
+        <location filename="../autostartedit.ui" line="30"/>
         <source>Command:</source>
         <translation>Komanda:</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="57"/>
+        <location filename="../autostartedit.ui" line="47"/>
         <source>Wait for system tray</source>
         <translation>Laukti sistemos dėklo</translation>
     </message>
     <message>
-        <location filename="../autostartedit.cpp" line="61"/>
+        <location filename="../autostartedit.cpp" line="67"/>
         <source>Select Application</source>
         <translation>Pasirinkite programą</translation>
     </message>
@@ -80,14 +85,24 @@
         <translation>Automatinis programų paleidimas</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="142"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="151"/>
+        <location filename="../autostartpage.cpp" line="170"/>
+        <location filename="../autostartpage.cpp" line="187"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="142"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="170"/>
+        <source>Please provide Name and Command</source>
+        <translation>Pateikite pavadinimą ir komandą</translation>
+    </message>
+    <message>
+        <location filename="../autostartpage.cpp" line="151"/>
+        <location filename="../autostartpage.cpp" line="187"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>Failas &quot;%1&quot; jau yra!</translation>
+        <translation>Failas „%1“ jau yra!</translation>
     </message>
 </context>
 <context>
@@ -104,6 +119,7 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
+        <location filename="../basicsettings.ui" line="213"/>
         <source>Search...</source>
         <translation>Ieškoti...</translation>
     </message>
@@ -124,43 +140,58 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
+        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
+        <translation>„Wayland“ aplinkoje reguliuokite mastelį per tvarkytojo nustatymus arba, vietoj to, per kanshi.</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="114"/>
         <source>Global Screen Scaling</source>
         <translation>Visuotinis ekrano mastelio keitimas</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="123"/>
+        <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
         <translation>Mastelio koeficientas:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="149"/>
+        <location filename="../basicsettings.ui" line="152"/>
         <source>Leave Session</source>
         <translation>Išėjimas iš seanso</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="155"/>
+        <location filename="../basicsettings.ui" line="158"/>
         <source>Ask for confirmation to leave session</source>
         <translation>Išeinant iš seanso, klausti patvirtinimo</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="162"/>
+        <location filename="../basicsettings.ui" line="165"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>Užrakinti ekraną prieš pristabdant/užmigdant</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="169"/>
+        <location filename="../basicsettings.ui" line="172"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>Pristabdyti/užmigdyti po užrakto delsos:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="182"/>
+        <location filename="../basicsettings.ui" line="185"/>
         <source> ms</source>
         <translation> ms</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="176"/>
+        <location filename="../basicsettings.ui" line="201"/>
+        <source>Use custom screen lock command</source>
+        <translation>Naudoti tinkintą ekrano užrakto komandą</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="197"/>
         <source>Select a window manager</source>
         <translation>Pasirinkite langų tvarkytuvę</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="212"/>
+        <source>Select a screenlocker</source>
+        <translation>Pasirinkti ekrano užraktą</translation>
     </message>
 </context>
 <context>
@@ -202,37 +233,42 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="44"/>
+        <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
         <translation>LXQt seanso nustatymai</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="47"/>
+        <location filename="../sessionconfigwindow.cpp" line="48"/>
         <source>Basic Settings</source>
         <translation>Pagrindiniai nustatymai</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="53"/>
+        <location filename="../sessionconfigwindow.cpp" line="54"/>
         <source>User Directories</source>
         <translation>Naudotojo katalogai</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="59"/>
+        <location filename="../sessionconfigwindow.cpp" line="60"/>
         <source>Autostart</source>
         <translation>Automatinis paleidimas</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="65"/>
+        <location filename="../sessionconfigwindow.cpp" line="67"/>
+        <source>Wayland Settings (Experimental)</source>
+        <translation>„Wayland“ nustatymai (eksperimentiniai)</translation>
+    </message>
+    <message>
+        <location filename="../sessionconfigwindow.cpp" line="74"/>
         <source>Environment (Advanced)</source>
         <translation>Aplinka (Išplėstiniai)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="91"/>
+        <location filename="../sessionconfigwindow.cpp" line="100"/>
         <source>Session Restart Required</source>
         <translation>Reikalingas seanso paleidimas iš naujo</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="92"/>
+        <location filename="../sessionconfigwindow.cpp" line="101"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>Kai kurie nustatymai neįsigalios tol, kol neprisijungsite iš naujo.</translation>
     </message>
@@ -341,6 +377,45 @@
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
         <translation>Numatytasis aplankas iš kurio yra įkeliami ar į kurį yra įrašomi vaizdo įrašai</translation>
+    </message>
+</context>
+<context>
+    <name>WaylandSettings</name>
+    <message>
+        <location filename="../waylandsettings.ui" line="23"/>
+        <source>Wayland Settings</source>
+        <translation>„Wayland“ nustatymai</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="30"/>
+        <source>Wayland compositor:</source>
+        <translation>„Wayland“ tvarkytojas:</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="49"/>
+        <location filename="../waylandsettings.ui" line="81"/>
+        <source>Search...</source>
+        <translation>Ieškoti...</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="59"/>
+        <source>Screenlock command:</source>
+        <translation>Ekrano užrakto komanda:</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="71"/>
+        <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
+        <translation>Naudodami kwin_wayland, naudokite „loginctl lock-session“</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.cpp" line="98"/>
+        <source>Select a Wayland Compositor</source>
+        <translation>Pasirinkti „Wayland“ tvarkytoją</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.cpp" line="103"/>
+        <source>Select a Screenlocker for Wayland</source>
+        <translation>Pasirinkti „Wayland“ ekrano užraktą</translation>
     </message>
 </context>
 </TS>

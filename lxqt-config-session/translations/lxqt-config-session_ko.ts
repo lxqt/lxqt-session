@@ -14,22 +14,27 @@
         <translation>이름:</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="27"/>
+        <location filename="../autostartedit.ui" line="40"/>
         <source>Search...</source>
         <translation>검색...</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="47"/>
+        <location filename="../autostartedit.ui" line="54"/>
+        <source>Start only in X11</source>
+        <translation>X11에서만 시작하기</translation>
+    </message>
+    <message>
+        <location filename="../autostartedit.ui" line="30"/>
         <source>Command:</source>
         <translation>명령:</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="57"/>
+        <location filename="../autostartedit.ui" line="47"/>
         <source>Wait for system tray</source>
         <translation>시스템 트레이 기다리기</translation>
     </message>
     <message>
-        <location filename="../autostartedit.cpp" line="61"/>
+        <location filename="../autostartedit.cpp" line="67"/>
         <source>Select Application</source>
         <translation>응용 프로그램 선택</translation>
     </message>
@@ -80,12 +85,22 @@
         <translation>응용 프로그램 자동 시작</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="142"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="151"/>
+        <location filename="../autostartpage.cpp" line="170"/>
+        <location filename="../autostartpage.cpp" line="187"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="142"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="170"/>
+        <source>Please provide Name and Command</source>
+        <translation>이름과 명령을 입력해 주세요</translation>
+    </message>
+    <message>
+        <location filename="../autostartpage.cpp" line="151"/>
+        <location filename="../autostartpage.cpp" line="187"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>파일 &apos;%1&apos;이 이미 있습니다!</translation>
     </message>
@@ -99,6 +114,7 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
+        <location filename="../basicsettings.ui" line="213"/>
         <source>Search...</source>
         <translation>검색...</translation>
     </message>
@@ -119,38 +135,48 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
-        <source>Global Screen Scaling</source>
-        <translation>전역 화면 크기조정</translation>
+        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
+        <translation>Wayland에서 대신 컴포지터 설정이나 kanshi를 통해 배율을 조정합니다.</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="123"/>
+        <location filename="../basicsettings.ui" line="114"/>
+        <source>Global Screen Scaling</source>
+        <translation>전역 화면 배율</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
         <translation>배율:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="149"/>
+        <location filename="../basicsettings.ui" line="152"/>
         <source>Leave Session</source>
         <translation>세션 나가기</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="155"/>
+        <location filename="../basicsettings.ui" line="158"/>
         <source>Ask for confirmation to leave session</source>
         <translation>세션에서 나갈 것인지를 묻습니다</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="162"/>
+        <location filename="../basicsettings.ui" line="165"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>절전/최대절전 모드 전 화면 잠금</translation>
+        <translation>절전/최대절전 모드 전에 화면 잠금</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="169"/>
+        <location filename="../basicsettings.ui" line="172"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation>잠금 지연 후 절전/최대절전 모드:</translation>
+        <translation>잠금 지연 후에 절전/최대절전 모드:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="182"/>
+        <location filename="../basicsettings.ui" line="185"/>
         <source> ms</source>
         <translation> ms</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="201"/>
+        <source>Use custom screen lock command</source>
+        <translation>사용자 정의 화면 잠금 명령 사용</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -158,9 +184,14 @@
         <translation>기본 설정</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="176"/>
+        <location filename="../basicsettings.cpp" line="197"/>
         <source>Select a window manager</source>
         <translation>창 관리자 선택</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="212"/>
+        <source>Select a screenlocker</source>
+        <translation>화면잠금도구 선택</translation>
     </message>
 </context>
 <context>
@@ -202,37 +233,42 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="44"/>
+        <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
         <translation>LXQt 세션 설정</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="47"/>
+        <location filename="../sessionconfigwindow.cpp" line="48"/>
         <source>Basic Settings</source>
         <translation>기본 설정</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="53"/>
+        <location filename="../sessionconfigwindow.cpp" line="54"/>
         <source>User Directories</source>
-        <translation>사용자 디렉토리</translation>
+        <translation>사용자 디렉터리</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="59"/>
+        <location filename="../sessionconfigwindow.cpp" line="60"/>
         <source>Autostart</source>
         <translation>자동 시작</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="65"/>
+        <location filename="../sessionconfigwindow.cpp" line="67"/>
+        <source>Wayland Settings (Experimental)</source>
+        <translation>Wayland 설정(실험적)</translation>
+    </message>
+    <message>
+        <location filename="../sessionconfigwindow.cpp" line="74"/>
         <source>Environment (Advanced)</source>
         <translation>환경 (고급)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="91"/>
+        <location filename="../sessionconfigwindow.cpp" line="100"/>
         <source>Session Restart Required</source>
-        <translation>세션 다시 시작 필요</translation>
+        <translation>세션 재시작 필요함</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="92"/>
+        <location filename="../sessionconfigwindow.cpp" line="101"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>어떤 설정은 다음 로그인 때 까지는 적용되지 않습니다.</translation>
     </message>
@@ -247,7 +283,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="184"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>LXQt 세션 설정 - 사용자 디렉토리</translation>
+        <translation>LXQt 세션 설정 - 사용자 디렉터리</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
@@ -341,6 +377,45 @@
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
         <translation>비디오 파일들을 위한 기본 폴더입니다</translation>
+    </message>
+</context>
+<context>
+    <name>WaylandSettings</name>
+    <message>
+        <location filename="../waylandsettings.ui" line="23"/>
+        <source>Wayland Settings</source>
+        <translation>Wayland 설정</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="30"/>
+        <source>Wayland compositor:</source>
+        <translation>Wayland 컴포지터:</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="49"/>
+        <location filename="../waylandsettings.ui" line="81"/>
+        <source>Search...</source>
+        <translation>검색...</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="59"/>
+        <source>Screenlock command:</source>
+        <translation>화면잠금 명령:</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="71"/>
+        <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
+        <translation>kwin_wayland에서 &quot;loginctl lock-session&quot;을 사용합니다</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.cpp" line="98"/>
+        <source>Select a Wayland Compositor</source>
+        <translation>Wayland 컴포지터를 선택합니다</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.cpp" line="103"/>
+        <source>Select a Screenlocker for Wayland</source>
+        <translation>Wayland용 화면잠금도구 선택</translation>
     </message>
 </context>
 </TS>

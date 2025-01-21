@@ -14,22 +14,27 @@
         <translation>Nom :</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="27"/>
+        <location filename="../autostartedit.ui" line="40"/>
         <source>Search...</source>
         <translation>Chercher...</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="47"/>
+        <location filename="../autostartedit.ui" line="54"/>
+        <source>Start only in X11</source>
+        <translation>Démarrer seulement dans X11</translation>
+    </message>
+    <message>
+        <location filename="../autostartedit.ui" line="30"/>
         <source>Command:</source>
         <translation>Commande :</translation>
     </message>
     <message>
-        <location filename="../autostartedit.ui" line="57"/>
+        <location filename="../autostartedit.ui" line="47"/>
         <source>Wait for system tray</source>
         <translation>Attendre l&apos;exécution de system-tray</translation>
     </message>
     <message>
-        <location filename="../autostartedit.cpp" line="61"/>
+        <location filename="../autostartedit.cpp" line="67"/>
         <source>Select Application</source>
         <translation>Choisir l&apos;application</translation>
     </message>
@@ -54,7 +59,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>Ignorer : %1</translation>
+        <translation>Remplacements : %1</translation>
     </message>
 </context>
 <context>
@@ -80,12 +85,22 @@
         <translation>Lancement automatique d&apos;applications</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="142"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="151"/>
+        <location filename="../autostartpage.cpp" line="170"/>
+        <location filename="../autostartpage.cpp" line="187"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="142"/>
+        <location filename="../autostartpage.cpp" line="140"/>
+        <location filename="../autostartpage.cpp" line="170"/>
+        <source>Please provide Name and Command</source>
+        <translation>Veuillez indiquer le nom et la commande</translation>
+    </message>
+    <message>
+        <location filename="../autostartpage.cpp" line="151"/>
+        <location filename="../autostartpage.cpp" line="187"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>Le fichier &apos;%1&apos; existe déjà !</translation>
     </message>
@@ -99,6 +114,7 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
+        <location filename="../basicsettings.ui" line="213"/>
         <source>Search...</source>
         <translation>Chercher...</translation>
     </message>
@@ -109,38 +125,48 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="111"/>
+        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
+        <translation>Sous Wayland, réglez la mise à l&apos;échelle via les paramètres du compositeur ou kanshi.</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="114"/>
         <source>Global Screen Scaling</source>
         <translation>Mise à l&apos;échelle globale de l&apos;écran</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="123"/>
+        <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
         <translation>Facteur d&apos;échelle&#xa0;:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="149"/>
+        <location filename="../basicsettings.ui" line="152"/>
         <source>Leave Session</source>
         <translation>Quitter la session</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="155"/>
+        <location filename="../basicsettings.ui" line="158"/>
         <source>Ask for confirmation to leave session</source>
         <translation>Demander confirmation pour quitter la session</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="162"/>
+        <location filename="../basicsettings.ui" line="165"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>Verrouiller l&apos;écran avant de suspendre/hiberner</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="169"/>
+        <location filename="../basicsettings.ui" line="172"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>Suspendre/hiberner après le délai de verrouillage :</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="182"/>
+        <location filename="../basicsettings.ui" line="185"/>
         <source> ms</source>
         <translation> ms</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="201"/>
+        <source>Use custom screen lock command</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -158,9 +184,14 @@
         <translation>Arrêter</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="176"/>
+        <location filename="../basicsettings.cpp" line="197"/>
         <source>Select a window manager</source>
         <translation>Sélectionner un gestionnaire de fenêtres</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.cpp" line="212"/>
+        <source>Select a screenlocker</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -202,37 +233,42 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="44"/>
+        <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
-        <translation>Paramétres de la session LXQt</translation>
+        <translation>Paramètres de la session LXQt</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="47"/>
+        <location filename="../sessionconfigwindow.cpp" line="48"/>
         <source>Basic Settings</source>
         <translation>Paramètres de base</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="53"/>
+        <location filename="../sessionconfigwindow.cpp" line="54"/>
         <source>User Directories</source>
         <translation>Répertoires utilisateur</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="59"/>
+        <location filename="../sessionconfigwindow.cpp" line="60"/>
         <source>Autostart</source>
         <translation>Lancement automatique</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="65"/>
+        <location filename="../sessionconfigwindow.cpp" line="67"/>
+        <source>Wayland Settings (Experimental)</source>
+        <translation>Paramètres Waylant (Expérimental)</translation>
+    </message>
+    <message>
+        <location filename="../sessionconfigwindow.cpp" line="74"/>
         <source>Environment (Advanced)</source>
         <translation>Environnement (avancé)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="91"/>
+        <location filename="../sessionconfigwindow.cpp" line="100"/>
         <source>Session Restart Required</source>
         <translation>Redémarrage de session requis</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="92"/>
+        <location filename="../sessionconfigwindow.cpp" line="101"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>Certains paramètres ne prendront effet que lors de la prochaine connexion.</translation>
     </message>
@@ -341,6 +377,45 @@
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
         <translation>Répertoire par défaut de vos vidéos</translation>
+    </message>
+</context>
+<context>
+    <name>WaylandSettings</name>
+    <message>
+        <location filename="../waylandsettings.ui" line="23"/>
+        <source>Wayland Settings</source>
+        <translation>Paramètres Wayland</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="30"/>
+        <source>Wayland compositor:</source>
+        <translation>Compositeur Wayland&#xa0;:</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="49"/>
+        <location filename="../waylandsettings.ui" line="81"/>
+        <source>Search...</source>
+        <translation>Rechercher...</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="59"/>
+        <source>Screenlock command:</source>
+        <translation>Commande de verrouillage de l&apos;écran&#xa0;:</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.ui" line="71"/>
+        <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
+        <translation>Utilisez &quot;loginctl lock-session&quot; sur kwin_wayland</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.cpp" line="98"/>
+        <source>Select a Wayland Compositor</source>
+        <translation>Sélectionnez un compositeur Wayland</translation>
+    </message>
+    <message>
+        <location filename="../waylandsettings.cpp" line="103"/>
+        <source>Select a Screenlocker for Wayland</source>
+        <translation>Sélectionnez un vérouilleur d&apos;écran pour Wayland</translation>
     </message>
 </context>
 </TS>

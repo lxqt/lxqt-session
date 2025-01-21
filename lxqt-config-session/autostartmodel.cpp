@@ -68,10 +68,10 @@ QMap<QString, AutostartItem> AutoStartItemModel::items()
 {
     QMap<QString, AutostartItem> allItems;
 
-    for(const QString &s : qAsConst(mLXQtItems))
+    for(const QString &s : std::as_const(mLXQtItems))
         allItems[s] = mItemMap.value(s);
 
-    for(const QString &s : qAsConst(mGlobalItems))
+    for(const QString &s : std::as_const(mGlobalItems))
         allItems[s] = mItemMap.value(s);
 
     return allItems;

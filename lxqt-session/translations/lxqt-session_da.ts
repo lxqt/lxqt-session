@@ -4,12 +4,12 @@
 <context>
     <name>LXQtModuleManager</name>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="323"/>
+        <location filename="../src/lxqtmodman.cpp" line="330"/>
         <source>Crash Report</source>
         <translation>Rapport om nedbrud</translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="324"/>
+        <location filename="../src/lxqtmodman.cpp" line="331"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; holdt op med at virke for mange gange. Dets automatiske genstart er blevet deaktiveret indtil næste login.</translation>
     </message>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Sti til konfigurationsfil.</translation>
+        <translation>Sti til indstillingsfil.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
@@ -31,6 +31,16 @@
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
         <translation>Vindueshåndtering som skal bruges.</translation>
+    </message>
+    <message>
+        <location filename="../src/sessionapplication.cpp" line="82"/>
+        <source>DBus Environment</source>
+        <translation>DBus miljø</translation>
+    </message>
+    <message>
+        <location filename="../src/sessionapplication.cpp" line="83"/>
+        <source>The DBus Activation Environment wasn&apos;t updated. Some apps might not work properly</source>
+        <translation>DBus aktiveringsmiljøet blev ikke ajourført. Nogle programmer fungerer muligvis ikke korrekt</translation>
     </message>
 </context>
 <context>
@@ -58,7 +68,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Du kan når som helst ændre dette gennem Præferencer -&gt; Sessionsindstillinger -&gt; Grundlæggende indstillinger.</translation>
+        <translation>Du kan når som helst ændre dette gennem Indstillinger -&gt; Sessionsindstillinger -&gt; Grundlæggende indstillinger.</translation>
     </message>
 </context>
 </TS>

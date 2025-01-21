@@ -111,7 +111,7 @@ QMap<QString, AutostartItem> ModuleModel::items()
 {
     QMap<QString, AutostartItem> allItems;
 
-    for(const QString &s : qAsConst(mKeyList))
+    for(const QString &s : std::as_const(mKeyList))
         allItems[s] = mItemMap.value(s);
 
     return allItems;
@@ -125,7 +125,7 @@ int ModuleModel::rowCount(const QModelIndex& parent) const
 
 void ModuleModel::writeChanges()
 {
-    for (const QString& key :  qAsConst(mKeyList))
+    for (const QString& key :  std::as_const(mKeyList))
         mItemMap[key].commit();
 }
 

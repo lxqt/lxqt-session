@@ -4,14 +4,14 @@
 <context>
     <name>LXQtModuleManager</name>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="323"/>
+        <location filename="../src/lxqtmodman.cpp" line="330"/>
         <source>Crash Report</source>
         <translation>Laporan Kerusakan</translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="324"/>
+        <location filename="../src/lxqtmodman.cpp" line="331"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; terlalu sering rusak. Memulai otomatisnya telah dinonaktifkan sampai masuk log berikutnya.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; terlalu sering galat. Memulai otomatisnya telah dinonaktifkan sampai masuk log berikutnya.</translation>
     </message>
 </context>
 <context>
@@ -32,6 +32,16 @@
         <source>Window manager to use.</source>
         <translation>Manajer jendela yang akan digunakan.</translation>
     </message>
+    <message>
+        <location filename="../src/sessionapplication.cpp" line="82"/>
+        <source>DBus Environment</source>
+        <translation>Lingkungan DBus</translation>
+    </message>
+    <message>
+        <location filename="../src/sessionapplication.cpp" line="83"/>
+        <source>The DBus Activation Environment wasn&apos;t updated. Some apps might not work properly</source>
+        <translation>Lingkungan Aktivasi DBus tidak diperbarui. Beberapa aplikasi mungkin tidak berfungsi dengan baik.</translation>
+    </message>
 </context>
 <context>
     <name>WmSelectDialog</name>
@@ -43,7 +53,7 @@
     <message>
         <location filename="../src/wmselectdialog.cpp" line="66"/>
         <source>Choose your favorite one.</source>
-        <translation>Pilih yang favorit.</translation>
+        <translation>Pilih satu yang menjadi favorit.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="14"/>

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.18.0 FATAL_ERROR)
 # CMP0000: Call the cmake_minimum_required() command at the beginning of the top-level
 # CMakeLists.txt file even before calling the project() command.
 # The cmake_minimum_required(VERSION) command implicitly invokes the cmake_policy(VERSION)
@@ -19,26 +19,30 @@ option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" O
 option(WITH_LIBUDEV "Build with libudev support" ON)
 
 # Minimum Versions
-set(KF5_MINIMUM_VERSION "5.36.0")
-set(LXQT_MINIMUM_VERSION "1.3.0")
-set(QTXDG_MINIMUM_VERSION "3.11.0")
-set(QT_MINIMUM_VERSION "5.15.0")
+set(KF6_MINIMUM_VERSION "6.0.0")
+set(LXQT_MINIMUM_VERSION "2.1.0")
+set(QTXDG_MINIMUM_VERSION "4.1.0")
+set(QT_MINIMUM_VERSION "6.6.0")
+set(SHELLQT_MINIMUM_VERSION "6.0.0")
 
-find_package(Qt5DBus ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(Qt5LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(Qt5Widgets ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(Qt5X11Extras ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(KF5WindowSystem ${KF5_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6DBus ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6Widgets ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(KF6WindowSystem ${KF6_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
 find_package(qtxdg-tools ${QTXDG_MINIMUM_VERSION} REQUIRED)
 find_package(X11 REQUIRED)
-message(STATUS "Building with Qt${Qt5Core_VERSION}")
+find_package(LayerShellQt ${SHELLQT_MINIMUM_VERSION} REQUIRED)
+message(STATUS "Building with Qt${Qt6Core_VERSION}")
 find_package(PkgConfig REQUIRED)
 if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
     pkg_search_module(PROCPS REQUIRED libproc2 libprocps)
     message(STATUS "Using PROCPS -> ${PROCPS_MODULE_NAME} v${PROCPS_VERSION}")
     if (PROCPS_VERSION VERSION_GREATER_EQUAL 4.0.0)
         add_definitions("-DUSING_LIBPROC2")
+        if (PROCPS_VERSION VERSION_GREATER_EQUAL 4.0.5)
+            add_definitions("-DUSING_LIBPROC2_1")
+        endif()
     endif()
 endif()
 
@@ -46,7 +50,7 @@ endif()
 find_package(XdgUserDirs REQUIRED)
 
 # Patch Version
-set(LXQT_SESSION_PATCH_VERSION 0)
+set(LXQT_SESSION_PATCH_VERSION 1)
 
 set(LXQT_SESSION_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_SESSION_PATCH_VERSION})
 add_definitions(
