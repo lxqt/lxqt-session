@@ -35,12 +35,12 @@
     <message>
         <location filename="../src/sessionapplication.cpp" line="82"/>
         <source>DBus Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>DBus 環境</translation>
     </message>
     <message>
         <location filename="../src/sessionapplication.cpp" line="83"/>
         <source>The DBus Activation Environment wasn&apos;t updated. Some apps might not work properly</source>
-        <translation type="unfinished"></translation>
+        <translation>DBus 作用環境未曾更新，某些應用程式可能無法正常運作</translation>
     </message>
 </context>
 <context>
@@ -63,7 +63,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;歡迎使用LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;請選擇您預設的視窗管理員&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;歡迎使用 LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;請選擇您所要預設的視窗管理器&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
