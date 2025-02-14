@@ -147,18 +147,19 @@ void LeaveDialog::showEvent(QShowEvent *event)
                 layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
                 layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityExclusive);
                 layershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
-                LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
+                LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop
+                                                         | LayerShellQt::Window::AnchorBottom
+                                                         | LayerShellQt::Window::AnchorLeft
+                                                         | LayerShellQt::Window::AnchorRight};
                 layershell->setAnchors(anchors);
                 layershell->setExclusiveZone(-1);
                 layershell->setScope(QStringLiteral("dialog"));
-                QScreen *screen = win->screen();
-                if (screen == nullptr)
-                    screen = QGuiApplication::primaryScreen();
-                if (screen != nullptr)
+                if (QScreen *screen = win->screen())
                 {
                     QRect desktop = screen->availableGeometry();
-                    int topMargin = desktop.center().y() - height() / 2;
-                    layershell->setMargins(QMargins(0, topMargin, 0, 0));
+                    int hMargin = (desktop.width() - width()) / 2;
+                    int vMargin = (desktop.height() - height()) / 2;
+                    layershell->setMargins(QMargins(hMargin, vMargin, hMargin, vMargin));
                 }
             }
         }
