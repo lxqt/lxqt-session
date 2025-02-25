@@ -147,19 +147,31 @@ void LeaveDialog::showEvent(QShowEvent *event)
                 layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
                 layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityExclusive);
                 layershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
-                LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop
-                                                         | LayerShellQt::Window::AnchorBottom
-                                                         | LayerShellQt::Window::AnchorLeft
-                                                         | LayerShellQt::Window::AnchorRight};
+                LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
                 layershell->setAnchors(anchors);
                 layershell->setExclusiveZone(-1);
                 layershell->setScope(QStringLiteral("dialog"));
                 if (QScreen *screen = win->screen())
                 {
-                    QRect desktop = screen->availableGeometry();
-                    int hMargin = (desktop.width() - width()) / 2;
-                    int vMargin = (desktop.height() - height()) / 2;
-                    layershell->setMargins(QMargins(hMargin, vMargin, hMargin, vMargin));
+                    QRect ag = screen->availableGeometry();
+                    // NOTE: Since QShowEvent is non-spontaneous here, the window is not shown yet,
+                    // and so, this screen may not be the one with the cursor. Unfortunately, Qt
+                    // provides no way of knowing the screen with the cursor. Therefore, to prevent
+                    // an offscreen window, we should find the smallest geometry and center the
+                    // window only on it, at the cost of positioning the window above the centers
+                    // of the other screens.
+                    const auto allScreens = QGuiApplication::screens();
+                    for (const auto &screen : allScreens)
+                    {
+                        QRect sag = screen->availableGeometry();
+                        if(ag.width() > sag.width())
+                            ag.setWidth(sag.width());
+                        if(ag.height() > sag.height())
+                            ag.setHeight(sag.height());
+                    }
+                    int topMargin = (ag.height() - sizeHint().height()) / 2;
+                    topMargin = qMax(topMargin, 0);
+                    layershell->setMargins(QMargins(0, topMargin, 0, 0));
                 }
             }
         }
