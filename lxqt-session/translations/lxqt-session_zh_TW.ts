@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>配置檔案路徑。</translation>
+        <translation>設定檔案路徑。</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
