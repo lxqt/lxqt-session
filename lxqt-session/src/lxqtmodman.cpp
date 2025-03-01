@@ -288,6 +288,22 @@ void LXQtModuleManager::stopProcess(const QString& name)
         mNameMap[name]->terminate();
 }
 
+void LXQtModuleManager::execDesktopFile(const QString& name)
+{
+    XdgDesktopFile xdg;
+    if (!xdg.load(name))
+    {
+        qCWarning(SESSION) << "Desktop file" << name << "is not valid";
+        return;
+    }
+    if (!xdg.isSuitable())
+    {
+        qCWarning(SESSION) << "Desktop file" << name << "is not applicable";
+        return;
+    }
+    xdg.startDetached();
+}
+
 QStringList LXQtModuleManager::listModules() const
 {
     return QStringList(mNameMap.keys());

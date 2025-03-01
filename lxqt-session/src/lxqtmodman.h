@@ -85,6 +85,9 @@ public:
     //! \brief Stop a running module
     void stopProcess(const QString& name);
 
+    //! \brief Execute a desktop file, given its file name or path
+    void execDesktopFile(const QString& name);
+
     //! \brief List the running modules, identified by their file names
     QStringList listModules() const;
 
