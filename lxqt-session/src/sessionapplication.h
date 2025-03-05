@@ -32,6 +32,7 @@ class SessionApplication : public LXQt::Application
 public:
     SessionApplication(int& argc, char** argv);
     ~SessionApplication() override;
+    int exec();
     void setWindowManager(const QString & windowManager);
     void setConfigName(const QString & configName);
 
@@ -53,6 +54,7 @@ private:
     LXQtModuleManager* modman;
     LockScreenManager *lockScreenManager;
     QString configName;
+    bool registered;
 };
 
 #endif // SESSIONAPPLICATION_H

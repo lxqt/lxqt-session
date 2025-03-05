@@ -45,7 +45,7 @@ SessionApplication::SessionApplication(int& argc, char** argv) :
     connect(this, &LXQt::Application::unixSignal, modman, [this] { modman->logout(true); });
     new SessionDBusAdaptor(modman);
     // connect to D-Bus and register as an object:
-    QDBusConnection::sessionBus().registerService(QSL("org.lxqt.session"));
+    registered = QDBusConnection::sessionBus().registerService(QSL("org.lxqt.session"));
     QDBusConnection::sessionBus().registerObject(QSL("/LXQtSession"), modman);
 
     // Wait until the event loop starts
@@ -55,6 +55,13 @@ SessionApplication::SessionApplication(int& argc, char** argv) :
 SessionApplication::~SessionApplication()
 {
     delete modman;
+}
+
+int SessionApplication::exec()
+{
+    if (!registered)
+        return 0;
+    return QCoreApplication::exec();
 }
 
 void SessionApplication::setWindowManager(const QString& windowManager)
