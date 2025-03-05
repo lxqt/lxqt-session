@@ -109,6 +109,11 @@ public slots:
         m_manager->stopProcess(name);
     }
 
+    Q_NOREPLY void execDesktopFile(const QString& name)
+    {
+        m_manager->execDesktopFile(name);
+    }
+
 private:
     LXQtModuleManager * m_manager;
     LXQt::Power m_power;
