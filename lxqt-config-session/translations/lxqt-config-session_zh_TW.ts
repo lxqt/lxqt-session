@@ -26,12 +26,12 @@
     <message>
         <location filename="../autostartedit.ui" line="30"/>
         <source>Command:</source>
-        <translation>命令:</translation>
+        <translation>指令：</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="47"/>
         <source>Wait for system tray</source>
-        <translation>等候系統欄</translation>
+        <translation>等候系統匣</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="67"/>
@@ -341,7 +341,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation>包含你在桌面上看到的所有檔案</translation>
+        <translation>包含在桌面上看到的全部檔案</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
@@ -366,7 +366,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation>讀取或保存音樂的默認文件夾</translation>
+        <translation>載入或儲存音樂的預設資料夾</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
