@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>配置檔案路徑。</translation>
+        <translation>設定檔案路徑。</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
@@ -68,7 +68,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>你可以隨時改變此設定經由 偏好設定 -&gt; 會話設定 -&gt; 基本設定。</translation>
+        <translation>您可以隨時變更此設定經由 偏好設定 -&gt; 會話設定 -&gt; 基本設定。</translation>
     </message>
 </context>
 </TS>
