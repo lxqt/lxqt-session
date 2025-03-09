@@ -1,0 +1,47 @@
+diff --git a/lxqt-session/src/sessionapplication.cpp b/lxqt-session/src/sessionapplication.cpp
+index 30dc635f..79cce535 100644
+--- a/lxqt-session/src/sessionapplication.cpp
++++ b/lxqt-session/src/sessionapplication.cpp
+@@ -45,7 +45,7 @@ SessionApplication::SessionApplication(int& argc, char** argv) :
+     connect(this, &LXQt::Application::unixSignal, modman, [this] { modman->logout(true); });
+     new SessionDBusAdaptor(modman);
+     // connect to D-Bus and register as an object:
+-    QDBusConnection::sessionBus().registerService(QSL("org.lxqt.session"));
++    registered = QDBusConnection::sessionBus().registerService(QSL("org.lxqt.session"));
+     QDBusConnection::sessionBus().registerObject(QSL("/LXQtSession"), modman);
+ 
+     // Wait until the event loop starts
+@@ -57,6 +57,13 @@ SessionApplication::~SessionApplication()
+     delete modman;
+ }
+ 
++int SessionApplication::exec()
++{
++    if (!registered)
++        return 0;
++    return QCoreApplication::exec();
++}
++
+ void SessionApplication::setWindowManager(const QString& windowManager)
+ {
+     modman->setWindowManager(windowManager);
+diff --git a/lxqt-session/src/sessionapplication.h b/lxqt-session/src/sessionapplication.h
+index 44c76353..6a9edc5b 100644
+--- a/lxqt-session/src/sessionapplication.h
++++ b/lxqt-session/src/sessionapplication.h
+@@ -32,6 +32,7 @@ class SessionApplication : public LXQt::Application
+ public:
+     SessionApplication(int& argc, char** argv);
+     ~SessionApplication() override;
++    int exec();
+     void setWindowManager(const QString & windowManager);
+     void setConfigName(const QString & configName);
+ 
+@@ -53,6 +54,7 @@ private Q_SLOTS:
+     LXQtModuleManager* modman;
+     LockScreenManager *lockScreenManager;
+     QString configName;
++    bool registered;
+ };
+ 
+ #endif // SESSIONAPPLICATION_H

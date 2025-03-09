@@ -65,42 +65,50 @@
 <context>
     <name>AutoStartPage</name>
     <message>
-        <location filename="../autostartpage.ui" line="17"/>
+        <location filename="../autostartpage.ui" line="51"/>
         <source>Delete</source>
         <translation>Slet</translation>
     </message>
     <message>
-        <location filename="../autostartpage.ui" line="24"/>
+        <location filename="../autostartpage.ui" line="37"/>
         <source>Add</source>
         <translation>Tilføj</translation>
     </message>
     <message>
-        <location filename="../autostartpage.ui" line="31"/>
+        <location filename="../autostartpage.ui" line="44"/>
         <source>Edit</source>
         <translation>Rediger</translation>
     </message>
     <message>
-        <location filename="../autostartpage.ui" line="44"/>
+        <location filename="../autostartpage.ui" line="23"/>
         <source>Application Autostart</source>
         <translation>Program autostart</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="140"/>
-        <location filename="../autostartpage.cpp" line="151"/>
-        <location filename="../autostartpage.cpp" line="170"/>
-        <location filename="../autostartpage.cpp" line="187"/>
+        <location filename="../autostartpage.cpp" line="145"/>
+        <location filename="../autostartpage.cpp" line="156"/>
+        <location filename="../autostartpage.cpp" line="175"/>
+        <location filename="../autostartpage.cpp" line="180"/>
+        <location filename="../autostartpage.cpp" line="197"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="140"/>
-        <location filename="../autostartpage.cpp" line="170"/>
+        <location filename="../autostartpage.cpp" line="175"/>
         <source>Please provide Name and Command</source>
         <translation>Angiv venligst navn og kommando</translation>
     </message>
     <message>
-        <location filename="../autostartpage.cpp" line="151"/>
-        <location filename="../autostartpage.cpp" line="187"/>
+        <location filename="../autostartpage.cpp" line="145"/>
+        <location filename="../autostartpage.cpp" line="180"/>
+        <source>Name should not start with dot or contain slash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../autostartpage.cpp" line="156"/>
+        <location filename="../autostartpage.cpp" line="197"/>
         <source>File &apos;%1&apos; already exists!</source>
         <translation>Filen &apos;%1&apos; eksisterer allerede!</translation>
     </message>
@@ -114,7 +122,7 @@
     </message>
     <message>
         <location filename="../basicsettings.ui" line="49"/>
-        <location filename="../basicsettings.ui" line="213"/>
+        <location filename="../basicsettings.ui" line="226"/>
         <source>Search...</source>
         <translation>Søg...</translation>
     </message>
@@ -174,12 +182,12 @@
         <translation>Grundlæggende indstillinger</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="65"/>
+        <location filename="../basicsettings.ui" line="81"/>
         <source>Start</source>
         <translation>Start</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="72"/>
+        <location filename="../basicsettings.ui" line="88"/>
         <source>Stop</source>
         <translation>Stop</translation>
     </message>
@@ -197,27 +205,27 @@
 <context>
     <name>EnvironmentPage</name>
     <message>
-        <location filename="../environmentpage.ui" line="17"/>
+        <location filename="../environmentpage.ui" line="47"/>
         <source>Add</source>
         <translation>Tilføj</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="24"/>
+        <location filename="../environmentpage.ui" line="54"/>
         <source>Delete</source>
         <translation>Slet</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="50"/>
+        <location filename="../environmentpage.ui" line="23"/>
         <source>Environment Variables (Advanced)</source>
         <translation>Miljøvariabler (avanceret)</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="61"/>
+        <location filename="../environmentpage.ui" line="34"/>
         <source>Variable Name</source>
         <translation>Variabelnavn</translation>
     </message>
     <message>
-        <location filename="../environmentpage.ui" line="66"/>
+        <location filename="../environmentpage.ui" line="39"/>
         <source>Value</source>
         <translation>Værdi</translation>
     </message>

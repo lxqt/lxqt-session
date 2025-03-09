@@ -4,12 +4,12 @@
 <context>
     <name>LXQtModuleManager</name>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="330"/>
+        <location filename="../src/lxqtmodman.cpp" line="347"/>
         <source>Crash Report</source>
         <translation>Αναφορά κατάρρευσης</translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="331"/>
+        <location filename="../src/lxqtmodman.cpp" line="348"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>Το &lt;b&gt;%1&lt;/b&gt; κατέρρευσε πάρα πολλές φορές. Η επανεκκίνησή του απενεργοποιήθηκε μέχρι την επόμενη σύνδεση.</translation>
     </message>
@@ -33,12 +33,12 @@
         <translation>Διαχειριστής παραθύρων προς χρήση.</translation>
     </message>
     <message>
-        <location filename="../src/sessionapplication.cpp" line="82"/>
+        <location filename="../src/sessionapplication.cpp" line="89"/>
         <source>DBus Environment</source>
         <translation>Περιβάλλον DBus</translation>
     </message>
     <message>
-        <location filename="../src/sessionapplication.cpp" line="83"/>
+        <location filename="../src/sessionapplication.cpp" line="90"/>
         <source>The DBus Activation Environment wasn&apos;t updated. Some apps might not work properly</source>
         <translation>Το περιβάλλον ενεργοποίησης του DBus δεν ενημερώθηκε. Ορισμένες εφαρμογές μπορεί να μην λειτουργούν σωστά</translation>
     </message>
