@@ -4,12 +4,12 @@
 <context>
     <name>LXQtModuleManager</name>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="330"/>
+        <location filename="../src/lxqtmodman.cpp" line="347"/>
         <source>Crash Report</source>
         <translation>クラッシュリポート</translation>
     </message>
     <message>
-        <location filename="../src/lxqtmodman.cpp" line="331"/>
+        <location filename="../src/lxqtmodman.cpp" line="348"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; が何度もクラッシュしました。次回ログイン時まで再起動されません。</translation>
     </message>
@@ -33,12 +33,12 @@
         <translation>使用するウィンドウマネージャー。</translation>
     </message>
     <message>
-        <location filename="../src/sessionapplication.cpp" line="82"/>
+        <location filename="../src/sessionapplication.cpp" line="89"/>
         <source>DBus Environment</source>
         <translation>DBus 環境</translation>
     </message>
     <message>
-        <location filename="../src/sessionapplication.cpp" line="83"/>
+        <location filename="../src/sessionapplication.cpp" line="90"/>
         <source>The DBus Activation Environment wasn&apos;t updated. Some apps might not work properly</source>
         <translation>DBus アクティベーション環境が更新されませんでした。一部のアプリが正しく動作しない可能性があります</translation>
     </message>
