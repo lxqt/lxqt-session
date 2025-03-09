@@ -135,9 +135,14 @@ void AutoStartPage::addButton_clicked()
         const auto trimmedName = edit.name().trimmed();
         const auto trimmedCommand = edit.command().trimmed();
         QModelIndex index = ui->autoStartView->selectionModel()->currentIndex();
-        if (trimmedName.isEmpty() || trimmedCommand.isEmpty() )
+        if (trimmedName.isEmpty() || trimmedCommand.isEmpty())
         {
             QMessageBox::critical(this, tr("Error"), tr("Please provide Name and Command"));
+            continue;
+        }
+        if (trimmedName.startsWith(QL1S(".")) || trimmedName.contains(QL1S("/")))
+        {
+            QMessageBox::critical(this, tr("Error"), tr("Name should not start with dot or contain slash"));
             continue;
         }
         XdgDesktopFile file(XdgDesktopFile::ApplicationType, trimmedName, trimmedCommand);
@@ -165,9 +170,14 @@ void AutoStartPage::editButton_clicked()
     {
         const auto trimmedName = edit.name().trimmed();
         const auto trimmedCommand = edit.command().trimmed();
-        if (trimmedName.isEmpty() || trimmedCommand.isEmpty() )
+        if (trimmedName.isEmpty() || trimmedCommand.isEmpty())
         {
             QMessageBox::critical(this, tr("Error"), tr("Please provide Name and Command"));
+            continue;
+        }
+        if (trimmedName.startsWith(QL1S(".")) || trimmedName.contains(QL1S("/")))
+        {
+            QMessageBox::critical(this, tr("Error"), tr("Name should not start with dot or contain slash"));
             continue;
         }
         file.setLocalizedValue(QL1S("Name"), trimmedName);
