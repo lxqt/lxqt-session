@@ -21,7 +21,7 @@
     <message>
         <location filename="../autostartedit.ui" line="54"/>
         <source>Start only in X11</source>
-        <translation type="unfinished"></translation>
+        <translation>Spustiť len v X11</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="30"/>
@@ -104,7 +104,7 @@
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation type="unfinished"></translation>
+        <translation>Názov nemôže začínať bodkou alebo obsahovať lomku</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
@@ -144,7 +144,7 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>V systéme Wayland upravte škálovanie pomocou nastavení kompozitora alebo kanshi.</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="114"/>
@@ -184,7 +184,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Použite vlastný príkaz uzamknutia obrazovky</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte nástroj na uzamknutie obrazovky</translation>
     </message>
 </context>
 <context>
@@ -263,7 +263,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="67"/>
         <source>Wayland Settings (Experimental)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavenia Wayland (experimentálne)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="74"/>
@@ -392,38 +392,38 @@
     <message>
         <location filename="../waylandsettings.ui" line="23"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavenia Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompozitor Wayland:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Hľadať...</translation>
+        <translation>Hľadať...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Príkaz uzamknutia obrazovky:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
         <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Použite &quot;loginctl lock-session&quot; na kwin_wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Wayland Compositor</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte kompozitora Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="103"/>
         <source>Select a Screenlocker for Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte Screenlocker pre Wayland</translation>
     </message>
 </context>
 </TS>

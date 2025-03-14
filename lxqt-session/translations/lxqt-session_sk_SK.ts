@@ -40,7 +40,7 @@
     <message>
         <location filename="../src/sessionapplication.cpp" line="90"/>
         <source>The DBus Activation Environment wasn&apos;t updated. Some apps might not work properly</source>
-        <translation>Aktivačné prostredie DBus nebolo spustené. Niektoré aplikácie nemusia fungovať správne.</translation>
+        <translation>Aktivačné prostredie DBus nebolo aktualizované. Niektoré aplikácie nemusia fungovať správne</translation>
     </message>
 </context>
 <context>
