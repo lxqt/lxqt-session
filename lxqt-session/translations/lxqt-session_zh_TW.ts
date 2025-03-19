@@ -68,7 +68,7 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>您可以隨時變更此設定經由 偏好設定 -&gt; 會話設定 -&gt; 基本設定。</translation>
+        <translation>您可以隨時變更此設定 偏好設定 → 工作階段設定 → 基本設定。</translation>
     </message>
 </context>
 </TS>
