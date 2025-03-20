@@ -104,7 +104,7 @@
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation type="unfinished"></translation>
+        <translation>Erinnya terkkirizibwa okutandika n&apos;akatonyeze era terikkirizibwa okubeeramu akasaze</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
@@ -189,7 +189,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Yiiya ekiragiro ekisaanikira olutimbe ekikyo</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="197"/>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Londa puloguramu esaanikira olutimbe</translation>
     </message>
 </context>
 <context>

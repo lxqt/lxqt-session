@@ -104,7 +104,7 @@
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation type="unfinished"></translation>
+        <translation>Το όνομα δεν πρέπει να αρχίζει με τελεία ή να περιέχει πλαγιοκάθετο</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>

@@ -149,12 +149,12 @@
     <message>
         <location filename="../basicsettings.ui" line="152"/>
         <source>Leave Session</source>
-        <translation>離開會話</translation>
+        <translation>離開工作階段</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="158"/>
         <source>Ask for confirmation to leave session</source>
-        <translation>離開會話時詢問</translation>
+        <translation>離開工作階段時詢問</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="165"/>
@@ -243,7 +243,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="45"/>
         <source>LXQt Session Settings</source>
-        <translation>LXQt 會話設定</translation>
+        <translation>LXQt 工作階段設定</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="48"/>
@@ -273,7 +273,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="100"/>
         <source>Session Restart Required</source>
-        <translation>重新啟動會話請求</translation>
+        <translation>需要工作階段重新啟動</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="101"/>
@@ -291,7 +291,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="184"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>LXQt 會話設定 - 使用者目錄</translation>
+        <translation>LXQt 工作階段設定 - 使用者目錄</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
