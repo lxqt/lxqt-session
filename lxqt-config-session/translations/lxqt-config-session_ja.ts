@@ -104,7 +104,7 @@
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation type="unfinished"></translation>
+        <translation>名前はドットで始めたりスラッシュを含んではいけません</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
@@ -174,7 +174,7 @@
     <message>
         <location filename="../basicsettings.ui" line="165"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>サスペンド/ハイバネートの前に画面をロックする&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;</translation>
+        <translation>サスペンド/ハイバネートの前に画面をロックする　　　　　　</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="172"/>
