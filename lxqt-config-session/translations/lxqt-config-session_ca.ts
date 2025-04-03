@@ -104,7 +104,7 @@
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation type="unfinished"></translation>
+        <translation>El nom no ha de començar amb un punt ni contenir una barra inclinada</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
@@ -189,7 +189,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Usa una ordre de blocatge de pantalla personalitzada</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="197"/>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccioneu un blocador de pantalla</translation>
     </message>
 </context>
 <context>

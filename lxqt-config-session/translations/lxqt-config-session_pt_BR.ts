@@ -98,7 +98,7 @@
         <location filename="../autostartpage.cpp" line="140"/>
         <location filename="../autostartpage.cpp" line="175"/>
         <source>Please provide Name and Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Por favor fornecer um Nome e Comando</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="145"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Quando utilizando Wayland, ajuste a escala utilizando as configurações do compositor ou kanshi.</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="114"/>
