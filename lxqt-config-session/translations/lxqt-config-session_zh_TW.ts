@@ -44,12 +44,12 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
-        <translation>系統自動啟動</translation>
+        <translation>整體自動啟動</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation>LXQt自動啟動</translation>
+        <translation>LXQt 自動啟動</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>覆蓋: %1</translation>
+        <translation>覆蓋： %1</translation>
     </message>
 </context>
 <context>
@@ -82,7 +82,7 @@
     <message>
         <location filename="../autostartpage.ui" line="23"/>
         <source>Application Autostart</source>
-        <translation>自動啟動程式</translation>
+        <translation>應用程式自動啟動</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="140"/>
@@ -139,7 +139,7 @@
     <message>
         <location filename="../basicsettings.ui" line="114"/>
         <source>Global Screen Scaling</source>
-        <translation>全域畫面縮放</translation>
+        <translation>整體畫面縮放比例</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="126"/>
@@ -258,7 +258,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="60"/>
         <source>Autostart</source>
-        <translation>自動啟動程式</translation>
+        <translation>自動啟動</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="67"/>
@@ -296,7 +296,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>An error occurred while applying the settings for the %1 location</source>
-        <translation>當套用設定至 %1 位置時發生一個錯誤</translation>
+        <translation>當套用設定用於 %1 位置時發生錯誤</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="201"/>
@@ -319,7 +319,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Templates</source>
-        <translation>模板</translation>
+        <translation>範本</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
@@ -359,7 +359,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation>讀取或儲存模板的預設資料夾</translation>
+        <translation>載入或儲存範本的預設資料夾</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
@@ -369,7 +369,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation>讀取或儲存文件的預設資料夾</translation>
+        <translation>載入或儲存文件的預設資料夾</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
@@ -384,7 +384,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>讀取或儲存影片的預設資料夾</translation>
+        <translation>載入或儲存影片的預設資料夾</translation>
     </message>
 </context>
 <context>
