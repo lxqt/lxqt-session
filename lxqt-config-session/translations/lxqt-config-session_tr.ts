@@ -104,7 +104,7 @@
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation type="unfinished"></translation>
+        <translation>İsim nokta ile başlamamalı veya eğik çizgi içermemelidir</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
@@ -174,7 +174,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Özel ekran kilitleme komutu kullan</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekran kilitleyici seç</translation>
     </message>
 </context>
 <context>
