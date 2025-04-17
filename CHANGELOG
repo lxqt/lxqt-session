@@ -1,3 +1,13 @@
+lxqt-session-2.2.0 / 2025-04-17
+================================
+ * When disabling autostart entries, do it only for LXQt.
+ * Changed the default cursor size to 24.
+ * Fixed the focus order in the config GUI.
+ * Best positioning of Leave dialog with multi-screen Wayland.
+ * Provided a D-Bus method for launching apps under LXQt Session (by adding `execDesktopFile` to its D-Bus adaptor).
+ * Prevented a second lxqt-session process.
+ * Show error message if an autostart name starts with dot or contains slash.
+
 lxqt-session-2.1.1 / 2024-12-23
 ================================
  * Supported compilation against procps-ng ≥ 4.0.5.
