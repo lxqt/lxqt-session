@@ -104,7 +104,7 @@
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation type="unfinished"></translation>
+        <translation>Der Name sollte nicht mit einem Punkt beginnen oder einen Schrägstrich enthalten</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
