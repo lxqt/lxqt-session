@@ -174,7 +174,7 @@
     <message>
         <location filename="../basicsettings.ui" line="165"/>
         <source>Lock screen before suspending/hibernating</source>
-        <translation>サスペンド/ハイバネートの前に画面をロックする　　　　　　</translation>
+        <translation>サスペンド/ハイバネートの前に画面をロックする</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="172"/>
