@@ -42,7 +42,7 @@ AutoStartItemModel::AutoStartItemModel(QObject* parent) :
     {
         if (!AutostartUtils::isLXQtModule(iter.value().file()))
         {
-            if (showOnlyInLXQt(iter.value().file()))
+            if (AutostartUtils::showOnlyInLXQt(iter.value().file()))
                 mLXQtItems.append(iter.key());
             else
                 mGlobalItems.append(iter.key());
@@ -256,7 +256,7 @@ QModelIndex AutoStartItemModel::parent(const QModelIndex& child) const
     QString name = indexToName(child);
     if (!name.isEmpty())
     {
-        if (showOnlyInLXQt(mItemMap.value(name).file()))
+        if (AutostartUtils::showOnlyInLXQt(mItemMap.value(name).file()))
            return mLXQtIndex;
         return mGlobalIndex;
     }
@@ -278,11 +278,6 @@ int AutoStartItemModel::rowCount(const QModelIndex& parent) const
     if (parent == mLXQtIndex)
         return mLXQtItems.size();
     return 0;
-}
-
-bool AutoStartItemModel::showOnlyInLXQt(const XdgDesktopFile& file)
-{
-    return file.value(QL1S("OnlyShowIn")) == QL1S("LXQt;");
 }
 
 /*

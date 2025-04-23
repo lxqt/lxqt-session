@@ -70,7 +70,6 @@ private:
     QStringList mLXQtItems;
 
     static QString indexToName(const QModelIndex& index);
-    static bool showOnlyInLXQt(const XdgDesktopFile& file);
 };
 
 Q_DECLARE_OPERATORS_FOR_FLAGS(AutoStartItemModel::ActiveButtons)

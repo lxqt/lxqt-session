@@ -21,9 +21,13 @@
 
 #include <QString>
 
+using namespace Qt::Literals::StringLiterals;
+
 bool AutostartUtils::showOnlyInLXQt(const XdgDesktopFile &file)
 {
-    return file.value(QLatin1String("OnlyShowIn")) == QLatin1String("LXQt;");
+    const QString values = file.value("OnlyShowIn"_L1).toString();
+    const QStringList desktops = values.split(u';', Qt::SkipEmptyParts);
+    return desktops.contains("LXQt"_L1);
 }
 
 bool AutostartUtils::isLXQtModule(const XdgDesktopFile& file)
