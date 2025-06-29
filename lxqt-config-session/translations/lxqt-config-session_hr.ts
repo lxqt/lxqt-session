@@ -59,7 +59,7 @@
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>Zaobilaženje: %1</translation>
+        <translation>Nadjačavanja: %1</translation>
     </message>
 </context>
 <context>
@@ -104,7 +104,7 @@
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation type="unfinished"></translation>
+        <translation>Ime ne smije započeti točkom ili sadržati kosu crtu</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
@@ -149,7 +149,7 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pod Waylandom prilagodi skaliranje putem postavki kompozitora ili kanshija.</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="114"/>
@@ -189,7 +189,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Koristi prilagođenu naredbu za zaključavanje ekrana</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="197"/>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Odaberi zaključavanje ekrana</translation>
     </message>
 </context>
 <context>
@@ -397,7 +397,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland kompozitor:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
@@ -418,7 +418,7 @@
     <message>
         <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Wayland Compositor</source>
-        <translation type="unfinished"></translation>
+        <translation>Odaberi Wayland kompozitor</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="103"/>
