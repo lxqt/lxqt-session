@@ -262,8 +262,8 @@
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="67"/>
-        <source>Wayland Settings (Experimental)</source>
-        <translation>Enteekateeka za Wayland (Kikyagezesebwa)</translation>
+        <source>Wayland Settings</source>
+        <translation>Enteekateeka za Wayland</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="74"/>

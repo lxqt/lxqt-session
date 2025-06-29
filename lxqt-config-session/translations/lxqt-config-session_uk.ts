@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+expe<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="uk">
 <context>
@@ -262,8 +262,8 @@
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="67"/>
-        <source>Wayland Settings (Experimental)</source>
-        <translation>Налаштування Wayland (експериментально)</translation>
+        <source>Wayland Settings</source>
+        <translation>Налаштування Wayland</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="74"/>
