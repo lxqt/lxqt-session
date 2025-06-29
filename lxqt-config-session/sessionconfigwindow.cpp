@@ -64,7 +64,7 @@ SessionConfigWindow::SessionConfigWindow() :
 
     if (!QStandardPaths::findExecutable(QLatin1String("startlxqtwayland")).isEmpty()) {
         WaylandSettings* waylandSettings = new WaylandSettings(mSettings, this);
-        addPage(waylandSettings, tr("Wayland Settings (Experimental)"), QSL("wayland"));
+        addPage(waylandSettings, tr("Wayland Settings"), QSL("wayland"));
         connect(waylandSettings, &WaylandSettings::needRestart, this, &SessionConfigWindow::setRestart);
         connect(this, &SessionConfigWindow::reset, waylandSettings, &WaylandSettings::restoreSettings);
         connect(this, &SessionConfigWindow::save,  waylandSettings, &WaylandSettings::save);

@@ -262,7 +262,7 @@
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="67"/>
-        <source>Wayland Settings (Experimental)</source>
+        <source>Wayland Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

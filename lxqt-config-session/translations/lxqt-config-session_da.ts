@@ -262,8 +262,8 @@
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="67"/>
-        <source>Wayland Settings (Experimental)</source>
-        <translation>Wayland-indstillinger (eksperimentel)</translation>
+        <source>Wayland Settings</source>
+        <translation>Wayland-indstillinger</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="74"/>
