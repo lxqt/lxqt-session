@@ -158,11 +158,16 @@ void SessionApplication::mergeXrdb(const char* content, int len)
 void SessionApplication::loadEnvironmentSettings(LXQt::Settings& settings)
 {
     // first - set some user defined environment variables (like TERM...)
+    bool isWayland(QGuiApplication::platformName() == QL1S("wayland"));
+    static const QLatin1String QtScaleKey("QT_SCALE_FACTOR");
+    static const QLatin1String GdkScaleKey("GDK_SCALE");
     settings.beginGroup(QSL("Environment"));
     QByteArray envVal;
     const QStringList keys = settings.childKeys();
     for(const QString& i : keys)
     {
+        if (isWayland && (i == QtScaleKey || i == GdkScaleKey))
+            continue; // scaling is done by the Wayland compositor
         envVal = settings.value(i).toByteArray();
         lxqt_setenv(i.toLocal8Bit().constData(), envVal);
     }

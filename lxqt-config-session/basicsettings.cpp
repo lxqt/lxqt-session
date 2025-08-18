@@ -48,6 +48,9 @@ BasicSettings::BasicSettings(LXQt::Settings *settings, QWidget *parent) :
     ui(new Ui::BasicSettings)
 {
     ui->setupUi(this);
+    if (QGuiApplication::platformName() == QL1S("wayland"))
+        ui->scaleBox->setEnabled(false); // scaling is done by the Wayland compositor
+
     connect(ui->findWmButton, &QPushButton::clicked, this, &BasicSettings::findWmButton_clicked);
     connect(ui->startButton,  &QPushButton::clicked, this, &BasicSettings::startButton_clicked);
     connect(ui->stopButton,   &QPushButton::clicked, this, &BasicSettings::stopButton_clicked);
