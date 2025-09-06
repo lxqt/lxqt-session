@@ -104,7 +104,7 @@
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation type="unfinished"></translation>
+        <translation>Le nom ne doit pas commencer par un point ni contenir de barre oblique (/)</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
@@ -144,7 +144,7 @@
     <message>
         <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
-        <translation>Facteur d&apos;échelle&#xa0;:</translation>
+        <translation>Facteur d&apos;échelle :</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="152"/>
@@ -174,7 +174,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Utiliser le bouton de verrouillage d&apos;écran personnalisé</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionner un verrouillage d&apos;écran</translation>
     </message>
 </context>
 <context>
@@ -397,7 +397,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor:</source>
-        <translation>Compositeur Wayland&#xa0;:</translation>
+        <translation>Compositeur Wayland :</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
@@ -408,7 +408,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command:</source>
-        <translation>Commande de verrouillage de l&apos;écran&#xa0;:</translation>
+        <translation>Commande de verrouillage de l&apos;écran :</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>

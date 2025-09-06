@@ -104,7 +104,7 @@
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation type="unfinished"></translation>
+        <translation>O nome não deve começar com ponto nem conter traço</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
@@ -397,28 +397,28 @@
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Compositor Wayland:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Pesquisar...</translation>
+        <translation>Pesquisar...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command:</source>
-        <translation type="unfinished"></translation>
+        <translation>Comando de travar tela:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
         <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Usar &quot;loginctl lock-session&quot; no kwin_wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Wayland Compositor</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecionar um Compositor Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="103"/>
