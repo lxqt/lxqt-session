@@ -189,7 +189,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="212"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildschirmsperre auswählen</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="152"/>
