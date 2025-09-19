@@ -192,12 +192,12 @@
         <translation>Stop</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="197"/>
+        <location filename="../basicsettings.cpp" line="200"/>
         <source>Select a window manager</source>
         <translation>Vælg en vindueshåndtering</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="212"/>
+        <location filename="../basicsettings.cpp" line="215"/>
         <source>Select a screenlocker</source>
         <translation type="unfinished"></translation>
     </message>
@@ -396,8 +396,8 @@
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
-        <source>Wayland compositor:</source>
-        <translation>Wayland compositor:</translation>
+        <source>Wayland compositor</source>
+        <translation>Wayland compositor</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
@@ -407,7 +407,7 @@
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
-        <source>Screenlock command:</source>
+        <source>Screenlock command</source>
         <translation>Skærmlås kommando:</translation>
     </message>
     <message>

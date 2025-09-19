@@ -192,12 +192,12 @@
         <translation>기본 설정</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="197"/>
+        <location filename="../basicsettings.cpp" line="200"/>
         <source>Select a window manager</source>
         <translation>창 관리자 선택</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="212"/>
+        <location filename="../basicsettings.cpp" line="215"/>
         <source>Select a screenlocker</source>
         <translation>화면잠금도구 선택</translation>
     </message>
@@ -396,7 +396,7 @@
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
-        <source>Wayland compositor:</source>
+        <source>Wayland compositor</source>
         <translation>Wayland 컴포지터:</translation>
     </message>
     <message>
@@ -407,7 +407,7 @@
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
-        <source>Screenlock command:</source>
+        <source>Screenlock command</source>
         <translation>화면잠금 명령:</translation>
     </message>
     <message>
