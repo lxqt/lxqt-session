@@ -54,10 +54,14 @@ if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
 fi
 
 # Qt4 platform plugin
-export QT_PLATFORM_PLUGIN=lxqt
+if [ -z "$QT_PLATFORM_PLUGIN" ]; then
+    export QT_PLATFORM_PLUGIN="lxqt"
+fi
 
 # Qt5 platform plugin
-export QT_QPA_PLATFORMTHEME=lxqt
+if [ -z "$QT_QPA_PLATFORMTHEME" ]; then
+    export QT_QPA_PLATFORMTHEME="lxqt"
+fi
 
 # use lxqt-applications.menu for main app menu
 export XDG_MENU_PREFIX="lxqt-"
