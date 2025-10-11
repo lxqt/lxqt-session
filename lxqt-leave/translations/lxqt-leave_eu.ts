@@ -6,7 +6,7 @@
     <message>
         <location filename="../leavedialog.ui" line="20"/>
         <source>Leave</source>
-        <translation type="unfinished"></translation>
+        <translation>Utzi</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="71"/>
@@ -16,7 +16,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="61"/>
         <source>Logout</source>
-        <translation type="unfinished"></translation>
+        <translation>Saioa itxi</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="79"/>
@@ -54,22 +54,22 @@
     <message>
         <location filename="../main.cpp" line="59"/>
         <source>Logout.</source>
-        <translation type="unfinished"></translation>
+        <translation>Saioa itxi.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="62"/>
         <source>Lockscreen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokeatutako pantaila.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="65"/>
         <source>Suspend.</source>
-        <translation type="unfinished"></translation>
+        <translation>Suspenditu.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="68"/>
         <source>Hibernate.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hibernatu.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="71"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../main.cpp" line="74"/>
         <source>Reboot.</source>
-        <translation type="unfinished"></translation>
+        <translation>Berrabiarazi.</translation>
     </message>
 </context>
 </TS>
