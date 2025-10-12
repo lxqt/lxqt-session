@@ -128,7 +128,7 @@ void AutoStartPage::save()
 
 void AutoStartPage::addButton_clicked()
 {
-    AutoStartEdit edit(QString(), QString(), false, false);
+    AutoStartEdit edit(QString(), QString(), false, false, this);
     bool success = false;
     while (!success && edit.exec() == QDialog::Accepted)
     {
@@ -164,7 +164,8 @@ void AutoStartPage::editButton_clicked()
     AutoStartEdit edit(file.name(),
                        file.value(QL1S("Exec")).toString(),
                        file.value(QL1S("X-LXQt-Need-Tray"), false).toBool(),
-                       file.value(QL1S("X-LXQt-X11-Only"), false).toBool());
+                       file.value(QL1S("X-LXQt-X11-Only"), false).toBool(),
+                       this);
     bool success = false;
     while (!success && edit.exec() == QDialog::Accepted)
     {
