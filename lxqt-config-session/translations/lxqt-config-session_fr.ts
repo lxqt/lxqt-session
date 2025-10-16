@@ -144,7 +144,7 @@
     <message>
         <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
-        <translation>Facteur d&apos;échelle :</translation>
+        <translation>Facteur d&apos;échelle&#xa0;:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="152"/>
@@ -192,12 +192,12 @@
         <translation>Arrêter</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="197"/>
+        <location filename="../basicsettings.cpp" line="200"/>
         <source>Select a window manager</source>
         <translation>Sélectionner un gestionnaire de fenêtres</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="212"/>
+        <location filename="../basicsettings.cpp" line="215"/>
         <source>Select a screenlocker</source>
         <translation>Sélectionner un verrouillage d&apos;écran</translation>
     </message>
@@ -397,7 +397,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor:</source>
-        <translation>Compositeur Wayland :</translation>
+        <translation>Compositeur Wayland&#xa0;:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
@@ -408,7 +408,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command:</source>
-        <translation>Commande de verrouillage de l&apos;écran :</translation>
+        <translation>Commande de verrouillage de l&apos;écran&#xa0;:</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>

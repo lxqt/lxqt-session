@@ -192,12 +192,12 @@
         <translation>Използване на персонализирана команда за заключване на екрана</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="197"/>
+        <location filename="../basicsettings.cpp" line="200"/>
         <source>Select a window manager</source>
         <translation>Избиране на мениджър на прозорци</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="212"/>
+        <location filename="../basicsettings.cpp" line="215"/>
         <source>Select a screenlocker</source>
         <translation>Избиране на програма за заключване на екрана</translation>
     </message>

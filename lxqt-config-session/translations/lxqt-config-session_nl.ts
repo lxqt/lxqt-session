@@ -182,12 +182,12 @@
         <translation>Eigen schermvergrendelingsopdracht gebruiken</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="197"/>
+        <location filename="../basicsettings.cpp" line="200"/>
         <source>Select a window manager</source>
         <translation>Kies een vensterbeheerder</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="212"/>
+        <location filename="../basicsettings.cpp" line="215"/>
         <source>Select a screenlocker</source>
         <translation>Kies een schermvergrendeling</translation>
     </message>

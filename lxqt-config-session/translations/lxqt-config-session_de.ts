@@ -182,12 +182,12 @@
         <translation>Benutzerdefinierten Befehl zur Bildschirmsperre verwenden</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="197"/>
+        <location filename="../basicsettings.cpp" line="200"/>
         <source>Select a window manager</source>
         <translation>Fensterverwaltung auswählen</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="212"/>
+        <location filename="../basicsettings.cpp" line="215"/>
         <source>Select a screenlocker</source>
         <translation>Bildschirmsperre auswählen</translation>
     </message>
