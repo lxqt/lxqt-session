@@ -192,12 +192,12 @@
         <translation>기본 설정</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="197"/>
+        <location filename="../basicsettings.cpp" line="200"/>
         <source>Select a window manager</source>
         <translation>창 관리자 선택</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="212"/>
+        <location filename="../basicsettings.cpp" line="215"/>
         <source>Select a screenlocker</source>
         <translation>화면잠금도구 선택</translation>
     </message>

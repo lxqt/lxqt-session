@@ -192,12 +192,12 @@
         <translation>Naudoti tinkintą ekrano užrakto komandą</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="197"/>
+        <location filename="../basicsettings.cpp" line="200"/>
         <source>Select a window manager</source>
         <translation>Pasirinkite langų tvarkytuvę</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="212"/>
+        <location filename="../basicsettings.cpp" line="215"/>
         <source>Select a screenlocker</source>
         <translation>Pasirinkti ekrano užraktą</translation>
     </message>

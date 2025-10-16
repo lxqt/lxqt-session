@@ -192,12 +192,12 @@
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="197"/>
+        <location filename="../basicsettings.cpp" line="200"/>
         <source>Select a window manager</source>
         <translation>選擇一個視窗管理員</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="212"/>
+        <location filename="../basicsettings.cpp" line="215"/>
         <source>Select a screenlocker</source>
         <translation>選擇螢幕鎖定器</translation>
     </message>

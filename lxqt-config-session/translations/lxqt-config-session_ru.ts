@@ -192,12 +192,12 @@
         <translation>Использовать нестандартную команду блокировки экрана</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="197"/>
+        <location filename="../basicsettings.cpp" line="200"/>
         <source>Select a window manager</source>
         <translation>Укажите оконный менеджер</translation>
     </message>
     <message>
-        <location filename="../basicsettings.cpp" line="212"/>
+        <location filename="../basicsettings.cpp" line="215"/>
         <source>Select a screenlocker</source>
         <translation>Выберите блокировщик экрана</translation>
     </message>
