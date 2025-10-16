@@ -89,6 +89,7 @@ bool SessionApplication::startup()
         QMessageBox::warning(nullptr, tr("DBus Environment"),
                 tr("The DBus Activation Environment wasn't updated. Some apps might not work properly"));
     }
+    qunsetenv("QT_NO_XDG_DESKTOP_PORTAL");
 
     // loadFontSettings(settings);
 
@@ -372,6 +373,9 @@ bool SessionApplication::updateDBusEnvironment()
 {
     qCDebug(SESSION) << "Updating DBus activation environment:";
     QProcess p;
+    QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
+    env.remove(QStringLiteral("QT_NO_XDG_DESKTOP_PORTAL"));
+    p.setProcessEnvironment(env);
     p.setProgram(QStringLiteral("dbus-update-activation-environment"));
     p.setArguments(QStringList(QStringLiteral("--all")));
     p.start();
