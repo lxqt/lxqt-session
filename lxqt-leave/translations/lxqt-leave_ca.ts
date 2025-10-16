@@ -74,7 +74,7 @@
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Shutdown.</source>
-        <translation>Apaga.</translation>
+        <translation>Atura.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="74"/>
