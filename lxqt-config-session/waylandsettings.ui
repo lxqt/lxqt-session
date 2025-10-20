@@ -27,7 +27,7 @@
    <item>
     <widget class="QGroupBox" name="groupBox">
      <property name="title">
-      <string>Wayland compositor:</string>
+      <string>Wayland compositor</string>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
@@ -56,7 +56,7 @@
    <item>
     <widget class="QGroupBox" name="groupBox_2">
      <property name="title">
-      <string>Screenlock command:</string>
+      <string>Screenlock command</string>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_1">
       <item>

@@ -397,7 +397,7 @@
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
-        <source>Wayland compositor:</source>
+        <source>Wayland compositor</source>
         <translation>Wayland-Compositor:</translation>
     </message>
     <message>
@@ -408,7 +408,7 @@
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
-        <source>Screenlock command:</source>
+        <source>Screenlock command</source>
         <translation>Befehl für Bildschirm sperren:</translation>
     </message>
     <message>
