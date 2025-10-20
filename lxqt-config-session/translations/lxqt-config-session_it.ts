@@ -408,7 +408,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation>Comando per bloccare lo schermo:</translation>
+        <translation>Comando per bloccare lo schermo</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
