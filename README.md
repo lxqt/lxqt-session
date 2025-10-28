@@ -68,7 +68,7 @@ The underlying desktop entry files can be edited manually, buttons `Add`, `Edit`
 
 #### Wayland Settings (experimental)
 
-Allows setting the compositor and the screenlocker under Wayland. Will be shown only if [lxqt-wayland-session](https://github.com/lxqt/lxqt-waylands-session/) is installed.
+Allows setting the compositor and the screenlocker under Wayland. Will be shown only if [lxqt-wayland-session](https://github.com/lxqt/lxqt-wayland-session/) is installed.
 
 #### Environment (Advanced)
 Allows for setting arbitrary environment variables which will be available for all software running within LXQt sessions (so not only the components of LXQt itself).
