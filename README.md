@@ -43,7 +43,7 @@ Corresponding configuration can be handled by "LXQt Session Settings", see below
 
 A GUI to tweak all kinds of settings affecting the session as a whole.
 
-![lxqt-config-session](lxqt-config-session.png)
+![LXQt Session Configuration](lxqt-config-session.png)
 
 It can be launched from panel's main menu - Preferences - LXQt settings - Session Settings and is provided by "Configuration Center" (binary `lxqt-config`) of [lxqt-config](https://github.com/lxqt/lxqt-config) as well.  
 
@@ -66,9 +66,9 @@ Applications to launch according to the [Autostart Specification](https://www.fr
 Term "LXQt Autostart" refers to applications launched in LXQt sessions only, "Global Autostart" to those launched in all kinds of session. The distinction is relying on keys `OnlyShowIn` and `NotShowIn` of the desktop entry files in use.  
 The underlying desktop entry files can be edited manually, buttons `Add`, `Edit` and `Delete` at the right of pane "Autostart" can serve as some rudimentary editor, too.  
 
-#### Wayland Settings (experimental)
+#### Wayland Settings
 
-Allows setting the compositor and the screenlocker under wayland. Will be shown only if [lxqt-wayland](https://github.com/lxqt/lxqt-wayland/) is installed.
+Allows setting the compositor and the screenlocker under Wayland. Will be shown only if [lxqt-wayland-session](https://github.com/lxqt/lxqt-wayland-session/) is installed.
 
 #### Environment (Advanced)
 Allows for setting arbitrary environment variables which will be available for all software running within LXQt sessions (so not only the components of LXQt itself).
@@ -89,5 +89,5 @@ Translations can be done in [LXQt-Weblate](https://translate.lxqt-project.org/pr
 * [lxqt-leave](https://translate.lxqt-project.org/projects/lxqt-configuration/lxqt-config-leave)
 
 <a href="https://translate.lxqt-project.org/projects/lxqt-configuration/">
-<img src="https://translate.lxqt-project.org/widgets/lxqt-configuration/-/lxqt-config-session/multi-auto.svg" alt="Stato traduzione" />
+<img src="https://translate.lxqt-project.org/widgets/lxqt-configuration/-/lxqt-config-session/multi-auto.svg" alt="Translation Status" />
 </a>
