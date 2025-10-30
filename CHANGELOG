@@ -1,3 +1,10 @@
+lxqt-session-2.3.0 / 2025-11-05
+================================
+ * Showed autostart applications in the correct category.
+ * Removed "Experimental" from Wayland settings page.
+ * Don't set (X11) global scale factors under Wayland.
+ * Removed colons from two groupbox titles in lxqt-config-session.
+
 lxqt-session-2.2.0 / 2025-04-17
 ================================
  * When disabling autostart entries, do it only for LXQt.
