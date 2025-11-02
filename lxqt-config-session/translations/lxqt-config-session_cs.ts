@@ -21,7 +21,7 @@
     <message>
         <location filename="../autostartedit.ui" line="54"/>
         <source>Start only in X11</source>
-        <translation type="unfinished"></translation>
+        <translation>Spouštět pouze v X11</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="30"/>
@@ -98,13 +98,13 @@
         <location filename="../autostartpage.cpp" line="140"/>
         <location filename="../autostartpage.cpp" line="175"/>
         <source>Please provide Name and Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Zadejte název a příkaz</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation type="unfinished"></translation>
+        <translation>Název by neměl začínat na tečku nebo obsahovat dopřené lomítko</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pod Wayland namísto toho přizpůsobte škálování prostřednictvím nastavení kompozitoru nebo kanshi.</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="114"/>
@@ -174,7 +174,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Použít uživatelsky určený příkaz pro uzamčení obrazovky</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="23"/>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="215"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte nástroj pro uzamykání obrazovky</translation>
     </message>
 </context>
 <context>
@@ -263,7 +263,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="67"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení pro Wayland</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="74"/>
@@ -393,23 +393,23 @@
     <message>
         <location filename="../waylandsettings.ui" line="23"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení pro Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland kompozitor</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Hledat…</translation>
+        <translation>Hledat…</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Příkaz pro uzamčení obrazovky</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>

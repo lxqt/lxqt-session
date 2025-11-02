@@ -11,7 +11,7 @@
     <message>
         <location filename="../autostartedit.ui" line="20"/>
         <source>Name:</source>
-        <translation>Nom&#x202f;:</translation>
+        <translation>Nom :</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="40"/>
@@ -21,12 +21,12 @@
     <message>
         <location filename="../autostartedit.ui" line="54"/>
         <source>Start only in X11</source>
-        <translation type="unfinished"></translation>
+        <translation>Aviar solament dins X11</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="30"/>
         <source>Command:</source>
-        <translation>Comanda&#x202f;:</translation>
+        <translation>Comanda :</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="47"/>
@@ -54,12 +54,12 @@
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
         <source>Location: %1</source>
-        <translation>Emplaçament&#x202f;: %1</translation>
+        <translation>Emplaçament : %1</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>Remplaçament&#x202f;: %1</translation>
+        <translation>Remplaçament : %1</translation>
     </message>
 </context>
 <context>
@@ -98,19 +98,19 @@
         <location filename="../autostartpage.cpp" line="140"/>
         <location filename="../autostartpage.cpp" line="175"/>
         <source>Please provide Name and Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Picatz lo nom e la comanda</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation type="unfinished"></translation>
+        <translation>Lo nom deu pas començar per un ponch nimai conténer de barra oblica (/)</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
         <location filename="../autostartpage.cpp" line="197"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>Lo fichièr «&#x202f;%1&#x202f;» existís ja&#x202f;!</translation>
+        <translation>Lo fichièr « %1 » existís ja !</translation>
     </message>
 </context>
 <context>
@@ -149,7 +149,7 @@
     <message>
         <location filename="../basicsettings.ui" line="111"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Amb Wayland, ajustatz la mesa a l’escala en utilizant la configuracion del compositor o kanshi.</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="114"/>
@@ -159,7 +159,7 @@
     <message>
         <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
-        <translation>Factor d’escala&#x202f;:</translation>
+        <translation>Factor d’escala :</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="152"/>
@@ -179,7 +179,7 @@
     <message>
         <location filename="../basicsettings.ui" line="172"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation>Suspendre/Ivernar aprèp lo relambi de verrolhatge&#x202f;:</translation>
+        <translation>Suspendre/Ivernar aprèp lo relambi de verrolhatge :</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="185"/>
@@ -189,7 +189,7 @@
     <message>
         <location filename="../basicsettings.ui" line="201"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilizar lo boton de verrolhatge d’ecran personalizat</translation>
     </message>
     <message>
         <location filename="../basicsettings.cpp" line="200"/>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../basicsettings.cpp" line="215"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccionar un verrolhatge d’ecran</translation>
     </message>
 </context>
 <context>
@@ -263,7 +263,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="67"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres Wayland</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="74"/>
@@ -392,38 +392,38 @@
     <message>
         <location filename="../waylandsettings.ui" line="23"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor</source>
-        <translation type="unfinished"></translation>
+        <translation>Compositor Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation>Recercar...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Comanda de verrolhatge de l’ecran</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
         <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilizatz « loginctl lock-session » sus kwin_wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Wayland Compositor</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccionatz un compositor de Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="103"/>
         <source>Select a Screenlocker for Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccionatz un verrolhador d’ecran per Wayland</translation>
     </message>
 </context>
 </TS>
