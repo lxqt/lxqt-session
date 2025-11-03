@@ -414,17 +414,17 @@
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
         <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Použít „loginctl lock-session“ na kwin_wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Wayland Compositor</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte Wayland kompozitor</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="103"/>
         <source>Select a Screenlocker for Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte nástroj pro uzamykání obrazovky pod Wayland</translation>
     </message>
 </context>
 </TS>

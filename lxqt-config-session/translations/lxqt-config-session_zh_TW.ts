@@ -397,7 +397,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor</source>
-        <translation>Wayland 合成器：</translation>
+        <translation>Wayland 合成器</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
@@ -408,7 +408,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation>螢幕鎖定指令：</translation>
+        <translation>螢幕鎖定指令</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
