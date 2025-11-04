@@ -11,7 +11,7 @@
     <message>
         <location filename="../autostartedit.ui" line="20"/>
         <source>Name:</source>
-        <translation>Nom :</translation>
+        <translation>Nom&#x202f;:</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="40"/>
@@ -26,7 +26,7 @@
     <message>
         <location filename="../autostartedit.ui" line="30"/>
         <source>Command:</source>
-        <translation>Comanda :</translation>
+        <translation>Comanda&#x202f;:</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="47"/>
@@ -54,12 +54,12 @@
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
         <source>Location: %1</source>
-        <translation>Emplaçament : %1</translation>
+        <translation>Emplaçament&#x202f;: %1</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>Remplaçament : %1</translation>
+        <translation>Remplaçament&#x202f;: %1</translation>
     </message>
 </context>
 <context>
@@ -110,7 +110,7 @@
         <location filename="../autostartpage.cpp" line="156"/>
         <location filename="../autostartpage.cpp" line="197"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>Lo fichièr « %1 » existís ja !</translation>
+        <translation>Lo fichièr «&#x202f;%1&#x202f;» existís ja&#x202f;!</translation>
     </message>
 </context>
 <context>
@@ -159,7 +159,7 @@
     <message>
         <location filename="../basicsettings.ui" line="126"/>
         <source>Scale factor:</source>
-        <translation>Factor d’escala :</translation>
+        <translation>Factor d’escala&#x202f;:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="152"/>
@@ -179,7 +179,7 @@
     <message>
         <location filename="../basicsettings.ui" line="172"/>
         <source>Suspend/hibernate after lock delay:</source>
-        <translation>Suspendre/Ivernar aprèp lo relambi de verrolhatge :</translation>
+        <translation>Suspendre/Ivernar aprèp lo relambi de verrolhatge&#x202f;:</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="185"/>
