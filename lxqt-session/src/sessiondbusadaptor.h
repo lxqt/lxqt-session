@@ -28,8 +28,10 @@
 #ifndef SESSIONDBUS_H
 #define SESSIONDBUS_H
 
-#include <QtDBus>
 #include <LXQt/Power>
+
+#include <QDBusAbstractAdaptor>
+#include <QDBusVariant>
 
 #include "lxqtmodman.h"
 
