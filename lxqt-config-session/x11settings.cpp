@@ -28,7 +28,6 @@
 
 #include "../lxqt-session/src/windowmanager.h"
 #include "sessionconfigwindow.h"
-#include "autostartutils.h"
 
 static const QLatin1String windowManagerKey("window_manager");
 static const QLatin1String QtScaleKey("QT_SCALE_FACTOR");
