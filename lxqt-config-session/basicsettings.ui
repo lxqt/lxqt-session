@@ -81,6 +81,27 @@
       <string>Leave Session</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0" colspan="2">
+       <widget class="QCheckBox" name="leaveConfirmationCheckBox">
+        <property name="text">
+         <string>Ask for confirmation to leave session</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QCheckBox" name="lockBeforePowerActionsCheckBox">
+        <property name="text">
+         <string>Lock screen before suspending/hibernating</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="powerDelayLabel">
+        <property name="text">
+         <string>Suspend/hibernate after lock delay:</string>
+        </property>
+       </widget>
+      </item>
       <item row="2" column="1">
        <widget class="QSpinBox" name="powerAfterLockDelaySpinBox">
         <property name="sizePolicy">
@@ -100,27 +121,6 @@
         </property>
         <property name="singleStep">
          <number>250</number>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="powerDelayLabel">
-        <property name="text">
-         <string>Suspend/hibernate after lock delay:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0" colspan="2">
-       <widget class="QCheckBox" name="leaveConfirmationCheckBox">
-        <property name="text">
-         <string>Ask for confirmation to leave session</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0" colspan="2">
-       <widget class="QCheckBox" name="lockBeforePowerActionsCheckBox">
-        <property name="text">
-         <string>Lock screen before suspending/hibernating</string>
         </property>
        </widget>
       </item>
