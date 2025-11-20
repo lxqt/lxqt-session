@@ -4,10 +4,8 @@
  * LXQt - a lightweight, Qt based, desktop toolset
  * https://lxqt.org/
  *
- * Copyright: 2010-2012 LXQt team
- * Authors:
- *   Petr Vanek <petr@scribus.info>
- *
+ * Copyright: 2010-2024 LXQt team
+
  * This program or library is free software; you can redistribute it
  * and/or modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
@@ -25,28 +23,27 @@
  *
  * END_COMMON_COPYRIGHT_HEADER */
 
-#ifndef BASICSETTINGS_H
-#define BASICSETTINGS_H
+#ifndef X11SETTINGS_H
+#define X11SETTINGS_H
 
 #include <QWidget>
 #include <LXQt/Settings>
 
-#include "modulemodel.h"
-
 namespace Ui {
-class BasicSettings;
+class X11Settings;
 }
 
-class BasicSettings : public QWidget
+class X11Settings : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit BasicSettings(LXQt::Settings *settings, QWidget *parent = nullptr);
-    ~BasicSettings() override;
+    explicit X11Settings(LXQt::Settings *settings, QWidget *parent = nullptr);
+    ~X11Settings() override;
 
 signals:
     void needRestart();
+    void scaleFactorChanged();
 
 public slots:
     void restoreSettings();
@@ -54,12 +51,11 @@ public slots:
 
 private:
     LXQt::Settings* m_settings;
-    ModuleModel* m_moduleModel;
-    Ui::BasicSettings* ui;
+    Ui::X11Settings* ui;
 
 private slots:
-    void startButton_clicked();
-    void stopButton_clicked();
+    void findWmButton_clicked();
+    void findX11LockCommandButton_clicked();
 };
 
-#endif // BASICSETTINGS_H
+#endif // X11SETTINGS_H
