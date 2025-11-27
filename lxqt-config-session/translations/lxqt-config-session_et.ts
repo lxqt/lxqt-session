@@ -397,7 +397,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor</source>
-        <translation>Waylandi komposiitor:</translation>
+        <translation>Waylandi komposiitor</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
@@ -408,7 +408,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation>Ekraanilukustuse käsk:</translation>
+        <translation>Ekraanilukustuse käsk</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
