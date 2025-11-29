@@ -69,11 +69,6 @@ void WaylandSettings::restoreSettings()
 
 void WaylandSettings::save()
 {
-    /*  If the setting actually changed:
-     *      * Save the setting
-     *      * Emit a needsRestart signal
-     */
-
     bool doRestart = false;
     const QString compositor = ui->compositorComboBox->currentText();
     const QString wayLockCommand = ui->wayLockCommandComboBox->currentText();
