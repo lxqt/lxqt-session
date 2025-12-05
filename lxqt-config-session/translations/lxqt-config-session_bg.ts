@@ -116,90 +116,49 @@
 <context>
     <name>BasicSettings</name>
     <message>
-        <location filename="../basicsettings.ui" line="23"/>
+        <location filename="../basicsettings.ui" line="22"/>
         <source>Basic Settings</source>
         <translation>Основни настройки</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="30"/>
-        <source>Window Manager</source>
-        <translation>Мениджър на прозорци</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="49"/>
-        <location filename="../basicsettings.ui" line="226"/>
-        <source>Search...</source>
-        <translation>Търсене...</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="59"/>
+        <location filename="../basicsettings.ui" line="29"/>
         <source>LXQt Modules</source>
         <translation>LXQt Модули</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="81"/>
+        <location filename="../basicsettings.ui" line="51"/>
         <source>Start</source>
         <translation>Старт</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="88"/>
+        <location filename="../basicsettings.ui" line="58"/>
         <source>Stop</source>
         <translation>Стоп</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="111"/>
-        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation>Под Wayland регулирайте мащабирането чрез настройките на композитора или kanshi.</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="114"/>
-        <source>Global Screen Scaling</source>
-        <translation>Глобално мащабиране на екрана</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="126"/>
-        <source>Scale factor:</source>
-        <translation>Фактор на мащаб:</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="152"/>
+        <location filename="../basicsettings.ui" line="81"/>
         <source>Leave Session</source>
         <translation>Излизане от сесията</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="158"/>
+        <location filename="../basicsettings.ui" line="87"/>
         <source>Ask for confirmation to leave session</source>
         <translation>Изискване на потвърждение за напускане на сесия</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="165"/>
+        <location filename="../basicsettings.ui" line="94"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>Заключване на екрана преди приспиване/хибернация</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="172"/>
+        <location filename="../basicsettings.ui" line="101"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>При приспиване и хибернация заключване след:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="185"/>
+        <location filename="../basicsettings.ui" line="114"/>
         <source> ms</source>
         <translation> ms</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="201"/>
-        <source>Use custom screen lock command</source>
-        <translation>Използване на персонализирана команда за заключване на екрана</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.cpp" line="200"/>
-        <source>Select a window manager</source>
-        <translation>Избиране на мениджър на прозорци</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.cpp" line="215"/>
-        <source>Select a screenlocker</source>
-        <translation>Избиране на програма за заключване на екрана</translation>
     </message>
 </context>
 <context>
@@ -241,42 +200,47 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="45"/>
+        <location filename="../sessionconfigwindow.cpp" line="46"/>
         <source>LXQt Session Settings</source>
         <translation>Настройки на сесията</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="48"/>
+        <location filename="../sessionconfigwindow.cpp" line="49"/>
         <source>Basic Settings</source>
         <translation>Основни настройки</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="54"/>
+        <location filename="../sessionconfigwindow.cpp" line="55"/>
+        <source>X11 Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../sessionconfigwindow.cpp" line="69"/>
         <source>User Directories</source>
         <translation>Потребителски директории</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="60"/>
+        <location filename="../sessionconfigwindow.cpp" line="75"/>
         <source>Autostart</source>
         <translation>Автоматично стартиране на програми</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="67"/>
+        <location filename="../sessionconfigwindow.cpp" line="62"/>
         <source>Wayland Settings</source>
         <translation>Настройки на Wayland</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="74"/>
+        <location filename="../sessionconfigwindow.cpp" line="81"/>
         <source>Environment (Advanced)</source>
         <translation>Променливи на средата(разширени настройки)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="100"/>
+        <location filename="../sessionconfigwindow.cpp" line="107"/>
         <source>Session Restart Required</source>
         <translation>Необходимо е рестартиране на сесията</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="101"/>
+        <location filename="../sessionconfigwindow.cpp" line="108"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>Някои настройки няма да влязат в сила до следващото влизане.</translation>
     </message>
@@ -416,14 +380,63 @@
         <translation>Използване на &quot;loginctl lock-session&quot; при kwin_wayland</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="98"/>
+        <location filename="../waylandsettings.cpp" line="93"/>
         <source>Select a Wayland Compositor</source>
         <translation>Избор на композитор на Wayland</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="103"/>
+        <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Screenlocker for Wayland</source>
         <translation>Избор на програма за заключване на екрана на Wayland</translation>
+    </message>
+</context>
+<context>
+    <name>X11Settings</name>
+    <message>
+        <location filename="../x11settings.ui" line="22"/>
+        <source>X11 Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="29"/>
+        <source>Window Manager</source>
+        <translation type="unfinished">Мениджър на прозорци</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="48"/>
+        <location filename="../x11settings.ui" line="83"/>
+        <source>Search...</source>
+        <translation type="unfinished">Търсене...</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="58"/>
+        <source>Use custom screen lock command</source>
+        <translation type="unfinished">Използване на персонализирана команда за заключване на екрана</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="93"/>
+        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
+        <translation type="unfinished">Под Wayland регулирайте мащабирането чрез настройките на композитора или kanshi.</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="96"/>
+        <source>Global Screen Scaling</source>
+        <translation type="unfinished">Глобално мащабиране на екрана</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="108"/>
+        <source>Scale factor:</source>
+        <translation type="unfinished">Фактор на мащаб:</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.cpp" line="124"/>
+        <source>Select a window manager</source>
+        <translation type="unfinished">Избиране на мениджър на прозорци</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.cpp" line="129"/>
+        <source>Select a screenlocker</source>
+        <translation type="unfinished">Избиране на програма за заключване на екрана</translation>
     </message>
 </context>
 </TS>

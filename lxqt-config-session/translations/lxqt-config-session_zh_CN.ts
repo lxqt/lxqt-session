@@ -116,90 +116,49 @@
 <context>
     <name>BasicSettings</name>
     <message>
-        <location filename="../basicsettings.ui" line="30"/>
-        <source>Window Manager</source>
-        <translation>窗口管理器</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="49"/>
-        <location filename="../basicsettings.ui" line="226"/>
-        <source>Search...</source>
-        <translation>查找...</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="59"/>
+        <location filename="../basicsettings.ui" line="29"/>
         <source>LXQt Modules</source>
         <translation>LXQt 模块</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="111"/>
-        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation>在 Wayland 下，通过合成器设置或 kanshi 调整缩放。</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="114"/>
-        <source>Global Screen Scaling</source>
-        <translation>全局屏幕缩放比例</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="126"/>
-        <source>Scale factor:</source>
-        <translation>比例系数:</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="152"/>
+        <location filename="../basicsettings.ui" line="81"/>
         <source>Leave Session</source>
         <translation>离开会话</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="158"/>
+        <location filename="../basicsettings.ui" line="87"/>
         <source>Ask for confirmation to leave session</source>
         <translation>离开会话时要求确认</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="165"/>
+        <location filename="../basicsettings.ui" line="94"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>挂起/休眠前锁屏</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="172"/>
+        <location filename="../basicsettings.ui" line="101"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>在锁定延迟之后挂起/休眠：</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="185"/>
+        <location filename="../basicsettings.ui" line="114"/>
         <source> ms</source>
         <translation> ms</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="201"/>
-        <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="23"/>
+        <location filename="../basicsettings.ui" line="22"/>
         <source>Basic Settings</source>
         <translation>基本设置</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="81"/>
+        <location filename="../basicsettings.ui" line="51"/>
         <source>Start</source>
         <translation>启动</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="88"/>
+        <location filename="../basicsettings.ui" line="58"/>
         <source>Stop</source>
         <translation>停止</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.cpp" line="200"/>
-        <source>Select a window manager</source>
-        <translation>选择窗口管理器</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.cpp" line="215"/>
-        <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -241,42 +200,47 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="45"/>
+        <location filename="../sessionconfigwindow.cpp" line="46"/>
         <source>LXQt Session Settings</source>
         <translation>LXQt 会话配置</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="48"/>
+        <location filename="../sessionconfigwindow.cpp" line="49"/>
         <source>Basic Settings</source>
         <translation>基本设置</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="54"/>
+        <location filename="../sessionconfigwindow.cpp" line="55"/>
+        <source>X11 Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../sessionconfigwindow.cpp" line="69"/>
         <source>User Directories</source>
         <translation>用户目录</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="60"/>
+        <location filename="../sessionconfigwindow.cpp" line="75"/>
         <source>Autostart</source>
         <translation>自动启动</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="67"/>
+        <location filename="../sessionconfigwindow.cpp" line="62"/>
         <source>Wayland Settings</source>
         <translation>Wayland设置</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="74"/>
+        <location filename="../sessionconfigwindow.cpp" line="81"/>
         <source>Environment (Advanced)</source>
         <translation>环境（高级）</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="100"/>
+        <location filename="../sessionconfigwindow.cpp" line="107"/>
         <source>Session Restart Required</source>
         <translation>需要重启会话</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="101"/>
+        <location filename="../sessionconfigwindow.cpp" line="108"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>某些设置只会在下一次登录后才会生效。</translation>
     </message>
@@ -416,14 +380,63 @@
         <translation>在kwin_wayland上用命令&quot;loginctl lock-session&quot;</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="98"/>
+        <location filename="../waylandsettings.cpp" line="93"/>
         <source>Select a Wayland Compositor</source>
         <translation>选择一个Wayland合成器</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="103"/>
+        <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Screenlocker for Wayland</source>
         <translation>选择一个Wayland屏幕锁定程序</translation>
+    </message>
+</context>
+<context>
+    <name>X11Settings</name>
+    <message>
+        <location filename="../x11settings.ui" line="22"/>
+        <source>X11 Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="29"/>
+        <source>Window Manager</source>
+        <translation type="unfinished">窗口管理器</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="48"/>
+        <location filename="../x11settings.ui" line="83"/>
+        <source>Search...</source>
+        <translation type="unfinished">查找...</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="58"/>
+        <source>Use custom screen lock command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="93"/>
+        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
+        <translation type="unfinished">在 Wayland 下，通过合成器设置或 kanshi 调整缩放。</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="96"/>
+        <source>Global Screen Scaling</source>
+        <translation type="unfinished">全局屏幕缩放比例</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="108"/>
+        <source>Scale factor:</source>
+        <translation type="unfinished">比例系数:</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.cpp" line="124"/>
+        <source>Select a window manager</source>
+        <translation type="unfinished">选择窗口管理器</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.cpp" line="129"/>
+        <source>Select a screenlocker</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
