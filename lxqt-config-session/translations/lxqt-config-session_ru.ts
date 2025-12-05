@@ -400,7 +400,7 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Оконный менеджер</translation>
+        <translation>Оконный менеджер</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
@@ -411,32 +411,32 @@
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Использовать нестандартную команду блокировки экрана</translation>
+        <translation>Использовать нестандартную команду блокировки экрана</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Под Wayland, вместо изменения настроек масштабирования здесь, сделайте это в настройках своего композитора или с помощью kanshi.</translation>
+        <translation>Под Wayland, вместо изменения настроек масштабирования здесь, сделайте это в настройках своего композитора или с помощью kanshi.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Глобальное масштабирование экрана</translation>
+        <translation>Глобальное масштабирование экрана</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Масштаб:</translation>
+        <translation>Масштаб:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Укажите оконный менеджер</translation>
+        <translation>Укажите оконный менеджер</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Выберите блокировщик экрана</translation>
+        <translation>Выберите блокировщик экрана</translation>
     </message>
 </context>
 </TS>

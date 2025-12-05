@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Správca okien</translation>
+        <translation>Správca okien</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Hľadať...</translation>
+        <translation>Hľadať...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Použite vlastný príkaz uzamknutia obrazovky</translation>
+        <translation>Použite vlastný príkaz uzamknutia obrazovky</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">V systéme Wayland upravte škálovanie pomocou nastavení kompozitora alebo kanshi.</translation>
+        <translation>V systéme Wayland upravte škálovanie pomocou nastavení kompozitora alebo kanshi.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Globálne meradlo zobrazenia</translation>
+        <translation>Globálne meradlo zobrazenia</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Násobok meradla:</translation>
+        <translation>Násobok meradla:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Vybrať správcu okien</translation>
+        <translation>Vybrať správcu okien</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Vyberte nástroj na uzamknutie obrazovky</translation>
+        <translation>Vyberte nástroj na uzamknutie obrazovky</translation>
     </message>
 </context>
 </TS>

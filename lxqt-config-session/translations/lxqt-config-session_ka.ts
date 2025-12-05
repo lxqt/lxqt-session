@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">ფანჯრის მმართველი</translation>
+        <translation>ფანჯრის მმართველი</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">ძებნა...</translation>
+        <translation>ძებნა...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">ეკრანის ჩაკეტვის მომხმარებლის ბრძანების გამოყენება</translation>
+        <translation>ეკრანის ჩაკეტვის მომხმარებლის ბრძანების გამოყენება</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Wayland-ის ქვეშ მასშტაბი კომპოზიტორიდან ან kanshi-დან უნდა მოირგოთ.</translation>
+        <translation>Wayland-ის ქვეშ მასშტაბი კომპოზიტორიდან ან kanshi-დან უნდა მოირგოთ.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">გლობალური ეკრანის მასშტაბი</translation>
+        <translation>გლობალური ეკრანის მასშტაბი</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">გადიდების ფაქტორი:</translation>
+        <translation>გადიდების ფაქტორი:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">აირჩიეთ ფანჯრების მმართველი</translation>
+        <translation>აირჩიეთ ფანჯრების მმართველი</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">აირჩიეთ ეკრანის ჩამკეტი</translation>
+        <translation>აირჩიეთ ეკრანის ჩამკეტი</translation>
     </message>
 </context>
 </TS>

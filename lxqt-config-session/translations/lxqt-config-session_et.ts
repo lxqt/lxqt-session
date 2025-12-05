@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Aknahaldur</translation>
+        <translation>Aknahaldur</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Otsi...</translation>
+        <translation>Otsi...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Kasuta endamääratud lukustuskäsku</translation>
+        <translation>Kasuta endamääratud lukustuskäsku</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Kui kasutad Waylandit, siis kohenda skaleerimist kas komposiitori seadistustest või rakendusest kanshi.</translation>
+        <translation>Kui kasutad Waylandit, siis kohenda skaleerimist kas komposiitori seadistustest või rakendusest kanshi.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Keskkonnaülene ekraani skaleerimine</translation>
+        <translation>Keskkonnaülene ekraani skaleerimine</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Skaleerimisfaktor:</translation>
+        <translation>Skaleerimisfaktor:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Vali aknahaldur</translation>
+        <translation>Vali aknahaldur</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Vali ekraanilukustaja</translation>
+        <translation>Vali ekraanilukustaja</translation>
     </message>
 </context>
 </TS>

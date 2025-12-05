@@ -367,7 +367,7 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Buscar...</translation>
+        <translation>Buscar...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
@@ -400,13 +400,13 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Xestor de xanelas</translation>
+        <translation>Xestor de xanelas</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Buscar...</translation>
+        <translation>Buscar...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
@@ -421,17 +421,17 @@
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Escalado global da pantalla</translation>
+        <translation>Escalado global da pantalla</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Factor de escala:</translation>
+        <translation>Factor de escala:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Seleccione un xestor de xanelas</translation>
+        <translation>Seleccione un xestor de xanelas</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>

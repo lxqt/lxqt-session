@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Мениджър на прозорци</translation>
+        <translation>Мениджър на прозорци</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Търсене...</translation>
+        <translation>Търсене...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Използване на персонализирана команда за заключване на екрана</translation>
+        <translation>Използване на персонализирана команда за заключване на екрана</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Под Wayland регулирайте мащабирането чрез настройките на композитора или kanshi.</translation>
+        <translation>Под Wayland регулирайте мащабирането чрез настройките на композитора или kanshi.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Глобално мащабиране на екрана</translation>
+        <translation>Глобално мащабиране на екрана</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Фактор на мащаб:</translation>
+        <translation>Фактор на мащаб:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Избиране на мениджър на прозорци</translation>
+        <translation>Избиране на мениджър на прозорци</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Избиране на програма за заключване на екрана</translation>
+        <translation>Избиране на програма за заключване на екрана</translation>
     </message>
 </context>
 </TS>

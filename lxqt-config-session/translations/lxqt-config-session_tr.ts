@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Pencere Yönetici</translation>
+        <translation>Pencere Yönetici</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Ara...</translation>
+        <translation>Ara...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Özel ekran kilitleme komutu kullan</translation>
+        <translation>Özel ekran kilitleme komutu kullan</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Wayland altında, ölçeklendirmeyi compositor ayarları veya kanshi aracılığıyla ayarlayın.</translation>
+        <translation>Wayland altında, ölçeklendirmeyi compositor ayarları veya kanshi aracılığıyla ayarlayın.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Küresel Ekran Ölçekleme</translation>
+        <translation>Küresel Ekran Ölçekleme</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Ölçek faktörü:</translation>
+        <translation>Ölçek faktörü:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Bir pencere yöneticisi seçin</translation>
+        <translation>Bir pencere yöneticisi seçin</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Ekran kilitleyici seç</translation>
+        <translation>Ekran kilitleyici seç</translation>
     </message>
 </context>
 </TS>

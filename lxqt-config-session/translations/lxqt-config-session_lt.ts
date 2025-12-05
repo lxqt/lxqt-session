@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Langų tvarkytuvė</translation>
+        <translation>Langų tvarkytuvė</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Ieškoti...</translation>
+        <translation>Ieškoti...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Naudoti tinkintą ekrano užrakto komandą</translation>
+        <translation>Naudoti tinkintą ekrano užrakto komandą</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">„Wayland“ aplinkoje reguliuokite mastelį per tvarkytojo nustatymus arba, vietoj to, per kanshi.</translation>
+        <translation>„Wayland“ aplinkoje reguliuokite mastelį per tvarkytojo nustatymus arba, vietoj to, per kanshi.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Visuotinis ekrano mastelio keitimas</translation>
+        <translation>Visuotinis ekrano mastelio keitimas</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Mastelio koeficientas:</translation>
+        <translation>Mastelio koeficientas:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Pasirinkite langų tvarkytuvę</translation>
+        <translation>Pasirinkite langų tvarkytuvę</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Pasirinkti ekrano užraktą</translation>
+        <translation>Pasirinkti ekrano užraktą</translation>
     </message>
 </context>
 </TS>

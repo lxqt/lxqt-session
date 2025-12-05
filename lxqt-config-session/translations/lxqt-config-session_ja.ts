@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">ウィンドウマネージャー</translation>
+        <translation>ウィンドウマネージャー</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">検索...</translation>
+        <translation>検索...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">カスタム画面ロックコマンドを使用する</translation>
+        <translation>カスタム画面ロックコマンドを使用する</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Wayland の下では、代わりにコンポジターの設定か kanshi でスケーリングを調整して下さい。</translation>
+        <translation>Wayland の下では、代わりにコンポジターの設定か kanshi でスケーリングを調整して下さい。</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">グローバル画面スケーリング</translation>
+        <translation>グローバル画面スケーリング</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">スケール係数:</translation>
+        <translation>スケール係数:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">ウィンドウマネージャーの選択</translation>
+        <translation>ウィンドウマネージャーの選択</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">スクリーンロッカーの選択</translation>
+        <translation>スクリーンロッカーの選択</translation>
     </message>
 </context>
 </TS>

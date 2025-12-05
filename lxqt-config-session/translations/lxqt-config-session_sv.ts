@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Fönsterhanterare</translation>
+        <translation>Fönsterhanterare</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Sök...</translation>
+        <translation>Sök...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Använd anpassat kommando för skärmlås</translation>
+        <translation>Använd anpassat kommando för skärmlås</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Under Wayland-körning ska du justera skalning via kompositionsinställningarna eller kanshi istället.</translation>
+        <translation>Under Wayland-körning ska du justera skalning via kompositionsinställningarna eller kanshi istället.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Allmän skärmskalning</translation>
+        <translation>Allmän skärmskalning</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Skalningsfaktor:</translation>
+        <translation>Skalningsfaktor:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Välj en fönsterhanterare</translation>
+        <translation>Välj en fönsterhanterare</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Välj skärmlås</translation>
+        <translation>Välj skärmlås</translation>
     </message>
 </context>
 </TS>

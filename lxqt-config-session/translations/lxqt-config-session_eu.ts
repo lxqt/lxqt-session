@@ -367,7 +367,7 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Bilatu...</translation>
+        <translation>Bilatu...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
@@ -400,13 +400,13 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Leiho-kudeatzailea</translation>
+        <translation>Leiho-kudeatzailea</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Bilatu...</translation>
+        <translation>Bilatu...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
@@ -421,17 +421,17 @@
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Pantailaren eskalatze globala</translation>
+        <translation>Pantailaren eskalatze globala</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Eskala faktorea:</translation>
+        <translation>Eskala faktorea:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Hautatu leiho-kudeatzaile bat</translation>
+        <translation>Hautatu leiho-kudeatzaile bat</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>

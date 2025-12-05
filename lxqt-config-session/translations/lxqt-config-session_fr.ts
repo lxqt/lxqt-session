@@ -400,7 +400,7 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Gestionnaire de fenêtres</translation>
+        <translation>Gestionnaire de fenêtres</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
@@ -411,32 +411,32 @@
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Utiliser le bouton de verrouillage d&apos;écran personnalisé</translation>
+        <translation>Utiliser le bouton de verrouillage d&apos;écran personnalisé</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Sous Wayland, réglez la mise à l&apos;échelle via les paramètres du compositeur ou kanshi.</translation>
+        <translation>Sous Wayland, réglez la mise à l&apos;échelle via les paramètres du compositeur ou kanshi.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Mise à l&apos;échelle globale de l&apos;écran</translation>
+        <translation>Mise à l&apos;échelle globale de l&apos;écran</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Facteur d&apos;échelle&#xa0;:</translation>
+        <translation>Facteur d&apos;échelle&#xa0;:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Sélectionner un gestionnaire de fenêtres</translation>
+        <translation>Sélectionner un gestionnaire de fenêtres</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Sélectionner un verrouillage d&apos;écran</translation>
+        <translation>Sélectionner un verrouillage d&apos;écran</translation>
     </message>
 </context>
 </TS>

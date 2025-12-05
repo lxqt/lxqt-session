@@ -401,43 +401,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Správce oken</translation>
+        <translation>Správce oken</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Hledat…</translation>
+        <translation>Hledat…</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Použít uživatelsky určený příkaz pro uzamčení obrazovky</translation>
+        <translation>Použít uživatelsky určený příkaz pro uzamčení obrazovky</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Pod Wayland namísto toho přizpůsobte škálování prostřednictvím nastavení kompozitoru nebo kanshi.</translation>
+        <translation>Pod Wayland namísto toho přizpůsobte škálování prostřednictvím nastavení kompozitoru nebo kanshi.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Globální měřítko zobrazení</translation>
+        <translation>Globální měřítko zobrazení</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Násobek měřítka:</translation>
+        <translation>Násobek měřítka:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Vybrat správce oken</translation>
+        <translation>Vybrat správce oken</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Vyberte nástroj pro uzamykání obrazovky</translation>
+        <translation>Vyberte nástroj pro uzamykání obrazovky</translation>
     </message>
 </context>
 </TS>

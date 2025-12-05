@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Διαχειριστής παραθύρων</translation>
+        <translation>Διαχειριστής παραθύρων</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Αναζήτηση...</translation>
+        <translation>Αναζήτηση...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Χρήση προσαρμοσμένης εντολής κλειδώματος της οθόνης</translation>
+        <translation>Χρήση προσαρμοσμένης εντολής κλειδώματος της οθόνης</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Στο Wayland, ρυθμίστε την κλιμάκωση μέσω των ρυθμίσεων συνθέτη ή εναλλακτικά του kanshi.</translation>
+        <translation>Στο Wayland, ρυθμίστε την κλιμάκωση μέσω των ρυθμίσεων συνθέτη ή εναλλακτικά του kanshi.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Καθολική κλιμάκωση της οθόνης</translation>
+        <translation>Καθολική κλιμάκωση της οθόνης</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Συντελεστής κλιμάκωσης:</translation>
+        <translation>Συντελεστής κλιμάκωσης:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Επιλογή διαχειριστή παραθύρων</translation>
+        <translation>Επιλογή διαχειριστή παραθύρων</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Επιλέξτε το κλείδωμα οθόνης</translation>
+        <translation>Επιλέξτε το κλείδωμα οθόνης</translation>
     </message>
 </context>
 </TS>

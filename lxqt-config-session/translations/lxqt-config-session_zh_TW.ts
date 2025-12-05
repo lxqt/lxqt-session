@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">視窗管理員</translation>
+        <translation>視窗管理員</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">搜尋...</translation>
+        <translation>搜尋...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">使用自訂的螢幕鎖定指令</translation>
+        <translation>使用自訂的螢幕鎖定指令</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">在 Wayland 下，經由合成器設定或 kanshi 取代來進行調整。</translation>
+        <translation>在 Wayland 下，經由合成器設定或 kanshi 取代來進行調整。</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">整體畫面縮放比例</translation>
+        <translation>整體畫面縮放比例</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">縮放比例：</translation>
+        <translation>縮放比例：</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">選擇一個視窗管理員</translation>
+        <translation>選擇一個視窗管理員</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">選擇螢幕鎖定器</translation>
+        <translation>選擇螢幕鎖定器</translation>
     </message>
 </context>
 </TS>

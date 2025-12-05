@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Gestor de janelas</translation>
+        <translation>Gestor de janelas</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Pesquisar...</translation>
+        <translation>Pesquisar...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Usar o comando personalizado de bloqueio do ecrã</translation>
+        <translation>Usar o comando personalizado de bloqueio do ecrã</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Em Wayland, ajuste a escala através das definições do compositor ou do kanshi.</translation>
+        <translation>Em Wayland, ajuste a escala através das definições do compositor ou do kanshi.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Escala global do ecrã</translation>
+        <translation>Escala global do ecrã</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Factor de escala:</translation>
+        <translation>Factor de escala:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Selecione um gestor de janelas</translation>
+        <translation>Selecione um gestor de janelas</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Selecione um bloqueador de ecrã</translation>
+        <translation>Selecione um bloqueador de ecrã</translation>
     </message>
 </context>
 </TS>

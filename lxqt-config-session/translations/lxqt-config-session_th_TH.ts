@@ -118,7 +118,7 @@
     <message>
         <location filename="../basicsettings.ui" line="29"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished">มอดูลต่างๆ LXQt</translation>
+        <translation>มอดูลต่างๆ LXQt</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="81"/>
@@ -367,7 +367,7 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">ค้นหา...</translation>
+        <translation>ค้นหา...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
@@ -400,13 +400,13 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">ตัวจัดการหน้าต่าง</translation>
+        <translation>ตัวจัดการหน้าต่าง</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">ค้นหา...</translation>
+        <translation>ค้นหา...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
@@ -431,7 +431,7 @@
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">เลือกตัวจัดการหน้าต่าง</translation>
+        <translation>เลือกตัวจัดการหน้าต่าง</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>

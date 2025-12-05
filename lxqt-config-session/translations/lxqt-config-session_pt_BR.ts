@@ -400,13 +400,13 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Gerenciador de Janelas</translation>
+        <translation>Gerenciador de Janelas</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Pesquisar...</translation>
+        <translation>Pesquisar...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
@@ -416,22 +416,22 @@
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Quando utilizando Wayland, ajuste a escala utilizando as configurações do compositor ou kanshi.</translation>
+        <translation>Quando utilizando Wayland, ajuste a escala utilizando as configurações do compositor ou kanshi.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Dimensionamento Global de Tela</translation>
+        <translation>Dimensionamento Global de Tela</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Fator de escala:</translation>
+        <translation>Fator de escala:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Selecionar um gerenciador de janelas</translation>
+        <translation>Selecionar um gerenciador de janelas</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>

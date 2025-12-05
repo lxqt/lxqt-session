@@ -400,7 +400,7 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Gestor de ventanas</translation>
+        <translation>Gestor de ventanas</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
@@ -421,17 +421,17 @@
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Escala global de la pantalla</translation>
+        <translation>Escala global de la pantalla</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Factor de escala:</translation>
+        <translation>Factor de escala:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Seleccione un gestor de ventanas</translation>
+        <translation>Seleccione un gestor de ventanas</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>

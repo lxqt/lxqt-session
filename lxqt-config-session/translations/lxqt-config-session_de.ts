@@ -401,43 +401,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Fensterverwaltung</translation>
+        <translation>Fensterverwaltung</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Suchen...</translation>
+        <translation>Suchen...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Benutzerdefinierten Befehl zur Bildschirmsperre verwenden</translation>
+        <translation>Benutzerdefinierten Befehl zur Bildschirmsperre verwenden</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Unter Wayland können Sie die Skalierung stattdessen über die Compositor-Einstellungen oder kanshi anpassen.</translation>
+        <translation>Unter Wayland können Sie die Skalierung stattdessen über die Compositor-Einstellungen oder kanshi anpassen.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Globale Bildschirmskalierung</translation>
+        <translation>Globale Bildschirmskalierung</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Skalierungsfaktor:</translation>
+        <translation>Skalierungsfaktor:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Fensterverwaltung auswählen</translation>
+        <translation>Fensterverwaltung auswählen</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Bildschirmsperre auswählen</translation>
+        <translation>Bildschirmsperre auswählen</translation>
     </message>
 </context>
 </TS>

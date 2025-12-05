@@ -400,13 +400,13 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Vindueshåndtering</translation>
+        <translation>Vindueshåndtering</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Søg...</translation>
+        <translation>Søg...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
@@ -416,22 +416,22 @@
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Under Wayland skal du justere skalering via kompositorindstillinger eller kanshi i stedet.</translation>
+        <translation>Under Wayland skal du justere skalering via kompositorindstillinger eller kanshi i stedet.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Global skærmskalering</translation>
+        <translation>Global skærmskalering</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Skaleringsfaktor:</translation>
+        <translation>Skaleringsfaktor:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Vælg en vindueshåndtering</translation>
+        <translation>Vælg en vindueshåndtering</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>

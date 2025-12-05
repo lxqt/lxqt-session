@@ -367,7 +367,7 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Тражи...</translation>
+        <translation>Тражи...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
@@ -406,7 +406,7 @@
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Тражи...</translation>
+        <translation>Тражи...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>

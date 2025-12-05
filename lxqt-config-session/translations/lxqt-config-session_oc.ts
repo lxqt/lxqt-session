@@ -400,7 +400,7 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Gestionari de fenèstras</translation>
+        <translation>Gestionari de fenèstras</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
@@ -411,32 +411,32 @@
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Utilizar lo boton de verrolhatge d’ecran personalizat</translation>
+        <translation>Utilizar lo boton de verrolhatge d’ecran personalizat</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Amb Wayland, ajustatz la mesa a l’escala en utilizant la configuracion del compositor o kanshi.</translation>
+        <translation>Amb Wayland, ajustatz la mesa a l’escala en utilizant la configuracion del compositor o kanshi.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Mesa a l’escala globala de l’ecran</translation>
+        <translation>Mesa a l’escala globala de l’ecran</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Factor d’escala&#x202f;:</translation>
+        <translation>Factor d’escala&#x202f;:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Seleccionar un gestionari de fenèstras</translation>
+        <translation>Seleccionar un gestionari de fenèstras</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Seleccionar un verrolhatge d’ecran</translation>
+        <translation>Seleccionar un verrolhatge d’ecran</translation>
     </message>
 </context>
 </TS>

@@ -367,7 +367,7 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Søk...</translation>
+        <translation>Søk...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
@@ -400,13 +400,13 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Vindushåndterer</translation>
+        <translation>Vindushåndterer</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Søk...</translation>
+        <translation>Søk...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
@@ -421,17 +421,17 @@
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Global skjermskalering</translation>
+        <translation>Global skjermskalering</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Skaleringsfaktor:</translation>
+        <translation>Skaleringsfaktor:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Velg en vindushåndterer</translation>
+        <translation>Velg en vindushåndterer</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>

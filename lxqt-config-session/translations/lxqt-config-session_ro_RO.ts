@@ -367,7 +367,7 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Se caută...</translation>
+        <translation>Se caută...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
@@ -400,13 +400,13 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Gestiune ferestre</translation>
+        <translation>Gestiune ferestre</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Se caută...</translation>
+        <translation>Se caută...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
@@ -431,7 +431,7 @@
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Selectați un administrator de ferestre</translation>
+        <translation>Selectați un administrator de ferestre</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>

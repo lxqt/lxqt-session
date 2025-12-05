@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">מנהל חלונות</translation>
+        <translation>מנהל חלונות</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">חיפוש…</translation>
+        <translation>חיפוש…</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">להשתמש בפקודת נעילת מסך משלך</translation>
+        <translation>להשתמש בפקודת נעילת מסך משלך</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">תחת Wayland, ניתן לכוון את קנה המידה דרך הגדרות המנהל החלונאי או דרך kanshi במקום.</translation>
+        <translation>תחת Wayland, ניתן לכוון את קנה המידה דרך הגדרות המנהל החלונאי או דרך kanshi במקום.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">שינוי יחס תצוגה גלובלי</translation>
+        <translation>שינוי יחס תצוגה גלובלי</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">מקדם יחס:</translation>
+        <translation>מקדם יחס:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">בחירת מנהל חלונות</translation>
+        <translation>בחירת מנהל חלונות</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">בחירת נועל מסך</translation>
+        <translation>בחירת נועל מסך</translation>
     </message>
 </context>
 </TS>

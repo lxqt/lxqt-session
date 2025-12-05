@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">مدير النوافذ</translation>
+        <translation>مدير النوافذ</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">ابحث…</translation>
+        <translation>ابحث…</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">استخدم أمر قفل الشاشة المخصص</translation>
+        <translation>استخدم أمر قفل الشاشة المخصص</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">في Wayland، اضبط التدرج عبر إعدادات المركب أو kanshi بدلاً من ذلك.</translation>
+        <translation>في Wayland، اضبط التدرج عبر إعدادات المركب أو kanshi بدلاً من ذلك.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">تحجيم الشاشة العالمي</translation>
+        <translation>تحجيم الشاشة العالمي</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">عامل المقياس:</translation>
+        <translation>عامل المقياس:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">اختر مدير النوافذ</translation>
+        <translation>اختر مدير النوافذ</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">حدد قفل للشاشة</translation>
+        <translation>حدد قفل للشاشة</translation>
     </message>
 </context>
 </TS>

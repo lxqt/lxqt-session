@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">창 관리자</translation>
+        <translation>창 관리자</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">검색...</translation>
+        <translation>검색...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">사용자 정의 화면 잠금 명령 사용</translation>
+        <translation>사용자 정의 화면 잠금 명령 사용</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Wayland에서 대신 컴포지터 설정이나 kanshi를 통해 배율을 조정합니다.</translation>
+        <translation>Wayland에서 대신 컴포지터 설정이나 kanshi를 통해 배율을 조정합니다.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">전역 화면 배율</translation>
+        <translation>전역 화면 배율</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">배율:</translation>
+        <translation>배율:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">창 관리자 선택</translation>
+        <translation>창 관리자 선택</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">화면잠금도구 선택</translation>
+        <translation>화면잠금도구 선택</translation>
     </message>
 </context>
 </TS>

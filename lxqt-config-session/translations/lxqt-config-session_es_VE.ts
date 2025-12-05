@@ -118,7 +118,7 @@
     <message>
         <location filename="../basicsettings.ui" line="29"/>
         <source>LXQt Modules</source>
-        <translation type="unfinished">Modulos lxqt a habilitar en el inicio</translation>
+        <translation>Modulos lxqt a habilitar en el inicio</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="81"/>
@@ -367,7 +367,7 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Buscar...</translation>
+        <translation>Buscar...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
@@ -400,13 +400,13 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Manejador de Ventanas</translation>
+        <translation>Manejador de Ventanas</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Buscar...</translation>
+        <translation>Buscar...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
@@ -431,7 +431,7 @@
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Seleccione un manejador de ventanas</translation>
+        <translation>Seleccione un manejador de ventanas</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>

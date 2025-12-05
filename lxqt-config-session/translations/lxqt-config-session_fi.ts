@@ -367,7 +367,7 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished">Etsi...</translation>
+        <translation>Etsi...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Ikkunahallinta</translation>
+        <translation>Ikkunahallinta</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Etsi...</translation>
+        <translation>Etsi...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Mukautettu näytönlukituskomento</translation>
+        <translation>Mukautettu näytönlukituskomento</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Waylandiä käytettäessä, skaalaus määritetään koostajan asetuksissa tai kanshi-sovelluksella.</translation>
+        <translation>Waylandiä käytettäessä, skaalaus määritetään koostajan asetuksissa tai kanshi-sovelluksella.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Yleinen näytön skaalaus</translation>
+        <translation>Yleinen näytön skaalaus</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Skaalauskerroin:</translation>
+        <translation>Skaalauskerroin:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Valitse ikkunahallinta</translation>
+        <translation>Valitse ikkunahallinta</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Valitse näytönlukitsija</translation>
+        <translation>Valitse näytönlukitsija</translation>
     </message>
 </context>
 </TS>

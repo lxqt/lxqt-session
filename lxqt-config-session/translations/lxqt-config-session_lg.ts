@@ -400,43 +400,43 @@
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation type="unfinished">Ekiteekateekamadirisa</translation>
+        <translation>Ekiteekateekamadirisa</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished">Noonya...</translation>
+        <translation>Noonya...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished">Yiiya ekiragiro ekisaanikira olutimbe ekikyo</translation>
+        <translation>Yiiya ekiragiro ekisaanikira olutimbe ekikyo</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation type="unfinished">Wayland bw&apos;eba nga y&apos;ekola, obunene bw&apos;ebirabika bugoberere enteekateeka z&apos;ekikwanaganya ebirabikira awakolerwa oba eza kanshi.</translation>
+        <translation>Wayland bw&apos;eba nga y&apos;ekola, obunene bw&apos;ebirabika bugoberere enteekateeka z&apos;ekikwanaganya ebirabikira awakolerwa oba eza kanshi.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation type="unfinished">Obunene bw&apos;ebirabikira ku lutimbe</translation>
+        <translation>Obunene bw&apos;ebirabikira ku lutimbe</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation type="unfinished">Ekigero ky&apos;obunene:</translation>
+        <translation>Ekigero ky&apos;obunene:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation type="unfinished">Londa ekiteekateekamadirisa</translation>
+        <translation>Londa ekiteekateekamadirisa</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished">Londa puloguramu esaanikira olutimbe</translation>
+        <translation>Londa puloguramu esaanikira olutimbe</translation>
     </message>
 </context>
 </TS>
