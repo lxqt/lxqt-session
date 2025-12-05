@@ -397,7 +397,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor</source>
-        <translation>Puloguramu enaakawanaganyanga ebirabikira awakolerwa nga Wayland y&apos;ekola:</translation>
+        <translation>Puloguramu enaakawanaganyanga ebirabikira awakolerwa nga Wayland y&apos;ekola</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
@@ -408,7 +408,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation>Ekiragiro ekikisa awakolerwa:</translation>
+        <translation>Ekiragiro ekikisa awakolerwa</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
