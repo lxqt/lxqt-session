@@ -116,90 +116,49 @@
 <context>
     <name>BasicSettings</name>
     <message>
-        <location filename="../basicsettings.ui" line="23"/>
+        <location filename="../basicsettings.ui" line="22"/>
         <source>Basic Settings</source>
         <translation>Enteekateeka ez&apos;awamu</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="30"/>
-        <source>Window Manager</source>
-        <translation>Ekiteekateekamadirisa</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="49"/>
-        <location filename="../basicsettings.ui" line="226"/>
-        <source>Search...</source>
-        <translation>Noonya...</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="59"/>
+        <location filename="../basicsettings.ui" line="29"/>
         <source>LXQt Modules</source>
         <translation>Enyingo za LXQt</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="81"/>
+        <location filename="../basicsettings.ui" line="51"/>
         <source>Start</source>
         <translation>Tandika</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="88"/>
+        <location filename="../basicsettings.ui" line="58"/>
         <source>Stop</source>
         <translation>Komya</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="111"/>
-        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation>Wayland bw&apos;eba nga y&apos;ekola, obunene bw&apos;ebirabika bugoberere enteekateeka z&apos;ekikwanaganya ebirabikira awakolerwa oba eza kanshi.</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="114"/>
-        <source>Global Screen Scaling</source>
-        <translation>Obunene bw&apos;ebirabikira ku lutimbe</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="126"/>
-        <source>Scale factor:</source>
-        <translation>Ekigero ky&apos;obunene:</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="152"/>
+        <location filename="../basicsettings.ui" line="81"/>
         <source>Leave Session</source>
         <translation>Okukomya olutuula</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="158"/>
+        <location filename="../basicsettings.ui" line="87"/>
         <source>Ask for confirmation to leave session</source>
         <translation>Okulukomya malanga okukakasa</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="165"/>
+        <location filename="../basicsettings.ui" line="94"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>Kompyuta nga en&apos;erindisibwa oba okwebasibwa olutimbe lusaanikirwe</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="172"/>
+        <location filename="../basicsettings.ui" line="101"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>Okulindisa oba okwebasa kutandika nga olutimbe lusaanikiridwa:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="185"/>
+        <location filename="../basicsettings.ui" line="114"/>
         <source> ms</source>
         <translation> ms</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="201"/>
-        <source>Use custom screen lock command</source>
-        <translation>Yiiya ekiragiro ekisaanikira olutimbe ekikyo</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.cpp" line="200"/>
-        <source>Select a window manager</source>
-        <translation>Londa ekiteekateekamadirisa</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.cpp" line="215"/>
-        <source>Select a screenlocker</source>
-        <translation>Londa puloguramu esaanikira olutimbe</translation>
     </message>
 </context>
 <context>
@@ -241,42 +200,47 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="45"/>
+        <location filename="../sessionconfigwindow.cpp" line="46"/>
         <source>LXQt Session Settings</source>
         <translation>Enteekateeka z&apos;entuula za LXQt</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="48"/>
+        <location filename="../sessionconfigwindow.cpp" line="49"/>
         <source>Basic Settings</source>
         <translation>Enteekateeka ez&apos;awamu</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="54"/>
+        <location filename="../sessionconfigwindow.cpp" line="55"/>
+        <source>X11 Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../sessionconfigwindow.cpp" line="69"/>
         <source>User Directories</source>
         <translation>Materekero ez&apos;omu akawunti</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="60"/>
+        <location filename="../sessionconfigwindow.cpp" line="75"/>
         <source>Autostart</source>
         <translation>Ebitandikirawo</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="67"/>
+        <location filename="../sessionconfigwindow.cpp" line="62"/>
         <source>Wayland Settings</source>
         <translation>Enteekateeka za Wayland</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="74"/>
+        <location filename="../sessionconfigwindow.cpp" line="81"/>
         <source>Environment (Advanced)</source>
         <translation>Nviromenti (kyetaagisa bumanyirivu)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="100"/>
+        <location filename="../sessionconfigwindow.cpp" line="107"/>
         <source>Session Restart Required</source>
         <translation>Kyetaagisa kuddamu okutandika olutuula</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="101"/>
+        <location filename="../sessionconfigwindow.cpp" line="108"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>Enkyukakyuka ezimu okulabika kyetaagisa okuddamu kutandika olutuula.</translation>
     </message>
@@ -416,14 +380,63 @@
         <translation>kwin_wayland bw&apos;eba nga y&apos;ekola kozesa &quot;loginctl lock-session&quot;</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="98"/>
+        <location filename="../waylandsettings.cpp" line="93"/>
         <source>Select a Wayland Compositor</source>
         <translation>Londa puloguramu enaakwanaganyanga ebirabikira awakolerwa Wayland nga y&apos;ekola</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="103"/>
+        <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Screenlocker for Wayland</source>
         <translation>Londa puloguramu ekisa awakolerwa Wayland nga y&apos;ekola</translation>
+    </message>
+</context>
+<context>
+    <name>X11Settings</name>
+    <message>
+        <location filename="../x11settings.ui" line="22"/>
+        <source>X11 Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="29"/>
+        <source>Window Manager</source>
+        <translation>Ekiteekateekamadirisa</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="48"/>
+        <location filename="../x11settings.ui" line="83"/>
+        <source>Search...</source>
+        <translation>Noonya...</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="58"/>
+        <source>Use custom screen lock command</source>
+        <translation>Yiiya ekiragiro ekisaanikira olutimbe ekikyo</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="93"/>
+        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
+        <translation>Wayland bw&apos;eba nga y&apos;ekola, obunene bw&apos;ebirabika bugoberere enteekateeka z&apos;ekikwanaganya ebirabikira awakolerwa oba eza kanshi.</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="96"/>
+        <source>Global Screen Scaling</source>
+        <translation>Obunene bw&apos;ebirabikira ku lutimbe</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="108"/>
+        <source>Scale factor:</source>
+        <translation>Ekigero ky&apos;obunene:</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.cpp" line="124"/>
+        <source>Select a window manager</source>
+        <translation>Londa ekiteekateekamadirisa</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.cpp" line="129"/>
+        <source>Select a screenlocker</source>
+        <translation>Londa puloguramu esaanikira olutimbe</translation>
     </message>
 </context>
 </TS>

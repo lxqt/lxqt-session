@@ -116,90 +116,49 @@
 <context>
     <name>BasicSettings</name>
     <message>
-        <location filename="../basicsettings.ui" line="23"/>
+        <location filename="../basicsettings.ui" line="22"/>
         <source>Basic Settings</source>
         <translation>הגדרות בסיסיות</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="30"/>
-        <source>Window Manager</source>
-        <translation>מנהל חלונות</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="49"/>
-        <location filename="../basicsettings.ui" line="226"/>
-        <source>Search...</source>
-        <translation>חיפוש…</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="59"/>
+        <location filename="../basicsettings.ui" line="29"/>
         <source>LXQt Modules</source>
         <translation>מודולים של LXQt</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="81"/>
+        <location filename="../basicsettings.ui" line="51"/>
         <source>Start</source>
         <translation>התחלה</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="88"/>
+        <location filename="../basicsettings.ui" line="58"/>
         <source>Stop</source>
         <translation>עצירה</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="111"/>
-        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation>תחת Wayland, ניתן לכוון את קנה המידה דרך הגדרות המנהל החלונאי או דרך kanshi במקום.</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="114"/>
-        <source>Global Screen Scaling</source>
-        <translation>שינוי יחס תצוגה גלובלי</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="126"/>
-        <source>Scale factor:</source>
-        <translation>מקדם יחס:</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="152"/>
+        <location filename="../basicsettings.ui" line="81"/>
         <source>Leave Session</source>
         <translation>יציאה מההפעלה</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="158"/>
+        <location filename="../basicsettings.ui" line="87"/>
         <source>Ask for confirmation to leave session</source>
         <translation>בקשת אישור ליציאה מההפעלה</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="165"/>
+        <location filename="../basicsettings.ui" line="94"/>
         <source>Lock screen before suspending/hibernating</source>
         <translation>נעילת המסך לפני השהיה/תרדמת</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="172"/>
+        <location filename="../basicsettings.ui" line="101"/>
         <source>Suspend/hibernate after lock delay:</source>
         <translation>השהיית נעילה לאחר השהייה/תרדמת:</translation>
     </message>
     <message>
-        <location filename="../basicsettings.ui" line="185"/>
+        <location filename="../basicsettings.ui" line="114"/>
         <source> ms</source>
         <translation> מ״ש</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="201"/>
-        <source>Use custom screen lock command</source>
-        <translation>להשתמש בפקודת נעילת מסך משלך</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.cpp" line="200"/>
-        <source>Select a window manager</source>
-        <translation>בחירת מנהל חלונות</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.cpp" line="215"/>
-        <source>Select a screenlocker</source>
-        <translation>בחירת נועל מסך</translation>
     </message>
 </context>
 <context>
@@ -241,42 +200,47 @@
 <context>
     <name>SessionConfigWindow</name>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="45"/>
+        <location filename="../sessionconfigwindow.cpp" line="46"/>
         <source>LXQt Session Settings</source>
         <translation>הגדרות הפעלה של LXQt</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="48"/>
+        <location filename="../sessionconfigwindow.cpp" line="49"/>
         <source>Basic Settings</source>
         <translation>הגדרות בסיסיות</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="54"/>
+        <location filename="../sessionconfigwindow.cpp" line="55"/>
+        <source>X11 Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../sessionconfigwindow.cpp" line="69"/>
         <source>User Directories</source>
         <translation>ספריות משתמש</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="60"/>
+        <location filename="../sessionconfigwindow.cpp" line="75"/>
         <source>Autostart</source>
         <translation>התחלה אוטומטית</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="67"/>
+        <location filename="../sessionconfigwindow.cpp" line="62"/>
         <source>Wayland Settings</source>
         <translation>הגדרות Wayland</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="74"/>
+        <location filename="../sessionconfigwindow.cpp" line="81"/>
         <source>Environment (Advanced)</source>
         <translation>סביבה (מתקדם)</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="100"/>
+        <location filename="../sessionconfigwindow.cpp" line="107"/>
         <source>Session Restart Required</source>
         <translation>נדרשת יציאה וכניסה מחדש</translation>
     </message>
     <message>
-        <location filename="../sessionconfigwindow.cpp" line="101"/>
+        <location filename="../sessionconfigwindow.cpp" line="108"/>
         <source>Some settings will not take effect until the next log in.</source>
         <translation>חלק מההגדרות לא ייכנסו לתוקף עד לכניסה הבאה למערכת.</translation>
     </message>
@@ -416,14 +380,63 @@
         <translation>להשתמש ב־„loginctl” ב־</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="98"/>
+        <location filename="../waylandsettings.cpp" line="93"/>
         <source>Select a Wayland Compositor</source>
         <translation>נא לבחור מנהל חלונאי ל־Wayland</translation>
     </message>
     <message>
-        <location filename="../waylandsettings.cpp" line="103"/>
+        <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Screenlocker for Wayland</source>
         <translation>נא לבחור נועל מסך ל־Wayland</translation>
+    </message>
+</context>
+<context>
+    <name>X11Settings</name>
+    <message>
+        <location filename="../x11settings.ui" line="22"/>
+        <source>X11 Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="29"/>
+        <source>Window Manager</source>
+        <translation>מנהל חלונות</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="48"/>
+        <location filename="../x11settings.ui" line="83"/>
+        <source>Search...</source>
+        <translation>חיפוש…</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="58"/>
+        <source>Use custom screen lock command</source>
+        <translation>להשתמש בפקודת נעילת מסך משלך</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="93"/>
+        <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
+        <translation>תחת Wayland, ניתן לכוון את קנה המידה דרך הגדרות המנהל החלונאי או דרך kanshi במקום.</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="96"/>
+        <source>Global Screen Scaling</source>
+        <translation>שינוי יחס תצוגה גלובלי</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.ui" line="108"/>
+        <source>Scale factor:</source>
+        <translation>מקדם יחס:</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.cpp" line="124"/>
+        <source>Select a window manager</source>
+        <translation>בחירת מנהל חלונות</translation>
+    </message>
+    <message>
+        <location filename="../x11settings.cpp" line="129"/>
+        <source>Select a screenlocker</source>
+        <translation>בחירת נועל מסך</translation>
     </message>
 </context>
 </TS>
