@@ -68,7 +68,7 @@
    <item>
     <widget class="QLabel" name="label_2">
      <property name="text">
-      <string>>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You will be able to change this at any time through &lt;span style=&quot;font-weight:600;&quot;&gt;LXQt Settings → Session Settings&lt;/span&gt;.</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You will be able to change this at any time through &lt;span style=&quot;font-weight:600;&quot;&gt;LXQt Settings → Session Settings&lt;/span&gt;.</string>
      </property>
      <property name="wordWrap">
       <bool>true</bool>
