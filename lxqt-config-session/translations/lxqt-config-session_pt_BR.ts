@@ -212,7 +212,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="55"/>
         <source>X11 Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Configurações do X11</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="69"/>
@@ -372,7 +372,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation>Comando de travar tela:</translation>
+        <translation>Comando de travar tela</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
@@ -395,7 +395,7 @@
     <message>
         <location filename="../x11settings.ui" line="22"/>
         <source>X11 Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Configurações do X11</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="29"/>
@@ -411,7 +411,7 @@
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Usar comando customizado para travar a tela</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>

@@ -212,7 +212,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="55"/>
         <source>X11 Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>X11-instellingen</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="69"/>
@@ -361,7 +361,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor</source>
-        <translation>Wayland-vensterbeheerder:</translation>
+        <translation>Wayland-vensterbeheerder</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
@@ -372,7 +372,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation>Schermvergrendelingsopdracht:</translation>
+        <translation>Schermvergrendelingsopdracht</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
@@ -395,7 +395,7 @@
     <message>
         <location filename="../x11settings.ui" line="22"/>
         <source>X11 Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>X11-instellingen</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="29"/>
