@@ -27,13 +27,10 @@
 
 #include "windowmanager.h"
 
-#include <QObject>
 #include <QStringList>
 #include <QStandardPaths>
 #include <LXQt/Globals>
 #include <LXQt/Settings>
-#include <QDebug>
-
 
 bool findProgram(const QString &program)
 {

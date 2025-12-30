@@ -31,7 +31,6 @@
 #include <LXQt/Settings>
 #include <XdgAutoStart>
 #include <XdgDirs>
-#include <unistd.h>
 
 #include <QApplication>
 #include <QMessageBox>
