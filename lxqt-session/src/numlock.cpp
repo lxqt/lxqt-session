@@ -31,14 +31,13 @@
 
 #include <QGuiApplication>
 #include <string.h>
-#include <stdlib.h>
 #include <X11/Xlib.h>
 #include <X11/XKBlib.h>
 #include <X11/keysym.h>
 
 /* the XKB stuff is based on code created by Oswald Buddenhagen <ossi@kde.org> */
 
-static unsigned int xkb_mask_modifier(Display* /*dpy*/, XkbDescPtr xkb, const char *name )
+static unsigned int xkb_mask_modifier(Display* /*dpy*/, XkbDescPtr xkb, const char *name)
 {
     int i = 0;
     if( !xkb || !xkb->names )
@@ -71,7 +70,7 @@ static int xkb_set_on(Display* dpy)
     mask = xkb_numlock_mask(dpy);
     if( mask == 0 )
         return 0;
-    XkbLockModifiers ( dpy, XkbUseCoreKbd, mask, mask);
+    XkbLockModifiers (dpy, XkbUseCoreKbd, mask, mask);
     return 1;
 }
 

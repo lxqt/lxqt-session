@@ -23,7 +23,6 @@
 #include "UdevNotifier.h"
 #include "numlock.h"
 #include "lockscreenmanager.h"
-#include <unistd.h>
 #include <csignal>
 #include <LXQt/Settings>
 #include <LXQt/Globals>

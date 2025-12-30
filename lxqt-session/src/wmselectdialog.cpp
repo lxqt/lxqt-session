@@ -33,13 +33,8 @@
 
 #include <QTreeWidget>
 #include <QVariant>
-#include <stdlib.h>
 #include <QFileInfo>
-#include <QDir>
-#include <QApplication>
-#include <QCloseEvent>
 #include <QFileDialog>
-#include <QDebug>
 
 #define TYPE_ROLE   Qt::UserRole + 1
 #define SELECT_DLG_TYPE 12345
@@ -48,7 +43,6 @@ WmSelectDialog::WmSelectDialog(const WindowManagerList &availableWindowManagers,
     QDialog(parent),
     ui(new Ui::WmSelectDialog)
 {
-    qApp->setStyle(QSL("plastique"));
     ui->setupUi(this);
     setModal(true);
     connect(ui->wmList, &QTreeWidget::doubleClicked, this, &WmSelectDialog::accept);
