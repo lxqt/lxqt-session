@@ -34,7 +34,6 @@
 #include <LXQt/Settings>
 #include <QDebug>
 
-
 bool findProgram(const QString &program)
 {
     return !QStandardPaths::findExecutable(program).isEmpty();
