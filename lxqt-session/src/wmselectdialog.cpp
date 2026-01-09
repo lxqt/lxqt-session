@@ -48,7 +48,6 @@ WmSelectDialog::WmSelectDialog(const WindowManagerList &availableWindowManagers,
     QDialog(parent),
     ui(new Ui::WmSelectDialog)
 {
-    qApp->setStyle(QSL("plastique"));
     ui->setupUi(this);
     setModal(true);
     connect(ui->wmList, &QTreeWidget::doubleClicked, this, &WmSelectDialog::accept);
