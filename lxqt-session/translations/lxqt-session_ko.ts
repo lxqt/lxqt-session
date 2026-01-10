@@ -46,12 +46,12 @@
 <context>
     <name>WmSelectDialog</name>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="65"/>
+        <location filename="../src/wmselectdialog.cpp" line="64"/>
         <source>Other ...</source>
         <translation>기타 ...</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="66"/>
+        <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Choose your favorite one.</source>
         <translation>가장 마음에 드는 것을 고르세요.</translation>
     </message>
@@ -62,13 +62,13 @@
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;LXQt와의 만남을 환영합니다&lt;/span&gt;&lt;/p&gt;&lt;p&gt;기본 창 관리자를 선택해주세요.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
-        <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>언제든지 설정 -&gt; 세션 설정 -&gt; 기본 설정에서 바꾸실 수 있습니다.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You will be able to change this at any time through &lt;span style=&quot;font-weight:600;&quot;&gt;LXQt Settings → Session Settings → X11 Settings&lt;/span&gt;.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

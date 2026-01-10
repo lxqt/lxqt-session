@@ -51,24 +51,24 @@
         <translation>Witamy w LXQt-Qt</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="65"/>
+        <location filename="../src/wmselectdialog.ui" line="20"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wmselectdialog.ui" line="71"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You will be able to change this at any time through &lt;span style=&quot;font-weight:600;&quot;&gt;LXQt Settings → Session Settings → X11 Settings&lt;/span&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wmselectdialog.cpp" line="64"/>
         <source>Other ...</source>
         <translation>Inne ...</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="66"/>
+        <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Choose your favorite one.</source>
         <translation>Wybierz swój ulubiony.</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.ui" line="20"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Witamy w LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Wybierz swój domyślny menedżer okien.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.ui" line="71"/>
-        <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>Możesz zmienić tą opcję w każdej chwili w ustawieniach sesji.</translation>
     </message>
 </context>
 </TS>

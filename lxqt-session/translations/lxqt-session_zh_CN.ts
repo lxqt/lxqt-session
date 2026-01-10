@@ -51,24 +51,24 @@
         <translation>欢迎使用 LXQt</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="65"/>
+        <location filename="../src/wmselectdialog.ui" line="20"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wmselectdialog.ui" line="71"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You will be able to change this at any time through &lt;span style=&quot;font-weight:600;&quot;&gt;LXQt Settings → Session Settings → X11 Settings&lt;/span&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wmselectdialog.cpp" line="64"/>
         <source>Other ...</source>
         <translation>其他...</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="66"/>
+        <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Choose your favorite one.</source>
         <translation>选择您最喜欢的一个。</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.ui" line="20"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;欢迎使用 LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;请选择您的默认窗口管理器。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.ui" line="71"/>
-        <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>您可以随时在 首选项 -&gt; 会话配置 -&gt; 基本设置 中更改此设置。</translation>
     </message>
 </context>
 </TS>
