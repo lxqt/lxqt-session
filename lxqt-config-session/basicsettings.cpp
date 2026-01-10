@@ -35,7 +35,6 @@
 static const QLatin1String leaveConfirmationKey("leave_confirmation");
 static const QLatin1String lockBeforePowerActionsKey("lock_screen_before_power_actions");
 static const QLatin1String powerActionsAfterLockDelayKey("power_actions_after_lock_delay");
-static const QLatin1String x11LockCommandKey("lock_command");
 
 BasicSettings::BasicSettings(LXQt::Settings *settings, QWidget *parent) :
     QWidget(parent),

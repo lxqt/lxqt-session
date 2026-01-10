@@ -51,24 +51,24 @@
         <translation>ยินดีต้อนรับเข้าสู่ LXQt</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="65"/>
-        <source>Other ...</source>
-        <translation>อย่างอื่น ...</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.cpp" line="66"/>
-        <source>Choose your favorite one.</source>
-        <translation>เลื่อกที่คุณชอบมาหนึ่งอย่าง</translation>
-    </message>
-    <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
-        <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You will be able to change this at any time through &lt;span style=&quot;font-weight:600;&quot;&gt;LXQt Settings → Session Settings → X11 Settings&lt;/span&gt;.</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wmselectdialog.cpp" line="64"/>
+        <source>Other ...</source>
+        <translation>อย่างอื่น ...</translation>
+    </message>
+    <message>
+        <location filename="../src/wmselectdialog.cpp" line="65"/>
+        <source>Choose your favorite one.</source>
+        <translation>เลื่อกที่คุณชอบมาหนึ่งอย่าง</translation>
     </message>
 </context>
 </TS>

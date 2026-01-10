@@ -51,24 +51,24 @@
         <translation>歡迎使用 LXQt</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="65"/>
+        <location filename="../src/wmselectdialog.ui" line="20"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wmselectdialog.ui" line="71"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You will be able to change this at any time through &lt;span style=&quot;font-weight:600;&quot;&gt;LXQt Settings → Session Settings → X11 Settings&lt;/span&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/wmselectdialog.cpp" line="64"/>
         <source>Other ...</source>
         <translation>其他...</translation>
     </message>
     <message>
-        <location filename="../src/wmselectdialog.cpp" line="66"/>
+        <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Choose your favorite one.</source>
         <translation>選擇您最喜愛的。</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.ui" line="20"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;歡迎使用 LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;請選擇您所要預設的視窗管理器&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/wmselectdialog.ui" line="71"/>
-        <source>You will be able to change this at any time through Preferences -&gt; Session Settings -&gt; Basic Settings.</source>
-        <translation>您可以隨時變更此設定 偏好設定 → 工作階段設定 → 基本設定。</translation>
     </message>
 </context>
 </TS>
