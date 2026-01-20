@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="pt">
+<TS version="2.1" language="kk">
 <context>
     <name>AutoStartEdit</name>
     <message>
         <location filename="../autostartedit.ui" line="14"/>
         <source>Edit</source>
-        <translation>Editar</translation>
+        <translation>Түзету</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="20"/>
         <source>Name:</source>
-        <translation>Nome:</translation>
+        <translation>Аты:</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="40"/>
         <source>Search...</source>
-        <translation>Pesquisar...</translation>
+        <translation>Іздеу...</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="54"/>
         <source>Start only in X11</source>
-        <translation>Iniciar apenas no X11</translation>
+        <translation>Тек X11 ішінде бастау</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="30"/>
         <source>Command:</source>
-        <translation>Comando:</translation>
+        <translation>Команда:</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="47"/>
         <source>Wait for system tray</source>
-        <translation>Aguardar pela área de notificação do sistema</translation>
+        <translation>Жүйелік трейді күту</translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="67"/>
         <source>Select Application</source>
-        <translation>Selecionar aplicação</translation>
+        <translation>Қолданбаны таңдау</translation>
     </message>
 </context>
 <context>
@@ -44,22 +44,22 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
-        <translation>Arranque automático global</translation>
+        <translation>Глобалды автобастау</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation>Arranque automático do LXQt</translation>
+        <translation>LXQt автобастау</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
         <source>Location: %1</source>
-        <translation>Localização: %1</translation>
+        <translation>Орналасуы: %1</translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>Substitui: %1</translation>
+        <translation>Қайта анықтаулар: %1</translation>
     </message>
 </context>
 <context>
@@ -67,22 +67,22 @@
     <message>
         <location filename="../autostartpage.ui" line="51"/>
         <source>Delete</source>
-        <translation>Eliminar</translation>
+        <translation>Өшіру</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="37"/>
         <source>Add</source>
-        <translation>Adicionar</translation>
+        <translation>Қосу</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Edit</source>
-        <translation>Editar</translation>
+        <translation>Түзету</translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="23"/>
         <source>Application Autostart</source>
-        <translation>Aplicações com arranque automático</translation>
+        <translation>Қолданбаның автобастауы</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="140"/>
@@ -92,73 +92,73 @@
         <location filename="../autostartpage.cpp" line="180"/>
         <location filename="../autostartpage.cpp" line="197"/>
         <source>Error</source>
-        <translation>Erro</translation>
+        <translation>Қате</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="140"/>
         <location filename="../autostartpage.cpp" line="175"/>
         <source>Please provide Name and Command</source>
-        <translation>Indicar o nome e o comando</translation>
+        <translation>Аты мен команданы енгізіңіз</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation>O nome não deve começar com ponto ou conter barra</translation>
+        <translation>Аты нүктеден басталмауы немесе құрамында қиғаш сызық болмауы керек</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
         <location filename="../autostartpage.cpp" line="197"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>O ficheiro &quot;%1&quot; já existe!</translation>
+        <translation>&apos;%1&apos; файлы қазірдің өзінде бар!</translation>
     </message>
 </context>
 <context>
     <name>BasicSettings</name>
     <message>
-        <location filename="../basicsettings.ui" line="29"/>
-        <source>LXQt Modules</source>
-        <translation>Módulos LXQt</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="81"/>
-        <source>Leave Session</source>
-        <translation>Sair da sessão</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="87"/>
-        <source>Ask for confirmation to leave session</source>
-        <translation>Pedir confirmação antes de sair da sessão</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="94"/>
-        <source>Lock screen before suspending/hibernating</source>
-        <translation>Bloquear ecrã antes de suspender/hibernar</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="101"/>
-        <source>Suspend/hibernate after lock delay:</source>
-        <translation>Suspender/hibernar após este tempo de bloqueio:</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="114"/>
-        <source> ms</source>
-        <translation> ms</translation>
-    </message>
-    <message>
         <location filename="../basicsettings.ui" line="22"/>
         <source>Basic Settings</source>
-        <translation>Definições básicas</translation>
+        <translation>Негізгі баптаулар</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="29"/>
+        <source>LXQt Modules</source>
+        <translation>LXQt модульдері</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="51"/>
         <source>Start</source>
-        <translation>Iniciar</translation>
+        <translation>Бастау</translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="58"/>
         <source>Stop</source>
-        <translation>Parar</translation>
+        <translation>Тоқтату</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="81"/>
+        <source>Leave Session</source>
+        <translation>Сессиядан шығу</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="87"/>
+        <source>Ask for confirmation to leave session</source>
+        <translation>Сессиядан шығуды растауды сұрау</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="94"/>
+        <source>Lock screen before suspending/hibernating</source>
+        <translation>Күту/гибернация режимдеріне өту алдында экранды бұғаттау</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="101"/>
+        <source>Suspend/hibernate after lock delay:</source>
+        <translation>Бұғаттау кідірісінен кейін күту/гибернация режиміне өту:</translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="114"/>
+        <source> ms</source>
+        <translation> мс</translation>
     </message>
 </context>
 <context>
@@ -166,27 +166,27 @@
     <message>
         <location filename="../environmentpage.ui" line="47"/>
         <source>Add</source>
-        <translation>Adicionar</translation>
+        <translation>Қосу</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="54"/>
         <source>Delete</source>
-        <translation>Eliminar</translation>
+        <translation>Өшіру</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="23"/>
         <source>Environment Variables (Advanced)</source>
-        <translation>Variáveis de ambiente (avançado)</translation>
+        <translation>Орта айнымалылары (кеңейтілген)</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="34"/>
         <source>Variable Name</source>
-        <translation>Nome da variável</translation>
+        <translation>Айнымалы атауы</translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="39"/>
         <source>Value</source>
-        <translation>Valor</translation>
+        <translation>Мәні</translation>
     </message>
 </context>
 <context>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../modulemodel.cpp" line="87"/>
         <source>Running</source>
-        <translation>Em execução</translation>
+        <translation>Орындалуда</translation>
     </message>
 </context>
 <context>
@@ -202,47 +202,47 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="46"/>
         <source>LXQt Session Settings</source>
-        <translation>Definições da sessão LXQt</translation>
+        <translation>LXQt сессия баптаулары</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="49"/>
         <source>Basic Settings</source>
-        <translation>Definições básicas</translation>
+        <translation>Негізгі баптаулар</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="55"/>
         <source>X11 Settings</source>
-        <translation>Definições X11</translation>
+        <translation>X11 баптаулары</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="69"/>
         <source>User Directories</source>
-        <translation>Diretórios do utilizador</translation>
+        <translation>Пайдаланушы бумалары</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="75"/>
         <source>Autostart</source>
-        <translation>Arranque automático</translation>
+        <translation>Автоқосылу</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="62"/>
         <source>Wayland Settings</source>
-        <translation>Definições do Wayland</translation>
+        <translation>Wayland баптаулары</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="81"/>
         <source>Environment (Advanced)</source>
-        <translation>Ambiente (avançado)</translation>
+        <translation>Орта (кеңейтілген)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="107"/>
         <source>Session Restart Required</source>
-        <translation>Tem que reiniciar a sessão</translation>
+        <translation>Сессияны қайта қосу талап етіледі</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="108"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation>Algumas definições apenas serão aplicadas após reiniciar a sessão.</translation>
+        <translation>Кейбір баптаулар жүйеге келесі рет кіргенде ғана іске асады.</translation>
     </message>
 </context>
 <context>
@@ -250,22 +250,22 @@
     <message>
         <location filename="../userlocationspage.cpp" line="116"/>
         <source>Locations for Personal Files</source>
-        <translation>Localização dos ficheiros pessoais</translation>
+        <translation>Жеке файлдардың орналасуы</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="184"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>Definições de sessão do LXQt - Diretórios do utilizador</translation>
+        <translation>LXQt сессия баптаулары - Пайдаланушы бумалары</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>An error occurred while applying the settings for the %1 location</source>
-        <translation>Ocorreu um erro ao aplicar as definições para a localização %1</translation>
+        <translation>%1 орналасуы үшін баптауларды іске асыру кезінде қате орын алды</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="201"/>
         <source>Choose Location</source>
-        <translation>Escolha a localização</translation>
+        <translation>Орналасуды таңдау</translation>
     </message>
 </context>
 <context>
@@ -273,82 +273,82 @@
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Desktop</source>
-        <translation>Ambiente de trabalho</translation>
+        <translation>Жұмыс үстелі</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Downloads</source>
-        <translation>Descargas</translation>
+        <translation>Жүктелгендер</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Templates</source>
-        <translation>Modelos</translation>
+        <translation>Үлгілер</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Public Share</source>
-        <translation>Partilha pública</translation>
+        <translation>Ортақ</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
         <source>Documents</source>
-        <translation>Documentos</translation>
+        <translation>Құжаттар</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="68"/>
         <source>Music</source>
-        <translation>Músicas</translation>
+        <translation>Музыка</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="69"/>
         <source>Pictures</source>
-        <translation>Imagens</translation>
+        <translation>Суреттер</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
         <source>Videos</source>
-        <translation>Vídeos</translation>
+        <translation>Видеолар</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translation>Contém todos os ficheiros do seu ambiente de trabalho</translation>
+        <translation>Жұмыс үстелінде көрінетін барлық файлдарды қамтиды</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation>Pasta utilizada para guardar as descargas</translation>
+        <translation>Жүктелген файлдарды сақтауға арналған әдепкі бума</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation>Pasta utilizada para carregar ou guardar os seus modelos</translation>
+        <translation>Үлгілерді жүктеуге немесе сақтауға арналған әдепкі бума</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation>Pasta utilizada para os ficheiros partilhados</translation>
+        <translation>Файлдарды ортақ бөлісуге арналған әдепкі бума</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation>Pasta utilizada para carregar ou guardar os seus documentos</translation>
+        <translation>Құжаттарды жүктеуге немесе сақтауға арналған әдепкі бума</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation>Pasta utilizada para carregar ou guardar as suas músicas</translation>
+        <translation>Музыканы жүктеуге немесе сақтауға арналған әдепкі бума</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation>Pasta utilizada para carregar ou guardar as suas imagens</translation>
+        <translation>Суреттерді жүктеуге немесе сақтауға арналған әдепкі бума</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>Pasta utilizada para carregar ou guardar os seus vídeos</translation>
+        <translation>Видеоларды жүктеуге немесе сақтауға арналған әдепкі бума</translation>
     </message>
 </context>
 <context>
@@ -356,38 +356,38 @@
     <message>
         <location filename="../waylandsettings.ui" line="23"/>
         <source>Wayland Settings</source>
-        <translation>Definições do Wayland</translation>
+        <translation>Wayland баптаулары</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor</source>
-        <translation>Compositor do Wayland</translation>
+        <translation>Wayland композиторы</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation>Pesquisar...</translation>
+        <translation>Іздеу...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation>Comando de bloqueio do ecrã</translation>
+        <translation>Экранды құлыптау командасы</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
         <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
-        <translation>Usar &quot;loginctl lock-session&quot; no kwin_wayland</translation>
+        <translation>kwin_wayland құралында &quot;loginctl lock-session&quot; пайдалану</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="93"/>
         <source>Select a Wayland Compositor</source>
-        <translation>Selecionar um compositor Wayland</translation>
+        <translation>Wayland композиторын таңдаңыз</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Screenlocker for Wayland</source>
-        <translation>Selecionar um bloqueador de ecrã para Wayland</translation>
+        <translation>Wayland үшін экранды құлыптау құралын таңдаңыз</translation>
     </message>
 </context>
 <context>
@@ -395,48 +395,48 @@
     <message>
         <location filename="../x11settings.ui" line="22"/>
         <source>X11 Settings</source>
-        <translation>Definições X11</translation>
+        <translation>X11 баптаулары</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation>Gestor de janelas</translation>
+        <translation>Терезелер менеджері</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation>Pesquisar...</translation>
+        <translation>Іздеу...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation>Usar o comando personalizado de bloqueio do ecrã</translation>
+        <translation>Экранды құлыптаудың арнайы командасын пайдалану</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation>Em Wayland, ajuste a escala através das definições do compositor ou do kanshi.</translation>
+        <translation>Wayland жүйесінде оның орнына масштабтауды композитор баптаулары немесе kanshi арқылы реттеңіз.</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation>Escala global do ecrã</translation>
+        <translation>Глобалды экранды масштабтау</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation>Factor de escala:</translation>
+        <translation>Масштабтау коэффициенті:</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation>Selecione um gestor de janelas</translation>
+        <translation>Терезелер менеджерін таңдау</translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation>Selecione um bloqueador de ecrã</translation>
+        <translation>Экранды бұғаттаушыны таңдау</translation>
     </message>
 </context>
 </TS>

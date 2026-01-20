@@ -35,12 +35,12 @@
     <message>
         <location filename="../src/sessionapplication.cpp" line="89"/>
         <source>DBus Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>DBus ортасы</translation>
     </message>
     <message>
         <location filename="../src/sessionapplication.cpp" line="90"/>
         <source>The DBus Activation Environment wasn&apos;t updated. Some apps might not work properly</source>
-        <translation type="unfinished"></translation>
+        <translation>DBus белсендіру ортасы жаңартылмады. Кейбір қолданбалар дұрыс жұмыс істемеуі мүмкін</translation>
     </message>
 </context>
 <context>
@@ -53,12 +53,12 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;LXQt ішіне қош келдіңіз&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Әдепкі терезелер басқарушысын таңдаңыз:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You will be able to change this at any time through &lt;span style=&quot;font-weight:600;&quot;&gt;LXQt Settings → Session Settings → X11 Settings&lt;/span&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Сіз мұны кез келген уақытта &lt;span style=&quot;font-weight:600;&quot;&gt;LXQt баптаулары → Сессия баптаулары → X11 баптаулары&lt;/span&gt; арқылы өзгерте аласыз&lt;/p&gt;.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="64"/>

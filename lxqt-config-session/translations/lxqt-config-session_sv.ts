@@ -361,7 +361,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor</source>
-        <translation>Wayland-kompositorshanterare:</translation>
+        <translation>Wayland kompositor</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
@@ -372,7 +372,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation>Kommando för skärmlås:</translation>
+        <translation>Kommando för skärmlås</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
