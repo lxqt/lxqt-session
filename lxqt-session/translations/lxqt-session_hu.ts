@@ -11,7 +11,7 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="348"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; többször is összeomlott. Az automatikus újraindítása a következő bejelentkezésig le lesz tiltva.</translation>
+        <translation>A(z) &lt;b&gt;%1&lt;/b&gt; többször is összeomlott. Az automatikus újraindítása a következő bejelentkezésig le lesz tiltva.</translation>
     </message>
 </context>
 <context>
