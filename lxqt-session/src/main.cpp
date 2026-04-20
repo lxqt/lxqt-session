@@ -51,6 +51,7 @@ session-eggwm.conf
 */
 int main(int argc, char **argv)
 {
+    qputenv("QT_NO_XDG_DESKTOP_PORTAL", QByteArrayLiteral("1"));
     SessionApplication app(argc, argv);
 
     QCommandLineParser parser;
