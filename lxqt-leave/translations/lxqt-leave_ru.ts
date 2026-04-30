@@ -6,17 +6,17 @@
     <message>
         <location filename="../leavedialog.ui" line="20"/>
         <source>Leave</source>
-        <translation>Выйти</translation>
+        <translation>Выход</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="71"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;What do you want the computer to do?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Что вы хотите сделать с компьютером?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Что сделать с компьютером?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="61"/>
         <source>Logout</source>
-        <translation>Выйти</translation>
+        <translation>Завершить сеанс</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="79"/>
@@ -31,7 +31,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="71"/>
         <source>Suspend</source>
-        <translation>Перевести в ждущий режим</translation>
+        <translation>Приостановить</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="76"/>
@@ -41,7 +41,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="84"/>
         <source>Hibernate</source>
-        <translation>Перевести в спящий режим</translation>
+        <translation>Гибернация</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="51"/>
@@ -64,12 +64,12 @@
     <message>
         <location filename="../main.cpp" line="65"/>
         <source>Suspend.</source>
-        <translation>Перевести в ждущий режим.</translation>
+        <translation>Перейти в ждущий режим.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="68"/>
         <source>Hibernate.</source>
-        <translation>Перевести в спящий режим.</translation>
+        <translation>Перейти в спящий режим.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="71"/>
