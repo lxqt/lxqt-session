@@ -202,7 +202,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="46"/>
         <source>LXQt Session Settings</source>
-        <translation>Настройки сессии LXQt</translation>
+        <translation>Настройки сеанса LXQt</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="49"/>
@@ -232,12 +232,12 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="81"/>
         <source>Environment (Advanced)</source>
-        <translation>Окружение (для опытных)</translation>
+        <translation>Среда (для опытных)</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="107"/>
         <source>Session Restart Required</source>
-        <translation>Понадобится перезапуск сессии</translation>
+        <translation>Понадобится перезапуск сеанса</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="108"/>
@@ -255,7 +255,7 @@
     <message>
         <location filename="../userlocationspage.cpp" line="184"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>Настройки сессии LXQt - каталоги пользователя</translation>
+        <translation>Настройки сеанса LXQt — каталоги пользователя</translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
