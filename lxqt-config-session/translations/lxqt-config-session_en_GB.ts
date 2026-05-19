@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="de">
+<TS version="2.1" language="en_GB">
 <context>
     <name>AutoStartEdit</name>
     <message>
         <location filename="../autostartedit.ui" line="14"/>
         <source>Edit</source>
-        <translation>Bearbeiten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="20"/>
         <source>Name:</source>
-        <translation>Name:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="40"/>
         <source>Search...</source>
-        <translation>Suchen ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="54"/>
         <source>Start only in X11</source>
-        <translation>Nur in X11 starten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="30"/>
         <source>Command:</source>
-        <translation>Befehl:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="47"/>
         <source>Wait for system tray</source>
-        <translation>Auf Systemtray warten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartedit.cpp" line="67"/>
         <source>Select Application</source>
-        <translation>Anwendung auswählen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -44,22 +44,22 @@
     <message>
         <location filename="../autostartmodel.cpp" line="193"/>
         <source>Global Autostart</source>
-        <translation>Globaler Autostart</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="195"/>
         <source>LXQt Autostart</source>
-        <translation>LXQt Autostart</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="213"/>
         <source>Location: %1</source>
-        <translation>Ort: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartmodel.cpp" line="215"/>
         <source>Overrides: %1</source>
-        <translation>Überschreibt: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -67,22 +67,22 @@
     <message>
         <location filename="../autostartpage.ui" line="51"/>
         <source>Delete</source>
-        <translation>Löschen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="37"/>
         <source>Add</source>
-        <translation>Hinzufügen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="44"/>
         <source>Edit</source>
-        <translation>Bearbeiten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartpage.ui" line="23"/>
         <source>Application Autostart</source>
-        <translation>Anwendung-Autostart</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="140"/>
@@ -92,25 +92,25 @@
         <location filename="../autostartpage.cpp" line="180"/>
         <location filename="../autostartpage.cpp" line="197"/>
         <source>Error</source>
-        <translation>Fehler</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="140"/>
         <location filename="../autostartpage.cpp" line="175"/>
         <source>Please provide Name and Command</source>
-        <translation>Bitte Name und Befehl angeben</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation>Der Name sollte nicht mit einem Punkt beginnen oder einen Schrägstrich enthalten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
         <location filename="../autostartpage.cpp" line="197"/>
         <source>File &apos;%1&apos; already exists!</source>
-        <translation>Datei &apos;%1&apos; existiert bereits!</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -118,47 +118,47 @@
     <message>
         <location filename="../basicsettings.ui" line="22"/>
         <source>Basic Settings</source>
-        <translation>Grundeinstellungen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="29"/>
         <source>LXQt Modules</source>
-        <translation>LXQt-Module</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="51"/>
         <source>Start</source>
-        <translation>Start</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="58"/>
         <source>Stop</source>
-        <translation>Anhalten</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="94"/>
-        <source>Lock screen before suspending/hibernating</source>
-        <translation>Bildschirm vor dem Wechsel in Bereitschaft/Ruhezustand sperren</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="101"/>
-        <source>Suspend/hibernate after lock delay:</source>
-        <translation>Bereitschaft/Ruhezustand nach einer Sperrverzögerung:</translation>
-    </message>
-    <message>
-        <location filename="../basicsettings.ui" line="114"/>
-        <source> ms</source>
-        <translation> ms</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="81"/>
         <source>Leave Session</source>
-        <translation>Sitzung verlassen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../basicsettings.ui" line="87"/>
         <source>Ask for confirmation to leave session</source>
-        <translation>Nach Bestätigung zum Verlassen der Sitzung fragen</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="94"/>
+        <source>Lock screen before suspending/hibernating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="101"/>
+        <source>Suspend/hibernate after lock delay:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../basicsettings.ui" line="114"/>
+        <source> ms</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -166,27 +166,27 @@
     <message>
         <location filename="../environmentpage.ui" line="47"/>
         <source>Add</source>
-        <translation>Hinzufügen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="54"/>
         <source>Delete</source>
-        <translation>Löschen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="23"/>
         <source>Environment Variables (Advanced)</source>
-        <translation>Umgebungsvariablen (Erweitert)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="34"/>
         <source>Variable Name</source>
-        <translation>Variablenname</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../environmentpage.ui" line="39"/>
         <source>Value</source>
-        <translation>Wert</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -194,7 +194,7 @@
     <message>
         <location filename="../modulemodel.cpp" line="87"/>
         <source>Running</source>
-        <translation>Läuft</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -202,47 +202,47 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="46"/>
         <source>LXQt Session Settings</source>
-        <translation>LXQt-Sitzungseinstellungen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="49"/>
         <source>Basic Settings</source>
-        <translation>Grundeinstellungen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="55"/>
         <source>X11 Settings</source>
-        <translation>X11-Einstellungen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="69"/>
         <source>User Directories</source>
-        <translation>Benutzerverzeichnisse</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="75"/>
         <source>Autostart</source>
-        <translation>Autostart</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="62"/>
         <source>Wayland Settings</source>
-        <translation>Wayland-Einstellungen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="81"/>
         <source>Environment (Advanced)</source>
-        <translation>Umgebung (Erweitert)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="107"/>
         <source>Session Restart Required</source>
-        <translation>Sitzungsneustart erforderlich</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="108"/>
         <source>Some settings will not take effect until the next log in.</source>
-        <translation>Einige Einstellungen werden erst bei der nächsten Anmeldung wirksam.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -250,22 +250,22 @@
     <message>
         <location filename="../userlocationspage.cpp" line="116"/>
         <source>Locations for Personal Files</source>
-        <translation>Speicherorte für persönliche Dateien</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="184"/>
         <source>LXQt Session Settings - User Directories</source>
-        <translation>LXQt-Sitzungseinstellungen - Benutzerverzeichnisse</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="185"/>
         <source>An error occurred while applying the settings for the %1 location</source>
-        <translation>Beim Anwenden der Einstellungen für den Speicherort %1 ist ein Fehler aufgetreten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="201"/>
         <source>Choose Location</source>
-        <translation>Speicherort auswählen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -273,83 +273,82 @@
     <message>
         <location filename="../userlocationspage.cpp" line="63"/>
         <source>Desktop</source>
-        <translation>Arbeitsfläche</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="64"/>
         <source>Downloads</source>
-        <translation>Heruntergeladene Dateien</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="65"/>
         <source>Templates</source>
-        <translation>Vorlagen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="66"/>
         <source>Public Share</source>
-        <translation>Öffentlicher Ordner</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="67"/>
         <source>Documents</source>
-        <translation>Dokumente</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="68"/>
         <source>Music</source>
-        <translation>Musik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="69"/>
         <source>Pictures</source>
-        <translation>Bilder</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="70"/>
         <source>Videos</source>
-        <translation>Videos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="73"/>
         <source>Contains all the files which you see on your desktop</source>
-        <translatorcomment>files in template translated with the German word for objects. IMO more reasonable as it&apos;s not necessarily files that are placed on the desktop. Maybe adjust the template accordingly?</translatorcomment>
-        <translation>Enthält alle Dateien, die Sie auf Ihrer Arbeitsfläche sehen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="74"/>
         <source>Default folder to save your downloaded files</source>
-        <translation>Standardordner zum Speichern Ihrer heruntergeladenen Dateien</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="75"/>
         <source>Default folder to load or save templates from or to</source>
-        <translation>Standardordner zum Laden oder Speichern von Vorlagen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="76"/>
         <source>Default folder to publicly share your files</source>
-        <translation>Standardordner für die öffentliche Freigabe Ihrer Dateien</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="77"/>
         <source>Default folder to load or save documents from or to</source>
-        <translation>Standardordner zum Laden oder Speichern von Dokumenten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="78"/>
         <source>Default folder to load or save music from or to</source>
-        <translation>Standardordner zum Laden oder Speichern von Musik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="79"/>
         <source>Default folder to load or save pictures from or to</source>
-        <translation>Standardordner zum Laden oder Speichern von Bildern</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../userlocationspage.cpp" line="80"/>
         <source>Default folder to load or save videos from or to</source>
-        <translation>Standardordner zum Laden oder Speichern von Videos</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -357,38 +356,38 @@
     <message>
         <location filename="../waylandsettings.ui" line="23"/>
         <source>Wayland Settings</source>
-        <translation>Wayland-Einstellungen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor</source>
-        <translation>Wayland-Compositor:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation>Suchen ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation>Befehl für Bildschirm sperren:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
         <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
-        <translation>Unter kwin_wayland &quot;loginctl lock-session&quot; verwenden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="93"/>
         <source>Select a Wayland Compositor</source>
-        <translation>Wayland Compositor auswählen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="98"/>
         <source>Select a Screenlocker for Wayland</source>
-        <translation>Bildschirmsperre unter Wayland auswählen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -396,48 +395,48 @@
     <message>
         <location filename="../x11settings.ui" line="22"/>
         <source>X11 Settings</source>
-        <translation>X11-Einstellungen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="29"/>
         <source>Window Manager</source>
-        <translation>Fensterverwaltung</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation>Suchen ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation>Benutzerdefinierten Befehl zur Bildschirmsperre verwenden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
         <source>Under Wayland, adjust scaling via compositor settings or kanshi instead.</source>
-        <translation>Unter Wayland können Sie die Skalierung stattdessen über die Compositor-Einstellungen oder kanshi anpassen.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="96"/>
         <source>Global Screen Scaling</source>
-        <translation>Globale Bildschirmskalierung</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="108"/>
         <source>Scale factor:</source>
-        <translation>Skalierungsfaktor:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="124"/>
         <source>Select a window manager</source>
-        <translation>Fenstermanager auswählen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation>Bildschirmsperre auswählen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
