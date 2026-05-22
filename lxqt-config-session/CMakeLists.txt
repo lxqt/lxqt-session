@@ -1,6 +1,3 @@
-project("lxqt-config-session")
-
-
 set(lxqt-sessioncfg_HDRS
     sessionconfigwindow.h
     basicsettings.h
@@ -50,11 +47,13 @@ lxqt_translate_ts(lxqt-sessioncfg_QM_FILES
         ${lxqt-sessioncfg_HDRS}
         ${lxqt-sessioncfg_SRCS}
         ${lxqt-sessioncfg_UI_FILES}
+    TEMPLATE
+        lxqt-config-session
     INSTALL_DIR
-        "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
+        "${LXQT_TRANSLATIONS_DIR}/lxqt-config-session"
 )
 
-lxqt_app_translation_loader(lxqt-sessioncfg_QM_LOADER ${PROJECT_NAME})
+lxqt_app_translation_loader(lxqt-sessioncfg_QM_LOADER lxqt-config-session)
 lxqt_translate_desktop(lxqt-sessioncfg_DESKTOP_FILES SOURCES lxqt-config-session.desktop.in USE_YAML)
 
 add_executable(lxqt-config-session

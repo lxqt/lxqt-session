@@ -1,5 +1,3 @@
-project("lxqt-leave")
-
 set(CPP_FILES
     main.cpp
     leavedialog.cpp
@@ -36,11 +34,13 @@ lxqt_translate_ts(lxqt-leave_QM_FILES
         ${CPP_FILES}
         ${UI_FILES}
         ${H_FILES}
+    TEMPLATE
+         lxqt-leave
     INSTALL_DIR
-        "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
+        "${LXQT_TRANSLATIONS_DIR}/lxqt-leave"
 )
 
-lxqt_app_translation_loader(lxqt-leave_QM_LOADER ${PROJECT_NAME})
+lxqt_app_translation_loader(lxqt-leave_QM_LOADER lxqt-leave)
 #************************************************
 
 
