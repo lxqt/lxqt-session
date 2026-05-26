@@ -1,5 +1,3 @@
-project("lxqt-session")
-
 if (WITH_LIBUDEV)
     find_package(UDev REQUIRED)
     include_directories(${LIBUDEV_INCLUDE_DIR})
@@ -47,10 +45,12 @@ lxqt_translate_ts(lxqt-session_QM_FILES
         ${lxqt-session_HDRS}
         ${lxqt-session_SRCS}
         ${lxqt-session_UI}
+    TEMPLATE
+        lxqt-session
     INSTALL_DIR
-        "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
+        "${LXQT_TRANSLATIONS_DIR}/lxqt-session"
 )
-lxqt_app_translation_loader(lxqt-session_QM_LOADER ${PROJECT_NAME})
+lxqt_app_translation_loader(lxqt-session_QM_LOADER lxqt-session)
 
 add_executable(lxqt-session
     ${lxqt-session_SRCS}
