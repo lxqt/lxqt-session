@@ -377,7 +377,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
         <source>Use &quot;loginctl lock-session&quot; on kwin_wayland</source>
-        <translation>kwin_waylandでは &quot;loginctl lock-session&quot; を使用します</translation>
+        <translation>kwin_wayland では &quot;loginctl lock-session&quot; を使用します</translation>
     </message>
     <message>
         <location filename="../waylandsettings.cpp" line="93"/>
