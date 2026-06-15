@@ -21,7 +21,7 @@
     <message>
         <location filename="../autostartedit.ui" line="54"/>
         <source>Start only in X11</source>
-        <translation type="unfinished"></translation>
+        <translation>Start kun i X11</translation>
     </message>
     <message>
         <location filename="../autostartedit.ui" line="30"/>
@@ -98,13 +98,13 @@
         <location filename="../autostartpage.cpp" line="140"/>
         <location filename="../autostartpage.cpp" line="175"/>
         <source>Please provide Name and Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Angi navn og kommando</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="145"/>
         <location filename="../autostartpage.cpp" line="180"/>
         <source>Name should not start with dot or contain slash</source>
-        <translation type="unfinished"></translation>
+        <translation>Navn skal ikke begynne med punktum eller inneholde skråstrek</translation>
     </message>
     <message>
         <location filename="../autostartpage.cpp" line="156"/>
@@ -212,7 +212,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="55"/>
         <source>X11 Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>X11-innstillinger</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="69"/>
@@ -227,7 +227,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="62"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland-innstillinger</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="81"/>
@@ -356,7 +356,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="23"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland-innstillinger</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
@@ -372,7 +372,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Skjermlåskommando</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
@@ -395,7 +395,7 @@
     <message>
         <location filename="../x11settings.ui" line="22"/>
         <source>X11 Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>X11-innstillinger</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="29"/>
@@ -411,7 +411,7 @@
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>Bruk tilpasset skjermlåskommando</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
@@ -436,7 +436,7 @@
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Velg en skjermlås</translation>
     </message>
 </context>
 </TS>
