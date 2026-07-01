@@ -212,7 +212,7 @@
     <message>
         <location filename="../sessionconfigwindow.cpp" line="55"/>
         <source>X11 Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>X11 设置</translation>
     </message>
     <message>
         <location filename="../sessionconfigwindow.cpp" line="69"/>
@@ -361,7 +361,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
         <source>Wayland compositor</source>
-        <translation>Wayland合成器：</translation>
+        <translation>Wayland合成器</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="49"/>
@@ -372,7 +372,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation>屏幕锁定命令：</translation>
+        <translation>屏幕锁定命令</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
@@ -395,7 +395,7 @@
     <message>
         <location filename="../x11settings.ui" line="22"/>
         <source>X11 Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>X11 设置</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="29"/>
@@ -411,7 +411,7 @@
     <message>
         <location filename="../x11settings.ui" line="58"/>
         <source>Use custom screen lock command</source>
-        <translation type="unfinished"></translation>
+        <translation>使用自定义屏幕锁定命令</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="93"/>
@@ -436,7 +436,7 @@
     <message>
         <location filename="../x11settings.cpp" line="129"/>
         <source>Select a screenlocker</source>
-        <translation type="unfinished"></translation>
+        <translation>选择一个屏幕锁定程序</translation>
     </message>
 </context>
 </TS>
