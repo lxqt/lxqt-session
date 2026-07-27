@@ -372,7 +372,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
         <source>Screenlock command</source>
-        <translation>Εντολή κλειδώματος οθόνης:</translation>
+        <translation>Εντολή κλειδώματος οθόνης</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="71"/>
