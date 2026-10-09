@@ -6,8 +6,6 @@ cmake_minimum_required(VERSION 3.18.0 FATAL_ERROR)
 # versions.
 project(lxqt-session)
 
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
-
 include(GNUInstallDirs)
 
 set(CMAKE_AUTOMOC ON)
