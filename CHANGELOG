@@ -1,3 +1,10 @@
+lxqt-session-2.5.0 / 2026-11-05
+===============================
+ * Silenced layershell's warning by updating its code.
+ * CMake maintenance.
+ * Updated the screenshot.
+ * Updated the address of Free Software Foundation.
+
 lxqt-session-2.4.0 / 2026-04-20
 ===============================
  * Separated X11 and Wayland settings.
