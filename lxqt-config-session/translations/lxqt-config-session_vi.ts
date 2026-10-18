@@ -356,7 +356,7 @@
     <message>
         <location filename="../waylandsettings.ui" line="23"/>
         <source>Wayland Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cài đặt Wayland</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="30"/>
@@ -367,7 +367,7 @@
         <location filename="../waylandsettings.ui" line="49"/>
         <location filename="../waylandsettings.ui" line="81"/>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tìm kiếm...</translation>
     </message>
     <message>
         <location filename="../waylandsettings.ui" line="59"/>
@@ -395,7 +395,7 @@
     <message>
         <location filename="../x11settings.ui" line="22"/>
         <source>X11 Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cài đặt X11</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="29"/>
@@ -406,7 +406,7 @@
         <location filename="../x11settings.ui" line="48"/>
         <location filename="../x11settings.ui" line="83"/>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tìm kiếm...</translation>
     </message>
     <message>
         <location filename="../x11settings.ui" line="58"/>
