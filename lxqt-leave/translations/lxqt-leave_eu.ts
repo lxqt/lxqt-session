@@ -6,17 +6,17 @@
     <message>
         <location filename="../leavedialog.ui" line="20"/>
         <source>Leave</source>
-        <translation>Utzi</translation>
+        <translation>Irten</translation>
     </message>
     <message>
         <location filename="../leavedialog.ui" line="71"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;What do you want the computer to do?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Zer egin nahi duzu ordenagailuarekin?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="61"/>
         <source>Logout</source>
-        <translation>Saioa itxi</translation>
+        <translation>Saioa amaitu</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="79"/>
@@ -31,12 +31,12 @@
     <message>
         <location filename="../leavedialog.cpp" line="71"/>
         <source>Suspend</source>
-        <translation>Zintzilikatu</translation>
+        <translation>Eseki</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="76"/>
         <source>Lock screen</source>
-        <translation>Blokeatu Pantaila</translation>
+        <translation>Pantaila blokeatu</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="84"/>
@@ -46,7 +46,7 @@
     <message>
         <location filename="../leavedialog.ui" line="51"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Utzi</translation>
     </message>
 </context>
 <context>
@@ -54,17 +54,17 @@
     <message>
         <location filename="../main.cpp" line="59"/>
         <source>Logout.</source>
-        <translation>Saioa itxi.</translation>
+        <translation>Saioa amaitu.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="62"/>
         <source>Lockscreen.</source>
-        <translation>Blokeatutako pantaila.</translation>
+        <translation>Pantaila blokeatu.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="65"/>
         <source>Suspend.</source>
-        <translation>Suspenditu.</translation>
+        <translation>Eseki.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="68"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Shutdown.</source>
-        <translation type="unfinished"></translation>
+        <translation>Itzali.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="74"/>
