@@ -6,12 +6,12 @@
     <message>
         <location filename="../src/lxqtmodman.cpp" line="347"/>
         <source>Crash Report</source>
-        <translation>Istripuen Txostena</translation>
+        <translation>Hutsegite-txostena</translation>
     </message>
     <message>
         <location filename="../src/lxqtmodman.cpp" line="348"/>
         <source>&lt;b&gt;%1&lt;/b&gt; crashed too many times. Its autorestart has been disabled until next login.</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; askotan huts egin du.  Haren abiarazte automatikoa desgaitu egin da hurrengo saioa hasi arte.</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; gehiegitan huts egin du. Haren berrabiarazte automatikoa desgaitu egin da hurrengo saioa hasi arte.</translation>
     </message>
 </context>
 <context>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/main.cpp" line="62"/>
         <source>Configuration file path.</source>
-        <translation>Konfigurazio fitxategiaren bidea.</translation>
+        <translation>Konfigurazio-fitxategiaren bide-izena.</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="62"/>
@@ -30,7 +30,7 @@
     <message>
         <location filename="../src/main.cpp" line="63"/>
         <source>Window manager to use.</source>
-        <translation>Erabili beharreko leiho kudeatzailea.</translation>
+        <translation>Erabili beharreko leiho-kudeatzailea.</translation>
     </message>
     <message>
         <location filename="../src/sessionapplication.cpp" line="89"/>
@@ -40,7 +40,7 @@
     <message>
         <location filename="../src/sessionapplication.cpp" line="90"/>
         <source>The DBus Activation Environment wasn&apos;t updated. Some apps might not work properly</source>
-        <translation>DBus aktibatzeko ingurunea ez da eguneratu.  Baliteke aplikazio batzuk behar bezala ez funtzionatzea</translation>
+        <translation>DBus aktibazio-ingurunea ez da eguneratu. Baliteke aplikazio batzuek behar bezala ez funtzionatzea</translation>
     </message>
 </context>
 <context>
@@ -53,22 +53,22 @@
     <message>
         <location filename="../src/wmselectdialog.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Welcome to LXQt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please select your default Window Manager:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Ongi etorri LXQt-ra&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Hautatu leiho-kudeatzaile lehenetsia:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.ui" line="71"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You will be able to change this at any time through &lt;span style=&quot;font-weight:600;&quot;&gt;LXQt Settings → Session Settings → X11 Settings&lt;/span&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hau edozein unetan alda dezakezu hemen: &lt;span style=&quot;font-weight:600;&quot;&gt;LXQt ezarpenak → Saio-ezarpenak → X11 ezarpenak&lt;/span&gt;.</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="64"/>
         <source>Other ...</source>
-        <translation>Beste bat ...</translation>
+        <translation>Beste batzuk ...</translation>
     </message>
     <message>
         <location filename="../src/wmselectdialog.cpp" line="65"/>
         <source>Choose your favorite one.</source>
-        <translation>Aukeratu gogokoena.</translation>
+        <translation>Aukeratu gogoko duzuna.</translation>
     </message>
 </context>
 </TS>
