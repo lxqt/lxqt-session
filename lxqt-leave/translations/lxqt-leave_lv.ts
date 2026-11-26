@@ -16,7 +16,7 @@
     <message>
         <location filename="../leavedialog.cpp" line="61"/>
         <source>Logout</source>
-        <translation>Atteikties</translation>
+        <translation>Izrakstīties</translation>
     </message>
     <message>
         <location filename="../leavedialog.cpp" line="79"/>
@@ -54,7 +54,7 @@
     <message>
         <location filename="../main.cpp" line="59"/>
         <source>Logout.</source>
-        <translation>Atteikties.</translation>
+        <translation>Izrakstīties.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="62"/>
